@@ -1,6 +1,6 @@
-# 🚀 AutoFlow AI: Uçtan Uca Araç Fiyat Tahminleme ve Veri Hattı
+# 🚀 OtoMetrik: Uçtan Uca Araç Fiyat Tahminleme ve Veri Hattı
 
-**AutoFlow AI**, Sahibinden.com ve Arabam.com platformlarından yüksek performanslı asenkron web kazıma teknikleriyle piyasa verilerini toplayan, temizleyen ve makine öğrenmesi modelleri için yapılandırılmış veri setlerine dönüştüren gelişmiş bir büyük veri hattı (Data Pipeline) projesidir.
+**OtoMetrik**, Sahibinden.com ve Arabam.com platformlarından yüksek performanslı asenkron web kazıma teknikleriyle piyasa verilerini toplayan, temizleyen ve makine öğrenmesi modelleri için yapılandırılmış veri setlerine dönüştüren gelişmiş bir büyük veri hattı (Data Pipeline) projesidir.
 
 Sistem; birbirinden tamamen izole edilmiş (decoupled) mikroservis bileşenleri etrafında inşa edilmiştir. Playwright ile toplanan ham veriler, anlık olarak normalize edilip Apache Kafka aracılığıyla asenkron bir akışa dahil edilir. Bu mimari, sistemin hız limitlerine takılmasını engeller, olası kesintilerde veri kaybını sıfıra indirir ve uçtan uca güvenilir bir veri işleme süreci sunar.
 
