@@ -62,45 +62,6 @@ Sistemin esnek, modüler ve mikroservis mimarisine uygun klasör hiyerarşisi a�
 *   **Node.js**: v18 veya üzeri
 *   **Python**: 3.10 veya üzeri
 *   **Docker** ve **Docker Compose** (Apache Kafka ve Zookeeper altyapısı için)
-
-### Adım Adım Kurulum
-
-**1. Depoyu Klonlayın:**
-```bash
-git clone https://github.com/KULLANICI_ADI/autoflow-ai.git
-cd autoflow-ai
-```
-
-**2. Node.js Bağımlılıklarını Yükleyin (Data Pipeline):**
-```bash
-npm install
-```
-
-**3. Python Bağımlılıklarını Yükleyin (AI Model):**
-```bash
-pip install -r requirements.txt
-```
-
-**4. Apache Kafka'yı Ayağa Kaldırın:**
-Projedeki Kafka altyapısını başlatmak için kök dizinde veya genel Docker komutlarıyla bir Kafka cluster'ı başlatın:
-```bash
-docker run -d --name zookeeper -p 2181:2181 zookeeper:latest
-docker run -d --name kafka -p 9092:9092 \
-    -e KAFKA_ZOOKEEPER_CONNECT=localhost:2181 \
-    -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 \
-    -e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 \
-    confluentinc/cp-kafka:latest
-```
-*(Alternatif olarak, projenize bir `docker-compose.yml` ekleyip `docker-compose up -d` komutuyla da ayağa kaldırabilirsiniz.)*
-
-**5. Projeyi Başlatın:**
-Tüm veri kazıma, kuyruğa alma ve CSV yazma pipeline'ını asenkron olarak tetiklemek için ana uygulamayı çalıştırın:
-```bash
-node src/app.js
-```
-
----
-
 ## 📊 Veri Kümesi Özellikleri (Dataset Schema)
 
 Boru hattı üzerinden temizlenerek `data/output/` dizinine aktarılan CSV dosyaları aşağıdaki şema standartlarına sahiptir:
