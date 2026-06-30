@@ -1,0 +1,5 @@
+node_modules/
+.env
+data/raw/*
+!data/raw/.gitkeep
+data/output/*
