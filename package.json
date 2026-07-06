@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/app.js",
     "scrape:arabam": "node src/producers/arabam-scraper.js",
-    "kafka:smoke-test": "node scripts/kafka-smoke-test.js"
+    "kafka:smoke-test": "node scripts/kafka-smoke-test.js",
+    "test": "node --test src/utils/*.test.js"
   },
   "dependencies": {
     "playwright": "^1.48.0",
