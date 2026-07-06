@@ -1,1 +1,34 @@
-{}
+{
+  "baseUrl": "https://www.arabam.com",
+  "categories": {
+    "otomobil": "/ikinci-el/otomobil",
+    "suv": "/ikinci-el/arazi-suv-pickup",
+    "minivan_panelvan": "/ikinci-el/minivan-panelvan",
+    "elektrikli": "/ikinci-el/elektrikli-araclar"
+  },
+  "listPage": {
+    "listingLinkSelector": "a.listing-item",
+    "nextPageSelector": "a.pagination-next",
+    "maxPagesPerCategory": 50
+  },
+  "detailPage": {
+    "titleSelector": "h1.listing-title",
+    "priceSelector": ".product-price",
+    "propertiesTableSelector": ".property-items"
+  },
+  "blockedResourceTypes": ["image", "font", "media"],
+  "blockedDomains": [
+    "googlesyndication.com",
+    "doubleclick.net",
+    "google-analytics.com",
+    "googletagmanager.com"
+  ],
+  "rateLimit": {
+    "minDelayMs": 1500,
+    "maxDelayMs": 4000
+  },
+  "retry": {
+    "maxAttempts": 3,
+    "backoffMs": 2000
+  }
+}
