@@ -42,4 +42,46 @@ async function createPage(context) {
   return page;
 }
 
-module.exports = { launchBrowser, createPage, blockUnnecessaryResources };
+// Bir kategori icin liste sayfalarinda pagination ile gezip ilan detay linklerini toplar.
+async function collectListingLinks(page, categoryPath) {
+  const links = new Set();
+  let currentUrl = `${scraperRules.baseUrl}${categoryPath}`;
+  let pageCount = 0;
+
+  while (currentUrl && pageCount < scraperRules.listPage.maxPagesPerCategory) {
+    await page.goto(currentUrl, { waitUntil: 'domcontentloaded' });
+
+    const pageLinks = await page.$$eval(scraperRules.listPage.listingLinkSelector, (anchors) =>
+      anchors.map((a) => a.href),
+    );
+    pageLinks.forEach((link) => links.add(link));
+
+    currentUrl = await page
+      .$eval(scraperRules.listPage.nextPageSelector, (a) => a.href)
+      .catch(() => null);
+
+    pageCount += 1;
+  }
+
+  return Array.from(links);
+}
+
+// Tanimli tum kategorileri gezip essiz ilan linklerinin birlesik listesini doner.
+async function collectAllListingLinks(page) {
+  const allLinks = new Set();
+
+  for (const categoryPath of Object.values(scraperRules.categories)) {
+    const categoryLinks = await collectListingLinks(page, categoryPath);
+    categoryLinks.forEach((link) => allLinks.add(link));
+  }
+
+  return Array.from(allLinks);
+}
+
+module.exports = {
+  launchBrowser,
+  createPage,
+  blockUnnecessaryResources,
+  collectListingLinks,
+  collectAllListingLinks,
+};
