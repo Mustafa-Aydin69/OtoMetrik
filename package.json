@@ -1,5 +1,16 @@
 {
-  "name": "autoflow-ai",
+  "name": "otometrik",
   "version": "1.0.0",
-  "description": "AutoFlow AI Data Pipeline"
+  "description": "OtoMetrik Data Pipeline",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "scrape:arabam": "node src/producers/arabam-scraper.js"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "kafkajs": "^2.2.4",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5"
+  }
 }
