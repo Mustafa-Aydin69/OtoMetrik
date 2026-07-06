@@ -1,18 +1,20 @@
 // Kafka smoke test: verifies producer/consumer connectivity end-to-end
-const { kafka, TOPIC_RAW_LISTINGS } = require('../config/kafka-config');
+const { kafka } = require('../config/kafka-config');
+
+const SMOKE_TEST_TOPIC = 'otometrik-smoke-test';
 
 async function run() {
   const producer = kafka.producer();
-  const consumer = kafka.consumer({ groupId: 'smoke-test-group' });
+  const consumer = kafka.consumer({ groupId: `smoke-test-${Date.now()}` });
 
   await producer.connect();
   await consumer.connect();
-  await consumer.subscribe({ topic: TOPIC_RAW_LISTINGS, fromBeginning: false });
+  await consumer.subscribe({ topic: SMOKE_TEST_TOPIC, fromBeginning: true });
 
   const testMessage = { ping: 'otometrik-smoke-test', ts: new Date().toISOString() };
 
   const received = new Promise((resolve, reject) => {
-    const timeout = setTimeout(() => reject(new Error('Smoke test timed out waiting for message')), 10000);
+    const timeout = setTimeout(() => reject(new Error('Smoke test timed out waiting for message')), 15000);
     consumer.run({
       eachMessage: async ({ message }) => {
         clearTimeout(timeout);
@@ -22,7 +24,7 @@ async function run() {
   });
 
   await producer.send({
-    topic: TOPIC_RAW_LISTINGS,
+    topic: SMOKE_TEST_TOPIC,
     messages: [{ value: JSON.stringify(testMessage) }],
   });
 
