@@ -62,6 +62,37 @@ async function createPage(context) {
   return page;
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// scraper-rules.json'daki rateLimit araligindan rastgele bir bekleme suresi (ms) hesaplar.
+function randomDelay() {
+  const { minDelayMs, maxDelayMs } = scraperRules.rateLimit;
+  return Math.floor(Math.random() * (maxDelayMs - minDelayMs + 1)) + minDelayMs;
+}
+
+// Istekler arasi nazik bekleme: siteyi hizindan asiri yuklememek icin rastgele gecikme uygular.
+async function politeDelay() {
+  await sleep(randomDelay());
+}
+
+// Basarisiz olan async islemi artan bekleme sureleriyle (backoff) yeniden dener.
+async function withRetry(fn, { maxAttempts, backoffMs } = scraperRules.retry) {
+  let lastError;
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    try {
+      return await fn();
+    } catch (err) {
+      lastError = err;
+      if (attempt < maxAttempts) {
+        await sleep(backoffMs * attempt);
+      }
+    }
+  }
+  throw lastError;
+}
+
 // Bir kategori icin liste sayfalarinda pagination ile gezip ilan detay linklerini toplar.
 async function collectListingLinks(page, categoryPath) {
   const links = new Set();
@@ -69,6 +100,9 @@ async function collectListingLinks(page, categoryPath) {
   let pageCount = 0;
 
   while (currentUrl && pageCount < scraperRules.listPage.maxPagesPerCategory) {
+    if (pageCount > 0) {
+      await politeDelay();
+    }
     await page.goto(currentUrl, { waitUntil: 'domcontentloaded' });
 
     const pageLinks = await page.$$eval(scraperRules.listPage.listingLinkSelector, (anchors) =>
@@ -158,11 +192,13 @@ async function run() {
 
     for (const link of links) {
       try {
-        const listing = await scrapeListingDetail(page, link);
+        const listing = await withRetry(() => scrapeListingDetail(page, link));
         await publishListing(producer, listing);
         console.log(`Yayinlandi: ${listing.ilan_id}`);
       } catch (err) {
         console.error(`Ilan cekilemedi (${link}):`, err.message);
+      } finally {
+        await politeDelay();
       }
     }
   } finally {
@@ -182,6 +218,10 @@ module.exports = {
   launchBrowser,
   createPage,
   blockUnnecessaryResources,
+  sleep,
+  randomDelay,
+  politeDelay,
+  withRetry,
   collectListingLinks,
   collectAllListingLinks,
   extractDetailProperties,
