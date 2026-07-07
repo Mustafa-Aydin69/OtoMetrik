@@ -3,6 +3,7 @@ import os
 
 import pandas as pd
 
+from utils.normalize import normalize_dataframe
 from utils.text_cleaner import (
     parse_boya_degisen,
     parse_kilometre,
@@ -82,7 +83,8 @@ OUTPUT_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'output', 't
 
 
 def build_train_dataset():
-    return pd.concat([load_araba_bilgileri(), load_arabalar()], ignore_index=True)
+    df = pd.concat([load_araba_bilgileri(), load_arabalar()], ignore_index=True)
+    return normalize_dataframe(df)
 
 
 def main():
