@@ -6,8 +6,9 @@ const { parseListing } = require('../utils/json-parser');
 const { kafka, TOPIC_RAW_LISTINGS } = require('../../config/kafka-config');
 
 // Ilan detay sayfasindaki Turkce etiketleri json-parser'in bekledigi ham alan adlarina esler.
+// İlan No kasten eslenmiyor: property-value kopyalama tooltip'i icerdigi icin kirli metin
+// donduruyor; temiz ilan_id zaten URL'den (scrapeListingDetail) turetiliyor.
 const DETAIL_LABEL_MAP = {
-  'İlan No': 'ilanNo',
   Marka: 'marka',
   Seri: 'seri',
   Model: 'model',
@@ -19,9 +20,19 @@ const DETAIL_LABEL_MAP = {
   Renk: 'renk',
   'Motor Hacmi': 'motorHacmi',
   'Motor Gücü': 'motorGucu',
-  Boyalı: 'boyaliSayisi',
-  Değişen: 'degisenSayisi',
+  'Boya-değişen': 'boyaDegisen',
 };
+
+// "1 değişen, 2 boyalı" gibi birlesik metni degisen/boyali sayilarina ayirir.
+function parseBoyaDegisen(str) {
+  if (!str) return { degisenSayisi: null, boyaliSayisi: null };
+  const degisenMatch = str.match(/(\d+)\s*değişen/i);
+  const boyaliMatch = str.match(/(\d+)\s*boyalı/i);
+  return {
+    degisenSayisi: degisenMatch ? Number(degisenMatch[1]) : null,
+    boyaliSayisi: boyaliMatch ? Number(boyaliMatch[1]) : null,
+  };
+}
 
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
@@ -134,10 +145,10 @@ async function collectAllListingLinks(page) {
 
 // Ilan detay sayfasindaki ozellik tablosunu { "Marka": "Volkswagen", ... } seklinde ham etiket-deger ciftlerine cevirir.
 async function extractDetailProperties(page) {
-  return page.$$eval(`${scraperRules.detailPage.propertiesTableSelector} li`, (items) =>
+  return page.$$eval(scraperRules.detailPage.propertiesTableSelector, (items) =>
     items.reduce((acc, item) => {
-      const label = item.querySelector(':first-child')?.textContent?.trim();
-      const value = item.querySelector(':last-child')?.textContent?.trim();
+      const label = item.querySelector('.property-key')?.textContent?.trim();
+      const value = item.querySelector('.property-value')?.textContent?.trim();
       if (label && value) acc[label] = value;
       return acc;
     }, {}),
@@ -167,7 +178,8 @@ async function scrapeListingDetail(page, url) {
   const properties = await extractDetailProperties(page).catch(() => ({}));
 
   const raw = mapDetailPropertiesToRaw(properties, { ilanNo, kategori, fiyat });
-  return parseListing(raw);
+  const { degisenSayisi, boyaliSayisi } = parseBoyaDegisen(raw.boyaDegisen);
+  return parseListing({ ...raw, degisenSayisi, boyaliSayisi });
 }
 
 // Normalize edilmis ilani Kafka raw-listings topic'ine gonderir.

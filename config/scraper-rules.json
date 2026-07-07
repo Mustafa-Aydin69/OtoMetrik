@@ -7,14 +7,14 @@
     "elektrikli": "/ikinci-el/elektrikli-araclar"
   },
   "listPage": {
-    "listingLinkSelector": "a.listing-item",
-    "nextPageSelector": "a.pagination-next",
+    "listingLinkSelector": "tr.listing-list-item a[href*=\"/ilan/\"]",
+    "nextPageSelector": "a#pagingNext",
     "maxPagesPerCategory": 50
   },
   "detailPage": {
-    "titleSelector": "h1.listing-title",
-    "priceSelector": ".product-price",
-    "propertiesTableSelector": ".property-items"
+    "titleSelector": "h1",
+    "priceSelector": ".desktop-information-price",
+    "propertiesTableSelector": ".property-item"
   },
   "blockedResourceTypes": ["image", "font", "media"],
   "blockedDomains": [
