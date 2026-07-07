@@ -41,6 +41,28 @@ def parse_boya_degisen(value):
     return degisen_sayisi, boyali_sayisi
 
 
+# arabam.com motor hacmi/gucu bazen tek deger ("1461 cc", "90 hp"), bazen bucket araligi
+# ("1601 - 1800 cm3", "76 - 100 HP") bazen de alt sinir ("1200 cm3' e kadar", "50 HP'ye kadar")
+# olarak geliyor. Ucunu de ortak sayisal temsile (orta deger) cevirir; zaten sayisalsa oldugu gibi doner.
+def parse_engine_value(value):
+    if value is None:
+        return None
+    if isinstance(value, (int, float)):
+        return float(value)
+
+    text = normalize_whitespace(value)
+    text = re.sub(r'cm3|cc|hp', '', text, flags=re.IGNORECASE)
+    numbers = [int(n) for n in re.findall(r'\d+', text)]
+    if not numbers:
+        return None
+
+    if len(numbers) >= 2:
+        return (numbers[0] + numbers[1]) / 2
+    if 'kadar' in text.lower():
+        return numbers[0] / 2
+    return float(numbers[0])
+
+
 # "30 Haziran 2025" gibi Turkce tarihi ISO 8601'e cevirir; ayristirilamazsa None doner.
 def parse_turkish_date(value):
     if not value:
