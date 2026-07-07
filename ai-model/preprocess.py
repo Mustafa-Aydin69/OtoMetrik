@@ -17,6 +17,8 @@ from sklearn.model_selection import train_test_split
 CURRENT_YEAR = 2026
 DROP_COLS = ['arac_turu', 'scraped_at']
 UNKNOWN_FLAG_COLS = ['degisen_sayisi', 'boyali_sayisi']
+ONEHOT_COLS = ['yakit_turu', 'vites', 'kasa_turu']
+FREQ_COLS = ['marka', 'model', 'paket', 'renk']
 
 BASE_DIR = os.path.join(os.path.dirname(__file__), '..')
 TRAIN_PATH = os.path.join(BASE_DIR, 'data', 'output', 'train_dataset.csv')
@@ -49,6 +51,23 @@ def split_features_target(df, test_size=0.2, random_state=42):
     y = df['fiyat']
     X = df.drop(columns=['fiyat', 'ilan_id'])
     return train_test_split(X, y, test_size=test_size, random_state=random_state)
+
+
+# Dusuk kardinaliteli alanlar one-hot, yuksek kardiniteli alanlar (marka/model/paket/renk)
+# frekans encoding ile sayisallastirilir. Sizinti olmasin diye harita X_train'e gore fit edilir,
+# X_test'e sadece transform uygulanir.
+def encode(X_train, X_test):
+    freq_maps = {col: X_train[col].value_counts() for col in FREQ_COLS}
+    X_train_enc = X_train.copy()
+    X_test_enc = X_test.copy()
+    for col in FREQ_COLS:
+        X_train_enc[col] = X_train[col].map(freq_maps[col]).fillna(0)
+        X_test_enc[col] = X_test[col].map(freq_maps[col]).fillna(0)
+
+    X_train_enc = pd.get_dummies(X_train_enc, columns=ONEHOT_COLS)
+    X_test_enc = pd.get_dummies(X_test_enc, columns=ONEHOT_COLS)
+    X_test_enc = X_test_enc.reindex(columns=X_train_enc.columns, fill_value=0)
+    return X_train_enc, X_test_enc
 
 
 def main():
