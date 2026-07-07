@@ -63,6 +63,19 @@ def parse_engine_value(value):
     return float(numbers[0])
 
 
+# arabam.com "Agir Hasarli" alani "Evet"/"Hayir" doner; digerleriyle (degisen_sayisi vb.)
+# tutarli olmasi icin 1/0'a cevirir (JS tarafindaki parseEvetHayir ile ayni mantik).
+def parse_evet_hayir(value):
+    if value is None:
+        return None
+    normalized = str(value).strip().lower()
+    if normalized == 'evet':
+        return 1
+    if normalized in ('hayır', 'hayir'):
+        return 0
+    return None
+
+
 # "30 Haziran 2025" gibi Turkce tarihi ISO 8601'e cevirir; ayristirilamazsa None doner.
 def parse_turkish_date(value):
     if not value:

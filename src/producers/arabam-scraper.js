@@ -21,6 +21,7 @@ const DETAIL_LABEL_MAP = {
   'Motor Hacmi': 'motorHacmi',
   'Motor Gücü': 'motorGucu',
   'Boya-değişen': 'boyaDegisen',
+  'Ağır Hasarlı': 'agirHasarli',
 };
 
 // scraper-rules.json'daki kategori anahtarlarini arac_turu alani icin okunabilir etikete cevirir.

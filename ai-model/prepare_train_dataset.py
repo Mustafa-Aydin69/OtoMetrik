@@ -6,6 +6,7 @@ import pandas as pd
 from utils.normalize import normalize_dataframe
 from utils.text_cleaner import (
     parse_boya_degisen,
+    parse_evet_hayir,
     parse_kilometre,
     parse_price_tl,
     parse_turkish_date,
@@ -14,7 +15,7 @@ from utils.text_cleaner import (
 SCHEMA_FIELDS = [
     'ilan_id', 'arac_turu', 'marka', 'model', 'paket', 'kasa_turu', 'renk',
     'motor_hacmi', 'motor_gucu', 'yil', 'kilometre', 'yakit_turu', 'vites',
-    'degisen_sayisi', 'boyali_sayisi', 'fiyat', 'scraped_at',
+    'degisen_sayisi', 'boyali_sayisi', 'agir_hasarli', 'fiyat', 'scraped_at',
 ]
 
 KAGGLE_DIR = os.path.join(os.path.dirname(__file__), '..', 'kaggle')
@@ -41,6 +42,7 @@ def load_araba_bilgileri():
         'vites': df['vites_tipi'],
         'degisen_sayisi': df['degisen_sayisi'],
         'boyali_sayisi': df['boyali_sayisi'],
+        'agir_hasarli': None,
         'fiyat': df['fiyat'],
         'scraped_at': None,
     })[SCHEMA_FIELDS]
@@ -73,16 +75,34 @@ def load_arabalar():
         'vites': df['Vites Tipi'],
         'degisen_sayisi': degisen_sayisi,
         'boyali_sayisi': boyali_sayisi,
+        # arabam.com bu alani sadece "Evet" oldugunda gosteriyor (Boya-degisen'deki "sifirdan
+        # farkli olani listele" konvansiyonuyla ayni); eksik deger "Hayir" anlamina gelir.
+        'agir_hasarli': df['Ağır Hasarlı'].apply(parse_evet_hayir).fillna(0),
         'fiyat': df['Fiyat'].apply(parse_price_tl),
         'scraped_at': df['İlan Tarihi'].apply(parse_turkish_date),
     })[SCHEMA_FIELDS]
 
 
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'output', 'train_dataset.csv')
+ARABAM_SCRAPED_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'output', 'arabam_test_val.csv')
+
+
+# arabam_test_val.csv zaten hedef semada (json-parser.js SCHEMA_FIELDS ile birebir ayni 17 alan);
+# ek alan esleme gerekmiyor, sadece kaynak ayrimi icin ilan_id'ye prefix ekleniyor. Dosya yoksa
+# (henuz hic kazima yapilmadiysa) bos DataFrame doner, iki-kaynakli davranis bozulmaz.
+def load_arabam_scraped():
+    if not os.path.exists(ARABAM_SCRAPED_PATH):
+        return pd.DataFrame(columns=SCHEMA_FIELDS)
+    df = pd.read_csv(ARABAM_SCRAPED_PATH, encoding='utf-8-sig')
+    df['ilan_id'] = 'arabam-' + df['ilan_id'].astype(str)
+    return df[SCHEMA_FIELDS]
 
 
 def build_train_dataset():
-    df = pd.concat([load_araba_bilgileri(), load_arabalar()], ignore_index=True)
+    df = pd.concat(
+        [load_araba_bilgileri(), load_arabalar(), load_arabam_scraped()],
+        ignore_index=True,
+    )
     return normalize_dataframe(df)
 
 
@@ -93,7 +113,7 @@ def main():
 
     print(f'{len(df)} kayit yazildi: {OUTPUT_PATH}')
     print('Kaynak dagilimi:')
-    print(df['ilan_id'].str.extract(r'^kaggle-(\w+)-')[0].value_counts().to_string())
+    print(df['ilan_id'].str.extract(r'^(kaggle-\w+|arabam)-')[0].value_counts().to_string())
     print('Eksik deger orani (%):')
     print((df.isna().mean() * 100).round(1).to_string())
 

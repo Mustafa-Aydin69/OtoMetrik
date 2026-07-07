@@ -14,7 +14,7 @@ test('splitModelDetail handles empty input', () => {
   assert.deepEqual(splitModelDetail(''), { motorHacmi: null, paket: null });
 });
 
-test('parseListing maps a raw listing to the 17-field schema', () => {
+test('parseListing maps a raw listing to the 18-field schema', () => {
   const raw = {
     ilanNo: 1105432901,
     kategori: 'Otomobil',
@@ -30,6 +30,7 @@ test('parseListing maps a raw listing to the 17-field schema', () => {
     vitesTipi: 'Yarı Otomatik',
     degisenSayisi: 1,
     boyaliSayisi: 2,
+    agirHasarli: 'Hayır',
     fiyat: '1.650.000 TL',
   };
 
@@ -50,6 +51,18 @@ test('parseListing maps a raw listing to the 17-field schema', () => {
   assert.equal(result.vites, 'Yarı Otomatik');
   assert.equal(result.degisen_sayisi, 1);
   assert.equal(result.boyali_sayisi, 2);
+  assert.equal(result.agir_hasarli, 0);
   assert.equal(result.fiyat, 1650000);
   assert.ok(result.scraped_at);
+});
+
+test('parseListing converts agirHasarli Evet/Hayır to 1/0', () => {
+  assert.equal(parseListing({ agirHasarli: 'Evet' }).agir_hasarli, 1);
+  assert.equal(parseListing({ agirHasarli: 'Hayır' }).agir_hasarli, 0);
+});
+
+// arabam.com "Agir Hasarli" satirini yalnizca "Evet" oldugunda gosteriyor; sayfada hic
+// bulunmamasi "Hayir" anlamina gelir (Boya-degisen'deki ayni konvansiyon).
+test('parseListing treats missing agirHasarli as Hayır (0), not unknown', () => {
+  assert.equal(parseListing({}).agir_hasarli, 0);
 });

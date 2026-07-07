@@ -5,6 +5,8 @@ Uygulanan kararlar (bkz. eda_and_preprocessing.ipynb Madde 5):
 - arac_turu / scraped_at cikarilir (train_dataset'te sirasiyla %100 / %95 eksik, sinyal tasimaz).
 - degisen_sayisi / boyali_sayisi NaN'i "bilinmiyor" ayri flag kolonuyla isaretlenir, sonra 0'a doldurulur
   (dogrudan 0'a doldurmak "hasarsiz" gibi yanlis sinyal verirdi).
+- agir_hasarli NaN'i (kullanici karari, gecici) dogrudan 0'a (hasarsiz) doldurulur - daha genis
+  kazima sonrasi bu basitlestirme fine-tuning ile duzeltilecek.
 - yas = 2026 - yil, km_yil = kilometre / yas turetilir.
 - Geri kalan kucuk oranli eksik degerler (marka/model/yakit_turu/vites/motor_hacmi/motor_gucu/yil)
   baseline asamasinda satir bazinda cikarilir.
@@ -35,6 +37,11 @@ def load_clean_train_dataset():
     for col in UNKNOWN_FLAG_COLS:
         df[f'{col}_bilinmiyor'] = df[col].isna().astype(int)
         df[col] = df[col].fillna(0)
+
+    # agir_hasarli %95.6 eksik (araba_bilgileri.csv'de bu alan hic yok, eski canli kazima kayitlari
+    # bu alani henuz aramiyordu). Kullanici karari: bu turda bilinmeyeni "hasarsiz" (0) sayip
+    # egit, daha genis kazima (agir_hasarli isaretli) sonrasi fine-tuning ile duzeltilecek.
+    df['agir_hasarli'] = df['agir_hasarli'].fillna(0)
 
     df['yas'] = CURRENT_YEAR - df['yil']
     df['km_yil'] = df['kilometre'] / df['yas'].replace(0, 1)

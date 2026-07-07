@@ -16,6 +16,16 @@ function splitModelDetail(modelDetail) {
   };
 }
 
+// arabam.com "Ağır Hasarlı" alanı "Evet"/"Hayır" doner; ortak semada digerleriyle (degisen_sayisi vb.)
+// tutarli olmasi icin 1/0'a ceviriyoruz. Deger yoksa/tanimadigimiz bir seyse null (bilinmiyor).
+function parseEvetHayir(value) {
+  if (value == null) return null;
+  const normalized = String(value).trim().toLowerCase();
+  if (normalized === 'evet') return 1;
+  if (normalized === 'hayır' || normalized === 'hayir') return 0;
+  return null;
+}
+
 function parseListing(raw) {
   const { motorHacmi, paket } = splitModelDetail(raw.model);
 
@@ -35,6 +45,9 @@ function parseListing(raw) {
     vites: raw.vitesTipi || null,
     degisen_sayisi: raw.degisenSayisi != null ? Number(raw.degisenSayisi) : null,
     boyali_sayisi: raw.boyaliSayisi != null ? Number(raw.boyaliSayisi) : null,
+    // arabam.com "Agir Hasarli" satirini sadece "Evet" oldugunda gosteriyor (Boya-degisen'deki
+    // "sifirdan farkli olani listele" konvansiyonuyla ayni); sayfada hic yoksa "Hayir" demektir.
+    agir_hasarli: raw.agirHasarli !== undefined ? parseEvetHayir(raw.agirHasarli) : 0,
     fiyat: parsePriceTL(raw.fiyat),
     scraped_at: new Date().toISOString(),
   };

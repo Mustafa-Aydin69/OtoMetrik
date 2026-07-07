@@ -1,10 +1,7 @@
 {
   "baseUrl": "https://www.arabam.com",
   "categories": {
-    "otomobil": "/ikinci-el/otomobil",
-    "suv": "/ikinci-el/arazi-suv-pickup",
-    "minivan_panelvan": "/ikinci-el/minivan-panelvan",
-    "elektrikli": "/ikinci-el/elektrikli-araclar"
+    "otomobil": "/ikinci-el/otomobil"
   },
   "listPage": {
     "listingLinkSelector": "tr.listing-list-item a[href*=\"/ilan/\"]",

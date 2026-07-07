@@ -21,6 +21,7 @@ const SCHEMA_FIELDS = [
   'vites',
   'degisen_sayisi',
   'boyali_sayisi',
+  'agir_hasarli',
   'fiyat',
   'scraped_at',
 ];
