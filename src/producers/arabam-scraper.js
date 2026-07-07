@@ -23,14 +23,27 @@ const DETAIL_LABEL_MAP = {
   'Boya-değişen': 'boyaDegisen',
 };
 
-// "1 değişen, 2 boyalı" gibi birlesik metni degisen/boyali sayilarina ayirir.
+// scraper-rules.json'daki kategori anahtarlarini arac_turu alani icin okunabilir etikete cevirir.
+const CATEGORY_LABELS = {
+  otomobil: 'Otomobil',
+  suv: 'SUV',
+  minivan_panelvan: 'Minivan-Panelvan',
+  elektrikli: 'Elektrikli',
+};
+
+// "1 değişen, 2 boyalı" / "1 boyalı, 1 lokal boyalı" gibi birlesik metni degisen/boyali sayilarina ayirir.
+// "Belirtilmemiş" bilinmiyor anlamina gelir (null); deger var ama bir tur hic gecmiyorsa o tur icin 0 demektir
+// (arabam.com sadece sifirdan farkli olan turleri listeler).
 function parseBoyaDegisen(str) {
-  if (!str) return { degisenSayisi: null, boyaliSayisi: null };
+  if (!str || str === 'Belirtilmemiş') return { degisenSayisi: null, boyaliSayisi: null };
+
   const degisenMatch = str.match(/(\d+)\s*değişen/i);
-  const boyaliMatch = str.match(/(\d+)\s*boyalı/i);
+  const boyaliMatches = [...str.matchAll(/(\d+)\s*(?:lokal\s*)?boyalı/gi)];
+  const boyaliSayisi = boyaliMatches.reduce((sum, match) => sum + Number(match[1]), 0);
+
   return {
-    degisenSayisi: degisenMatch ? Number(degisenMatch[1]) : null,
-    boyaliSayisi: boyaliMatch ? Number(boyaliMatch[1]) : null,
+    degisenSayisi: degisenMatch ? Number(degisenMatch[1]) : 0,
+    boyaliSayisi,
   };
 }
 
@@ -131,16 +144,18 @@ async function collectListingLinks(page, categoryPath) {
   return Array.from(links);
 }
 
-// Tanimli tum kategorileri gezip essiz ilan linklerinin birlesik listesini doner.
+// Tanimli tum kategorileri gezip her linki kesfedildigi kategoriyle birlikte doner (link -> categoryKey).
 async function collectAllListingLinks(page) {
-  const allLinks = new Set();
+  const linkCategories = new Map();
 
-  for (const categoryPath of Object.values(scraperRules.categories)) {
+  for (const [categoryKey, categoryPath] of Object.entries(scraperRules.categories)) {
     const categoryLinks = await collectListingLinks(page, categoryPath);
-    categoryLinks.forEach((link) => allLinks.add(link));
+    categoryLinks.forEach((link) => {
+      if (!linkCategories.has(link)) linkCategories.set(link, categoryKey);
+    });
   }
 
-  return Array.from(allLinks);
+  return linkCategories;
 }
 
 // Ilan detay sayfasindaki ozellik tablosunu { "Marka": "Volkswagen", ... } seklinde ham etiket-deger ciftlerine cevirir.
@@ -165,13 +180,12 @@ function mapDetailPropertiesToRaw(properties, extra) {
 }
 
 // Tek bir ilan detay sayfasini cekip json-parser ile 17 alanli semaya normalize eder.
-async function scrapeListingDetail(page, url) {
+// categoryKey, ilanin hangi kategori listesinden kesfedildigini belirtir (arac_turu icin kullanilir).
+async function scrapeListingDetail(page, url, categoryKey) {
   await page.goto(url, { waitUntil: 'domcontentloaded' });
 
   const ilanNo = url.split('/').filter(Boolean).pop();
-  const kategori = await page
-    .$eval(scraperRules.detailPage.titleSelector, (el) => el.textContent.trim())
-    .catch(() => null);
+  const kategori = CATEGORY_LABELS[categoryKey] || null;
   const fiyat = await page
     .$eval(scraperRules.detailPage.priceSelector, (el) => el.textContent.trim())
     .catch(() => null);
@@ -199,12 +213,12 @@ async function run() {
   await producer.connect();
 
   try {
-    const links = await collectAllListingLinks(page);
-    console.log(`${links.length} ilan linki bulundu.`);
+    const linkCategories = await collectAllListingLinks(page);
+    console.log(`${linkCategories.size} ilan linki bulundu.`);
 
-    for (const link of links) {
+    for (const [link, categoryKey] of linkCategories) {
       try {
-        const listing = await withRetry(() => scrapeListingDetail(page, link));
+        const listing = await withRetry(() => scrapeListingDetail(page, link, categoryKey));
         await publishListing(producer, listing);
         console.log(`Yayinlandi: ${listing.ilan_id}`);
       } catch (err) {

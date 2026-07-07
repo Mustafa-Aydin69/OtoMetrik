@@ -12,7 +12,6 @@
     "maxPagesPerCategory": 50
   },
   "detailPage": {
-    "titleSelector": "h1",
     "priceSelector": ".desktop-information-price",
     "propertiesTableSelector": ".property-item"
   },
