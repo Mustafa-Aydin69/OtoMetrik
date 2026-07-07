@@ -7,7 +7,6 @@ from utils.normalize import normalize_dataframe
 from utils.text_cleaner import (
     parse_boya_degisen,
     parse_kilometre,
-    parse_number,
     parse_price_tl,
     parse_turkish_date,
 )
@@ -66,8 +65,8 @@ def load_arabalar():
         'paket': df['Model'],
         'kasa_turu': df['Kasa Tipi'],
         'renk': df['Renk'],
-        'motor_hacmi': df['Motor Hacmi'].apply(parse_number),
-        'motor_gucu': df['Motor Gücü'].apply(parse_number),
+        'motor_hacmi': df['Motor Hacmi'],
+        'motor_gucu': df['Motor Gücü'],
         'yil': df['Yıl'],
         'kilometre': df['Kilometre'].apply(parse_kilometre),
         'yakit_turu': df['Yakıt Tipi'],
