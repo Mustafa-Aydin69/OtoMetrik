@@ -1,7 +1,8 @@
-// Minivan & Panelvan kategorisi icin tek gecislik deneme (https://www.arabam.com/ikinci-el/minivan-panelvan).
-// Site sayfalamayi 50. sayfada kesiyor (sayfa basina 20 benzersiz ilan) - yani bu kategoride
-// gorunen 34.719 ilanin sadece ~1.000'ine tek gecişte erisilebiliyor, geri kalani filtreli
-// alt-dilim taramasi gerektirir (bu script'in kapsami disinda). Ev IP'siyle dogrudan baglanti,
+// Minivan & Panelvan kategorisi icin genisletilmis gecis (https://www.arabam.com/ikinci-el/minivan-panelvan).
+// Site sayfalamayi 50. sayfada kesiyor. "?take=50" ile sayfa basina 50 ilan gelir (varsayilan 20
+// yerine) ve site "sonraki sayfa" linklerinde bunu korur - boylece 50x50=~2.500 benzersiz ilana
+// kadar erisilebiliyor (once take=20 ile ~1.000'ini zaten cektik). Zaten CSV'de olanlar agdan
+// cekilmeden atlandigi icin onceki ~940 kayit tekrar indirilmez. Ev IP'siyle dogrudan baglanti,
 // Kafka'ya dokunmadan CsvWriter ile data/output/arabam_test_val.csv'ye ekler.
 require('dotenv').config();
 const { CsvWriter } = require('../src/consumers/csv-writer');
@@ -14,7 +15,7 @@ const {
   politeDelay,
 } = require('../src/producers/arabam-scraper');
 
-const CATEGORY_PATH = '/ikinci-el/minivan-panelvan';
+const CATEGORY_PATH = '/ikinci-el/minivan-panelvan?take=50';
 const CATEGORY_KEY = 'minivan_panelvan';
 
 async function run() {

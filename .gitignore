@@ -6,3 +6,4 @@ data/raw/*
 data/output/*
 !data/output/.gitkeep
 /kaggle
+CLAUDE.md
