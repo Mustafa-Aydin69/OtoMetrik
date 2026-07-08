@@ -70,15 +70,19 @@ async function blockUnnecessaryResources(page) {
   });
 }
 
+// Proxy artik tarayici degil, context seviyesinde atanir (bkz. createContext) - boylece
+// ayni tarayici acikken bile context'i yeniden kurarak farkli statik IP'lere gecebiliriz.
 async function launchBrowser() {
-  const proxy = getProxyConfig();
-  const browser = await chromium.launch({
-    headless: true,
-    proxy: proxy || undefined,
-  });
-
-  const context = await browser.newContext({ userAgent: USER_AGENT });
+  const browser = await chromium.launch({ headless: true });
+  const context = await createContext(browser);
   return { browser, context };
+}
+
+// Proxy havuzundan (config/proxy-config.js) bir sonraki IP ile yeni bir context acar.
+// Chromium context seviyesinde proxy override'i destekler, tek tarayiciyla rotasyon yapabiliriz.
+async function createContext(browser) {
+  const proxy = getProxyConfig();
+  return browser.newContext({ userAgent: USER_AGENT, proxy: proxy || undefined });
 }
 
 async function createPage(context) {
@@ -206,17 +210,23 @@ async function publishListing(producer, listing) {
 }
 
 // Uctan uca akis: linkleri topla, her ilani cek, normalize et, Kafka'ya gonder.
+// listPage.listingLinkSelector'i toplarken kullanilan page/context sabit kalir; sadece detay
+// kazima dongusunde config'deki proxyRotation.listingsPerProxy'e gore context (ve proxy) yenilenir.
 async function run() {
-  const { browser, context } = await launchBrowser();
-  const page = await createPage(context);
+  const { browser, context: initialContext } = await launchBrowser();
+  let context = initialContext;
+  let page = await createPage(context);
 
   const producer = kafka.producer();
+  const listingsPerProxy = scraperRules.proxyRotation?.listingsPerProxy;
+
   await producer.connect();
 
   try {
     const linkCategories = await collectAllListingLinks(page);
     console.log(`${linkCategories.size} ilan linki bulundu.`);
 
+    let processed = 0;
     for (const [link, categoryKey] of linkCategories) {
       try {
         const listing = await withRetry(() => scrapeListingDetail(page, link, categoryKey));
@@ -226,9 +236,17 @@ async function run() {
         console.error(`Ilan cekilemedi (${link}):`, err.message);
       } finally {
         await politeDelay();
+        processed += 1;
+
+        if (listingsPerProxy && processed % listingsPerProxy === 0) {
+          await context.close();
+          context = await createContext(browser);
+          page = await createPage(context);
+        }
       }
     }
   } finally {
+    await context.close();
     await producer.disconnect();
     await browser.close();
   }
@@ -243,6 +261,7 @@ if (require.main === module) {
 
 module.exports = {
   launchBrowser,
+  createContext,
   createPage,
   blockUnnecessaryResources,
   sleep,

@@ -23,6 +23,9 @@
     "minDelayMs": 1500,
     "maxDelayMs": 4000
   },
+  "proxyRotation": {
+    "listingsPerProxy": 50
+  },
   "retry": {
     "maxAttempts": 3,
     "backoffMs": 2000
