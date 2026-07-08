@@ -1,8 +1,10 @@
 # 🚀 OtoMetrik: Uçtan Uca Araç Fiyat Tahminleme ve Veri Hattı
 
-**OtoMetrik**, arabam.com'dan yüksek performanslı asenkron web kazıma teknikleriyle güncel piyasa verilerini toplayan, bunu açık (public) bir referans veri setiyle harmanlayan, temizleyen ve makine öğrenmesi modelleri için yapılandırılmış veri setlerine dönüştüren gelişmiş bir büyük veri hattı (Data Pipeline) projesidir.
+**OtoMetrik**, hedef ikinci el araç ilan platformundan yüksek performanslı asenkron web kazıma teknikleriyle güncel piyasa verilerini toplayan, bunu açık (public) bir referans veri setiyle harmanlayan, temizleyen ve makine öğrenmesi modelleri için yapılandırılmış veri setlerine dönüştüren gelişmiş bir büyük veri hattı (Data Pipeline) projesidir.
 
 Sistem; birbirinden tamamen izole edilmiş (decoupled) mikroservis bileşenleri etrafında inşa edilmiştir. Playwright ile toplanan ham veriler, anlık olarak normalize edilip Apache Kafka aracılığıyla asenkron bir akışa dahil edilir. Bu mimari, sistemin hız limitlerine takılmasını engeller, olası kesintilerde veri kaybını sıfıra indirir ve uçtan uca güvenilir bir veri işleme süreci sunar.
+
+> **Mimari Notu:** Sahibinden.com'un anti-bot koruması (Cloudflare/Kasada/DataDome) canlı kazıma için pratikte aşılamayacak kadar güçlü olduğundan bu platform kapsam dışı bırakılmıştır. Bunun yerine eğitim (train) verisi açık/herkese açık bir referans veri setinden, test/doğrulama verisi ise arabam.com'dan canlı kazınarak elde edilir.
 
 Projenin temel misyonu; Türkiye otomobil piyasasındaki Otomobil, SUV, Minivan & Panelvan ve Elektrikli Araçlar kategorilerini analiz edip çapraz kaynak doğrulamalı (Cross-Source Validation) fiyat tahminleme modelleri (Machine Learning) için eğitim (Train) ve test (Validation/Test) kümeleri oluşturmaktır.
 
@@ -10,11 +12,11 @@ Projenin temel misyonu; Türkiye otomobil piyasasındaki Otomobil, SUV, Minivan 
 
 ## ✨ Öne Çıkan Özellikler (Features)
 
-*   **🛡️ Bot Engeli Toleransı:** Playwright ve Bright Data Browser API entegrasyonu sayesinde arabam.com üzerindeki temel anti-bot kontrolleri otonom olarak tolere edilir. (Not: Sahibinden.com'un Cloudflare/Kasada/DataDome katmanlı koruması canlı kazıma için kapsam dışıdır.)
+*   **🛡️ Bot Engeli Toleransı:** Playwright ve Bright Data Browser API entegrasyonu sayesinde hedef platform üzerindeki temel anti-bot kontrolleri otonom olarak tolere edilir. (Not: Cloudflare/Kasada/DataDome gibi katmanlı korumaya sahip bazı platformlar canlı kazıma için kapsam dışıdır.)
 *   **⚡ Ağ Trafiği ve Performans Optimizasyonu:** Tarayıcı seviyesinde alınan aksiyonlarla; resimler, reklamlar, fontlar ve gereksiz medya bileşenleri render edilmeden engellenir, böylece hız maksimize edilirken bant genişliği maliyeti minimize edilir.
 *   **🎢 Apache Kafka ile Asenkron Veri İletimi:** Mesaj kuyruğu mekanizması bir "amortisör" görevi üstlenerek scraper'ın yüksek hızlı çıktılarını dengeler, bot engellemeleri anında dahi veri kaybını önler ve güvenli aktarım sağlar.
 *   **🧹 Akıllı Metin Temizleme ve Standardizasyon:** Gelen düzensiz (unstructured) veriler (Örn: "750.000 TL" veya "68.000 km"), Regex tabanlı çalışan parser katmanıyla temizlenir. Canlı kazınan veri ile açık veri seti arasındaki sözlükler normalize edilerek kaynaklar arası veri uyumsuzluğu (Data Mismatch) kesin olarak çözülür.
-*   **🎯 Çapraz Kaynak Doğrulaması (Cross-Source Validation):** Model over-fitting (aşırı öğrenme) riskini ortadan kaldırmak için eğitim verileri açık/herkese açık bir referans veri setinden (Train), test ve doğrulama verileri ise arabam.com'dan canlı kazınarak (Test/Val) elde edilir. Bu yaklaşım aynı zamanda modelin zaman içindeki piyasa kaymasına (distribution shift) karşı genelleme başarısını da sınar.
+*   **🎯 Çapraz Kaynak Doğrulaması (Cross-Source Validation):** Model over-fitting (aşırı öğrenme) riskini ortadan kaldırmak için eğitim verileri açık/herkese açık bir referans veri setinden (Train), test ve doğrulama verileri ise hedef ilan platformundan canlı kazınarak (Test/Val) elde edilir. Bu yaklaşım aynı zamanda modelin zaman içindeki piyasa kaymasına (distribution shift) karşı genelleme başarısını da sınar.
 
 ---
 

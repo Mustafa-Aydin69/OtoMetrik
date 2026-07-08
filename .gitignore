@@ -1,6 +1,6 @@
 node_modules/
 .env
-.env.example    
+.env.example
 data/raw/*
 !data/raw/.gitkeep
 data/output/*

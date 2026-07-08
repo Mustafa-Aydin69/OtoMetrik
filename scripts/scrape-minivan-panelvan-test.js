@@ -1,8 +1,8 @@
-// Elektrikli araclar kategorisi (891 ilan, https://www.arabam.com/ikinci-el/otomobil-elektrik)
-// icin kucuk olcekli deneme. Eski sisteme donuldu: proxy denemeleri (Webshare, Bright Data ISP,
-// Bright Data Scraping Browser) iptal edildi, dogrudan ev IP'siyle baglaniliyor (dunku 1903
-// kayitlik basarili kazimayla ayni yontem). Kafka'ya dokunmadan dogrudan CsvWriter ile
-// data/output/arabam_test_val.csv'ye ekler.
+// Minivan & Panelvan kategorisi icin tek gecislik deneme (https://www.arabam.com/ikinci-el/minivan-panelvan).
+// Site sayfalamayi 50. sayfada kesiyor (sayfa basina 20 benzersiz ilan) - yani bu kategoride
+// gorunen 34.719 ilanin sadece ~1.000'ine tek gecişte erisilebiliyor, geri kalani filtreli
+// alt-dilim taramasi gerektirir (bu script'in kapsami disinda). Ev IP'siyle dogrudan baglanti,
+// Kafka'ya dokunmadan CsvWriter ile data/output/arabam_test_val.csv'ye ekler.
 require('dotenv').config();
 const { CsvWriter } = require('../src/consumers/csv-writer');
 const {
@@ -14,8 +14,8 @@ const {
   politeDelay,
 } = require('../src/producers/arabam-scraper');
 
-const CATEGORY_PATH = '/ikinci-el/otomobil-elektrik';
-const CATEGORY_KEY = 'elektrikli';
+const CATEGORY_PATH = '/ikinci-el/minivan-panelvan';
+const CATEGORY_KEY = 'minivan_panelvan';
 
 async function run() {
   const { browser, context } = await launchBrowser();
@@ -31,8 +31,6 @@ async function run() {
     for (const link of links) {
       processed += 1;
 
-      // Onceki (kesintiye ugramis) calismadan zaten CSV'de olan ilanlari agdan hic cekmeden
-      // atla - "kaldigi yerden devam" hizli olsun diye, ayni ilani tekrar indirmeye gerek yok.
       const ilanId = link.split('/').filter(Boolean).pop();
       if (csvWriter.seenIds.has(ilanId)) {
         console.log(`[${processed}/${links.length}] ${ilanId} zaten vardi (atlandi, cekilmedi)`);

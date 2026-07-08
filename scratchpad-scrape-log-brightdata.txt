@@ -1,0 +1,11 @@
+Test kazima basarisiz: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://www.arabam.com/ikinci-el/otomobil-elektrik?page=2", waiting until "domcontentloaded"[22m
+
+    at collectListingLinks (C:\Users\MSI-KATANA\Desktop\OtoMetric\src\producers\arabam-scraper.js:135:16)
+    at async run (C:\Users\MSI-KATANA\Desktop\OtoMetric\scripts\scrape-elektrikli-test.js:35:19) {
+  log: [
+    '  - navigating to "https://www.arabam.com/ikinci-el/otomobil-elektrik?page=2", waiting until "domcontentloaded"'
+  ],
+  name: 'TimeoutError'
+}
