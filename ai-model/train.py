@@ -10,17 +10,29 @@ veri kaynagimizin kendi kazidigimiz arabam_test_val.csv'yi de icerdigi icin gerc
 data/output/cars1_normalized.csv'dir (bkz. roadmap Faz 5 karari) - bu modul + evaluate.py
 (Faz 11) o veriyi kullanacak.
 
-Sonraki maddeler (hiperparametre ayari, final egitim, model+encoding serialize, smoke-test)
-bu modul uzerine insa edilecek.
+Faz 10 Madde 3: final model artik train_dataset.csv'nin TAMAMIYLA (80/20 ic dogrulama split'i
+degil) egitiliyor - Madde 2'de secilen baseline hiperparametreleriyle (tuning'de anlamli bir
+kazanc bulunamadi). Ic split zaten yalnizca hiperparametre secimi icindi; secim netlestikten
+sonra elimizdeki her satiri final modele vermek genelleme performansini artirir. Gercek
+degerlendirme, egitimde hic gorulmemis dis holdout'ta (cars1_normalized.csv) yapilir.
+
+Sonraki maddeler (model+encoding serialize, smoke-test) bu modul uzerine insa edilecek.
 """
 import os
 
 import numpy as np
 import pandas as pd
+from lightgbm import LGBMRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 from preprocess import CURRENT_YEAR, DROP_COLS, UNKNOWN_FLAG_COLS, load_clean_train_dataset, split_features_target
 
 CATEGORICAL_COLS = ['marka', 'model', 'paket', 'kasa_turu', 'renk', 'yakit_turu', 'vites']
+
+# Madde 2 (tune_lightgbm.py) sonucu: genisletilmis arama platoyu asamadi, varsayilan
+# hiperparametreler korunuyor.
+BASELINE_PARAMS = dict(n_estimators=400, max_depth=8, learning_rate=0.05,
+                        random_state=42, n_jobs=-1, verbose=-1)
 
 BASE_DIR = os.path.join(os.path.dirname(__file__), '..')
 CARS1_HOLDOUT_PATH = os.path.join(BASE_DIR, 'data', 'output', 'cars1_normalized.csv')
@@ -107,6 +119,33 @@ def prepare_external_holdout(X_train):
     return X_holdout, y_holdout
 
 
+# Ic 80/20 split olmadan, train_dataset.csv'nin tamamini final model icin hazirlar - satir
+# sayisini artirmak genelleme performansini artirir, ic split zaten sadece Madde 2'nin
+# hiperparametre secimi icindi.
+def prepare_full_training_data():
+    df = load_clean_train_dataset()
+    y = df['fiyat']
+    X = df.drop(columns=['fiyat', 'ilan_id'])
+    for col in CATEGORICAL_COLS:
+        X[col] = X[col].astype('category')
+    return X, y
+
+
+def train_final_model():
+    X, y = prepare_full_training_data()
+    model = LGBMRegressor(**BASELINE_PARAMS)
+    model.fit(X, y)
+    return model, X, y
+
+
+def evaluate(y_true, y_pred, label):
+    mae = mean_absolute_error(y_true, y_pred)
+    rmse = np.sqrt(mean_squared_error(y_true, y_pred))
+    r2 = r2_score(y_true, y_pred)
+    print(f'{label}: MAE={mae:,.0f} RMSE={rmse:,.0f} R2={r2:.4f}')
+    return mae, rmse, r2
+
+
 def main():
     X_train, X_test, y_train, y_test = prepare_training_data()
     print(f'ic dogrulama -> train: {len(X_train)}, test: {len(X_test)}')
@@ -117,6 +156,14 @@ def main():
     print(f'  renk bilinmiyor: %{100 * X_holdout["renk"].isna().mean():.1f} (cars1de renk alani yok)')
     print(f'  agir_hasarli=0 varsayilan: %{100 * (X_holdout["agir_hasarli"] == 0).mean():.1f} '
           f'(cars1de agir_hasarli alani yok)')
+
+    print('\n--- final model (train_dataset.csv tamami + baseline hiperparametreleri) ---')
+    model, X_full, y_full = train_final_model()
+    print(f'egitim seti: {len(X_full)} kayit (ic 80/20 split degil, tum temiz veri)')
+    evaluate(y_full, model.predict(X_full), 'train (tam veri, ic gorulmus)')
+
+    X_holdout_full, y_holdout_full = prepare_external_holdout(X_full)
+    evaluate(y_holdout_full, model.predict(X_holdout_full), 'dis holdout (cars1, hic gorulmemis)')
 
 
 if __name__ == '__main__':
