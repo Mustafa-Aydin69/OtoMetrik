@@ -15,6 +15,7 @@ bu modul uzerine insa edilecek.
 """
 import os
 
+import numpy as np
 import pandas as pd
 
 from preprocess import CURRENT_YEAR, DROP_COLS, UNKNOWN_FLAG_COLS, load_clean_train_dataset, split_features_target
@@ -74,7 +75,7 @@ def load_cars1_holdout():
     df = pd.read_csv(CARS1_HOLDOUT_PATH, low_memory=False, encoding='utf-8-sig')
     df = df.rename(columns=CARS1_COLUMN_MAP).drop(columns=CARS1_EXTRA_COLS, errors='ignore')
     for col in CARS1_MISSING_COLS:
-        df[col] = None
+        df[col] = np.nan
     df['ilan_id'] = 'cars1-' + df.index.astype(str)
 
     df = df[df['fiyat'] <= df['fiyat'].quantile(0.99)]
