@@ -4,8 +4,6 @@
 
 Sistem; birbirinden tamamen izole edilmiş (decoupled) mikroservis bileşenleri etrafında inşa edilmiştir. Playwright ile toplanan ham veriler, anlık olarak normalize edilip Apache Kafka aracılığıyla asenkron bir akışa dahil edilir. Bu mimari, sistemin hız limitlerine takılmasını engeller, olası kesintilerde veri kaybını sıfıra indirir ve uçtan uca güvenilir bir veri işleme süreci sunar.
 
-> **Mimari Notu:** Sahibinden.com'un anti-bot koruması (Cloudflare/Kasada/DataDome) canlı kazıma için pratikte aşılamayacak kadar güçlü olduğundan bu platform kapsam dışı bırakılmıştır. Bunun yerine eğitim (train) verisi açık/herkese açık bir referans veri setinden, test/doğrulama verisi ise arabam.com'dan canlı kazınarak elde edilir.
-
 Projenin temel misyonu; Türkiye otomobil piyasasındaki Otomobil, SUV, Minivan & Panelvan ve Elektrikli Araçlar kategorilerini analiz edip çapraz kaynak doğrulamalı (Cross-Source Validation) fiyat tahminleme modelleri (Machine Learning) için eğitim (Train) ve test (Validation/Test) kümeleri oluşturmaktır.
 
 ---
