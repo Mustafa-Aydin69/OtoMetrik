@@ -2,26 +2,16 @@
 (Faz 8 Madde 5 karari: agac tabanli modellerde one-hot/frekans yerine dogrudan kategori
 destegi tercih edilmeli). String kolonlar 'category' dtype'a cevrilir, ikisi de bunu
 kendi ic mekanizmasiyla isler - ayri encode() adimina gerek yok.
+
+Kategori-donusum mantigi Faz 10 Madde 1'de train.py'ye tasindi (CATEGORICAL_COLS,
+to_category, prepare_training_data); bu dosya artik oradan iceri aktariyor.
 """
 import numpy as np
-import pandas as pd
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from xgboost import XGBRegressor
 
-from preprocess import load_clean_train_dataset, split_features_target
-
-CATEGORICAL_COLS = ['marka', 'model', 'paket', 'kasa_turu', 'renk', 'yakit_turu', 'vites']
-
-
-# X_test'teki kategorileri X_train'de gorulenlerle sinirlar; train'de hic gorulmemis
-# nadir degerler (orn. "Buick") NaN'a duser - XGBoost/LightGBM bunu native missing olarak isler.
-def to_category(X_train, X_test):
-    X_train, X_test = X_train.copy(), X_test.copy()
-    for col in CATEGORICAL_COLS:
-        X_train[col] = X_train[col].astype('category')
-        X_test[col] = X_test[col].astype('category').cat.set_categories(X_train[col].cat.categories)
-    return X_train, X_test
+from train import CATEGORICAL_COLS, prepare_training_data
 
 
 def evaluate(y_true, y_pred, label):
@@ -33,9 +23,7 @@ def evaluate(y_true, y_pred, label):
 
 
 def main():
-    df = load_clean_train_dataset()
-    X_train, X_test, y_train, y_test = split_features_target(df)
-    X_train_c, X_test_c = to_category(X_train, X_test)
+    X_train_c, X_test_c, y_train, y_test = prepare_training_data()
 
     print('--- XGBoost ---')
     xgb = XGBRegressor(n_estimators=400, max_depth=8, learning_rate=0.05,
