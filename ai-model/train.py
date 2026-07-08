@@ -16,10 +16,16 @@ kazanc bulunamadi). Ic split zaten yalnizca hiperparametre secimi icindi; secim 
 sonra elimizdeki her satiri final modele vermek genelleme performansini artirir. Gercek
 degerlendirme, egitimde hic gorulmemis dis holdout'ta (cars1_normalized.csv) yapilir.
 
-Sonraki maddeler (model+encoding serialize, smoke-test) bu modul uzerine insa edilecek.
+Faz 10 Madde 4: model + encoding artefaktlari (kategori sutunlari, her sutunun train'de
+gorulen kategori seti, ozellik sutun sirasi) tek bir joblib dosyasinda birlikte serialize
+edilir - evaluate.py (Faz 11) egitim kodunu tekrar calistirmadan ayni donusumu uygulayabilsin.
+
+Faz 10 Madde 5: kaydedilen artefakt geri yuklenip, egitimde hic kullanilmamis bir ornek
+uzerinde smoke-test edilir (bkz. smoke_test()).
 """
 import os
 
+import joblib
 import numpy as np
 import pandas as pd
 from lightgbm import LGBMRegressor
@@ -36,6 +42,7 @@ BASELINE_PARAMS = dict(n_estimators=400, max_depth=8, learning_rate=0.05,
 
 BASE_DIR = os.path.join(os.path.dirname(__file__), '..')
 CARS1_HOLDOUT_PATH = os.path.join(BASE_DIR, 'data', 'output', 'cars1_normalized.csv')
+MODEL_PATH = os.path.join(BASE_DIR, 'models', 'lightgbm_final.joblib')
 
 # cars1_normalized.csv kendi ham kaggle/cars1.csv sutun adlarini korur (normalize_datasets.py
 # sadece degerleri normalize eder, semaya map etmez) - train_dataset.csv'nin kanonik semasina
@@ -146,6 +153,48 @@ def evaluate(y_true, y_pred, label):
     return mae, rmse, r2
 
 
+# Model + encoding artefaktlarini (kategori sutunlari, train'de gorulen kategori seti,
+# ozellik sutun sirasi) tek dosyada birlikte kaydeder - evaluate.py (Faz 11) train.py'yi
+# tekrar calistirmadan ayni donusumu apply_saved_categories() ile uygulayabilir.
+def save_model(model, X_full):
+    os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
+    artifact = {
+        'model': model,
+        'categorical_cols': CATEGORICAL_COLS,
+        'category_sets': {col: X_full[col].cat.categories for col in CATEGORICAL_COLS},
+        'feature_columns': list(X_full.columns),
+    }
+    joblib.dump(artifact, MODEL_PATH)
+    return MODEL_PATH
+
+
+def load_model():
+    return joblib.load(MODEL_PATH)
+
+
+# Kaydedilen artefaktla, egitimde kullanilan X_full nesnesine erisimi olmayan bir cagiran
+# (orn. evaluate.py) icin ham bir X'i modelin bekledigi sutun sirasina/kategori setine
+# hizalar.
+def apply_saved_categories(X, artifact):
+    X = X.reindex(columns=artifact['feature_columns']).copy()
+    for col in artifact['categorical_cols']:
+        X[col] = X[col].astype('category').cat.set_categories(artifact['category_sets'][col])
+    return X
+
+
+# Faz 10 Madde 5: diskten geri yuklenen artefaktin, egitimde hic kullanilmamis dis holdout'un
+# ilk kaydinda bellek-ici modelle ayni tahmini urettigini dogrular.
+def smoke_test():
+    artifact = load_model()
+    df = load_cars1_holdout()
+    sample = df.drop(columns=['fiyat', 'ilan_id']).iloc[[0]]
+    sample_aligned = apply_saved_categories(sample, artifact)
+    pred = artifact['model'].predict(sample_aligned)[0]
+    actual = df['fiyat'].iloc[0]
+    print(f'smoke-test -> yeniden yuklenen model tahmini: {pred:,.0f} (gercek fiyat: {actual:,.0f})')
+    return pred
+
+
 def main():
     X_train, X_test, y_train, y_test = prepare_training_data()
     print(f'ic dogrulama -> train: {len(X_train)}, test: {len(X_test)}')
@@ -164,6 +213,10 @@ def main():
 
     X_holdout_full, y_holdout_full = prepare_external_holdout(X_full)
     evaluate(y_holdout_full, model.predict(X_holdout_full), 'dis holdout (cars1, hic gorulmemis)')
+
+    model_path = save_model(model, X_full)
+    print(f'\nmodel kaydedildi: {model_path}')
+    smoke_test()
 
 
 if __name__ == '__main__':

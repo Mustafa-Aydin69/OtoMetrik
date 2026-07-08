@@ -5,5 +5,7 @@ data/raw/*
 !data/raw/.gitkeep
 data/output/*
 !data/output/.gitkeep
+models/*
+!models/.gitkeep
 /kaggle
 CLAUDE.md
