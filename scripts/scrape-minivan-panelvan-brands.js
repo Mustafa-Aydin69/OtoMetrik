@@ -20,11 +20,11 @@ const CATEGORY_KEY = 'minivan_panelvan';
 
 // linkler.txt'de kullanicinin verdigi marka sayfalari (fiyat/marka filtresi ile).
 const BRANDS = [
-  'citroen',
-  'dacia',
-  'fiat',
-  'ford',
-  'hyundai',
+  //'citroen',
+  //'dacia',
+  //'fiat',
+  //'ford',
+  //'hyundai',
   'mercedes-benz',
   'mitsubishi',
   'opel',
