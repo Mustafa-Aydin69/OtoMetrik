@@ -5,6 +5,14 @@
 // oldugu icin, kategoriyi markaya gore dilimleyerek cok daha fazla benzersiz ilana ulasabiliyoruz
 // (kullanicinin linkler.txt'de verdigi marka basi ilan sayilarina gore tahmini ~19.000).
 // Zaten CSV'de olan ilanlar agdan cekilmeden atlaniyor (ayni resume garantisi).
+//
+// Bazi markalar (Fiat 9.970, Ford 8.065, VW 4.652, Peugeot 2.915, Renault 2.531) tek basina
+// da 2.500 sinirini asiyor (Renault'da canli dogrulandi: 2.531 ilanin sadece 2.500'u islendi).
+// Bu markalar icin markayi ayrica YIL araligina gore diliyoruz - arabam.com "minYear"/"maxYear"
+// query paramlarini destekliyor (kullanicinin verdigi ornek: .../peugeot?minYear=2023). Yil,
+// km'nin aksine ilanin degismez ozelligi oldugu icin dilim sinirlari tekrar calistirmalarda
+// kararli kalir. Dilimler CsvWriter.seenIds ile ilan_id bazinda tekillestigi icin cakismalari
+// sorun degil - sadece "bosluk" (hicbir dilime dusmeyen ilan) birakmamak yeterli.
 require('dotenv').config();
 const { CsvWriter } = require('../src/consumers/csv-writer');
 const {
@@ -18,26 +26,39 @@ const {
 
 const CATEGORY_KEY = 'minivan_panelvan';
 
-// linkler.txt'de kullanicinin verdigi marka sayfalari (fiyat/marka filtresi ile).
-const BRANDS = [
-  //'citroen',
-  //'dacia',
-  //'fiat',
-  //'ford',
-  //'hyundai',
-  //'mercedes-benz',
-  //'mitsubishi',
-  //'opel',
-  //'peugeot',
-  'renault',
-  //'toyota',
-  //'volkswagen',
+// linkler.txt'de kullanicinin verdigi marka sayfalari, gerektiginde yil dilimiyle birlikte.
+// Her eleman { brand, minYear?, maxYear? } - minYear/maxYear yoksa markanin tamami tek dilimde
+// cekilir (2.500 altinda kalan markalar icin yeterli).
+const SLICES = [
+  //{ brand: 'citroen' },
+  //{ brand: 'dacia' },
+  //{ brand: 'fiat' },
+  //{ brand: 'ford' },
+  //{ brand: 'hyundai' },
+  //{ brand: 'mercedes-benz' },
+  //{ brand: 'mitsubishi' },
+  //{ brand: 'opel' },
+  { brand: 'peugeot', minYear: 2023 },
+  //{ brand: 'renault' },
+  //{ brand: 'toyota' },
+  //{ brand: 'volkswagen' },
 ];
 
-async function scrapeBrand(page, csvWriter, brand) {
-  const categoryPath = `/ikinci-el/minivan-panelvan/${brand}?take=50`;
+function sliceLabel(slice) {
+  if (slice.minYear && slice.maxYear) return `${slice.brand} (${slice.minYear}-${slice.maxYear})`;
+  if (slice.minYear) return `${slice.brand} (${slice.minYear}+)`;
+  if (slice.maxYear) return `${slice.brand} (-${slice.maxYear})`;
+  return slice.brand;
+}
+
+async function scrapeBrand(page, csvWriter, slice) {
+  const label = sliceLabel(slice);
+  let categoryPath = `/ikinci-el/minivan-panelvan/${slice.brand}?take=50`;
+  if (slice.minYear) categoryPath += `&minYear=${slice.minYear}`;
+  if (slice.maxYear) categoryPath += `&maxYear=${slice.maxYear}`;
+
   const links = await collectListingLinks(page, categoryPath);
-  console.log(`\n=== ${brand}: ${links.length} ilan linki bulundu ===`);
+  console.log(`\n=== ${label}: ${links.length} ilan linki bulundu ===`);
 
   let processed = 0;
   let written = 0;
@@ -46,7 +67,7 @@ async function scrapeBrand(page, csvWriter, brand) {
 
     const ilanId = link.split('/').filter(Boolean).pop();
     if (csvWriter.seenIds.has(ilanId)) {
-      console.log(`[${brand} ${processed}/${links.length}] ${ilanId} zaten vardi (atlandi, cekilmedi)`);
+      console.log(`[${label} ${processed}/${links.length}] ${ilanId} zaten vardi (atlandi, cekilmedi)`);
       continue;
     }
 
@@ -54,7 +75,7 @@ async function scrapeBrand(page, csvWriter, brand) {
       const listing = await withRetry(() => scrapeListingDetail(page, link, CATEGORY_KEY));
       const isNew = await csvWriter.writeListing(listing);
       if (isNew) written += 1;
-      console.log(`[${brand} ${processed}/${links.length}] ${listing.ilan_id} ${isNew ? 'yazildi' : 'zaten vardi (atlandi)'}`);
+      console.log(`[${label} ${processed}/${links.length}] ${listing.ilan_id} ${isNew ? 'yazildi' : 'zaten vardi (atlandi)'}`);
     } catch (err) {
       console.error(`Ilan cekilemedi (${link}):`, err.message);
     } finally {
@@ -62,8 +83,8 @@ async function scrapeBrand(page, csvWriter, brand) {
     }
   }
 
-  console.log(`--- ${brand} tamamlandi: ${written} yeni kayit (${processed} ilan islendi) ---`);
-  return { brand, processed, written };
+  console.log(`--- ${label} tamamlandi: ${written} yeni kayit (${processed} ilan islendi) ---`);
+  return { label, processed, written };
 }
 
 async function run() {
@@ -73,8 +94,8 @@ async function run() {
 
   const results = [];
   try {
-    for (const brand of BRANDS) {
-      const result = await scrapeBrand(page, csvWriter, brand);
+    for (const slice of SLICES) {
+      const result = await scrapeBrand(page, csvWriter, slice);
       results.push(result);
       await politeDelay();
     }
@@ -87,7 +108,7 @@ async function run() {
   const totalProcessed = results.reduce((sum, r) => sum + r.processed, 0);
   console.log('\n=== OZET ===');
   for (const r of results) {
-    console.log(`${r.brand}: ${r.written} yeni / ${r.processed} islendi`);
+    console.log(`${r.label}: ${r.written} yeni / ${r.processed} islendi`);
   }
   console.log(`TOPLAM: ${totalWritten} yeni kayit yazildi (${totalProcessed} ilan islendi).`);
 }
