@@ -29,9 +29,9 @@ const BRANDS = [
   //'mitsubishi',
   //'opel',
   //'peugeot',
-  //'renault',
-  'toyota',
-  'volkswagen',
+  'renault',
+  //'toyota',
+  //'volkswagen',
 ];
 
 async function scrapeBrand(page, csvWriter, brand) {
