@@ -27,9 +27,9 @@ const BRANDS = [
   //'hyundai',
   //'mercedes-benz',
   //'mitsubishi',
-  'opel',
-  'peugeot',
-  'renault',
+  //'opel',
+  //'peugeot',
+  //'renault',
   'toyota',
   'volkswagen',
 ];

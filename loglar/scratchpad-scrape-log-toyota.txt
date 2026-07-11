@@ -1,0 +1,12 @@
+
+=== toyota: 255 ilan linki bulundu ===
+[toyota 1/255] 41486257 zaten vardi (atlandi, cekilmedi)
+[toyota 2/255] 41665442 zaten vardi (atlandi, cekilmedi)
+[toyota 3/255] 38599397 yazildi
+[toyota 4/255] 39065900 zaten vardi (atlandi, cekilmedi)
+[toyota 5/255] 37664816 zaten vardi (atlandi, cekilmedi)
+[toyota 6/255] 41567485 yazildi
+[toyota 7/255] 41269153 yazildi
+[toyota 8/255] 41197670 yazildi
+[toyota 9/255] 41193251 yazildi
+[toyota 10/255] 41946410 yazildi
