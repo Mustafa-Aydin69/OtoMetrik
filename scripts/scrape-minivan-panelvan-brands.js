@@ -39,7 +39,7 @@ const SLICES = [
   //{ brand: 'mitsubishi' },
   //{ brand: 'opel' },
   //{ brand: 'peugeot', minYear: 2023 },
-  { brand: 'peugeot', maxYear: 2023 },
+  //{ brand: 'peugeot', maxYear: 2023 },
   //{ brand: 'renault' },
   //{ brand: 'toyota' },
   //{ brand: 'volkswagen' },
