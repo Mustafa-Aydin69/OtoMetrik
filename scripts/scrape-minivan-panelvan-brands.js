@@ -32,8 +32,6 @@ const CATEGORY_KEY = 'minivan_panelvan';
 const SLICES = [
   //{ brand: 'citroen' },
   //{ brand: 'dacia' },
-  //{ brand: 'fiat' },
-  //{ brand: 'ford' },
   //{ brand: 'hyundai' },
   //{ brand: 'mercedes-benz' },
   //{ brand: 'mitsubishi' },
@@ -42,7 +40,18 @@ const SLICES = [
   //{ brand: 'peugeot', maxYear: 2023 },
   //{ brand: 'renault' },
   //{ brand: 'toyota' },
-  //{ brand: 'volkswagen' },
+  //{ brand: 'fiat', maxYear: 2010 },
+  //{ brand: 'fiat', minYear: 2010, maxYear: 2013 },
+  //{ brand: 'fiat', minYear: 2013, maxYear: 2016 },
+  //{ brand: 'fiat', minYear: 2016, maxYear: 2020 },
+  //{ brand: 'fiat', minYear: 2020, maxYear: 2023 },
+  //{ brand: 'fiat', minYear: 2023 },
+  //{ brand: 'ford', maxYear: 2013 },
+  //{ brand: 'ford', minYear: 2013, maxYear: 2018 },
+  //{ brand: 'ford', minYear: 2018, maxYear: 2022 },
+  //{ brand: 'ford', minYear: 2022 },
+  { brand: 'volkswagen', maxYear: 2014 },
+  { brand: 'volkswagen', minYear: 2014 },
 ];
 
 function sliceLabel(slice) {

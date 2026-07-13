@@ -7,9 +7,12 @@ https://www.arabam.com/ikinci-el/minivan-panelvan/opel      1.333 ilan          
 https://www.arabam.com/ikinci-el/minivan-panelvan/toyota    258 ilan                ÇEKİLDİ
 https://www.arabam.com/ikinci-el/minivan-panelvan/renault   2.531 ilan              ÇEKİLDİ 
 https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?minYear=2023              ÇEKİLDİ
+https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot   2.915 ilan              ÇEKİLDİ      
+https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?maxYear=2023              ÇEKİLDİ
 
 
-https://www.arabam.com/ikinci-el/minivan-panelvan/fiat      9.970 ilan              
+
+fiat     9.970 ilan              
 https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?maxYear=2010
 https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2010&maxYear=2013
 https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2013&maxYear=2016
@@ -18,17 +21,14 @@ https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2020&maxYear=2023
 https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2023
 
 
-https://www.arabam.com/ikinci-el/minivan-panelvan/ford      8.065 ilan              
+Ford 8.065 ilan              
 https://www.arabam.com/ikinci-el/minivan-panelvan/ford?maxYear=2013
 https://www.arabam.com/ikinci-el/minivan-panelvan/ford?minYear=2013&maxYear=2018
 https://www.arabam.com/ikinci-el/minivan-panelvan/ford?minYear=2018&maxYear=2022
 https://www.arabam.com/ikinci-el/minivan-panelvan/ford?minYear=2022
 
 
-https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot   2.915 ilan              
-https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?maxYear=2023
 
-
-https://www.arabam.com/ikinci-el/minivan-panelvan/volkswagen 4.652 ilan             
+volkswagen 4.652 ilan             
 https://www.arabam.com/ikinci-el/minivan-panelvan/volkswagen?maxYear=2014
 https://www.arabam.com/ikinci-el/minivan-panelvan/volkswagen?minYear=2014
