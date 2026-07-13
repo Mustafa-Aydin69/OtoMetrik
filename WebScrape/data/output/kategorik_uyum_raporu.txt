@@ -1,0 +1,45 @@
+======================================================================
+ALAN: yakit_turu
+======================================================================
+deger                                    kac kaynakta    kaynaklar
+----------------------------------------------------------------------
+Benzin                                   3               train_dataset, arabam_test_val, cars1
+Dizel                                    3               train_dataset, arabam_test_val, cars1
+Hibrit                                   3               train_dataset, arabam_test_val, cars1
+LPG & Benzin                             3               train_dataset, arabam_test_val, cars1
+Elektrik                                 2               train_dataset, cars1
+nan                                      1               train_dataset
+
+-> 6 benzersiz deger, 2 tanesi tum kaynaklarda ortak degil.
+
+======================================================================
+ALAN: vites
+======================================================================
+deger                                    kac kaynakta    kaynaklar
+----------------------------------------------------------------------
+Düz                                      3               train_dataset, arabam_test_val, cars1
+Otomatik                                 3               train_dataset, arabam_test_val, cars1
+Yarı Otomatik                            3               train_dataset, arabam_test_val, cars1
+nan                                      1               train_dataset
+
+-> 4 benzersiz deger, 1 tanesi tum kaynaklarda ortak degil.
+
+======================================================================
+ALAN: kasa_turu
+======================================================================
+deger                                    kac kaynakta    kaynaklar
+----------------------------------------------------------------------
+Coupe                                    3               train_dataset, arabam_test_val, cars1
+Hatchback/3                              3               train_dataset, arabam_test_val, cars1
+Hatchback/5                              3               train_dataset, arabam_test_val, cars1
+Sedan                                    3               train_dataset, arabam_test_val, cars1
+-                                        2               train_dataset, cars1
+Cabrio                                   2               train_dataset, cars1
+MPV                                      2               train_dataset, cars1
+Pick-up                                  2               train_dataset, cars1
+Roadster                                 2               train_dataset, cars1
+SUV                                      2               train_dataset, cars1
+Station wagon                            2               train_dataset, cars1
+nan                                      1               train_dataset
+
+-> 12 benzersiz deger, 8 tanesi tum kaynaklarda ortak degil.

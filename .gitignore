@@ -7,5 +7,5 @@ data/output/*
 !data/output/.gitkeep
 models/*
 !models/.gitkeep
-/kaggle
+/WebScrape/kaggle
 CLAUDE.md

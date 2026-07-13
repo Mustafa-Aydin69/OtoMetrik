@@ -1,0 +1,14 @@
+=== 1) Ayni kaynak icinde case/bosluk cakismalari ===
+train_dataset.marka: ['MINI', 'Mini']
+train_dataset.model: ['I30', 'i30']
+
+=== 2) Kaynaklar arasi marka kume farki ===
+train_dataset - arabam_test_val (65 marka): ['Acura', 'Aion', 'Alfa Romeo', 'Anadol', 'Aston Martin', 'BMW', 'BYD', 'Bentley', 'Buick', 'Cadillac', 'Chery', 'Chevrolet', 'Chrysler', 'Cupra', 'DS Automobiles', 'Daewoo', 'Daihatsu', 'Dodge', 'Ferrari', 'Ford', 'Geely', 'Honda', 'Hyundai', 'Ikco', 'Infiniti', 'Isuzu', 'Jaguar', 'Joyce', 'Kia', 'Kuba', 'Lada', 'Lamborghini', 'Lancia', 'Leapmotor', 'Lexus', 'Lincoln', 'Lotus', 'MG', 'MINI', 'Maserati', 'Mazda', 'Mercury', 'Mini', 'Mitsubishi', 'Nieve', 'Nissan', 'Pontiac', 'Porsche', 'Proton', 'RKS', 'Regal Raptor', 'Rolls-Royce', 'Rover', 'Saab', 'Smart', 'Subaru', 'Suzuki', 'Tata', 'Tesla', 'The London Taxi', 'Tofaş', 'Volta', 'Volvo', 'XEV', 'Yuki']
+train_dataset - cars1 (31 marka): ['Acura', 'Aion', 'Anadol', 'Aston Martin', 'BYD', 'Bentley', 'Buick', 'Cadillac', 'Dodge', 'Ferrari', 'Isuzu', 'Joyce', 'Kuba', 'Lamborghini', 'Leapmotor', 'Lexus', 'Lincoln', 'Lotus', 'MG', 'MINI', 'Mercury', 'Nieve', 'Pontiac', 'RKS', 'Regal Raptor', 'Rolls-Royce', 'Tesla', 'The London Taxi', 'Volta', 'XEV', 'Yuki']
+arabam_test_val - train_dataset (0 marka): []
+arabam_test_val - cars1 (0 marka): []
+cars1 - train_dataset (0 marka): []
+cars1 - arabam_test_val (34 marka): ['Alfa Romeo', 'BMW', 'Chery', 'Chevrolet', 'Chrysler', 'Cupra', 'DS Automobiles', 'Daewoo', 'Daihatsu', 'Ford', 'Geely', 'Honda', 'Hyundai', 'Ikco', 'Infiniti', 'Jaguar', 'Kia', 'Lada', 'Lancia', 'Maserati', 'Mazda', 'Mini', 'Mitsubishi', 'Nissan', 'Porsche', 'Proton', 'Rover', 'Saab', 'Smart', 'Subaru', 'Suzuki', 'Tata', 'Tofaş', 'Volvo']
+
+=== 3) Ortak markalarda model/seri fuzzy-match taramasi (yazim kaymasi mi, kapsam farki mi) ===
+Yakin-yazim eslesme bulunamadi -> tum farklar gercek kapsam farki (model o kaynakta yok), yazim tutarsizligi degil.
