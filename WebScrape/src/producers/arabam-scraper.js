@@ -132,16 +132,21 @@ async function collectListingLinks(page, categoryPath) {
     if (pageCount > 0) {
       await politeDelay();
     }
-    await page.goto(currentUrl, { waitUntil: 'domcontentloaded' });
+    try {
+      await withRetry(() => page.goto(currentUrl, { waitUntil: 'domcontentloaded' }));
 
-    const pageLinks = await page.$$eval(scraperRules.listPage.listingLinkSelector, (anchors) =>
-      anchors.map((a) => a.href),
-    );
-    pageLinks.forEach((link) => links.add(link));
+      const pageLinks = await page.$$eval(scraperRules.listPage.listingLinkSelector, (anchors) =>
+        anchors.map((a) => a.href),
+      );
+      pageLinks.forEach((link) => links.add(link));
 
-    currentUrl = await page
-      .$eval(scraperRules.listPage.nextPageSelector, (a) => a.href)
-      .catch(() => null);
+      currentUrl = await page
+        .$eval(scraperRules.listPage.nextPageSelector, (a) => a.href)
+        .catch(() => null);
+    } catch (err) {
+      console.error(`Sayfa ${pageCount + 1} yuklenirken hata olustu (${currentUrl}):`, err.message);
+      break; // Stop collecting links for this category, but return what we have so far
+    }
 
     pageCount += 1;
   }

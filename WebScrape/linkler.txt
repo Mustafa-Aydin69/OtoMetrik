@@ -1,15 +1,14 @@
-https://www.arabam.com/ikinci-el/minivan-panelvan/citroen   2.314 ilan              ÇEKİLDİ
-https://www.arabam.com/ikinci-el/minivan-panelvan/dacia     400 ilan                ÇEKİLDİ
-https://www.arabam.com/ikinci-el/minivan-panelvan/hyundai       372 ilan            ÇEKİLDİ 
-https://www.arabam.com/ikinci-el/minivan-panelvan/mercedes-benz 1.124 ilan          ÇEKİLDİ
-https://www.arabam.com/ikinci-el/minivan-panelvan/mitsubishi    163 ilan            ÇEKİLDİ
-https://www.arabam.com/ikinci-el/minivan-panelvan/opel      1.333 ilan              ÇEKİLDİ
-https://www.arabam.com/ikinci-el/minivan-panelvan/toyota    258 ilan                ÇEKİLDİ
-https://www.arabam.com/ikinci-el/minivan-panelvan/renault   2.531 ilan              ÇEKİLDİ 
-https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?minYear=2023              ÇEKİLDİ
-https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot   2.915 ilan              ÇEKİLDİ      
-https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?maxYear=2023              ÇEKİLDİ
-
+https://www.arabam.com/ikinci-el/minivan-panelvan/citroen   2.314 ilan              
+https://www.arabam.com/ikinci-el/minivan-panelvan/dacia     400 ilan                
+https://www.arabam.com/ikinci-el/minivan-panelvan/hyundai       372 ilan             
+https://www.arabam.com/ikinci-el/minivan-panelvan/mercedes-benz 1.124 ilan          
+https://www.arabam.com/ikinci-el/minivan-panelvan/mitsubishi    163 ilan            
+https://www.arabam.com/ikinci-el/minivan-panelvan/opel      1.333 ilan              
+https://www.arabam.com/ikinci-el/minivan-panelvan/toyota    258 ilan                
+https://www.arabam.com/ikinci-el/minivan-panelvan/renault   2.531 ilan               
+https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?minYear=2023              
+https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot   2.915 ilan                    
+https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?maxYear=2023              
 
 
 fiat     9.970 ilan              

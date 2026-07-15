@@ -29,29 +29,32 @@ const CATEGORY_KEY = 'minivan_panelvan';
 // linkler.txt'de kullanicinin verdigi marka sayfalari, gerektiginde yil dilimiyle birlikte.
 // Her eleman { brand, minYear?, maxYear? } - minYear/maxYear yoksa markanin tamami tek dilimde
 // cekilir (2.500 altinda kalan markalar icin yeterli).
+// Siralama: once fiat, sonra ford ve volkswagen; en sonda daha once tamamen cekilmis
+// markalar (linkleri yeniden toplanir ama ilanlarin cogu seenIds ile ag istegi yapilmadan
+// atlanir - sadece aradan eklenen yeni ilanlar cekilir).
 const SLICES = [
-  //{ brand: 'citroen' },
-  //{ brand: 'dacia' },
-  //{ brand: 'hyundai' },
-  //{ brand: 'mercedes-benz' },
-  //{ brand: 'mitsubishi' },
-  //{ brand: 'opel' },
-  //{ brand: 'peugeot', minYear: 2023 },
-  //{ brand: 'peugeot', maxYear: 2023 },
-  //{ brand: 'renault' },
-  //{ brand: 'toyota' },
-  //{ brand: 'fiat', maxYear: 2010 },
-  //{ brand: 'fiat', minYear: 2010, maxYear: 2013 },
-  //{ brand: 'fiat', minYear: 2013, maxYear: 2016 },
-  //{ brand: 'fiat', minYear: 2016, maxYear: 2020 },
-  //{ brand: 'fiat', minYear: 2020, maxYear: 2023 },
-  //{ brand: 'fiat', minYear: 2023 },
-  //{ brand: 'ford', maxYear: 2013 },
-  //{ brand: 'ford', minYear: 2013, maxYear: 2018 },
-  //{ brand: 'ford', minYear: 2018, maxYear: 2022 },
-  //{ brand: 'ford', minYear: 2022 },
+  { brand: 'fiat', maxYear: 2010 },
+  { brand: 'fiat', minYear: 2010, maxYear: 2013 },
+  { brand: 'fiat', minYear: 2013, maxYear: 2016 },
+  { brand: 'fiat', minYear: 2016, maxYear: 2020 },
+  { brand: 'fiat', minYear: 2020, maxYear: 2023 },
+  { brand: 'fiat', minYear: 2023 },
+  { brand: 'ford', maxYear: 2013 },
+  { brand: 'ford', minYear: 2013, maxYear: 2018 },
+  { brand: 'ford', minYear: 2018, maxYear: 2022 },
+  { brand: 'ford', minYear: 2022 },
   { brand: 'volkswagen', maxYear: 2014 },
   { brand: 'volkswagen', minYear: 2014 },
+  { brand: 'citroen' },
+  { brand: 'dacia' },
+  { brand: 'hyundai' },
+  { brand: 'mercedes-benz' },
+  { brand: 'mitsubishi' },
+  { brand: 'opel' },
+  { brand: 'peugeot', minYear: 2023 },
+  { brand: 'peugeot', maxYear: 2023 },
+  { brand: 'renault' },
+  { brand: 'toyota' },
 ];
 
 function sliceLabel(slice) {
