@@ -1,33 +1,47 @@
-https://www.arabam.com/ikinci-el/minivan-panelvan/citroen   2.314 ilan              
-https://www.arabam.com/ikinci-el/minivan-panelvan/dacia     400 ilan                
-https://www.arabam.com/ikinci-el/minivan-panelvan/hyundai       372 ilan             
-https://www.arabam.com/ikinci-el/minivan-panelvan/mercedes-benz 1.124 ilan          
-https://www.arabam.com/ikinci-el/minivan-panelvan/mitsubishi    163 ilan            
-https://www.arabam.com/ikinci-el/minivan-panelvan/opel      1.333 ilan              
-https://www.arabam.com/ikinci-el/minivan-panelvan/toyota    258 ilan                
-https://www.arabam.com/ikinci-el/minivan-panelvan/renault   2.531 ilan               
-https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?minYear=2023              
-https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot   2.915 ilan                    
-https://www.arabam.com/ikinci-el/minivan-panelvan/peugeot?maxYear=2023              
-
-
-fiat     9.970 ilan              
-https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?maxYear=2010
-https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2010&maxYear=2013
-https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2013&maxYear=2016
-https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2016&maxYear=2020
-https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2020&maxYear=2023
-https://www.arabam.com/ikinci-el/minivan-panelvan/fiat?minYear=2023
-
-
-Ford 8.065 ilan              
-https://www.arabam.com/ikinci-el/minivan-panelvan/ford?maxYear=2013
-https://www.arabam.com/ikinci-el/minivan-panelvan/ford?minYear=2013&maxYear=2018
-https://www.arabam.com/ikinci-el/minivan-panelvan/ford?minYear=2018&maxYear=2022
-https://www.arabam.com/ikinci-el/minivan-panelvan/ford?minYear=2022
-
-
-
-volkswagen 4.652 ilan             
-https://www.arabam.com/ikinci-el/minivan-panelvan/volkswagen?maxYear=2014
-https://www.arabam.com/ikinci-el/minivan-panelvan/volkswagen?minYear=2014
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/alfa-romeo
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/audi
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/bmw
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/byd
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/cadillac
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/chery
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/chevrolet
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/citroen
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/cupra
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/dacia
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/dodge
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ds-automobiles
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/fiat
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ford
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/honda
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/hyundai
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/infiniti
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/isuzu
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jaecoo
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jaguar
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jeep
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/kia
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/land-rover
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/lexus
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/maserati
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mazda
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mercedes-benz
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mg
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mini
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mitsubishi
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan?maxYear=2015
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan?minYear=2015
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/opel
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/peugeot?minYear=2020
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/peugeot?maxYear=2020
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/porsche
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/renault
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/seat
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/skoda
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ssangyong
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/subaru
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/suzuki
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/togg
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/toyota
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volkswagen?maxYear=2022
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volkswagen?minYear=2022
+https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volvo
