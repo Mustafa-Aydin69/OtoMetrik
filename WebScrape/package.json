@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "scrape:arabam": "node src/producers/arabam-scraper.js",
+    "scrape:linkler": "node scripts/scrape-linkler.js",
     "kafka:smoke-test": "node scripts/kafka-smoke-test.js",
     "test": "node --test src/utils/*.test.js"
   },
