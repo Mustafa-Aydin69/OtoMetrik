@@ -38443,3 +38443,20 @@ TOPLAM: 8717 yeni kayit yazildi (38005 ilan islendi).
 [cadillac 7/25] 39768056 yazildi
 [cadillac 8/25] 42065512 yazildi
 [cadillac 9/25] 42065503 yazildi
+[cadillac 10/25] 41730426 yazildi
+[cadillac 11/25] 34273675 yazildi
+[cadillac 12/25] 41285522 yazildi
+[cadillac 13/25] 41930951 yazildi
+[cadillac 14/25] 41187093 yazildi
+[cadillac 15/25] 39015284 yazildi
+[cadillac 16/25] 41901645 yazildi
+[cadillac 17/25] 41581630 yazildi
+[cadillac 18/25] 39480701 yazildi
+[cadillac 19/25] 37682601 yazildi
+[cadillac 20/25] 40952280 yazildi
+[cadillac 21/25] 34875010 yazildi
+[cadillac 22/25] 35900814 yazildi
+[cadillac 23/25] 31962426 yazildi
+[cadillac 24/25] 41505421 yazildi
+[cadillac 25/25] 37292473 yazildi
+--- cadillac tamamlandi: 25 yeni kayit (25 ilan islendi) ---
