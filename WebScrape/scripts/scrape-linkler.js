@@ -1,8 +1,9 @@
 // linkler.txt'deki linkleri sirayla isler: her link icin kategori sayfasini "?take=50" ile
 // gezip ilanlari data/output/arabam_test_val.csv'ye yazar (CsvWriter.seenIds ile ayni resume
 // garantisi - agdan cekilmeden atlanir). Bir link tamamen islendiginde linkler.txt'deki o satir
-// "// " ile yorum satirina alinir (bir sonraki calistirmada atlanir), ve logs/suv-scrape-log.txt
-// dosyasina o link icin islenen/yeni ilan sayisi ile yeni ilan_id'ler eklenir.
+// "// " ile yorum satirina alinir (bir sonraki calistirmada atlanir). Log ciktisi, diger toplu
+// kazima scriptleriyle (scrape-minivan-panelvan-brands.js) ayni bicimde loglar/scrape-log-tum-markalar.txt
+// dosyasina eklenir (append) - marka basi ilan satirlari, "tamamlandi" ozeti ve calisma sonunda OZET.
 // Bu script kesintiye ugrarsa (Ctrl+C, hata vb.) kaldigi yerden devam eder: linkler.txt'de hala
 // yorumsuz olan ilk link tekrar okunur.
 require('dotenv').config();
@@ -20,7 +21,7 @@ const {
 
 const CATEGORY_KEY = 'suv';
 const LINKLER_PATH = path.join(__dirname, '../linkler.txt');
-const LOG_PATH = path.join(__dirname, '../logs/suv-scrape-log.txt');
+const LOG_PATH = path.join(__dirname, '../loglar/scrape-log-tum-markalar.txt');
 
 function isCommented(line) {
   const trimmed = line.trim();
@@ -53,9 +54,12 @@ function markLinkDone(url) {
   }
 }
 
-function appendLog(line) {
+// scrape-minivan-panelvan-brands.js ile ayni bicimde: console'a yazar ve ayni satiri
+// loglar/scrape-log-tum-markalar.txt dosyasina ekler (append).
+function log(line) {
   fs.mkdirSync(path.dirname(LOG_PATH), { recursive: true });
   fs.appendFileSync(LOG_PATH, `${line}\r\n`);
+  console.log(line);
 }
 
 // Tam URL'i (baseUrl dahil) collectListingLinks'in bekledigi kategori yoluna (+ take=50) cevirir.
@@ -65,31 +69,42 @@ function toCategoryPath(url) {
   return `${withoutBase}${separator}take=50`;
 }
 
+// URL'den marka adini ve varsa minYear/maxYear'i scrape-minivan-panelvan-brands.js'deki
+// sliceLabel bicimiyle etiketler (orn. "nissan (-2015)", "peugeot (2020+)").
+function urlLabel(url) {
+  const [pathPart, queryPart] = url.split('?');
+  const brand = pathPart.split('/').filter(Boolean).pop();
+  const params = new URLSearchParams(queryPart || '');
+  const minYear = params.get('minYear');
+  const maxYear = params.get('maxYear');
+  if (minYear && maxYear) return `${brand} (${minYear}-${maxYear})`;
+  if (minYear) return `${brand} (${minYear}+)`;
+  if (maxYear) return `${brand} (-${maxYear})`;
+  return brand;
+}
+
 async function scrapeUrl(page, csvWriter, url) {
+  const label = urlLabel(url);
   const categoryPath = toCategoryPath(url);
   const links = await collectListingLinks(page, categoryPath);
-  console.log(`\n=== ${url}: ${links.length} ilan linki bulundu ===`);
+  log(`\n=== ${label}: ${links.length} ilan linki bulundu ===`);
 
   let processed = 0;
   let written = 0;
-  const newIlanIds = [];
 
   for (const link of links) {
     processed += 1;
     const ilanId = link.split('/').filter(Boolean).pop();
     if (csvWriter.seenIds.has(ilanId)) {
-      console.log(`[${processed}/${links.length}] ${ilanId} zaten vardi (atlandi, cekilmedi)`);
+      log(`[${label} ${processed}/${links.length}] ${ilanId} zaten vardi (atlandi, cekilmedi)`);
       continue;
     }
 
     try {
       const listing = await withRetry(() => scrapeListingDetail(page, link, CATEGORY_KEY));
       const isNew = await csvWriter.writeListing(listing);
-      if (isNew) {
-        written += 1;
-        newIlanIds.push(listing.ilan_id);
-      }
-      console.log(`[${processed}/${links.length}] ${listing.ilan_id} ${isNew ? 'yazildi' : 'zaten vardi (atlandi)'}`);
+      if (isNew) written += 1;
+      log(`[${label} ${processed}/${links.length}] ${listing.ilan_id} ${isNew ? 'yazildi' : 'zaten vardi (atlandi)'}`);
     } catch (err) {
       console.error(`Ilan cekilemedi (${link}):`, err.message);
     } finally {
@@ -97,7 +112,8 @@ async function scrapeUrl(page, csvWriter, url) {
     }
   }
 
-  return { processed, written, newIlanIds };
+  log(`--- ${label} tamamlandi: ${written} yeni kayit (${processed} ilan islendi) ---`);
+  return { label, processed, written };
 }
 
 async function run() {
@@ -105,10 +121,10 @@ async function run() {
   const page = await createPage(context);
   const csvWriter = new CsvWriter();
 
+  const results = [];
   try {
     let url = firstPendingLink();
     while (url) {
-      const startedAt = new Date().toISOString();
       console.log(`\n>>> Isleniyor: ${url}`);
 
       let result;
@@ -116,17 +132,11 @@ async function run() {
         result = await scrapeUrl(page, csvWriter, url);
       } catch (err) {
         console.error(`Link islenemedi, yorum satirina alinmadan birakiliyor (${url}):`, err.message);
-        appendLog(`[${startedAt}] HATA ${url}: ${err.message}`);
         break; // Ayni linkte sonsuz donguye girmemek icin dur; linkler.txt'de yorumsuz kalir.
       }
 
+      results.push(result);
       markLinkDone(url);
-      const finishedAt = new Date().toISOString();
-      const idsPart = result.newIlanIds.length ? ` | ilan_id: ${result.newIlanIds.join(', ')}` : '';
-      appendLog(
-        `[${startedAt} - ${finishedAt}] ${url} | islenen: ${result.processed}, yeni: ${result.written}${idsPart}`,
-      );
-
       await politeDelay();
       url = firstPendingLink();
     }
@@ -134,6 +144,16 @@ async function run() {
   } finally {
     await context.close();
     await browser.close();
+  }
+
+  if (results.length) {
+    const totalWritten = results.reduce((sum, r) => sum + r.written, 0);
+    const totalProcessed = results.reduce((sum, r) => sum + r.processed, 0);
+    log('\n=== OZET ===');
+    for (const r of results) {
+      log(`${r.label}: ${r.written} yeni / ${r.processed} islendi`);
+    }
+    log(`TOPLAM: ${totalWritten} yeni kayit yazildi (${totalProcessed} ilan islendi).`);
   }
 }
 

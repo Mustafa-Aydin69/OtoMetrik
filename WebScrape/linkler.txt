@@ -1,7 +1,7 @@
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/alfa-romeo
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/audi
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/bmw
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/byd
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/byd
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/cadillac
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/chery
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/chevrolet
