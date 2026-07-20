@@ -29,7 +29,7 @@
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mini
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mitsubishi
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan?maxYear=2015
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan?minYear=2015
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan?minYear=2015
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/opel
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/peugeot?minYear=2020
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/peugeot?maxYear=2020
