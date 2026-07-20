@@ -7,25 +7,25 @@
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/chevrolet
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/citroen
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/cupra
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/dacia
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/dodge
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ds-automobiles
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/fiat
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ford
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/honda
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/hyundai
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/infiniti
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/isuzu
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jaecoo
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jaguar
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jeep
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/kia
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/land-rover
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/lexus
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/maserati
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mazda
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mercedes-benz
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mg
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/dacia
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/dodge
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ds-automobiles
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/fiat
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ford
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/honda
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/hyundai
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/infiniti
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/isuzu
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jaecoo
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jaguar
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/jeep
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/kia
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/land-rover
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/lexus
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/maserati
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mazda
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mercedes-benz
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mg
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mini
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mitsubishi
 https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan?maxYear=2015
