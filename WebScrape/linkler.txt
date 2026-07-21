@@ -30,18 +30,18 @@
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/mitsubishi
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan?maxYear=2015
 // https://www.arabam.com/ikinci-el/arazi-suv-pick-up/nissan?minYear=2015
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/opel
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/peugeot?minYear=2020
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/peugeot?maxYear=2020
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/porsche
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/renault
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/seat
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/skoda
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ssangyong
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/subaru
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/suzuki
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/togg
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/toyota
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volkswagen?maxYear=2022
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volkswagen?minYear=2022
-https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volvo
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/opel
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/peugeot?minYear=2020
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/peugeot?maxYear=2020
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/porsche
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/renault
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/seat
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/skoda
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/ssangyong
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/subaru
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/suzuki
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/togg
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/toyota
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volkswagen?maxYear=2022
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volkswagen?minYear=2022
+// https://www.arabam.com/ikinci-el/arazi-suv-pick-up/volvo
