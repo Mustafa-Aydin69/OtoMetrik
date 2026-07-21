@@ -18,6 +18,7 @@ import {
   type PredictionInput,
 } from "@/lib/validation";
 import { requestPrediction, type PredictionResponse } from "@/lib/prediction";
+import { requestCarImageUrls } from "@/lib/car-photo";
 import { NumberField, SelectField, TextField, YesNoField } from "./fields";
 import { PredictionResult } from "./PredictionResult";
 
@@ -104,6 +105,7 @@ export function PredictionForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [apiError, setApiError] = useState<string>("");
   const [result, setResult] = useState<PredictionResponse | null>(null);
+  const [carImageUrls, setCarImageUrls] = useState<string[]>([]);
   const resultRef = useRef<HTMLDivElement>(null);
 
   function set<K extends keyof FormState>(key: K, value: FormState[K]) {
@@ -130,9 +132,16 @@ export function PredictionForm() {
     setStatus("loading");
     setApiError("");
     setResult(null);
+    setCarImageUrls([]);
     try {
-      const res = await requestPrediction(input);
+      // Görsel araması opsiyoneldir ve kendi hatalarını yutar (bkz.
+      // requestCarImageUrls) — fiyat tahminini asla bloklamamalı/bozmamalı.
+      const [res, imageUrls] = await Promise.all([
+        requestPrediction(input),
+        requestCarImageUrls(input),
+      ]);
       setResult(res);
+      setCarImageUrls(imageUrls);
       setStatus("success");
       requestAnimationFrame(() => {
         resultRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -326,7 +335,12 @@ export function PredictionForm() {
 
       <div ref={resultRef} className="mt-8" aria-live="polite">
         {status === "success" && result ? (
-          <PredictionResult price={result.price} source={result.source} />
+          <PredictionResult
+            price={result.price}
+            source={result.source}
+            imageUrls={carImageUrls}
+            carLabel={`${form.brand} ${form.model}`.trim()}
+          />
         ) : null}
       </div>
     </div>

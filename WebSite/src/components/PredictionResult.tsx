@@ -10,16 +10,33 @@ import { formatTRY } from "@/lib/prediction";
 export function PredictionResult({
   price,
   source,
+  imageUrls = [],
+  carLabel = "Araç",
 }: {
   price: number;
   source: "model" | "mock";
+  imageUrls?: string[];
+  carLabel?: string;
 }) {
   const [shown, setShown] = useState(false);
+  const [urlIndex, setUrlIndex] = useState(0);
+  const [trackedImageUrls, setTrackedImageUrls] = useState(imageUrls);
 
   useEffect(() => {
     const t = requestAnimationFrame(() => setShown(true));
     return () => cancelAnimationFrame(t);
   }, []);
+
+  // Yeni bir tahminde (farklı marka/model/renk) kademeyi baştan başlat.
+  // Effect yerine render sırasında state ayarlama (React'ın önerdiği desen,
+  // bkz. https://react.dev/learn/you-might-not-need-an-effect) — cascading
+  // effect render'ı yerine tek seferde re-render tetikler.
+  if (imageUrls !== trackedImageUrls) {
+    setTrackedImageUrls(imageUrls);
+    setUrlIndex(0);
+  }
+
+  const currentImageUrl = urlIndex < imageUrls.length ? imageUrls[urlIndex] : null;
 
   return (
     <div
@@ -29,6 +46,16 @@ export function PredictionResult({
       role="status"
       aria-live="polite"
     >
+      {currentImageUrl ? (
+        // eslint-disable-next-line @next/next/no-img-element -- harici imagin.studio CDN, next/image domain izni gerektirmesin diye düz <img>.
+        <img
+          key={currentImageUrl}
+          src={currentImageUrl}
+          alt={`${carLabel} görseli`}
+          className="mx-auto mb-6 h-48 w-full max-w-sm object-contain sm:h-56"
+          onError={() => setUrlIndex((i) => i + 1)}
+        />
+      ) : null}
       <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-400">
         Tahmini Araç Değeri
       </p>
