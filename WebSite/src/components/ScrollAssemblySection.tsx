@@ -186,9 +186,15 @@ export function ScrollAssemblySection() {
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Video sahnesi */}
         <div ref={stageRef} className="absolute inset-0 will-change-transform">
+          {/* Video 16:9 (1280x720) çekildi — dar/uzun (portre) mobil
+              ekranlarda object-cover aracı öyle yakınlaştırır ki montaj
+              animasyonunun parçaları (kenarlardan gelen kapı/tekerlek/tampon)
+              kadraj dışında kalır. sm altında object-contain'e geçip tüm
+              sahneyi (siyah bantlarla) göstermek, cover'ın verdiği "kenardan
+              kenara" hissi kaybetsek de asıl montaj hikayesini görünür kılar. */}
           <ScrollScrubVideo
             ref={videoRef}
-            className="absolute inset-0 size-full object-cover"
+            className="absolute inset-0 size-full bg-[#08090b] object-contain sm:object-cover"
             onReady={onVideoReady}
             onError={onVideoError}
           />

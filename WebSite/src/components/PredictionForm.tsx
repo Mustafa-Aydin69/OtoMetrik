@@ -19,6 +19,7 @@ import {
 } from "@/lib/validation";
 import { requestPrediction, type PredictionResponse } from "@/lib/prediction";
 import { requestCarImageUrls } from "@/lib/car-photo";
+import { FormSection } from "./FormSection";
 import { NumberField, SelectField, TextField, YesNoField } from "./fields";
 import { PredictionResult } from "./PredictionResult";
 
@@ -164,138 +165,158 @@ export function PredictionForm() {
         }}
         className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8"
       >
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <SelectField
-            id="brand"
-            label="Marka"
-            value={form.brand}
-            onChange={(v) => set("brand", v)}
-            options={BRANDS}
-            error={errors.brand}
-            placeholder="Marka seçin"
-          />
-          <TextField
-            id="model"
-            label="Model"
-            value={form.model}
-            onChange={(v) => set("model", v)}
-            error={errors.model}
-            placeholder="örn. Focus"
-            suggestions={modelSuggestions}
-          />
-          <SelectField
-            id="year"
-            label="Yıl"
-            value={form.year}
-            onChange={(v) => set("year", v)}
-            options={YEARS}
-            error={errors.year}
-            placeholder="Yıl seçin"
-          />
-          <NumberField
-            id="mileage"
-            label="Kilometre"
-            value={form.mileage}
-            onChange={(v) => set("mileage", v)}
-            error={errors.mileage}
-            placeholder="örn. 85000"
-            min={0}
-            suffix="km"
-          />
-          <SelectField
-            id="fuelType"
-            label="Yakıt Türü"
-            value={form.fuelType}
-            onChange={(v) => set("fuelType", v)}
-            options={FUEL_TYPES}
-            error={errors.fuelType}
-            placeholder="Yakıt türü seçin"
-          />
-          <SelectField
-            id="transmission"
-            label="Vites"
-            value={form.transmission}
-            onChange={(v) => set("transmission", v)}
-            options={TRANSMISSIONS}
-            error={errors.transmission}
-            placeholder="Vites seçin"
-          />
-          <SelectField
-            id="bodyType"
-            label="Kasa Tipi"
-            value={form.bodyType}
-            onChange={(v) => set("bodyType", v)}
-            options={BODY_TYPES}
-            error={errors.bodyType}
-            placeholder="Kasa tipi seçin"
-          />
-          <SelectField
-            id="color"
-            label="Renk"
-            value={form.color}
-            onChange={(v) => set("color", v)}
-            options={COLORS}
-            error={errors.color}
-            placeholder="Renk seçin"
-          />
-          <NumberField
-            id="engineDisplacement"
-            label="Motor Hacmi"
-            value={form.engineDisplacement}
-            onChange={(v) => set("engineDisplacement", v)}
-            error={errors.engineDisplacement}
-            placeholder={
-              form.fuelType === "Elektrik"
-                ? "Elektrikli — boş bırakılabilir"
-                : "örn. 1600"
-            }
-            min={0}
-            suffix="cc"
-          />
-          <NumberField
-            id="enginePower"
-            label="Motor Gücü"
-            value={form.enginePower}
-            onChange={(v) => set("enginePower", v)}
-            error={errors.enginePower}
-            placeholder="örn. 110"
-            min={1}
-            suffix="HP"
-          />
-          <TextField
-            id="trim"
-            label="Paket"
-            value={form.trim}
-            onChange={(v) => set("trim", v)}
-            error={errors.trim}
-            placeholder="örn. Titanium (opsiyonel)"
-          />
-          <YesNoField
-            id="heavyDamage"
-            label="Ağır Hasarlı"
-            value={form.heavyDamage}
-            onChange={(v) => set("heavyDamage", v)}
-          />
-          <NumberField
-            id="replacedPartsCount"
-            label="Değişen Sayısı"
-            value={form.replacedPartsCount}
-            onChange={(v) => set("replacedPartsCount", v)}
-            error={errors.replacedPartsCount}
-            min={0}
-            max={13}
-            step={1}
-          />
-          <NumberField
-            id="paintedPartsCount"
-            label="Boyalı Sayısı"
-            value={form.paintedPartsCount}
-            onChange={(v) => set("paintedPartsCount", v)}
-            error={errors.paintedPartsCount}
-            min={0}
-            max={13}
-            step={1}
-          />
+        <div className="flex flex-col gap-8">
+          {/* Kullanıcı bir aracı düşünürken doğal olarak izlediği sıra:
+              önce ne olduğu (kimlik), sonra nasıl çalıştığı (motor),
+              nasıl göründüğü (özellikler), ne kadar kullanıldığı, en
+              sonda da durumu/hasarı. */}
+          <FormSection title="Araç Kimliği">
+            <SelectField
+              id="brand"
+              label="Marka"
+              value={form.brand}
+              onChange={(v) => set("brand", v)}
+              options={BRANDS}
+              error={errors.brand}
+              placeholder="Marka seçin"
+            />
+            <TextField
+              id="model"
+              label="Model"
+              value={form.model}
+              onChange={(v) => set("model", v)}
+              error={errors.model}
+              placeholder="örn. Focus"
+              suggestions={modelSuggestions}
+            />
+            <TextField
+              id="trim"
+              label="Paket"
+              value={form.trim}
+              onChange={(v) => set("trim", v)}
+              error={errors.trim}
+              placeholder="örn. Titanium (opsiyonel)"
+            />
+            <SelectField
+              id="year"
+              label="Yıl"
+              value={form.year}
+              onChange={(v) => set("year", v)}
+              options={YEARS}
+              error={errors.year}
+              placeholder="Yıl seçin"
+            />
+          </FormSection>
+
+          <FormSection title="Motor Bilgileri" divider>
+            <SelectField
+              id="fuelType"
+              label="Yakıt Türü"
+              value={form.fuelType}
+              onChange={(v) => set("fuelType", v)}
+              options={FUEL_TYPES}
+              error={errors.fuelType}
+              placeholder="Yakıt türü seçin"
+            />
+            <SelectField
+              id="transmission"
+              label="Vites"
+              value={form.transmission}
+              onChange={(v) => set("transmission", v)}
+              options={TRANSMISSIONS}
+              error={errors.transmission}
+              placeholder="Vites seçin"
+            />
+            <NumberField
+              id="engineDisplacement"
+              label="Motor Hacmi"
+              value={form.engineDisplacement}
+              onChange={(v) => set("engineDisplacement", v)}
+              error={errors.engineDisplacement}
+              placeholder={
+                form.fuelType === "Elektrik"
+                  ? "Elektrikli — boş bırakılabilir"
+                  : "örn. 1600"
+              }
+              min={0}
+              suffix="cc"
+            />
+            <NumberField
+              id="enginePower"
+              label="Motor Gücü"
+              value={form.enginePower}
+              onChange={(v) => set("enginePower", v)}
+              error={errors.enginePower}
+              placeholder="örn. 110"
+              min={1}
+              suffix="HP"
+            />
+          </FormSection>
+
+          <FormSection title="Araç Özellikleri" divider>
+            <SelectField
+              id="bodyType"
+              label="Kasa Tipi"
+              value={form.bodyType}
+              onChange={(v) => set("bodyType", v)}
+              options={BODY_TYPES}
+              error={errors.bodyType}
+              placeholder="Kasa tipi seçin"
+            />
+            <SelectField
+              id="color"
+              label="Renk"
+              value={form.color}
+              onChange={(v) => set("color", v)}
+              options={COLORS}
+              error={errors.color}
+              placeholder="Renk seçin"
+            />
+          </FormSection>
+
+          <FormSection title="Kullanım Bilgisi" columns={1} divider>
+            <NumberField
+              id="mileage"
+              label="Kilometre"
+              value={form.mileage}
+              onChange={(v) => set("mileage", v)}
+              error={errors.mileage}
+              placeholder="örn. 85000"
+              min={0}
+              suffix="km"
+            />
+          </FormSection>
+
+          <FormSection title="Hasar Bilgisi" divider>
+            <div className="sm:col-span-2">
+              <YesNoField
+                id="heavyDamage"
+                label="Ağır Hasarlı"
+                value={form.heavyDamage}
+                onChange={(v) => set("heavyDamage", v)}
+              />
+            </div>
+            <NumberField
+              id="replacedPartsCount"
+              label="Değişen Sayısı"
+              value={form.replacedPartsCount}
+              onChange={(v) => set("replacedPartsCount", v)}
+              error={errors.replacedPartsCount}
+              min={0}
+              max={13}
+              step={1}
+            />
+            <NumberField
+              id="paintedPartsCount"
+              label="Boyalı Sayısı"
+              value={form.paintedPartsCount}
+              onChange={(v) => set("paintedPartsCount", v)}
+              error={errors.paintedPartsCount}
+              min={0}
+              max={13}
+              step={1}
+            />
+          </FormSection>
         </div>
 
         {status === "error" ? (
