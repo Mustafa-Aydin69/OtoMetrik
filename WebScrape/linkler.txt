@@ -1,23 +1,23 @@
-https://www.arabam.com/ikinci-el/otomobil/acura
-https://www.arabam.com/ikinci-el/otomobil/alfa-romeo
-https://www.arabam.com/ikinci-el/otomobil/aston-martin
-https://www.arabam.com/ikinci-el/otomobil/audi?maxYear=2010
-https://www.arabam.com/ikinci-el/otomobil/audi?minYear=2011&maxYear=2016
-https://www.arabam.com/ikinci-el/otomobil/audi?minYear=2017
-https://www.arabam.com/ikinci-el/otomobil/bentley
-https://www.arabam.com/ikinci-el/otomobil/bmw?maxYear=2010
-https://www.arabam.com/ikinci-el/otomobil/bmw?minYear=2011&maxYear=2014
-https://www.arabam.com/ikinci-el/otomobil/bmw?minYear=2015&maxYear=2018
-https://www.arabam.com/ikinci-el/otomobil/bmw?minYear=2019
-https://www.arabam.com/ikinci-el/otomobil/buick
-https://www.arabam.com/ikinci-el/otomobil/byd
-https://www.arabam.com/ikinci-el/otomobil/cadillac
-https://www.arabam.com/ikinci-el/otomobil/chery
-https://www.arabam.com/ikinci-el/otomobil/chevrolet
-https://www.arabam.com/ikinci-el/otomobil/chrysler
-https://www.arabam.com/ikinci-el/otomobil/citroen?maxYear=2013
-https://www.arabam.com/ikinci-el/otomobil/citroen?minYear=2014
-https://www.arabam.com/ikinci-el/otomobil/cupra
+// https://www.arabam.com/ikinci-el/otomobil/acura
+// https://www.arabam.com/ikinci-el/otomobil/alfa-romeo
+// https://www.arabam.com/ikinci-el/otomobil/aston-martin
+// https://www.arabam.com/ikinci-el/otomobil/audi?maxYear=2010
+// https://www.arabam.com/ikinci-el/otomobil/audi?minYear=2011&maxYear=2016
+// https://www.arabam.com/ikinci-el/otomobil/audi?minYear=2017
+// https://www.arabam.com/ikinci-el/otomobil/bentley
+// https://www.arabam.com/ikinci-el/otomobil/bmw?maxYear=2010
+// https://www.arabam.com/ikinci-el/otomobil/bmw?minYear=2011&maxYear=2014
+// https://www.arabam.com/ikinci-el/otomobil/bmw?minYear=2015&maxYear=2018
+// https://www.arabam.com/ikinci-el/otomobil/bmw?minYear=2019
+// https://www.arabam.com/ikinci-el/otomobil/buick
+// https://www.arabam.com/ikinci-el/otomobil/byd
+// https://www.arabam.com/ikinci-el/otomobil/cadillac
+// https://www.arabam.com/ikinci-el/otomobil/chery
+// https://www.arabam.com/ikinci-el/otomobil/chevrolet
+// https://www.arabam.com/ikinci-el/otomobil/chrysler
+// https://www.arabam.com/ikinci-el/otomobil/citroen?maxYear=2013
+// https://www.arabam.com/ikinci-el/otomobil/citroen?minYear=2014
+// https://www.arabam.com/ikinci-el/otomobil/cupra
 https://www.arabam.com/ikinci-el/otomobil/dacia
 https://www.arabam.com/ikinci-el/otomobil/daewoo
 https://www.arabam.com/ikinci-el/otomobil/daihatsu
