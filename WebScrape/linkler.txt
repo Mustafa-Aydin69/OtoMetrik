@@ -18,34 +18,34 @@
 // https://www.arabam.com/ikinci-el/otomobil/citroen?maxYear=2013
 // https://www.arabam.com/ikinci-el/otomobil/citroen?minYear=2014
 // https://www.arabam.com/ikinci-el/otomobil/cupra
-https://www.arabam.com/ikinci-el/otomobil/dacia
-https://www.arabam.com/ikinci-el/otomobil/daewoo
-https://www.arabam.com/ikinci-el/otomobil/daihatsu
-https://www.arabam.com/ikinci-el/otomobil/dodge
-https://www.arabam.com/ikinci-el/otomobil/ds-automobiles
-https://www.arabam.com/ikinci-el/otomobil/ferrari
-https://www.arabam.com/ikinci-el/otomobil/fiat?maxYear=1998
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=1999&maxYear=2003
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2004&maxYear=2008
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2008&maxYear=2011
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2011&maxYear=2012
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2012&maxYear=2014
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2014&maxYear=2016
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2016&maxYear=2018
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2018&maxYear=2020
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2020&maxYear=2021
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2021&maxYear=2022
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2022&maxYear=2023
-https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2023
-https://www.arabam.com/ikinci-el/otomobil/ford?maxYear=2004
-https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2005&maxYear=2008
-https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2008&maxYear=2011
-https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2012&maxYear=2014
-https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2014&maxYear=2016
-https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2016
-https://www.arabam.com/ikinci-el/otomobil/geely
-https://www.arabam.com/ikinci-el/otomobil/honda?maxYear=2008
-https://www.arabam.com/ikinci-el/otomobil/honda?minYear=2009&maxYear=2017
+// https://www.arabam.com/ikinci-el/otomobil/dacia
+// https://www.arabam.com/ikinci-el/otomobil/daewoo
+// https://www.arabam.com/ikinci-el/otomobil/daihatsu
+// https://www.arabam.com/ikinci-el/otomobil/dodge
+// https://www.arabam.com/ikinci-el/otomobil/ds-automobiles
+// https://www.arabam.com/ikinci-el/otomobil/ferrari
+// https://www.arabam.com/ikinci-el/otomobil/fiat?maxYear=1998
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=1999&maxYear=2003
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2004&maxYear=2008
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2008&maxYear=2011
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2011&maxYear=2012
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2012&maxYear=2014
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2014&maxYear=2016
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2016&maxYear=2018
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2018&maxYear=2020
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2020&maxYear=2021
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2021&maxYear=2022
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2022&maxYear=2023
+// https://www.arabam.com/ikinci-el/otomobil/fiat?minYear=2023
+// https://www.arabam.com/ikinci-el/otomobil/ford?maxYear=2004
+// https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2005&maxYear=2008
+// https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2008&maxYear=2011
+// https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2012&maxYear=2014
+// https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2014&maxYear=2016
+// https://www.arabam.com/ikinci-el/otomobil/ford?minYear=2016
+// https://www.arabam.com/ikinci-el/otomobil/geely
+// https://www.arabam.com/ikinci-el/otomobil/honda?maxYear=2008
+// https://www.arabam.com/ikinci-el/otomobil/honda?minYear=2009&maxYear=2017
 https://www.arabam.com/ikinci-el/otomobil/honda?minYear=2018
 https://www.arabam.com/ikinci-el/otomobil/hyundai?maxYear=2005
 https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2006&maxYear=2010
