@@ -46,8 +46,8 @@
 // https://www.arabam.com/ikinci-el/otomobil/geely
 // https://www.arabam.com/ikinci-el/otomobil/honda?maxYear=2008
 // https://www.arabam.com/ikinci-el/otomobil/honda?minYear=2009&maxYear=2017
-https://www.arabam.com/ikinci-el/otomobil/honda?minYear=2018
-https://www.arabam.com/ikinci-el/otomobil/hyundai?maxYear=2005
+// https://www.arabam.com/ikinci-el/otomobil/honda?minYear=2018
+// https://www.arabam.com/ikinci-el/otomobil/hyundai?maxYear=2005
 https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2006&maxYear=2010
 https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2011&maxYear=2014
 https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2015&maxYear=2020
