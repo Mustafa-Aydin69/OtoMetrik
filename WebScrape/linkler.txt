@@ -76,9 +76,9 @@
 // https://www.arabam.com/ikinci-el/otomobil/mini
 // https://www.arabam.com/ikinci-el/otomobil/mitsubishi
 // https://www.arabam.com/ikinci-el/otomobil/nieve
-https://www.arabam.com/ikinci-el/otomobil/nissan
-https://www.arabam.com/ikinci-el/otomobil/opel?maxYear=1999
-https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2000&maxYear=2004
+// https://www.arabam.com/ikinci-el/otomobil/nissan
+// https://www.arabam.com/ikinci-el/otomobil/opel?maxYear=1999
+// https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2000&maxYear=2004
 https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2005&maxYear=2008
 https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2009&maxYear=2011
 https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2012&maxYear=2013
