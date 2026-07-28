@@ -51,31 +51,31 @@
 // https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2006&maxYear=2010
 // https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2011&maxYear=2014
 // https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2015&maxYear=2020
-https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2021
-https://www.arabam.com/ikinci-el/otomobil/ikco
-https://www.arabam.com/ikinci-el/otomobil/infiniti
-https://www.arabam.com/ikinci-el/otomobil/jaguar
-https://www.arabam.com/ikinci-el/otomobil/kia
-https://www.arabam.com/ikinci-el/otomobil/kuba
-https://www.arabam.com/ikinci-el/otomobil/lada
-https://www.arabam.com/ikinci-el/otomobil/lamborghini
-https://www.arabam.com/ikinci-el/otomobil/lancia
-https://www.arabam.com/ikinci-el/otomobil/leapmotor
-https://www.arabam.com/ikinci-el/otomobil/lexus
-https://www.arabam.com/ikinci-el/otomobil/lincoln
-https://www.arabam.com/ikinci-el/otomobil/lotus
-https://www.arabam.com/ikinci-el/otomobil/maserati
-https://www.arabam.com/ikinci-el/otomobil/mazda
-https://www.arabam.com/ikinci-el/otomobil/mclaren
-https://www.arabam.com/ikinci-el/otomobil/mercedes-benz?maxYear=2010
-https://www.arabam.com/ikinci-el/otomobil/mercedes-benz?minYear=2011&maxYear=2015
-https://www.arabam.com/ikinci-el/otomobil/mercedes-benz?minYear=2016&maxYear=2023
-https://www.arabam.com/ikinci-el/otomobil/mercedes-benz?minYear=2024
-https://www.arabam.com/ikinci-el/otomobil/mercury
-https://www.arabam.com/ikinci-el/otomobil/mg
-https://www.arabam.com/ikinci-el/otomobil/mini
-https://www.arabam.com/ikinci-el/otomobil/mitsubishi
-https://www.arabam.com/ikinci-el/otomobil/nieve
+// https://www.arabam.com/ikinci-el/otomobil/hyundai?minYear=2021
+// https://www.arabam.com/ikinci-el/otomobil/ikco
+// https://www.arabam.com/ikinci-el/otomobil/infiniti
+// https://www.arabam.com/ikinci-el/otomobil/jaguar
+// https://www.arabam.com/ikinci-el/otomobil/kia
+// https://www.arabam.com/ikinci-el/otomobil/kuba
+// https://www.arabam.com/ikinci-el/otomobil/lada
+// https://www.arabam.com/ikinci-el/otomobil/lamborghini
+// https://www.arabam.com/ikinci-el/otomobil/lancia
+// https://www.arabam.com/ikinci-el/otomobil/leapmotor
+// https://www.arabam.com/ikinci-el/otomobil/lexus
+// https://www.arabam.com/ikinci-el/otomobil/lincoln
+// https://www.arabam.com/ikinci-el/otomobil/lotus
+// https://www.arabam.com/ikinci-el/otomobil/maserati
+// https://www.arabam.com/ikinci-el/otomobil/mazda
+// https://www.arabam.com/ikinci-el/otomobil/mclaren
+// https://www.arabam.com/ikinci-el/otomobil/mercedes-benz?maxYear=2010
+// https://www.arabam.com/ikinci-el/otomobil/mercedes-benz?minYear=2011&maxYear=2015
+// https://www.arabam.com/ikinci-el/otomobil/mercedes-benz?minYear=2016&maxYear=2023
+// https://www.arabam.com/ikinci-el/otomobil/mercedes-benz?minYear=2024
+// https://www.arabam.com/ikinci-el/otomobil/mercury
+// https://www.arabam.com/ikinci-el/otomobil/mg
+// https://www.arabam.com/ikinci-el/otomobil/mini
+// https://www.arabam.com/ikinci-el/otomobil/mitsubishi
+// https://www.arabam.com/ikinci-el/otomobil/nieve
 https://www.arabam.com/ikinci-el/otomobil/nissan
 https://www.arabam.com/ikinci-el/otomobil/opel?maxYear=1999
 https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2000&maxYear=2004
