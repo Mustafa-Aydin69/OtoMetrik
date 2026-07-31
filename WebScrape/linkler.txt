@@ -79,31 +79,31 @@
 // https://www.arabam.com/ikinci-el/otomobil/nissan
 // https://www.arabam.com/ikinci-el/otomobil/opel?maxYear=1999
 // https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2000&maxYear=2004
-https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2005&maxYear=2008
-https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2009&maxYear=2011
-https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2012&maxYear=2013
-https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2014&maxYear=2016
-https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2017
-https://www.arabam.com/ikinci-el/otomobil/ortimobil
-https://www.arabam.com/ikinci-el/otomobil/peugeot?maxYear=2006
-https://www.arabam.com/ikinci-el/otomobil/peugeot?minYear=2007&maxYear=2013
-https://www.arabam.com/ikinci-el/otomobil/peugeot?minYear=2014
-https://www.arabam.com/ikinci-el/otomobil/plymouth
-https://www.arabam.com/ikinci-el/otomobil/pontiac
-https://www.arabam.com/ikinci-el/otomobil/porsche
-https://www.arabam.com/ikinci-el/otomobil/proton
-https://www.arabam.com/ikinci-el/otomobil/rainwoll
-https://www.arabam.com/ikinci-el/otomobil/reeder
-https://www.arabam.com/ikinci-el/otomobil/regal-raptor
-https://www.arabam.com/ikinci-el/otomobil/relive
-https://www.arabam.com/ikinci-el/otomobil/renault?maxYear=1996
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=1997&maxYear=2000
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2001&maxYear=2004
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2005&maxYear=2007
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2008&maxYear=2010
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2011&maxYear=2011
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2012&maxYear=2013
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2014&maxYear=2015
+// https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2005&maxYear=2008
+// https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2009&maxYear=2011
+// https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2012&maxYear=2013
+// https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2014&maxYear=2016
+// https://www.arabam.com/ikinci-el/otomobil/opel?minYear=2017
+// https://www.arabam.com/ikinci-el/otomobil/ortimobil
+// https://www.arabam.com/ikinci-el/otomobil/peugeot?maxYear=2006
+// https://www.arabam.com/ikinci-el/otomobil/peugeot?minYear=2007&maxYear=2013
+// https://www.arabam.com/ikinci-el/otomobil/peugeot?minYear=2014
+// https://www.arabam.com/ikinci-el/otomobil/plymouth
+// https://www.arabam.com/ikinci-el/otomobil/pontiac
+// https://www.arabam.com/ikinci-el/otomobil/porsche
+// https://www.arabam.com/ikinci-el/otomobil/proton
+// https://www.arabam.com/ikinci-el/otomobil/rainwoll
+// https://www.arabam.com/ikinci-el/otomobil/reeder
+// https://www.arabam.com/ikinci-el/otomobil/regal-raptor
+// https://www.arabam.com/ikinci-el/otomobil/relive
+// https://www.arabam.com/ikinci-el/otomobil/renault?maxYear=1996
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=1997&maxYear=2000
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2001&maxYear=2004
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2005&maxYear=2007
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2008&maxYear=2010
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2011&maxYear=2011
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2012&maxYear=2013
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2014&maxYear=2015
 https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2016&maxYear=2017
 https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2018&maxYear=2019
 https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2020&maxYear=2021
