@@ -242,5 +242,83 @@ class TestDomainValidation(unittest.TestCase):
         self.assertEqual(body["warnings"][0]["code"], "unusual_mileage_for_year")
 
 
+class TestHpConfidence(unittest.TestCase):
+    """Faz 17: peer-support tabanli guven/warning mekanizmasi. BASE_PAYLOAD
+    zaten Ford Focus 125 HP - yaygin model + tipik HP icin taban senaryodur."""
+
+    def test_common_model_typical_hp_high_confidence_no_warning(self):
+        resp = predict(BASE_PAYLOAD)
+        self.assertEqual(resp.status_code, 200)
+        body = resp.json()
+        self.assertEqual(body["confidence"]["level"], "high")
+        self.assertEqual(body["warnings"], [])
+
+    def test_common_model_extreme_hp_low_confidence_with_warning(self):
+        resp = predict({**BASE_PAYLOAD, "enginePower": 500})
+        self.assertEqual(resp.status_code, 200)
+        body = resp.json()
+        self.assertEqual(body["confidence"]["level"], "low")
+        codes = [w["code"] for w in body["warnings"]]
+        self.assertIn("low_support_high_power_segment", codes)
+
+    def test_rare_model_normal_hp_low_or_medium_confidence(self):
+        resp = predict({**BASE_PAYLOAD, "brand": "Aston Martin", "model": "DB9",
+                        "enginePower": 470, "engineDisplacement": 5900})
+        self.assertEqual(resp.status_code, 200)
+        body = resp.json()
+        self.assertIn(body["confidence"]["level"], ("low", "medium"))
+
+    def test_bmw_m_serisi_reduced_confidence_with_warning(self):
+        resp = predict({**BASE_PAYLOAD, "brand": "BMW", "model": "M Serisi",
+                        "enginePower": 276, "engineDisplacement": 3000, "bodyType": "Coupe"})
+        self.assertEqual(resp.status_code, 200)
+        body = resp.json()
+        # peer_count=22, model_count=58 -> HIGH esiginin (50) altinda, "medium"
+        # (veri-turevli esiklerle "low" degil ama tam guven de degil) - her
+        # ikisi de warning URETIR (yalnizca "high" warning'siz kalir).
+        self.assertIn(body["confidence"]["level"], ("low", "medium"))
+        self.assertGreater(len(body["warnings"]), 0)
+
+    def test_hyundai_accent_601hp_not_422_but_low_confidence_strong_warning(self):
+        """Kullanicinin acik talimati: 601 HP genel-gecer sekilde reddedilmemeli
+        (bazi araclarda gecerli olabilir) - marka-model bagimli guvenilir bir
+        fiziksel kural olmadigi icin daha guvenli davranis low confidence +
+        warning'dir, 422 DEGIL (2000 fiziksel sinirinin altinda kaldigi icin
+        zaten domain_validation da reddetmez)."""
+        resp = predict({**BASE_PAYLOAD, "brand": "Hyundai", "model": "Accent", "enginePower": 601})
+        self.assertEqual(resp.status_code, 200)
+        body = resp.json()
+        self.assertEqual(body["confidence"]["level"], "low")
+        self.assertEqual(body["confidence"]["peer_count"], 0)
+        codes = [w["code"] for w in body["warnings"]]
+        self.assertIn("low_support_high_power_segment", codes)
+
+    def test_physically_impossible_hp_still_422(self):
+        resp = predict({**BASE_PAYLOAD, "enginePower": 5000})
+        self.assertEqual(resp.status_code, 422)
+        self.assertEqual(resp.json()["detail"]["field"], "motor_gucu")
+
+    def test_smoke_test_price_unchanged_by_confidence_mechanism(self):
+        """confidence/warning eklenmesi normal senaryolarin FIYATINI
+        degistirmemeli - sadece response'a ek alan eklenir."""
+        resp = predict(BASE_PAYLOAD)
+        body = resp.json()
+        self.assertEqual(body["price"], body["prediction"])
+        self.assertGreater(body["price"], 0)
+
+    def test_confidence_lookup_latency_is_negligible(self):
+        """Madde 6 - request basina DataFrame taramasi YASAK. 50 ardisik
+        /predict cagrisinin ortalama round-trip suresi FastAPI overhead'i
+        dahil bile birkaç ms araliginda kalmali (DataFrame taramasi olsaydi
+        onlarca/yuzlerce ms'ye cikardi)."""
+        import time
+        t0 = time.perf_counter()
+        for _ in range(50):
+            predict(BASE_PAYLOAD)
+        elapsed_ms = (time.perf_counter() - t0) * 1000
+        avg_ms = elapsed_ms / 50
+        self.assertLess(avg_ms, 50, f"ortalama istek suresi {avg_ms:.2f}ms - beklenenden yuksek")
+
+
 if __name__ == "__main__":
     unittest.main()

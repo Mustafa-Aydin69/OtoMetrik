@@ -17,7 +17,7 @@ export const MILEAGE_MIN = 0;
 export const MILEAGE_MAX = 1000000;
 
 export const ENGINE_POWER_MIN = 1;
-export const ENGINE_POWER_MAX = 800;
+export const ENGINE_POWER_MAX = 2000;
 
 export const ENGINE_DISPLACEMENT_MIN = 0;
 export const ENGINE_DISPLACEMENT_MAX = 9000;

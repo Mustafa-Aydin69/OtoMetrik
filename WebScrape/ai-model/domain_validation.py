@@ -20,8 +20,17 @@ yuzdelik tablosu):
   taksonomisi raporundaki ilgili not.
 - kilometre: [0, 1_000_000] - preprocess.py zaten bu ustu filtreliyor (Faz 8/9
   EDA karari, "veri kirliligi") - website'in eski 2.000.000 siniri gevsekti.
-- motor_gucu: [1, 800] - egitim P99.99=601 (supercar/nadir performans
-  araclari icin marj); ustundeki degerler (99999, 130000) veri girisi hatasi.
+- motor_gucu: [1, 2000] - Faz 16 (hp_quality_analysis.py) + Faz 17 (hp_support.py)
+  SONRASI YENIDEN TANIMLANDI: eskiden TEK bir sayi (800) hem "fiziksel olarak
+  mumkun mu" hem "model buna guvenilir tahmin uretebilir mi" sorularini
+  birlikte cevaplamaya calisiyordu - bunlar FARKLI sorular. 2000, SADECE
+  fiziksel-imkansizlik sinirdir (gercek uretim hypercarlari ~1500-1600 HP
+  araligini kapsayacak marj ile) - "99999", "130000" gibi acik veri girisi
+  hatalarini reddeder. "Model bu HP'yi guvenilir tahmin eder mi" sorusu ARTIK
+  bu sabit sayidan degil, hp_support.py'nin marka+model peer-destek
+  yogunlugundan (serve.py /predict yanitindaki "confidence"/"warnings")
+  cevaplanir - bkz. Faz 16 Madde 6 bulgusu: 400+ HP'de egitim R2=-3.18 (800
+  siniri BUNU cozmuyordu, cunku sorun sinir degil ornek sayisidir).
 - motor_hacmi: [0, 9000] (elektrikte 0 kabul) - egitim P99.99=6001.
 - degisen_sayisi / boyali_sayisi: [0, 13] her biri (veri max: 12 / 13).
 - degisen_sayisi + boyali_sayisi: <=13 (SERT kural) - egitim verisinde bu
@@ -51,7 +60,7 @@ _CALENDAR_YEAR = date.today().year
 FIELD_BOUNDS = {
     "yil": {"min": 1950, "max": _CALENDAR_YEAR + 1},
     "kilometre": {"min": 0, "max": 1_000_000},
-    "motor_gucu": {"min": 1, "max": 800},
+    "motor_gucu": {"min": 1, "max": 2000},
     "motor_hacmi": {"min": 0, "max": 9000},
     "degisen_sayisi": {"min": 0, "max": 13},
     "boyali_sayisi": {"min": 0, "max": 13},

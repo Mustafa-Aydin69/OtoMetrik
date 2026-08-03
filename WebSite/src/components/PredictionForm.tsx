@@ -11,6 +11,7 @@ import {
   COLORS,
   CURRENT_YEAR,
   FUEL_TYPES,
+  getPaketSuggestions,
   MIN_YEAR,
   TRANSMISSIONS,
   validatePrediction,
@@ -154,6 +155,11 @@ export function PredictionForm() {
   }
 
   const modelSuggestions = MODEL_SUGGESTIONS[form.brand] ?? [];
+  // Marka+model seçilince o kombinasyon için eğitimde GERÇEKTEN görülen
+  // paket değerleri önerilir (bkz. lib/validation.ts getPaketSuggestions) -
+  // hata taksonomisi analizi paket'in asıl sorununun model doğruluğu değil,
+  // serbest metnin eğitim kelime hazinesiyle eşleşmemesi olduğunu gösterdi.
+  const paketSuggestions = getPaketSuggestions(form.brand, form.model);
 
   return (
     <div className="mx-auto w-full max-w-3xl">
@@ -195,7 +201,12 @@ export function PredictionForm() {
               value={form.trim}
               onChange={(v) => set("trim", v)}
               error={errors.trim}
-              placeholder="örn. Titanium (opsiyonel)"
+              placeholder={
+                paketSuggestions.length > 0
+                  ? "Listeden seçin veya yazın (opsiyonel)"
+                  : "örn. Titanium (opsiyonel)"
+              }
+              suggestions={paketSuggestions}
             />
             <SelectField
               id="year"

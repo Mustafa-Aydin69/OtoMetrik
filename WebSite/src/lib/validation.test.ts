@@ -5,7 +5,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { toCanonicalPayload, validatePrediction, type PredictionInput } from "./validation";
+import { getPaketSuggestions, toCanonicalPayload, validatePrediction, type PredictionInput } from "./validation";
 import { MILEAGE_MAX, YEAR_MAX, YEAR_MIN } from "./domain-bounds.generated";
 
 const BASE: PredictionInput = {
@@ -76,4 +76,22 @@ test("kilometre üst sınırı artık 1.000.000 (eski 2.000.000 değil)", () => 
 test("değişen+boyalı toplamı 13'ü aşınca reddedilir", () => {
   const result = validatePrediction({ ...BASE, replacedPartsCount: 7, paintedPartsCount: 7 });
   assert.equal(result.paintedPartsCount !== undefined, true);
+});
+
+test("getPaketSuggestions: bilinen marka+model için egitimdeki pakatleri döner", () => {
+  const suggestions = getPaketSuggestions("Ford", "Focus");
+  assert.ok(suggestions.length > 0);
+  assert.ok(suggestions.includes("TDCi Trend X"));
+});
+
+test("getPaketSuggestions: website etiketini (Mercedes-Benz) kanonik markaya (Mercedes - Benz) çevirir", () => {
+  // Mercedes'te egitim verisindeki "model" alani "C" (BMW'deki "3 Serisi"
+  // formatinin aksine "Serisi" eki YOK - markaya gore farkli scrape kalibi).
+  const suggestions = getPaketSuggestions("Mercedes-Benz", "C");
+  assert.ok(suggestions.length > 0);
+});
+
+test("getPaketSuggestions: bilinmeyen marka+model için boş dizi döner", () => {
+  const suggestions = getPaketSuggestions("Ford", "Bilinmeyen Model XYZ");
+  assert.deepEqual(suggestions, []);
 });

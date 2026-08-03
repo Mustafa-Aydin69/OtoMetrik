@@ -31,6 +31,7 @@ import pandas as pd
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
+from hp_support import build_support_summary
 from preprocess import CURRENT_YEAR, DROP_COLS, UNKNOWN_FLAG_COLS, load_clean_train_dataset, split_features_target
 
 CATEGORICAL_COLS = ['marka', 'model', 'paket', 'kasa_turu', 'renk', 'yakit_turu', 'vites']
@@ -166,6 +167,11 @@ def evaluate(y_true, y_pred, label):
 # artefaktin referans yili acikca gorunur olur (bkz. /health'teki
 # model_reference_year ve model_age_years alanlari) ve gercek cozum -
 # yeniden egitim veya "yas" tanımının surumlenmesi - net bir sinyalle tetiklenir.
+#
+# 'hp_support': Faz 17 - marka+model (ve fallback marka/global) duzeyinde
+# motor_gucu destek ozetleri (bkz. hp_support.py). serve.py bunu request
+# basina DataFrame taramasi YAPMADAN, kucuk dict aramalariyla /predict
+# yanitindaki "confidence"/"warnings" alanlarini uretmek icin kullanir.
 def save_model(model, X_full):
     os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
     artifact = {
@@ -174,6 +180,7 @@ def save_model(model, X_full):
         'category_sets': {col: X_full[col].cat.categories for col in CATEGORICAL_COLS},
         'feature_columns': list(X_full.columns),
         'reference_year': CURRENT_YEAR,
+        'hp_support': build_support_summary(X_full),
     }
     joblib.dump(artifact, MODEL_PATH)
     return MODEL_PATH

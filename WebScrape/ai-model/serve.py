@@ -20,6 +20,18 @@ fazla hata varsa detail bir LISTE, tek hata varsa detail tek bir OBJE olur
 allowed_examples} sekli). Kesin-yanlis olmayan ama supheli durumlar (orn.
 asiri km/yil) tahmini ENGELLEMEZ - basarili yanitin "warnings" alanina eklenir.
 
+Faz 17: motor_gucu icin ARTIK TEK bir sabit sinir (eskiden 800) yerine iki
+ayri katman var - (1) domain_validation.py'deki 2000 HP: SADECE fiziksel
+imkansizlik icin sert ret (422); (2) hp_support.py'deki marka+model
+peer-destek yogunlugu: modelin bu ozel marka+model+HP kombinasyonunu ne kadar
+"gordugunu" olcer, /predict yanitina "confidence" ({level, peer_count,
+model_count, hp_percentile}) ve dusuk destekte bir "warning" ekler - TAHMINI
+ENGELLEMEZ. Ornek: 601 HP bir Hyundai Accent GENELDE (2000 sinirinin altinda)
+kabul edilir ama confidence="low" + warning doner - "601 HP her zaman
+suphelidir" gibi korlemesine bir kural YERINE, "bu marka+modelin bu HP'de
+egitim destegi yok" gibi ozel bir sinyal verir (bkz. dagitima hazirlik/hp
+kalite analizindeki Madde 6 tasarim onerisinin UYGULAMASI).
+
 Calistirma (ai-model/ calisma dizini olarak):
     uvicorn serve:app --host 0.0.0.0 --port 8000
 
@@ -34,6 +46,7 @@ from pydantic import BaseModel
 
 from category_mapping import LABEL_TO_CANONICAL, UNSUPPORTED_LABELS, allowed_examples, resolve_canonical
 from domain_validation import validate_domain
+from hp_support import compute_confidence, lookup_support
 from preprocess import CURRENT_YEAR
 from train import apply_saved_categories, load_model
 
@@ -54,6 +67,11 @@ except FileNotFoundError as exc:
 # takvim yili ilerledikce bu deger SESSIZCE degistirilmez (bkz. modul
 # docstring'i, Faz 16).
 MODEL_REFERENCE_YEAR = MODEL_ARTIFACT.get('reference_year', CURRENT_YEAR)
+
+# Faz 17 - marka+model motor_gucu destek ozetleri (bkz. hp_support.py). Eski
+# (bu alani icermeyen) artefaktlarla geriye donuk uyumluluk icin None olabilir -
+# predict() bu durumda confidence hesaplamayi atlar (ama tahmini ENGELLEMEZ).
+HP_SUPPORT = MODEL_ARTIFACT.get('hp_support')
 
 # {"marka": [...], "vites": [...], ...} - resolve_canonical() ve 422 hata
 # mesajlarindaki allowed_examples icin bir kez hesaplanir.
@@ -181,6 +199,36 @@ def categories():
     }
 
 
+# Faz 17: marka+model+motor_gucu icin peer-destek tabanli guven duzeyi ve
+# (varsa) dusuk-destek uyarisi. HP_SUPPORT yoksa (eski artefakt) confidence
+# None doner - cagiran bunu response'tan disarida birakir, tahmini
+# ENGELLEMEZ. Request basina DataFrame taramasi YOK - sadece hp_support.py'nin
+# kucuk dict aramalari (bkz. o modulun docstring'i).
+def compute_hp_confidence(marka, model, motor_gucu):
+    if HP_SUPPORT is None:
+        return None, None
+    peer_count, model_count, hp_percentile, peer_group = lookup_support(marka, model, motor_gucu, HP_SUPPORT)
+    level = compute_confidence(peer_count, model_count, peer_group)
+    confidence = {
+        "level": level,
+        "peer_count": peer_count,
+        "model_count": model_count,
+        "hp_percentile": round(hp_percentile, 1),
+    }
+    warning = None
+    if level != "high":
+        strength = "az" if level == "medium" else "çok az"
+        warning = {
+            "code": "low_support_high_power_segment",
+            "message": (
+                f"Bu marka/model ve motor gücü ({motor_gucu:.0f} HP) kombinasyonu eğitim "
+                f"verisinde {strength} temsil edilmektedir ({peer_count} benzer kayıt). "
+                f"Tahmin daha az güvenilir olabilir."
+            ),
+        }
+    return confidence, warning
+
+
 @app.post("/predict")
 def predict(req: PredictRequest):
     category_errors, resolved_categories = collect_category_errors(req)
@@ -197,4 +245,11 @@ def predict(req: PredictRequest):
     if not np.isfinite(pred) or pred <= 0:
         raise HTTPException(status_code=502, detail="Model gecerli bir tahmin uretmedi.")
 
-    return {"price": round(pred), "currency": "TRY", "source": "model", "warnings": warnings}
+    confidence, hp_warning = compute_hp_confidence(resolved_categories["marka"] or req.brand, req.model, req.enginePower)
+    if hp_warning is not None:
+        warnings = warnings + [hp_warning]
+
+    response = {"price": round(pred), "prediction": round(pred), "currency": "TRY", "source": "model", "warnings": warnings}
+    if confidence is not None:
+        response["confidence"] = confidence
+    return response

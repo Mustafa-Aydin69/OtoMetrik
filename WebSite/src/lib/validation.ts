@@ -31,6 +31,7 @@ import {
   YEAR_MAX,
   YEAR_MIN,
 } from "./domain-bounds.generated";
+import { PAKET_BY_MODEL } from "./paket-suggestions.generated";
 
 export interface PredictionInput {
   brand: string;
@@ -194,7 +195,7 @@ const CATEGORICAL_FIELD_OPTIONS: Record<
   color: RENK_OPTIONS,
 };
 
-function labelToCanonical(field: keyof typeof CATEGORICAL_FIELD_OPTIONS, label: string): string {
+export function labelToCanonical(field: keyof typeof CATEGORICAL_FIELD_OPTIONS, label: string): string {
   const match = CATEGORICAL_FIELD_OPTIONS[field].find((o) => o.label === label);
   // Eşleşme yoksa (teorik olarak olmamalı - dropdown zaten sadece bilinen
   // etiketleri sunar) etiketi olduğu gibi geçirir; serve.py resolve_canonical()
@@ -217,4 +218,20 @@ export function toCanonicalPayload(input: PredictionInput): PredictionInput {
     bodyType: labelToCanonical("bodyType", input.bodyType),
     color: labelToCanonical("color", input.color),
   };
+}
+
+/**
+ * Seçilen marka (website etiketi, örn. "Mercedes-Benz") + model için, eğitim
+ * verisinde GERÇEKTEN görülen paket değerlerini (en sıktan en nadire) döner —
+ * paket-suggestions.generated.ts'ten (kaynağı: train_dataset.csv). Model
+ * boşsa veya bu marka+model kombinasyonu eğitimde yoksa boş dizi döner
+ * (TextField'ın suggestions olmadan normal çalışmasına izin verir — paket
+ * serbest metin olarak kalır, autocomplete sadece bir öneri katmanıdır).
+ * Kullanıcı önerilerden birini seçerse gönderilen değer zaten kanoniktir
+ * (paket için ayrı bir label→canonical çevirisi YOKTUR — bkz. modül notu).
+ */
+export function getPaketSuggestions(brandLabel: string, model: string): readonly string[] {
+  const canonicalBrand = labelToCanonical("brand", brandLabel);
+  const key = `${canonicalBrand}|${model.trim()}`;
+  return PAKET_BY_MODEL[key] ?? [];
 }
