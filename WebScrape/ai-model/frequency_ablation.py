@@ -32,6 +32,7 @@ import pandas as pd
 from lightgbm import LGBMRegressor
 from sklearn.model_selection import KFold
 
+from hierarchical_price import FEATURE_COLUMN
 from train import BASELINE_PARAMS, prepare_external_holdout, prepare_full_training_data
 
 BASE_DIR = os.path.join(os.path.dirname(__file__), '..')
@@ -193,8 +194,15 @@ def run_experiment(group_name, config, X_full, y_full, X_holdout, y_holdout, see
 
 
 def main():
+    # train.py Faz 20'de prepare_full_training_data() ARTIK HER ZAMAN
+    # brand_model_median_price'i (FEATURE_COLUMN) ekliyor - bu script'in kendi
+    # A/B/C/D/E gruplari icin bu ozelligi SECEREK ekleyip/eklememesi gerekiyor
+    # (compute_oof_price_stats/compute_holdout_price_stats), o yuzden burada
+    # DUSURULUR - aksi halde "hier_price: False" olan gruplar (A/B/C/D) da
+    # sessizce bu ozelligi icerir ve ablation'in kontrol grubu anlami bozulur.
     X_full, y_full = prepare_full_training_data()
-    X_holdout, y_holdout = prepare_external_holdout(X_full)
+    X_full = X_full.drop(columns=[FEATURE_COLUMN])
+    X_holdout, y_holdout = prepare_external_holdout(X_full, y_full)
     model_freq_train, _ = compute_freq_dicts(X_full)
 
     all_results = []

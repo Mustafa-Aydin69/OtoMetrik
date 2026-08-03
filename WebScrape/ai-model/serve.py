@@ -32,11 +32,20 @@ suphelidir" gibi korlemesine bir kural YERINE, "bu marka+modelin bu HP'de
 egitim destegi yok" gibi ozel bir sinyal verir (bkz. dagitima hazirlik/hp
 kalite analizindeki Madde 6 tasarim onerisinin UYGULAMASI).
 
+Faz 20: brand_model_median_price (bkz. hierarchical_price.py) - request'teki
+kanonik marka/model'e karsilik gelen hiyerarsik fiyat medyani (marka+model ->
+marka -> global fallback), artefaktin 'hierarchical_price' lookup'undan
+DataFrame taramasi yapmadan (kucuk dict aramalari) eklenir. Kaynak (hangi
+fallback katmaninin kullanildigi) sadece OTOMETRIK_DEBUG=1 ortam degiskeni
+set edilmisse "hierarchical_price_support" alaniyla yanita eklenir - production
+yanit sozlesmesini degistirmemesi icin normal calismada gizlidir.
+
 Calistirma (ai-model/ calisma dizini olarak):
     uvicorn serve:app --host 0.0.0.0 --port 8000
 
 Once models/lightgbm_final.joblib'in var olmasi gerekir (bkz. train.py).
 """
+import os
 from datetime import date
 
 import numpy as np
@@ -46,9 +55,14 @@ from pydantic import BaseModel
 
 from category_mapping import LABEL_TO_CANONICAL, UNSUPPORTED_LABELS, allowed_examples, resolve_canonical
 from domain_validation import validate_domain
+from hierarchical_price import FEATURE_COLUMN, lookup_price
 from hp_support import compute_confidence, lookup_support
 from preprocess import CURRENT_YEAR
 from train import apply_saved_categories, load_model
+
+# Gelistirme-modu debug alanlari (orn. hierarchical_price_support) icin -
+# production'da varsayilan olarak KAPALI, yanit sozlesmesi sabit kalir.
+DEBUG_MODE = os.environ.get('OTOMETRIK_DEBUG', '0') == '1'
 
 app = FastAPI(title="OtoMetrik Fiyat Tahmin Servisi")
 
@@ -72,6 +86,13 @@ MODEL_REFERENCE_YEAR = MODEL_ARTIFACT.get('reference_year', CURRENT_YEAR)
 # (bu alani icermeyen) artefaktlarla geriye donuk uyumluluk icin None olabilir -
 # predict() bu durumda confidence hesaplamayi atlar (ama tahmini ENGELLEMEZ).
 HP_SUPPORT = MODEL_ARTIFACT.get('hp_support')
+
+# Faz 20 - brand_model_median_price icin TAM (fold'suz) egitim lookup'u (bkz.
+# hierarchical_price.py). Eski (bu alani icermeyen) artefaktlarla geriye donuk
+# uyumluluk icin None olabilir - build_feature_row() bu durumda ozelligi hic
+# eklemez (apply_saved_categories() zaten artefaktin feature_columns'unda
+# olmayan bir sutunu beklemez).
+HIERARCHICAL_PRICE_LOOKUP = MODEL_ARTIFACT.get('hierarchical_price')
 
 # {"marka": [...], "vites": [...], ...} - resolve_canonical() ve 422 hata
 # mesajlarindaki allowed_examples icin bir kez hesaplanir.
@@ -229,6 +250,19 @@ def compute_hp_confidence(marka, model, motor_gucu):
     return confidence, warning
 
 
+# Faz 20: request'teki kanonik marka+model icin brand_model_median_price
+# ozelligini (bkz. hierarchical_price.py) artefaktin embedded lookup'undan
+# uretir - DataFrame taramasi YOK, sadece kucuk dict aramalari (hp_support ile
+# ayni performans yaklasimi). HIERARCHICAL_PRICE_LOOKUP yoksa (eski artefakt)
+# (None, None) doner - cagiran ozelligi satira eklemeyi atlar, tahmini
+# ENGELLEMEZ.
+def compute_hierarchical_price_feature(marka, model):
+    if HIERARCHICAL_PRICE_LOOKUP is None:
+        return None, None
+    value, source = lookup_price(marka, model, HIERARCHICAL_PRICE_LOOKUP)
+    return value, source
+
+
 @app.post("/predict")
 def predict(req: PredictRequest):
     category_errors, resolved_categories = collect_category_errors(req)
@@ -238,18 +272,25 @@ def predict(req: PredictRequest):
     if all_errors:
         raise HTTPException(status_code=422, detail=all_errors[0] if len(all_errors) == 1 else all_errors)
 
+    marka_for_lookup = resolved_categories["marka"] or req.brand
     row = build_feature_row(req, resolved_categories)
+    hp_value, hp_source = compute_hierarchical_price_feature(marka_for_lookup, req.model)
+    if hp_value is not None:
+        row[FEATURE_COLUMN] = hp_value
+
     X = apply_saved_categories(row, MODEL_ARTIFACT)
     pred = float(MODEL_ARTIFACT["model"].predict(X)[0])
 
     if not np.isfinite(pred) or pred <= 0:
         raise HTTPException(status_code=502, detail="Model gecerli bir tahmin uretmedi.")
 
-    confidence, hp_warning = compute_hp_confidence(resolved_categories["marka"] or req.brand, req.model, req.enginePower)
+    confidence, hp_warning = compute_hp_confidence(marka_for_lookup, req.model, req.enginePower)
     if hp_warning is not None:
         warnings = warnings + [hp_warning]
 
     response = {"price": round(pred), "prediction": round(pred), "currency": "TRY", "source": "model", "warnings": warnings}
+    if DEBUG_MODE and hp_value is not None:
+        response["hierarchical_price_support"] = {"source": hp_source, "value": round(hp_value)}
     if confidence is not None:
         response["confidence"] = confidence
     return response

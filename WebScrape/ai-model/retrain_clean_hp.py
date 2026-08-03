@@ -51,12 +51,18 @@ def segment_report(label, y_true, y_pred, mask):
 
 def main():
     X_full, y_full = prepare_full_training_data()
-    X_holdout, y_holdout = prepare_external_holdout(X_full)
+    X_holdout, y_holdout = prepare_external_holdout(X_full, y_full)
 
     print('=== ONCE (mevcut production model, filtresiz egitim) ===')
     before_artifact = load_model()
     before_model = before_artifact['model']
-    before_preds = before_model.predict(X_holdout)
+    # Faz 20: "once" artefakti brand_model_median_price'tan ONCEKI (eski sema)
+    # bir modelse, X_holdout'un (yeni semali) ekstra sutunuyla predict() kolon
+    # sayisi uyusmazligi verir - "once" tahmini o artefaktin KENDI egitim
+    # zamani sutun kumesine (before_artifact['feature_columns']) hizalanarak
+    # alinir; "sonra" tahmini asagida degismeden X_holdout'un TAMAMINI kullanir.
+    X_holdout_before = X_holdout.reindex(columns=before_artifact['feature_columns'])
+    before_preds = before_model.predict(X_holdout_before)
     segment_report('GENEL', y_holdout.values, before_preds, np.ones(len(y_holdout), dtype=bool))
     hp = X_holdout['motor_gucu'].values
     segment_report('300+ HP', y_holdout.values, before_preds, hp >= 300)
@@ -81,7 +87,7 @@ def main():
 
     model = LGBMRegressor(**BASELINE_PARAMS)
     model.fit(X_clean, y_clean)
-    model_path = save_model(model, X_clean)
+    model_path = save_model(model, X_clean, y_clean)
     print(f'yeni production model kaydedildi: {model_path}')
     print()
 

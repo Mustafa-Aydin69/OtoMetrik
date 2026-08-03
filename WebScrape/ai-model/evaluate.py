@@ -254,7 +254,7 @@ def main():
     X_full, y_full = prepare_full_training_data()
     train_df = pd.read_csv(TRAIN_PATH, low_memory=False, encoding='utf-8-sig')
     holdout_df = load_cars1_holdout()
-    X_holdout, y_holdout = prepare_external_holdout(X_full)
+    X_holdout, y_holdout = prepare_external_holdout(X_full, y_full)
     preds = model.predict(X_holdout)
 
     report = []

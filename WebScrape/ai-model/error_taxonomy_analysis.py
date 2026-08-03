@@ -89,7 +89,7 @@ def build_error_dataframe():
     model = artifact['model']
 
     X_full, y_full = prepare_full_training_data()
-    X_holdout, y_holdout = prepare_external_holdout(X_full)
+    X_holdout, y_holdout = prepare_external_holdout(X_full, y_full)
 
     preds = model.predict(X_holdout)
     contribs = model.booster_.predict(X_holdout, pred_contrib=True)

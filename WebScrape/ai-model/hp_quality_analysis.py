@@ -192,7 +192,7 @@ def classify_hp_row(row):
 
 def build_hp_quality_dataframe():
     X_full, y_full = prepare_full_training_data()
-    X_holdout, y_holdout = prepare_external_holdout(X_full)
+    X_holdout, y_holdout = prepare_external_holdout(X_full, y_full)
 
     primary, fallback = build_peer_stats(X_full)
 

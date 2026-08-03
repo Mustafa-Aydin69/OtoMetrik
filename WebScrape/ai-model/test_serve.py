@@ -9,9 +9,11 @@ import unittest
 
 from fastapi.testclient import TestClient
 
+import serve
 from domain_validation import FIELD_BOUNDS, MAX_TOTAL_DAMAGED_PARTS
 from preprocess import CURRENT_YEAR
 from serve import app
+from train import load_model
 
 client = TestClient(app)
 
@@ -318,6 +320,69 @@ class TestHpConfidence(unittest.TestCase):
         elapsed_ms = (time.perf_counter() - t0) * 1000
         avg_ms = elapsed_ms / 50
         self.assertLess(avg_ms, 50, f"ortalama istek suresi {avg_ms:.2f}ms - beklenenden yuksek")
+
+
+class TestHierarchicalPriceServe(unittest.TestCase):
+    """Faz 20: serve.py'nin brand_model_median_price entegrasyonu icin
+    gorev talebindeki regresyon senaryolari (test 4-5). Yuklu MODEL_ARTIFACT'in
+    'hierarchical_price' icermedigi (henuz yeniden egitilmemis) eski bir
+    artefakt olma ihtimaline karsi tum testler skipTest ile ATLANIR - CI'da
+    sessizce yanlis-pozitif GECMEZ, sadece "yeniden egitim gerekiyor" sinyali verir."""
+
+    def setUp(self):
+        if serve.HIERARCHICAL_PRICE_LOOKUP is None:
+            self.skipTest('MODEL_ARTIFACT hierarchical_price icermiyor - once train.py/retrain_clean_hp.py calistirilmali')
+
+    def test_known_brand_model_combo_uses_brand_model_source(self):
+        value, source = serve.compute_hierarchical_price_feature('Ford', 'Focus')
+        self.assertEqual(source, 'brand_model')
+        self.assertIsNotNone(value)
+
+    def test_unknown_brand_model_combo_falls_back(self):
+        value, source = serve.compute_hierarchical_price_feature('Wroom Motors', 'Ghost Model 9000')
+        self.assertIn(source, ('brand', 'global'))
+        self.assertIsNotNone(value)
+
+    def test_label_and_canonical_marka_share_same_lookup(self):
+        """Website etiketi ('Mercedes-Benz') /predict icinde resolve_canonical() ile
+        AYNI kanonik degere ('Mercedes - Benz') cevrilir - bu yuzden compute_hierarchical_price_feature'a
+        HER IKI durumda da ayni (zaten kanonik) deger ulasir ve AYNI lookup sonucunu verir. Bu test
+        collect_category_errors()'in gercekten yaptigi cevrimi (resolve_canonical) kullanarak, kanonige
+        cevrilMEMIS ham etiketi dogrudan lookup'a vermenin YANLIS olacagini da ustu kapali dogrular."""
+        from category_mapping import resolve_canonical
+        _, label_canonical = resolve_canonical('marka', 'Mercedes-Benz', serve.CATEGORY_SETS)
+        _, canonical_canonical = resolve_canonical('marka', 'Mercedes - Benz', serve.CATEGORY_SETS)
+        self.assertEqual(label_canonical, canonical_canonical)
+
+        label_value, label_source = serve.compute_hierarchical_price_feature(label_canonical, 'C Serisi')
+        canonical_value, canonical_source = serve.compute_hierarchical_price_feature(canonical_canonical, 'C Serisi')
+        self.assertEqual(label_value, canonical_value)
+        self.assertEqual(label_source, canonical_source)
+
+        # Uctan uca: /predict fiyati da (hierarchical feature dahil TUM pipeline) ayni cikmali.
+        payload = {**BASE_PAYLOAD, "model": "C Serisi", "engineDisplacement": 2000, "enginePower": 190}
+        label_resp = predict({**payload, "brand": "Mercedes-Benz"})
+        canonical_resp = predict({**payload, "brand": "Mercedes - Benz"})
+        self.assertEqual(label_resp.json()["price"], canonical_resp.json()["price"])
+
+    def test_same_input_same_prediction_across_artifact_reloads(self):
+        """Yeniden baslatmalar arasinda birebir ayni tahmin - artefakti
+        diskten TEKRAR yukleyip (yeni bir process'i simule eder) ayni
+        lookup sonucunu urettigini dogrular (build_price_lookup rastgelelik
+        icermez, bkz. hierarchical_price.py)."""
+        reloaded = load_model()
+        from hierarchical_price import lookup_price
+        v1, s1 = lookup_price('Ford', 'Focus', serve.HIERARCHICAL_PRICE_LOOKUP)
+        v2, s2 = lookup_price('Ford', 'Focus', reloaded['hierarchical_price'])
+        self.assertEqual(v1, v2)
+        self.assertEqual(s1, s2)
+
+    def test_predict_response_hides_debug_field_by_default(self):
+        """Production yanit sozlesmesi degismemeli - OTOMETRIK_DEBUG set
+        edilmemisken hierarchical_price_support ASLA yanitta OLMAMALI."""
+        resp = predict(BASE_PAYLOAD)
+        self.assertEqual(resp.status_code, 200)
+        self.assertNotIn('hierarchical_price_support', resp.json())
 
 
 if __name__ == "__main__":

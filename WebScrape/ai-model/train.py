@@ -31,6 +31,7 @@ import pandas as pd
 from lightgbm import LGBMRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
+from hierarchical_price import FEATURE_COLUMN, attach_lookup_feature, attach_oof_feature, build_price_lookup
 from hp_support import build_support_summary
 from preprocess import CURRENT_YEAR, DROP_COLS, UNKNOWN_FLAG_COLS, load_clean_train_dataset, split_features_target
 
@@ -118,24 +119,41 @@ def load_cars1_holdout():
 # Dis holdout'u X_train ile ayni kolon sirasina/kategori setine sabitler (to_category'deki
 # "train'de gorulmemis -> NaN" mantigi burada da uygulanir), boylece model dogrudan predict
 # edebilir.
-def prepare_external_holdout(X_train):
+#
+# Faz 20: y_train ARTIK ZORUNLU parametre - X_train'de brand_model_median_price
+# varsa (bkz. prepare_full_training_data()), holdout icin AYNI ozellik TAM
+# (fold'suz) egitim verisinden hesaplanan lookup ile atanir (sizinti riski YOK
+# - holdout bu hesaplamaya hic girmiyor). X_train bu ozelligi icermiyorsa
+# (orn. prepare_training_data()'nin ic 80/20 split'i - tanisal amacli, bkz.
+# main()) hicbir sey eklenmez, davranis eskisiyle AYNI kalir.
+def prepare_external_holdout(X_train, y_train):
     df = load_cars1_holdout()
     y_holdout = df['fiyat']
     X_holdout = df.drop(columns=['fiyat', 'ilan_id']).reindex(columns=X_train.columns)
     for col in CATEGORICAL_COLS:
         X_holdout[col] = X_holdout[col].astype('category').cat.set_categories(X_train[col].cat.categories)
+    if FEATURE_COLUMN in X_train.columns:
+        lookup = build_price_lookup(X_train, y_train)
+        X_holdout = attach_lookup_feature(X_holdout, lookup)
     return X_holdout, y_holdout
 
 
 # Ic 80/20 split olmadan, train_dataset.csv'nin tamamini final model icin hazirlar - satir
 # sayisini artirmak genelleme performansini artirir, ic split zaten sadece Madde 2'nin
 # hiperparametre secimi icindi.
+#
+# Faz 20: brand_model_median_price (Faz 19 ablation'da dogrulanan tek hiyerarsik
+# fiyat ozelligi) OOF (sizinti-siz) olarak eklenir - bkz. hierarchical_price.py.
+# Bu fonksiyonu cagiran HERKES (evaluate.py, error_taxonomy_analysis.py, vb.)
+# otomatik olarak bu ozellige sahip X_full alir - ayrica guncellenmeleri
+# gerekmez, feature_columns/apply_saved_categories() zaten tutarli kalir.
 def prepare_full_training_data():
     df = load_clean_train_dataset()
     y = df['fiyat']
     X = df.drop(columns=['fiyat', 'ilan_id'])
     for col in CATEGORICAL_COLS:
         X[col] = X[col].astype('category')
+    X, _ = attach_oof_feature(X, y)
     return X, y
 
 
@@ -172,7 +190,11 @@ def evaluate(y_true, y_pred, label):
 # motor_gucu destek ozetleri (bkz. hp_support.py). serve.py bunu request
 # basina DataFrame taramasi YAPMADAN, kucuk dict aramalariyla /predict
 # yanitindaki "confidence"/"warnings" alanlarini uretmek icin kullanir.
-def save_model(model, X_full):
+#
+# 'hierarchical_price': Faz 20 - brand_model_median_price icin TAM (fold'suz)
+# egitim lookup'u (bkz. hierarchical_price.py). y_full ARTIK ZORUNLU parametre
+# - lookup'u insa etmek icin egitim fiyatlarina ihtiyac var.
+def save_model(model, X_full, y_full):
     os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
     artifact = {
         'model': model,
@@ -181,6 +203,7 @@ def save_model(model, X_full):
         'feature_columns': list(X_full.columns),
         'reference_year': CURRENT_YEAR,
         'hp_support': build_support_summary(X_full),
+        'hierarchical_price': build_price_lookup(X_full, y_full),
     }
     joblib.dump(artifact, MODEL_PATH)
     return MODEL_PATH
@@ -202,10 +225,16 @@ def apply_saved_categories(X, artifact):
 
 # Faz 10 Madde 5: diskten geri yuklenen artefaktin, egitimde hic kullanilmamis dis holdout'un
 # ilk kaydinda bellek-ici modelle ayni tahmini urettigini dogrular.
+#
+# Faz 20: apply_saved_categories()'in reindex()'i, sample'da olmayan bir sutunu
+# (brand_model_median_price) SESSIZCE NaN ile doldururdu - artefaktin hierarchical_price
+# lookup'uyla ONCE ozellik eklenir, SONRA apply_saved_categories cagrilir.
 def smoke_test():
     artifact = load_model()
     df = load_cars1_holdout()
     sample = df.drop(columns=['fiyat', 'ilan_id']).iloc[[0]]
+    if 'hierarchical_price' in artifact:
+        sample = attach_lookup_feature(sample, artifact['hierarchical_price'])
     sample_aligned = apply_saved_categories(sample, artifact)
     pred = artifact['model'].predict(sample_aligned)[0]
     actual = df['fiyat'].iloc[0]
@@ -218,7 +247,7 @@ def main():
     print(f'ic dogrulama -> train: {len(X_train)}, test: {len(X_test)}')
     print(X_train.dtypes.astype(str).to_string())
 
-    X_holdout, y_holdout = prepare_external_holdout(X_train)
+    X_holdout, y_holdout = prepare_external_holdout(X_train, y_train)
     print(f'\ndis holdout (cars1_normalized.csv) -> {len(X_holdout)} kayit')
     print(f'  renk bilinmiyor: %{100 * X_holdout["renk"].isna().mean():.1f} (cars1de renk alani yok)')
     print(f'  agir_hasarli=0 varsayilan: %{100 * (X_holdout["agir_hasarli"] == 0).mean():.1f} '
@@ -229,10 +258,10 @@ def main():
     print(f'egitim seti: {len(X_full)} kayit (ic 80/20 split degil, tum temiz veri)')
     evaluate(y_full, model.predict(X_full), 'train (tam veri, ic gorulmus)')
 
-    X_holdout_full, y_holdout_full = prepare_external_holdout(X_full)
+    X_holdout_full, y_holdout_full = prepare_external_holdout(X_full, y_full)
     evaluate(y_holdout_full, model.predict(X_holdout_full), 'dis holdout (cars1, hic gorulmemis)')
 
-    model_path = save_model(model, X_full)
+    model_path = save_model(model, X_full, y_full)
     print(f'\nmodel kaydedildi: {model_path}')
     smoke_test()
 

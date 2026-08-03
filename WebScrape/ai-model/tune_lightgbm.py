@@ -79,7 +79,7 @@ def main():
     evaluate(y_test, best_model.predict(X_test), 'test')
 
     print('\n--- Bilgi amacli: dis holdout (cars1_normalized.csv) - SECIME dahil edilmedi ---')
-    X_holdout, y_holdout = prepare_external_holdout(X_train)
+    X_holdout, y_holdout = prepare_external_holdout(X_train, y_train)
     evaluate(y_holdout, best_model.predict(X_holdout), 'cars1 holdout')
 
 
