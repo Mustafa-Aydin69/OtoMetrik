@@ -32,9 +32,10 @@ def toy_y():
 
 
 class TestFallbackChain(unittest.TestCase):
-    """Gorev talebindeki 3 fallback senaryosu: bilinen marka-model ->
-    dogrudan brand_model medyani; bilinmeyen model + bilinen marka -> marka
-    fallback; bilinmeyen marka-model -> global fallback."""
+    """Faz 23: 4 katmanli fallback senaryolari: bilinen marka-model ->
+    dogrudan brand_model medyani; bilinmeyen marka + bilinen model -> model
+    (markadan bagimsiz) fallback; bilinmeyen model + bilinen marka -> marka
+    fallback; ikisi de bilinmeyen -> global fallback."""
 
     def setUp(self):
         self.lookup = build_price_lookup(toy_X(), toy_y())
@@ -43,6 +44,17 @@ class TestFallbackChain(unittest.TestCase):
         value, source = lookup_price('Ford', 'Focus', self.lookup)
         self.assertEqual(source, 'brand_model')
         self.assertEqual(value, np.median([400_000, 900_000, 950_000]))
+
+    def test_unseen_brand_known_model_falls_back_to_model_tier_combined_across_brands(self):
+        """Faz 23'un yeni katmani: marka hic gorulmemis ama MODEL adi baska
+        marka(lar) altinda gorulmusse, o modelin TUM markalar birlestirilerek
+        hesaplanan medyanina duser - global'e degil."""
+        X = pd.DataFrame({'marka': ['Ford', 'Toyota'], 'model': ['Corolla', 'Corolla']})
+        y = pd.Series([600_000, 650_000])
+        lookup = build_price_lookup(X, y)
+        value, source = lookup_price('Honda', 'Corolla', lookup)
+        self.assertEqual(source, 'model')
+        self.assertEqual(value, np.median([600_000, 650_000]))
 
     def test_unknown_model_known_brand_falls_back_to_brand(self):
         value, source = lookup_price('Ford', 'Puma (Ford de gormedi)', self.lookup)
@@ -138,11 +150,19 @@ class TestLookupArtifactShape(unittest.TestCase):
     def test_lookup_contains_required_metadata_fields(self):
         lookup = build_price_lookup(toy_X(), toy_y())
         for key in ('lookup_version', 'feature_column', 'fallback_chain', 'oof_n_splits',
-                    'oof_seed', 'brand_model_median', 'brand_median', 'global_median',
-                    'price_reference_date', 'normalization_notes'):
+                    'oof_seed', 'brand_model_median', 'model_median', 'brand_median', 'global_median',
+                    'price_reference_date', 'training_data_hash', 'normalization_notes'):
             self.assertIn(key, lookup)
-        self.assertEqual(lookup['fallback_chain'], ['brand_model', 'brand', 'global'])
+        self.assertEqual(lookup['fallback_chain'], ['brand_model', 'model', 'brand', 'global'])
         self.assertEqual(lookup['feature_column'], FEATURE_COLUMN)
+
+    def test_training_data_hash_is_deterministic_and_content_sensitive(self):
+        lookup1 = build_price_lookup(toy_X(), toy_y())
+        lookup2 = build_price_lookup(toy_X(), toy_y())
+        self.assertEqual(lookup1['training_data_hash'], lookup2['training_data_hash'])
+        other_y = toy_y() + 1
+        lookup3 = build_price_lookup(toy_X(), other_y)
+        self.assertNotEqual(lookup1['training_data_hash'], lookup3['training_data_hash'])
 
 
 if __name__ == '__main__':

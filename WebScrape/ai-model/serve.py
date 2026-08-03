@@ -32,13 +32,16 @@ suphelidir" gibi korlemesine bir kural YERINE, "bu marka+modelin bu HP'de
 egitim destegi yok" gibi ozel bir sinyal verir (bkz. dagitima hazirlik/hp
 kalite analizindeki Madde 6 tasarim onerisinin UYGULAMASI).
 
-Faz 20: brand_model_median_price (bkz. hierarchical_price.py) - request'teki
-kanonik marka/model'e karsilik gelen hiyerarsik fiyat medyani (marka+model ->
-marka -> global fallback), artefaktin 'hierarchical_price' lookup'undan
-DataFrame taramasi yapmadan (kucuk dict aramalari) eklenir. Kaynak (hangi
-fallback katmaninin kullanildigi) sadece OTOMETRIK_DEBUG=1 ortam degiskeni
-set edilmisse "hierarchical_price_support" alaniyla yanita eklenir - production
-yanit sozlesmesini degistirmemesi icin normal calismada gizlidir.
+Faz 20/23: brand_model_median_price (bkz. hierarchical_price.py) - request'teki
+kanonik marka/model'e karsilik gelen hiyerarsik fiyat medyani, artefaktin
+'hierarchical_price' lookup'undan DataFrame taramasi yapmadan (kucuk dict
+aramalari) eklenir. Katman secimi DETERMINISTIK ve 4 asamali (Faz 23'te
+'model' katmani eklendi): marka+model bulunduysa -> brand_model; degilse
+model (markadan BAGIMSIZ) bulunduysa -> model; degilse marka bulunduysa ->
+brand; aksi halde -> global. Kaynak (hangi katmanin kullanildigi) sadece
+OTOMETRIK_DEBUG=1 ortam degiskeni set edilmisse "hierarchical_price_support"
+alaniyla yanita eklenir - production yanit sozlesmesini degistirmemesi icin
+normal calismada gizlidir.
 
 Calistirma (ai-model/ calisma dizini olarak):
     uvicorn serve:app --host 0.0.0.0 --port 8000

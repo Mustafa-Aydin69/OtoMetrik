@@ -340,7 +340,15 @@ class TestHierarchicalPriceServe(unittest.TestCase):
 
     def test_unknown_brand_model_combo_falls_back(self):
         value, source = serve.compute_hierarchical_price_feature('Wroom Motors', 'Ghost Model 9000')
-        self.assertIn(source, ('brand', 'global'))
+        self.assertIn(source, ('model', 'brand', 'global'))
+        self.assertIsNotNone(value)
+
+    def test_unknown_brand_known_model_uses_model_tier(self):
+        """Faz 23: marka hic bilinmiyor ama model gercek/bilinen bir model
+        adiysa (baska markalarda gorulmus), dogrudan global'e degil MODEL
+        katmanina duser."""
+        value, source = serve.compute_hierarchical_price_feature('Wroom Motors', 'Focus')
+        self.assertEqual(source, 'model')
         self.assertIsNotNone(value)
 
     def test_label_and_canonical_marka_share_same_lookup(self):
