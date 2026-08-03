@@ -156,6 +156,16 @@ def evaluate(y_true, y_pred, label):
 # Model + encoding artefaktlarini (kategori sutunlari, train'de gorulen kategori seti,
 # ozellik sutun sirasi) tek dosyada birlikte kaydeder - evaluate.py (Faz 11) train.py'yi
 # tekrar calistirmadan ayni donusumu apply_saved_categories() ile uygulayabilir.
+#
+# 'reference_year': "yas"/"km_yil" ozelliklerinin egitimde hangi takvim yiliyla
+# hesaplandigini ARTEFAKTA acikca kaydeder (preprocess.CURRENT_YEAR o anki
+# degeri). serve.py build_feature_row() bu degeri kullanir - modul-seviyesi
+# preprocess.CURRENT_YEAR'i DOGRUDAN degil, artefaktin kendi referans yilini
+# okur. Boylece "yas" hesaplamasi HER ZAMAN egitimle birebir tutarli kalir;
+# takvim yili ilerledikce serve-time formulu SESSIZCE degistirmek YERINE,
+# artefaktin referans yili acikca gorunur olur (bkz. /health'teki
+# model_reference_year ve model_age_years alanlari) ve gercek cozum -
+# yeniden egitim veya "yas" tanımının surumlenmesi - net bir sinyalle tetiklenir.
 def save_model(model, X_full):
     os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
     artifact = {
@@ -163,6 +173,7 @@ def save_model(model, X_full):
         'categorical_cols': CATEGORICAL_COLS,
         'category_sets': {col: X_full[col].cat.categories for col in CATEGORICAL_COLS},
         'feature_columns': list(X_full.columns),
+        'reference_year': CURRENT_YEAR,
     }
     joblib.dump(artifact, MODEL_PATH)
     return MODEL_PATH

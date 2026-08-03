@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { coercePrediction } from "@/lib/validation";
+import { coercePrediction, toCanonicalPayload } from "@/lib/validation";
 import { mockPredict } from "@/lib/mock-prediction";
 
 /**
@@ -30,10 +30,13 @@ export async function POST(req: Request) {
 
   if (apiUrl) {
     try {
+      // Model servisi kanonik kategori değerleri bekler (örn. "Düz", "Manuel"
+      // değil) - bkz. lib/validation.ts toCanonicalPayload().
+      const canonicalInput = toCanonicalPayload(input);
       const upstream = await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(input),
+        body: JSON.stringify(canonicalInput),
         signal: AbortSignal.timeout(15_000),
       });
       if (!upstream.ok) {

@@ -2,7 +2,35 @@
  * Fiyat tahmin formunun paylaşılan tipleri, seçenek listeleri ve doğrulama
  * kuralları. Hem client (PredictionForm) hem server (/api/predict) tarafından
  * kullanılır — bu dosyada "use client" OLMAMALI.
+ *
+ * Kategori seçenekleri (marka/vites/yakıt/kasa/renk) elle YAZILMAZ —
+ * category-options.generated.ts'ten (kaynağı: WebScrape/ai-model/
+ * category_mapping.py, modelin gerçek eğitim-zamanı kategorileriyle
+ * doğrulanır) türetilir. Kullanıcı dropdown'da Türkçe etiketi görür
+ * (örn. "Manuel"); /api/predict'in PREDICTION_API_URL'e ilettiği istekte
+ * ise toCanonicalPayload() ile modelin kanonik değeri (örn. "Düz")
+ * gönderilir — bkz. dağıtıma hazırlık analizindeki "Manuel/Düz",
+ * "Mercedes-Benz/Mercedes - Benz" bulguları.
  */
+import {
+  KASA_TURU_OPTIONS,
+  MARKA_OPTIONS,
+  RENK_OPTIONS,
+  VITES_OPTIONS,
+  YAKIT_TURU_OPTIONS,
+  type CategoryOption,
+} from "./category-options.generated";
+import {
+  ENGINE_DISPLACEMENT_MAX,
+  ENGINE_POWER_MAX,
+  ENGINE_POWER_MIN,
+  MAX_TOTAL_DAMAGED_PARTS,
+  MILEAGE_MAX,
+  PAINTED_PARTS_MAX,
+  REPLACED_PARTS_MAX,
+  YEAR_MAX,
+  YEAR_MIN,
+} from "./domain-bounds.generated";
 
 export interface PredictionInput {
   brand: string;
@@ -22,64 +50,21 @@ export interface PredictionInput {
 }
 
 export const CURRENT_YEAR = new Date().getFullYear();
-export const MIN_YEAR = 1960;
+// YEAR_MIN/YEAR_MAX (domain-bounds.generated.ts) backend'in kabul ettiği GERÇEK
+// aralıktır - MIN_YEAR bunun üzerinden türetilir, ayrıca elle sabit tutulmaz.
+export const MIN_YEAR = YEAR_MIN;
 
-export const FUEL_TYPES = ["Benzin", "Dizel", "LPG", "Hibrit", "Elektrik"] as const;
+// Dropdown'da gösterilen etiketler category-options.generated.ts'ten türetilir
+// (elle yazılan bağımsız bir liste YOKTUR) — SelectField zaten string[] beklediği
+// için bileşen tarafında değişiklik gerekmez.
+const labelsOf = (options: readonly CategoryOption[]): readonly string[] =>
+  options.map((o) => o.label);
 
-export const TRANSMISSIONS = ["Manuel", "Otomatik", "Yarı Otomatik"] as const;
-
-export const BODY_TYPES = [
-  "Sedan",
-  "Hatchback",
-  "SUV",
-  "Coupe",
-  "Station Wagon",
-  "Cabrio",
-  "Pick-up",
-  "MPV",
-  "Panelvan",
-  "Minivan",
-] as const;
-
-export const BRANDS = [
-  "Audi",
-  "BMW",
-  "Citroën",
-  "Dacia",
-  "Fiat",
-  "Ford",
-  "Honda",
-  "Hyundai",
-  "Kia",
-  "Mercedes-Benz",
-  "Nissan",
-  "Opel",
-  "Peugeot",
-  "Renault",
-  "Seat",
-  "Skoda",
-  "Toyota",
-  "Volkswagen",
-  "Volvo",
-  "Diğer",
-] as const;
-
-export const COLORS = [
-  "Siyah",
-  "Beyaz",
-  "Gri",
-  "Gümüş",
-  "Mavi",
-  "Kırmızı",
-  "Kahverengi",
-  "Bej",
-  "Yeşil",
-  "Turuncu",
-  "Sarı",
-  "Bordo",
-  "Lacivert",
-  "Diğer",
-] as const;
+export const FUEL_TYPES = labelsOf(YAKIT_TURU_OPTIONS);
+export const TRANSMISSIONS = labelsOf(VITES_OPTIONS);
+export const BODY_TYPES = labelsOf(KASA_TURU_OPTIONS);
+export const BRANDS = labelsOf(MARKA_OPTIONS);
+export const COLORS = labelsOf(RENK_OPTIONS);
 
 export type FieldErrors = Partial<Record<keyof PredictionInput, string>>;
 
@@ -94,14 +79,14 @@ export function validatePrediction(input: PredictionInput): FieldErrors {
   if (!input.brand.trim()) errors.brand = "Marka seçin.";
   if (!input.model.trim()) errors.model = "Model girin.";
 
-  if (!Number.isInteger(input.year) || input.year < MIN_YEAR || input.year > CURRENT_YEAR + 1) {
-    errors.year = `Yıl ${MIN_YEAR}–${CURRENT_YEAR + 1} aralığında olmalı.`;
+  if (!Number.isInteger(input.year) || input.year < YEAR_MIN || input.year > YEAR_MAX) {
+    errors.year = `Yıl ${YEAR_MIN}–${YEAR_MAX} aralığında olmalı.`;
   }
 
   if (!Number.isFinite(input.mileage) || input.mileage < 0) {
     errors.mileage = "Kilometre 0 veya daha büyük olmalı.";
-  } else if (input.mileage > 2_000_000) {
-    errors.mileage = "Kilometre gerçekçi bir değer olmalı.";
+  } else if (input.mileage > MILEAGE_MAX) {
+    errors.mileage = `Kilometre en fazla ${MILEAGE_MAX.toLocaleString("tr-TR")} olmalı.`;
   }
 
   if (!(FUEL_TYPES as readonly string[]).includes(input.fuelType)) {
@@ -118,21 +103,32 @@ export function validatePrediction(input: PredictionInput): FieldErrors {
   const isElectric = input.fuelType === "Elektrik";
   if (!isElectric && (!Number.isFinite(input.engineDisplacement) || input.engineDisplacement <= 0)) {
     errors.engineDisplacement = "Motor hacmini cc olarak girin (örn. 1600).";
-  } else if (input.engineDisplacement > 9000) {
-    errors.engineDisplacement = "Motor hacmi gerçekçi bir değer olmalı.";
+  } else if (input.engineDisplacement > ENGINE_DISPLACEMENT_MAX) {
+    errors.engineDisplacement = `Motor hacmi en fazla ${ENGINE_DISPLACEMENT_MAX} cc olmalı.`;
   }
 
-  if (!Number.isFinite(input.enginePower) || input.enginePower <= 0) {
+  if (!Number.isFinite(input.enginePower) || input.enginePower < ENGINE_POWER_MIN) {
     errors.enginePower = "Motor gücünü HP olarak girin (örn. 110).";
-  } else if (input.enginePower > 2000) {
-    errors.enginePower = "Motor gücü gerçekçi bir değer olmalı.";
+  } else if (input.enginePower > ENGINE_POWER_MAX) {
+    errors.enginePower = `Motor gücü en fazla ${ENGINE_POWER_MAX} HP olmalı.`;
   }
 
-  if (!isNonNegativeInt(input.replacedPartsCount) || input.replacedPartsCount > 13) {
-    errors.replacedPartsCount = "0–13 arası tam sayı girin.";
+  if (!isNonNegativeInt(input.replacedPartsCount) || input.replacedPartsCount > REPLACED_PARTS_MAX) {
+    errors.replacedPartsCount = `0–${REPLACED_PARTS_MAX} arası tam sayı girin.`;
   }
-  if (!isNonNegativeInt(input.paintedPartsCount) || input.paintedPartsCount > 13) {
-    errors.paintedPartsCount = "0–13 arası tam sayı girin.";
+  if (!isNonNegativeInt(input.paintedPartsCount) || input.paintedPartsCount > PAINTED_PARTS_MAX) {
+    errors.paintedPartsCount = `0–${PAINTED_PARTS_MAX} arası tam sayı girin.`;
+  }
+
+  // Fiziksel tutarlılık: değişen+boyalı parça toplamı bir aracın sahip
+  // olabileceği azami parça sayısını (13) aşamaz - eğitim verisinde bu
+  // toplam hiçbir zaman aşılmıyor (bkz. domain_validation.py).
+  if (
+    isNonNegativeInt(input.replacedPartsCount) &&
+    isNonNegativeInt(input.paintedPartsCount) &&
+    input.replacedPartsCount + input.paintedPartsCount > MAX_TOTAL_DAMAGED_PARTS
+  ) {
+    errors.paintedPartsCount = `Değişen ve boyalı parça toplamı en fazla ${MAX_TOTAL_DAMAGED_PARTS} olabilir.`;
   }
 
   return errors;
@@ -182,4 +178,43 @@ export function coercePrediction(
   return Object.keys(errors).length > 0
     ? { input: null, errors }
     : { input, errors: null };
+}
+
+// PredictionInput alan adı -> o alanın {label,value} seçenek listesi. label->value
+// çözümlemesi (toCanonicalPayload) bunun üzerinden yapılır - tek kaynak
+// category-options.generated.ts, burada AYRICA bir eşleme tablosu yazılmaz.
+const CATEGORICAL_FIELD_OPTIONS: Record<
+  "brand" | "transmission" | "fuelType" | "bodyType" | "color",
+  readonly CategoryOption[]
+> = {
+  brand: MARKA_OPTIONS,
+  transmission: VITES_OPTIONS,
+  fuelType: YAKIT_TURU_OPTIONS,
+  bodyType: KASA_TURU_OPTIONS,
+  color: RENK_OPTIONS,
+};
+
+function labelToCanonical(field: keyof typeof CATEGORICAL_FIELD_OPTIONS, label: string): string {
+  const match = CATEGORICAL_FIELD_OPTIONS[field].find((o) => o.label === label);
+  // Eşleşme yoksa (teorik olarak olmamalı - dropdown zaten sadece bilinen
+  // etiketleri sunar) etiketi olduğu gibi geçirir; serve.py resolve_canonical()
+  // bunu kendi kategori kümesine göre yine de doğrular/reddeder (savunma katmanı).
+  return match ? match.value : label;
+}
+
+/**
+ * PredictionInput'u (kullanıcı etiketleriyle) modelin beklediği kanonik
+ * kategori değerlerine çevirir — /api/predict, PREDICTION_API_URL'e bu
+ * çevrilmiş halini gönderir. Diğer (kategorik olmayan) alanlar değişmeden
+ * kopyalanır.
+ */
+export function toCanonicalPayload(input: PredictionInput): PredictionInput {
+  return {
+    ...input,
+    brand: labelToCanonical("brand", input.brand),
+    transmission: labelToCanonical("transmission", input.transmission),
+    fuelType: labelToCanonical("fuelType", input.fuelType),
+    bodyType: labelToCanonical("bodyType", input.bodyType),
+    color: labelToCanonical("color", input.color),
+  };
 }
