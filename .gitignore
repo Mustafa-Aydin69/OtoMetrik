@@ -1,11 +1,11 @@
 node_modules/
 .env
 .env.example
-data/raw/*
-!data/raw/.gitkeep
-data/output/*
-!data/output/.gitkeep
-models/*
-!models/.gitkeep
+/WebScrape/data/raw/*
+!/WebScrape/data/raw/.gitkeep
+/WebScrape/data/output/*
+!/WebScrape/data/output/.gitkeep
+/WebScrape/models/*
+!/WebScrape/models/.gitkeep
 /WebScrape/kaggle
 CLAUDE.md
