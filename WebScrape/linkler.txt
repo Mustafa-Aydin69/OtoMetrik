@@ -104,44 +104,44 @@
 // https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2011&maxYear=2011
 // https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2012&maxYear=2013
 // https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2014&maxYear=2015
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2016&maxYear=2017
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2018&maxYear=2019
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2020&maxYear=2021
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2022&maxYear=2023
-https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2024
-https://www.arabam.com/ikinci-el/otomobil/rks
-https://www.arabam.com/ikinci-el/otomobil/rolls-royce
-https://www.arabam.com/ikinci-el/otomobil/rover
-https://www.arabam.com/ikinci-el/otomobil/saab
-https://www.arabam.com/ikinci-el/otomobil/seat?maxYear=2015
-https://www.arabam.com/ikinci-el/otomobil/seat?minYear=2016
-https://www.arabam.com/ikinci-el/otomobil/skoda?maxYear=2015
-https://www.arabam.com/ikinci-el/otomobil/skoda?minYear=2016&maxYear=2022
-https://www.arabam.com/ikinci-el/otomobil/skoda?minYear=2023
-https://www.arabam.com/ikinci-el/otomobil/smart
-https://www.arabam.com/ikinci-el/otomobil/subaru
-https://www.arabam.com/ikinci-el/otomobil/suzuki
-https://www.arabam.com/ikinci-el/otomobil/tata
-https://www.arabam.com/ikinci-el/otomobil/tesla
-https://www.arabam.com/ikinci-el/otomobil/tofas
-https://www.arabam.com/ikinci-el/otomobil/togg
-https://www.arabam.com/ikinci-el/otomobil/toyota?maxYear=2006
-https://www.arabam.com/ikinci-el/otomobil/toyota?minYear=2007&maxYear=2013
-https://www.arabam.com/ikinci-el/otomobil/toyota?minYear=2014&maxYear=2019
-https://www.arabam.com/ikinci-el/otomobil/toyota?minYear=2020
-https://www.arabam.com/ikinci-el/otomobil/vanderhall
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?maxYear=2002
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2003&maxYear=2007
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2008&maxYear=2011
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2012&maxYear=2012
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2013&maxYear=2013
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2014&maxYear=2014
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2015&maxYear=2015
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2016&maxYear=2016
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2017&maxYear=2018
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2019&maxYear=2022
-https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2023
-https://www.arabam.com/ikinci-el/otomobil/volta
-https://www.arabam.com/ikinci-el/otomobil/volvo
-https://www.arabam.com/ikinci-el/otomobil/xev
-https://www.arabam.com/ikinci-el/otomobil/yuki
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2016&maxYear=2017
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2018&maxYear=2019
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2020&maxYear=2021
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2022&maxYear=2023
+// https://www.arabam.com/ikinci-el/otomobil/renault?minYear=2024
+// https://www.arabam.com/ikinci-el/otomobil/rks
+// https://www.arabam.com/ikinci-el/otomobil/rolls-royce
+// https://www.arabam.com/ikinci-el/otomobil/rover
+// https://www.arabam.com/ikinci-el/otomobil/saab
+// https://www.arabam.com/ikinci-el/otomobil/seat?maxYear=2015
+// https://www.arabam.com/ikinci-el/otomobil/seat?minYear=2016
+// https://www.arabam.com/ikinci-el/otomobil/skoda?maxYear=2015
+// https://www.arabam.com/ikinci-el/otomobil/skoda?minYear=2016&maxYear=2022
+// https://www.arabam.com/ikinci-el/otomobil/skoda?minYear=2023
+// https://www.arabam.com/ikinci-el/otomobil/smart
+// https://www.arabam.com/ikinci-el/otomobil/subaru
+// https://www.arabam.com/ikinci-el/otomobil/suzuki
+// https://www.arabam.com/ikinci-el/otomobil/tata
+// https://www.arabam.com/ikinci-el/otomobil/tesla
+// https://www.arabam.com/ikinci-el/otomobil/tofas
+// https://www.arabam.com/ikinci-el/otomobil/togg
+// https://www.arabam.com/ikinci-el/otomobil/toyota?maxYear=2006
+// https://www.arabam.com/ikinci-el/otomobil/toyota?minYear=2007&maxYear=2013
+// https://www.arabam.com/ikinci-el/otomobil/toyota?minYear=2014&maxYear=2019
+// https://www.arabam.com/ikinci-el/otomobil/toyota?minYear=2020
+// https://www.arabam.com/ikinci-el/otomobil/vanderhall
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?maxYear=2002
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2003&maxYear=2007
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2008&maxYear=2011
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2012&maxYear=2012
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2013&maxYear=2013
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2014&maxYear=2014
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2015&maxYear=2015
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2016&maxYear=2016
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2017&maxYear=2018
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2019&maxYear=2022
+// https://www.arabam.com/ikinci-el/otomobil/volkswagen?minYear=2023
+// https://www.arabam.com/ikinci-el/otomobil/volta
+// https://www.arabam.com/ikinci-el/otomobil/volvo
+// https://www.arabam.com/ikinci-el/otomobil/xev
+// https://www.arabam.com/ikinci-el/otomobil/yuki
