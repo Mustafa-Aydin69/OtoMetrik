@@ -31,7 +31,13 @@ import {
   YEAR_MAX,
   YEAR_MIN,
 } from "./domain-bounds.generated";
-import { PAKET_BY_MODEL } from "./paket-suggestions.generated";
+import {
+  ENGINES_BY_MODEL,
+  HP_BY_ENGINE,
+  MODELS_BY_BRAND,
+  PAKET_BY_ENGINE,
+  type EngineOption,
+} from "./vehicle-options.generated";
 
 export interface PredictionInput {
   brand: string;
@@ -221,42 +227,81 @@ export function toCanonicalPayload(input: PredictionInput): PredictionInput {
 }
 
 /**
- * Seçilen marka (website etiketi, örn. "Mercedes-Benz") + model için, eğitim
- * verisinde GERÇEKTEN görülen paket değerlerini (en sıktan en nadire) döner —
- * paket-suggestions.generated.ts'ten (kaynağı: train_dataset.csv). Model
- * boşsa veya bu marka+model kombinasyonu eğitimde yoksa boş dizi döner
- * (VehiclePicker'ın paket adımını atlamasına izin verir). Kullanıcı
- * önerilerden birini seçerse gönderilen değer zaten kanoniktir (paket için
- * ayrı bir label→canonical çevirisi YOKTUR — bkz. modül notu).
+ * labelToCanonical'ın tersi: modelin kanonik değerini (örn. "LPG & Benzin",
+ * Motor adımından gelir) kullanıcıya gösterilecek Türkçe etikete (örn. "LPG")
+ * çevirir. Eşleşme yoksa (teorik olarak olmamalı - kanonik değer zaten
+ * CATEGORICAL_FIELD_OPTIONS'tan geliyor) kanonik değeri olduğu gibi döner.
  */
-export function getPaketSuggestions(brandLabel: string, model: string): readonly string[] {
-  const canonicalBrand = labelToCanonical("brand", brandLabel);
-  const key = `${canonicalBrand}|${model.trim()}`;
-  return PAKET_BY_MODEL[key] ?? [];
+export function canonicalToLabel(field: keyof typeof CATEGORICAL_FIELD_OPTIONS, canonical: string): string {
+  const match = CATEGORICAL_FIELD_OPTIONS[field].find((o) => o.value === canonical);
+  return match ? match.label : canonical;
 }
 
-// PAKET_BY_MODEL anahtarları ("<kanonik marka>|<model>") tek doğruluk kaynağı -
-// model listesi için AYRI bir generated dosya YOK, marka+model'i zaten
-// kapsayan bu dosyadan türetilir. Modül seviyesinde bir kez kurulur.
 const trCollator = new Intl.Collator("tr", { numeric: true, sensitivity: "base" });
-const MODELS_BY_BRAND: Record<string, string[]> = {};
-for (const key of Object.keys(PAKET_BY_MODEL)) {
-  const sep = key.indexOf("|");
-  const brand = key.slice(0, sep);
-  const model = key.slice(sep + 1);
-  (MODELS_BY_BRAND[brand] ??= []).push(model);
+
+export type { EngineOption };
+
+function vehicleKey(canonicalBrand: string, model: string): string {
+  return `${canonicalBrand}|${model.trim()}`;
 }
-for (const models of Object.values(MODELS_BY_BRAND)) {
-  models.sort(trCollator.compare);
+
+function engineKey(canonicalBrand: string, model: string, hacmiBucket: number, yakitTuru: string): string {
+  return `${vehicleKey(canonicalBrand, model)}|${hacmiBucket.toFixed(1)}|${yakitTuru}`;
 }
 
 /**
  * Seçilen marka (website etiketi) için eğitim verisinde GERÇEKTEN görülen
- * modelleri alfabetik sırayla döner — VehiclePicker'ın ikinci kademesi
- * (bkz. getPaketSuggestions, aynı PAKET_BY_MODEL kaynağının anahtarlarından
- * türetilir). Bilinmeyen/veri dışı marka için boş dizi döner.
+ * modelleri tr-collator sırasına göre döner — VehicleSelector'ın ikinci
+ * kademesi. Bilinmeyen/veri dışı marka için boş dizi döner.
  */
 export function getModelsForBrand(brandLabel: string): readonly string[] {
   const canonicalBrand = labelToCanonical("brand", brandLabel);
-  return MODELS_BY_BRAND[canonicalBrand] ?? [];
+  const models = MODELS_BY_BRAND[canonicalBrand];
+  return models ? [...models].sort(trCollator.compare) : [];
+}
+
+/**
+ * Seçilen marka+model için eğitim verisinde görülen motor (hacim kovası +
+ * yakıt türü) kombinasyonlarını hacme göre artan sırada döner —
+ * VehicleSelector'ın üçüncü kademesi (Motor). Her seçeneğin `exactCc` alanı
+ * o kovadaki EN SIK GÖRÜLEN gerçek motor_hacmi değeridir; /predict'e
+ * GÖNDERİLMESİ gereken budur, `hacmiBucket`'ın kendisi değil (bkz.
+ * generate_vehicle_options.py modül notu).
+ */
+export function getEnginesForModel(brandLabel: string, model: string): readonly EngineOption[] {
+  const canonicalBrand = labelToCanonical("brand", brandLabel);
+  return ENGINES_BY_MODEL[vehicleKey(canonicalBrand, model)] ?? [];
+}
+
+/**
+ * Seçilen marka+model+motor için eğitimde GERÇEKTEN görülen paket
+ * değerlerini (en sıktan en nadire) döner — VehicleSelector'ın dördüncü
+ * (opsiyonel) kademesi. Boş dizi, panelin paket adımını atlamasına izin
+ * verir. Kullanıcı önerilerden birini seçerse gönderilen değer zaten
+ * kanoniktir (paket için ayrı bir label→canonical çevirisi YOKTUR).
+ */
+export function getPaketOptions(
+  brandLabel: string,
+  model: string,
+  hacmiBucket: number,
+  yakitTuru: string
+): readonly string[] {
+  const canonicalBrand = labelToCanonical("brand", brandLabel);
+  return PAKET_BY_ENGINE[engineKey(canonicalBrand, model, hacmiBucket, yakitTuru)] ?? [];
+}
+
+/**
+ * Seçilen marka+model+motor için eğitimde görülen ayrık motor gücü (HP)
+ * değerlerini artan sırada döner. PredictionForm bu listeyi kullanarak: 1
+ * değer varsa alanı otomatik doldurup kilitler, >1 değer varsa seçilebilir
+ * bir dropdown gösterir, 0 değer varsa (nadiren) serbest girişe düşer.
+ */
+export function getHpOptions(
+  brandLabel: string,
+  model: string,
+  hacmiBucket: number,
+  yakitTuru: string
+): readonly number[] {
+  const canonicalBrand = labelToCanonical("brand", brandLabel);
+  return HP_BY_ENGINE[engineKey(canonicalBrand, model, hacmiBucket, yakitTuru)] ?? [];
 }
