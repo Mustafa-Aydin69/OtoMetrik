@@ -225,13 +225,38 @@ export function toCanonicalPayload(input: PredictionInput): PredictionInput {
  * verisinde GERÇEKTEN görülen paket değerlerini (en sıktan en nadire) döner —
  * paket-suggestions.generated.ts'ten (kaynağı: train_dataset.csv). Model
  * boşsa veya bu marka+model kombinasyonu eğitimde yoksa boş dizi döner
- * (TextField'ın suggestions olmadan normal çalışmasına izin verir — paket
- * serbest metin olarak kalır, autocomplete sadece bir öneri katmanıdır).
- * Kullanıcı önerilerden birini seçerse gönderilen değer zaten kanoniktir
- * (paket için ayrı bir label→canonical çevirisi YOKTUR — bkz. modül notu).
+ * (VehiclePicker'ın paket adımını atlamasına izin verir). Kullanıcı
+ * önerilerden birini seçerse gönderilen değer zaten kanoniktir (paket için
+ * ayrı bir label→canonical çevirisi YOKTUR — bkz. modül notu).
  */
 export function getPaketSuggestions(brandLabel: string, model: string): readonly string[] {
   const canonicalBrand = labelToCanonical("brand", brandLabel);
   const key = `${canonicalBrand}|${model.trim()}`;
   return PAKET_BY_MODEL[key] ?? [];
+}
+
+// PAKET_BY_MODEL anahtarları ("<kanonik marka>|<model>") tek doğruluk kaynağı -
+// model listesi için AYRI bir generated dosya YOK, marka+model'i zaten
+// kapsayan bu dosyadan türetilir. Modül seviyesinde bir kez kurulur.
+const trCollator = new Intl.Collator("tr", { numeric: true, sensitivity: "base" });
+const MODELS_BY_BRAND: Record<string, string[]> = {};
+for (const key of Object.keys(PAKET_BY_MODEL)) {
+  const sep = key.indexOf("|");
+  const brand = key.slice(0, sep);
+  const model = key.slice(sep + 1);
+  (MODELS_BY_BRAND[brand] ??= []).push(model);
+}
+for (const models of Object.values(MODELS_BY_BRAND)) {
+  models.sort(trCollator.compare);
+}
+
+/**
+ * Seçilen marka (website etiketi) için eğitim verisinde GERÇEKTEN görülen
+ * modelleri alfabetik sırayla döner — VehiclePicker'ın ikinci kademesi
+ * (bkz. getPaketSuggestions, aynı PAKET_BY_MODEL kaynağının anahtarlarından
+ * türetilir). Bilinmeyen/veri dışı marka için boş dizi döner.
+ */
+export function getModelsForBrand(brandLabel: string): readonly string[] {
+  const canonicalBrand = labelToCanonical("brand", brandLabel);
+  return MODELS_BY_BRAND[canonicalBrand] ?? [];
 }

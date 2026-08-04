@@ -7,11 +7,9 @@
 import { useRef, useState } from "react";
 import {
   BODY_TYPES,
-  BRANDS,
   COLORS,
   CURRENT_YEAR,
   FUEL_TYPES,
-  getPaketSuggestions,
   MIN_YEAR,
   TRANSMISSIONS,
   validatePrediction,
@@ -21,22 +19,9 @@ import {
 import { requestPrediction, type PredictionResponse } from "@/lib/prediction";
 import { requestCarImageUrls } from "@/lib/car-photo";
 import { FormSection } from "./FormSection";
-import { NumberField, SelectField, TextField, YesNoField } from "./fields";
+import { NumberField, SelectField, YesNoField } from "./fields";
 import { PredictionResult } from "./PredictionResult";
-
-const MODEL_SUGGESTIONS: Record<string, readonly string[]> = {
-  Fiat: ["Egea", "Doblo", "Fiorino", "Panda", "500"],
-  Ford: ["Focus", "Fiesta", "Kuga", "Puma", "Transit", "Mustang"],
-  Volkswagen: ["Golf", "Polo", "Passat", "Tiguan", "T-Roc", "Caddy"],
-  Renault: ["Clio", "Megane", "Symbol", "Captur", "Taliant"],
-  Peugeot: ["208", "308", "2008", "3008", "508"],
-  Toyota: ["Corolla", "Yaris", "C-HR", "RAV4"],
-  Hyundai: ["i20", "i10", "Tucson", "Bayon", "Elantra"],
-  Opel: ["Corsa", "Astra", "Crossland", "Mokka"],
-  BMW: ["3 Serisi", "5 Serisi", "1 Serisi", "X1", "X3"],
-  "Mercedes-Benz": ["C Serisi", "E Serisi", "A Serisi", "GLA", "CLA"],
-  Audi: ["A3", "A4", "A6", "Q2", "Q3"],
-};
+import { VehiclePicker, type VehicleSelection } from "./VehiclePicker";
 
 const YEARS = Array.from(
   { length: CURRENT_YEAR + 1 - MIN_YEAR + 1 },
@@ -122,6 +107,20 @@ export function PredictionForm() {
     }
   }
 
+  function setVehicle(next: VehicleSelection) {
+    // Marka/model/paket VehiclePicker içinde birlikte değişir (marka
+    // değişince model+paket sıfırlanır) - tek atomik güncelleme gerekir,
+    // set()'in tek-alan mantığı burada üç alanı da kapsayacak şekilde
+    // genişletilir.
+    setForm((prev) => ({ ...prev, brand: next.brand, model: next.model, trim: next.trim }));
+    setErrors((prev) => {
+      const rest = { ...prev };
+      delete rest.brand;
+      delete rest.model;
+      return rest;
+    });
+  }
+
   async function submit() {
     const input = toInput(form);
     const fieldErrors = validatePrediction(input);
@@ -154,13 +153,6 @@ export function PredictionForm() {
     }
   }
 
-  const modelSuggestions = MODEL_SUGGESTIONS[form.brand] ?? [];
-  // Marka+model seçilince o kombinasyon için eğitimde GERÇEKTEN görülen
-  // paket değerleri önerilir (bkz. lib/validation.ts getPaketSuggestions) -
-  // hata taksonomisi analizi paket'in asıl sorununun model doğruluğu değil,
-  // serbest metnin eğitim kelime hazinesiyle eşleşmemesi olduğunu gösterdi.
-  const paketSuggestions = getPaketSuggestions(form.brand, form.model);
-
   return (
     <div className="mx-auto w-full max-w-3xl">
       <form
@@ -177,36 +169,11 @@ export function PredictionForm() {
               nasıl göründüğü (özellikler), ne kadar kullanıldığı, en
               sonda da durumu/hasarı. */}
           <FormSection title="Araç Kimliği">
-            <SelectField
-              id="brand"
-              label="Marka"
-              value={form.brand}
-              onChange={(v) => set("brand", v)}
-              options={BRANDS}
-              error={errors.brand}
-              placeholder="Marka seçin"
-            />
-            <TextField
-              id="model"
-              label="Model"
-              value={form.model}
-              onChange={(v) => set("model", v)}
-              error={errors.model}
-              placeholder="örn. Focus"
-              suggestions={modelSuggestions}
-            />
-            <TextField
-              id="trim"
-              label="Paket"
-              value={form.trim}
-              onChange={(v) => set("trim", v)}
-              error={errors.trim}
-              placeholder={
-                paketSuggestions.length > 0
-                  ? "Listeden seçin veya yazın (opsiyonel)"
-                  : "örn. Titanium (opsiyonel)"
-              }
-              suggestions={paketSuggestions}
+            <VehiclePicker
+              value={{ brand: form.brand, model: form.model, trim: form.trim }}
+              onChange={setVehicle}
+              brandError={errors.brand}
+              modelError={errors.model}
             />
             <SelectField
               id="year"

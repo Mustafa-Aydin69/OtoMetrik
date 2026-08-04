@@ -5,7 +5,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { getPaketSuggestions, toCanonicalPayload, validatePrediction, type PredictionInput } from "./validation";
+import {
+  getModelsForBrand,
+  getPaketSuggestions,
+  toCanonicalPayload,
+  validatePrediction,
+  type PredictionInput,
+} from "./validation";
 import { MILEAGE_MAX, YEAR_MAX, YEAR_MIN } from "./domain-bounds.generated";
 
 const BASE: PredictionInput = {
@@ -94,4 +100,37 @@ test("getPaketSuggestions: website etiketini (Mercedes-Benz) kanonik markaya (Me
 test("getPaketSuggestions: bilinmeyen marka+model için boş dizi döner", () => {
   const suggestions = getPaketSuggestions("Ford", "Bilinmeyen Model XYZ");
   assert.deepEqual(suggestions, []);
+});
+
+test("getModelsForBrand: BMW için modelleri döner ve 3 Serisi içerir", () => {
+  const models = getModelsForBrand("BMW");
+  assert.ok(models.length > 0);
+  assert.ok(models.includes("3 Serisi"));
+});
+
+test("getModelsForBrand: website etiketini (Mercedes-Benz) kanonik markaya çevirir", () => {
+  // Mercedes'te egitim verisindeki model degeri "C" (getPaketSuggestions
+  // testindeki notla tutarli) - VehiclePicker'ın model listesinde de aynı
+  // ham değer görünür.
+  const models = getModelsForBrand("Mercedes-Benz");
+  assert.ok(models.length > 0);
+  assert.ok(models.includes("C"));
+});
+
+test("getModelsForBrand: genişletilmiş marka listesindeki bir marka (Mazda) için de model döner", () => {
+  // 19 markalık eski MARKA_OPTIONS'ta Mazda yoktu; Faz 24 genişletmesiyle
+  // eklendi - bu test genişletmenin gerçekten uçtan uca bağlandığının kanıtı.
+  const models = getModelsForBrand("Mazda");
+  assert.ok(models.length > 0);
+});
+
+test("getModelsForBrand: bilinmeyen marka için boş dizi döner", () => {
+  assert.deepEqual(getModelsForBrand("Bilinmeyen Marka XYZ"), []);
+});
+
+test("getModelsForBrand: dönen liste tr-collator sırasına göre sıralı", () => {
+  const models = getModelsForBrand("BMW");
+  const collator = new Intl.Collator("tr", { numeric: true, sensitivity: "base" });
+  const sorted = [...models].sort(collator.compare);
+  assert.deepEqual(models, sorted);
 });

@@ -6,7 +6,7 @@
  */
 import type { ReactNode } from "react";
 
-const inputBase =
+export const inputBase =
   "w-full rounded-lg border border-white/10 bg-white/[0.04] px-3.5 py-2.5 text-sm " +
   "text-zinc-100 placeholder:text-zinc-500 outline-none transition-colors " +
   "focus:border-sky-400/60 focus:bg-white/[0.06] focus:ring-2 focus:ring-sky-400/20";
@@ -47,40 +47,6 @@ interface BaseProps {
   onChange: (value: string) => void;
   error?: string;
   placeholder?: string;
-}
-
-export function TextField({
-  id,
-  label,
-  value,
-  onChange,
-  error,
-  placeholder,
-  suggestions,
-}: BaseProps & { suggestions?: readonly string[] }) {
-  const listId = suggestions && suggestions.length > 0 ? `${id}-list` : undefined;
-  return (
-    <FieldShell id={id} label={label} error={error}>
-      <input
-        id={id}
-        type="text"
-        className={inputBase}
-        value={value}
-        placeholder={placeholder}
-        list={listId}
-        aria-invalid={error ? true : undefined}
-        aria-describedby={error ? `${id}-error` : undefined}
-        onChange={(e) => onChange(e.target.value)}
-      />
-      {listId ? (
-        <datalist id={listId}>
-          {suggestions!.map((s) => (
-            <option key={s} value={s} />
-          ))}
-        </datalist>
-      ) : null}
-    </FieldShell>
-  );
 }
 
 export function NumberField({

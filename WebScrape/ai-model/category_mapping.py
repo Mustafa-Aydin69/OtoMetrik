@@ -17,7 +17,11 @@ website tarafinda ayrica elle yazilmis bir liste YOKTUR).
 
 Her alan icin LABEL_TO_CANONICAL: kullaniciya gosterilen etiket -> modelin
 gordugu kanonik deger.
-    Bos string ("") kanonik deger = KASITLI "bilinmiyor" (orn. marka="Diğer").
+    Bos string ("") kanonik deger = KASITLI "bilinmiyor" sentinel'i (bkz. renk
+    alanindaki "Diğer" -> "Diğer" farkli, o gercek bir kategori, sentinel
+    degil). marka alaninda artik boyle bir sentinel YOK - marka listesi
+    model artefaktinin gordugu TUM 68 kanonik degeri kapsiyor (bkz. asagidaki
+    marka sozlugu), kullanicinin "bilinmiyor" secebilecegi bir durum kalmadi.
     "" hicbir egitim kategorisiyle eslesmedigi icin apply_saved_categories()
     tarafindan dogal olarak NaN'a dusurulur - bu DOGRU davranistir (model
     gercekten bilinmeyen bir markayi tahmin edemez, bu bir hata degildir).
@@ -46,29 +50,83 @@ LABEL_TO_CANONICAL = {
         "Hibrit": "Hibrit",
         "Elektrik": "Elektrik",
     },
+    # Model artefaktinin gordugu TUM 68 kanonik marka degeri (bkz. Faz 24 -
+    # onceden yalnizca 19 marka + "Diğer" sentinel'i vardi, eğitim verisinde
+    # gorulen 49 marka - Mazda, Mini, Porsche, Jeep, Alfa Romeo, Tesla, TOGG
+    # dahil - UI'dan hic secilemiyordu). Kaynak: load_model()['category_sets']
+    # ['marka'] (models/lightgbm_final.joblib), etikete gore alfabetik siralanmis.
+    # Kanonikten farkli etiket sadece 3 markada: Citroën, Mercedes-Benz,
+    # Iveco-Otoyol (gorsel/yazim duzeltmesi, egitim verisindeki ham string
+    # farkli).
     "marka": {
+        "Alfa Romeo": "Alfa Romeo",
+        "Aston Martin": "Aston Martin",
         "Audi": "Audi",
+        "Bentley": "Bentley",
         "BMW": "BMW",
+        "Buick": "Buick",
+        "BYD": "BYD",
+        "Cadillac": "Cadillac",
+        "Chery": "Chery",
+        "Chevrolet": "Chevrolet",
+        "Chrysler": "Chrysler",
         "Citroën": "Citroen",
+        "Cupra": "Cupra",
         "Dacia": "Dacia",
+        "Daewoo": "Daewoo",
+        "Daihatsu": "Daihatsu",
+        "Dodge": "Dodge",
+        "DS Automobiles": "DS Automobiles",
         "Fiat": "Fiat",
         "Ford": "Ford",
+        "Geely": "Geely",
         "Honda": "Honda",
         "Hyundai": "Hyundai",
+        "Ikco": "Ikco",
+        "Infiniti": "Infiniti",
+        "Isuzu": "Isuzu",
+        "Iveco-Otoyol": "Iveco - Otoyol",
+        "Jaecoo": "Jaecoo",
+        "Jaguar": "Jaguar",
+        "Jeep": "Jeep",
         "Kia": "Kia",
+        "Lada": "Lada",
+        "Lancia": "Lancia",
+        "Land Rover": "Land Rover",
+        "Lexus": "Lexus",
+        "Lincoln": "Lincoln",
+        "Lotus": "Lotus",
+        "Maserati": "Maserati",
+        "Maxus": "Maxus",
+        "Mazda": "Mazda",
         "Mercedes-Benz": "Mercedes - Benz",
+        "Mercury": "Mercury",
+        "MG": "MG",
+        "Mini": "Mini",
+        "Mitsubishi": "Mitsubishi",
         "Nissan": "Nissan",
         "Opel": "Opel",
         "Peugeot": "Peugeot",
+        "Pontiac": "Pontiac",
+        "Porsche": "Porsche",
+        "Proton": "Proton",
         "Renault": "Renault",
+        "Rolls-Royce": "Rolls-Royce",
+        "Rover": "Rover",
+        "Saab": "Saab",
         "Seat": "Seat",
         "Skoda": "Skoda",
+        "Smart": "Smart",
+        "Ssangyong": "Ssangyong",
+        "Subaru": "Subaru",
+        "Suzuki": "Suzuki",
+        "Tata": "Tata",
+        "Tesla": "Tesla",
+        "Tofaş": "Tofaş",
+        "TOGG": "TOGG",
         "Toyota": "Toyota",
         "Volkswagen": "Volkswagen",
         "Volvo": "Volvo",
-        # marka kategori kumesinde "Diğer" hic yok - kasitli-bilinmiyor sentinel'i
-        # ("") gonderilir, apply_saved_categories() bunu dogal olarak NaN'a dusurur.
-        "Diğer": "",
     },
     "renk": {
         "Siyah": "Siyah",
