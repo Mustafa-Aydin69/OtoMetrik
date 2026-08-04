@@ -1,0 +1,172 @@
+"""Faz 25: WebSite/src/lib/vehicle-options.generated.ts'yi egitim verisinden
+uretir. generate_paket_suggestions.py'nin (Faz 18) yerine gecer - o script
+yalnizca marka+model -> paket ureten TEK katmanli bir yapiydi; kart tabanli
+Marka > Model > Motor > Paket akisi icin araya bir Motor (motor_hacmi +
+yakit_turu) katmani gerekiyor, paket de artik marka+model DEGIL marka+model+
+motor bazinda anlamli (bkz. kart tasarim referansi - ayni modelin farkli
+motorlarinda gercekten farkli paket kombinasyonlari goruluyor).
+
+Motor gruplama karari (bu Faz'da olculdu): motor_hacmi HAM haliyle
+gruplanirsa (orn. Mazda 3) marka+model basina medyan 5, bazi modellerde
+(Mercedes-Benz E) 79 farkli deger cikiyor - bunlarin cogu GERCEK farkli
+motorlar DEGIL, prepare_train_dataset.py'deki "range-text -> orta nokta"
+normalizasyonundan kaynaklanan neredeyse-ayni float gurultusu (1496/1499/
+1500.0/1500.5 gibi). motor_hacmi'yi EN YAKIN 100cc'ye yuvarlamak (sadece
+GORUNTULEME/GRUPLAMA icin) grup sayisini 6616'dan 4832'ye, en kotu modeli
+79'dan 47'ye indiriyor. Kullaniciya /predict'e GONDERILEN engineDisplacement
+degeri ise o kovadaki EN SIK GORULEN (mode) gercek cc degeri - kova sinirinin
+kendisi (orn. 1600) degil, cunku model kovayi degil gercek sayiyi gordu.
+
+Motor Gucu (HP) coklugu de bu Faz'da olculdu: kovalanmis motor gruplarinin
+%42.9'unda (2074/4832) birden fazla farkli motor_gucu degeri var (ort. 1.95,
+maks. 22) - website'in "birden fazla gecerli HP varsa secilebilir goster,
+tekse otomatik doldur" davranisi spekulatif degil, verinin gercek bir ozelligi.
+
+Calistirma (ai-model/ calisma dizini olarak): python generate_vehicle_options.py
+"""
+import os
+import sys
+
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
+import json
+
+from category_mapping import LABEL_TO_CANONICAL
+from train import prepare_full_training_data
+
+WEBSITE_OUTPUT_PATH = os.path.join(
+    os.path.dirname(__file__), '..', '..', 'WebSite', 'src', 'lib', 'vehicle-options.generated.ts'
+)
+
+HEADER = """/**
+ * OTOMATIK URETILMISTIR - ELLE DUZENLEMEYIN.
+ *
+ * Kaynak: WebScrape/ai-model/generate_vehicle_options.py (egitim verisindeki
+ * gercek marka+model+motor+paket kombinasyonlari).
+ * Uretmek icin: cd WebScrape/ai-model && python generate_vehicle_options.py
+ *
+ * Kart tabanli Marka > Model > Motor > Paket akisinin TEK veri kaynagi.
+ * Anahtar formati: "<kanonik marka>|<model>" (MODELS_BY_BRAND haric, o
+ * dogrudan marka'ya gore anahtarlanir) ve motor-bazli haritalarda
+ * "<kanonik marka>|<model>|<hacmiBucket>|<yakitTuru>".
+ *
+ * hacmiBucket: motor_hacmi'nin en yakin 100cc'ye yuvarlanmis hali (GORUNTULEME/
+ * GRUPLAMA icin - orn. 1600). exactCc (ENGINES_BY_MODEL icinde) o kovadaki
+ * EN SIK GORULEN gercek motor_hacmi degeri - /predict'e GONDERILMESI gereken
+ * budur, hacmiBucket'in kendisi degil.
+ */
+
+export interface EngineOption {
+  hacmiBucket: number;
+  yakitTuru: string;
+  exactCc: number;
+  count: number;
+}
+"""
+
+
+def build_vehicle_options(X_full):
+    d = X_full.dropna(subset=['motor_hacmi', 'yakit_turu']).copy()
+    d['hacmi_bucket'] = (d['motor_hacmi'] / 100).round() * 100
+
+    models_by_brand = {}
+    for (marka, model), _ in X_full.groupby(['marka', 'model'], observed=True):
+        models_by_brand.setdefault(str(marka), []).append(str(model))
+
+    engines_by_model = {}
+    for (marka, model, bucket, yakit), group in d.groupby(
+        ['marka', 'model', 'hacmi_bucket', 'yakit_turu'], observed=True
+    ):
+        key = f'{marka}|{model}'
+        exact_cc = float(group['motor_hacmi'].mode().iloc[0])
+        engines_by_model.setdefault(key, []).append({
+            'hacmiBucket': float(bucket),
+            'yakitTuru': str(yakit),
+            'exactCc': exact_cc,
+            'count': int(len(group)),
+        })
+    for key in engines_by_model:
+        engines_by_model[key].sort(key=lambda e: (e['hacmiBucket'], e['yakitTuru']))
+
+    def engine_key(marka, model, bucket, yakit):
+        return f'{marka}|{model}|{bucket}|{yakit}'
+
+    paket_by_engine = {}
+    for (marka, model, bucket, yakit, paket), group in d.groupby(
+        ['marka', 'model', 'hacmi_bucket', 'yakit_turu', 'paket'], observed=True
+    ):
+        if not group.size:
+            continue
+        key = engine_key(marka, model, bucket, yakit)
+        paket_by_engine.setdefault(key, []).append((str(paket), len(group)))
+    paket_by_engine = {
+        key: [p for p, _ in sorted(items, key=lambda pc: pc[1], reverse=True)]
+        for key, items in paket_by_engine.items()
+        if items
+    }
+    # kategori dtype grupla(observed=True) 'nan' stringini de bir kategori
+    # olarak dondurebiliyor - gercek paket olmayan bu deger temizlenir (bkz.
+    # generate_paket_suggestions.py'deki ayni sorun/cozum).
+    for key, pakets in list(paket_by_engine.items()):
+        cleaned = [p for p in pakets if p != 'nan']
+        if cleaned:
+            paket_by_engine[key] = cleaned
+        else:
+            del paket_by_engine[key]
+
+    hp_by_engine = {}
+    for (marka, model, bucket, yakit), group in d.dropna(subset=['motor_gucu']).groupby(
+        ['marka', 'model', 'hacmi_bucket', 'yakit_turu'], observed=True
+    ):
+        key = engine_key(marka, model, bucket, yakit)
+        values = sorted(float(v) for v in group['motor_gucu'].dropna().unique())
+        if values:
+            hp_by_engine[key] = values
+
+    return models_by_brand, engines_by_model, paket_by_engine, hp_by_engine
+
+
+def main():
+    X_full, y_full = prepare_full_training_data()
+    models_by_brand, engines_by_model, paket_by_engine, hp_by_engine = build_vehicle_options(X_full)
+
+    # saglik kontrolu: category_mapping.py'nin kanonik marka listesinde
+    # OLMAYAN bir marka egitim verisinde varsa erken uyar (drift).
+    canonical_markas = {v for v in LABEL_TO_CANONICAL['marka'].values() if v}
+    seen_markas = set(models_by_brand.keys())
+    unknown = seen_markas - canonical_markas
+    if unknown:
+        print(f'UYARI: egitim verisinde olup category_mapping.py kanonik listesinde '
+              f'olmayan {len(unknown)} marka var (website VehicleSelector\'unda hic '
+              f'gorunmez): {sorted(unknown)[:10]}...')
+
+    total_models = sum(len(v) for v in models_by_brand.values())
+    total_engine_groups = sum(len(v) for v in engines_by_model.values())
+    print(f'{len(models_by_brand)} marka, {total_models} marka+model grubu')
+    print(f'{total_engine_groups} kovalanmis marka+model+motor grubu')
+    print(f'{len(paket_by_engine)} marka+model+motor grubu icin paket onerisi')
+    print(f'{len(hp_by_engine)} marka+model+motor grubu icin motor gucu secenegi')
+    multi_hp = sum(1 for v in hp_by_engine.values() if len(v) > 1)
+    print(f'  bunlarin {multi_hp}\'i ({100 * multi_hp / len(hp_by_engine):.1f}%) birden fazla HP degerine sahip')
+
+    output_path = os.path.abspath(WEBSITE_OUTPUT_PATH)
+    with open(output_path, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(HEADER)
+        f.write('\nexport const MODELS_BY_BRAND: Record<string, string[]> = ')
+        f.write(json.dumps(models_by_brand, ensure_ascii=False, indent=2))
+        f.write(';\n')
+        f.write('\nexport const ENGINES_BY_MODEL: Record<string, EngineOption[]> = ')
+        f.write(json.dumps(engines_by_model, ensure_ascii=False, indent=2))
+        f.write(';\n')
+        f.write('\nexport const PAKET_BY_ENGINE: Record<string, string[]> = ')
+        f.write(json.dumps(paket_by_engine, ensure_ascii=False, indent=2))
+        f.write(';\n')
+        f.write('\nexport const HP_BY_ENGINE: Record<string, number[]> = ')
+        f.write(json.dumps(hp_by_engine, ensure_ascii=False, indent=2))
+        f.write(';\n')
+    print(f'uretildi: {output_path}')
+
+
+if __name__ == '__main__':
+    main()
