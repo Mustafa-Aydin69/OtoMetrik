@@ -4,12 +4,14 @@
  * Fiyat tahmin formu: alan doğrulaması, loading/hata/tekrar deneme akışı ve
  * başarılı sonuçta PredictionResult kartı.
  */
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   BODY_TYPES,
+  canonicalToLabel,
   COLORS,
   CURRENT_YEAR,
   FUEL_TYPES,
+  getHpOptions,
   MIN_YEAR,
   TRANSMISSIONS,
   validatePrediction,
@@ -19,9 +21,9 @@ import {
 import { requestPrediction, type PredictionResponse } from "@/lib/prediction";
 import { requestCarImageUrls } from "@/lib/car-photo";
 import { FormSection } from "./FormSection";
-import { NumberField, SelectField, YesNoField } from "./fields";
+import { LockedField, NumberField, SelectField, YesNoField } from "./fields";
 import { PredictionResult } from "./PredictionResult";
-import { VehiclePicker, type VehicleSelection } from "./VehiclePicker";
+import { VehicleSelector, type VehicleSelection } from "./VehicleSelector";
 
 const YEARS = Array.from(
   { length: CURRENT_YEAR + 1 - MIN_YEAR + 1 },
@@ -31,6 +33,11 @@ const YEARS = Array.from(
 interface FormState {
   brand: string;
   model: string;
+  /** VehicleSelector'ın Motor kademesinden - LockedField'ların "kilitli mi?" kararı buna bakar. */
+  engineHacmiBucket: number | null;
+  engineExactCc: number | null;
+  /** Kanonik yakıt türü (örn. "LPG & Benzin") - fuelType (etiket) bundan türetilir. */
+  yakitTuru: string;
   year: string;
   mileage: string;
   fuelType: string;
@@ -48,6 +55,9 @@ interface FormState {
 const INITIAL: FormState = {
   brand: "",
   model: "",
+  engineHacmiBucket: null,
+  engineExactCc: null,
+  yakitTuru: "",
   year: "",
   mileage: "",
   fuelType: "",
@@ -108,18 +118,52 @@ export function PredictionForm() {
   }
 
   function setVehicle(next: VehicleSelection) {
-    // Marka/model/paket VehiclePicker içinde birlikte değişir (marka
-    // değişince model+paket sıfırlanır) - tek atomik güncelleme gerekir,
-    // set()'in tek-alan mantığı burada üç alanı da kapsayacak şekilde
-    // genişletilir.
-    setForm((prev) => ({ ...prev, brand: next.brand, model: next.model, trim: next.trim }));
+    // Marka/model/motor/paket VehicleSelector içinde birlikte değişir (marka
+    // değişince model+motor+paket sıfırlanır) - tek atomik güncelleme
+    // gerekir. Motor Hacmi/Yakıt Türü doğrudan seçimden türetilir (bkz.
+    // LockedField); Motor Gücü'nün TEK geçerli değeri varsa o da otomatik
+    // doldurulur, birden fazla varsa kullanıcı aşağıdaki SelectField'dan
+    // seçene kadar boş kalır (bkz. render'daki hpOptions).
+    const fuelLabel = next.yakitTuru ? canonicalToLabel("fuelType", next.yakitTuru) : "";
+    const hpOptions =
+      next.brand && next.model && next.engineHacmiBucket !== null
+        ? getHpOptions(next.brand, next.model, next.engineHacmiBucket, next.yakitTuru)
+        : [];
+
+    setForm((prev) => ({
+      ...prev,
+      brand: next.brand,
+      model: next.model,
+      trim: next.trim,
+      engineHacmiBucket: next.engineHacmiBucket,
+      engineExactCc: next.engineExactCc,
+      yakitTuru: next.yakitTuru,
+      fuelType: fuelLabel,
+      engineDisplacement: next.engineExactCc !== null ? String(next.engineExactCc) : "",
+      enginePower: hpOptions.length === 1 ? String(hpOptions[0]) : "",
+    }));
     setErrors((prev) => {
       const rest = { ...prev };
       delete rest.brand;
       delete rest.model;
+      delete rest.fuelType;
+      delete rest.engineDisplacement;
+      delete rest.enginePower;
       return rest;
     });
   }
+
+  // Motor Gücü'nün bu marka+model+motor kombinasyonu için kaç geçerli değeri
+  // var: 0 -> serbest NumberField (araç/motor henüz seçilmedi VEYA bu
+  // kombinasyon için veri yok), 1 -> LockedField (setVehicle zaten doldurdu),
+  // >1 -> SelectField (kullanıcı seçmeli, bkz. plan "HP kapsamı").
+  const hpOptions = useMemo(
+    () =>
+      form.brand && form.model && form.engineHacmiBucket !== null
+        ? getHpOptions(form.brand, form.model, form.engineHacmiBucket, form.yakitTuru)
+        : [],
+    [form.brand, form.model, form.engineHacmiBucket, form.yakitTuru]
+  );
 
   async function submit() {
     const input = toInput(form);
@@ -169,8 +213,15 @@ export function PredictionForm() {
               nasıl göründüğü (özellikler), ne kadar kullanıldığı, en
               sonda da durumu/hasarı. */}
           <FormSection title="Araç Kimliği">
-            <VehiclePicker
-              value={{ brand: form.brand, model: form.model, trim: form.trim }}
+            <VehicleSelector
+              value={{
+                brand: form.brand,
+                model: form.model,
+                engineHacmiBucket: form.engineHacmiBucket,
+                engineExactCc: form.engineExactCc,
+                yakitTuru: form.yakitTuru,
+                trim: form.trim,
+              }}
               onChange={setVehicle}
               brandError={errors.brand}
               modelError={errors.model}
@@ -187,15 +238,23 @@ export function PredictionForm() {
           </FormSection>
 
           <FormSection title="Motor Bilgileri" divider>
-            <SelectField
-              id="fuelType"
-              label="Yakıt Türü"
-              value={form.fuelType}
-              onChange={(v) => set("fuelType", v)}
-              options={FUEL_TYPES}
-              error={errors.fuelType}
-              placeholder="Yakıt türü seçin"
-            />
+            {form.yakitTuru ? (
+              <LockedField
+                label="Yakıt Türü"
+                value={form.fuelType}
+                hint="Seçilen motordan otomatik dolduruldu"
+              />
+            ) : (
+              <SelectField
+                id="fuelType"
+                label="Yakıt Türü"
+                value={form.fuelType}
+                onChange={(v) => set("fuelType", v)}
+                options={FUEL_TYPES}
+                error={errors.fuelType}
+                placeholder="Yakıt türü seçin"
+              />
+            )}
             <SelectField
               id="transmission"
               label="Vites"
@@ -205,30 +264,56 @@ export function PredictionForm() {
               error={errors.transmission}
               placeholder="Vites seçin"
             />
-            <NumberField
-              id="engineDisplacement"
-              label="Motor Hacmi"
-              value={form.engineDisplacement}
-              onChange={(v) => set("engineDisplacement", v)}
-              error={errors.engineDisplacement}
-              placeholder={
-                form.fuelType === "Elektrik"
-                  ? "Elektrikli — boş bırakılabilir"
-                  : "örn. 1600"
-              }
-              min={0}
-              suffix="cc"
-            />
-            <NumberField
-              id="enginePower"
-              label="Motor Gücü"
-              value={form.enginePower}
-              onChange={(v) => set("enginePower", v)}
-              error={errors.enginePower}
-              placeholder="örn. 110"
-              min={1}
-              suffix="HP"
-            />
+            {form.engineExactCc !== null ? (
+              <LockedField
+                label="Motor Hacmi"
+                value={`${form.engineExactCc} cc`}
+                hint="Seçilen motordan otomatik dolduruldu"
+              />
+            ) : (
+              <NumberField
+                id="engineDisplacement"
+                label="Motor Hacmi"
+                value={form.engineDisplacement}
+                onChange={(v) => set("engineDisplacement", v)}
+                error={errors.engineDisplacement}
+                placeholder={
+                  form.fuelType === "Elektrik"
+                    ? "Elektrikli — boş bırakılabilir"
+                    : "örn. 1600"
+                }
+                min={0}
+                suffix="cc"
+              />
+            )}
+            {hpOptions.length === 1 ? (
+              <LockedField
+                label="Motor Gücü"
+                value={`${hpOptions[0]} HP`}
+                hint="Seçilen motordan otomatik dolduruldu"
+              />
+            ) : hpOptions.length > 1 ? (
+              <SelectField
+                id="enginePower"
+                label="Motor Gücü"
+                value={form.enginePower}
+                onChange={(v) => set("enginePower", v)}
+                options={hpOptions.map((hp) => `${hp}`)}
+                error={errors.enginePower}
+                placeholder={`Bu kombinasyon için ${hpOptions.length} geçerli değer var`}
+              />
+            ) : (
+              <NumberField
+                id="enginePower"
+                label="Motor Gücü"
+                value={form.enginePower}
+                onChange={(v) => set("enginePower", v)}
+                error={errors.enginePower}
+                placeholder="örn. 110"
+                min={1}
+                suffix="HP"
+              />
+            )}
           </FormSection>
 
           <FormSection title="Araç Özellikleri" divider>

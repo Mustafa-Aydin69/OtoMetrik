@@ -120,6 +120,34 @@ export function SelectField({
   );
 }
 
+/**
+ * Araç seçiminden (VehicleSelector) kesin olarak belirlenip otomatik
+ * doldurulan, kullanıcının artık değiştiremediği alanlar için (örn. Motor
+ * Hacmi, Yakıt Türü) - normal bir input yerine salt-okunur bir kutu +
+ * kilit ikonu gösterir. Değer henüz yoksa (araç/motor seçilmediyse) "—"
+ * gösterir; PredictionForm bu durumda genelde interaktif alana geri döner,
+ * LockedField'ı SADECE gerçekten kilitli bir değer varken render eder.
+ */
+export function LockedField({
+  label,
+  value,
+  hint,
+}: {
+  label: string;
+  value: string;
+  hint?: string;
+}) {
+  return (
+    <div className="flex flex-col gap-1.5">
+      <span className="flex items-center gap-1 text-xs font-medium uppercase tracking-wider text-amber-400/80">
+        🔒 {label}
+      </span>
+      <div className={`${inputBase} cursor-default text-zinc-300`}>{value || "—"}</div>
+      {hint ? <p className="text-[11px] text-zinc-500">{hint}</p> : null}
+    </div>
+  );
+}
+
 export function YesNoField({
   id,
   label,

@@ -6,8 +6,11 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  canonicalToLabel,
+  getEnginesForModel,
+  getHpOptions,
   getModelsForBrand,
-  getPaketSuggestions,
+  getPaketOptions,
   toCanonicalPayload,
   validatePrediction,
   type PredictionInput,
@@ -84,22 +87,64 @@ test("değişen+boyalı toplamı 13'ü aşınca reddedilir", () => {
   assert.equal(result.paintedPartsCount !== undefined, true);
 });
 
-test("getPaketSuggestions: bilinen marka+model için egitimdeki pakatleri döner", () => {
-  const suggestions = getPaketSuggestions("Ford", "Focus");
+test("getPaketOptions: bilinen marka+model+motor için egitimdeki paketleri döner", () => {
+  // Faz 25: paket artik marka+model DEGIL marka+model+motor bazinda -
+  // Ford Focus 1.6 Dizel'de "TDCi Trend X" en sik gorulen paket.
+  const suggestions = getPaketOptions("Ford", "Focus", 1600, "Dizel");
   assert.ok(suggestions.length > 0);
   assert.ok(suggestions.includes("TDCi Trend X"));
 });
 
-test("getPaketSuggestions: website etiketini (Mercedes-Benz) kanonik markaya (Mercedes - Benz) çevirir", () => {
+test("getPaketOptions: website etiketini (Mercedes-Benz) kanonik markaya (Mercedes - Benz) çevirir", () => {
   // Mercedes'te egitim verisindeki "model" alani "C" (BMW'deki "3 Serisi"
   // formatinin aksine "Serisi" eki YOK - markaya gore farkli scrape kalibi).
-  const suggestions = getPaketSuggestions("Mercedes-Benz", "C");
+  const suggestions = getPaketOptions("Mercedes-Benz", "C", 1500, "Benzin");
   assert.ok(suggestions.length > 0);
 });
 
-test("getPaketSuggestions: bilinmeyen marka+model için boş dizi döner", () => {
-  const suggestions = getPaketSuggestions("Ford", "Bilinmeyen Model XYZ");
+test("getPaketOptions: bilinmeyen marka+model için boş dizi döner", () => {
+  const suggestions = getPaketOptions("Ford", "Bilinmeyen Model XYZ", 1600, "Benzin");
   assert.deepEqual(suggestions, []);
+});
+
+test("getEnginesForModel: Mazda 3 için motor kombinasyonlarını hacme göre artan döner", () => {
+  const engines = getEnginesForModel("Mazda", "3");
+  assert.ok(engines.length > 0);
+  assert.ok(engines.some((e) => e.hacmiBucket === 1600 && e.yakitTuru === "Benzin"));
+  for (let i = 1; i < engines.length; i++) {
+    assert.ok(engines[i - 1].hacmiBucket <= engines[i].hacmiBucket);
+  }
+});
+
+test("getEnginesForModel: exactCc kovadaki en sık görülen gerçek cc değeri (kovanın kendisi değil)", () => {
+  const engines = getEnginesForModel("Mazda", "3");
+  const bucket1600Benzin = engines.find((e) => e.hacmiBucket === 1600 && e.yakitTuru === "Benzin");
+  assert.ok(bucket1600Benzin);
+  assert.equal(bucket1600Benzin!.exactCc, 1598);
+});
+
+test("getEnginesForModel: bilinmeyen marka+model için boş dizi döner", () => {
+  assert.deepEqual(getEnginesForModel("Ford", "Bilinmeyen Model XYZ"), []);
+});
+
+test("getHpOptions: birden fazla geçerli motor gücü değeri olan gerçek bir kombinasyon", () => {
+  // Bu Faz'da olculdu: Mazda 3 1.6 Benzin'de 3 farkli HP degeri var -
+  // PredictionForm bu durumda otomatik doldurmak yerine secilebilir dropdown gosterir.
+  const hp = getHpOptions("Mazda", "3", 1600, "Benzin");
+  assert.deepEqual(hp, [105, 109, 115]);
+});
+
+test("getHpOptions: bilinmeyen kombinasyon için boş dizi döner", () => {
+  assert.deepEqual(getHpOptions("Ford", "Bilinmeyen Model XYZ", 1600, "Benzin"), []);
+});
+
+test("canonicalToLabel: labelToCanonical'ın tersi (LPG & Benzin -> LPG)", () => {
+  assert.equal(canonicalToLabel("fuelType", "LPG & Benzin"), "LPG");
+  assert.equal(canonicalToLabel("fuelType", "Dizel"), "Dizel");
+});
+
+test("canonicalToLabel: eşleşme yoksa değeri olduğu gibi döner", () => {
+  assert.equal(canonicalToLabel("fuelType", "Bilinmeyen Kanonik Değer"), "Bilinmeyen Kanonik Değer");
 });
 
 test("getModelsForBrand: BMW için modelleri döner ve 3 Serisi içerir", () => {
@@ -109,8 +154,8 @@ test("getModelsForBrand: BMW için modelleri döner ve 3 Serisi içerir", () => 
 });
 
 test("getModelsForBrand: website etiketini (Mercedes-Benz) kanonik markaya çevirir", () => {
-  // Mercedes'te egitim verisindeki model degeri "C" (getPaketSuggestions
-  // testindeki notla tutarli) - VehiclePicker'ın model listesinde de aynı
+  // Mercedes'te egitim verisindeki model degeri "C" (getPaketOptions
+  // testindeki notla tutarli) - VehicleSelector'ın model listesinde de aynı
   // ham değer görünür.
   const models = getModelsForBrand("Mercedes-Benz");
   assert.ok(models.length > 0);
