@@ -129,4 +129,10 @@ export const KASA_TURU_OPTIONS: CategoryOption[] = [
   { label: "MPV", value: "MPV" },
   { label: "Panelvan", value: "Panel Van" },
   { label: "Crossover", value: "Crossover" },
+  { label: "Camlı Van", value: "Camlı Van" },
+  { label: "Yarım Camlı Van", value: "Yarım Camlı Van" },
+  { label: "Frigorifik Panelvan", value: "Frigorifik Panelvan" },
+  { label: "Minibüs", value: "Minibüs" },
+  { label: "Hard Top", value: "Hard top" },
+  { label: "Roadster", value: "Roadster" },
 ];

@@ -32,6 +32,7 @@ import {
   YEAR_MIN,
 } from "./domain-bounds.generated";
 import {
+  BODY_TYPE_BY_MODEL,
   ENGINES_BY_MODEL,
   HP_BY_ENGINE,
   MODELS_BY_BRAND,
@@ -304,4 +305,20 @@ export function getHpOptions(
 ): readonly number[] {
   const canonicalBrand = labelToCanonical("brand", brandLabel);
   return HP_BY_ENGINE[engineKey(canonicalBrand, model, hacmiBucket, yakitTuru)] ?? [];
+}
+
+/**
+ * Seçilen marka+model için eğitimde GERÇEKTEN görülen kasa tiplerini (en
+ * sıktan en nadire) etiket olarak döner — örn. Citroën Berlingo için
+ * ["Camlı Van", "Panel Van", ...], "Sedan"/"MPV" gibi bu araca hiç uymayan
+ * seçenekler döndürmez. PredictionForm bu listeyi kullanarak: 1 değer varsa
+ * alanı otomatik doldurup kilitler, >1 değer varsa yalnızca bu değerlerden
+ * oluşan bir dropdown gösterir, 0 değer varsa (araç henüz seçilmedi ya da bu
+ * marka+model için veri yok) tam kanonik listeye (BODY_TYPES) serbest
+ * seçime düşer.
+ */
+export function getBodyTypesForModel(brandLabel: string, model: string): readonly string[] {
+  const canonicalBrand = labelToCanonical("brand", brandLabel);
+  const values = BODY_TYPE_BY_MODEL[vehicleKey(canonicalBrand, model)] ?? [];
+  return values.map((v) => canonicalToLabel("bodyType", v));
 }

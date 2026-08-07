@@ -216,15 +216,17 @@ export function ScrollAssemblySection() {
           </div>
         ) : null}
 
-        {/* Scroll'a bağlı başlıklar */}
+        {/* Scroll'a bağlı başlıklar — sabit üst bölgede, site başlıklarıyla
+            aynı ağırlık/izleme (font-semibold tracking-tight); son cümle
+            alttaki CTA'ya köprü kursun diye marka rengiyle (sky-400) vurgulu. */}
         {CAPTIONS.map((c, i) => (
           <p
             key={c.text}
             ref={(el) => {
               captionRefs.current[i] = el;
             }}
-            className={`pointer-events-none absolute inset-x-0 px-6 text-center text-2xl font-medium tracking-tight text-white/95 [text-shadow:0_2px_24px_rgba(0,0,0,0.7)] sm:text-4xl ${
-              i === 0 ? "top-[16%]" : i === 1 ? "top-[14%]" : "top-[42%]"
+            className={`pointer-events-none absolute inset-x-0 top-[20%] mx-auto max-w-2xl px-6 text-center text-3xl font-semibold tracking-tight [text-shadow:0_2px_30px_rgba(0,0,0,0.75)] sm:top-[18%] sm:max-w-3xl sm:text-4xl md:text-5xl ${
+              i === CAPTIONS.length - 1 ? "text-sky-400" : "text-white"
             }`}
             style={{ opacity: 0 }}
           >

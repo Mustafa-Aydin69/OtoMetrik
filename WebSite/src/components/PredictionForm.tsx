@@ -11,6 +11,7 @@ import {
   COLORS,
   CURRENT_YEAR,
   FUEL_TYPES,
+  getBodyTypesForModel,
   getHpOptions,
   MIN_YEAR,
   TRANSMISSIONS,
@@ -129,6 +130,11 @@ export function PredictionForm() {
       next.brand && next.model && next.engineHacmiBucket !== null
         ? getHpOptions(next.brand, next.model, next.engineHacmiBucket, next.yakitTuru)
         : [];
+    // Kasa tipi marka+model'e bağlı (motor/paket'ten bağımsız) - sadece marka
+    // veya model gerçekten değiştiyse sıfırlanır, aksi halde kullanıcının
+    // motor/paket adımlarında yaptığı seçim kasa tipini bozmaz.
+    const vehicleChanged = next.brand !== form.brand || next.model !== form.model;
+    const bodyOptions = next.brand && next.model ? getBodyTypesForModel(next.brand, next.model) : [];
 
     setForm((prev) => ({
       ...prev,
@@ -141,6 +147,7 @@ export function PredictionForm() {
       fuelType: fuelLabel,
       engineDisplacement: next.engineExactCc !== null ? String(next.engineExactCc) : "",
       enginePower: hpOptions.length === 1 ? String(hpOptions[0]) : "",
+      bodyType: vehicleChanged ? (bodyOptions.length === 1 ? bodyOptions[0] : "") : prev.bodyType,
     }));
     setErrors((prev) => {
       const rest = { ...prev };
@@ -149,6 +156,7 @@ export function PredictionForm() {
       delete rest.fuelType;
       delete rest.engineDisplacement;
       delete rest.enginePower;
+      if (vehicleChanged) delete rest.bodyType;
       return rest;
     });
   }
@@ -164,6 +172,24 @@ export function PredictionForm() {
         : [],
     [form.brand, form.model, form.engineHacmiBucket, form.yakitTuru]
   );
+
+  // Kasa Tipi'nin bu marka+model için kaç geçerli değeri var: 0 -> tam
+  // kanonik listeye (BODY_TYPES) serbest seçim (araç henüz seçilmedi VEYA bu
+  // marka+model için veri yok), 1 -> LockedField, >1 -> yalnızca gerçekten
+  // görülen değerlerden oluşan SelectField (bkz. plan: HP ile aynı desen).
+  const bodyTypeOptions = useMemo(
+    () => (form.brand && form.model ? getBodyTypesForModel(form.brand, form.model) : []),
+    [form.brand, form.model]
+  );
+
+  function resetForm() {
+    setForm(INITIAL);
+    setErrors({});
+    setStatus("idle");
+    setApiError("");
+    setResult(null);
+    setCarImageUrls([]);
+  }
 
   async function submit() {
     const input = toInput(form);
@@ -207,6 +233,16 @@ export function PredictionForm() {
         }}
         className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-8"
       >
+        <div className="mb-6 flex justify-end">
+          <button
+            type="button"
+            onClick={resetForm}
+            className="text-xs font-medium text-zinc-500 transition-colors hover:text-zinc-200"
+          >
+            Formu Temizle
+          </button>
+        </div>
+
         <div className="flex flex-col gap-8">
           {/* Kullanıcı bir aracı düşünürken doğal olarak izlediği sıra:
               önce ne olduğu (kimlik), sonra nasıl çalıştığı (motor),
@@ -317,15 +353,27 @@ export function PredictionForm() {
           </FormSection>
 
           <FormSection title="Araç Özellikleri" divider>
-            <SelectField
-              id="bodyType"
-              label="Kasa Tipi"
-              value={form.bodyType}
-              onChange={(v) => set("bodyType", v)}
-              options={BODY_TYPES}
-              error={errors.bodyType}
-              placeholder="Kasa tipi seçin"
-            />
+            {bodyTypeOptions.length === 1 ? (
+              <LockedField
+                label="Kasa Tipi"
+                value={bodyTypeOptions[0]}
+                hint="Seçilen araçtan otomatik dolduruldu"
+              />
+            ) : (
+              <SelectField
+                id="bodyType"
+                label="Kasa Tipi"
+                value={form.bodyType}
+                onChange={(v) => set("bodyType", v)}
+                options={bodyTypeOptions.length > 0 ? bodyTypeOptions : BODY_TYPES}
+                error={errors.bodyType}
+                placeholder={
+                  bodyTypeOptions.length > 0
+                    ? `Bu araç için ${bodyTypeOptions.length} geçerli kasa tipi var`
+                    : "Kasa tipi seçin"
+                }
+              />
+            )}
             <SelectField
               id="color"
               label="Renk"

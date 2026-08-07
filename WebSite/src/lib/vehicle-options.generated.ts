@@ -61888,7 +61888,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Audi|A3|1600.0|Benzin": [
-    101.0,
     102.0,
     105.0,
     115.0
@@ -61899,7 +61898,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     116.0
   ],
   "Audi|A3|1600.0|LPG & Benzin": [
-    101.0,
     102.0,
     115.0
   ],
@@ -61959,11 +61957,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Audi|A4|1600.0|Benzin": [
-    101.0,
     102.0
   ],
   "Audi|A4|1600.0|LPG & Benzin": [
-    101.0,
     102.0
   ],
   "Audi|A4|1700.0|Benzin": [
@@ -62001,7 +61997,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Audi|A4|1900.0|Dizel": [
     90.0,
     110.0,
-    113.0,
     115.0,
     130.0,
     138.0,
@@ -62029,13 +62024,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Audi|A4|2000.0|Dizel": [
     120.0,
-    138.0,
     140.0,
     143.0,
     150.0,
     163.0,
     177.0,
-    188.0,
     190.0,
     204.0,
     213.0
@@ -62496,16 +62489,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "BMW|1 Serisi|1500.0|Benzin": [
     109.0,
     113.0,
-    116.0,
     136.0,
     138.0,
-    140.0,
     163.0,
     170.0,
     188.0
   ],
   "BMW|1 Serisi|1500.0|Dizel": [
-    113.0,
     116.0,
     138.0
   ],
@@ -62518,7 +62508,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "BMW|1 Serisi|1600.0|Benzin": [
-    115.0,
     116.0,
     136.0,
     170.0
@@ -62527,7 +62516,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     116.0
   ],
   "BMW|1 Serisi|1600.0|LPG & Benzin": [
-    115.0,
     116.0,
     136.0
   ],
@@ -62567,9 +62555,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "BMW|2 Serisi|1500.0|Benzin": [
     113.0,
-    116.0,
     136.0,
-    138.0,
     140.0,
     163.0,
     170.0,
@@ -62577,7 +62563,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     338.0
   ],
   "BMW|2 Serisi|1500.0|Dizel": [
-    113.0,
     116.0
   ],
   "BMW|2 Serisi|1500.0|Hibrit": [
@@ -62606,23 +62591,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "BMW|3 Serisi|1600.0|Benzin": [
-    99.0,
-    100.0,
     102.0,
     105.0,
     115.0,
-    116.0,
     122.0,
     136.0,
     170.0
   ],
   "BMW|3 Serisi|1600.0|LPG & Benzin": [
-    99.0,
-    100.0,
     102.0,
     105.0,
     115.0,
-    116.0,
     122.0,
     136.0,
     170.0
@@ -62641,24 +62620,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "BMW|3 Serisi|1800.0|Benzin": [
-    113.0,
-    115.0,
     116.0,
     140.0
   ],
   "BMW|3 Serisi|1800.0|LPG & Benzin": [
     90.0,
     102.0,
-    113.0,
     115.0,
-    116.0,
     140.0
   ],
   "BMW|3 Serisi|1900.0|Benzin": [
     113.0,
     118.0,
     138.0,
-    140.0,
     163.0,
     188.0,
     213.0,
@@ -62677,7 +62651,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0,
     118.0,
     138.0,
-    140.0,
     163.0
   ],
   "BMW|3 Serisi|2000.0|Benzin": [
@@ -62917,7 +62890,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "BMW|5 Serisi|2500.0|Benzin": [
     143.0,
     177.0,
-    190.0,
     192.0
   ],
   "BMW|5 Serisi|2500.0|Dizel": [
@@ -63200,14 +63172,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     116.0,
     136.0,
     138.0,
-    140.0,
     154.0,
     170.0,
     238.0,
     245.0
   ],
   "BMW|X1|1500.0|Dizel": [
-    113.0,
     116.0
   ],
   "BMW|X1|1500.0|Hibrit": [
@@ -63343,7 +63313,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "BMW|Z Serisi|1900.0|Benzin": [
-    138.0,
     140.0,
     188.0,
     238.0,
@@ -63551,11 +63520,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Chevrolet|Aveo|1200.0|Benzin": [
     63.0,
-    70.0,
     72.0,
     75.0,
-    84.0,
-    86.0
+    84.0
   ],
   "Chevrolet|Aveo|1200.0|Dizel": [
     75.0,
@@ -63563,10 +63530,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Chevrolet|Aveo|1200.0|LPG & Benzin": [
     63.0,
-    70.0,
     72.0,
-    84.0,
-    86.0
+    84.0
   ],
   "Chevrolet|Aveo|1300.0|Benzin": [
     63.0,
@@ -63735,11 +63700,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Chevrolet|Lacetti|1400.0|Benzin": [
-    94.0,
     95.0
   ],
   "Chevrolet|Lacetti|1400.0|LPG & Benzin": [
-    94.0,
     95.0
   ],
   "Chevrolet|Lacetti|1500.0|Benzin": [
@@ -63780,14 +63743,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0
   ],
   "Chevrolet|Spark|800.0|Benzin": [
-    51.0,
     52.0
   ],
   "Chevrolet|Spark|800.0|Dizel": [
     52.0
   ],
   "Chevrolet|Spark|800.0|LPG & Benzin": [
-    51.0,
     52.0
   ],
   "Chevrolet|Spark|1000.0|Benzin": [
@@ -63917,7 +63878,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|Berlingo|0.0|Dizel": [
     71.0,
-    90.0,
     92.0,
     100.0,
     115.0,
@@ -63954,45 +63914,30 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|Berlingo|1500.0|Dizel": [
     96.0,
-    100.0,
     102.0,
     110.0,
-    130.0,
     132.0
   ],
   "Citroen|Berlingo|1600.0|Dizel": [
     55.0,
     66.0,
     68.0,
-    75.0,
     76.0,
     80.0,
-    90.0,
-    91.0,
     92.0,
     93.0,
-    95.0,
-    99.0,
-    100.0,
     101.0,
-    102.0,
-    110.0,
     111.0,
-    115.0,
     117.0,
-    120.0,
     122.0,
     151.0
   ],
   "Citroen|Berlingo|1800.0|Dizel": [
     51.0,
-    75.0,
     76.0
   ],
   "Citroen|Berlingo|1900.0|Dizel": [
-    70.0,
-    71.0,
-    72.0
+    71.0
   ],
   "Citroen|Berlingo|2000.0|Dizel": [
     91.0
@@ -64144,7 +64089,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C3|1200.0|Benzin": [
     83.0,
     88.0,
-    110.0,
     112.0,
     113.0,
     138.0
@@ -64152,7 +64096,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C3|1200.0|LPG & Benzin": [
     83.0,
     88.0,
-    110.0,
     112.0
   ],
   "Citroen|C3|1300.0|Benzin": [
@@ -64170,22 +64113,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|C3|1400.0|Benzin": [
     71.0,
-    73.0,
     76.0,
     91.0,
-    93.0,
     96.0
   ],
   "Citroen|C3|1400.0|Dizel": [
     71.0,
     76.0,
-    93.0,
-    96.0
+    93.0
   ],
   "Citroen|C3|1400.0|LPG & Benzin": [
-    73.0,
     76.0,
-    93.0,
     96.0
   ],
   "Citroen|C3|1500.0|Benzin": [
@@ -64320,7 +64258,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     93.0,
     111.0,
     114.0,
-    117.0,
     122.0
   ],
   "Citroen|C4|1600.0|LPG & Benzin": [
@@ -64377,7 +64314,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C4 Grand Picasso|1600.0|Dizel": [
     111.0,
     114.0,
-    117.0,
     122.0
   ],
   "Citroen|C4 Grand Picasso|1700.0|Dizel": [
@@ -64399,8 +64335,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|C4 Picasso|1600.0|Dizel": [
     111.0,
-    112.0,
-    114.0,
     117.0,
     122.0
   ],
@@ -64443,13 +64377,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C5|1600.0|Benzin": [
     111.0,
     114.0,
-    117.0,
     158.0
   ],
   "Citroen|C5|1600.0|Dizel": [
     111.0,
-    114.0,
-    117.0
+    114.0
   ],
   "Citroen|C5|1700.0|Dizel": [
     88.0
@@ -64465,14 +64397,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|C5|2000.0|Benzin": [
     111.0,
-    138.0,
-    140.0,
     142.0
   ],
   "Citroen|C5|2000.0|Dizel": [
     111.0,
     138.0,
-    140.0,
     165.0
   ],
   "Citroen|C5|2000.0|LPG & Benzin": [
@@ -64553,8 +64482,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|Jumpy|1500.0|Dizel": [
     88.0,
-    120.0,
-    122.0
+    120.0
   ],
   "Citroen|Jumpy|1600.0|Dizel": [
     92.0,
@@ -64565,14 +64493,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     126.0
   ],
   "Citroen|Jumpy|1900.0|Dizel": [
-    70.0,
     71.0,
     91.0
   ],
   "Citroen|Jumpy|2000.0|Dizel": [
     124.0,
     145.0,
-    147.0,
     180.0
   ],
   "Citroen|Jumpy|2200.0|Dizel": [
@@ -64586,7 +64512,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|Nemo|1400.0|Dizel": [
     50.0,
-    70.0,
     71.0,
     75.0,
     90.0
@@ -64611,7 +64536,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|Saxo|1500.0|Dizel": [
     58.0,
-    59.0,
     63.0
   ],
   "Citroen|Saxo|1500.0|LPG & Benzin": [
@@ -64619,7 +64543,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|Saxo|1600.0|Benzin": [
     91.0,
-    119.0,
     122.0
   ],
   "Citroen|Saxo|1600.0|LPG & Benzin": [
@@ -64651,8 +64574,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     134.0
   ],
   "Citroen|Xantia|2000.0|LPG & Benzin": [
-    134.0,
-    137.0
+    134.0
   ],
   "Citroen|Xsara|1400.0|Dizel": [
     69.0
@@ -64833,7 +64755,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "DS Automobiles|DS4|1600.0|Dizel": [
     114.0,
-    117.0,
     122.0
   ],
   "DS Automobiles|DS5|1600.0|Benzin": [
@@ -64841,7 +64762,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "DS Automobiles|DS5|1600.0|Dizel": [
     114.0,
-    117.0,
     122.0
   ],
   "DS Automobiles|DS9|1500.0|Benzin": [
@@ -64922,11 +64842,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dacia|Duster|1500.0|Dizel": [
     85.0,
     88.0,
-    90.0,
     95.0,
     110.0,
-    113.0,
-    115.0
+    113.0
   ],
   "Dacia|Duster|1500.0|LPG & Benzin": [
     113.0
@@ -64979,16 +64897,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dacia|Lodgy|1500.0|Benzin": [
     88.0,
     95.0,
-    113.0,
-    115.0
+    113.0
   ],
   "Dacia|Lodgy|1500.0|Dizel": [
-    88.0,
     90.0,
     95.0,
     110.0,
-    113.0,
-    115.0
+    113.0
   ],
   "Dacia|Lodgy|1500.0|LPG & Benzin": [
     113.0
@@ -65052,19 +64967,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dacia|Logan|1500.0|Benzin": [
     63.0,
     68.0,
-    70.0,
     75.0,
-    88.0,
     90.0
   ],
   "Dacia|Logan|1500.0|Dizel": [
     63.0,
-    65.0,
-    68.0,
     70.0,
     75.0,
     85.0,
-    88.0,
     90.0,
     95.0
   ],
@@ -65077,7 +64987,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Dacia|Logan|1600.0|LPG & Benzin": [
     76.0,
-    85.0,
     87.0,
     90.0,
     105.0
@@ -65153,7 +65062,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     70.0,
     75.0,
-    88.0,
     90.0,
     95.0
   ],
@@ -65161,7 +65069,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     70.0,
     75.0,
-    88.0,
     90.0,
     95.0,
     163.0
@@ -65174,7 +65081,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0
   ],
   "Dacia|Sandero|1600.0|LPG & Benzin": [
-    85.0,
     87.0,
     90.0
   ],
@@ -65616,7 +65522,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Doblo|1200.0|Benzin": [
     65.0,
     75.0,
-    110.0,
     112.0
   ],
   "Fiat|Doblo|1200.0|Dizel": [
@@ -65633,7 +65538,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Doblo|1300.0|Dizel": [
     51.0,
     70.0,
-    75.0,
     76.0,
     90.0,
     95.0,
@@ -65661,7 +65565,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Doblo|1600.0|Dizel": [
     76.0,
-    77.0,
     90.0,
     101.0,
     105.0,
@@ -65676,7 +65579,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     85.0,
     100.0,
-    101.0,
     105.0
   ],
   "Fiat|Doblo|1900.0|LPG & Benzin": [
@@ -65712,7 +65614,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Ducato|2000.0|Dizel": [
     76.0,
-    84.0,
     85.0,
     101.0,
     115.0,
@@ -65735,7 +65636,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Ducato|2800.0|Dizel": [
     122.0,
-    125.0,
     127.0,
     146.0
   ],
@@ -65778,12 +65678,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Fiat|Egea|1400.0|Benzin": [
-    94.0,
     95.0,
     120.0
   ],
   "Fiat|Egea|1400.0|LPG & Benzin": [
-    94.0,
     95.0,
     120.0
   ],
@@ -65882,23 +65780,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Fiorino|1300.0|Dizel": [
     51.0,
-    75.0,
     76.0,
     95.0,
     110.0,
     1300.0
   ],
   "Fiat|Fiorino|1400.0|Benzin": [
-    73.0,
-    74.0,
     77.0
   ],
   "Fiat|Fiorino|1400.0|Dizel": [
     73.0
   ],
   "Fiat|Fiorino|1400.0|LPG & Benzin": [
-    73.0,
-    74.0,
     77.0,
     90.0
   ],
@@ -66054,11 +65947,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Fiat|Palio|1400.0|Benzin": [
-    74.0,
     77.0
   ],
   "Fiat|Palio|1400.0|LPG & Benzin": [
-    74.0,
     77.0
   ],
   "Fiat|Palio|1500.0|Benzin": [
@@ -66283,7 +66174,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Fiat|Tempra|1400.0|LPG & Benzin": [
-    70.0,
     71.0,
     78.0
   ],
@@ -66342,8 +66232,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     70.0
   ],
   "Fiat|Tipo|1400.0|LPG & Benzin": [
-    70.0,
-    71.0
+    70.0
   ],
   "Fiat|Tipo|1500.0|Benzin": [
     63.0,
@@ -66361,7 +66250,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Tipo|1600.0|LPG & Benzin": [
     75.0,
     78.0,
-    80.0,
     85.0
   ],
   "Fiat|Tipo|1700.0|LPG & Benzin": [
@@ -66415,13 +66303,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0
   ],
   "Fiat|Uno|1400.0|Benzin": [
-    71.0,
-    72.0
+    71.0
   ],
   "Fiat|Uno|1400.0|LPG & Benzin": [
-    70.0,
-    71.0,
-    72.0
+    71.0
   ],
   "Fiat|Uno|1500.0|LPG & Benzin": [
     88.0
@@ -66639,13 +66524,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Fiesta|1400.0|Benzin": [
     68.0,
-    70.0,
     80.0,
     90.0,
     96.0
   ],
   "Ford|Fiesta|1400.0|Dizel": [
-    68.0,
     70.0
   ],
   "Ford|Fiesta|1400.0|LPG & Benzin": [
@@ -66673,7 +66556,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Fiesta|1600.0|Benzin": [
     100.0,
-    103.0,
     105.0
   ],
   "Ford|Fiesta|1600.0|Dizel": [
@@ -66750,9 +66632,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ford|Focus|1500.0|Benzin": [
     88.0,
     113.0,
-    115.0,
     120.0,
-    122.0,
     123.0,
     138.0,
     188.0
@@ -66761,7 +66641,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     88.0,
     113.0,
-    115.0,
     120.0,
     138.0,
     163.0
@@ -66785,7 +66664,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0,
     95.0,
     107.0,
-    109.0,
     110.0,
     115.0
   ],
@@ -67207,7 +67085,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     51.0,
     55.0,
     75.0,
-    76.0,
     90.0,
     101.0,
     110.0,
@@ -67263,7 +67140,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     55.0,
     75.0,
     95.0,
-    99.0,
     100.0,
     120.0
   ],
@@ -67289,7 +67165,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     155.0,
     170.0,
     175.0,
-    176.0,
     185.0
   ],
   "Ford|Tourneo Custom|2200.0|Dizel": [
@@ -67345,15 +67220,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Transit|2000.0|Dizel": [
     51.0,
-    75.0,
     76.0,
     85.0,
     96.0,
     101.0,
     125.0,
-    126.0,
     130.0,
-    150.0,
     151.0,
     155.0,
     165.0,
@@ -67378,9 +67250,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Transit|2400.0|Dizel": [
     52.0,
-    74.0,
     75.0,
-    88.0,
     90.0,
     100.0,
     115.0,
@@ -67392,10 +67262,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ford|Transit|2500.0|Dizel": [
     70.0,
     75.0,
-    76.0,
     85.0,
     100.0,
-    101.0,
     110.0,
     115.0,
     120.0,
@@ -67434,7 +67302,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Transit Connect|1800.0|Dizel": [
     75.0,
-    76.0,
     90.0,
     110.0
   ],
@@ -67478,7 +67345,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     76.0,
     101.0,
     126.0,
-    150.0,
     151.0,
     176.0
   ],
@@ -67486,12 +67352,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     76.0,
     101.0,
     105.0,
-    125.0,
     126.0,
     130.0,
     136.0,
     150.0,
-    151.0,
     170.0
   ],
   "Ford|Transit Custom|2200.0|Benzin": [
@@ -67534,7 +67398,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     94.0
   ],
   "Honda|Accord|1500.0|Benzin": [
-    188.0,
     190.0
   ],
   "Honda|Accord|1600.0|Benzin": [
@@ -67562,7 +67425,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     131.0,
     133.0,
     147.0,
-    155.0,
     156.0
   ],
   "Honda|Accord|2000.0|LPG & Benzin": [
@@ -67571,10 +67433,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0,
     131.0,
     133.0,
-    136.0,
     147.0,
-    155.0,
-    156.0
+    155.0
   ],
   "Honda|Accord|2200.0|Benzin": [
     138.0
@@ -67691,7 +67551,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0
   ],
   "Honda|Civic|1500.0|Benzin": [
-    88.0,
     90.0,
     113.0,
     129.0,
@@ -67704,7 +67563,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Honda|Civic|1500.0|LPG & Benzin": [
-    88.0,
     90.0,
     113.0,
     129.0,
@@ -67718,7 +67576,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0,
     120.0,
     125.0,
-    126.0,
     160.0
   ],
   "Honda|Civic|1600.0|Dizel": [
@@ -67730,13 +67587,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Honda|Civic|1600.0|LPG & Benzin": [
     110.0,
     113.0,
-    114.0,
-    115.0,
-    116.0,
     120.0,
-    123.0,
     125.0,
-    126.0,
     160.0
   ],
   "Honda|Civic|1700.0|Benzin": [
@@ -67807,14 +67659,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     83.0,
     88.0,
     100.0,
-    102.0,
     113.0
   ],
   "Honda|Jazz|1300.0|LPG & Benzin": [
     83.0,
     88.0,
-    100.0,
-    102.0
+    100.0
   ],
   "Honda|Jazz|1500.0|Benzin": [
     88.0,
@@ -67875,7 +67725,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|Accent|1300.0|Benzin": [
     63.0,
     75.0,
-    84.0,
     86.0,
     88.0
   ],
@@ -67886,7 +67735,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     60.0,
     63.0,
     75.0,
-    84.0,
     86.0,
     88.0
   ],
@@ -67894,8 +67742,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     82.0,
     88.0,
-    91.0,
-    92.0,
     102.0,
     105.0,
     113.0
@@ -67908,10 +67754,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Hyundai|Accent|1500.0|LPG & Benzin": [
-    88.0,
-    91.0,
     92.0,
-    99.0,
     102.0,
     113.0,
     138.0
@@ -68074,13 +67917,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Hyundai|Elantra|1600.0|Benzin": [
-    105.0,
     107.0,
-    114.0,
     116.0,
     123.0,
-    127.0,
-    128.0,
     132.0,
     136.0
   ],
@@ -68089,13 +67928,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|Elantra|1600.0|LPG & Benzin": [
     90.0,
-    105.0,
     107.0,
     114.0,
-    116.0,
-    123.0,
     127.0,
-    128.0,
     132.0
   ],
   "Hyundai|Elantra|1700.0|Benzin": [
@@ -68106,8 +67941,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|Elantra|1800.0|LPG & Benzin": [
     126.0,
-    128.0,
-    131.0
+    128.0
   ],
   "Hyundai|Elantra|1900.0|LPG & Benzin": [
     138.0
@@ -68416,8 +68250,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Hyundai|i10|1000.0|Benzin": [
-    65.0,
-    67.0
+    65.0
   ],
   "Hyundai|i10|1000.0|LPG & Benzin": [
     65.0
@@ -68434,7 +68267,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|i10|1200.0|Benzin": [
     63.0,
     79.0,
-    84.0,
     87.0,
     88.0
   ],
@@ -68476,17 +68308,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|i20|1200.0|Benzin": [
     78.0,
-    79.0,
     84.0,
-    85.0,
     88.0,
     113.0
   ],
   "Hyundai|i20|1200.0|LPG & Benzin": [
     78.0,
-    79.0,
-    84.0,
-    85.0
+    84.0
   ],
   "Hyundai|i20|1300.0|Benzin": [
     63.0,
@@ -68594,7 +68422,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|i30|1500.0|Benzin": [
     113.0,
     138.0,
-    140.0,
     188.0
   ],
   "Hyundai|i30|1500.0|Dizel": [
@@ -68603,7 +68430,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Hyundai|i30|1500.0|Hibrit": [
-    138.0,
     140.0
   ],
   "Hyundai|i30|1500.0|LPG & Benzin": [
@@ -68738,8 +68564,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     190.0
   ],
   "Isuzu|D-Max|1900.0|Dizel": [
-    163.0,
-    164.0
+    163.0
   ],
   "Isuzu|D-Max|2300.0|Dizel": [
     138.0,
@@ -69010,7 +68835,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Jeep|Compass|1300.0|Hibrit": [
-    238.0,
     240.0
   ],
   "Jeep|Compass|1300.0|LPG & Benzin": [
@@ -69079,12 +68903,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     213.0
   ],
   "Jeep|Grand Cherokee|5200.0|Benzin": [
-    214.0,
-    215.0
+    214.0
   ],
   "Jeep|Grand Cherokee|5200.0|LPG & Benzin": [
-    214.0,
-    215.0
+    214.0
   ],
   "Jeep|Grand Cherokee|5300.0|Benzin": [
     213.0
@@ -69231,12 +69053,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|Ceed|1600.0|Benzin": [
     115.0,
     128.0,
-    135.0,
     136.0
   ],
   "Kia|Ceed|1600.0|Dizel": [
     90.0,
-    113.0,
     115.0,
     128.0,
     136.0,
@@ -69272,8 +69092,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0,
     122.0,
     126.0,
-    128.0,
-    130.0
+    128.0
   ],
   "Kia|Cerato|1600.0|Dizel": [
     115.0,
@@ -69283,7 +69102,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0,
     122.0,
     126.0,
-    128.0,
     130.0
   ],
   "Kia|Cerato|2000.0|Dizel": [
@@ -69349,7 +69167,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0
   ],
   "Kia|Picanto|1000.0|Benzin": [
-    63.0,
     67.0
   ],
   "Kia|Picanto|1100.0|Benzin": [
@@ -69367,7 +69184,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     79.0,
     84.0,
-    85.0,
     88.0
   ],
   "Kia|Picanto|1200.0|LPG & Benzin": [
@@ -69380,7 +69196,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     82.0
   ],
   "Kia|Pride|1300.0|Benzin": [
-    63.0,
     64.0
   ],
   "Kia|Pride|1300.0|LPG & Benzin": [
@@ -69409,12 +69224,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0
   ],
   "Kia|Rio|1200.0|Benzin": [
-    84.0,
     85.0,
     88.0
   ],
   "Kia|Rio|1200.0|LPG & Benzin": [
-    84.0,
     85.0
   ],
   "Kia|Rio|1300.0|Benzin": [
@@ -69588,8 +69401,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     112.0,
     136.0,
     140.0,
-    184.0,
-    185.0
+    184.0
   ],
   "Kia|Stinger|1900.0|Benzin": [
     238.0
@@ -69646,7 +69458,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Kia|XCeed|1500.0|Benzin": [
     138.0,
-    140.0,
     160.0,
     163.0
   ],
@@ -69684,7 +69495,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Lada|Samara|1500.0|Benzin": [
     68.0,
-    70.0,
     75.0,
     78.0,
     88.0
@@ -69692,7 +69502,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Lada|Samara|1500.0|LPG & Benzin": [
     63.0,
     68.0,
-    70.0,
     75.0,
     78.0,
     88.0
@@ -69910,7 +69719,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     258.0
   ],
   "Land Rover|Range Rover|3600.0|Dizel": [
-    271.0,
     272.0
   ],
   "Land Rover|Range Rover|3800.0|Dizel": [
@@ -70200,25 +70008,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mazda|323|1500.0|Benzin": [
     63.0,
-    88.0,
-    90.0
+    88.0
   ],
   "Mazda|323|1500.0|LPG & Benzin": [
     63.0,
     88.0,
-    90.0,
     113.0,
     138.0
   ],
   "Mazda|323|1600.0|Benzin": [
     87.0,
-    88.0,
-    90.0
+    88.0
   ],
   "Mazda|323|1600.0|LPG & Benzin": [
     87.0,
     88.0,
-    90.0,
     98.0
   ],
   "Mazda|323|1700.0|LPG & Benzin": [
@@ -70229,8 +70033,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mazda|323|1800.0|LPG & Benzin": [
     114.0,
-    116.0,
-    128.0,
     131.0
   ],
   "Mazda|323|2000.0|Dizel": [
@@ -70267,8 +70069,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     155.0
   ],
   "Mazda|6|2300.0|LPG & Benzin": [
-    163.0,
-    166.0
+    163.0
   ],
   "Mazda|626|1500.0|LPG & Benzin": [
     88.0
@@ -70295,13 +70096,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mazda|626|2000.0|Benzin": [
     90.0,
     115.0,
-    117.0,
     136.0
   ],
   "Mazda|626|2000.0|LPG & Benzin": [
     90.0,
     115.0,
-    117.0,
     136.0
   ],
   "Mazda|929|2000.0|Benzin": [
@@ -70372,7 +70171,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mazda|MX|1500.0|Benzin": [
     113.0,
     131.0,
-    132.0,
     138.0
   ],
   "Mazda|MX|1600.0|Benzin": [
@@ -70390,7 +70188,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mazda|RX|1300.0|Benzin": [
     188.0,
-    192.0,
     231.0,
     238.0
   ],
@@ -70502,7 +70299,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|200|2000.0|LPG & Benzin": [
     118.0,
-    121.0,
     136.0
   ],
   "Mercedes - Benz|200|2300.0|Dizel": [
@@ -70556,8 +70352,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     238.0
   ],
   "Mercedes - Benz|250|2500.0|Benzin": [
-    126.0,
-    127.0
+    126.0
   ],
   "Mercedes - Benz|250|2500.0|Dizel": [
     94.0,
@@ -70696,7 +70491,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     107.0,
     109.0,
     113.0,
-    116.0,
     138.0
   ],
   "Mercedes - Benz|A|1500.0|LPG & Benzin": [
@@ -70714,12 +70508,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|A|1700.0|Benzin": [
     88.0,
-    90.0,
     163.0
   ],
   "Mercedes - Benz|A|1700.0|Dizel": [
     60.0,
-    88.0,
     90.0,
     95.0
   ],
@@ -70751,7 +70543,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|B|1500.0|Dizel": [
     109.0,
     113.0,
-    116.0,
     138.0
   ],
   "Mercedes - Benz|B|1500.0|Hibrit": [
@@ -70817,7 +70608,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|C|1600.0|Benzin": [
     136.0,
-    153.0,
     156.0,
     160.0
   ],
@@ -70908,8 +70698,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     143.0,
     150.0,
     170.0,
-    204.0,
-    207.0
+    204.0
   ],
   "Mercedes - Benz|C|2200.0|Benzin": [
     138.0,
@@ -70997,8 +70786,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|CLA|1500.0|Dizel": [
     88.0,
     109.0,
-    113.0,
-    116.0
+    113.0
   ],
   "Mercedes - Benz|CLA|1500.0|Hibrit": [
     188.0
@@ -71155,7 +70943,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Mercedes - Benz|E|1600.0|Benzin": [
-    155.0,
     156.0,
     160.0
   ],
@@ -71220,7 +71007,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     136.0,
     163.0,
     184.0,
-    186.0,
     194.0,
     211.0,
     245.0,
@@ -71757,7 +71543,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|Vito|100.0|Dizel": [
     114.0,
-    116.0,
     136.0
   ],
   "Mercedes - Benz|Vito|300.0|Dizel": [
@@ -71821,15 +71606,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|Vito|2300.0|Dizel": [
     79.0,
-    98.0,
-    102.0
+    98.0
   ],
   "Mercedes - Benz|Vito|2500.0|Dizel": [
     226.0
   ],
   "Mercedes - Benz|X|2300.0|Dizel": [
-    188.0,
-    190.0
+    188.0
   ],
   "Mercedes - Benz|X|3000.0|Dizel": [
     258.0
@@ -71843,7 +71626,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mini|Cooper|1500.0|Benzin": [
     88.0,
     113.0,
-    116.0,
     136.0,
     138.0,
     156.0,
@@ -71851,7 +71633,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     188.0
   ],
   "Mini|Cooper|1500.0|Dizel": [
-    113.0,
     116.0
   ],
   "Mini|Cooper|1500.0|LPG & Benzin": [
@@ -71859,8 +71640,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mini|Cooper|1600.0|Benzin": [
     115.0,
-    120.0,
-    122.0
+    120.0
   ],
   "Mini|Cooper|1600.0|Dizel": [
     112.0
@@ -71918,7 +71698,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     213.0
   ],
   "Mini|Countryman|1500.0|Dizel": [
-    113.0,
     116.0
   ],
   "Mini|Countryman|1500.0|Hibrit": [
@@ -71976,11 +71755,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Mitsubishi|ASX|1600.0|Benzin": [
-    115.0,
     117.0
   ],
   "Mitsubishi|ASX|1600.0|Dizel": [
-    113.0,
     114.0
   ],
   "Mitsubishi|ASX|1600.0|LPG & Benzin": [
@@ -72027,7 +71804,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mitsubishi|Carisma|1900.0|Dizel": [
     102.0,
-    113.0,
     115.0
   ],
   "Mitsubishi|Colt|1100.0|Benzin": [
@@ -72112,7 +71888,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     87.0,
     100.0,
     115.0,
-    134.0,
     136.0,
     167.0,
     178.0
@@ -72147,13 +71922,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mitsubishi|Lancer|1500.0|Benzin": [
     88.0,
-    90.0,
     109.0,
     113.0,
     138.0
   ],
   "Mitsubishi|Lancer|1500.0|LPG & Benzin": [
-    88.0,
     90.0,
     109.0,
     113.0
@@ -72240,8 +72013,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     86.0
   ],
   "Mitsubishi|Space Star|1600.0|LPG & Benzin": [
-    98.0,
-    100.0
+    98.0
   ],
   "Mitsubishi|Space Star|1900.0|Dizel": [
     102.0,
@@ -72270,7 +72042,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     87.0
   ],
   "Nissan|Almera|1500.0|Benzin": [
-    88.0,
     90.0,
     98.0
   ],
@@ -72279,7 +72050,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     98.0
   ],
   "Nissan|Almera|1500.0|LPG & Benzin": [
-    88.0,
     90.0,
     98.0,
     113.0,
@@ -72384,14 +72154,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Nissan|Micra|1200.0|Benzin": [
     65.0,
-    79.0,
     80.0,
     88.0,
     98.0
   ],
   "Nissan|Micra|1200.0|LPG & Benzin": [
     65.0,
-    79.0,
     80.0,
     98.0
   ],
@@ -72435,7 +72203,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     160.0,
     163.0,
-    188.0,
     190.0
   ],
   "Nissan|Navara|2500.0|Dizel": [
@@ -72469,7 +72236,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     68.0,
     86.0,
-    88.0,
     90.0,
     103.0,
     113.0
@@ -72517,7 +72283,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Primera|1600.0|LPG & Benzin": [
     90.0,
     100.0,
-    102.0,
     106.0,
     109.0
   ],
@@ -72555,7 +72320,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Nissan|Pulsar|1200.0|Benzin": [
-    113.0,
     115.0
   ],
   "Nissan|Pulsar|1200.0|LPG & Benzin": [
@@ -72581,7 +72345,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Qashqai|1300.0|Benzin": [
     113.0,
     138.0,
-    158.0,
     160.0,
     163.0,
     188.0
@@ -72596,33 +72359,28 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Qashqai|1500.0|Benzin": [
     113.0,
     163.0,
-    188.0,
     190.0
   ],
   "Nissan|Qashqai|1500.0|Dizel": [
     106.0,
     110.0,
     113.0,
-    115.0,
     138.0
   ],
   "Nissan|Qashqai|1500.0|Hibrit": [
-    188.0,
     190.0
   ],
   "Nissan|Qashqai|1500.0|LPG & Benzin": [
     113.0
   ],
   "Nissan|Qashqai|1600.0|Benzin": [
-    115.0,
-    117.0
+    115.0
   ],
   "Nissan|Qashqai|1600.0|Dizel": [
     130.0
   ],
   "Nissan|Qashqai|1600.0|LPG & Benzin": [
-    115.0,
-    117.0
+    115.0
   ],
   "Nissan|Qashqai|1700.0|Benzin": [
     188.0
@@ -72735,8 +72493,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Nissan|X-Trail|2000.0|LPG & Benzin": [
-    140.0,
-    141.0
+    140.0
   ],
   "Opel|Adam|1000.0|Benzin": [
     115.0
@@ -72807,7 +72564,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Astra|1300.0|Dizel": [
     88.0,
-    90.0,
     113.0
   ],
   "Opel|Astra|1300.0|LPG & Benzin": [
@@ -72861,7 +72617,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     71.0,
     75.0,
     100.0,
-    103.0,
     105.0,
     110.0,
     115.0,
@@ -72879,7 +72634,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     85.0,
     100.0,
-    103.0,
     105.0,
     115.0,
     180.0
@@ -72954,7 +72708,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Combo|1200.0|Dizel": [
     50.0,
-    69.0,
     70.0,
     75.0,
     80.0,
@@ -72976,7 +72729,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Combo|1500.0|Dizel": [
     102.0,
     104.0,
-    130.0,
     132.0
   ],
   "Opel|Combo|1600.0|Dizel": [
@@ -72998,8 +72750,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Combo Life|1500.0|Dizel": [
     102.0,
-    130.0,
-    132.0
+    130.0
   ],
   "Opel|Corsa|0.0|Benzin": [
     88.0
@@ -73024,23 +72775,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Corsa|1000.0|Benzin": [
     55.0,
     58.0,
-    60.0,
     115.0
   ],
   "Opel|Corsa|1000.0|LPG & Benzin": [
-    58.0,
-    60.0
+    58.0
   ],
   "Opel|Corsa|1200.0|Benzin": [
     45.0,
-    63.0,
     65.0,
     70.0,
     75.0,
     80.0,
     85.0,
     88.0,
-    90.0,
     95.0,
     100.0,
     113.0,
@@ -73059,7 +72806,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Corsa|1200.0|LPG & Benzin": [
     45.0,
     52.0,
-    63.0,
     65.0,
     70.0,
     75.0,
@@ -73103,7 +72849,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Corsa|1500.0|Dizel": [
     50.0,
-    63.0,
     67.0,
     88.0,
     102.0
@@ -73243,7 +72988,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     122.0,
     138.0,
     163.0,
-    165.0,
     188.0
   ],
   "Opel|Insignia|1500.0|Dizel": [
@@ -73711,13 +73455,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|106|1600.0|Benzin": [
     96.0,
-    120.0,
-    122.0
+    120.0
   ],
   "Peugeot|106|1600.0|LPG & Benzin": [
     96.0,
-    120.0,
-    122.0
+    120.0
   ],
   "Peugeot|106|1700.0|Benzin": [
     113.0
@@ -73758,14 +73500,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|2008|1200.0|Benzin": [
     83.0,
-    100.0,
     102.0,
     112.0,
     132.0,
     155.0
   ],
   "Peugeot|2008|1200.0|Hibrit": [
-    134.0,
     136.0
   ],
   "Peugeot|2008|1200.0|LPG & Benzin": [
@@ -73824,20 +73564,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|206|1400.0|Benzin": [
     69.0,
-    71.0,
     76.0,
     91.0
   ],
   "Peugeot|206|1400.0|Dizel": [
-    69.0,
     71.0,
     76.0
   ],
   "Peugeot|206|1400.0|LPG & Benzin": [
     63.0,
     76.0,
-    88.0,
-    89.0,
     91.0
   ],
   "Peugeot|206|1500.0|Benzin": [
@@ -73854,18 +73590,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|206|1600.0|Benzin": [
     89.0,
-    109.0,
-    110.0,
-    112.0
+    109.0
   ],
   "Peugeot|206|1600.0|Dizel": [
     112.0
   ],
   "Peugeot|206|1600.0|LPG & Benzin": [
     89.0,
-    109.0,
-    110.0,
-    112.0
+    109.0
   ],
   "Peugeot|206|1900.0|Benzin": [
     138.0
@@ -73918,7 +73650,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     96.0
   ],
   "Peugeot|207|1400.0|Dizel": [
-    69.0,
     71.0
   ],
   "Peugeot|207|1400.0|LPG & Benzin": [
@@ -73996,7 +73727,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     69.0
   ],
   "Peugeot|208|1400.0|Dizel": [
-    68.0,
     69.0
   ],
   "Peugeot|208|1500.0|Benzin": [
@@ -74035,7 +73765,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Peugeot|3008|1200.0|Benzin": [
-    130.0,
     132.0,
     136.0
   ],
@@ -74057,13 +73786,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     122.0,
     158.0,
     167.0,
-    180.0,
     182.0
   ],
   "Peugeot|3008|1600.0|Dizel": [
     112.0,
     114.0,
-    117.0,
     122.0
   ],
   "Peugeot|3008|1600.0|Hibrit": [
@@ -74145,12 +73872,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Peugeot|306|1800.0|Benzin": [
-    101.0,
     102.0,
     112.0
   ],
   "Peugeot|306|1800.0|LPG & Benzin": [
-    101.0,
     102.0,
     112.0
   ],
@@ -74189,8 +73914,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|307|1400.0|LPG & Benzin": [
     76.0,
-    89.0,
-    91.0
+    89.0
   ],
   "Peugeot|307|1500.0|Benzin": [
     88.0,
@@ -74206,12 +73930,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Peugeot|307|1600.0|Benzin": [
-    110.0,
-    112.0
+    110.0
   ],
   "Peugeot|307|1600.0|Dizel": [
     91.0,
-    110.0,
     112.0
   ],
   "Peugeot|307|1600.0|LPG & Benzin": [
@@ -74283,9 +74005,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|308|1600.0|Benzin": [
     93.0,
     112.0,
-    113.0,
     116.0,
-    117.0,
     122.0,
     152.0,
     158.0
@@ -74296,8 +74016,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     101.0,
     112.0,
     114.0,
-    116.0,
-    117.0,
     122.0
   ],
   "Peugeot|308|1600.0|LPG & Benzin": [
@@ -74347,7 +74065,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|406|2000.0|Benzin": [
     112.0,
-    134.0,
     137.0,
     149.0
   ],
@@ -74355,7 +74072,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     112.0
   ],
   "Peugeot|406|2000.0|LPG & Benzin": [
-    134.0,
     137.0,
     142.0,
     149.0
@@ -74395,7 +74111,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|407|2000.0|Benzin": [
     138.0,
-    142.0,
     164.0
   ],
   "Peugeot|407|2000.0|Dizel": [
@@ -74403,8 +74118,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     164.0
   ],
   "Peugeot|407|2000.0|LPG & Benzin": [
-    138.0,
-    142.0
+    138.0
   ],
   "Peugeot|407|2200.0|Benzin": [
     163.0
@@ -74450,7 +74164,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|5008|1600.0|Dizel": [
     112.0,
-    114.0,
     117.0,
     122.0
   ],
@@ -74481,7 +74194,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|508|1600.0|Dizel": [
     114.0,
-    117.0,
     122.0
   ],
   "Peugeot|508|1600.0|LPG & Benzin": [
@@ -74528,7 +74240,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     76.0
   ],
   "Peugeot|Bipper|1200.0|Dizel": [
-    75.0,
     76.0
   ],
   "Peugeot|Bipper|1300.0|Dizel": [
@@ -74536,7 +74247,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|Bipper|1400.0|Dizel": [
     50.0,
-    70.0,
     71.0
   ],
   "Peugeot|Boxer|300.0|Dizel": [
@@ -74595,7 +74305,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     76.0
   ],
   "Peugeot|Partner|1500.0|Dizel": [
-    100.0,
     102.0,
     130.0
   ],
@@ -74604,20 +74313,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|Partner|1600.0|Dizel": [
     51.0,
-    75.0,
     76.0,
-    90.0,
     91.0,
-    92.0,
     93.0,
-    100.0,
     102.0,
-    110.0,
     112.0,
-    114.0,
-    115.0,
     117.0,
-    120.0,
     122.0
   ],
   "Peugeot|Partner|1600.0|LPG & Benzin": [
@@ -74629,16 +74330,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     101.0
   ],
   "Peugeot|Partner|1900.0|Dizel": [
-    69.0,
-    70.0,
     71.0,
-    72.0,
     75.0,
     90.0
   ],
   "Peugeot|Partner|2000.0|Dizel": [
     76.0,
-    90.0,
     91.0,
     105.0
   ],
@@ -74659,8 +74356,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|Rifter|0.0|Dizel": [
     15.0,
     130.0,
-    131.0,
-    132.0,
     138.0
   ],
   "Peugeot|Rifter|100.0|Dizel": [
@@ -74674,15 +74369,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     130.0
   ],
   "Peugeot|Rifter|1500.0|Dizel": [
-    100.0,
     101.0,
-    102.0,
-    130.0,
     132.0,
     1500.0
   ],
   "Peugeot|Rifter|1600.0|Dizel": [
-    100.0,
     101.0,
     130.0
   ],
@@ -74796,7 +74487,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     76.0
   ],
   "Proton|415|1500.0|Benzin": [
-    88.0,
     91.0
   ],
   "Proton|415|1500.0|LPG & Benzin": [
@@ -74894,14 +74584,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Captur|1300.0|Benzin": [
     130.0,
     138.0,
-    140.0,
     155.0,
     160.0,
     163.0,
     363.0
   ],
   "Renault|Captur|1300.0|Hibrit": [
-    138.0,
     140.0,
     160.0,
     163.0
@@ -74910,10 +74598,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     160.0
   ],
   "Renault|Captur|1500.0|Dizel": [
-    88.0,
     90.0,
     95.0,
-    113.0,
     115.0
   ],
   "Renault|Captur|1600.0|Hibrit": [
@@ -74983,7 +74669,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     88.0,
     113.0,
-    115.0,
     120.0
   ],
   "Renault|Clio|1300.0|Benzin": [
@@ -75004,40 +74689,31 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Clio|1400.0|Benzin": [
     75.0,
-    98.0,
-    100.0
+    98.0
   ],
   "Renault|Clio|1400.0|LPG & Benzin": [
     75.0,
-    98.0,
-    100.0
+    98.0
   ],
   "Renault|Clio|1500.0|Benzin": [
     63.0,
-    65.0,
     70.0,
     75.0,
     80.0,
     85.0,
     88.0,
-    90.0,
     113.0
   ],
   "Renault|Clio|1500.0|Dizel": [
     25.0,
-    63.0,
     65.0,
-    68.0,
     70.0,
     75.0,
     80.0,
     85.0,
-    86.0,
-    88.0,
     90.0,
     100.0,
     106.0,
-    113.0,
     115.0
   ],
   "Renault|Clio|1500.0|LPG & Benzin": [
@@ -75056,7 +74732,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Clio|1600.0|LPG & Benzin": [
     90.0,
-    105.0,
     107.0,
     110.0
   ],
@@ -75114,7 +74789,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Espace|2000.0|LPG & Benzin": [
     114.0,
-    116.0,
     170.0
   ],
   "Renault|Espace|2200.0|Dizel": [
@@ -75148,7 +74822,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Fluence|1500.0|Benzin": [
     85.0,
-    88.0,
     90.0,
     105.0,
     110.0,
@@ -75156,7 +74829,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Fluence|1500.0|Dizel": [
     85.0,
-    88.0,
     90.0,
     105.0,
     110.0,
@@ -75190,7 +74862,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Grand Scenic|1500.0|Dizel": [
     100.0,
     105.0,
-    106.0,
     110.0,
     113.0
   ],
@@ -75219,8 +74890,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Kadjar|1500.0|Dizel": [
     110.0,
-    113.0,
-    115.0
+    113.0
   ],
   "Renault|Kadjar|1600.0|Dizel": [
     130.0
@@ -75244,7 +74914,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Kangoo|1500.0|Dizel": [
     65.0,
-    67.0,
     70.0,
     80.0,
     85.0,
@@ -75279,8 +74948,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Kangoo Express|1500.0|Dizel": [
     65.0,
-    66.0,
-    68.0,
     70.0,
     80.0,
     85.0,
@@ -75315,13 +74982,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Kangoo Multix|1500.0|Dizel": [
     65.0,
-    68.0,
     70.0,
     85.0,
     90.0,
     95.0,
     105.0,
-    106.0,
     110.0,
     115.0
   ],
@@ -75381,7 +75046,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Laguna|1900.0|Benzin": [
     88.0,
     113.0,
-    138.0,
     139.0
   ],
   "Renault|Laguna|1900.0|Dizel": [
@@ -75392,7 +75056,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Laguna|1900.0|LPG & Benzin": [
     113.0,
-    138.0,
     139.0
   ],
   "Renault|Laguna|2000.0|Benzin": [
@@ -75405,10 +75068,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Renault|Laguna|2000.0|LPG & Benzin": [
-    114.0,
     115.0,
     135.0,
-    139.0,
     140.0,
     170.0
   ],
@@ -75463,9 +75124,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Master|2500.0|Dizel": [
     80.0,
     100.0,
-    101.0,
-    115.0,
-    117.0
+    115.0
   ],
   "Renault|Master|3000.0|Dizel": [
     101.0
@@ -75498,12 +75157,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Megane|1300.0|Benzin": [
     88.0,
     113.0,
-    138.0,
     140.0
   ],
   "Renault|Megane|1300.0|LPG & Benzin": [
     88.0,
-    138.0,
     140.0
   ],
   "Renault|Megane|1400.0|Benzin": [
@@ -75519,29 +75176,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Megane|1500.0|Benzin": [
     80.0,
-    85.0,
     86.0,
     88.0,
-    90.0,
     100.0,
     105.0,
-    106.0,
     110.0,
     113.0,
-    115.0,
     138.0
   ],
   "Renault|Megane|1500.0|Dizel": [
     80.0,
-    85.0,
     86.0,
-    88.0,
     90.0,
     100.0,
     105.0,
-    106.0,
     110.0,
-    113.0,
     115.0,
     163.0
   ],
@@ -75552,7 +75201,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Megane|1600.0|Benzin": [
     90.0,
     100.0,
-    105.0,
     107.0,
     110.0,
     115.0,
@@ -75568,7 +75216,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Megane|1600.0|LPG & Benzin": [
     90.0,
     100.0,
-    105.0,
     107.0,
     110.0,
     115.0,
@@ -75591,7 +75238,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Megane|1900.0|Dizel": [
     64.0,
     88.0,
-    98.0,
     102.0,
     120.0
   ],
@@ -75627,10 +75273,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Modus|1500.0|Dizel": [
     63.0,
-    65.0,
     80.0,
     85.0,
-    86.0,
     88.0
   ],
   "Renault|Modus|1600.0|Benzin": [
@@ -75663,7 +75307,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|R 11|1700.0|LPG & Benzin": [
     74.0,
-    75.0,
     80.0,
     88.0,
     95.0
@@ -75719,7 +75362,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|R 19|1400.0|LPG & Benzin": [
     55.0,
-    58.0,
     60.0,
     75.0,
     80.0
@@ -75749,8 +75391,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Renault|R 19|1800.0|Benzin": [
-    109.0,
-    110.0
+    109.0
   ],
   "Renault|R 19|1800.0|LPG & Benzin": [
     110.0
@@ -75833,7 +75474,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|R 9|1400.0|LPG & Benzin": [
     56.0,
     60.0,
-    63.0,
     67.0,
     72.0,
     83.0
@@ -75921,7 +75561,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Scenic|1900.0|Dizel": [
     98.0,
-    102.0,
     113.0,
     120.0,
     130.0
@@ -75965,12 +75604,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0
   ],
   "Renault|Symbol|1000.0|Benzin": [
-    73.0,
     75.0,
     100.0
   ],
   "Renault|Symbol|1000.0|LPG & Benzin": [
-    73.0,
     75.0,
     100.0
   ],
@@ -76001,21 +75638,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     98.0
   ],
   "Renault|Symbol|1500.0|Benzin": [
-    63.0,
     65.0,
     75.0,
     85.0,
-    88.0,
     90.0,
     113.0,
     163.0
   ],
   "Renault|Symbol|1500.0|Dizel": [
-    63.0,
     65.0,
     75.0,
     85.0,
-    88.0,
     90.0,
     95.0,
     113.0
@@ -76148,11 +75781,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Rover|216|1600.0|Benzin": [
-    110.0,
     111.0
   ],
   "Rover|216|1600.0|LPG & Benzin": [
-    110.0,
     111.0
   ],
   "Rover|216|1700.0|LPG & Benzin": [
@@ -76186,8 +75817,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     111.0
   ],
   "Rover|416|1600.0|LPG & Benzin": [
-    111.0,
-    112.0
+    111.0
   ],
   "Rover|420|2000.0|LPG & Benzin": [
     136.0
@@ -76423,7 +76053,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     130.0
   ],
   "Seat|Cordoba|1900.0|Dizel": [
-    88.0,
     90.0,
     100.0,
     110.0,
@@ -76455,10 +76084,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0
   ],
   "Seat|Ibiza|1200.0|Benzin": [
-    63.0,
     64.0,
     70.0,
-    88.0,
     90.0,
     105.0,
     113.0
@@ -76467,7 +76094,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0
   ],
   "Seat|Ibiza|1200.0|LPG & Benzin": [
-    63.0,
     64.0,
     70.0,
     88.0,
@@ -76491,7 +76117,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Ibiza|1400.0|Benzin": [
     60.0,
     75.0,
-    84.0,
     85.0,
     100.0,
     150.0,
@@ -76519,7 +76144,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     188.0
   ],
   "Seat|Ibiza|1500.0|LPG & Benzin": [
-    88.0,
     90.0,
     113.0
   ],
@@ -76627,7 +76251,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Seat|Leon|1600.0|Benzin": [
-    100.0,
     102.0,
     105.0,
     110.0,
@@ -76639,7 +76262,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Seat|Leon|1600.0|LPG & Benzin": [
-    100.0,
     102.0,
     105.0
   ],
@@ -76726,7 +76348,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Toledo|1600.0|Benzin": [
     90.0,
     100.0,
-    102.0,
     105.0
   ],
   "Seat|Toledo|1600.0|Dizel": [
@@ -76736,7 +76357,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Toledo|1600.0|LPG & Benzin": [
     75.0,
     100.0,
-    102.0,
     105.0
   ],
   "Seat|Toledo|1700.0|Benzin": [
@@ -76815,17 +76435,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Skoda|Fabia|1200.0|Benzin": [
     55.0,
-    63.0,
     64.0,
     70.0,
-    88.0,
     90.0,
     105.0,
     110.0,
     113.0
   ],
   "Skoda|Fabia|1200.0|LPG & Benzin": [
-    63.0,
     64.0,
     70.0,
     105.0
@@ -76846,7 +76463,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Skoda|Fabia|1400.0|Benzin": [
     68.0,
-    70.0,
     75.0,
     80.0,
     85.0,
@@ -76900,19 +76516,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0
   ],
   "Skoda|Favorit|1300.0|Benzin": [
-    54.0,
-    55.0,
     57.0,
     58.0,
-    62.0,
     63.0
   ],
   "Skoda|Favorit|1300.0|LPG & Benzin": [
-    54.0,
-    55.0,
     57.0,
     58.0,
-    62.0,
     63.0,
     88.0
   ],
@@ -76924,14 +76534,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Skoda|Felicia|1300.0|Benzin": [
     50.0,
-    54.0,
     55.0,
     63.0,
     68.0
   ],
   "Skoda|Felicia|1300.0|LPG & Benzin": [
     54.0,
-    55.0,
     63.0,
     68.0
   ],
@@ -76956,8 +76564,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0
   ],
   "Skoda|Forman|1300.0|LPG & Benzin": [
-    54.0,
-    55.0,
     57.0,
     58.0,
     63.0
@@ -77088,7 +76694,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Skoda|Octavia|1500.0|Hibrit": [
-    113.0,
     115.0,
     138.0,
     150.0,
@@ -77100,12 +76705,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Skoda|Octavia|1600.0|Benzin": [
-    100.0,
     102.0,
     105.0,
     110.0,
-    115.0,
-    116.0
+    115.0
   ],
   "Skoda|Octavia|1600.0|Dizel": [
     105.0,
@@ -77114,10 +76717,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Skoda|Octavia|1600.0|LPG & Benzin": [
     75.0,
-    100.0,
     102.0,
-    115.0,
-    116.0
+    115.0
   ],
   "Skoda|Octavia|1700.0|Benzin": [
     113.0
@@ -77161,7 +76762,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Skoda|Rapid|1200.0|Benzin": [
     75.0,
-    88.0,
     90.0,
     105.0,
     110.0,
@@ -77553,7 +77153,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Subaru|Forester|2000.0|Dizel": [
     147.0,
-    148.0,
     150.0
   ],
   "Subaru|Forester|2000.0|Hibrit": [
@@ -77576,12 +77175,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     230.0
   ],
   "Subaru|Impreza|1500.0|Benzin": [
-    105.0,
     107.0,
     113.0
   ],
   "Subaru|Impreza|1500.0|LPG & Benzin": [
-    105.0,
     107.0,
     113.0
   ],
@@ -77724,8 +77321,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Suzuki|Baleno|1600.0|Benzin": [
-    98.0,
-    99.0
+    98.0
   ],
   "Suzuki|Baleno|1600.0|LPG & Benzin": [
     99.0
@@ -77768,7 +77364,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     107.0
   ],
   "Suzuki|Liana|1600.0|LPG & Benzin": [
-    105.0,
     107.0
   ],
   "Suzuki|Maruti|800.0|Benzin": [
@@ -77862,13 +77457,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     53.0
   ],
   "Suzuki|Swift|1000.0|LPG & Benzin": [
-    53.0,
-    54.0
+    53.0
   ],
   "Suzuki|Swift|1200.0|Benzin": [
     63.0,
     88.0,
-    90.0,
     95.0
   ],
   "Suzuki|Swift|1200.0|Dizel": [
@@ -77891,7 +77484,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Suzuki|Swift|1300.0|LPG & Benzin": [
     63.0,
-    67.0,
     69.0,
     86.0,
     88.0,
@@ -77923,7 +77515,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     142.0
   ],
   "Suzuki|Vitara|1400.0|Hibrit": [
-    129.0,
     131.0
   ],
   "Suzuki|Vitara|1400.0|LPG & Benzin": [
@@ -77941,7 +77532,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Suzuki|Vitara|1600.0|Benzin": [
     98.0,
-    99.0,
     122.0
   ],
   "Suzuki|Vitara|1600.0|Dizel": [
@@ -77949,7 +77539,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Suzuki|Vitara|1600.0|LPG & Benzin": [
     81.0,
-    98.0,
     99.0,
     122.0
   ],
@@ -78128,7 +77717,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     65.0
   ],
   "Tofaş|Murat|1300.0|Benzin": [
-    63.0,
     65.0
   ],
   "Tofaş|Murat|1300.0|LPG & Benzin": [
@@ -78259,7 +77847,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Avensis|1600.0|Benzin": [
     110.0,
-    112.0,
     132.0
   ],
   "Toyota|Avensis|1600.0|Dizel": [
@@ -78297,8 +77884,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Toyota|Avensis|2000.0|LPG & Benzin": [
     128.0,
     147.0,
-    150.0,
-    152.0
+    150.0
   ],
   "Toyota|Avensis|2200.0|Dizel": [
     177.0
@@ -78384,7 +77970,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Toyota|Corolla|1200.0|Benzin": [
-    113.0,
     116.0
   ],
   "Toyota|Corolla|1200.0|LPG & Benzin": [
@@ -78394,7 +77979,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     75.0,
     86.0,
-    87.0,
     88.0,
     99.0,
     113.0
@@ -78410,10 +77994,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     82.0,
     86.0,
-    87.0,
     88.0,
     99.0,
-    101.0,
     113.0
   ],
   "Toyota|Corolla|1400.0|Benzin": [
@@ -78421,7 +78003,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     97.0
   ],
   "Toyota|Corolla|1400.0|Dizel": [
-    88.0,
     90.0,
     113.0,
     363.0
@@ -78453,11 +78034,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0,
     105.0,
     110.0,
-    113.0,
     114.0,
-    115.0,
     124.0,
-    125.0,
     132.0
   ],
   "Toyota|Corolla|1600.0|LPG & Benzin": [
@@ -78465,10 +78043,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0,
     110.0,
     114.0,
-    115.0,
     124.0,
-    125.0,
-    130.0,
     132.0
   ],
   "Toyota|Corolla|1700.0|Benzin": [
@@ -78492,7 +78067,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Corolla|1800.0|Hibrit": [
     96.0,
-    97.0,
     98.0,
     122.0,
     140.0
@@ -78549,7 +78123,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     238.0
   ],
   "Toyota|Hi-Ace|2400.0|Dizel": [
-    75.0,
     77.0
   ],
   "Toyota|Hi-Ace|2500.0|Dizel": [
@@ -78619,7 +78192,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     130.0
   ],
   "Toyota|Proace City|1500.0|Dizel": [
-    100.0,
     102.0,
     130.0
   ],
@@ -78647,13 +78219,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Toyota|RAV4|2000.0|Benzin": [
-    151.0,
     152.0,
     158.0
   ],
   "Toyota|RAV4|2000.0|LPG & Benzin": [
     151.0,
-    152.0,
     158.0
   ],
   "Toyota|RAV4|2200.0|Dizel": [
@@ -78744,8 +78314,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Yaris|1000.0|Benzin": [
     65.0,
-    69.0,
-    72.0
+    69.0
   ],
   "Toyota|Yaris|1000.0|LPG & Benzin": [
     65.0,
@@ -78758,30 +78327,24 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0
   ],
   "Toyota|Yaris|1300.0|Benzin": [
-    86.0,
     87.0,
     88.0,
-    98.0,
     99.0,
-    101.0,
     113.0
   ],
   "Toyota|Yaris|1300.0|Dizel": [
     88.0
   ],
   "Toyota|Yaris|1300.0|LPG & Benzin": [
-    86.0,
     87.0,
     88.0,
-    99.0,
-    101.0
+    99.0
   ],
   "Toyota|Yaris|1400.0|Benzin": [
     75.0
   ],
   "Toyota|Yaris|1400.0|Dizel": [
     75.0,
-    88.0,
     90.0
   ],
   "Toyota|Yaris|1500.0|Benzin": [
@@ -78794,7 +78357,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Yaris|1500.0|Hibrit": [
     63.0,
-    74.0,
     75.0,
     92.0,
     116.0
@@ -78889,12 +78451,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Volkswagen|Bora|1600.0|Benzin": [
-    101.0,
     102.0,
     105.0
   ],
   "Volkswagen|Bora|1600.0|LPG & Benzin": [
-    101.0,
     102.0,
     105.0
   ],
@@ -78938,7 +78498,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0
   ],
   "Volkswagen|Caddy|1600.0|Dizel": [
-    101.0,
     102.0,
     120.0
   ],
@@ -78979,13 +78538,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Caravelle|2000.0|Dizel": [
     76.0,
     102.0,
-    114.0,
     115.0,
     126.0,
     132.0,
     140.0,
     150.0,
-    151.0,
     180.0,
     199.0,
     204.0
@@ -79086,7 +78643,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Golf|1500.0|Benzin": [
     88.0,
     113.0,
-    116.0,
     138.0,
     150.0,
     163.0,
@@ -79098,7 +78654,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Volkswagen|Golf|1500.0|Hibrit": [
-    113.0,
     116.0,
     138.0,
     150.0
@@ -79111,11 +78666,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Golf|1600.0|Benzin": [
     75.0,
     90.0,
-    101.0,
     102.0,
     105.0,
     110.0,
-    113.0,
     115.0
   ],
   "Volkswagen|Golf|1600.0|Dizel": [
@@ -79124,14 +78677,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0,
     105.0,
     110.0,
-    113.0,
     115.0,
     138.0
   ],
   "Volkswagen|Golf|1600.0|LPG & Benzin": [
     75.0,
-    100.0,
-    101.0,
     102.0,
     105.0,
     115.0
@@ -79170,7 +78720,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Golf|1900.0|Dizel": [
     63.0,
     75.0,
-    88.0,
     90.0,
     105.0,
     110.0,
@@ -79363,7 +78912,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Volkswagen|Passat|1600.0|Benzin": [
-    100.0,
     102.0,
     105.0,
     115.0,
@@ -79375,7 +78923,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     120.0
   ],
   "Volkswagen|Passat|1600.0|LPG & Benzin": [
-    100.0,
     102.0,
     115.0
   ],
@@ -79417,12 +78964,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Passat|1900.0|Dizel": [
     88.0,
-    90.0,
     100.0,
     105.0,
     110.0,
     113.0,
-    115.0,
     130.0,
     138.0,
     163.0,
@@ -79574,7 +79119,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     70.0,
     75.0,
-    88.0,
     90.0
   ],
   "Volkswagen|Polo|1200.0|Dizel": [
@@ -79610,7 +79154,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     85.0,
     90.0,
     100.0,
-    101.0,
     150.0,
     180.0
   ],
@@ -79626,7 +79169,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     80.0,
     85.0,
     100.0,
-    101.0,
     180.0
   ],
   "Volkswagen|Polo|1500.0|Benzin": [
@@ -79711,7 +79253,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|T-Cross|1000.0|Benzin": [
     110.0,
-    115.0,
     116.0
   ],
   "Volkswagen|T-Roc|0.0|Benzin": [
@@ -79925,7 +79466,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Transporter|2000.0|Dizel": [
     76.0,
     90.0,
-    101.0,
     102.0,
     103.0,
     110.0,
@@ -79933,9 +79473,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     126.0,
     130.0,
     140.0,
-    148.0,
     150.0,
-    151.0,
     170.0,
     176.0,
     180.0,
@@ -79946,13 +79484,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Transporter|2500.0|Dizel": [
     75.0,
     88.0,
-    90.0,
     102.0,
     130.0,
     140.0,
     143.0,
     174.0,
-    175.0,
     2500.0
   ],
   "Volkswagen|Transporter|3200.0|Dizel": [
@@ -80128,7 +79664,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volvo|S40|1900.0|Benzin": [
     136.0,
-    138.0,
     140.0,
     160.0,
     163.0,
@@ -80142,7 +79677,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     136.0,
     140.0,
     160.0,
-    163.0,
     165.0,
     188.0,
     200.0
@@ -80194,7 +79728,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volvo|S60|2000.0|Benzin": [
     163.0,
     180.0,
-    181.0,
     190.0,
     203.0,
     240.0,
@@ -80285,7 +79818,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volvo|S80|2000.0|Benzin": [
     163.0,
     180.0,
-    181.0,
     203.0,
     225.0
   ],
@@ -80584,5 +80116,3049 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volvo|XC90|4300.0|LPG & Benzin": [
     313.0
+  ]
+};
+
+export const BODY_TYPE_BY_MODEL: Record<string, string[]> = {
+  "Alfa Romeo|145": [
+    "Hatchback/3"
+  ],
+  "Alfa Romeo|146": [
+    "Hatchback/5"
+  ],
+  "Alfa Romeo|147": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Alfa Romeo|156": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Alfa Romeo|159": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Alfa Romeo|166": [
+    "Sedan"
+  ],
+  "Alfa Romeo|33": [
+    "Hatchback/5"
+  ],
+  "Alfa Romeo|Brera": [
+    "Coupe"
+  ],
+  "Alfa Romeo|GT": [
+    "Coupe"
+  ],
+  "Alfa Romeo|GTV": [
+    "Coupe"
+  ],
+  "Alfa Romeo|Giulia": [
+    "Sedan"
+  ],
+  "Alfa Romeo|Giulietta": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Alfa Romeo|Junior Ibrida": [
+    "SUV"
+  ],
+  "Alfa Romeo|MiTo": [
+    "Hatchback/3"
+  ],
+  "Alfa Romeo|Spider": [
+    "Cabrio"
+  ],
+  "Alfa Romeo|Stelvio": [
+    "SUV"
+  ],
+  "Alfa Romeo|Tonale": [
+    "SUV"
+  ],
+  "Aston Martin|Vantage": [
+    "Coupe"
+  ],
+  "Audi|100 Serisi": [
+    "Sedan"
+  ],
+  "Audi|200 Serisi": [
+    "Sedan"
+  ],
+  "Audi|80 Serisi": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Audi|A1": [
+    "Hatchback/3",
+    "Hatchback/5"
+  ],
+  "Audi|A3": [
+    "Sedan",
+    "Hatchback/5",
+    "Hatchback/3",
+    "Cabrio",
+    "SUV"
+  ],
+  "Audi|A4": [
+    "Sedan",
+    "Station wagon",
+    "Cabrio",
+    "Coupe"
+  ],
+  "Audi|A5": [
+    "Hatchback/5",
+    "Coupe",
+    "Sedan",
+    "Cabrio"
+  ],
+  "Audi|A6": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Audi|A7": [
+    "Coupe",
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Audi|A8": [
+    "Sedan"
+  ],
+  "Audi|E-Tron": [
+    "SUV"
+  ],
+  "Audi|Q2": [
+    "SUV"
+  ],
+  "Audi|Q3": [
+    "SUV"
+  ],
+  "Audi|Q3 Sportback": [
+    "SUV"
+  ],
+  "Audi|Q5": [
+    "SUV"
+  ],
+  "Audi|Q7": [
+    "SUV"
+  ],
+  "Audi|RS": [
+    "Coupe",
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Audi|S": [
+    "Sedan",
+    "Hatchback/5",
+    "Coupe",
+    "Hatchback/3"
+  ],
+  "Audi|TT": [
+    "Coupe",
+    "Roadster"
+  ],
+  "Audi|TTS": [
+    "Coupe",
+    "Roadster"
+  ],
+  "BMW|1 Serisi": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Coupe",
+    "Station wagon"
+  ],
+  "BMW|2 Serisi": [
+    "Coupe",
+    "MPV",
+    "Sedan",
+    "Cabrio",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "BMW|3 Serisi": [
+    "Sedan",
+    "Coupe",
+    "Hatchback/3",
+    "Station wagon",
+    "Cabrio",
+    "Hatchback/5"
+  ],
+  "BMW|4 Serisi": [
+    "Coupe",
+    "Cabrio",
+    "Sedan",
+    "Station wagon"
+  ],
+  "BMW|5 Serisi": [
+    "Sedan",
+    "Station wagon",
+    "Hatchback/5"
+  ],
+  "BMW|6 Serisi": [
+    "Coupe",
+    "Hatchback/5"
+  ],
+  "BMW|7 Serisi": [
+    "Sedan"
+  ],
+  "BMW|M Serisi": [
+    "Sedan",
+    "Coupe",
+    "Cabrio"
+  ],
+  "BMW|X1": [
+    "SUV",
+    "Cabrio"
+  ],
+  "BMW|X2": [
+    "SUV"
+  ],
+  "BMW|X3": [
+    "SUV"
+  ],
+  "BMW|X4": [
+    "SUV"
+  ],
+  "BMW|X5": [
+    "SUV"
+  ],
+  "BMW|X6": [
+    "SUV"
+  ],
+  "BMW|Z Serisi": [
+    "Cabrio",
+    "Roadster"
+  ],
+  "BMW|i Serisi": [
+    "Coupe",
+    "Sedan"
+  ],
+  "BYD|Han": [
+    "Sedan"
+  ],
+  "BYD|Seal U DM-i": [
+    "SUV"
+  ],
+  "Bentley|Continental": [
+    "Sedan"
+  ],
+  "Buick|Regal": [
+    "Sedan"
+  ],
+  "Cadillac|DeVille": [
+    "Sedan"
+  ],
+  "Cadillac|Eldorado": [
+    "Coupe"
+  ],
+  "Cadillac|Escalade": [
+    "SUV"
+  ],
+  "Cadillac|Fleetwood": [
+    "Sedan"
+  ],
+  "Cadillac|SRX": [
+    "SUV"
+  ],
+  "Cadillac|Seville": [
+    "Sedan"
+  ],
+  "Chery|Alia": [
+    "Sedan"
+  ],
+  "Chery|Chance": [
+    "Hatchback/5"
+  ],
+  "Chery|Kimo": [
+    "Hatchback/5"
+  ],
+  "Chery|Niche": [
+    "Sedan"
+  ],
+  "Chery|Omoda 5": [
+    "SUV"
+  ],
+  "Chery|Omoda 5 Pro": [
+    "SUV"
+  ],
+  "Chery|Tiggo": [
+    "SUV"
+  ],
+  "Chery|Tiggo 7": [
+    "SUV"
+  ],
+  "Chery|Tiggo 7 Pro": [
+    "SUV"
+  ],
+  "Chery|Tiggo 7 Pro Max": [
+    "SUV"
+  ],
+  "Chery|Tiggo 8": [
+    "SUV"
+  ],
+  "Chery|Tiggo 8 Pro": [
+    "SUV"
+  ],
+  "Chery|Tiggo 8 Pro Max": [
+    "SUV"
+  ],
+  "Chevrolet|Aveo": [
+    "Sedan",
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Chevrolet|Camaro": [
+    "Coupe",
+    "Cabrio"
+  ],
+  "Chevrolet|Caprice": [
+    "Hatchback/3"
+  ],
+  "Chevrolet|Captiva": [
+    "SUV"
+  ],
+  "Chevrolet|Cavalier": [
+    "Sedan"
+  ],
+  "Chevrolet|Corvette": [
+    "Coupe",
+    "Cabrio"
+  ],
+  "Chevrolet|Cruze": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Chevrolet|Epica": [
+    "Sedan"
+  ],
+  "Chevrolet|Evanda": [
+    "Sedan"
+  ],
+  "Chevrolet|Kalos": [
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Chevrolet|Lacetti": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Chevrolet|Rezzo": [
+    "MPV"
+  ],
+  "Chevrolet|Spark": [
+    "Hatchback/5"
+  ],
+  "Chrysler|300 C": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Chrysler|300 M": [
+    "Sedan"
+  ],
+  "Chrysler|Concorde": [
+    "Sedan"
+  ],
+  "Chrysler|Crossfire": [
+    "Cabrio"
+  ],
+  "Chrysler|LHS": [
+    "Sedan"
+  ],
+  "Chrysler|Neon": [
+    "Sedan"
+  ],
+  "Chrysler|PT Cruiser": [
+    "Hatchback/5",
+    "Cabrio"
+  ],
+  "Chrysler|Sebring": [
+    "Sedan",
+    "Cabrio",
+    "Coupe"
+  ],
+  "Chrysler|Stratus": [
+    "Sedan",
+    "Cabrio"
+  ],
+  "Citroen|AMİ": [
+    "Coupe"
+  ],
+  "Citroen|BX": [
+    "Hatchback/5"
+  ],
+  "Citroen|Berlingo": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Citroen|C-Elysee": [
+    "Sedan"
+  ],
+  "Citroen|C-Elysée": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Citroen|C1": [
+    "Hatchback/5"
+  ],
+  "Citroen|C15": [
+    "Panel Van"
+  ],
+  "Citroen|C2": [
+    "Hatchback/3"
+  ],
+  "Citroen|C3": [
+    "Hatchback/5",
+    "Cabrio",
+    "Station wagon"
+  ],
+  "Citroen|C3 Aircross": [
+    "SUV"
+  ],
+  "Citroen|C3 Picasso": [
+    "MPV"
+  ],
+  "Citroen|C4": [
+    "Hatchback/5",
+    "SUV",
+    "Sedan",
+    "Coupe",
+    "MPV",
+    "Station wagon"
+  ],
+  "Citroen|C4 Cactus": [
+    "SUV",
+    "Crossover",
+    "MPV"
+  ],
+  "Citroen|C4 Grand Picasso": [
+    "MPV",
+    "Hatchback/5"
+  ],
+  "Citroen|C4 Picasso": [
+    "MPV",
+    "Station wagon"
+  ],
+  "Citroen|C4 SUV": [
+    "SUV"
+  ],
+  "Citroen|C4 X": [
+    "SUV",
+    "Sedan",
+    "Hatchback/5",
+    "MPV"
+  ],
+  "Citroen|C5": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Citroen|C5 Aircross": [
+    "SUV",
+    "Crossover"
+  ],
+  "Citroen|C8": [
+    "MPV"
+  ],
+  "Citroen|Evasion": [
+    "MPV"
+  ],
+  "Citroen|Jumper": [
+    "Panel Van",
+    "Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Citroen|Jumpy": [
+    "Camlı Van",
+    "Panel Van",
+    "Minibüs"
+  ],
+  "Citroen|Nemo": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs"
+  ],
+  "Citroen|Saxo": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Citroen|XM": [
+    "Hatchback/5"
+  ],
+  "Citroen|Xantia": [
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Citroen|Xsara": [
+    "Hatchback/5",
+    "MPV",
+    "Coupe",
+    "Station wagon"
+  ],
+  "Citroen|ZX": [
+    "Hatchback/5",
+    "Station wagon",
+    "Coupe"
+  ],
+  "Citroen|e-C4 X": [
+    "Sedan",
+    "SUV"
+  ],
+  "Cupra|Born": [
+    "Hatchback/5"
+  ],
+  "Cupra|Formentor": [
+    "SUV"
+  ],
+  "Cupra|Leon": [
+    "Hatchback/5"
+  ],
+  "Cupra|Terramar": [
+    "SUV"
+  ],
+  "DS Automobiles|DS 3 Crossback": [
+    "SUV"
+  ],
+  "DS Automobiles|DS 7 Crossback": [
+    "SUV"
+  ],
+  "DS Automobiles|DS3": [
+    "Hatchback/3"
+  ],
+  "DS Automobiles|DS4": [
+    "Hatchback/5",
+    "SUV",
+    "Hatchback/3",
+    "Station wagon"
+  ],
+  "DS Automobiles|DS5": [
+    "Hatchback/5"
+  ],
+  "DS Automobiles|DS9": [
+    "Sedan"
+  ],
+  "Dacia|Dokker": [
+    "Camlı Van",
+    "Panel Van",
+    "Frigorifik Panelvan",
+    "Yarım Camlı Van"
+  ],
+  "Dacia|Duster": [
+    "SUV",
+    "Crossover"
+  ],
+  "Dacia|Jogger": [
+    "MPV",
+    "Station wagon"
+  ],
+  "Dacia|Lodgy": [
+    "MPV",
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Dacia|Logan": [
+    "Sedan",
+    "Station wagon",
+    "Camlı Van",
+    "Panel Van",
+    "Pick-up",
+    "Frigorifik Panelvan",
+    "Hatchback/5",
+    "Yarım Camlı Van"
+  ],
+  "Dacia|Sandero": [
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3",
+    "Sedan"
+  ],
+  "Dacia|Sandero Stepway": [
+    "Hatchback/5",
+    "SUV",
+    "Crossover"
+  ],
+  "Dacia|Solenza": [
+    "Sedan"
+  ],
+  "Daewoo|Chairman": [
+    "Sedan"
+  ],
+  "Daewoo|Espero": [
+    "Sedan"
+  ],
+  "Daewoo|Lanos": [
+    "Sedan",
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Daewoo|Leganza": [
+    "Sedan"
+  ],
+  "Daewoo|Matiz": [
+    "Hatchback/5"
+  ],
+  "Daewoo|Nexia": [
+    "Sedan",
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Daewoo|Nubira": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Daewoo|Racer": [
+    "Hatchback/5"
+  ],
+  "Daewoo|Tico": [
+    "Hatchback/5"
+  ],
+  "Daihatsu|Applause": [
+    "Hatchback/5"
+  ],
+  "Daihatsu|Charade": [
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Daihatsu|Cuore": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Daihatsu|Materia": [
+    "Hatchback/5"
+  ],
+  "Daihatsu|Move": [
+    "MPV"
+  ],
+  "Daihatsu|Sirion": [
+    "Hatchback/5"
+  ],
+  "Daihatsu|YRV": [
+    "Station wagon"
+  ],
+  "Dodge|Avenger": [
+    "Sedan"
+  ],
+  "Dodge|Caliber": [
+    "Hatchback/5",
+    "SUV"
+  ],
+  "Dodge|Challenger": [
+    "Coupe"
+  ],
+  "Dodge|Journey": [
+    "SUV"
+  ],
+  "Dodge|Nitro": [
+    "SUV"
+  ],
+  "Dodge|Ram": [
+    "Hard top"
+  ],
+  "Fiat|124 Spider": [
+    "Roadster"
+  ],
+  "Fiat|126 Bis": [
+    "Hatchback/3"
+  ],
+  "Fiat|500 Abarth": [
+    "Cabrio",
+    "Hatchback/3"
+  ],
+  "Fiat|500 Ailesi": [
+    "MPV",
+    "Hatchback/3",
+    "Cabrio",
+    "Coupe",
+    "Hatchback/5"
+  ],
+  "Fiat|500 X": [
+    "SUV",
+    "Crossover"
+  ],
+  "Fiat|600": [
+    "SUV"
+  ],
+  "Fiat|Albea": [
+    "Sedan",
+    "Station wagon",
+    "Cabrio",
+    "Hatchback/5"
+  ],
+  "Fiat|Brava": [
+    "Hatchback/5"
+  ],
+  "Fiat|Bravo": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Fiat|Doblo": [
+    "Camlı Van",
+    "Panel Van",
+    "Frigorifik Panelvan",
+    "Yarım Camlı Van",
+    "Minibüs"
+  ],
+  "Fiat|Ducato": [
+    "Panel Van",
+    "Frigorifik Panelvan",
+    "Yarım Camlı Van",
+    "Camlı Van"
+  ],
+  "Fiat|Egea": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon",
+    "SUV"
+  ],
+  "Fiat|Egea Cross": [
+    "SUV",
+    "Crossover",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Fiat|Fiorino": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Frigorifik Panelvan",
+    "Minibüs"
+  ],
+  "Fiat|Freemont": [
+    "SUV"
+  ],
+  "Fiat|Fullback": [
+    "Hard top",
+    "SUV"
+  ],
+  "Fiat|Idea": [
+    "MPV"
+  ],
+  "Fiat|Linea": [
+    "Sedan",
+    "Station wagon",
+    "Hatchback/3",
+    "Hatchback/5"
+  ],
+  "Fiat|Marea": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Fiat|Palio": [
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3"
+  ],
+  "Fiat|Palio Van": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van"
+  ],
+  "Fiat|Panda": [
+    "Hatchback/5"
+  ],
+  "Fiat|Punto": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Station wagon",
+    "Cabrio"
+  ],
+  "Fiat|Scudo": [
+    "Panel Van",
+    "Camlı Van",
+    "Minibüs",
+    "Yarım Camlı Van",
+    "Frigorifik Panelvan"
+  ],
+  "Fiat|Sedici": [
+    "SUV",
+    "Hatchback/5"
+  ],
+  "Fiat|Siena": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Fiat|Stilo": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Station wagon"
+  ],
+  "Fiat|Tempra": [
+    "Sedan",
+    "Station wagon",
+    "Hatchback/5"
+  ],
+  "Fiat|Tipo": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Fiat|Ulysse": [
+    "Camlı Van",
+    "Minibüs"
+  ],
+  "Fiat|Uno": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Ford|B-Max": [
+    "MPV"
+  ],
+  "Ford|Bronco Sport": [
+    "SUV"
+  ],
+  "Ford|C-Max": [
+    "MPV"
+  ],
+  "Ford|E Serisi": [
+    "Panel Van"
+  ],
+  "Ford|EcoSport": [
+    "SUV"
+  ],
+  "Ford|Escort": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3"
+  ],
+  "Ford|Explorer": [
+    "SUV"
+  ],
+  "Ford|Festiva": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Ford|Fiesta": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Station wagon",
+    "Sedan"
+  ],
+  "Ford|Fiesta Van": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van"
+  ],
+  "Ford|Focus": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3"
+  ],
+  "Ford|Fusion": [
+    "Hatchback/5"
+  ],
+  "Ford|Galaxy": [
+    "MPV",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Ford|Grand C-Max": [
+    "MPV"
+  ],
+  "Ford|Ka": [
+    "Hatchback/3",
+    "Cabrio"
+  ],
+  "Ford|Kuga": [
+    "SUV",
+    "Crossover"
+  ],
+  "Ford|Mondeo": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Ford|Mustang": [
+    "Coupe"
+  ],
+  "Ford|Mustang Mach-E": [
+    "SUV"
+  ],
+  "Ford|Probe": [
+    "Coupe"
+  ],
+  "Ford|Puma": [
+    "SUV"
+  ],
+  "Ford|Puma- E": [
+    "SUV"
+  ],
+  "Ford|Ranger": [
+    "Hard top",
+    "SUV"
+  ],
+  "Ford|S-Max": [
+    "MPV"
+  ],
+  "Ford|Scorpio": [
+    "Sedan"
+  ],
+  "Ford|Sierra": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Ford|Taunus": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Ford|Taurus": [
+    "Sedan"
+  ],
+  "Ford|Tourneo Connect": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs"
+  ],
+  "Ford|Tourneo Courier": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Ford|Tourneo Custom": [
+    "Minibüs",
+    "Camlı Van",
+    "Yarım Camlı Van",
+    "Panel Van"
+  ],
+  "Ford|Transit": [
+    "Panel Van",
+    "Camlı Van",
+    "Yarım Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Ford|Transit Connect": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Frigorifik Panelvan",
+    "Minibüs"
+  ],
+  "Ford|Transit Courier": [
+    "Panel Van",
+    "Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan",
+    "Yarım Camlı Van"
+  ],
+  "Ford|Transit Custom": [
+    "Panel Van",
+    "Camlı Van",
+    "Yarım Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Ford|Transit Kombi": [
+    "Camlı Van",
+    "Minibüs",
+    "Panel Van"
+  ],
+  "Geely|Echo": [
+    "Sedan"
+  ],
+  "Geely|Emgrand": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Geely|FC": [
+    "Sedan"
+  ],
+  "Geely|Familia": [
+    "Sedan"
+  ],
+  "Honda|Accord": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Honda|CR-V": [
+    "SUV"
+  ],
+  "Honda|CR-Z": [
+    "Coupe"
+  ],
+  "Honda|CRX": [
+    "Coupe",
+    "Roadster"
+  ],
+  "Honda|City": [
+    "Sedan"
+  ],
+  "Honda|Civic": [
+    "Sedan",
+    "Hatchback/5",
+    "Hatchback/3",
+    "Station wagon",
+    "Coupe"
+  ],
+  "Honda|E": [
+    "Hatchback/5"
+  ],
+  "Honda|FR-V": [
+    "MPV"
+  ],
+  "Honda|HR-V": [
+    "SUV",
+    "Crossover"
+  ],
+  "Honda|Integra": [
+    "Sedan"
+  ],
+  "Honda|Jazz": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Honda|Legend": [
+    "Coupe",
+    "Sedan"
+  ],
+  "Honda|Prelude": [
+    "Coupe"
+  ],
+  "Honda|S2000": [
+    "Roadster"
+  ],
+  "Honda|Shuttle": [
+    "MPV"
+  ],
+  "Honda|ZR-V": [
+    "SUV"
+  ],
+  "Hyundai|Accent": [
+    "Sedan",
+    "Hatchback/5",
+    "Hatchback/3",
+    "Station wagon"
+  ],
+  "Hyundai|Accent Blue": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Hyundai|Accent Era": [
+    "Sedan"
+  ],
+  "Hyundai|Atos": [
+    "Hatchback/5"
+  ],
+  "Hyundai|Bayon": [
+    "SUV",
+    "Crossover"
+  ],
+  "Hyundai|Coupe": [
+    "Coupe"
+  ],
+  "Hyundai|Elantra": [
+    "Sedan",
+    "Station wagon",
+    "Hatchback/5"
+  ],
+  "Hyundai|Excel": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Hyundai|Genesis": [
+    "Coupe"
+  ],
+  "Hyundai|Getz": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Hyundai|H 1": [
+    "Camlı Van",
+    "Panel Van",
+    "Minibüs"
+  ],
+  "Hyundai|H 100": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs"
+  ],
+  "Hyundai|Ioniq": [
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Hyundai|Ioniq 6": [
+    "Hatchback/5"
+  ],
+  "Hyundai|Kona": [
+    "SUV"
+  ],
+  "Hyundai|Matrix": [
+    "MPV",
+    "Station wagon"
+  ],
+  "Hyundai|Santa Fe": [
+    "SUV"
+  ],
+  "Hyundai|Sonata": [
+    "Sedan"
+  ],
+  "Hyundai|Starex": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Hyundai|Staria": [
+    "Camlı Van",
+    "Minibüs"
+  ],
+  "Hyundai|Trajet": [
+    "MPV"
+  ],
+  "Hyundai|Tucson": [
+    "SUV"
+  ],
+  "Hyundai|i10": [
+    "Hatchback/5"
+  ],
+  "Hyundai|i20": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Hyundai|i20 Active": [
+    "Hatchback/5"
+  ],
+  "Hyundai|i20 N": [
+    "Hatchback/5"
+  ],
+  "Hyundai|i20 Troy": [
+    "Hatchback/5"
+  ],
+  "Hyundai|i30": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Hyundai|i40": [
+    "Sedan"
+  ],
+  "Hyundai|ix20": [
+    "MPV"
+  ],
+  "Hyundai|ix35": [
+    "SUV"
+  ],
+  "Ikco|Samand": [
+    "Sedan"
+  ],
+  "Infiniti|FX": [
+    "SUV"
+  ],
+  "Infiniti|G": [
+    "Coupe",
+    "Cabrio"
+  ],
+  "Infiniti|M": [
+    "Sedan"
+  ],
+  "Infiniti|Q30": [
+    "Hatchback/5",
+    "SUV"
+  ],
+  "Infiniti|Q50": [
+    "Sedan"
+  ],
+  "Infiniti|Q60": [
+    "Coupe"
+  ],
+  "Infiniti|QX": [
+    "SUV"
+  ],
+  "Infiniti|i30": [
+    "Sedan"
+  ],
+  "Isuzu|D-Max": [
+    "Hard top",
+    "SUV"
+  ],
+  "Isuzu|Gemini": [
+    "Cabrio"
+  ],
+  "Iveco - Otoyol|35": [
+    "Panel Van"
+  ],
+  "Jaecoo|J7": [
+    "SUV"
+  ],
+  "Jaguar|Daimler": [
+    "Sedan"
+  ],
+  "Jaguar|E-Pace": [
+    "SUV"
+  ],
+  "Jaguar|F-Pace": [
+    "SUV"
+  ],
+  "Jaguar|S-Type": [
+    "Sedan"
+  ],
+  "Jaguar|Sovereign": [
+    "Sedan"
+  ],
+  "Jaguar|X-Type": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Jaguar|XE": [
+    "Sedan"
+  ],
+  "Jaguar|XF": [
+    "Sedan"
+  ],
+  "Jaguar|XJ": [
+    "Sedan"
+  ],
+  "Jaguar|XKR": [
+    "Cabrio"
+  ],
+  "Jeep|Avenger Hybrid": [
+    "SUV"
+  ],
+  "Jeep|Cherokee": [
+    "SUV"
+  ],
+  "Jeep|Commander": [
+    "SUV"
+  ],
+  "Jeep|Compass": [
+    "SUV",
+    "Crossover"
+  ],
+  "Jeep|Grand Cherokee": [
+    "SUV"
+  ],
+  "Jeep|Patriot": [
+    "SUV"
+  ],
+  "Jeep|Renegade": [
+    "SUV"
+  ],
+  "Jeep|Wrangler": [
+    "SUV"
+  ],
+  "Kia|Capital": [
+    "Sedan"
+  ],
+  "Kia|Carens": [
+    "MPV"
+  ],
+  "Kia|Carnival": [
+    "MPV",
+    "Station wagon"
+  ],
+  "Kia|Ceed": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Kia|Cerato": [
+    "Sedan",
+    "Hatchback/5",
+    "Coupe"
+  ],
+  "Kia|Clarus": [
+    "Sedan"
+  ],
+  "Kia|EV3": [
+    "SUV"
+  ],
+  "Kia|EV6": [
+    "SUV"
+  ],
+  "Kia|Magentis": [
+    "Sedan"
+  ],
+  "Kia|Niro": [
+    "SUV",
+    "Crossover"
+  ],
+  "Kia|Opirus": [
+    "Sedan"
+  ],
+  "Kia|Optima": [
+    "Sedan"
+  ],
+  "Kia|Picanto": [
+    "Hatchback/5"
+  ],
+  "Kia|Pregio": [
+    "Camlı Van"
+  ],
+  "Kia|Pride": [
+    "Station wagon",
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Kia|Pro Ceed": [
+    "Hatchback/3"
+  ],
+  "Kia|Rio": [
+    "Hatchback/5",
+    "Sedan",
+    "Hatchback/3",
+    "Station wagon"
+  ],
+  "Kia|Sephia": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Kia|Shuma": [
+    "Hatchback/5"
+  ],
+  "Kia|Sorento": [
+    "SUV"
+  ],
+  "Kia|Soul": [
+    "SUV"
+  ],
+  "Kia|Sportage": [
+    "SUV",
+    "Crossover"
+  ],
+  "Kia|Stinger": [
+    "Coupe"
+  ],
+  "Kia|Stonic": [
+    "SUV"
+  ],
+  "Kia|Venga": [
+    "MPV"
+  ],
+  "Kia|XCeed": [
+    "SUV",
+    "Crossover"
+  ],
+  "Lada|Kalina": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Lada|Nova": [
+    "Sedan"
+  ],
+  "Lada|Samara": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Sedan"
+  ],
+  "Lada|VAZ": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Lada|Vega": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Lancia|Delta": [
+    "Hatchback/5"
+  ],
+  "Lancia|Thema": [
+    "Sedan"
+  ],
+  "Lancia|Ypsilon": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Land Rover|Defender": [
+    "SUV",
+    "Hard top"
+  ],
+  "Land Rover|Discovery": [
+    "SUV"
+  ],
+  "Land Rover|Discovery Sport": [
+    "SUV"
+  ],
+  "Land Rover|Freelander": [
+    "SUV",
+    "Crossover"
+  ],
+  "Land Rover|Range Rover": [
+    "SUV",
+    "Crossover"
+  ],
+  "Land Rover|Range Rover Evoque": [
+    "SUV"
+  ],
+  "Land Rover|Range Rover Sport": [
+    "SUV"
+  ],
+  "Land Rover|Range Rover Velar": [
+    "SUV"
+  ],
+  "Lexus|CT": [
+    "Hatchback/5"
+  ],
+  "Lexus|ES": [
+    "Sedan"
+  ],
+  "Lexus|GS": [
+    "Sedan"
+  ],
+  "Lexus|IS": [
+    "Sedan"
+  ],
+  "Lexus|LBX": [
+    "SUV"
+  ],
+  "Lexus|RX": [
+    "SUV"
+  ],
+  "Lexus|RZ": [
+    "SUV"
+  ],
+  "Lincoln|Mark": [
+    "Coupe"
+  ],
+  "Lincoln|Town Car": [
+    "Sedan"
+  ],
+  "Lotus|Esprit": [
+    "Coupe"
+  ],
+  "MG|EHS": [
+    "SUV"
+  ],
+  "MG|HS": [
+    "SUV"
+  ],
+  "MG|Marvel R": [
+    "SUV"
+  ],
+  "MG|ZS": [
+    "SUV"
+  ],
+  "MG|ZS EV": [
+    "SUV"
+  ],
+  "Maserati|4 Serisi": [
+    "Sedan"
+  ],
+  "Maserati|Ghibli": [
+    "Sedan"
+  ],
+  "Maserati|GranTurismo": [
+    "Coupe",
+    "Cabrio"
+  ],
+  "Maserati|Levante": [
+    "SUV"
+  ],
+  "Maserati|Quattroporte": [
+    "Sedan"
+  ],
+  "Maxus|e-Deliver": [
+    "Panel Van"
+  ],
+  "Mazda|121": [
+    "Sedan",
+    "Hatchback/3"
+  ],
+  "Mazda|2": [
+    "Hatchback/5"
+  ],
+  "Mazda|3": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Mazda|323": [
+    "Sedan",
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Mazda|5": [
+    "MPV"
+  ],
+  "Mazda|6": [
+    "Sedan",
+    "Station wagon",
+    "Hatchback/5"
+  ],
+  "Mazda|626": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3"
+  ],
+  "Mazda|929": [
+    "Sedan"
+  ],
+  "Mazda|B2200": [
+    "Hard top"
+  ],
+  "Mazda|B2500": [
+    "Hard top",
+    "SUV"
+  ],
+  "Mazda|BT50": [
+    "Hard top",
+    "SUV"
+  ],
+  "Mazda|CX-3": [
+    "SUV",
+    "Crossover"
+  ],
+  "Mazda|CX-5": [
+    "SUV"
+  ],
+  "Mazda|CX-9": [
+    "SUV"
+  ],
+  "Mazda|E 2200": [
+    "Camlı Van",
+    "Yarım Camlı Van"
+  ],
+  "Mazda|Lantis": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Mazda|MPV": [
+    "MPV"
+  ],
+  "Mazda|MX": [
+    "Roadster",
+    "Cabrio"
+  ],
+  "Mazda|Premacy": [
+    "MPV"
+  ],
+  "Mazda|RX": [
+    "Coupe"
+  ],
+  "Mazda|Xedos": [
+    "Sedan"
+  ],
+  "Mercedes - Benz|190": [
+    "Sedan"
+  ],
+  "Mercedes - Benz|200": [
+    "Sedan",
+    "Coupe",
+    "Hatchback/5"
+  ],
+  "Mercedes - Benz|230": [
+    "Sedan"
+  ],
+  "Mercedes - Benz|240": [
+    "Sedan"
+  ],
+  "Mercedes - Benz|250": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Mercedes - Benz|260": [
+    "Sedan"
+  ],
+  "Mercedes - Benz|280": [
+    "Sedan"
+  ],
+  "Mercedes - Benz|300": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Mercedes - Benz|320": [
+    "Coupe"
+  ],
+  "Mercedes - Benz|500": [
+    "Sedan",
+    "Coupe",
+    "Hatchback/5"
+  ],
+  "Mercedes - Benz|560": [
+    "Coupe",
+    "Sedan"
+  ],
+  "Mercedes - Benz|A": [
+    "Hatchback/5",
+    "Sedan",
+    "Hatchback/3",
+    "Coupe"
+  ],
+  "Mercedes - Benz|B": [
+    "MPV",
+    "Hatchback/5"
+  ],
+  "Mercedes - Benz|C": [
+    "Sedan",
+    "Coupe",
+    "Station wagon",
+    "SUV",
+    "Cabrio",
+    "Hatchback/3"
+  ],
+  "Mercedes - Benz|CL": [
+    "Coupe"
+  ],
+  "Mercedes - Benz|CLA": [
+    "Coupe",
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Mercedes - Benz|CLC": [
+    "Coupe"
+  ],
+  "Mercedes - Benz|CLK": [
+    "Coupe",
+    "Cabrio"
+  ],
+  "Mercedes - Benz|CLS": [
+    "Coupe"
+  ],
+  "Mercedes - Benz|Citan": [
+    "Camlı Van",
+    "Panel Van"
+  ],
+  "Mercedes - Benz|E": [
+    "Sedan",
+    "Coupe",
+    "Station wagon",
+    "Cabrio",
+    "Hatchback/5",
+    "Roadster"
+  ],
+  "Mercedes - Benz|EQA": [
+    "SUV"
+  ],
+  "Mercedes - Benz|EQB": [
+    "SUV"
+  ],
+  "Mercedes - Benz|EQE": [
+    "Sedan",
+    "Coupe"
+  ],
+  "Mercedes - Benz|G": [
+    "SUV",
+    "Cabrio",
+    "Coupe"
+  ],
+  "Mercedes - Benz|GL": [
+    "SUV"
+  ],
+  "Mercedes - Benz|GLA": [
+    "SUV"
+  ],
+  "Mercedes - Benz|GLB": [
+    "SUV"
+  ],
+  "Mercedes - Benz|GLC": [
+    "SUV",
+    "Coupe"
+  ],
+  "Mercedes - Benz|GLC Coupe": [
+    "Coupe",
+    "SUV"
+  ],
+  "Mercedes - Benz|GLE": [
+    "SUV"
+  ],
+  "Mercedes - Benz|GLE Coupe": [
+    "SUV"
+  ],
+  "Mercedes - Benz|GLK": [
+    "SUV"
+  ],
+  "Mercedes - Benz|ML": [
+    "SUV"
+  ],
+  "Mercedes - Benz|R": [
+    "Station wagon"
+  ],
+  "Mercedes - Benz|S": [
+    "Sedan"
+  ],
+  "Mercedes - Benz|SL": [
+    "Roadster"
+  ],
+  "Mercedes - Benz|SLC": [
+    "Roadster"
+  ],
+  "Mercedes - Benz|SLK": [
+    "Roadster",
+    "Cabrio"
+  ],
+  "Mercedes - Benz|Sprinter": [
+    "Panel Van",
+    "Camlı Van",
+    "Minibüs",
+    "Yarım Camlı Van"
+  ],
+  "Mercedes - Benz|V Serisi": [
+    "Camlı Van",
+    "Minibüs"
+  ],
+  "Mercedes - Benz|Vaneo": [
+    "Camlı Van",
+    "Minibüs",
+    "Panel Van"
+  ],
+  "Mercedes - Benz|Viano": [
+    "Camlı Van",
+    "Minibüs",
+    "Panel Van"
+  ],
+  "Mercedes - Benz|Vito": [
+    "Camlı Van",
+    "Minibüs",
+    "Panel Van",
+    "Yarım Camlı Van"
+  ],
+  "Mercedes - Benz|X": [
+    "SUV",
+    "Hard top"
+  ],
+  "Mercury|Cougar": [
+    "Coupe"
+  ],
+  "Mini|Cooper": [
+    "Hatchback/3",
+    "Hatchback/5",
+    "Cabrio",
+    "Coupe"
+  ],
+  "Mini|Cooper Clubman": [
+    "Station wagon",
+    "Hatchback/5"
+  ],
+  "Mini|Cooper S": [
+    "Hatchback/3",
+    "Cabrio",
+    "Coupe"
+  ],
+  "Mini|Countryman": [
+    "SUV"
+  ],
+  "Mini|John Cooper": [
+    "Hatchback/3",
+    "Station wagon",
+    "Cabrio"
+  ],
+  "Mini|One": [
+    "Hatchback/3"
+  ],
+  "Mitsubishi|ASX": [
+    "SUV"
+  ],
+  "Mitsubishi|Attrage": [
+    "Sedan"
+  ],
+  "Mitsubishi|Carisma": [
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Mitsubishi|Colt": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Mitsubishi|Eclipse Cross": [
+    "SUV",
+    "Crossover"
+  ],
+  "Mitsubishi|Galant": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Mitsubishi|Grandis": [
+    "MPV"
+  ],
+  "Mitsubishi|L 200": [
+    "Hard top",
+    "SUV",
+    "Pick-Up"
+  ],
+  "Mitsubishi|L 300": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs"
+  ],
+  "Mitsubishi|Lancer": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Mitsubishi|Lancer Evolution": [
+    "Sedan"
+  ],
+  "Mitsubishi|Outlander": [
+    "SUV"
+  ],
+  "Mitsubishi|Pajero": [
+    "SUV"
+  ],
+  "Mitsubishi|Space Star": [
+    "Hatchback/5",
+    "MPV"
+  ],
+  "Nissan|100 NX": [
+    "Coupe"
+  ],
+  "Nissan|200 SX": [
+    "Coupe"
+  ],
+  "Nissan|350 Z": [
+    "Coupe",
+    "Cabrio",
+    "Roadster"
+  ],
+  "Nissan|Almera": [
+    "Hatchback/5",
+    "Sedan",
+    "Hatchback/3"
+  ],
+  "Nissan|Altima": [
+    "Sedan"
+  ],
+  "Nissan|Bluebird": [
+    "Sedan"
+  ],
+  "Nissan|Country": [
+    "Hard top",
+    "SUV"
+  ],
+  "Nissan|GT-R": [
+    "Coupe"
+  ],
+  "Nissan|Juke": [
+    "SUV",
+    "Crossover"
+  ],
+  "Nissan|Laurel Altima": [
+    "Sedan"
+  ],
+  "Nissan|Maxima": [
+    "Sedan"
+  ],
+  "Nissan|Micra": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Nissan|Murano": [
+    "SUV"
+  ],
+  "Nissan|NX Coupe": [
+    "Coupe"
+  ],
+  "Nissan|Navara": [
+    "Hard top",
+    "SUV"
+  ],
+  "Nissan|Note": [
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Nissan|Pathfinder": [
+    "SUV"
+  ],
+  "Nissan|Pick Up": [
+    "Pick-Up",
+    "Hard top"
+  ],
+  "Nissan|Primera": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Nissan|Pulsar": [
+    "Hatchback/5"
+  ],
+  "Nissan|Qashqai": [
+    "SUV",
+    "Crossover"
+  ],
+  "Nissan|Qashqai+2": [
+    "SUV"
+  ],
+  "Nissan|Rally Raid": [
+    "Hard top"
+  ],
+  "Nissan|Skystar": [
+    "Hard top",
+    "SUV"
+  ],
+  "Nissan|Sunny": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Nissan|Terrano": [
+    "SUV",
+    "Pick-Up"
+  ],
+  "Nissan|Townstar": [
+    "Panel Van"
+  ],
+  "Nissan|Vanette": [
+    "Camlı Van"
+  ],
+  "Nissan|X-Trail": [
+    "SUV",
+    "Crossover"
+  ],
+  "Opel|Adam": [
+    "Hatchback/3"
+  ],
+  "Opel|Agila": [
+    "Hatchback/5"
+  ],
+  "Opel|Antara": [
+    "SUV"
+  ],
+  "Opel|Ascona": [
+    "Sedan"
+  ],
+  "Opel|Astra": [
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon",
+    "Hatchback/3",
+    "Coupe",
+    "Cabrio"
+  ],
+  "Opel|Calibra": [
+    "Coupe"
+  ],
+  "Opel|Combo": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs"
+  ],
+  "Opel|Combo Life": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van"
+  ],
+  "Opel|Corsa": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Opel|Corsa Van": [
+    "Panel Van"
+  ],
+  "Opel|Crossland": [
+    "SUV",
+    "Crossover"
+  ],
+  "Opel|Crossland X": [
+    "SUV"
+  ],
+  "Opel|Frontera": [
+    "SUV"
+  ],
+  "Opel|Frontera-e": [
+    "SUV"
+  ],
+  "Opel|GT": [
+    "Cabrio"
+  ],
+  "Opel|Grandland": [
+    "SUV"
+  ],
+  "Opel|Grandland X": [
+    "SUV",
+    "Crossover"
+  ],
+  "Opel|Grandland-e": [
+    "SUV"
+  ],
+  "Opel|Insignia": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Opel|Kadett": [
+    "Station wagon"
+  ],
+  "Opel|Meriva": [
+    "MPV"
+  ],
+  "Opel|Mokka": [
+    "SUV"
+  ],
+  "Opel|Mokka X": [
+    "SUV"
+  ],
+  "Opel|Mokka-e": [
+    "SUV"
+  ],
+  "Opel|Movano": [
+    "Panel Van"
+  ],
+  "Opel|Omega": [
+    "Sedan",
+    "Station wagon",
+    "Hatchback/5"
+  ],
+  "Opel|Signum": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Opel|Tigra": [
+    "Coupe",
+    "Cabrio"
+  ],
+  "Opel|Vectra": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon",
+    "Roadster"
+  ],
+  "Opel|Vivaro": [
+    "Panel Van",
+    "Camlı Van",
+    "Yarım Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Opel|Zafira": [
+    "MPV",
+    "Station wagon"
+  ],
+  "Opel|Zafira Life": [
+    "Camlı Van",
+    "Minibüs",
+    "Yarım Camlı Van"
+  ],
+  "Peugeot|106": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Peugeot|107": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Peugeot|2008": [
+    "SUV"
+  ],
+  "Peugeot|205": [
+    "Hatchback/3",
+    "Hatchback/5"
+  ],
+  "Peugeot|206": [
+    "Hatchback/5",
+    "Sedan",
+    "Hatchback/3",
+    "Station wagon",
+    "Cabrio",
+    "Coupe"
+  ],
+  "Peugeot|206+": [
+    "Hatchback/5"
+  ],
+  "Peugeot|207": [
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3"
+  ],
+  "Peugeot|208": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Peugeot|3008": [
+    "SUV",
+    "Pick-Up"
+  ],
+  "Peugeot|301": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Peugeot|306": [
+    "Hatchback/5",
+    "Sedan",
+    "Hatchback/3",
+    "Station wagon",
+    "Cabrio"
+  ],
+  "Peugeot|307": [
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3",
+    "Cabrio"
+  ],
+  "Peugeot|308": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Station wagon",
+    "Cabrio"
+  ],
+  "Peugeot|309": [
+    "Hatchback/3",
+    "Sedan"
+  ],
+  "Peugeot|4007": [
+    "SUV"
+  ],
+  "Peugeot|405": [
+    "Sedan"
+  ],
+  "Peugeot|406": [
+    "Sedan",
+    "Coupe",
+    "Station wagon"
+  ],
+  "Peugeot|407": [
+    "Sedan",
+    "Station wagon",
+    "Coupe"
+  ],
+  "Peugeot|408": [
+    "SUV",
+    "Crossover"
+  ],
+  "Peugeot|5008": [
+    "SUV",
+    "MPV"
+  ],
+  "Peugeot|508": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Peugeot|605": [
+    "Sedan"
+  ],
+  "Peugeot|607": [
+    "Sedan"
+  ],
+  "Peugeot|806": [
+    "MPV"
+  ],
+  "Peugeot|807": [
+    "MPV"
+  ],
+  "Peugeot|Bipper": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van"
+  ],
+  "Peugeot|Boxer": [
+    "Panel Van",
+    "Camlı Van",
+    "Minibüs"
+  ],
+  "Peugeot|Expert": [
+    "Yarım Camlı Van",
+    "Camlı Van"
+  ],
+  "Peugeot|Partner": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Frigorifik Panelvan",
+    "Minibüs"
+  ],
+  "Peugeot|RCZ": [
+    "Coupe"
+  ],
+  "Peugeot|Rifter": [
+    "Camlı Van",
+    "Minibüs",
+    "Panel Van",
+    "Yarım Camlı Van"
+  ],
+  "Peugeot|e-2008": [
+    "SUV"
+  ],
+  "Peugeot|e-208": [
+    "Hatchback/5"
+  ],
+  "Peugeot|e-3008": [
+    "SUV"
+  ],
+  "Pontiac|Firebird": [
+    "Coupe"
+  ],
+  "Porsche|718": [
+    "Coupe"
+  ],
+  "Porsche|911": [
+    "Coupe",
+    "Cabrio"
+  ],
+  "Porsche|Cayenne": [
+    "SUV"
+  ],
+  "Porsche|Cayman": [
+    "Coupe"
+  ],
+  "Porsche|Macan": [
+    "SUV"
+  ],
+  "Porsche|Panamera": [
+    "Hatchback/5"
+  ],
+  "Proton|315": [
+    "Hatchback/3"
+  ],
+  "Proton|413": [
+    "Sedan"
+  ],
+  "Proton|415": [
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Proton|416": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Proton|418": [
+    "Hatchback/5"
+  ],
+  "Proton|420": [
+    "Hatchback/5"
+  ],
+  "Proton|Gen 2": [
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Proton|Persona": [
+    "Sedan"
+  ],
+  "Proton|Saga": [
+    "Sedan"
+  ],
+  "Proton|Savvy": [
+    "Hatchback/5"
+  ],
+  "Proton|Waja": [
+    "Sedan"
+  ],
+  "Renault|Austral": [
+    "SUV"
+  ],
+  "Renault|Captur": [
+    "SUV",
+    "Crossover"
+  ],
+  "Renault|Clio": [
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon",
+    "Hatchback/3",
+    "MPV"
+  ],
+  "Renault|Duster": [
+    "SUV"
+  ],
+  "Renault|Espace": [
+    "MPV"
+  ],
+  "Renault|Express": [
+    "Camlı Van",
+    "Panel Van"
+  ],
+  "Renault|Express Combi": [
+    "Camlı Van",
+    "Panel Van"
+  ],
+  "Renault|Express Van": [
+    "Panel Van",
+    "Camlı Van",
+    "Frigorifik Panelvan"
+  ],
+  "Renault|Fluence": [
+    "Sedan"
+  ],
+  "Renault|Grand Scenic": [
+    "MPV"
+  ],
+  "Renault|Kadjar": [
+    "SUV"
+  ],
+  "Renault|Kangoo": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Frigorifik Panelvan",
+    "Minibüs"
+  ],
+  "Renault|Kangoo E-tech": [
+    "Camlı Van"
+  ],
+  "Renault|Kangoo Express": [
+    "Panel Van",
+    "Camlı Van",
+    "Yarım Camlı Van",
+    "Frigorifik Panelvan"
+  ],
+  "Renault|Kangoo Multix": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Frigorifik Panelvan",
+    "Minibüs"
+  ],
+  "Renault|Koleos": [
+    "SUV"
+  ],
+  "Renault|Laguna": [
+    "Hatchback/5",
+    "Station wagon",
+    "Coupe",
+    "Sedan"
+  ],
+  "Renault|Latitude": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Renault|Master": [
+    "Panel Van",
+    "Camlı Van",
+    "Frigorifik Panelvan",
+    "Yarım Camlı Van"
+  ],
+  "Renault|Megane": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3",
+    "Coupe",
+    "Cabrio"
+  ],
+  "Renault|Modus": [
+    "MPV",
+    "Hatchback/5"
+  ],
+  "Renault|R 11": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Renault|R 12": [
+    "Station wagon",
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Renault|R 19": [
+    "Sedan",
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Renault|R 21": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Renault|R 25": [
+    "Sedan"
+  ],
+  "Renault|R 5": [
+    "Hatchback/3",
+    "Hatchback/5"
+  ],
+  "Renault|R 9": [
+    "Sedan"
+  ],
+  "Renault|Rafale": [
+    "SUV"
+  ],
+  "Renault|Safrane": [
+    "Hatchback/5"
+  ],
+  "Renault|Scenic": [
+    "MPV",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Renault|Scenic RX4": [
+    "MPV"
+  ],
+  "Renault|Symbol": [
+    "Sedan",
+    "Station wagon",
+    "MPV"
+  ],
+  "Renault|Taliant": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Renault|Talisman": [
+    "Sedan"
+  ],
+  "Renault|Trafic": [
+    "Panel Van",
+    "Camlı Van",
+    "Yarım Camlı Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Renault|Trafic Multix": [
+    "Camlı Van",
+    "Yarım Camlı Van",
+    "Minibüs",
+    "Panel Van"
+  ],
+  "Renault|Twingo": [
+    "Hatchback/3"
+  ],
+  "Renault|Vel Satis": [
+    "Hatchback/5"
+  ],
+  "Rolls-Royce|Silver": [
+    "Sedan"
+  ],
+  "Rover|200": [
+    "Hatchback/3"
+  ],
+  "Rover|214": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Rover|216": [
+    "Hatchback/5",
+    "Coupe",
+    "Cabrio",
+    "Hatchback/3"
+  ],
+  "Rover|218": [
+    "Hatchback/5"
+  ],
+  "Rover|220": [
+    "Coupe"
+  ],
+  "Rover|25": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Rover|414": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Rover|416": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Rover|420": [
+    "Sedan"
+  ],
+  "Rover|45": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Rover|620": [
+    "Sedan"
+  ],
+  "Rover|75": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Rover|820": [
+    "Sedan"
+  ],
+  "Rover|Streetwise": [
+    "Hatchback/5"
+  ],
+  "Saab|9-3": [
+    "Sedan",
+    "Station wagon",
+    "Cabrio",
+    "Hatchback/5"
+  ],
+  "Saab|9-5": [
+    "Sedan"
+  ],
+  "Saab|900": [
+    "Hatchback/3"
+  ],
+  "Saab|9000": [
+    "Hatchback/5"
+  ],
+  "Seat|Alhambra": [
+    "MPV"
+  ],
+  "Seat|Altea": [
+    "MPV"
+  ],
+  "Seat|Arona": [
+    "SUV"
+  ],
+  "Seat|Ateca": [
+    "SUV"
+  ],
+  "Seat|Cordoba": [
+    "Sedan",
+    "Station wagon",
+    "Coupe"
+  ],
+  "Seat|Exeo": [
+    "Sedan"
+  ],
+  "Seat|Ibiza": [
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3",
+    "Coupe"
+  ],
+  "Seat|Leon": [
+    "Hatchback/5",
+    "Station wagon",
+    "Coupe",
+    "Hatchback/3"
+  ],
+  "Seat|Malaga": [
+    "Sedan"
+  ],
+  "Seat|Marbella": [
+    "Hatchback/3"
+  ],
+  "Seat|Tarraco": [
+    "SUV"
+  ],
+  "Seat|Toledo": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Skoda|Citigo": [
+    "Hatchback/5"
+  ],
+  "Skoda|Enyaq Coupe": [
+    "SUV"
+  ],
+  "Skoda|Fabia": [
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Skoda|Favorit": [
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Skoda|Felicia": [
+    "Hatchback/5",
+    "Station wagon",
+    "Pick-up"
+  ],
+  "Skoda|Forman": [
+    "Station wagon"
+  ],
+  "Skoda|Kamiq": [
+    "SUV",
+    "Crossover"
+  ],
+  "Skoda|Karoq": [
+    "SUV"
+  ],
+  "Skoda|Kodiaq": [
+    "SUV",
+    "Crossover"
+  ],
+  "Skoda|Octavia": [
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Skoda|Rapid": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Skoda|Roomster": [
+    "MPV"
+  ],
+  "Skoda|Scala": [
+    "Hatchback/5"
+  ],
+  "Skoda|SuperB": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Skoda|Yeti": [
+    "SUV"
+  ],
+  "Smart|ForFour": [
+    "Hatchback/5"
+  ],
+  "Smart|ForTwo": [
+    "Coupe",
+    "Cabrio"
+  ],
+  "Ssangyong|Actyon": [
+    "SUV",
+    "Crossover"
+  ],
+  "Ssangyong|Actyon Sports": [
+    "Hard top",
+    "SUV"
+  ],
+  "Ssangyong|Korando": [
+    "SUV"
+  ],
+  "Ssangyong|Korando Sports": [
+    "Hard top",
+    "SUV"
+  ],
+  "Ssangyong|Kyron": [
+    "SUV"
+  ],
+  "Ssangyong|Musso": [
+    "SUV"
+  ],
+  "Ssangyong|Musso Grand": [
+    "SUV",
+    "Hard top"
+  ],
+  "Ssangyong|Rexton": [
+    "SUV"
+  ],
+  "Ssangyong|Rodius": [
+    "SUV",
+    "MPV"
+  ],
+  "Ssangyong|Tivoli": [
+    "SUV"
+  ],
+  "Ssangyong|Torres": [
+    "SUV"
+  ],
+  "Ssangyong|XLV": [
+    "SUV"
+  ],
+  "Subaru|BRZ": [
+    "Coupe"
+  ],
+  "Subaru|Crosstrek": [
+    "SUV"
+  ],
+  "Subaru|Forester": [
+    "SUV",
+    "Crossover"
+  ],
+  "Subaru|Impreza": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Subaru|Justy": [
+    "Hatchback/5"
+  ],
+  "Subaru|Legacy": [
+    "Sedan",
+    "Station wagon",
+    "Roadster"
+  ],
+  "Subaru|Levorg": [
+    "Station wagon"
+  ],
+  "Subaru|Outback": [
+    "Station wagon",
+    "SUV"
+  ],
+  "Subaru|Vivio": [
+    "Hatchback/5"
+  ],
+  "Subaru|XV": [
+    "SUV",
+    "Crossover"
+  ],
+  "Suzuki|Alto": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Suzuki|Baleno": [
+    "Hatchback/5",
+    "Sedan",
+    "Station wagon"
+  ],
+  "Suzuki|Grand Vitara": [
+    "SUV"
+  ],
+  "Suzuki|Jimny": [
+    "SUV"
+  ],
+  "Suzuki|Liana": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Suzuki|Maruti": [
+    "Hatchback/5"
+  ],
+  "Suzuki|S-Cross": [
+    "SUV",
+    "Crossover"
+  ],
+  "Suzuki|SJ": [
+    "SUV"
+  ],
+  "Suzuki|SX4": [
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Suzuki|SX4 S-Cross": [
+    "SUV",
+    "Hatchback/5"
+  ],
+  "Suzuki|Splash": [
+    "Hatchback/5"
+  ],
+  "Suzuki|Swift": [
+    "Hatchback/5",
+    "Sedan",
+    "Hatchback/3",
+    "Station wagon"
+  ],
+  "Suzuki|Vitara": [
+    "SUV"
+  ],
+  "TOGG|T10F": [
+    "Hatchback/5"
+  ],
+  "TOGG|T10X": [
+    "SUV"
+  ],
+  "Tata|Indica": [
+    "Hatchback/5"
+  ],
+  "Tata|Indigo": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Tata|Manza": [
+    "Sedan"
+  ],
+  "Tata|Marina": [
+    "Station wagon"
+  ],
+  "Tata|Vista": [
+    "Hatchback/5"
+  ],
+  "Tesla|Model Y": [
+    "Hatchback/5"
+  ],
+  "Tofaş|Doğan": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Tofaş|Kartal": [
+    "Station wagon"
+  ],
+  "Tofaş|Murat": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Tofaş|Şahin": [
+    "Sedan"
+  ],
+  "Toyota|Auris": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Toyota|Avensis": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon",
+    "MPV"
+  ],
+  "Toyota|C-HR": [
+    "SUV",
+    "Crossover"
+  ],
+  "Toyota|Camry": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Toyota|Carina": [
+    "Sedan",
+    "Hatchback/5"
+  ],
+  "Toyota|Celica": [
+    "Coupe"
+  ],
+  "Toyota|Corolla": [
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon",
+    "Hatchback/3",
+    "MPV",
+    "SUV"
+  ],
+  "Toyota|Corolla Cross": [
+    "SUV",
+    "Pick-Up"
+  ],
+  "Toyota|Corona": [
+    "Sedan"
+  ],
+  "Toyota|Cressida": [
+    "Sedan"
+  ],
+  "Toyota|FJ Cruiser": [
+    "SUV"
+  ],
+  "Toyota|Hi-Ace": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van"
+  ],
+  "Toyota|Hilux": [
+    "Hard top",
+    "SUV",
+    "Pick-Up"
+  ],
+  "Toyota|Land Cruiser": [
+    "SUV"
+  ],
+  "Toyota|Land Cruiser Prado": [
+    "SUV"
+  ],
+  "Toyota|Prius": [
+    "Hatchback/5"
+  ],
+  "Toyota|Proace City": [
+    "Camlı Van",
+    "Panel Van",
+    "Frigorifik Panelvan"
+  ],
+  "Toyota|Proace City Cargo": [
+    "Panel Van"
+  ],
+  "Toyota|Proace Max": [
+    "Panel Van"
+  ],
+  "Toyota|RAV4": [
+    "SUV"
+  ],
+  "Toyota|Starlet": [
+    "Hatchback/5",
+    "Hatchback/3"
+  ],
+  "Toyota|Urban Cruiser": [
+    "Hatchback/5"
+  ],
+  "Toyota|Verso": [
+    "MPV",
+    "Station wagon",
+    "Hatchback/5",
+    "Sedan"
+  ],
+  "Toyota|Yaris": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "MPV",
+    "SUV",
+    "Sedan"
+  ],
+  "Toyota|Yaris Cross": [
+    "SUV"
+  ],
+  "Volkswagen|Amarok": [
+    "Hard top",
+    "SUV",
+    "Pick-Up"
+  ],
+  "Volkswagen|Arteon": [
+    "Hatchback/5"
+  ],
+  "Volkswagen|Beetle": [
+    "Hatchback/3"
+  ],
+  "Volkswagen|Bora": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Volkswagen|Caddy": [
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van",
+    "Minibüs"
+  ],
+  "Volkswagen|Caravelle": [
+    "Minibüs",
+    "Camlı Van",
+    "Panel Van",
+    "Yarım Camlı Van"
+  ],
+  "Volkswagen|Crafter": [
+    "Panel Van",
+    "Camlı Van",
+    "Frigorifik Panelvan",
+    "Minibüs"
+  ],
+  "Volkswagen|EOS": [
+    "Cabrio"
+  ],
+  "Volkswagen|Golf": [
+    "Hatchback/5",
+    "Hatchback/3",
+    "Station wagon",
+    "Sedan"
+  ],
+  "Volkswagen|Jetta": [
+    "Sedan",
+    "Station wagon",
+    "Hatchback/5"
+  ],
+  "Volkswagen|Lupo": [
+    "Hatchback/3"
+  ],
+  "Volkswagen|MultiVan": [
+    "Camlı Van"
+  ],
+  "Volkswagen|New Beetle": [
+    "Hatchback/3"
+  ],
+  "Volkswagen|Passat": [
+    "Sedan",
+    "Station wagon",
+    "Hatchback/5"
+  ],
+  "Volkswagen|Passat Alltrack": [
+    "SUV"
+  ],
+  "Volkswagen|Passat Variant": [
+    "Station wagon",
+    "Sedan"
+  ],
+  "Volkswagen|Phaeton": [
+    "Sedan"
+  ],
+  "Volkswagen|Polo": [
+    "Hatchback/5",
+    "Sedan",
+    "Hatchback/3",
+    "Station wagon"
+  ],
+  "Volkswagen|Scirocco": [
+    "Coupe",
+    "Hatchback/3"
+  ],
+  "Volkswagen|Sharan": [
+    "MPV"
+  ],
+  "Volkswagen|T-Cross": [
+    "SUV",
+    "Crossover"
+  ],
+  "Volkswagen|T-Roc": [
+    "SUV",
+    "Crossover"
+  ],
+  "Volkswagen|Taigo": [
+    "SUV",
+    "Crossover"
+  ],
+  "Volkswagen|Tayron": [
+    "SUV"
+  ],
+  "Volkswagen|Tiguan": [
+    "SUV"
+  ],
+  "Volkswagen|Tiguan All Space": [
+    "SUV"
+  ],
+  "Volkswagen|Touareg": [
+    "SUV",
+    "Crossover"
+  ],
+  "Volkswagen|Touran": [
+    "MPV",
+    "Station wagon"
+  ],
+  "Volkswagen|Transporter": [
+    "Camlı Van",
+    "Yarım Camlı Van",
+    "Panel Van",
+    "Minibüs",
+    "Frigorifik Panelvan"
+  ],
+  "Volkswagen|VW CC": [
+    "Coupe",
+    "Sedan",
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Volkswagen|Vento": [
+    "Sedan"
+  ],
+  "Volvo|460": [
+    "Sedan"
+  ],
+  "Volvo|850": [
+    "Sedan",
+    "Station wagon"
+  ],
+  "Volvo|940": [
+    "Sedan"
+  ],
+  "Volvo|960": [
+    "Sedan"
+  ],
+  "Volvo|C30": [
+    "Hatchback/3"
+  ],
+  "Volvo|C70": [
+    "Cabrio",
+    "Coupe"
+  ],
+  "Volvo|EX40": [
+    "SUV"
+  ],
+  "Volvo|S40": [
+    "Sedan"
+  ],
+  "Volvo|S60": [
+    "Sedan",
+    "Station wagon",
+    "MPV"
+  ],
+  "Volvo|S70": [
+    "Sedan"
+  ],
+  "Volvo|S80": [
+    "Sedan"
+  ],
+  "Volvo|S90": [
+    "Sedan"
+  ],
+  "Volvo|V40": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Volvo|V40 Cross Country": [
+    "Hatchback/5",
+    "Station wagon"
+  ],
+  "Volvo|V50": [
+    "Station wagon"
+  ],
+  "Volvo|V60": [
+    "Station wagon"
+  ],
+  "Volvo|V60 Cross Country": [
+    "Station wagon"
+  ],
+  "Volvo|V70": [
+    "Station wagon"
+  ],
+  "Volvo|V90 Cross Country": [
+    "Station wagon"
+  ],
+  "Volvo|XC40": [
+    "SUV",
+    "Crossover"
+  ],
+  "Volvo|XC60": [
+    "SUV"
+  ],
+  "Volvo|XC70": [
+    "Crossover",
+    "SUV"
+  ],
+  "Volvo|XC90": [
+    "SUV"
   ]
 };

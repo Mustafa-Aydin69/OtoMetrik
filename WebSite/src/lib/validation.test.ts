@@ -7,6 +7,7 @@ import test from "node:test";
 
 import {
   canonicalToLabel,
+  getBodyTypesForModel,
   getEnginesForModel,
   getHpOptions,
   getModelsForBrand,
@@ -145,6 +146,31 @@ test("canonicalToLabel: labelToCanonical'ın tersi (LPG & Benzin -> LPG)", () =>
 
 test("canonicalToLabel: eşleşme yoksa değeri olduğu gibi döner", () => {
   assert.equal(canonicalToLabel("fuelType", "Bilinmeyen Kanonik Değer"), "Bilinmeyen Kanonik Değer");
+});
+
+test("getBodyTypesForModel: Citroën Berlingo için sadece gerçekten görülen kasa tiplerini döner", () => {
+  // Berlingo satırlarının %87'si "Camlı Van" - "Sedan"/"MPV" gibi bu araca
+  // hiç uymayan sabit-liste seçenekleri artık dönmüyor (bkz. kullanıcı raporu).
+  const types = getBodyTypesForModel("Citroën", "Berlingo");
+  assert.ok(types.length > 0);
+  assert.equal(types[0], "Camlı Van");
+  assert.ok(!types.includes("Sedan"));
+  assert.ok(!types.includes("MPV"));
+});
+
+test("getBodyTypesForModel: bilinmeyen marka+model için boş dizi döner", () => {
+  assert.deepEqual(getBodyTypesForModel("Ford", "Bilinmeyen Model XYZ"), []);
+});
+
+test("getHpOptions: Citroën Berlingo 1.5 Dizel'de yakın-deger olcum gurultusu 5 HP'ye yuvarlanip birlestirilir", () => {
+  // Kullanici raporu: 96/100/102/110/130/132 -> 6 secenek gorunuyordu.
+  // 100~102 ve 130~132 ayni gercek versiyonun olcum gurultusu (bkz.
+  // generate_vehicle_options.py Faz 26 notu) - yuvarlama sonrasi 4 kalmali,
+  // baskin gercek degerler (102 ve 132, en sik gorulenler) korunmali.
+  const hp = getHpOptions("Citroën", "Berlingo", 1500, "Dizel");
+  assert.equal(hp.length, 4);
+  assert.ok(hp.includes(102));
+  assert.ok(hp.includes(132));
 });
 
 test("getModelsForBrand: BMW için modelleri döner ve 3 Serisi içerir", () => {
