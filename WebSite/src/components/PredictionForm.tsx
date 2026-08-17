@@ -97,6 +97,8 @@ function toInput(f: FormState): PredictionInput {
 
 type Status = "idle" | "loading" | "error" | "success";
 
+type MacroStep = "vehicle" | "details";
+
 export function PredictionForm() {
   const [form, setForm] = useState<FormState>(INITIAL);
   const [errors, setErrors] = useState<FieldErrors>({});
@@ -105,6 +107,15 @@ export function PredictionForm() {
   const [result, setResult] = useState<PredictionResponse | null>(null);
   const [carImageUrls, setCarImageUrls] = useState<string[]>([]);
   const resultRef = useRef<HTMLDivElement>(null);
+  // "vehicle": VehicleSelector'ın tam sayfa Kategori›Marka›Model›Motor›Paket
+  // akışı - "details": geri kalan tüm alanlar (Yıl, Yakıt, Vites, Kasa, Renk,
+  // Km, Hasar) tek ekranda. VehicleSelector paket seçilince/atlanınca
+  // onComplete() ile buraya geçer (bkz. setVehicle altındaki VehicleSelector
+  // render'ı). resetKey, "Formu Temizle" sonrası VehicleSelector'ı SIFIRDAN
+  // mount ederek kendi iç state'ini (kategori/kademe/arama) de temizler -
+  // FormState'in aksine bunlar VehicleSelector'ın local state'idir.
+  const [macroStep, setMacroStep] = useState<MacroStep>("vehicle");
+  const [resetKey, setResetKey] = useState(0);
 
   function set<K extends keyof FormState>(key: K, value: FormState[K]) {
     setForm((prev) => ({ ...prev, [key]: value }));
@@ -189,6 +200,8 @@ export function PredictionForm() {
     setApiError("");
     setResult(null);
     setCarImageUrls([]);
+    setMacroStep("vehicle");
+    setResetKey((k) => k + 1);
   }
 
   async function submit() {
@@ -243,25 +256,42 @@ export function PredictionForm() {
           </button>
         </div>
 
+        {macroStep === "vehicle" ? (
+          <VehicleSelector
+            key={resetKey}
+            value={{
+              brand: form.brand,
+              model: form.model,
+              engineHacmiBucket: form.engineHacmiBucket,
+              engineExactCc: form.engineExactCc,
+              yakitTuru: form.yakitTuru,
+              trim: form.trim,
+            }}
+            onChange={setVehicle}
+            onComplete={() => setMacroStep("details")}
+            brandError={errors.brand}
+            modelError={errors.model}
+          />
+        ) : (
         <div className="flex flex-col gap-8">
-          {/* Kullanıcı bir aracı düşünürken doğal olarak izlediği sıra:
-              önce ne olduğu (kimlik), sonra nasıl çalıştığı (motor),
-              nasıl göründüğü (özellikler), ne kadar kullanıldığı, en
-              sonda da durumu/hasarı. */}
-          <FormSection title="Araç Kimliği">
-            <VehicleSelector
-              value={{
-                brand: form.brand,
-                model: form.model,
-                engineHacmiBucket: form.engineHacmiBucket,
-                engineExactCc: form.engineExactCc,
-                yakitTuru: form.yakitTuru,
-                trim: form.trim,
-              }}
-              onChange={setVehicle}
-              brandError={errors.brand}
-              modelError={errors.model}
-            />
+          {/* Araç zaten seçildi (önceki makro-adım) - burada özet + değiştirme
+              linki, ardından kullanıcı bir aracı düşünürken doğal olarak
+              izlediği sıra: nasıl çalıştığı (motor), nasıl göründüğü
+              (özellikler), ne kadar kullanıldığı, en sonda da durumu/hasarı. */}
+          <div className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
+            <span className="truncate text-sm text-zinc-200">
+              {[form.brand, form.model, form.trim].filter(Boolean).join(" · ")}
+            </span>
+            <button
+              type="button"
+              onClick={() => setMacroStep("vehicle")}
+              className="shrink-0 text-xs font-medium text-sky-300 transition-colors hover:text-sky-200"
+            >
+              Aracı Değiştir
+            </button>
+          </div>
+
+          <FormSection title="Araç Bilgileri" columns={1}>
             <SelectField
               id="year"
               label="Yıl"
@@ -428,41 +458,42 @@ export function PredictionForm() {
               step={1}
             />
           </FormSection>
-        </div>
 
-        {status === "error" ? (
-          <div
-            role="alert"
-            className="mt-6 flex flex-col items-start gap-3 rounded-lg border border-red-400/20 bg-red-500/10 px-4 py-3 text-sm text-red-300 sm:flex-row sm:items-center sm:justify-between"
-          >
-            <span>{apiError}</span>
-            <button
-              type="button"
-              onClick={() => void submit()}
-              className="shrink-0 rounded-md border border-red-300/30 px-3 py-1.5 text-xs font-medium text-red-200 transition-colors hover:bg-red-400/10"
+          {status === "error" ? (
+            <div
+              role="alert"
+              className="flex flex-col items-start gap-3 rounded-lg border border-red-400/20 bg-red-500/10 px-4 py-3 text-sm text-red-300 sm:flex-row sm:items-center sm:justify-between"
             >
-              Tekrar Dene
-            </button>
-          </div>
-        ) : null}
+              <span>{apiError}</span>
+              <button
+                type="button"
+                onClick={() => void submit()}
+                className="shrink-0 rounded-md border border-red-300/30 px-3 py-1.5 text-xs font-medium text-red-200 transition-colors hover:bg-red-400/10"
+              >
+                Tekrar Dene
+              </button>
+            </div>
+          ) : null}
 
-        <button
-          type="submit"
-          disabled={status === "loading"}
-          className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-zinc-50 px-6 py-3.5 text-sm font-semibold text-zinc-950 transition-all hover:bg-white disabled:cursor-not-allowed disabled:opacity-60"
-        >
-          {status === "loading" ? (
-            <>
-              <span
-                aria-hidden
-                className="size-4 animate-spin rounded-full border-2 border-zinc-400 border-t-zinc-900"
-              />
-              Hesaplanıyor…
-            </>
-          ) : (
-            "Değerini Öğren"
-          )}
-        </button>
+          <button
+            type="submit"
+            disabled={status === "loading"}
+            className="flex w-full items-center justify-center gap-2 rounded-xl bg-zinc-50 px-6 py-3.5 text-sm font-semibold text-zinc-950 transition-all hover:bg-white disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {status === "loading" ? (
+              <>
+                <span
+                  aria-hidden
+                  className="size-4 animate-spin rounded-full border-2 border-zinc-400 border-t-zinc-900"
+                />
+                Hesaplanıyor…
+              </>
+            ) : (
+              "Değerini Öğren"
+            )}
+          </button>
+        </div>
+        )}
       </form>
 
       <div ref={resultRef} className="mt-8" aria-live="polite">
