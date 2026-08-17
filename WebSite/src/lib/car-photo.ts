@@ -18,6 +18,7 @@ export async function requestCarImageUrls(input: PredictionInput): Promise<strin
         model: input.model,
         year: input.year,
         trim: input.trim,
+        bodyType: input.bodyType,
         color: input.color,
       }),
     });
