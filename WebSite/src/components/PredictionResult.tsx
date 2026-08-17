@@ -47,14 +47,17 @@ export function PredictionResult({
       aria-live="polite"
     >
       {currentImageUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element -- harici imagin.studio CDN, next/image domain izni gerektirmesin diye düz <img>.
-        <img
-          key={currentImageUrl}
-          src={currentImageUrl}
-          alt={`${carLabel} görseli`}
-          className="mx-auto mb-6 h-48 w-full max-w-sm object-contain sm:h-56"
-          onError={() => setUrlIndex((i) => i + 1)}
-        />
+        <div className="mb-6">
+          {/* eslint-disable-next-line @next/next/no-img-element -- harici imagin.studio CDN, next/image domain izni gerektirmesin diye düz <img>. */}
+          <img
+            key={currentImageUrl}
+            src={currentImageUrl}
+            alt={`${carLabel} görseli`}
+            className="mx-auto h-48 w-full max-w-sm object-contain sm:h-56"
+            onError={() => setUrlIndex((i) => i + 1)}
+          />
+          <p className="mt-2 text-[11px] text-zinc-500">Temsili araç görseli</p>
+        </div>
       ) : null}
       <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-400">
         Tahmini Araç Değeri
