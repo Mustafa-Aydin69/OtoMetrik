@@ -1,15 +1,21 @@
 "use client";
 
 /**
- * Sahibinden.com tarzı kart tabanlı kademeli araç seçici: Marka › Model ›
- * Motor › Paket, aynı panel içinde sırayla açılır, breadcrumb ile geri
- * dönülür. VehiclePicker.tsx'in (liste/panel tabanlı 3 kademeli) yerine
- * geçer — kartlara (marka için gerçek logo, bkz. BrandCard) ve araya bir
- * Motor kademesine (motor hacmi + yakıt türü) sahip. Tek veri kaynağı:
- * lib/validation.ts'in vehicle-options.generated.ts üzerinden sunduğu
- * getModelsForBrand / getEnginesForModel / getPaketOptions.
+ * Sahibinden.com tarzı tam-sayfa adım-adım araç seçici: Kategori › Marka ›
+ * Model › Motor › Paket, her kademe tam genişlikte kendi ekranı olarak
+ * sırayla açılır (küçük bir dropdown panel İÇİNDE DEĞİL — PredictionForm'un
+ * "vehicle" makro-adımının TEK içeriği budur), breadcrumb ile geri dönülür.
+ * Kategori (Otomobil/Arazi, SUV & Pickup/Minivan & Panelvan/Elektrikli Araç)
+ * eğitim-zamanı bir alan DEĞİL, sadece Marka/Model listesini daraltan bir
+ * önfiltre (bkz. lib/vehicle-category.ts) — /predict'e hiç gönderilmez, bu
+ * yüzden VehicleSelection'ın bir parçası değil, bileşenin kendi local state'i.
+ * Paket seçilince (veya bir kademede seçenek yoksa daha erken) onComplete()
+ * çağrılır — PredictionForm bunu "vehicle" makro-adımından "details"e geçiş
+ * sinyali olarak kullanır. Tek veri kaynağı: lib/validation.ts'in
+ * vehicle-options.generated.ts üzerinden sunduğu getModelsForBrand /
+ * getEnginesForModel / getPaketOptions.
  */
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import type { KeyboardEvent } from "react";
 import {
   BRANDS,
@@ -20,11 +26,17 @@ import {
   labelToCanonical,
   type EngineOption,
 } from "@/lib/validation";
-import { inputBase } from "./fields";
+import {
+  CATEGORY_ICON,
+  getBrandLabelsForCategory,
+  getModelLabelsForBrandAndCategory,
+  VEHICLE_CATEGORIES,
+  type VehicleCategory,
+} from "@/lib/vehicle-category";
 import { SelectionCard } from "./SelectionCard";
 import { BrandCard } from "./BrandCard";
 
-type Level = "brand" | "model" | "engine" | "trim";
+type Level = "category" | "brand" | "model" | "engine" | "trim";
 
 export interface VehicleSelection {
   brand: string;
@@ -41,6 +53,8 @@ export interface VehicleSelection {
 interface VehicleSelectorProps {
   value: VehicleSelection;
   onChange: (next: VehicleSelection) => void;
+  /** Paket seçilince/atlanınca (veya bir kademede seçenek kalmayınca) çağrılır - "vehicle" adımının bittiği sinyali. */
+  onComplete: () => void;
   brandError?: string;
   modelError?: string;
 }
@@ -67,23 +81,34 @@ function engineLabel(engine: Pick<EngineOption, "hacmiBucket" | "yakitTuru">): s
 
 const RESET_FROM_BRAND = { model: "", engineHacmiBucket: null, engineExactCc: null, yakitTuru: "", trim: "" };
 const RESET_FROM_MODEL = { engineHacmiBucket: null, engineExactCc: null, yakitTuru: "", trim: "" };
+const RESET_FROM_CATEGORY = { brand: "", ...RESET_FROM_BRAND };
 
-export function VehicleSelector({ value, onChange, brandError, modelError }: VehicleSelectorProps) {
-  const [open, setOpen] = useState(false);
-  const [level, setLevel] = useState<Level>("brand");
+const LEVEL_ORDER: Level[] = ["category", "brand", "model", "engine", "trim"];
+const LEVEL_LABEL: Record<Level, string> = {
+  category: "Kategori",
+  brand: "Marka",
+  model: "Model",
+  engine: "Motor",
+  trim: "Paket",
+};
+
+export function VehicleSelector({ value, onChange, onComplete, brandError, modelError }: VehicleSelectorProps) {
+  const [category, setCategory] = useState<VehicleCategory | null>(null);
+  const [level, setLevel] = useState<Level>("category");
   const [query, setQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const searchRef = useRef<HTMLInputElement>(null);
 
-  const models = useMemo(
-    () => (value.brand ? getModelsForBrand(value.brand) : []),
-    [value.brand]
-  );
-  const engines = useMemo(
-    () => (value.brand && value.model ? getEnginesForModel(value.brand, value.model) : []),
-    [value.brand, value.model]
-  );
+  const models = useMemo(() => {
+    if (!value.brand) return [];
+    return category ? getModelLabelsForBrandAndCategory(value.brand, category) : [...getModelsForBrand(value.brand)];
+  }, [value.brand, category]);
+
+  const engines = useMemo(() => {
+    if (!value.brand || !value.model) return [];
+    const all = getEnginesForModel(value.brand, value.model);
+    return category === "Elektrikli Araç" ? all.filter((e) => e.yakitTuru === "Elektrik") : all;
+  }, [value.brand, value.model, category]);
+
   const trims = useMemo(
     () =>
       value.brand && value.model && value.engineHacmiBucket !== null
@@ -98,10 +123,22 @@ export function VehicleSelector({ value, onChange, brandError, modelError }: Veh
     setActiveIndex(0);
   }
 
+  function levelBefore(current: Level): Level {
+    const i = LEVEL_ORDER.indexOf(current);
+    return LEVEL_ORDER[Math.max(i - 1, 0)];
+  }
+
+  function selectCategory(cat: VehicleCategory | null) {
+    setCategory(cat);
+    onChange({ ...value, ...RESET_FROM_CATEGORY });
+    goToLevel("brand");
+  }
+
   function selectBrand(brand: string) {
     onChange({ ...value, brand, ...RESET_FROM_BRAND });
-    if (getModelsForBrand(brand).length === 0) {
-      setOpen(false);
+    const brandModels = category ? getModelLabelsForBrandAndCategory(brand, category) : getModelsForBrand(brand);
+    if (brandModels.length === 0) {
+      onComplete();
       return;
     }
     goToLevel("model");
@@ -109,8 +146,10 @@ export function VehicleSelector({ value, onChange, brandError, modelError }: Veh
 
   function selectModel(model: string) {
     onChange({ ...value, model, ...RESET_FROM_MODEL });
-    if (getEnginesForModel(value.brand, model).length === 0) {
-      setOpen(false);
+    const allEngines = getEnginesForModel(value.brand, model);
+    const modelEngines = category === "Elektrikli Araç" ? allEngines.filter((e) => e.yakitTuru === "Elektrik") : allEngines;
+    if (modelEngines.length === 0) {
+      onComplete();
       return;
     }
     goToLevel("engine");
@@ -125,7 +164,7 @@ export function VehicleSelector({ value, onChange, brandError, modelError }: Veh
       trim: "",
     });
     if (getPaketOptions(value.brand, value.model, engine.hacmiBucket, engine.yakitTuru).length === 0) {
-      setOpen(false);
+      onComplete();
       return;
     }
     goToLevel("trim");
@@ -133,7 +172,7 @@ export function VehicleSelector({ value, onChange, brandError, modelError }: Veh
 
   function selectTrim(trim: string) {
     onChange({ ...value, trim });
-    setOpen(false);
+    onComplete();
   }
 
   const normalizedQuery = query.trim().toLocaleLowerCase("tr");
@@ -141,8 +180,25 @@ export function VehicleSelector({ value, onChange, brandError, modelError }: Veh
     !normalizedQuery || label.toLocaleLowerCase("tr").includes(normalizedQuery);
 
   const rows: Row[] = useMemo(() => {
+    if (level === "category") {
+      const categoryRows = VEHICLE_CATEGORIES.filter(matchesQuery).map((cat) => ({
+        key: cat,
+        label: cat,
+        icon: CATEGORY_ICON[cat],
+        selected: cat === category,
+        select: () => selectCategory(cat),
+      }));
+      const skipRow: Row = {
+        key: "__skip__",
+        label: "Kategori seçmeden devam et",
+        selected: category === null,
+        select: () => selectCategory(null),
+      };
+      return [...categoryRows, skipRow];
+    }
     if (level === "brand") {
-      return BRANDS.filter(matchesQuery).map((label) => ({
+      const brandLabels = category ? getBrandLabelsForCategory(category) : BRANDS;
+      return brandLabels.filter(matchesQuery).map((label) => ({
         key: label,
         label,
         selected: label === value.brand,
@@ -183,49 +239,11 @@ export function VehicleSelector({ value, onChange, brandError, modelError }: Veh
     }));
     return [skipRow, ...paketRows];
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [level, query, models, engines, trims, value.brand, value.model, value.engineHacmiBucket, value.yakitTuru, value.trim]);
-
-  useEffect(() => {
-    if (!open) return;
-    const raf = requestAnimationFrame(() => searchRef.current?.focus());
-    return () => cancelAnimationFrame(raf);
-  }, [open, level]);
-
-  useEffect(() => {
-    if (!open) return;
-    function handlePointerDown(e: PointerEvent) {
-      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
-    }
-    document.addEventListener("pointerdown", handlePointerDown);
-    return () => document.removeEventListener("pointerdown", handlePointerDown);
-  }, [open]);
-
-  function openPanel() {
-    const target: Level = !value.brand
-      ? "brand"
-      : !value.model
-        ? "model"
-        : value.engineHacmiBucket === null
-          ? "engine"
-          : "trim";
-    setLevel(target);
-    setQuery("");
-    setActiveIndex(0);
-    setOpen(true);
-  }
+  }, [level, query, category, models, engines, trims, value.brand, value.model, value.engineHacmiBucket, value.yakitTuru, value.trim]);
 
   function handleKeyDown(e: KeyboardEvent<HTMLDivElement>) {
-    if (e.key === "Escape") {
-      e.preventDefault();
-      setOpen(false);
-      return;
-    }
     if (e.key === "Backspace" && query === "") {
-      if (level === "trim") goToLevel("engine");
-      else if (level === "engine") goToLevel("model");
-      else if (level === "model") goToLevel("brand");
+      goToLevel(levelBefore(level));
       return;
     }
     if (e.key === "ArrowDown" || e.key === "ArrowRight") {
@@ -246,180 +264,170 @@ export function VehicleSelector({ value, onChange, brandError, modelError }: Veh
 
   const currentEngineLabel =
     value.engineHacmiBucket !== null ? engineLabel({ hacmiBucket: value.engineHacmiBucket, yakitTuru: value.yakitTuru }) : "";
-  const triggerLabel = value.brand
-    ? [value.brand, value.model, currentEngineLabel, value.trim].filter(Boolean).join(" › ")
-    : "Araç seçin";
   const hasError = Boolean(brandError || modelError);
 
-  const levelLabel: Record<Level, string> = {
-    brand: "Marka",
-    model: "Model",
-    engine: "Motor",
-    trim: "Paket",
-  };
-
   return (
-    <div className="flex flex-col gap-1.5 sm:col-span-2" ref={containerRef}>
-      <span id="vehicle-selector-label" className="text-xs font-medium uppercase tracking-wider text-zinc-400">
-        Marka / Model / Motor / Paket
-      </span>
-      <button
-        type="button"
-        className={`${inputBase} flex items-center justify-between gap-2 text-left ${
-          value.brand ? "text-zinc-100" : "text-zinc-500"
-        }`}
-        aria-haspopup="listbox"
-        aria-expanded={open}
-        aria-labelledby="vehicle-selector-label"
-        aria-describedby={hasError ? "vehicle-selector-error" : undefined}
-        onClick={() => (open ? setOpen(false) : openPanel())}
-      >
-        <span className="truncate">{triggerLabel}</span>
-        <svg
-          aria-hidden
-          width="12"
-          height="12"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#a1a1aa"
-          strokeWidth="2"
-          className="shrink-0"
-        >
-          <path d="m6 9 6 6 6-6" />
-        </svg>
-      </button>
+    <div className="flex flex-col gap-3">
+      <span className="text-xs font-medium uppercase tracking-wider text-zinc-400">Araç Seçimi</span>
       {hasError ? (
-        <p id="vehicle-selector-error" role="alert" className="text-xs text-red-400">
+        <p role="alert" className="text-xs text-red-400">
           {brandError || modelError}
         </p>
       ) : null}
 
-      {open ? (
-        <div
-          role="listbox"
-          aria-label="Marka, model, motor ve paket seçimi"
-          onKeyDown={handleKeyDown}
-          className="relative z-10 mt-1 overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/95 shadow-2xl shadow-black/50 backdrop-blur-xl"
-        >
-          <div className="flex items-center gap-1 border-b border-white/10 px-2 py-2 text-xs">
-            <button
-              type="button"
-              aria-label="Geri"
-              disabled={level === "brand"}
-              onClick={() => goToLevel(level === "trim" ? "engine" : level === "engine" ? "model" : "brand")}
-              className="rounded px-1.5 py-0.5 text-zinc-400 hover:bg-white/10 hover:text-zinc-200 disabled:opacity-30 disabled:hover:bg-transparent"
-            >
-              ‹
-            </button>
-            <button
-              type="button"
-              onClick={() => goToLevel("brand")}
-              disabled={level === "brand"}
-              className="rounded px-1.5 py-0.5 text-zinc-300 hover:bg-white/10 hover:text-zinc-100 disabled:text-zinc-100 disabled:hover:bg-transparent"
-            >
-              {value.brand || "Marka"}
-            </button>
-            {value.brand && level !== "brand" ? (
-              <>
-                <span aria-hidden className="text-zinc-600">›</span>
-                <button
-                  type="button"
-                  onClick={() => goToLevel("model")}
-                  disabled={level === "model"}
-                  className="rounded px-1.5 py-0.5 text-zinc-300 hover:bg-white/10 hover:text-zinc-100 disabled:text-zinc-100 disabled:hover:bg-transparent"
-                >
-                  {value.model || "Model"}
-                </button>
-              </>
-            ) : null}
-            {value.model && (level === "engine" || level === "trim") ? (
-              <>
-                <span aria-hidden className="text-zinc-600">›</span>
-                <button
-                  type="button"
-                  onClick={() => goToLevel("engine")}
-                  disabled={level === "engine"}
-                  className="rounded px-1.5 py-0.5 text-zinc-300 hover:bg-white/10 hover:text-zinc-100 disabled:text-zinc-100 disabled:hover:bg-transparent"
-                >
-                  {currentEngineLabel || "Motor"}
-                </button>
-              </>
-            ) : null}
-            {level === "trim" ? (
-              <>
-                <span aria-hidden className="text-zinc-600">›</span>
-                <span className="px-1.5 py-0.5 text-zinc-500">Paket</span>
-              </>
-            ) : null}
-          </div>
-
-          <input
-            ref={searchRef}
-            type="text"
-            value={query}
-            onChange={(e) => {
-              setQuery(e.target.value);
-              setActiveIndex(0);
-            }}
-            placeholder={`${levelLabel[level]} ara…`}
-            className="w-full border-b border-white/10 bg-transparent px-3 py-2 text-sm text-zinc-100 placeholder:text-zinc-500 outline-none"
-          />
-
-          <div className="max-h-80 overflow-y-auto p-2.5">
-            {rows.length === 0 ? (
-              <p className="px-3 py-4 text-center text-sm text-zinc-500">Sonuç bulunamadı.</p>
-            ) : level === "brand" ? (
-              <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
-                {rows.map((row) => (
-                  <BrandCard
-                    key={row.key}
-                    canonicalBrand={labelToCanonical("brand", row.label)}
-                    label={row.label}
-                    selected={row.selected}
-                    onSelect={row.select}
-                  />
-                ))}
-              </div>
-            ) : level === "engine" ? (
-              <div className="flex flex-wrap gap-2">
-                {rows.map((row) => (
-                  <SelectionCard
-                    key={row.key}
-                    variant="pill"
-                    label={row.label}
-                    icon={row.icon}
-                    selected={row.selected}
-                    onSelect={row.select}
-                  />
-                ))}
-              </div>
-            ) : level === "trim" ? (
-              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-                {rows.map((row) =>
-                  row.key === "__skip__" ? (
-                    <button
-                      key={row.key}
-                      type="button"
-                      onClick={row.select}
-                      className="col-span-full rounded-xl border border-dashed border-white/15 px-3 py-2.5 text-center text-xs text-zinc-500 transition-colors hover:border-white/30 hover:text-zinc-300"
-                    >
-                      {row.label}
-                    </button>
-                  ) : (
-                    <SelectionCard key={row.key} label={row.label} selected={row.selected} onSelect={row.select} />
-                  )
-                )}
-              </div>
-            ) : (
-              <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
-                {rows.map((row) => (
-                  <SelectionCard key={row.key} label={row.label} selected={row.selected} onSelect={row.select} />
-                ))}
-              </div>
-            )}
-          </div>
+      <div
+        role="group"
+        aria-label="Kategori, marka, model, motor ve paket seçimi"
+        onKeyDown={handleKeyDown}
+        className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]"
+      >
+        <div className="flex flex-wrap items-center gap-1 border-b border-white/10 px-3 py-2.5 text-xs">
+          <button
+            type="button"
+            aria-label="Geri"
+            disabled={level === "category"}
+            onClick={() => goToLevel(levelBefore(level))}
+            className="rounded px-1.5 py-0.5 text-zinc-400 hover:bg-white/10 hover:text-zinc-200 disabled:opacity-30 disabled:hover:bg-transparent"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            onClick={() => goToLevel("category")}
+            disabled={level === "category"}
+            className="rounded px-1.5 py-0.5 text-zinc-300 hover:bg-white/10 hover:text-zinc-100 disabled:text-zinc-100 disabled:hover:bg-transparent"
+          >
+            {category ?? "Kategori"}
+          </button>
+          {level !== "category" ? (
+            <>
+              <span aria-hidden className="text-zinc-600">›</span>
+              <button
+                type="button"
+                onClick={() => goToLevel("brand")}
+                disabled={level === "brand"}
+                className="rounded px-1.5 py-0.5 text-zinc-300 hover:bg-white/10 hover:text-zinc-100 disabled:text-zinc-100 disabled:hover:bg-transparent"
+              >
+                {value.brand || "Marka"}
+              </button>
+            </>
+          ) : null}
+          {value.brand && (level === "model" || level === "engine" || level === "trim") ? (
+            <>
+              <span aria-hidden className="text-zinc-600">›</span>
+              <button
+                type="button"
+                onClick={() => goToLevel("model")}
+                disabled={level === "model"}
+                className="rounded px-1.5 py-0.5 text-zinc-300 hover:bg-white/10 hover:text-zinc-100 disabled:text-zinc-100 disabled:hover:bg-transparent"
+              >
+                {value.model || "Model"}
+              </button>
+            </>
+          ) : null}
+          {value.model && (level === "engine" || level === "trim") ? (
+            <>
+              <span aria-hidden className="text-zinc-600">›</span>
+              <button
+                type="button"
+                onClick={() => goToLevel("engine")}
+                disabled={level === "engine"}
+                className="rounded px-1.5 py-0.5 text-zinc-300 hover:bg-white/10 hover:text-zinc-100 disabled:text-zinc-100 disabled:hover:bg-transparent"
+              >
+                {currentEngineLabel || "Motor"}
+              </button>
+            </>
+          ) : null}
+          {level === "trim" ? (
+            <>
+              <span aria-hidden className="text-zinc-600">›</span>
+              <span className="px-1.5 py-0.5 text-zinc-500">Paket</span>
+            </>
+          ) : null}
         </div>
-      ) : null}
+
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            setActiveIndex(0);
+          }}
+          placeholder={`${LEVEL_LABEL[level]} ara…`}
+          className="w-full border-b border-white/10 bg-transparent px-3.5 py-2.5 text-sm text-zinc-100 placeholder:text-zinc-500 outline-none"
+        />
+
+        <div className="max-h-[26rem] overflow-y-auto p-3">
+          {rows.length === 0 ? (
+            <p className="px-3 py-4 text-center text-sm text-zinc-500">Sonuç bulunamadı.</p>
+          ) : level === "category" ? (
+            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+              {rows.map((row) =>
+                row.key === "__skip__" ? (
+                  <button
+                    key={row.key}
+                    type="button"
+                    onClick={row.select}
+                    className="col-span-full rounded-xl border border-dashed border-white/15 px-3 py-2.5 text-center text-xs text-zinc-500 transition-colors hover:border-white/30 hover:text-zinc-300"
+                  >
+                    {row.label}
+                  </button>
+                ) : (
+                  <SelectionCard key={row.key} label={row.label} icon={row.icon} selected={row.selected} onSelect={row.select} />
+                )
+              )}
+            </div>
+          ) : level === "brand" ? (
+            <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4">
+              {rows.map((row) => (
+                <BrandCard
+                  key={row.key}
+                  canonicalBrand={labelToCanonical("brand", row.label)}
+                  label={row.label}
+                  selected={row.selected}
+                  onSelect={row.select}
+                />
+              ))}
+            </div>
+          ) : level === "engine" ? (
+            <div className="flex flex-wrap gap-2.5">
+              {rows.map((row) => (
+                <SelectionCard
+                  key={row.key}
+                  variant="pill"
+                  label={row.label}
+                  icon={row.icon}
+                  selected={row.selected}
+                  onSelect={row.select}
+                />
+              ))}
+            </div>
+          ) : level === "trim" ? (
+            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-3">
+              {rows.map((row) =>
+                row.key === "__skip__" ? (
+                  <button
+                    key={row.key}
+                    type="button"
+                    onClick={row.select}
+                    className="col-span-full rounded-xl border border-dashed border-white/15 px-3 py-2.5 text-center text-xs text-zinc-500 transition-colors hover:border-white/30 hover:text-zinc-300"
+                  >
+                    {row.label}
+                  </button>
+                ) : (
+                  <SelectionCard key={row.key} label={row.label} selected={row.selected} onSelect={row.select} />
+                )
+              )}
+            </div>
+          ) : (
+            <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4">
+              {rows.map((row) => (
+                <SelectionCard key={row.key} label={row.label} selected={row.selected} onSelect={row.select} />
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
