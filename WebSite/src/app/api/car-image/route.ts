@@ -30,6 +30,7 @@ export async function POST(req: Request) {
     model,
     year: typeof b.year === "number" && Number.isFinite(b.year) ? b.year : null,
     trim: typeof b.trim === "string" ? b.trim : null,
+    bodyType: typeof b.bodyType === "string" ? b.bodyType : null,
     color: typeof b.color === "string" ? b.color : null,
   });
 
