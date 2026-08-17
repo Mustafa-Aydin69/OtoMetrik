@@ -242,7 +242,7 @@ const trCollator = new Intl.Collator("tr", { numeric: true, sensitivity: "base" 
 
 export type { EngineOption };
 
-function vehicleKey(canonicalBrand: string, model: string): string {
+export function vehicleKey(canonicalBrand: string, model: string): string {
   return `${canonicalBrand}|${model.trim()}`;
 }
 
