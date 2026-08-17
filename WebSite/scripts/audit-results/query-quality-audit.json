@@ -1,0 +1,1030 @@
+{
+  "issues": [],
+  "rows": [
+    {
+      "id": "bmw-3-e46",
+      "make": "BMW",
+      "model": "3 Series",
+      "generation": "E46",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "2001 BMW 3 Series E46 320i Sedan grey",
+        "2001 BMW 3 Series E46 320i Sedan",
+        "2001 BMW 3 Series E46 320i",
+        "BMW 3 Series E46",
+        "BMW E46"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "bmw-3-f30",
+      "make": "BMW",
+      "model": "3 Series",
+      "generation": "F30",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "2012 BMW 3 Series F30 320d Sedan black",
+        "2012 BMW 3 Series F30 320d Sedan",
+        "2012 BMW 3 Series F30 320d",
+        "BMW 3 Series F30",
+        "BMW F30"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "bmw-3-g20",
+      "make": "BMW",
+      "model": "3 Series",
+      "generation": "G20",
+      "generationSource": "local",
+      "queryCount": 6,
+      "queries": [
+        "2023 BMW 320i G20 LCI Executive M Sport Sedan white",
+        "2023 BMW 320i G20 LCI Executive M Sport Sedan",
+        "2023 BMW 320i G20 LCI Executive M Sport",
+        "BMW 320i G20 LCI",
+        "BMW 3 Series G20 LCI",
+        "BMW G20 LCI"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "bmw-5-e39",
+      "make": "BMW",
+      "model": "5 Series",
+      "generation": "E39",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "1999 BMW 5 Series E39 523i Sedan grey",
+        "1999 BMW 5 Series E39 523i Sedan",
+        "1999 BMW 5 Series E39 523i",
+        "BMW 5 Series E39",
+        "BMW E39"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "bmw-5-g30",
+      "make": "BMW",
+      "model": "5 Series",
+      "generation": "G30",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "2018 BMW 5 Series G30 520d Sedan black",
+        "2018 BMW 5 Series G30 520d Sedan",
+        "2018 BMW 5 Series G30 520d",
+        "BMW 5 Series G30",
+        "BMW G30"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "bmw-1-f20",
+      "make": "BMW",
+      "model": "1 Series",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 BMW 1 Series 116i Hatchback red",
+        "2015 BMW 1 Series 116i Hatchback",
+        "2015 BMW 1 Series 116i",
+        "BMW 1 Series",
+        "BMW"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "mb-c-w202",
+      "make": "Mercedes-Benz",
+      "model": "C",
+      "generation": "W202",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "1998 Mercedes-Benz C W202 C 180 Sedan silver",
+        "1998 Mercedes-Benz C W202 C 180 Sedan",
+        "1998 Mercedes-Benz C W202 C 180",
+        "Mercedes-Benz C W202",
+        "Mercedes-Benz W202"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "mb-c-w204",
+      "make": "Mercedes-Benz",
+      "model": "C",
+      "generation": "W204",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "2010 Mercedes-Benz C W204 C 200 Sedan black",
+        "2010 Mercedes-Benz C W204 C 200 Sedan",
+        "2010 Mercedes-Benz C W204 C 200",
+        "Mercedes-Benz C W204",
+        "Mercedes-Benz W204"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "mb-c-w206",
+      "make": "Mercedes-Benz",
+      "model": "C",
+      "generation": "W206",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "2022 Mercedes-Benz C W206 C 220d Sedan white",
+        "2022 Mercedes-Benz C W206 C 220d Sedan",
+        "2022 Mercedes-Benz C W206 C 220d",
+        "Mercedes-Benz C W206",
+        "Mercedes-Benz W206"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "mb-e-w211",
+      "make": "Mercedes-Benz",
+      "model": "E",
+      "generation": "W211",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "2005 Mercedes-Benz E W211 E 220 Sedan grey",
+        "2005 Mercedes-Benz E W211 E 220 Sedan",
+        "2005 Mercedes-Benz E W211 E 220",
+        "Mercedes-Benz E W211",
+        "Mercedes-Benz W211"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "mb-e-w213",
+      "make": "Mercedes-Benz",
+      "model": "E",
+      "generation": "W213",
+      "generationSource": "local",
+      "queryCount": 5,
+      "queries": [
+        "2020 Mercedes-Benz E W213 E 200 Sedan black",
+        "2020 Mercedes-Benz E W213 E 200 Sedan",
+        "2020 Mercedes-Benz E W213 E 200",
+        "Mercedes-Benz E W213",
+        "Mercedes-Benz W213"
+      ],
+      "genericCount": 0
+    },
+    {
+      "id": "mb-a-w177",
+      "make": "Mercedes-Benz",
+      "model": "A",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2019 Mercedes-Benz A A 200 Hatchback white",
+        "2019 Mercedes-Benz A A 200 Hatchback",
+        "2019 Mercedes-Benz A A 200",
+        "Mercedes-Benz A",
+        "Mercedes-Benz"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "mb-cla",
+      "make": "Mercedes-Benz",
+      "model": "CLA",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 Mercedes-Benz CLA CLA 200 Coupe red",
+        "2015 Mercedes-Benz CLA CLA 200 Coupe",
+        "2015 Mercedes-Benz CLA CLA 200",
+        "Mercedes-Benz CLA",
+        "Mercedes-Benz"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "audi-a3-8p",
+      "make": "Audi",
+      "model": "A3",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2005 Audi A3 1.6 Hatchback (5 Kapı) grey",
+        "2005 Audi A3 1.6 Hatchback (5 Kapı)",
+        "2005 Audi A3 1.6",
+        "Audi A3",
+        "Audi"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "audi-a3-8v",
+      "make": "Audi",
+      "model": "A3",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2018 Audi A3 1.6 TDI Sedan white",
+        "2018 Audi A3 1.6 TDI Sedan",
+        "2018 Audi A3 1.6 TDI",
+        "Audi A3",
+        "Audi"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "audi-a4-b8",
+      "make": "Audi",
+      "model": "A4",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2010 Audi A4 2.0 TDI Sedan black",
+        "2010 Audi A4 2.0 TDI Sedan",
+        "2010 Audi A4 2.0 TDI",
+        "Audi A4",
+        "Audi"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "audi-a4-b9",
+      "make": "Audi",
+      "model": "A4",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2020 Audi A4 2.0 TDI Sedan grey",
+        "2020 Audi A4 2.0 TDI Sedan",
+        "2020 Audi A4 2.0 TDI",
+        "Audi A4",
+        "Audi"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "audi-a6-c6",
+      "make": "Audi",
+      "model": "A6",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2005 Audi A6 2.4 Sedan silver",
+        "2005 Audi A6 2.4 Sedan",
+        "2005 Audi A6 2.4",
+        "Audi A6",
+        "Audi"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "vw-golf-mk5",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2005 Volkswagen Golf 1.6 Hatchback (5 Kapı) blue",
+        "2005 Volkswagen Golf 1.6 Hatchback (5 Kapı)",
+        "2005 Volkswagen Golf 1.6",
+        "Volkswagen Golf",
+        "Volkswagen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "vw-golf-mk6",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2010 Volkswagen Golf 1.6 TDI Hatchback (5 Kapı) white",
+        "2010 Volkswagen Golf 1.6 TDI Hatchback (5 Kapı)",
+        "2010 Volkswagen Golf 1.6 TDI",
+        "Volkswagen Golf",
+        "Volkswagen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "vw-golf-mk7",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 Volkswagen Golf 1.6 TDI Comfortline Hatchback (5 Kapı) grey",
+        "2015 Volkswagen Golf 1.6 TDI Comfortline Hatchback (5 Kapı)",
+        "2015 Volkswagen Golf 1.6 TDI Comfortline",
+        "Volkswagen Golf",
+        "Volkswagen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "vw-golf-mk8",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2021 Volkswagen Golf 1.5 TSI Life Hatchback (5 Kapı) black",
+        "2021 Volkswagen Golf 1.5 TSI Life Hatchback (5 Kapı)",
+        "2021 Volkswagen Golf 1.5 TSI Life",
+        "Volkswagen Golf",
+        "Volkswagen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "vw-passat-b5",
+      "make": "Volkswagen",
+      "model": "Passat",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2000 Volkswagen Passat 1.8 Sedan grey",
+        "2000 Volkswagen Passat 1.8 Sedan",
+        "2000 Volkswagen Passat 1.8",
+        "Volkswagen Passat",
+        "Volkswagen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "vw-passat-b8",
+      "make": "Volkswagen",
+      "model": "Passat",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2018 Volkswagen Passat 1.6 TDI Sedan white",
+        "2018 Volkswagen Passat 1.6 TDI Sedan",
+        "2018 Volkswagen Passat 1.6 TDI",
+        "Volkswagen Passat",
+        "Volkswagen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "vw-polo",
+      "make": "Volkswagen",
+      "model": "Polo",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2012 Volkswagen Polo 1.6 TDI Hatchback (5 Kapı) red",
+        "2012 Volkswagen Polo 1.6 TDI Hatchback (5 Kapı)",
+        "2012 Volkswagen Polo 1.6 TDI",
+        "Volkswagen Polo",
+        "Volkswagen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "vw-tiguan",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2020 Volkswagen Tiguan 1.5 TSI SUV white",
+        "2020 Volkswagen Tiguan 1.5 TSI SUV",
+        "2020 Volkswagen Tiguan 1.5 TSI",
+        "Volkswagen Tiguan",
+        "Volkswagen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "toyota-corolla-old",
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2008 Toyota Corolla 1.4 D-4D Sedan silver",
+        "2008 Toyota Corolla 1.4 D-4D Sedan",
+        "2008 Toyota Corolla 1.4 D-4D",
+        "Toyota Corolla",
+        "Toyota"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "toyota-corolla-new",
+      "make": "Toyota",
+      "model": "Corolla",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2020 Toyota Corolla 1.6 Sedan white",
+        "2020 Toyota Corolla 1.6 Sedan",
+        "2020 Toyota Corolla 1.6",
+        "Toyota Corolla",
+        "Toyota"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "toyota-yaris",
+      "make": "Toyota",
+      "model": "Yaris",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 Toyota Yaris 1.4 D-4D Hatchback (5 Kapı) red",
+        "2015 Toyota Yaris 1.4 D-4D Hatchback (5 Kapı)",
+        "2015 Toyota Yaris 1.4 D-4D",
+        "Toyota Yaris",
+        "Toyota"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "toyota-chr",
+      "make": "Toyota",
+      "model": "C-HR",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2019 Toyota C-HR 1.2 SUV orange",
+        "2019 Toyota C-HR 1.2 SUV",
+        "2019 Toyota C-HR 1.2",
+        "Toyota C-HR",
+        "Toyota"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "renault-clio-3",
+      "make": "Renault",
+      "model": "Clio",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2010 Renault Clio 1.5 dCi Hatchback (5 Kapı) grey",
+        "2010 Renault Clio 1.5 dCi Hatchback (5 Kapı)",
+        "2010 Renault Clio 1.5 dCi",
+        "Renault Clio",
+        "Renault"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "renault-clio-4",
+      "make": "Renault",
+      "model": "Clio",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2016 Renault Clio 1.5 dCi Touch Hatchback (5 Kapı) white",
+        "2016 Renault Clio 1.5 dCi Touch Hatchback (5 Kapı)",
+        "2016 Renault Clio 1.5 dCi Touch",
+        "Renault Clio",
+        "Renault"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "renault-clio-5",
+      "make": "Renault",
+      "model": "Clio",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2021 Renault Clio 1.0 TCe Hatchback (5 Kapı) red",
+        "2021 Renault Clio 1.0 TCe Hatchback (5 Kapı)",
+        "2021 Renault Clio 1.0 TCe",
+        "Renault Clio",
+        "Renault"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "renault-megane-2",
+      "make": "Renault",
+      "model": "Megane",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2005 Renault Megane 1.5 dCi Sedan grey",
+        "2005 Renault Megane 1.5 dCi Sedan",
+        "2005 Renault Megane 1.5 dCi",
+        "Renault Megane",
+        "Renault"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "renault-megane-3",
+      "make": "Renault",
+      "model": "Megane",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2012 Renault Megane 1.5 dCi Hatchback (5 Kapı) black",
+        "2012 Renault Megane 1.5 dCi Hatchback (5 Kapı)",
+        "2012 Renault Megane 1.5 dCi",
+        "Renault Megane",
+        "Renault"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "renault-megane-4",
+      "make": "Renault",
+      "model": "Megane",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2019 Renault Megane 1.3 TCe Sedan white",
+        "2019 Renault Megane 1.3 TCe Sedan",
+        "2019 Renault Megane 1.3 TCe",
+        "Renault Megane",
+        "Renault"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "renault-talisman",
+      "make": "Renault",
+      "model": "Talisman",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2018 Renault Talisman 1.5 dCi Sedan grey",
+        "2018 Renault Talisman 1.5 dCi Sedan",
+        "2018 Renault Talisman 1.5 dCi",
+        "Renault Talisman",
+        "Renault"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "renault-captur",
+      "make": "Renault",
+      "model": "Captur",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2020 Renault Captur 1.5 dCi SUV orange",
+        "2020 Renault Captur 1.5 dCi SUV",
+        "2020 Renault Captur 1.5 dCi",
+        "Renault Captur",
+        "Renault"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "peugeot-208-mk1",
+      "make": "Peugeot",
+      "model": "208",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2014 Peugeot 208 1.4 HDi Hatchback (5 Kapı) white",
+        "2014 Peugeot 208 1.4 HDi Hatchback (5 Kapı)",
+        "2014 Peugeot 208 1.4 HDi",
+        "Peugeot 208",
+        "Peugeot"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "peugeot-208-mk2",
+      "make": "Peugeot",
+      "model": "208",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2021 Peugeot 208 1.2 PureTech Hatchback (5 Kapı) blue",
+        "2021 Peugeot 208 1.2 PureTech Hatchback (5 Kapı)",
+        "2021 Peugeot 208 1.2 PureTech",
+        "Peugeot 208",
+        "Peugeot"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "peugeot-308-mk1",
+      "make": "Peugeot",
+      "model": "308",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2010 Peugeot 308 1.6 HDi Hatchback (5 Kapı) grey",
+        "2010 Peugeot 308 1.6 HDi Hatchback (5 Kapı)",
+        "2010 Peugeot 308 1.6 HDi",
+        "Peugeot 308",
+        "Peugeot"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "peugeot-308-mk2",
+      "make": "Peugeot",
+      "model": "308",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 Peugeot 308 1.6 BlueHDi Hatchback (5 Kapı) white",
+        "2015 Peugeot 308 1.6 BlueHDi Hatchback (5 Kapı)",
+        "2015 Peugeot 308 1.6 BlueHDi",
+        "Peugeot 308",
+        "Peugeot"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "peugeot-3008",
+      "make": "Peugeot",
+      "model": "3008",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2018 Peugeot 3008 1.6 BlueHDi SUV black",
+        "2018 Peugeot 3008 1.6 BlueHDi SUV",
+        "2018 Peugeot 3008 1.6 BlueHDi",
+        "Peugeot 3008",
+        "Peugeot"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "peugeot-508",
+      "make": "Peugeot",
+      "model": "508",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2019 Peugeot 508 1.5 BlueHDi Sedan grey",
+        "2019 Peugeot 508 1.5 BlueHDi Sedan",
+        "2019 Peugeot 508 1.5 BlueHDi",
+        "Peugeot 508",
+        "Peugeot"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "citroen-c3",
+      "make": "Citroen",
+      "model": "C3",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 Citroen C3 1.4 HDi Hatchback (5 Kapı) white",
+        "2015 Citroen C3 1.4 HDi Hatchback (5 Kapı)",
+        "2015 Citroen C3 1.4 HDi",
+        "Citroen C3",
+        "Citroen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "citroen-c4",
+      "make": "Citroen",
+      "model": "C4",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2012 Citroen C4 1.6 HDi Hatchback (5 Kapı) grey",
+        "2012 Citroen C4 1.6 HDi Hatchback (5 Kapı)",
+        "2012 Citroen C4 1.6 HDi",
+        "Citroen C4",
+        "Citroen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "citroen-berlingo",
+      "make": "Citroen",
+      "model": "Berlingo",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2018 Citroen Berlingo 1.6 BlueHDi Panelvan white",
+        "2018 Citroen Berlingo 1.6 BlueHDi Panelvan",
+        "2018 Citroen Berlingo 1.6 BlueHDi",
+        "Citroen Berlingo",
+        "Citroen"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "ford-focus-mk2",
+      "make": "Ford",
+      "model": "Focus",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2005 Ford Focus 1.6 TDCi Hatchback (5 Kapı) grey",
+        "2005 Ford Focus 1.6 TDCi Hatchback (5 Kapı)",
+        "2005 Ford Focus 1.6 TDCi",
+        "Ford Focus",
+        "Ford"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "ford-focus-mk4",
+      "make": "Ford",
+      "model": "Focus",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2018 Ford Focus 1.5 TDCi Hatchback (5 Kapı) white",
+        "2018 Ford Focus 1.5 TDCi Hatchback (5 Kapı)",
+        "2018 Ford Focus 1.5 TDCi",
+        "Ford Focus",
+        "Ford"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "ford-fiesta",
+      "make": "Ford",
+      "model": "Fiesta",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 Ford Fiesta 1.5 TDCi Hatchback (5 Kapı) red",
+        "2015 Ford Fiesta 1.5 TDCi Hatchback (5 Kapı)",
+        "2015 Ford Fiesta 1.5 TDCi",
+        "Ford Fiesta",
+        "Ford"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "fiat-egea",
+      "make": "Fiat",
+      "model": "Egea",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2018 Fiat Egea 1.6 Multijet Sedan white",
+        "2018 Fiat Egea 1.6 Multijet Sedan",
+        "2018 Fiat Egea 1.6 Multijet",
+        "Fiat Egea",
+        "Fiat"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "fiat-linea",
+      "make": "Fiat",
+      "model": "Linea",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2012 Fiat Linea 1.3 Multijet Sedan grey",
+        "2012 Fiat Linea 1.3 Multijet Sedan",
+        "2012 Fiat Linea 1.3 Multijet",
+        "Fiat Linea",
+        "Fiat"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "fiat-doblo",
+      "make": "Fiat",
+      "model": "Doblo",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2016 Fiat Doblo 1.6 Multijet Panelvan white",
+        "2016 Fiat Doblo 1.6 Multijet Panelvan",
+        "2016 Fiat Doblo 1.6 Multijet",
+        "Fiat Doblo",
+        "Fiat"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "honda-civic-old",
+      "make": "Honda",
+      "model": "Civic",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2010 Honda Civic 1.6 Sedan grey",
+        "2010 Honda Civic 1.6 Sedan",
+        "2010 Honda Civic 1.6",
+        "Honda Civic",
+        "Honda"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "honda-civic-new",
+      "make": "Honda",
+      "model": "Civic",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2020 Honda Civic 1.5 VTEC Sedan white",
+        "2020 Honda Civic 1.5 VTEC Sedan",
+        "2020 Honda Civic 1.5 VTEC",
+        "Honda Civic",
+        "Honda"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "hyundai-i20",
+      "make": "Hyundai",
+      "model": "i20",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2017 Hyundai i20 1.4 Hatchback (5 Kapı) red",
+        "2017 Hyundai i20 1.4 Hatchback (5 Kapı)",
+        "2017 Hyundai i20 1.4",
+        "Hyundai i20",
+        "Hyundai"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "hyundai-tucson",
+      "make": "Hyundai",
+      "model": "Tucson",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2020 Hyundai Tucson 1.6 CRDi SUV white",
+        "2020 Hyundai Tucson 1.6 CRDi SUV",
+        "2020 Hyundai Tucson 1.6 CRDi",
+        "Hyundai Tucson",
+        "Hyundai"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "kia-sportage",
+      "make": "Kia",
+      "model": "Sportage",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2019 Kia Sportage 1.6 CRDi SUV grey",
+        "2019 Kia Sportage 1.6 CRDi SUV",
+        "2019 Kia Sportage 1.6 CRDi",
+        "Kia Sportage",
+        "Kia"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "kia-rio",
+      "make": "Kia",
+      "model": "Rio",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 Kia Rio 1.4 Sedan white",
+        "2015 Kia Rio 1.4 Sedan",
+        "2015 Kia Rio 1.4",
+        "Kia Rio",
+        "Kia"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "skoda-octavia",
+      "make": "Skoda",
+      "model": "Octavia",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2015 Skoda Octavia 1.6 TDI Sedan grey",
+        "2015 Skoda Octavia 1.6 TDI Sedan",
+        "2015 Skoda Octavia 1.6 TDI",
+        "Skoda Octavia",
+        "Skoda"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "seat-leon",
+      "make": "Seat",
+      "model": "Leon",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2014 Seat Leon 1.6 TDI Hatchback (5 Kapı) white",
+        "2014 Seat Leon 1.6 TDI Hatchback (5 Kapı)",
+        "2014 Seat Leon 1.6 TDI",
+        "Seat Leon",
+        "Seat"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "volvo-s60",
+      "make": "Volvo",
+      "model": "S60",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2016 Volvo S60 D3 Sedan black",
+        "2016 Volvo S60 D3 Sedan",
+        "2016 Volvo S60 D3",
+        "Volvo S60",
+        "Volvo"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "opel-astra",
+      "make": "Opel",
+      "model": "Astra",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2012 Opel Astra 1.6 CDTI Hatchback (5 Kapı) grey",
+        "2012 Opel Astra 1.6 CDTI Hatchback (5 Kapı)",
+        "2012 Opel Astra 1.6 CDTI",
+        "Opel Astra",
+        "Opel"
+      ],
+      "genericCount": 1
+    },
+    {
+      "id": "opel-corsa",
+      "make": "Opel",
+      "model": "Corsa",
+      "generation": null,
+      "generationSource": "unknown(offline-test)",
+      "queryCount": 5,
+      "queries": [
+        "2018 Opel Corsa 1.4 Hatchback (5 Kapı) white",
+        "2018 Opel Corsa 1.4 Hatchback (5 Kapı)",
+        "2018 Opel Corsa 1.4",
+        "Opel Corsa",
+        "Opel"
+      ],
+      "genericCount": 1
+    }
+  ]
+}

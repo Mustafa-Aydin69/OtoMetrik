@@ -1,0 +1,4316 @@
+{
+  "brands": [
+    {
+      "make": "Renault",
+      "count": 33502,
+      "modelCount": 39
+    },
+    {
+      "make": "Fiat",
+      "count": 32868,
+      "modelCount": 31
+    },
+    {
+      "make": "Volkswagen",
+      "count": 29156,
+      "modelCount": 31
+    },
+    {
+      "make": "Ford",
+      "count": 24589,
+      "modelCount": 36
+    },
+    {
+      "make": "Opel",
+      "count": 21124,
+      "modelCount": 32
+    },
+    {
+      "make": "Peugeot",
+      "count": 15381,
+      "modelCount": 34
+    },
+    {
+      "make": "Hyundai",
+      "count": 15260,
+      "modelCount": 31
+    },
+    {
+      "make": "Toyota",
+      "count": 12158,
+      "modelCount": 25
+    },
+    {
+      "make": "BMW",
+      "count": 11229,
+      "modelCount": 16
+    },
+    {
+      "make": "Mercedes - Benz",
+      "count": 10379,
+      "modelCount": 45
+    },
+    {
+      "make": "Citroen",
+      "count": 10130,
+      "modelCount": 30
+    },
+    {
+      "make": "Honda",
+      "count": 9598,
+      "modelCount": 16
+    },
+    {
+      "make": "Skoda",
+      "count": 7958,
+      "modelCount": 15
+    },
+    {
+      "make": "Audi",
+      "count": 7770,
+      "modelCount": 20
+    },
+    {
+      "make": "Seat",
+      "count": 6254,
+      "modelCount": 12
+    },
+    {
+      "make": "Dacia",
+      "count": 6219,
+      "modelCount": 8
+    },
+    {
+      "make": "Nissan",
+      "count": 6133,
+      "modelCount": 29
+    },
+    {
+      "make": "Kia",
+      "count": 4643,
+      "modelCount": 26
+    },
+    {
+      "make": "Chevrolet",
+      "count": 4326,
+      "modelCount": 13
+    },
+    {
+      "make": "Tofaş",
+      "count": 3600,
+      "modelCount": 4
+    },
+    {
+      "make": "Volvo",
+      "count": 2382,
+      "modelCount": 23
+    },
+    {
+      "make": "Mitsubishi",
+      "count": 1477,
+      "modelCount": 14
+    },
+    {
+      "make": "Chery",
+      "count": 1405,
+      "modelCount": 13
+    },
+    {
+      "make": "Land Rover",
+      "count": 1114,
+      "modelCount": 8
+    },
+    {
+      "make": "Mazda",
+      "count": 1039,
+      "modelCount": 21
+    },
+    {
+      "make": "Suzuki",
+      "count": 928,
+      "modelCount": 13
+    },
+    {
+      "make": "Mini",
+      "count": 760,
+      "modelCount": 6
+    },
+    {
+      "make": "Jeep",
+      "count": 750,
+      "modelCount": 8
+    },
+    {
+      "make": "Alfa Romeo",
+      "count": 695,
+      "modelCount": 17
+    },
+    {
+      "make": "Lada",
+      "count": 507,
+      "modelCount": 5
+    },
+    {
+      "make": "Ssangyong",
+      "count": 404,
+      "modelCount": 12
+    },
+    {
+      "make": "Subaru",
+      "count": 349,
+      "modelCount": 10
+    },
+    {
+      "make": "DS Automobiles",
+      "count": 313,
+      "modelCount": 6
+    },
+    {
+      "make": "Cupra",
+      "count": 311,
+      "modelCount": 4
+    },
+    {
+      "make": "Tata",
+      "count": 274,
+      "modelCount": 5
+    },
+    {
+      "make": "MG",
+      "count": 264,
+      "modelCount": 5
+    },
+    {
+      "make": "Porsche",
+      "count": 255,
+      "modelCount": 6
+    },
+    {
+      "make": "Jaguar",
+      "count": 231,
+      "modelCount": 10
+    },
+    {
+      "make": "Isuzu",
+      "count": 218,
+      "modelCount": 2
+    },
+    {
+      "make": "BYD",
+      "count": 207,
+      "modelCount": 2
+    },
+    {
+      "make": "Geely",
+      "count": 206,
+      "modelCount": 4
+    },
+    {
+      "make": "Proton",
+      "count": 166,
+      "modelCount": 11
+    },
+    {
+      "make": "Rover",
+      "count": 166,
+      "modelCount": 14
+    },
+    {
+      "make": "Jaecoo",
+      "count": 137,
+      "modelCount": 1
+    },
+    {
+      "make": "Daewoo",
+      "count": 134,
+      "modelCount": 9
+    },
+    {
+      "make": "Chrysler",
+      "count": 125,
+      "modelCount": 9
+    },
+    {
+      "make": "Daihatsu",
+      "count": 105,
+      "modelCount": 7
+    },
+    {
+      "make": "Lancia",
+      "count": 83,
+      "modelCount": 3
+    },
+    {
+      "make": "TOGG",
+      "count": 62,
+      "modelCount": 2
+    },
+    {
+      "make": "Dodge",
+      "count": 38,
+      "modelCount": 6
+    },
+    {
+      "make": "Infiniti",
+      "count": 37,
+      "modelCount": 8
+    },
+    {
+      "make": "Smart",
+      "count": 37,
+      "modelCount": 2
+    },
+    {
+      "make": "Maserati",
+      "count": 32,
+      "modelCount": 5
+    },
+    {
+      "make": "Saab",
+      "count": 29,
+      "modelCount": 4
+    },
+    {
+      "make": "Lexus",
+      "count": 22,
+      "modelCount": 7
+    },
+    {
+      "make": "Cadillac",
+      "count": 21,
+      "modelCount": 6
+    },
+    {
+      "make": "Ikco",
+      "count": 13,
+      "modelCount": 1
+    },
+    {
+      "make": "Iveco - Otoyol",
+      "count": 7,
+      "modelCount": 1
+    },
+    {
+      "make": "Pontiac",
+      "count": 4,
+      "modelCount": 1
+    },
+    {
+      "make": "Bentley",
+      "count": 2,
+      "modelCount": 1
+    },
+    {
+      "make": "Lincoln",
+      "count": 2,
+      "modelCount": 2
+    },
+    {
+      "make": "Aston Martin",
+      "count": 1,
+      "modelCount": 1
+    },
+    {
+      "make": "Buick",
+      "count": 1,
+      "modelCount": 1
+    },
+    {
+      "make": "Lotus",
+      "count": 1,
+      "modelCount": 1
+    },
+    {
+      "make": "Maxus",
+      "count": 1,
+      "modelCount": 1
+    },
+    {
+      "make": "Mercury",
+      "count": 1,
+      "modelCount": 1
+    },
+    {
+      "make": "Rolls-Royce",
+      "count": 1,
+      "modelCount": 1
+    },
+    {
+      "make": "Tesla",
+      "count": 1,
+      "modelCount": 1
+    }
+  ],
+  "models": [
+    {
+      "make": "Renault",
+      "model": "Clio",
+      "count": 10175
+    },
+    {
+      "make": "Renault",
+      "model": "Megane",
+      "count": 9243
+    },
+    {
+      "make": "Opel",
+      "model": "Astra",
+      "count": 8940
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea",
+      "count": 8668
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "count": 8406
+    },
+    {
+      "make": "Ford",
+      "model": "Focus",
+      "count": 8337
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "count": 7462
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat",
+      "count": 6548
+    },
+    {
+      "make": "Opel",
+      "model": "Corsa",
+      "count": 5579
+    },
+    {
+      "make": "Fiat",
+      "model": "Doblo",
+      "count": 5500
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Polo",
+      "count": 5157
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "count": 5002
+    },
+    {
+      "make": "BMW",
+      "model": "3 Serisi",
+      "count": 4594
+    },
+    {
+      "make": "Fiat",
+      "model": "Fiorino",
+      "count": 4166
+    },
+    {
+      "make": "Ford",
+      "model": "Tourneo Courier",
+      "count": 3935
+    },
+    {
+      "make": "Ford",
+      "model": "Fiesta",
+      "count": 3898
+    },
+    {
+      "make": "Fiat",
+      "model": "Linea",
+      "count": 3778
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20",
+      "count": 3740
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "C",
+      "count": 3355
+    },
+    {
+      "make": "Audi",
+      "model": "A3",
+      "count": 3250
+    },
+    {
+      "make": "BMW",
+      "model": "5 Serisi",
+      "count": 3173
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "count": 3085
+    },
+    {
+      "make": "Seat",
+      "model": "Leon",
+      "count": 3070
+    },
+    {
+      "make": "Renault",
+      "model": "Fluence",
+      "count": 2771
+    },
+    {
+      "make": "Renault",
+      "model": "Symbol",
+      "count": 2718
+    },
+    {
+      "make": "Nissan",
+      "model": "Qashqai",
+      "count": 2504
+    },
+    {
+      "make": "Skoda",
+      "model": "Octavia",
+      "count": 2468
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "E",
+      "count": 2324
+    },
+    {
+      "make": "Dacia",
+      "model": "Sandero",
+      "count": 2100
+    },
+    {
+      "make": "Skoda",
+      "model": "SuperB",
+      "count": 2095
+    },
+    {
+      "make": "Hyundai",
+      "model": "Accent",
+      "count": 1990
+    },
+    {
+      "make": "Opel",
+      "model": "Vectra",
+      "count": 1939
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Caddy",
+      "count": 1925
+    },
+    {
+      "make": "Audi",
+      "model": "A4",
+      "count": 1905
+    },
+    {
+      "make": "Tofaş",
+      "model": "Doğan",
+      "count": 1746
+    },
+    {
+      "make": "Fiat",
+      "model": "Palio",
+      "count": 1736
+    },
+    {
+      "make": "Citroen",
+      "model": "C3",
+      "count": 1717
+    },
+    {
+      "make": "Dacia",
+      "model": "Duster",
+      "count": 1712
+    },
+    {
+      "make": "Hyundai",
+      "model": "Accent Era",
+      "count": 1702
+    },
+    {
+      "make": "Peugeot",
+      "model": "301",
+      "count": 1671
+    },
+    {
+      "make": "Citroen",
+      "model": "Berlingo",
+      "count": 1645
+    },
+    {
+      "make": "Peugeot",
+      "model": "206",
+      "count": 1625
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Transporter",
+      "count": 1598
+    },
+    {
+      "make": "Citroen",
+      "model": "C4",
+      "count": 1576
+    },
+    {
+      "make": "Peugeot",
+      "model": "3008",
+      "count": 1566
+    },
+    {
+      "make": "Seat",
+      "model": "Ibiza",
+      "count": 1563
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "count": 1540
+    },
+    {
+      "make": "Fiat",
+      "model": "Punto",
+      "count": 1481
+    },
+    {
+      "make": "Hyundai",
+      "model": "Getz",
+      "count": 1441
+    },
+    {
+      "make": "BMW",
+      "model": "1 Serisi",
+      "count": 1438
+    },
+    {
+      "make": "Renault",
+      "model": "R 9",
+      "count": 1435
+    },
+    {
+      "make": "Ford",
+      "model": "Tourneo Connect",
+      "count": 1374
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "count": 1366
+    },
+    {
+      "make": "Fiat",
+      "model": "Albea",
+      "count": 1362
+    },
+    {
+      "make": "Peugeot",
+      "model": "Partner",
+      "count": 1330
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea Cross",
+      "count": 1320
+    },
+    {
+      "make": "Opel",
+      "model": "Insignia",
+      "count": 1303
+    },
+    {
+      "make": "Tofaş",
+      "model": "Şahin",
+      "count": 1268
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "count": 1249
+    },
+    {
+      "make": "Nissan",
+      "model": "Micra",
+      "count": 1237
+    },
+    {
+      "make": "Hyundai",
+      "model": "Accent Blue",
+      "count": 1236
+    },
+    {
+      "make": "Citroen",
+      "model": "C-Elysée",
+      "count": 1230
+    },
+    {
+      "make": "Peugeot",
+      "model": "307",
+      "count": 1222
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Aveo",
+      "count": 1221
+    },
+    {
+      "make": "Kia",
+      "model": "Sportage",
+      "count": 1203
+    },
+    {
+      "make": "Audi",
+      "model": "A6",
+      "count": 1173
+    },
+    {
+      "make": "Ford",
+      "model": "Transit",
+      "count": 1133
+    },
+    {
+      "make": "Peugeot",
+      "model": "2008",
+      "count": 1112
+    },
+    {
+      "make": "Toyota",
+      "model": "Auris",
+      "count": 1103
+    },
+    {
+      "make": "Kia",
+      "model": "Rio",
+      "count": 1086
+    },
+    {
+      "make": "Peugeot",
+      "model": "308",
+      "count": 1083
+    },
+    {
+      "make": "Renault",
+      "model": "R 19",
+      "count": 1081
+    },
+    {
+      "make": "Dacia",
+      "model": "Logan",
+      "count": 1010
+    },
+    {
+      "make": "Skoda",
+      "model": "Fabia",
+      "count": 996
+    },
+    {
+      "make": "Peugeot",
+      "model": "207",
+      "count": 988
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "A",
+      "count": 886
+    },
+    {
+      "make": "Opel",
+      "model": "Combo",
+      "count": 876
+    },
+    {
+      "make": "Renault",
+      "model": "Kangoo Multix",
+      "count": 874
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "Vito",
+      "count": 859
+    },
+    {
+      "make": "Peugeot",
+      "model": "208",
+      "count": 858
+    },
+    {
+      "make": "Fiat",
+      "model": "Tipo",
+      "count": 801
+    },
+    {
+      "make": "Fiat",
+      "model": "Tempra",
+      "count": 798
+    },
+    {
+      "make": "Hyundai",
+      "model": "i30",
+      "count": 782
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris",
+      "count": 775
+    },
+    {
+      "make": "Ford",
+      "model": "Mondeo",
+      "count": 769
+    },
+    {
+      "make": "Peugeot",
+      "model": "Rifter",
+      "count": 765
+    },
+    {
+      "make": "Fiat",
+      "model": "Uno",
+      "count": 755
+    },
+    {
+      "make": "Citroen",
+      "model": "C-Elysee",
+      "count": 743
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "count": 735
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "CLA",
+      "count": 733
+    },
+    {
+      "make": "Volvo",
+      "model": "S60",
+      "count": 729
+    },
+    {
+      "make": "Peugeot",
+      "model": "508",
+      "count": 722
+    },
+    {
+      "make": "Renault",
+      "model": "R 12",
+      "count": 686
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Bora",
+      "count": 677
+    },
+    {
+      "make": "Volkswagen",
+      "model": "T-Roc",
+      "count": 675
+    },
+    {
+      "make": "Ford",
+      "model": "Escort",
+      "count": 670
+    },
+    {
+      "make": "Nissan",
+      "model": "Juke",
+      "count": 636
+    },
+    {
+      "make": "Ford",
+      "model": "Kuga",
+      "count": 621
+    },
+    {
+      "make": "Opel",
+      "model": "Mokka",
+      "count": 615
+    },
+    {
+      "make": "Ford",
+      "model": "C-Max",
+      "count": 609
+    },
+    {
+      "make": "Renault",
+      "model": "Kangoo",
+      "count": 609
+    },
+    {
+      "make": "Ford",
+      "model": "Ranger",
+      "count": 597
+    },
+    {
+      "make": "Kia",
+      "model": "Ceed",
+      "count": 590
+    },
+    {
+      "make": "Honda",
+      "model": "Jazz",
+      "count": 581
+    },
+    {
+      "make": "Citroen",
+      "model": "C5",
+      "count": 562
+    },
+    {
+      "make": "Honda",
+      "model": "City",
+      "count": 555
+    },
+    {
+      "make": "Renault",
+      "model": "Laguna",
+      "count": 553
+    },
+    {
+      "make": "Ford",
+      "model": "Transit Connect",
+      "count": 552
+    },
+    {
+      "make": "Audi",
+      "model": "A5",
+      "count": 542
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Captiva",
+      "count": 541
+    },
+    {
+      "make": "Seat",
+      "model": "Cordoba",
+      "count": 535
+    },
+    {
+      "make": "Tofaş",
+      "model": "Kartal",
+      "count": 534
+    },
+    {
+      "make": "Hyundai",
+      "model": "Bayon",
+      "count": 526
+    },
+    {
+      "make": "Honda",
+      "model": "CR-V",
+      "count": 518
+    },
+    {
+      "make": "Kia",
+      "model": "Cerato",
+      "count": 502
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Kalos",
+      "count": 501
+    },
+    {
+      "make": "Citroen",
+      "model": "C5 Aircross",
+      "count": 501
+    },
+    {
+      "make": "Fiat",
+      "model": "Marea",
+      "count": 501
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "L 200",
+      "count": 501
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "count": 490
+    },
+    {
+      "make": "Citroen",
+      "model": "C4 X",
+      "count": 482
+    },
+    {
+      "make": "Ford",
+      "model": "Transit Custom",
+      "count": 482
+    },
+    {
+      "make": "Seat",
+      "model": "Toledo",
+      "count": 475
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Lacetti",
+      "count": 465
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Taigo",
+      "count": 465
+    },
+    {
+      "make": "Toyota",
+      "model": "Hilux",
+      "count": 457
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Caravelle",
+      "count": 453
+    },
+    {
+      "make": "Renault",
+      "model": "Captur",
+      "count": 444
+    },
+    {
+      "make": "Skoda",
+      "model": "Scala",
+      "count": 442
+    },
+    {
+      "make": "Volvo",
+      "model": "S40",
+      "count": 439
+    },
+    {
+      "make": "BMW",
+      "model": "4 Serisi",
+      "count": 433
+    },
+    {
+      "make": "Fiat",
+      "model": "Siena",
+      "count": 425
+    },
+    {
+      "make": "Mini",
+      "model": "Cooper",
+      "count": 422
+    },
+    {
+      "make": "Volkswagen",
+      "model": "VW CC",
+      "count": 415
+    },
+    {
+      "make": "Ford",
+      "model": "Transit Courier",
+      "count": 409
+    },
+    {
+      "make": "Dacia",
+      "model": "Sandero Stepway",
+      "count": 404
+    },
+    {
+      "make": "Dacia",
+      "model": "Dokker",
+      "count": 402
+    },
+    {
+      "make": "Nissan",
+      "model": "Primera",
+      "count": 397
+    },
+    {
+      "make": "Citroen",
+      "model": "Nemo",
+      "count": 394
+    },
+    {
+      "make": "Peugeot",
+      "model": "408",
+      "count": 394
+    },
+    {
+      "make": "Hyundai",
+      "model": "i10",
+      "count": 392
+    },
+    {
+      "make": "Mazda",
+      "model": "3",
+      "count": 389
+    },
+    {
+      "make": "Kia",
+      "model": "Picanto",
+      "count": 388
+    },
+    {
+      "make": "Peugeot",
+      "model": "407",
+      "count": 387
+    },
+    {
+      "make": "Toyota",
+      "model": "Avensis",
+      "count": 382
+    },
+    {
+      "make": "BMW",
+      "model": "X1",
+      "count": 379
+    },
+    {
+      "make": "BMW",
+      "model": "2 Serisi",
+      "count": 370
+    },
+    {
+      "make": "Opel",
+      "model": "Crossland",
+      "count": 366
+    },
+    {
+      "make": "Peugeot",
+      "model": "Bipper",
+      "count": 364
+    },
+    {
+      "make": "Suzuki",
+      "model": "Swift",
+      "count": 351
+    },
+    {
+      "make": "Skoda",
+      "model": "Rapid",
+      "count": 350
+    },
+    {
+      "make": "Dacia",
+      "model": "Lodgy",
+      "count": 348
+    },
+    {
+      "make": "Citroen",
+      "model": "C3 Aircross",
+      "count": 333
+    },
+    {
+      "make": "Land Rover",
+      "model": "Range Rover Sport",
+      "count": 333
+    },
+    {
+      "make": "Renault",
+      "model": "Kadjar",
+      "count": 329
+    },
+    {
+      "make": "Fiat",
+      "model": "500 Ailesi",
+      "count": 318
+    },
+    {
+      "make": "Nissan",
+      "model": "X-Trail",
+      "count": 315
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo 7 Pro",
+      "count": 310
+    },
+    {
+      "make": "Mazda",
+      "model": "323",
+      "count": 310
+    },
+    {
+      "make": "Renault",
+      "model": "Scenic",
+      "count": 308
+    },
+    {
+      "make": "Hyundai",
+      "model": "ix35",
+      "count": 300
+    },
+    {
+      "make": "Jeep",
+      "model": "Renegade",
+      "count": 294
+    },
+    {
+      "make": "Toyota",
+      "model": "C-HR",
+      "count": 292
+    },
+    {
+      "make": "Skoda",
+      "model": "Felicia",
+      "count": 291
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "B",
+      "count": 278
+    },
+    {
+      "make": "Ford",
+      "model": "Fusion",
+      "count": 277
+    },
+    {
+      "make": "Kia",
+      "model": "Stonic",
+      "count": 277
+    },
+    {
+      "make": "Renault",
+      "model": "Taliant",
+      "count": 277
+    },
+    {
+      "make": "Fiat",
+      "model": "Ducato",
+      "count": 275
+    },
+    {
+      "make": "Peugeot",
+      "model": "206+",
+      "count": 274
+    },
+    {
+      "make": "Skoda",
+      "model": "Favorit",
+      "count": 271
+    },
+    {
+      "make": "Nissan",
+      "model": "Almera",
+      "count": 265
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "count": 264
+    },
+    {
+      "make": "Ford",
+      "model": "Puma",
+      "count": 263
+    },
+    {
+      "make": "Lada",
+      "model": "Samara",
+      "count": 263
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "S",
+      "count": 262
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Lancer",
+      "count": 261
+    },
+    {
+      "make": "BMW",
+      "model": "X5",
+      "count": 259
+    },
+    {
+      "make": "Skoda",
+      "model": "Kodiaq",
+      "count": 258
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat Variant",
+      "count": 258
+    },
+    {
+      "make": "Skoda",
+      "model": "Kamiq",
+      "count": 252
+    },
+    {
+      "make": "Opel",
+      "model": "Combo Life",
+      "count": 250
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "200",
+      "count": 248
+    },
+    {
+      "make": "Mini",
+      "model": "Countryman",
+      "count": 247
+    },
+    {
+      "make": "Peugeot",
+      "model": "306",
+      "count": 246
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "Giulietta",
+      "count": 244
+    },
+    {
+      "make": "Chery",
+      "model": "Omoda 5",
+      "count": 243
+    },
+    {
+      "make": "Kia",
+      "model": "Sorento",
+      "count": 238
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Scirocco",
+      "count": 238
+    },
+    {
+      "make": "Opel",
+      "model": "Meriva",
+      "count": 235
+    },
+    {
+      "make": "Renault",
+      "model": "Kangoo Express",
+      "count": 235
+    },
+    {
+      "make": "Seat",
+      "model": "Arona",
+      "count": 235
+    },
+    {
+      "make": "Fiat",
+      "model": "Brava",
+      "count": 231
+    },
+    {
+      "make": "Suzuki",
+      "model": "Vitara",
+      "count": 231
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo 8 Pro",
+      "count": 228
+    },
+    {
+      "make": "Nissan",
+      "model": "Navara",
+      "count": 226
+    },
+    {
+      "make": "Opel",
+      "model": "Grandland",
+      "count": 226
+    },
+    {
+      "make": "Peugeot",
+      "model": "106",
+      "count": 226
+    },
+    {
+      "make": "Toyota",
+      "model": "Proace City",
+      "count": 226
+    },
+    {
+      "make": "Lada",
+      "model": "Vega",
+      "count": 225
+    },
+    {
+      "make": "BMW",
+      "model": "X3",
+      "count": 224
+    },
+    {
+      "make": "Skoda",
+      "model": "Karoq",
+      "count": 224
+    },
+    {
+      "make": "Audi",
+      "model": "Q2",
+      "count": 222
+    },
+    {
+      "make": "Renault",
+      "model": "Master",
+      "count": 219
+    },
+    {
+      "make": "Land Rover",
+      "model": "Freelander",
+      "count": 218
+    },
+    {
+      "make": "Renault",
+      "model": "Trafic",
+      "count": 218
+    },
+    {
+      "make": "Seat",
+      "model": "Ateca",
+      "count": 218
+    },
+    {
+      "make": "Isuzu",
+      "model": "D-Max",
+      "count": 217
+    },
+    {
+      "make": "Volvo",
+      "model": "S90",
+      "count": 217
+    },
+    {
+      "make": "Nissan",
+      "model": "Note",
+      "count": 208
+    },
+    {
+      "make": "Volvo",
+      "model": "V40",
+      "count": 207
+    },
+    {
+      "make": "Volkswagen",
+      "model": "T-Cross",
+      "count": 205
+    },
+    {
+      "make": "BYD",
+      "model": "Seal U DM-i",
+      "count": 204
+    },
+    {
+      "make": "Peugeot",
+      "model": "5008",
+      "count": 200
+    },
+    {
+      "make": "Opel",
+      "model": "Grandland X",
+      "count": 196
+    },
+    {
+      "make": "Renault",
+      "model": "Austral",
+      "count": 190
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo 8 Pro Max",
+      "count": 189
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Carisma",
+      "count": 187
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla Cross",
+      "count": 186
+    },
+    {
+      "make": "Hyundai",
+      "model": "H 100",
+      "count": 183
+    },
+    {
+      "make": "Honda",
+      "model": "HR-V",
+      "count": 181
+    },
+    {
+      "make": "Ford",
+      "model": "Tourneo Custom",
+      "count": 176
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "L 300",
+      "count": 175
+    },
+    {
+      "make": "Jeep",
+      "model": "Compass",
+      "count": 174
+    },
+    {
+      "make": "Volvo",
+      "model": "S80",
+      "count": 167
+    },
+    {
+      "make": "Cupra",
+      "model": "Formentor",
+      "count": 165
+    },
+    {
+      "make": "Fiat",
+      "model": "Bravo",
+      "count": 165
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "GLA",
+      "count": 164
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20 Troy",
+      "count": 162
+    },
+    {
+      "make": "Land Rover",
+      "model": "Range Rover",
+      "count": 158
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Colt",
+      "count": 158
+    },
+    {
+      "make": "Hyundai",
+      "model": "Kona",
+      "count": 157
+    },
+    {
+      "make": "Volvo",
+      "model": "XC60",
+      "count": 155
+    },
+    {
+      "make": "MG",
+      "model": "HS",
+      "count": 154
+    },
+    {
+      "make": "Land Rover",
+      "model": "Range Rover Evoque",
+      "count": 151
+    },
+    {
+      "make": "Dacia",
+      "model": "Solenza",
+      "count": 149
+    },
+    {
+      "make": "Audi",
+      "model": "Q5",
+      "count": 148
+    },
+    {
+      "make": "BMW",
+      "model": "7 Serisi",
+      "count": 147
+    },
+    {
+      "make": "Jeep",
+      "model": "Grand Cherokee",
+      "count": 147
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "190",
+      "count": 145
+    },
+    {
+      "make": "Volvo",
+      "model": "XC90",
+      "count": 141
+    },
+    {
+      "make": "Porsche",
+      "model": "Cayenne",
+      "count": 140
+    },
+    {
+      "make": "Renault",
+      "model": "Latitude",
+      "count": 140
+    },
+    {
+      "make": "Citroen",
+      "model": "Saxo",
+      "count": 138
+    },
+    {
+      "make": "Citroen",
+      "model": "Xsara",
+      "count": 138
+    },
+    {
+      "make": "Jaecoo",
+      "model": "J7",
+      "count": 137
+    },
+    {
+      "make": "Renault",
+      "model": "Duster",
+      "count": 136
+    },
+    {
+      "make": "Renault",
+      "model": "R 11",
+      "count": 136
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Musso Grand",
+      "count": 136
+    },
+    {
+      "make": "DS Automobiles",
+      "model": "DS4",
+      "count": 135
+    },
+    {
+      "make": "Renault",
+      "model": "Express Combi",
+      "count": 133
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "156",
+      "count": 131
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "GLB",
+      "count": 130
+    },
+    {
+      "make": "Peugeot",
+      "model": "406",
+      "count": 130
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo 7 Pro Max",
+      "count": 128
+    },
+    {
+      "make": "Hyundai",
+      "model": "Starex",
+      "count": 128
+    },
+    {
+      "make": "Mazda",
+      "model": "626",
+      "count": 126
+    },
+    {
+      "make": "Ford",
+      "model": "Taunus",
+      "count": 124
+    },
+    {
+      "make": "Audi",
+      "model": "Q7",
+      "count": 123
+    },
+    {
+      "make": "Cupra",
+      "model": "Leon",
+      "count": 121
+    },
+    {
+      "make": "Skoda",
+      "model": "Forman",
+      "count": 121
+    },
+    {
+      "make": "Citroen",
+      "model": "C4 Cactus",
+      "count": 119
+    },
+    {
+      "make": "Citroen",
+      "model": "C4 Picasso",
+      "count": 114
+    },
+    {
+      "make": "Ford",
+      "model": "EcoSport",
+      "count": 114
+    },
+    {
+      "make": "Renault",
+      "model": "Talisman",
+      "count": 114
+    },
+    {
+      "make": "Skoda",
+      "model": "Yeti",
+      "count": 113
+    },
+    {
+      "make": "Fiat",
+      "model": "Scudo",
+      "count": 110
+    },
+    {
+      "make": "Opel",
+      "model": "Zafira",
+      "count": 110
+    },
+    {
+      "make": "Fiat",
+      "model": "Stilo",
+      "count": 109
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "CLS",
+      "count": 108
+    },
+    {
+      "make": "Seat",
+      "model": "Altea",
+      "count": 106
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "147",
+      "count": 105
+    },
+    {
+      "make": "Hyundai",
+      "model": "Excel",
+      "count": 105
+    },
+    {
+      "make": "Nissan",
+      "model": "Skystar",
+      "count": 105
+    },
+    {
+      "make": "Volvo",
+      "model": "XC40",
+      "count": 105
+    },
+    {
+      "make": "MG",
+      "model": "ZS",
+      "count": 103
+    },
+    {
+      "make": "Toyota",
+      "model": "Verso",
+      "count": 103
+    },
+    {
+      "make": "Citroen",
+      "model": "C4 Grand Picasso",
+      "count": 102
+    },
+    {
+      "make": "Hyundai",
+      "model": "Matrix",
+      "count": 101
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "Viano",
+      "count": 101
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Spark",
+      "count": 100
+    },
+    {
+      "make": "Subaru",
+      "model": "Impreza",
+      "count": 100
+    },
+    {
+      "make": "Opel",
+      "model": "Vivaro",
+      "count": 99
+    },
+    {
+      "make": "Fiat",
+      "model": "Panda",
+      "count": 98
+    },
+    {
+      "make": "Geely",
+      "model": "Emgrand",
+      "count": 98
+    },
+    {
+      "make": "Dacia",
+      "model": "Jogger",
+      "count": 94
+    },
+    {
+      "make": "DS Automobiles",
+      "model": "DS 7 Crossback",
+      "count": 93
+    },
+    {
+      "make": "Porsche",
+      "model": "Panamera",
+      "count": 92
+    },
+    {
+      "make": "Tata",
+      "model": "Indigo",
+      "count": 92
+    },
+    {
+      "make": "Subaru",
+      "model": "XV",
+      "count": 91
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Beetle",
+      "count": 91
+    },
+    {
+      "make": "Audi",
+      "model": "Q3",
+      "count": 90
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "ML",
+      "count": 90
+    },
+    {
+      "make": "Opel",
+      "model": "Crossland X",
+      "count": 90
+    },
+    {
+      "make": "Tata",
+      "model": "Indica",
+      "count": 89
+    },
+    {
+      "make": "Land Rover",
+      "model": "Discovery",
+      "count": 88
+    },
+    {
+      "make": "Subaru",
+      "model": "Forester",
+      "count": 87
+    },
+    {
+      "make": "Renault",
+      "model": "Express Van",
+      "count": 86
+    },
+    {
+      "make": "Jeep",
+      "model": "Cherokee",
+      "count": 84
+    },
+    {
+      "make": "Audi",
+      "model": "A1",
+      "count": 83
+    },
+    {
+      "make": "Kia",
+      "model": "Sephia",
+      "count": 80
+    },
+    {
+      "make": "Opel",
+      "model": "Mokka X",
+      "count": 79
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo",
+      "count": 77
+    },
+    {
+      "make": "Citroen",
+      "model": "Jumpy",
+      "count": 77
+    },
+    {
+      "make": "Hyundai",
+      "model": "Santa Fe",
+      "count": 74
+    },
+    {
+      "make": "Peugeot",
+      "model": "107",
+      "count": 74
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "CLK",
+      "count": 73
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Space Star",
+      "count": 72
+    },
+    {
+      "make": "Renault",
+      "model": "Twingo",
+      "count": 72
+    },
+    {
+      "make": "Fiat",
+      "model": "Palio Van",
+      "count": 71
+    },
+    {
+      "make": "BMW",
+      "model": "X6",
+      "count": 70
+    },
+    {
+      "make": "Fiat",
+      "model": "500 X",
+      "count": 70
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "X",
+      "count": 70
+    },
+    {
+      "make": "Chrysler",
+      "model": "300 C",
+      "count": 69
+    },
+    {
+      "make": "Audi",
+      "model": "Q3 Sportback",
+      "count": 67
+    },
+    {
+      "make": "Renault",
+      "model": "Modus",
+      "count": 67
+    },
+    {
+      "make": "Volvo",
+      "model": "V40 Cross Country",
+      "count": 66
+    },
+    {
+      "make": "Ford",
+      "model": "B-Max",
+      "count": 65
+    },
+    {
+      "make": "Suzuki",
+      "model": "SX4",
+      "count": 65
+    },
+    {
+      "make": "Land Rover",
+      "model": "Discovery Sport",
+      "count": 64
+    },
+    {
+      "make": "Chery",
+      "model": "Omoda 5 Pro",
+      "count": 62
+    },
+    {
+      "make": "Jaguar",
+      "model": "XF",
+      "count": 62
+    },
+    {
+      "make": "Skoda",
+      "model": "Roomster",
+      "count": 62
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Crafter",
+      "count": 62
+    },
+    {
+      "make": "Opel",
+      "model": "Zafira Life",
+      "count": 60
+    },
+    {
+      "make": "Citroen",
+      "model": "C1",
+      "count": 59
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "Sprinter",
+      "count": 59
+    },
+    {
+      "make": "BMW",
+      "model": "M Serisi",
+      "count": 58
+    },
+    {
+      "make": "Opel",
+      "model": "Frontera",
+      "count": 58
+    },
+    {
+      "make": "Citroen",
+      "model": "C2",
+      "count": 57
+    },
+    {
+      "make": "Jaguar",
+      "model": "X-Type",
+      "count": 57
+    },
+    {
+      "make": "Peugeot",
+      "model": "Boxer",
+      "count": 57
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "Tonale",
+      "count": 56
+    },
+    {
+      "make": "Audi",
+      "model": "A8",
+      "count": 56
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Rezzo",
+      "count": 56
+    },
+    {
+      "make": "TOGG",
+      "model": "T10F",
+      "count": 56
+    },
+    {
+      "make": "Tata",
+      "model": "Marina",
+      "count": 56
+    },
+    {
+      "make": "Hyundai",
+      "model": "Sonata",
+      "count": 55
+    },
+    {
+      "make": "Land Rover",
+      "model": "Range Rover Velar",
+      "count": 55
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "ASX",
+      "count": 55
+    },
+    {
+      "make": "Renault",
+      "model": "Koleos",
+      "count": 55
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Arteon",
+      "count": 55
+    },
+    {
+      "make": "Nissan",
+      "model": "Sunny",
+      "count": 54
+    },
+    {
+      "make": "Chery",
+      "model": "Alia",
+      "count": 53
+    },
+    {
+      "make": "Mazda",
+      "model": "6",
+      "count": 53
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "EQB",
+      "count": 53
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "300",
+      "count": 52
+    },
+    {
+      "make": "Proton",
+      "model": "415",
+      "count": 52
+    },
+    {
+      "make": "Renault",
+      "model": "R 21",
+      "count": 52
+    },
+    {
+      "make": "Tofaş",
+      "model": "Murat",
+      "count": 52
+    },
+    {
+      "make": "Lancia",
+      "model": "Delta",
+      "count": 51
+    },
+    {
+      "make": "Suzuki",
+      "model": "Grand Vitara",
+      "count": 51
+    },
+    {
+      "make": "Chery",
+      "model": "Kimo",
+      "count": 50
+    },
+    {
+      "make": "Hyundai",
+      "model": "Atos",
+      "count": 50
+    },
+    {
+      "make": "Renault",
+      "model": "Grand Scenic",
+      "count": 50
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "230",
+      "count": 49
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Korando Sports",
+      "count": 49
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Tayron",
+      "count": 49
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Touareg",
+      "count": 49
+    },
+    {
+      "make": "Geely",
+      "model": "Familia",
+      "count": 48
+    },
+    {
+      "make": "Suzuki",
+      "model": "Alto",
+      "count": 48
+    },
+    {
+      "make": "Land Rover",
+      "model": "Defender",
+      "count": 47
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "GLK",
+      "count": 47
+    },
+    {
+      "make": "Proton",
+      "model": "416",
+      "count": 47
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "159",
+      "count": 46
+    },
+    {
+      "make": "Peugeot",
+      "model": "RCZ",
+      "count": 46
+    },
+    {
+      "make": "Daewoo",
+      "model": "Lanos",
+      "count": 44
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Kyron",
+      "count": 44
+    },
+    {
+      "make": "Nissan",
+      "model": "Pulsar",
+      "count": 43
+    },
+    {
+      "make": "Nissan",
+      "model": "Qashqai+2",
+      "count": 43
+    },
+    {
+      "make": "Ford",
+      "model": "Ka",
+      "count": 42
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20 Active",
+      "count": 42
+    },
+    {
+      "make": "Kia",
+      "model": "Pride",
+      "count": 42
+    },
+    {
+      "make": "Toyota",
+      "model": "RAV4",
+      "count": 42
+    },
+    {
+      "make": "Suzuki",
+      "model": "S-Cross",
+      "count": 41
+    },
+    {
+      "make": "Toyota",
+      "model": "Corona",
+      "count": 41
+    },
+    {
+      "make": "Kia",
+      "model": "Venga",
+      "count": 40
+    },
+    {
+      "make": "Mini",
+      "model": "Cooper S",
+      "count": 40
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Touran",
+      "count": 40
+    },
+    {
+      "make": "Ford",
+      "model": "Fiesta Van",
+      "count": 39
+    },
+    {
+      "make": "Hyundai",
+      "model": "Staria",
+      "count": 39
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "GLC",
+      "count": 39
+    },
+    {
+      "make": "Rover",
+      "model": "416",
+      "count": 39
+    },
+    {
+      "make": "Rover",
+      "model": "216",
+      "count": 38
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Torres",
+      "count": 38
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Epica",
+      "count": 37
+    },
+    {
+      "make": "Kia",
+      "model": "XCeed",
+      "count": 37
+    },
+    {
+      "make": "Mazda",
+      "model": "2",
+      "count": 37
+    },
+    {
+      "make": "Kia",
+      "model": "Pro Ceed",
+      "count": 36
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo 8",
+      "count": 35
+    },
+    {
+      "make": "Geely",
+      "model": "Echo",
+      "count": 35
+    },
+    {
+      "make": "Jaguar",
+      "model": "XE",
+      "count": 35
+    },
+    {
+      "make": "Opel",
+      "model": "Antara",
+      "count": 35
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Korando",
+      "count": 35
+    },
+    {
+      "make": "Citroen",
+      "model": "C3 Picasso",
+      "count": 33
+    },
+    {
+      "make": "DS Automobiles",
+      "model": "DS9",
+      "count": 33
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Sirion",
+      "count": 33
+    },
+    {
+      "make": "Fiat",
+      "model": "Idea",
+      "count": 33
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "EQE",
+      "count": 33
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "Vaneo",
+      "count": 33
+    },
+    {
+      "make": "Suzuki",
+      "model": "Jimny",
+      "count": 33
+    },
+    {
+      "make": "Jaguar",
+      "model": "XJ",
+      "count": 32
+    },
+    {
+      "make": "Nissan",
+      "model": "Terrano",
+      "count": 32
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Actyon Sports",
+      "count": 32
+    },
+    {
+      "make": "Tata",
+      "model": "Vista",
+      "count": 32
+    },
+    {
+      "make": "Toyota",
+      "model": "Carina",
+      "count": 32
+    },
+    {
+      "make": "Volvo",
+      "model": "V90 Cross Country",
+      "count": 32
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "146",
+      "count": 30
+    },
+    {
+      "make": "Suzuki",
+      "model": "Maruti",
+      "count": 30
+    },
+    {
+      "make": "Fiat",
+      "model": "Freemont",
+      "count": 29
+    },
+    {
+      "make": "Renault",
+      "model": "Trafic Multix",
+      "count": 29
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Tiguan All Space",
+      "count": 29
+    },
+    {
+      "make": "Audi",
+      "model": "S",
+      "count": 28
+    },
+    {
+      "make": "Citroen",
+      "model": "AMİ",
+      "count": 28
+    },
+    {
+      "make": "Daewoo",
+      "model": "Nexia",
+      "count": 28
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "GL",
+      "count": 28
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris Cross",
+      "count": 28
+    },
+    {
+      "make": "BMW",
+      "model": "X2",
+      "count": 27
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Cuore",
+      "count": 27
+    },
+    {
+      "make": "Rover",
+      "model": "414",
+      "count": 27
+    },
+    {
+      "make": "Citroen",
+      "model": "Jumper",
+      "count": 26
+    },
+    {
+      "make": "Fiat",
+      "model": "Ulysse",
+      "count": 26
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20 N",
+      "count": 26
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-3",
+      "count": 26
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "250",
+      "count": 26
+    },
+    {
+      "make": "Opel",
+      "model": "Omega",
+      "count": 26
+    },
+    {
+      "make": "Proton",
+      "model": "Gen 2",
+      "count": 26
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Rexton",
+      "count": 26
+    },
+    {
+      "make": "Geely",
+      "model": "FC",
+      "count": 25
+    },
+    {
+      "make": "Subaru",
+      "model": "Legacy",
+      "count": 25
+    },
+    {
+      "make": "DS Automobiles",
+      "model": "DS3",
+      "count": 24
+    },
+    {
+      "make": "DS Automobiles",
+      "model": "DS5",
+      "count": 24
+    },
+    {
+      "make": "Dodge",
+      "model": "Nitro",
+      "count": 24
+    },
+    {
+      "make": "Lancia",
+      "model": "Ypsilon",
+      "count": 24
+    },
+    {
+      "make": "Mini",
+      "model": "Cooper Clubman",
+      "count": 24
+    },
+    {
+      "make": "Saab",
+      "model": "9-3",
+      "count": 24
+    },
+    {
+      "make": "Suzuki",
+      "model": "Baleno",
+      "count": 24
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "Junior Ibrida",
+      "count": 23
+    },
+    {
+      "make": "Audi",
+      "model": "TT",
+      "count": 23
+    },
+    {
+      "make": "BMW",
+      "model": "6 Serisi",
+      "count": 23
+    },
+    {
+      "make": "Chery",
+      "model": "Tiggo 7",
+      "count": 23
+    },
+    {
+      "make": "Chrysler",
+      "model": "Sebring",
+      "count": 23
+    },
+    {
+      "make": "Kia",
+      "model": "Soul",
+      "count": 23
+    },
+    {
+      "make": "Nissan",
+      "model": "Maxima",
+      "count": 23
+    },
+    {
+      "make": "Volvo",
+      "model": "C30",
+      "count": 23
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "MiTo",
+      "count": 22
+    },
+    {
+      "make": "Cupra",
+      "model": "Terramar",
+      "count": 22
+    },
+    {
+      "make": "Fiat",
+      "model": "Fullback",
+      "count": 22
+    },
+    {
+      "make": "Jeep",
+      "model": "Avenger Hybrid",
+      "count": 22
+    },
+    {
+      "make": "Kia",
+      "model": "Carnival",
+      "count": 22
+    },
+    {
+      "make": "Suzuki",
+      "model": "Splash",
+      "count": 22
+    },
+    {
+      "make": "BMW",
+      "model": "Z Serisi",
+      "count": 21
+    },
+    {
+      "make": "Jaguar",
+      "model": "F-Pace",
+      "count": 21
+    },
+    {
+      "make": "Mazda",
+      "model": "B2500",
+      "count": 21
+    },
+    {
+      "make": "Mazda",
+      "model": "Lantis",
+      "count": 21
+    },
+    {
+      "make": "Seat",
+      "model": "Tarraco",
+      "count": 21
+    },
+    {
+      "make": "Smart",
+      "model": "ForFour",
+      "count": 21
+    },
+    {
+      "make": "Audi",
+      "model": "80 Serisi",
+      "count": 20
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "Citan",
+      "count": 20
+    },
+    {
+      "make": "Renault",
+      "model": "Express",
+      "count": 20
+    },
+    {
+      "make": "Kia",
+      "model": "EV6",
+      "count": 19
+    },
+    {
+      "make": "Volvo",
+      "model": "V50",
+      "count": 19
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Camaro",
+      "count": 18
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Applause",
+      "count": 18
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Tivoli",
+      "count": 18
+    },
+    {
+      "make": "Volkswagen",
+      "model": "New Beetle",
+      "count": 18
+    },
+    {
+      "make": "Daewoo",
+      "model": "Nubira",
+      "count": 17
+    },
+    {
+      "make": "Audi",
+      "model": "A7",
+      "count": 16
+    },
+    {
+      "make": "Citroen",
+      "model": "C4 SUV",
+      "count": 16
+    },
+    {
+      "make": "Mini",
+      "model": "One",
+      "count": 16
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Pajero",
+      "count": 16
+    },
+    {
+      "make": "Rover",
+      "model": "214",
+      "count": 16
+    },
+    {
+      "make": "Smart",
+      "model": "ForTwo",
+      "count": 16
+    },
+    {
+      "make": "Subaru",
+      "model": "Levorg",
+      "count": 16
+    },
+    {
+      "make": "Suzuki",
+      "model": "SJ",
+      "count": 16
+    },
+    {
+      "make": "Volvo",
+      "model": "850",
+      "count": 16
+    },
+    {
+      "make": "Ford",
+      "model": "Galaxy",
+      "count": 15
+    },
+    {
+      "make": "Hyundai",
+      "model": "Coupe",
+      "count": 15
+    },
+    {
+      "make": "Infiniti",
+      "model": "FX",
+      "count": 15
+    },
+    {
+      "make": "Kia",
+      "model": "EV3",
+      "count": 15
+    },
+    {
+      "make": "Seat",
+      "model": "Alhambra",
+      "count": 15
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Actyon",
+      "count": 15
+    },
+    {
+      "make": "Volvo",
+      "model": "S70",
+      "count": 15
+    },
+    {
+      "make": "Ford",
+      "model": "Sierra",
+      "count": 14
+    },
+    {
+      "make": "Ford",
+      "model": "Transit Kombi",
+      "count": 14
+    },
+    {
+      "make": "Jaguar",
+      "model": "S-Type",
+      "count": 14
+    },
+    {
+      "make": "Jeep",
+      "model": "Patriot",
+      "count": 14
+    },
+    {
+      "make": "Jeep",
+      "model": "Wrangler",
+      "count": 14
+    },
+    {
+      "make": "Kia",
+      "model": "Shuma",
+      "count": 14
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Attrage",
+      "count": 14
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Eclipse Cross",
+      "count": 14
+    },
+    {
+      "make": "Seat",
+      "model": "Exeo",
+      "count": 14
+    },
+    {
+      "make": "Daewoo",
+      "model": "Espero",
+      "count": 13
+    },
+    {
+      "make": "Honda",
+      "model": "S2000",
+      "count": 13
+    },
+    {
+      "make": "Hyundai",
+      "model": "H 1",
+      "count": 13
+    },
+    {
+      "make": "Ikco",
+      "model": "Samand",
+      "count": 13
+    },
+    {
+      "make": "Lada",
+      "model": "Kalina",
+      "count": 13
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "260",
+      "count": 13
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "CLC",
+      "count": 13
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "SLK",
+      "count": 13
+    },
+    {
+      "make": "Porsche",
+      "model": "911",
+      "count": 13
+    },
+    {
+      "make": "Subaru",
+      "model": "Outback",
+      "count": 13
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Vento",
+      "count": 13
+    },
+    {
+      "make": "Citroen",
+      "model": "Xantia",
+      "count": 12
+    },
+    {
+      "make": "Citroen",
+      "model": "ZX",
+      "count": 12
+    },
+    {
+      "make": "Ford",
+      "model": "S-Max",
+      "count": 12
+    },
+    {
+      "make": "Skoda",
+      "model": "Citigo",
+      "count": 12
+    },
+    {
+      "make": "Toyota",
+      "model": "Hi-Ace",
+      "count": 12
+    },
+    {
+      "make": "Toyota",
+      "model": "Starlet",
+      "count": 12
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "145",
+      "count": 11
+    },
+    {
+      "make": "Cadillac",
+      "model": "Escalade",
+      "count": 11
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Evanda",
+      "count": 11
+    },
+    {
+      "make": "Chrysler",
+      "model": "Stratus",
+      "count": 11
+    },
+    {
+      "make": "Fiat",
+      "model": "Sedici",
+      "count": 11
+    },
+    {
+      "make": "Ford",
+      "model": "Festiva",
+      "count": 11
+    },
+    {
+      "make": "Mazda",
+      "model": "MX",
+      "count": 11
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "280",
+      "count": 11
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "EQA",
+      "count": 11
+    },
+    {
+      "make": "Mini",
+      "model": "John Cooper",
+      "count": 11
+    },
+    {
+      "make": "Opel",
+      "model": "Agila",
+      "count": 11
+    },
+    {
+      "make": "Renault",
+      "model": "Rafale",
+      "count": 11
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "count": 11
+    },
+    {
+      "make": "Toyota",
+      "model": "Land Cruiser Prado",
+      "count": 11
+    },
+    {
+      "make": "Toyota",
+      "model": "Proace City Cargo",
+      "count": 11
+    },
+    {
+      "make": "Volvo",
+      "model": "EX40",
+      "count": 11
+    },
+    {
+      "make": "Volvo",
+      "model": "V60",
+      "count": 11
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Materia",
+      "count": 10
+    },
+    {
+      "make": "Maserati",
+      "model": "Ghibli",
+      "count": 10
+    },
+    {
+      "make": "Maserati",
+      "model": "Quattroporte",
+      "count": 10
+    },
+    {
+      "make": "Mazda",
+      "model": "RX",
+      "count": 10
+    },
+    {
+      "make": "Proton",
+      "model": "418",
+      "count": 10
+    },
+    {
+      "make": "Renault",
+      "model": "Espace",
+      "count": 10
+    },
+    {
+      "make": "Renault",
+      "model": "Safrane",
+      "count": 10
+    },
+    {
+      "make": "Rover",
+      "model": "620",
+      "count": 10
+    },
+    {
+      "make": "Suzuki",
+      "model": "SX4 S-Cross",
+      "count": 10
+    },
+    {
+      "make": "Volvo",
+      "model": "V70",
+      "count": 10
+    },
+    {
+      "make": "Audi",
+      "model": "TTS",
+      "count": 9
+    },
+    {
+      "make": "Daewoo",
+      "model": "Racer",
+      "count": 9
+    },
+    {
+      "make": "Ford",
+      "model": "Grand C-Max",
+      "count": 9
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "count": 9
+    },
+    {
+      "make": "Hyundai",
+      "model": "ix20",
+      "count": 9
+    },
+    {
+      "make": "Kia",
+      "model": "Capital",
+      "count": 9
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Lancer Evolution",
+      "count": 9
+    },
+    {
+      "make": "Nissan",
+      "model": "Pathfinder",
+      "count": 9
+    },
+    {
+      "make": "Proton",
+      "model": "Waja",
+      "count": 9
+    },
+    {
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "count": 9
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Corvette",
+      "count": 8
+    },
+    {
+      "make": "Daewoo",
+      "model": "Matiz",
+      "count": 8
+    },
+    {
+      "make": "Lancia",
+      "model": "Thema",
+      "count": 8
+    },
+    {
+      "make": "Lexus",
+      "model": "LBX",
+      "count": 8
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "count": 8
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "500",
+      "count": 8
+    },
+    {
+      "make": "Peugeot",
+      "model": "405",
+      "count": 8
+    },
+    {
+      "make": "Peugeot",
+      "model": "e-3008",
+      "count": 8
+    },
+    {
+      "make": "Proton",
+      "model": "Savvy",
+      "count": 8
+    },
+    {
+      "make": "Rover",
+      "model": "25",
+      "count": 8
+    },
+    {
+      "make": "Rover",
+      "model": "75",
+      "count": 8
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Rodius",
+      "count": 8
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "Giulia",
+      "count": 7
+    },
+    {
+      "make": "BMW",
+      "model": "i Serisi",
+      "count": 7
+    },
+    {
+      "make": "Chrysler",
+      "model": "PT Cruiser",
+      "count": 7
+    },
+    {
+      "make": "Citroen",
+      "model": "e-C4 X",
+      "count": 7
+    },
+    {
+      "make": "Daewoo",
+      "model": "Tico",
+      "count": 7
+    },
+    {
+      "make": "Ford",
+      "model": "Explorer",
+      "count": 7
+    },
+    {
+      "make": "Iveco - Otoyol",
+      "model": "35",
+      "count": 7
+    },
+    {
+      "make": "Kia",
+      "model": "Magentis",
+      "count": 7
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "GLC Coupe",
+      "count": 7
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "GLE Coupe",
+      "count": 7
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "R",
+      "count": 7
+    },
+    {
+      "make": "Nissan",
+      "model": "Pick Up",
+      "count": 7
+    },
+    {
+      "make": "Proton",
+      "model": "315",
+      "count": 7
+    },
+    {
+      "make": "Toyota",
+      "model": "Cressida",
+      "count": 7
+    },
+    {
+      "make": "Volvo",
+      "model": "940",
+      "count": 7
+    },
+    {
+      "make": "Audi",
+      "model": "100 Serisi",
+      "count": 6
+    },
+    {
+      "make": "BMW",
+      "model": "X4",
+      "count": 6
+    },
+    {
+      "make": "Chrysler",
+      "model": "300 M",
+      "count": 6
+    },
+    {
+      "make": "Daewoo",
+      "model": "Leganza",
+      "count": 6
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Charade",
+      "count": 6
+    },
+    {
+      "make": "Daihatsu",
+      "model": "YRV",
+      "count": 6
+    },
+    {
+      "make": "Kia",
+      "model": "Carens",
+      "count": 6
+    },
+    {
+      "make": "Maserati",
+      "model": "Levante",
+      "count": 6
+    },
+    {
+      "make": "Mazda",
+      "model": "BT50",
+      "count": 6
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Galant",
+      "count": 6
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Outlander",
+      "count": 6
+    },
+    {
+      "make": "Nissan",
+      "model": "350 Z",
+      "count": 6
+    },
+    {
+      "make": "Opel",
+      "model": "Adam",
+      "count": 6
+    },
+    {
+      "make": "Opel",
+      "model": "Tigra",
+      "count": 6
+    },
+    {
+      "make": "Rover",
+      "model": "420",
+      "count": 6
+    },
+    {
+      "make": "Rover",
+      "model": "45",
+      "count": 6
+    },
+    {
+      "make": "Subaru",
+      "model": "Vivio",
+      "count": 6
+    },
+    {
+      "make": "Suzuki",
+      "model": "Liana",
+      "count": 6
+    },
+    {
+      "make": "TOGG",
+      "model": "T10X",
+      "count": 6
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Sharan",
+      "count": 6
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "GT",
+      "count": 5
+    },
+    {
+      "make": "Audi",
+      "model": "E-Tron",
+      "count": 5
+    },
+    {
+      "make": "Chrysler",
+      "model": "Neon",
+      "count": 5
+    },
+    {
+      "make": "Daihatsu",
+      "model": "Move",
+      "count": 5
+    },
+    {
+      "make": "Dodge",
+      "model": "Journey",
+      "count": 5
+    },
+    {
+      "make": "Fiat",
+      "model": "600",
+      "count": 5
+    },
+    {
+      "make": "Infiniti",
+      "model": "Q30",
+      "count": 5
+    },
+    {
+      "make": "Infiniti",
+      "model": "QX",
+      "count": 5
+    },
+    {
+      "make": "Lada",
+      "model": "VAZ",
+      "count": 5
+    },
+    {
+      "make": "Lexus",
+      "model": "ES",
+      "count": 5
+    },
+    {
+      "make": "MG",
+      "model": "EHS",
+      "count": 5
+    },
+    {
+      "make": "Maserati",
+      "model": "GranTurismo",
+      "count": 5
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "G",
+      "count": 5
+    },
+    {
+      "make": "Nissan",
+      "model": "Country",
+      "count": 5
+    },
+    {
+      "make": "Peugeot",
+      "model": "205",
+      "count": 5
+    },
+    {
+      "make": "Peugeot",
+      "model": "607",
+      "count": 5
+    },
+    {
+      "make": "Renault",
+      "model": "R 5",
+      "count": 5
+    },
+    {
+      "make": "Tata",
+      "model": "Manza",
+      "count": 5
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "33",
+      "count": 4
+    },
+    {
+      "make": "Chery",
+      "model": "Chance",
+      "count": 4
+    },
+    {
+      "make": "DS Automobiles",
+      "model": "DS 3 Crossback",
+      "count": 4
+    },
+    {
+      "make": "Honda",
+      "model": "CR-Z",
+      "count": 4
+    },
+    {
+      "make": "Honda",
+      "model": "CRX",
+      "count": 4
+    },
+    {
+      "make": "Honda",
+      "model": "Prelude",
+      "count": 4
+    },
+    {
+      "make": "Jaguar",
+      "model": "Daimler",
+      "count": 4
+    },
+    {
+      "make": "Kia",
+      "model": "Niro",
+      "count": 4
+    },
+    {
+      "make": "Mazda",
+      "model": "5",
+      "count": 4
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "SL",
+      "count": 4
+    },
+    {
+      "make": "Nissan",
+      "model": "Rally Raid",
+      "count": 4
+    },
+    {
+      "make": "Opel",
+      "model": "Mokka-e",
+      "count": 4
+    },
+    {
+      "make": "Peugeot",
+      "model": "e-208",
+      "count": 4
+    },
+    {
+      "make": "Pontiac",
+      "model": "Firebird",
+      "count": 4
+    },
+    {
+      "make": "Porsche",
+      "model": "Cayman",
+      "count": 4
+    },
+    {
+      "make": "Porsche",
+      "model": "Macan",
+      "count": 4
+    },
+    {
+      "make": "Renault",
+      "model": "Scenic RX4",
+      "count": 4
+    },
+    {
+      "make": "Subaru",
+      "model": "BRZ",
+      "count": 4
+    },
+    {
+      "make": "Subaru",
+      "model": "Justy",
+      "count": 4
+    },
+    {
+      "make": "Toyota",
+      "model": "Urban Cruiser",
+      "count": 4
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat Alltrack",
+      "count": 4
+    },
+    {
+      "make": "Volvo",
+      "model": "V60 Cross Country",
+      "count": 4
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "166",
+      "count": 3
+    },
+    {
+      "make": "Audi",
+      "model": "RS",
+      "count": 3
+    },
+    {
+      "make": "BYD",
+      "model": "Han",
+      "count": 3
+    },
+    {
+      "make": "Cadillac",
+      "model": "SRX",
+      "count": 3
+    },
+    {
+      "make": "Cadillac",
+      "model": "Seville",
+      "count": 3
+    },
+    {
+      "make": "Chery",
+      "model": "Niche",
+      "count": 3
+    },
+    {
+      "make": "Citroen",
+      "model": "XM",
+      "count": 3
+    },
+    {
+      "make": "Cupra",
+      "model": "Born",
+      "count": 3
+    },
+    {
+      "make": "Dodge",
+      "model": "Caliber",
+      "count": 3
+    },
+    {
+      "make": "Dodge",
+      "model": "Challenger",
+      "count": 3
+    },
+    {
+      "make": "Ford",
+      "model": "Puma- E",
+      "count": 3
+    },
+    {
+      "make": "Ford",
+      "model": "Taurus",
+      "count": 3
+    },
+    {
+      "make": "Honda",
+      "model": "Shuttle",
+      "count": 3
+    },
+    {
+      "make": "Honda",
+      "model": "ZR-V",
+      "count": 3
+    },
+    {
+      "make": "Infiniti",
+      "model": "G",
+      "count": 3
+    },
+    {
+      "make": "Infiniti",
+      "model": "M",
+      "count": 3
+    },
+    {
+      "make": "Infiniti",
+      "model": "i30",
+      "count": 3
+    },
+    {
+      "make": "Jaguar",
+      "model": "E-Pace",
+      "count": 3
+    },
+    {
+      "make": "Lexus",
+      "model": "RX",
+      "count": 3
+    },
+    {
+      "make": "Lexus",
+      "model": "RZ",
+      "count": 3
+    },
+    {
+      "make": "Mazda",
+      "model": "121",
+      "count": 3
+    },
+    {
+      "make": "Mazda",
+      "model": "E 2200",
+      "count": 3
+    },
+    {
+      "make": "Mazda",
+      "model": "Xedos",
+      "count": 3
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "560",
+      "count": 3
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "V Serisi",
+      "count": 3
+    },
+    {
+      "make": "Mitsubishi",
+      "model": "Grandis",
+      "count": 3
+    },
+    {
+      "make": "Nissan",
+      "model": "Laurel Altima",
+      "count": 3
+    },
+    {
+      "make": "Opel",
+      "model": "Frontera-e",
+      "count": 3
+    },
+    {
+      "make": "Opel",
+      "model": "Movano",
+      "count": 3
+    },
+    {
+      "make": "Peugeot",
+      "model": "Expert",
+      "count": 3
+    },
+    {
+      "make": "Proton",
+      "model": "420",
+      "count": 3
+    },
+    {
+      "make": "Renault",
+      "model": "Kangoo E-tech",
+      "count": 3
+    },
+    {
+      "make": "Rover",
+      "model": "820",
+      "count": 3
+    },
+    {
+      "make": "Saab",
+      "model": "9-5",
+      "count": 3
+    },
+    {
+      "make": "Skoda",
+      "model": "Enyaq Coupe",
+      "count": 3
+    },
+    {
+      "make": "Subaru",
+      "model": "Crosstrek",
+      "count": 3
+    },
+    {
+      "make": "Toyota",
+      "model": "FJ Cruiser",
+      "count": 3
+    },
+    {
+      "make": "Volkswagen",
+      "model": "EOS",
+      "count": 3
+    },
+    {
+      "make": "Volkswagen",
+      "model": "MultiVan",
+      "count": 3
+    },
+    {
+      "make": "Volvo",
+      "model": "XC70",
+      "count": 3
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "Brera",
+      "count": 2
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "GTV",
+      "count": 2
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "Spider",
+      "count": 2
+    },
+    {
+      "make": "Alfa Romeo",
+      "model": "Stelvio",
+      "count": 2
+    },
+    {
+      "make": "Bentley",
+      "model": "Continental",
+      "count": 2
+    },
+    {
+      "make": "Cadillac",
+      "model": "DeVille",
+      "count": 2
+    },
+    {
+      "make": "Chrysler",
+      "model": "Crossfire",
+      "count": 2
+    },
+    {
+      "make": "Citroen",
+      "model": "C8",
+      "count": 2
+    },
+    {
+      "make": "Citroen",
+      "model": "Evasion",
+      "count": 2
+    },
+    {
+      "make": "Daewoo",
+      "model": "Chairman",
+      "count": 2
+    },
+    {
+      "make": "Dodge",
+      "model": "Avenger",
+      "count": 2
+    },
+    {
+      "make": "Fiat",
+      "model": "500 Abarth",
+      "count": 2
+    },
+    {
+      "make": "Ford",
+      "model": "Bronco Sport",
+      "count": 2
+    },
+    {
+      "make": "Honda",
+      "model": "Integra",
+      "count": 2
+    },
+    {
+      "make": "Honda",
+      "model": "Legend",
+      "count": 2
+    },
+    {
+      "make": "Hyundai",
+      "model": "Genesis",
+      "count": 2
+    },
+    {
+      "make": "Hyundai",
+      "model": "Ioniq",
+      "count": 2
+    },
+    {
+      "make": "Hyundai",
+      "model": "i40",
+      "count": 2
+    },
+    {
+      "make": "Infiniti",
+      "model": "Q50",
+      "count": 2
+    },
+    {
+      "make": "Jaguar",
+      "model": "Sovereign",
+      "count": 2
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-9",
+      "count": 2
+    },
+    {
+      "make": "Mazda",
+      "model": "MPV",
+      "count": 2
+    },
+    {
+      "make": "Mazda",
+      "model": "Premacy",
+      "count": 2
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "240",
+      "count": 2
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "CL",
+      "count": 2
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "GLE",
+      "count": 2
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "SLC",
+      "count": 2
+    },
+    {
+      "make": "Nissan",
+      "model": "100 NX",
+      "count": 2
+    },
+    {
+      "make": "Nissan",
+      "model": "200 SX",
+      "count": 2
+    },
+    {
+      "make": "Opel",
+      "model": "Calibra",
+      "count": 2
+    },
+    {
+      "make": "Opel",
+      "model": "Signum",
+      "count": 2
+    },
+    {
+      "make": "Peugeot",
+      "model": "309",
+      "count": 2
+    },
+    {
+      "make": "Peugeot",
+      "model": "806",
+      "count": 2
+    },
+    {
+      "make": "Porsche",
+      "model": "718",
+      "count": 2
+    },
+    {
+      "make": "Proton",
+      "model": "413",
+      "count": 2
+    },
+    {
+      "make": "Renault",
+      "model": "R 25",
+      "count": 2
+    },
+    {
+      "make": "Renault",
+      "model": "Vel Satis",
+      "count": 2
+    },
+    {
+      "make": "Rover",
+      "model": "200",
+      "count": 2
+    },
+    {
+      "make": "Ssangyong",
+      "model": "XLV",
+      "count": 2
+    },
+    {
+      "make": "Toyota",
+      "model": "Celica",
+      "count": 2
+    },
+    {
+      "make": "Toyota",
+      "model": "Proace Max",
+      "count": 2
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Lupo",
+      "count": 2
+    },
+    {
+      "make": "Volvo",
+      "model": "960",
+      "count": 2
+    },
+    {
+      "make": "Volvo",
+      "model": "C70",
+      "count": 2
+    },
+    {
+      "make": "Aston Martin",
+      "model": "Vantage",
+      "count": 1
+    },
+    {
+      "make": "Audi",
+      "model": "200 Serisi",
+      "count": 1
+    },
+    {
+      "make": "Buick",
+      "model": "Regal",
+      "count": 1
+    },
+    {
+      "make": "Cadillac",
+      "model": "Eldorado",
+      "count": 1
+    },
+    {
+      "make": "Cadillac",
+      "model": "Fleetwood",
+      "count": 1
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Caprice",
+      "count": 1
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Cavalier",
+      "count": 1
+    },
+    {
+      "make": "Chrysler",
+      "model": "Concorde",
+      "count": 1
+    },
+    {
+      "make": "Chrysler",
+      "model": "LHS",
+      "count": 1
+    },
+    {
+      "make": "Citroen",
+      "model": "BX",
+      "count": 1
+    },
+    {
+      "make": "Citroen",
+      "model": "C15",
+      "count": 1
+    },
+    {
+      "make": "Dodge",
+      "model": "Ram",
+      "count": 1
+    },
+    {
+      "make": "Fiat",
+      "model": "124 Spider",
+      "count": 1
+    },
+    {
+      "make": "Fiat",
+      "model": "126 Bis",
+      "count": 1
+    },
+    {
+      "make": "Ford",
+      "model": "E Serisi",
+      "count": 1
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang Mach-E",
+      "count": 1
+    },
+    {
+      "make": "Ford",
+      "model": "Probe",
+      "count": 1
+    },
+    {
+      "make": "Ford",
+      "model": "Scorpio",
+      "count": 1
+    },
+    {
+      "make": "Honda",
+      "model": "E",
+      "count": 1
+    },
+    {
+      "make": "Honda",
+      "model": "FR-V",
+      "count": 1
+    },
+    {
+      "make": "Hyundai",
+      "model": "Ioniq 6",
+      "count": 1
+    },
+    {
+      "make": "Hyundai",
+      "model": "Trajet",
+      "count": 1
+    },
+    {
+      "make": "Infiniti",
+      "model": "Q60",
+      "count": 1
+    },
+    {
+      "make": "Isuzu",
+      "model": "Gemini",
+      "count": 1
+    },
+    {
+      "make": "Jaguar",
+      "model": "XKR",
+      "count": 1
+    },
+    {
+      "make": "Jeep",
+      "model": "Commander",
+      "count": 1
+    },
+    {
+      "make": "Kia",
+      "model": "Clarus",
+      "count": 1
+    },
+    {
+      "make": "Kia",
+      "model": "Opirus",
+      "count": 1
+    },
+    {
+      "make": "Kia",
+      "model": "Optima",
+      "count": 1
+    },
+    {
+      "make": "Kia",
+      "model": "Pregio",
+      "count": 1
+    },
+    {
+      "make": "Kia",
+      "model": "Stinger",
+      "count": 1
+    },
+    {
+      "make": "Lada",
+      "model": "Nova",
+      "count": 1
+    },
+    {
+      "make": "Lexus",
+      "model": "CT",
+      "count": 1
+    },
+    {
+      "make": "Lexus",
+      "model": "GS",
+      "count": 1
+    },
+    {
+      "make": "Lexus",
+      "model": "IS",
+      "count": 1
+    },
+    {
+      "make": "Lincoln",
+      "model": "Mark",
+      "count": 1
+    },
+    {
+      "make": "Lincoln",
+      "model": "Town Car",
+      "count": 1
+    },
+    {
+      "make": "Lotus",
+      "model": "Esprit",
+      "count": 1
+    },
+    {
+      "make": "MG",
+      "model": "Marvel R",
+      "count": 1
+    },
+    {
+      "make": "MG",
+      "model": "ZS EV",
+      "count": 1
+    },
+    {
+      "make": "Maserati",
+      "model": "4 Serisi",
+      "count": 1
+    },
+    {
+      "make": "Maxus",
+      "model": "e-Deliver",
+      "count": 1
+    },
+    {
+      "make": "Mazda",
+      "model": "929",
+      "count": 1
+    },
+    {
+      "make": "Mazda",
+      "model": "B2200",
+      "count": 1
+    },
+    {
+      "make": "Mercedes - Benz",
+      "model": "320",
+      "count": 1
+    },
+    {
+      "make": "Mercury",
+      "model": "Cougar",
+      "count": 1
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "count": 1
+    },
+    {
+      "make": "Nissan",
+      "model": "Bluebird",
+      "count": 1
+    },
+    {
+      "make": "Nissan",
+      "model": "GT-R",
+      "count": 1
+    },
+    {
+      "make": "Nissan",
+      "model": "Murano",
+      "count": 1
+    },
+    {
+      "make": "Nissan",
+      "model": "NX Coupe",
+      "count": 1
+    },
+    {
+      "make": "Nissan",
+      "model": "Townstar",
+      "count": 1
+    },
+    {
+      "make": "Nissan",
+      "model": "Vanette",
+      "count": 1
+    },
+    {
+      "make": "Opel",
+      "model": "Ascona",
+      "count": 1
+    },
+    {
+      "make": "Opel",
+      "model": "Corsa Van",
+      "count": 1
+    },
+    {
+      "make": "Opel",
+      "model": "GT",
+      "count": 1
+    },
+    {
+      "make": "Opel",
+      "model": "Grandland-e",
+      "count": 1
+    },
+    {
+      "make": "Opel",
+      "model": "Kadett",
+      "count": 1
+    },
+    {
+      "make": "Peugeot",
+      "model": "4007",
+      "count": 1
+    },
+    {
+      "make": "Peugeot",
+      "model": "605",
+      "count": 1
+    },
+    {
+      "make": "Peugeot",
+      "model": "807",
+      "count": 1
+    },
+    {
+      "make": "Peugeot",
+      "model": "e-2008",
+      "count": 1
+    },
+    {
+      "make": "Proton",
+      "model": "Persona",
+      "count": 1
+    },
+    {
+      "make": "Proton",
+      "model": "Saga",
+      "count": 1
+    },
+    {
+      "make": "Rolls-Royce",
+      "model": "Silver",
+      "count": 1
+    },
+    {
+      "make": "Rover",
+      "model": "218",
+      "count": 1
+    },
+    {
+      "make": "Rover",
+      "model": "220",
+      "count": 1
+    },
+    {
+      "make": "Rover",
+      "model": "Streetwise",
+      "count": 1
+    },
+    {
+      "make": "Saab",
+      "model": "900",
+      "count": 1
+    },
+    {
+      "make": "Saab",
+      "model": "9000",
+      "count": 1
+    },
+    {
+      "make": "Seat",
+      "model": "Malaga",
+      "count": 1
+    },
+    {
+      "make": "Seat",
+      "model": "Marbella",
+      "count": 1
+    },
+    {
+      "make": "Ssangyong",
+      "model": "Musso",
+      "count": 1
+    },
+    {
+      "make": "Tesla",
+      "model": "Model Y",
+      "count": 1
+    },
+    {
+      "make": "Toyota",
+      "model": "Prius",
+      "count": 1
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Phaeton",
+      "count": 1
+    },
+    {
+      "make": "Volvo",
+      "model": "460",
+      "count": 1
+    }
+  ]
+}

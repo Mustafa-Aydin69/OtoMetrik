@@ -1,0 +1,3358 @@
+[
+  {
+    "id": "bmw-3-e46",
+    "category": "BMW-edge",
+    "rawInput": {
+      "id": "bmw-3-e46",
+      "category": "BMW-edge",
+      "brand": "BMW",
+      "model": "3 Serisi",
+      "year": 2001,
+      "trim": "320i",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "BMW",
+      "model": "3 Series",
+      "rawModel": "3 Serisi",
+      "variant": null,
+      "trim": "320i",
+      "year": 2001,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": "E46",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      1998,
+      2004
+    ],
+    "queries": [
+      "2001 BMW 3 Series E46 320i Sedan grey",
+      "2001 BMW 3 Series E46 320i Sedan",
+      "2001 BMW 3 Series E46 320i",
+      "BMW 3 Series E46",
+      "BMW E46"
+    ],
+    "usedQuery": "BMW 3 Series E46",
+    "candidateCount": 10,
+    "rejectedCount": 2,
+    "rejectedReasons": [
+      {
+        "title": "BMW 3 SERIES COUPE (E46) China",
+        "reason": "year conflict: candidate metnindeki yıl(lar) hedef nesil aralığıyla/yılla uyumsuz"
+      },
+      {
+        "title": "BMW 3 SERIES (E46) China (3)",
+        "reason": "year conflict: candidate metnindeki yıl(lar) hedef nesil aralığıyla/yılla uyumsuz"
+      }
+    ],
+    "selected": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/BMW_3_SERIES_%28E46%29_China.jpg/960px-BMW_3_SERIES_%28E46%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "title": "BMW 3 SERIES (E46) China",
+      "source": "commons",
+      "score": 95,
+      "confidence": 0.7431972789115646,
+      "matched": {
+        "make": true,
+        "model": true,
+        "generation": true,
+        "year": "unknown",
+        "variant": false,
+        "trim": false,
+        "bodyType": false,
+        "color": false
+      }
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "bmw-3-f30",
+    "category": "BMW-edge",
+    "rawInput": {
+      "id": "bmw-3-f30",
+      "category": "BMW-edge",
+      "brand": "BMW",
+      "model": "3 Serisi",
+      "year": 2012,
+      "trim": "320d",
+      "bodyType": "Sedan",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "BMW",
+      "model": "3 Series",
+      "rawModel": "3 Serisi",
+      "variant": null,
+      "trim": "320d",
+      "year": 2012,
+      "bodyType": "Sedan",
+      "color": "black"
+    },
+    "resolvedGeneration": "F30",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      2011,
+      2017
+    ],
+    "queries": [
+      "2012 BMW 3 Series F30 320d Sedan black",
+      "2012 BMW 3 Series F30 320d Sedan",
+      "2012 BMW 3 Series F30 320d",
+      "BMW 3 Series F30",
+      "BMW F30"
+    ],
+    "usedQuery": "BMW 3 Series F30",
+    "candidateCount": 10,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/BMW_3_SERIES_SEDAN_%28F30%29_China.jpg/960px-BMW_3_SERIES_SEDAN_%28F30%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "title": "BMW 3 SERIES SEDAN (F30) China",
+      "source": "commons",
+      "score": 125,
+      "confidence": 0.9778911564625848,
+      "matched": {
+        "make": true,
+        "model": true,
+        "generation": true,
+        "year": true,
+        "variant": false,
+        "trim": false,
+        "bodyType": true,
+        "color": false
+      }
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "bmw-3-g20",
+    "category": "BMW-edge",
+    "rawInput": {
+      "id": "bmw-3-g20",
+      "category": "BMW-edge",
+      "brand": "BMW",
+      "model": "3 Serisi",
+      "year": 2023,
+      "trim": "320i Executive M Sport",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "BMW",
+      "model": "3 Series",
+      "rawModel": "3 Serisi",
+      "variant": "320i",
+      "trim": "Executive M Sport",
+      "year": 2023,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": "G20",
+    "resolvedFacelift": "LCI",
+    "generationSource": "local",
+    "generationYearRange": [
+      2018,
+      null
+    ],
+    "queries": [
+      "2023 BMW 320i G20 LCI Executive M Sport Sedan white",
+      "2023 BMW 320i G20 LCI Executive M Sport Sedan",
+      "2023 BMW 320i G20 LCI Executive M Sport",
+      "BMW 320i G20 LCI",
+      "BMW 3 Series G20 LCI",
+      "BMW G20 LCI"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "bmw-5-e39",
+    "category": "BMW-edge",
+    "rawInput": {
+      "id": "bmw-5-e39",
+      "category": "BMW-edge",
+      "brand": "BMW",
+      "model": "5 Serisi",
+      "year": 1999,
+      "trim": "523i",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "BMW",
+      "model": "5 Series",
+      "rawModel": "5 Serisi",
+      "variant": null,
+      "trim": "523i",
+      "year": 1999,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": "E39",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      1995,
+      2002
+    ],
+    "queries": [
+      "1999 BMW 5 Series E39 523i Sedan grey",
+      "1999 BMW 5 Series E39 523i Sedan",
+      "1999 BMW 5 Series E39 523i",
+      "BMW 5 Series E39",
+      "BMW E39"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "bmw-5-g30",
+    "category": "BMW-edge",
+    "rawInput": {
+      "id": "bmw-5-g30",
+      "category": "BMW-edge",
+      "brand": "BMW",
+      "model": "5 Serisi",
+      "year": 2018,
+      "trim": "520d",
+      "bodyType": "Sedan",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "BMW",
+      "model": "5 Series",
+      "rawModel": "5 Serisi",
+      "variant": null,
+      "trim": "520d",
+      "year": 2018,
+      "bodyType": "Sedan",
+      "color": "black"
+    },
+    "resolvedGeneration": "G30",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      2016,
+      null
+    ],
+    "queries": [
+      "2018 BMW 5 Series G30 520d Sedan black",
+      "2018 BMW 5 Series G30 520d Sedan",
+      "2018 BMW 5 Series G30 520d",
+      "BMW 5 Series G30",
+      "BMW G30"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "bmw-1-f20",
+    "category": "BMW-edge",
+    "rawInput": {
+      "id": "bmw-1-f20",
+      "category": "BMW-edge",
+      "brand": "BMW",
+      "model": "1 Serisi",
+      "year": 2015,
+      "trim": "116i",
+      "bodyType": "Hatchback",
+      "color": "Kırmızı"
+    },
+    "normalized": {
+      "make": "BMW",
+      "model": "1 Series",
+      "rawModel": "1 Serisi",
+      "variant": null,
+      "trim": "116i",
+      "year": 2015,
+      "bodyType": "Hatchback",
+      "color": "red"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 BMW 1 Series 116i Hatchback red",
+      "2015 BMW 1 Series 116i Hatchback",
+      "2015 BMW 1 Series 116i",
+      "BMW 1 Series",
+      "BMW"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "mb-c-w202",
+    "category": "Mercedes-edge",
+    "rawInput": {
+      "id": "mb-c-w202",
+      "category": "Mercedes-edge",
+      "brand": "Mercedes-Benz",
+      "model": "C",
+      "year": 1998,
+      "trim": "C 180",
+      "bodyType": "Sedan",
+      "color": "Gümüş"
+    },
+    "normalized": {
+      "make": "Mercedes-Benz",
+      "model": "C",
+      "rawModel": "C",
+      "variant": null,
+      "trim": "C 180",
+      "year": 1998,
+      "bodyType": "Sedan",
+      "color": "silver"
+    },
+    "resolvedGeneration": "W202",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      1993,
+      1999
+    ],
+    "queries": [
+      "1998 Mercedes-Benz C W202 C 180 Sedan silver",
+      "1998 Mercedes-Benz C W202 C 180 Sedan",
+      "1998 Mercedes-Benz C W202 C 180",
+      "Mercedes-Benz C W202",
+      "Mercedes-Benz W202"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "mb-c-w204",
+    "category": "Mercedes-edge",
+    "rawInput": {
+      "id": "mb-c-w204",
+      "category": "Mercedes-edge",
+      "brand": "Mercedes-Benz",
+      "model": "C",
+      "year": 2010,
+      "trim": "C 200",
+      "bodyType": "Sedan",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "Mercedes-Benz",
+      "model": "C",
+      "rawModel": "C",
+      "variant": null,
+      "trim": "C 200",
+      "year": 2010,
+      "bodyType": "Sedan",
+      "color": "black"
+    },
+    "resolvedGeneration": "W204",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      2007,
+      2013
+    ],
+    "queries": [
+      "2010 Mercedes-Benz C W204 C 200 Sedan black",
+      "2010 Mercedes-Benz C W204 C 200 Sedan",
+      "2010 Mercedes-Benz C W204 C 200",
+      "Mercedes-Benz C W204",
+      "Mercedes-Benz W204"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "mb-c-w206",
+    "category": "Mercedes-edge",
+    "rawInput": {
+      "id": "mb-c-w206",
+      "category": "Mercedes-edge",
+      "brand": "Mercedes-Benz",
+      "model": "C",
+      "year": 2022,
+      "trim": "C 220d",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Mercedes-Benz",
+      "model": "C",
+      "rawModel": "C",
+      "variant": null,
+      "trim": "C 220d",
+      "year": 2022,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": "W206",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      2021,
+      null
+    ],
+    "queries": [
+      "2022 Mercedes-Benz C W206 C 220d Sedan white",
+      "2022 Mercedes-Benz C W206 C 220d Sedan",
+      "2022 Mercedes-Benz C W206 C 220d",
+      "Mercedes-Benz C W206",
+      "Mercedes-Benz W206"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "mb-e-w211",
+    "category": "Mercedes-edge",
+    "rawInput": {
+      "id": "mb-e-w211",
+      "category": "Mercedes-edge",
+      "brand": "Mercedes-Benz",
+      "model": "E",
+      "year": 2005,
+      "trim": "E 220",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Mercedes-Benz",
+      "model": "E",
+      "rawModel": "E",
+      "variant": null,
+      "trim": "E 220",
+      "year": 2005,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": "W211",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      2002,
+      2008
+    ],
+    "queries": [
+      "2005 Mercedes-Benz E W211 E 220 Sedan grey",
+      "2005 Mercedes-Benz E W211 E 220 Sedan",
+      "2005 Mercedes-Benz E W211 E 220",
+      "Mercedes-Benz E W211",
+      "Mercedes-Benz W211"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "mb-e-w213",
+    "category": "Mercedes-edge",
+    "rawInput": {
+      "id": "mb-e-w213",
+      "category": "Mercedes-edge",
+      "brand": "Mercedes-Benz",
+      "model": "E",
+      "year": 2020,
+      "trim": "E 200",
+      "bodyType": "Sedan",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "Mercedes-Benz",
+      "model": "E",
+      "rawModel": "E",
+      "variant": null,
+      "trim": "E 200",
+      "year": 2020,
+      "bodyType": "Sedan",
+      "color": "black"
+    },
+    "resolvedGeneration": "W213",
+    "resolvedFacelift": null,
+    "generationSource": "local",
+    "generationYearRange": [
+      2016,
+      null
+    ],
+    "queries": [
+      "2020 Mercedes-Benz E W213 E 200 Sedan black",
+      "2020 Mercedes-Benz E W213 E 200 Sedan",
+      "2020 Mercedes-Benz E W213 E 200",
+      "Mercedes-Benz E W213",
+      "Mercedes-Benz W213"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "mb-a-w177",
+    "category": "Mercedes-edge",
+    "rawInput": {
+      "id": "mb-a-w177",
+      "category": "Mercedes-edge",
+      "brand": "Mercedes-Benz",
+      "model": "A",
+      "year": 2019,
+      "trim": "A 200",
+      "bodyType": "Hatchback",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Mercedes-Benz",
+      "model": "A",
+      "rawModel": "A",
+      "variant": null,
+      "trim": "A 200",
+      "year": 2019,
+      "bodyType": "Hatchback",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2019 Mercedes-Benz A A 200 Hatchback white",
+      "2019 Mercedes-Benz A A 200 Hatchback",
+      "2019 Mercedes-Benz A A 200",
+      "Mercedes-Benz A",
+      "Mercedes-Benz"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "mb-cla",
+    "category": "Mercedes-edge",
+    "rawInput": {
+      "id": "mb-cla",
+      "category": "Mercedes-edge",
+      "brand": "Mercedes-Benz",
+      "model": "CLA",
+      "year": 2015,
+      "trim": "CLA 200",
+      "bodyType": "Coupe",
+      "color": "Kırmızı"
+    },
+    "normalized": {
+      "make": "Mercedes-Benz",
+      "model": "CLA",
+      "rawModel": "CLA",
+      "variant": null,
+      "trim": "CLA 200",
+      "year": 2015,
+      "bodyType": "Coupe",
+      "color": "red"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 Mercedes-Benz CLA CLA 200 Coupe red",
+      "2015 Mercedes-Benz CLA CLA 200 Coupe",
+      "2015 Mercedes-Benz CLA CLA 200",
+      "Mercedes-Benz CLA",
+      "Mercedes-Benz"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "audi-a3-8p",
+    "category": "Audi-edge",
+    "rawInput": {
+      "id": "audi-a3-8p",
+      "category": "Audi-edge",
+      "brand": "Audi",
+      "model": "A3",
+      "year": 2005,
+      "trim": "1.6",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Audi",
+      "model": "A3",
+      "rawModel": "A3",
+      "variant": null,
+      "trim": "1.6",
+      "year": 2005,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2005 Audi A3 1.6 Hatchback (5 Kapı) grey",
+      "2005 Audi A3 1.6 Hatchback (5 Kapı)",
+      "2005 Audi A3 1.6",
+      "Audi A3",
+      "Audi"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "audi-a3-8v",
+    "category": "Audi-edge",
+    "rawInput": {
+      "id": "audi-a3-8v",
+      "category": "Audi-edge",
+      "brand": "Audi",
+      "model": "A3",
+      "year": 2018,
+      "trim": "1.6 TDI",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Audi",
+      "model": "A3",
+      "rawModel": "A3",
+      "variant": null,
+      "trim": "1.6 TDI",
+      "year": 2018,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2018 Audi A3 1.6 TDI Sedan white",
+      "2018 Audi A3 1.6 TDI Sedan",
+      "2018 Audi A3 1.6 TDI",
+      "Audi A3",
+      "Audi"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "audi-a4-b8",
+    "category": "Audi-edge",
+    "rawInput": {
+      "id": "audi-a4-b8",
+      "category": "Audi-edge",
+      "brand": "Audi",
+      "model": "A4",
+      "year": 2010,
+      "trim": "2.0 TDI",
+      "bodyType": "Sedan",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "Audi",
+      "model": "A4",
+      "rawModel": "A4",
+      "variant": null,
+      "trim": "2.0 TDI",
+      "year": 2010,
+      "bodyType": "Sedan",
+      "color": "black"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2010 Audi A4 2.0 TDI Sedan black",
+      "2010 Audi A4 2.0 TDI Sedan",
+      "2010 Audi A4 2.0 TDI",
+      "Audi A4",
+      "Audi"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "audi-a4-b9",
+    "category": "Audi-edge",
+    "rawInput": {
+      "id": "audi-a4-b9",
+      "category": "Audi-edge",
+      "brand": "Audi",
+      "model": "A4",
+      "year": 2020,
+      "trim": "2.0 TDI",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Audi",
+      "model": "A4",
+      "rawModel": "A4",
+      "variant": null,
+      "trim": "2.0 TDI",
+      "year": 2020,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2020 Audi A4 2.0 TDI Sedan grey",
+      "2020 Audi A4 2.0 TDI Sedan",
+      "2020 Audi A4 2.0 TDI",
+      "Audi A4",
+      "Audi"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "audi-a6-c6",
+    "category": "Audi-edge",
+    "rawInput": {
+      "id": "audi-a6-c6",
+      "category": "Audi-edge",
+      "brand": "Audi",
+      "model": "A6",
+      "year": 2005,
+      "trim": "2.4",
+      "bodyType": "Sedan",
+      "color": "Gümüş"
+    },
+    "normalized": {
+      "make": "Audi",
+      "model": "A6",
+      "rawModel": "A6",
+      "variant": null,
+      "trim": "2.4",
+      "year": 2005,
+      "bodyType": "Sedan",
+      "color": "silver"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2005 Audi A6 2.4 Sedan silver",
+      "2005 Audi A6 2.4 Sedan",
+      "2005 Audi A6 2.4",
+      "Audi A6",
+      "Audi"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "vw-golf-mk5",
+    "category": "VW-golf",
+    "rawInput": {
+      "id": "vw-golf-mk5",
+      "category": "VW-golf",
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "year": 2005,
+      "trim": "1.6",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Mavi"
+    },
+    "normalized": {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "rawModel": "Golf",
+      "variant": null,
+      "trim": "1.6",
+      "year": 2005,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "blue"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2005 Volkswagen Golf 1.6 Hatchback (5 Kapı) blue",
+      "2005 Volkswagen Golf 1.6 Hatchback (5 Kapı)",
+      "2005 Volkswagen Golf 1.6",
+      "Volkswagen Golf",
+      "Volkswagen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "vw-golf-mk6",
+    "category": "VW-golf",
+    "rawInput": {
+      "id": "vw-golf-mk6",
+      "category": "VW-golf",
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "year": 2010,
+      "trim": "1.6 TDI",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "rawModel": "Golf",
+      "variant": null,
+      "trim": "1.6 TDI",
+      "year": 2010,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2010 Volkswagen Golf 1.6 TDI Hatchback (5 Kapı) white",
+      "2010 Volkswagen Golf 1.6 TDI Hatchback (5 Kapı)",
+      "2010 Volkswagen Golf 1.6 TDI",
+      "Volkswagen Golf",
+      "Volkswagen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "vw-golf-mk7",
+    "category": "VW-golf",
+    "rawInput": {
+      "id": "vw-golf-mk7",
+      "category": "VW-golf",
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "year": 2015,
+      "trim": "1.6 TDI Comfortline",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "rawModel": "Golf",
+      "variant": null,
+      "trim": "1.6 TDI Comfortline",
+      "year": 2015,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 Volkswagen Golf 1.6 TDI Comfortline Hatchback (5 Kapı) grey",
+      "2015 Volkswagen Golf 1.6 TDI Comfortline Hatchback (5 Kapı)",
+      "2015 Volkswagen Golf 1.6 TDI Comfortline",
+      "Volkswagen Golf",
+      "Volkswagen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "vw-golf-mk8",
+    "category": "VW-golf",
+    "rawInput": {
+      "id": "vw-golf-mk8",
+      "category": "VW-golf",
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "year": 2021,
+      "trim": "1.5 TSI Life",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "rawModel": "Golf",
+      "variant": null,
+      "trim": "1.5 TSI Life",
+      "year": 2021,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "black"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2021 Volkswagen Golf 1.5 TSI Life Hatchback (5 Kapı) black",
+      "2021 Volkswagen Golf 1.5 TSI Life Hatchback (5 Kapı)",
+      "2021 Volkswagen Golf 1.5 TSI Life",
+      "Volkswagen Golf",
+      "Volkswagen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "vw-passat-b5",
+    "category": "VW-other",
+    "rawInput": {
+      "id": "vw-passat-b5",
+      "category": "VW-other",
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2000,
+      "trim": "1.8",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Volkswagen",
+      "model": "Passat",
+      "rawModel": "Passat",
+      "variant": null,
+      "trim": "1.8",
+      "year": 2000,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2000 Volkswagen Passat 1.8 Sedan grey",
+      "2000 Volkswagen Passat 1.8 Sedan",
+      "2000 Volkswagen Passat 1.8",
+      "Volkswagen Passat",
+      "Volkswagen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "vw-passat-b8",
+    "category": "VW-other",
+    "rawInput": {
+      "id": "vw-passat-b8",
+      "category": "VW-other",
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2018,
+      "trim": "1.6 TDI",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Volkswagen",
+      "model": "Passat",
+      "rawModel": "Passat",
+      "variant": null,
+      "trim": "1.6 TDI",
+      "year": 2018,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2018 Volkswagen Passat 1.6 TDI Sedan white",
+      "2018 Volkswagen Passat 1.6 TDI Sedan",
+      "2018 Volkswagen Passat 1.6 TDI",
+      "Volkswagen Passat",
+      "Volkswagen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "vw-polo",
+    "category": "VW-other",
+    "rawInput": {
+      "id": "vw-polo",
+      "category": "VW-other",
+      "brand": "Volkswagen",
+      "model": "Polo",
+      "year": 2012,
+      "trim": "1.6 TDI",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Kırmızı"
+    },
+    "normalized": {
+      "make": "Volkswagen",
+      "model": "Polo",
+      "rawModel": "Polo",
+      "variant": null,
+      "trim": "1.6 TDI",
+      "year": 2012,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "red"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2012 Volkswagen Polo 1.6 TDI Hatchback (5 Kapı) red",
+      "2012 Volkswagen Polo 1.6 TDI Hatchback (5 Kapı)",
+      "2012 Volkswagen Polo 1.6 TDI",
+      "Volkswagen Polo",
+      "Volkswagen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "vw-tiguan",
+    "category": "VW-other",
+    "rawInput": {
+      "id": "vw-tiguan",
+      "category": "VW-other",
+      "brand": "Volkswagen",
+      "model": "Tiguan",
+      "year": 2020,
+      "trim": "1.5 TSI",
+      "bodyType": "SUV",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "rawModel": "Tiguan",
+      "variant": null,
+      "trim": "1.5 TSI",
+      "year": 2020,
+      "bodyType": "SUV",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2020 Volkswagen Tiguan 1.5 TSI SUV white",
+      "2020 Volkswagen Tiguan 1.5 TSI SUV",
+      "2020 Volkswagen Tiguan 1.5 TSI",
+      "Volkswagen Tiguan",
+      "Volkswagen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "toyota-corolla-old",
+    "category": "Toyota",
+    "rawInput": {
+      "id": "toyota-corolla-old",
+      "category": "Toyota",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": 2008,
+      "trim": "1.4 D-4D",
+      "bodyType": "Sedan",
+      "color": "Gümüş"
+    },
+    "normalized": {
+      "make": "Toyota",
+      "model": "Corolla",
+      "rawModel": "Corolla",
+      "variant": null,
+      "trim": "1.4 D-4D",
+      "year": 2008,
+      "bodyType": "Sedan",
+      "color": "silver"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2008 Toyota Corolla 1.4 D-4D Sedan silver",
+      "2008 Toyota Corolla 1.4 D-4D Sedan",
+      "2008 Toyota Corolla 1.4 D-4D",
+      "Toyota Corolla",
+      "Toyota"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "toyota-corolla-new",
+    "category": "Toyota",
+    "rawInput": {
+      "id": "toyota-corolla-new",
+      "category": "Toyota",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": 2020,
+      "trim": "1.6",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Toyota",
+      "model": "Corolla",
+      "rawModel": "Corolla",
+      "variant": null,
+      "trim": "1.6",
+      "year": 2020,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2020 Toyota Corolla 1.6 Sedan white",
+      "2020 Toyota Corolla 1.6 Sedan",
+      "2020 Toyota Corolla 1.6",
+      "Toyota Corolla",
+      "Toyota"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "toyota-yaris",
+    "category": "Toyota",
+    "rawInput": {
+      "id": "toyota-yaris",
+      "category": "Toyota",
+      "brand": "Toyota",
+      "model": "Yaris",
+      "year": 2015,
+      "trim": "1.4 D-4D",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Kırmızı"
+    },
+    "normalized": {
+      "make": "Toyota",
+      "model": "Yaris",
+      "rawModel": "Yaris",
+      "variant": null,
+      "trim": "1.4 D-4D",
+      "year": 2015,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "red"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 Toyota Yaris 1.4 D-4D Hatchback (5 Kapı) red",
+      "2015 Toyota Yaris 1.4 D-4D Hatchback (5 Kapı)",
+      "2015 Toyota Yaris 1.4 D-4D",
+      "Toyota Yaris",
+      "Toyota"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "toyota-chr",
+    "category": "Toyota",
+    "rawInput": {
+      "id": "toyota-chr",
+      "category": "Toyota",
+      "brand": "Toyota",
+      "model": "C-HR",
+      "year": 2019,
+      "trim": "1.2",
+      "bodyType": "SUV",
+      "color": "Turuncu"
+    },
+    "normalized": {
+      "make": "Toyota",
+      "model": "C-HR",
+      "rawModel": "C-HR",
+      "variant": null,
+      "trim": "1.2",
+      "year": 2019,
+      "bodyType": "SUV",
+      "color": "orange"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2019 Toyota C-HR 1.2 SUV orange",
+      "2019 Toyota C-HR 1.2 SUV",
+      "2019 Toyota C-HR 1.2",
+      "Toyota C-HR",
+      "Toyota"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "renault-clio-3",
+    "category": "Renault-clio",
+    "rawInput": {
+      "id": "renault-clio-3",
+      "category": "Renault-clio",
+      "brand": "Renault",
+      "model": "Clio",
+      "year": 2010,
+      "trim": "1.5 dCi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Renault",
+      "model": "Clio",
+      "rawModel": "Clio",
+      "variant": null,
+      "trim": "1.5 dCi",
+      "year": 2010,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2010 Renault Clio 1.5 dCi Hatchback (5 Kapı) grey",
+      "2010 Renault Clio 1.5 dCi Hatchback (5 Kapı)",
+      "2010 Renault Clio 1.5 dCi",
+      "Renault Clio",
+      "Renault"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "renault-clio-4",
+    "category": "Renault-clio",
+    "rawInput": {
+      "id": "renault-clio-4",
+      "category": "Renault-clio",
+      "brand": "Renault",
+      "model": "Clio",
+      "year": 2016,
+      "trim": "1.5 dCi Touch",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Renault",
+      "model": "Clio",
+      "rawModel": "Clio",
+      "variant": null,
+      "trim": "1.5 dCi Touch",
+      "year": 2016,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2016 Renault Clio 1.5 dCi Touch Hatchback (5 Kapı) white",
+      "2016 Renault Clio 1.5 dCi Touch Hatchback (5 Kapı)",
+      "2016 Renault Clio 1.5 dCi Touch",
+      "Renault Clio",
+      "Renault"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "renault-clio-5",
+    "category": "Renault-clio",
+    "rawInput": {
+      "id": "renault-clio-5",
+      "category": "Renault-clio",
+      "brand": "Renault",
+      "model": "Clio",
+      "year": 2021,
+      "trim": "1.0 TCe",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Kırmızı"
+    },
+    "normalized": {
+      "make": "Renault",
+      "model": "Clio",
+      "rawModel": "Clio",
+      "variant": null,
+      "trim": "1.0 TCe",
+      "year": 2021,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "red"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2021 Renault Clio 1.0 TCe Hatchback (5 Kapı) red",
+      "2021 Renault Clio 1.0 TCe Hatchback (5 Kapı)",
+      "2021 Renault Clio 1.0 TCe",
+      "Renault Clio",
+      "Renault"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "renault-megane-2",
+    "category": "Renault-megane",
+    "rawInput": {
+      "id": "renault-megane-2",
+      "category": "Renault-megane",
+      "brand": "Renault",
+      "model": "Megane",
+      "year": 2005,
+      "trim": "1.5 dCi",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Renault",
+      "model": "Megane",
+      "rawModel": "Megane",
+      "variant": null,
+      "trim": "1.5 dCi",
+      "year": 2005,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2005 Renault Megane 1.5 dCi Sedan grey",
+      "2005 Renault Megane 1.5 dCi Sedan",
+      "2005 Renault Megane 1.5 dCi",
+      "Renault Megane",
+      "Renault"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "renault-megane-3",
+    "category": "Renault-megane",
+    "rawInput": {
+      "id": "renault-megane-3",
+      "category": "Renault-megane",
+      "brand": "Renault",
+      "model": "Megane",
+      "year": 2012,
+      "trim": "1.5 dCi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "Renault",
+      "model": "Megane",
+      "rawModel": "Megane",
+      "variant": null,
+      "trim": "1.5 dCi",
+      "year": 2012,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "black"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2012 Renault Megane 1.5 dCi Hatchback (5 Kapı) black",
+      "2012 Renault Megane 1.5 dCi Hatchback (5 Kapı)",
+      "2012 Renault Megane 1.5 dCi",
+      "Renault Megane",
+      "Renault"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "renault-megane-4",
+    "category": "Renault-megane",
+    "rawInput": {
+      "id": "renault-megane-4",
+      "category": "Renault-megane",
+      "brand": "Renault",
+      "model": "Megane",
+      "year": 2019,
+      "trim": "1.3 TCe",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Renault",
+      "model": "Megane",
+      "rawModel": "Megane",
+      "variant": null,
+      "trim": "1.3 TCe",
+      "year": 2019,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2019 Renault Megane 1.3 TCe Sedan white",
+      "2019 Renault Megane 1.3 TCe Sedan",
+      "2019 Renault Megane 1.3 TCe",
+      "Renault Megane",
+      "Renault"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "renault-talisman",
+    "category": "Renault-other",
+    "rawInput": {
+      "id": "renault-talisman",
+      "category": "Renault-other",
+      "brand": "Renault",
+      "model": "Talisman",
+      "year": 2018,
+      "trim": "1.5 dCi",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Renault",
+      "model": "Talisman",
+      "rawModel": "Talisman",
+      "variant": null,
+      "trim": "1.5 dCi",
+      "year": 2018,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2018 Renault Talisman 1.5 dCi Sedan grey",
+      "2018 Renault Talisman 1.5 dCi Sedan",
+      "2018 Renault Talisman 1.5 dCi",
+      "Renault Talisman",
+      "Renault"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "renault-captur",
+    "category": "Renault-other",
+    "rawInput": {
+      "id": "renault-captur",
+      "category": "Renault-other",
+      "brand": "Renault",
+      "model": "Captur",
+      "year": 2020,
+      "trim": "1.5 dCi",
+      "bodyType": "SUV",
+      "color": "Turuncu"
+    },
+    "normalized": {
+      "make": "Renault",
+      "model": "Captur",
+      "rawModel": "Captur",
+      "variant": null,
+      "trim": "1.5 dCi",
+      "year": 2020,
+      "bodyType": "SUV",
+      "color": "orange"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2020 Renault Captur 1.5 dCi SUV orange",
+      "2020 Renault Captur 1.5 dCi SUV",
+      "2020 Renault Captur 1.5 dCi",
+      "Renault Captur",
+      "Renault"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "peugeot-208-mk1",
+    "category": "Peugeot-208",
+    "rawInput": {
+      "id": "peugeot-208-mk1",
+      "category": "Peugeot-208",
+      "brand": "Peugeot",
+      "model": "208",
+      "year": 2014,
+      "trim": "1.4 HDi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Peugeot",
+      "model": "208",
+      "rawModel": "208",
+      "variant": null,
+      "trim": "1.4 HDi",
+      "year": 2014,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2014 Peugeot 208 1.4 HDi Hatchback (5 Kapı) white",
+      "2014 Peugeot 208 1.4 HDi Hatchback (5 Kapı)",
+      "2014 Peugeot 208 1.4 HDi",
+      "Peugeot 208",
+      "Peugeot"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "peugeot-208-mk2",
+    "category": "Peugeot-208",
+    "rawInput": {
+      "id": "peugeot-208-mk2",
+      "category": "Peugeot-208",
+      "brand": "Peugeot",
+      "model": "208",
+      "year": 2021,
+      "trim": "1.2 PureTech",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Mavi"
+    },
+    "normalized": {
+      "make": "Peugeot",
+      "model": "208",
+      "rawModel": "208",
+      "variant": null,
+      "trim": "1.2 PureTech",
+      "year": 2021,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "blue"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2021 Peugeot 208 1.2 PureTech Hatchback (5 Kapı) blue",
+      "2021 Peugeot 208 1.2 PureTech Hatchback (5 Kapı)",
+      "2021 Peugeot 208 1.2 PureTech",
+      "Peugeot 208",
+      "Peugeot"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "peugeot-308-mk1",
+    "category": "Peugeot-308",
+    "rawInput": {
+      "id": "peugeot-308-mk1",
+      "category": "Peugeot-308",
+      "brand": "Peugeot",
+      "model": "308",
+      "year": 2010,
+      "trim": "1.6 HDi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Peugeot",
+      "model": "308",
+      "rawModel": "308",
+      "variant": null,
+      "trim": "1.6 HDi",
+      "year": 2010,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2010 Peugeot 308 1.6 HDi Hatchback (5 Kapı) grey",
+      "2010 Peugeot 308 1.6 HDi Hatchback (5 Kapı)",
+      "2010 Peugeot 308 1.6 HDi",
+      "Peugeot 308",
+      "Peugeot"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "peugeot-308-mk2",
+    "category": "Peugeot-308",
+    "rawInput": {
+      "id": "peugeot-308-mk2",
+      "category": "Peugeot-308",
+      "brand": "Peugeot",
+      "model": "308",
+      "year": 2015,
+      "trim": "1.6 BlueHDi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Peugeot",
+      "model": "308",
+      "rawModel": "308",
+      "variant": null,
+      "trim": "1.6 BlueHDi",
+      "year": 2015,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 Peugeot 308 1.6 BlueHDi Hatchback (5 Kapı) white",
+      "2015 Peugeot 308 1.6 BlueHDi Hatchback (5 Kapı)",
+      "2015 Peugeot 308 1.6 BlueHDi",
+      "Peugeot 308",
+      "Peugeot"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "peugeot-3008",
+    "category": "Peugeot-other",
+    "rawInput": {
+      "id": "peugeot-3008",
+      "category": "Peugeot-other",
+      "brand": "Peugeot",
+      "model": "3008",
+      "year": 2018,
+      "trim": "1.6 BlueHDi",
+      "bodyType": "SUV",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "Peugeot",
+      "model": "3008",
+      "rawModel": "3008",
+      "variant": null,
+      "trim": "1.6 BlueHDi",
+      "year": 2018,
+      "bodyType": "SUV",
+      "color": "black"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2018 Peugeot 3008 1.6 BlueHDi SUV black",
+      "2018 Peugeot 3008 1.6 BlueHDi SUV",
+      "2018 Peugeot 3008 1.6 BlueHDi",
+      "Peugeot 3008",
+      "Peugeot"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "peugeot-508",
+    "category": "Peugeot-other",
+    "rawInput": {
+      "id": "peugeot-508",
+      "category": "Peugeot-other",
+      "brand": "Peugeot",
+      "model": "508",
+      "year": 2019,
+      "trim": "1.5 BlueHDi",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Peugeot",
+      "model": "508",
+      "rawModel": "508",
+      "variant": null,
+      "trim": "1.5 BlueHDi",
+      "year": 2019,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2019 Peugeot 508 1.5 BlueHDi Sedan grey",
+      "2019 Peugeot 508 1.5 BlueHDi Sedan",
+      "2019 Peugeot 508 1.5 BlueHDi",
+      "Peugeot 508",
+      "Peugeot"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "citroen-c3",
+    "category": "Citroen",
+    "rawInput": {
+      "id": "citroen-c3",
+      "category": "Citroen",
+      "brand": "Citroen",
+      "model": "C3",
+      "year": 2015,
+      "trim": "1.4 HDi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Citroen",
+      "model": "C3",
+      "rawModel": "C3",
+      "variant": null,
+      "trim": "1.4 HDi",
+      "year": 2015,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 Citroen C3 1.4 HDi Hatchback (5 Kapı) white",
+      "2015 Citroen C3 1.4 HDi Hatchback (5 Kapı)",
+      "2015 Citroen C3 1.4 HDi",
+      "Citroen C3",
+      "Citroen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "citroen-c4",
+    "category": "Citroen",
+    "rawInput": {
+      "id": "citroen-c4",
+      "category": "Citroen",
+      "brand": "Citroen",
+      "model": "C4",
+      "year": 2012,
+      "trim": "1.6 HDi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Citroen",
+      "model": "C4",
+      "rawModel": "C4",
+      "variant": null,
+      "trim": "1.6 HDi",
+      "year": 2012,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2012 Citroen C4 1.6 HDi Hatchback (5 Kapı) grey",
+      "2012 Citroen C4 1.6 HDi Hatchback (5 Kapı)",
+      "2012 Citroen C4 1.6 HDi",
+      "Citroen C4",
+      "Citroen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "citroen-berlingo",
+    "category": "Citroen",
+    "rawInput": {
+      "id": "citroen-berlingo",
+      "category": "Citroen",
+      "brand": "Citroen",
+      "model": "Berlingo",
+      "year": 2018,
+      "trim": "1.6 BlueHDi",
+      "bodyType": "Panelvan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Citroen",
+      "model": "Berlingo",
+      "rawModel": "Berlingo",
+      "variant": null,
+      "trim": "1.6 BlueHDi",
+      "year": 2018,
+      "bodyType": "Panelvan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2018 Citroen Berlingo 1.6 BlueHDi Panelvan white",
+      "2018 Citroen Berlingo 1.6 BlueHDi Panelvan",
+      "2018 Citroen Berlingo 1.6 BlueHDi",
+      "Citroen Berlingo",
+      "Citroen"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "ford-focus-mk2",
+    "category": "Ford",
+    "rawInput": {
+      "id": "ford-focus-mk2",
+      "category": "Ford",
+      "brand": "Ford",
+      "model": "Focus",
+      "year": 2005,
+      "trim": "1.6 TDCi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Ford",
+      "model": "Focus",
+      "rawModel": "Focus",
+      "variant": null,
+      "trim": "1.6 TDCi",
+      "year": 2005,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2005 Ford Focus 1.6 TDCi Hatchback (5 Kapı) grey",
+      "2005 Ford Focus 1.6 TDCi Hatchback (5 Kapı)",
+      "2005 Ford Focus 1.6 TDCi",
+      "Ford Focus",
+      "Ford"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "ford-focus-mk4",
+    "category": "Ford",
+    "rawInput": {
+      "id": "ford-focus-mk4",
+      "category": "Ford",
+      "brand": "Ford",
+      "model": "Focus",
+      "year": 2018,
+      "trim": "1.5 TDCi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Ford",
+      "model": "Focus",
+      "rawModel": "Focus",
+      "variant": null,
+      "trim": "1.5 TDCi",
+      "year": 2018,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2018 Ford Focus 1.5 TDCi Hatchback (5 Kapı) white",
+      "2018 Ford Focus 1.5 TDCi Hatchback (5 Kapı)",
+      "2018 Ford Focus 1.5 TDCi",
+      "Ford Focus",
+      "Ford"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "ford-fiesta",
+    "category": "Ford",
+    "rawInput": {
+      "id": "ford-fiesta",
+      "category": "Ford",
+      "brand": "Ford",
+      "model": "Fiesta",
+      "year": 2015,
+      "trim": "1.5 TDCi",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Kırmızı"
+    },
+    "normalized": {
+      "make": "Ford",
+      "model": "Fiesta",
+      "rawModel": "Fiesta",
+      "variant": null,
+      "trim": "1.5 TDCi",
+      "year": 2015,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "red"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 Ford Fiesta 1.5 TDCi Hatchback (5 Kapı) red",
+      "2015 Ford Fiesta 1.5 TDCi Hatchback (5 Kapı)",
+      "2015 Ford Fiesta 1.5 TDCi",
+      "Ford Fiesta",
+      "Ford"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "fiat-egea",
+    "category": "Fiat",
+    "rawInput": {
+      "id": "fiat-egea",
+      "category": "Fiat",
+      "brand": "Fiat",
+      "model": "Egea",
+      "year": 2018,
+      "trim": "1.6 Multijet",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Fiat",
+      "model": "Egea",
+      "rawModel": "Egea",
+      "variant": null,
+      "trim": "1.6 Multijet",
+      "year": 2018,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2018 Fiat Egea 1.6 Multijet Sedan white",
+      "2018 Fiat Egea 1.6 Multijet Sedan",
+      "2018 Fiat Egea 1.6 Multijet",
+      "Fiat Egea",
+      "Fiat"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "fiat-linea",
+    "category": "Fiat",
+    "rawInput": {
+      "id": "fiat-linea",
+      "category": "Fiat",
+      "brand": "Fiat",
+      "model": "Linea",
+      "year": 2012,
+      "trim": "1.3 Multijet",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Fiat",
+      "model": "Linea",
+      "rawModel": "Linea",
+      "variant": null,
+      "trim": "1.3 Multijet",
+      "year": 2012,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2012 Fiat Linea 1.3 Multijet Sedan grey",
+      "2012 Fiat Linea 1.3 Multijet Sedan",
+      "2012 Fiat Linea 1.3 Multijet",
+      "Fiat Linea",
+      "Fiat"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "fiat-doblo",
+    "category": "Fiat",
+    "rawInput": {
+      "id": "fiat-doblo",
+      "category": "Fiat",
+      "brand": "Fiat",
+      "model": "Doblo",
+      "year": 2016,
+      "trim": "1.6 Multijet",
+      "bodyType": "Panelvan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Fiat",
+      "model": "Doblo",
+      "rawModel": "Doblo",
+      "variant": null,
+      "trim": "1.6 Multijet",
+      "year": 2016,
+      "bodyType": "Panelvan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2016 Fiat Doblo 1.6 Multijet Panelvan white",
+      "2016 Fiat Doblo 1.6 Multijet Panelvan",
+      "2016 Fiat Doblo 1.6 Multijet",
+      "Fiat Doblo",
+      "Fiat"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "honda-civic-old",
+    "category": "Honda",
+    "rawInput": {
+      "id": "honda-civic-old",
+      "category": "Honda",
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2010,
+      "trim": "1.6",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Honda",
+      "model": "Civic",
+      "rawModel": "Civic",
+      "variant": null,
+      "trim": "1.6",
+      "year": 2010,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2010 Honda Civic 1.6 Sedan grey",
+      "2010 Honda Civic 1.6 Sedan",
+      "2010 Honda Civic 1.6",
+      "Honda Civic",
+      "Honda"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "honda-civic-new",
+    "category": "Honda",
+    "rawInput": {
+      "id": "honda-civic-new",
+      "category": "Honda",
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2020,
+      "trim": "1.5 VTEC",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Honda",
+      "model": "Civic",
+      "rawModel": "Civic",
+      "variant": null,
+      "trim": "1.5 VTEC",
+      "year": 2020,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2020 Honda Civic 1.5 VTEC Sedan white",
+      "2020 Honda Civic 1.5 VTEC Sedan",
+      "2020 Honda Civic 1.5 VTEC",
+      "Honda Civic",
+      "Honda"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "hyundai-i20",
+    "category": "Hyundai",
+    "rawInput": {
+      "id": "hyundai-i20",
+      "category": "Hyundai",
+      "brand": "Hyundai",
+      "model": "i20",
+      "year": 2017,
+      "trim": "1.4",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Kırmızı"
+    },
+    "normalized": {
+      "make": "Hyundai",
+      "model": "i20",
+      "rawModel": "i20",
+      "variant": null,
+      "trim": "1.4",
+      "year": 2017,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "red"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2017 Hyundai i20 1.4 Hatchback (5 Kapı) red",
+      "2017 Hyundai i20 1.4 Hatchback (5 Kapı)",
+      "2017 Hyundai i20 1.4",
+      "Hyundai i20",
+      "Hyundai"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "hyundai-tucson",
+    "category": "Hyundai",
+    "rawInput": {
+      "id": "hyundai-tucson",
+      "category": "Hyundai",
+      "brand": "Hyundai",
+      "model": "Tucson",
+      "year": 2020,
+      "trim": "1.6 CRDi",
+      "bodyType": "SUV",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "rawModel": "Tucson",
+      "variant": null,
+      "trim": "1.6 CRDi",
+      "year": 2020,
+      "bodyType": "SUV",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2020 Hyundai Tucson 1.6 CRDi SUV white",
+      "2020 Hyundai Tucson 1.6 CRDi SUV",
+      "2020 Hyundai Tucson 1.6 CRDi",
+      "Hyundai Tucson",
+      "Hyundai"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "kia-sportage",
+    "category": "Kia",
+    "rawInput": {
+      "id": "kia-sportage",
+      "category": "Kia",
+      "brand": "Kia",
+      "model": "Sportage",
+      "year": 2019,
+      "trim": "1.6 CRDi",
+      "bodyType": "SUV",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Kia",
+      "model": "Sportage",
+      "rawModel": "Sportage",
+      "variant": null,
+      "trim": "1.6 CRDi",
+      "year": 2019,
+      "bodyType": "SUV",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2019 Kia Sportage 1.6 CRDi SUV grey",
+      "2019 Kia Sportage 1.6 CRDi SUV",
+      "2019 Kia Sportage 1.6 CRDi",
+      "Kia Sportage",
+      "Kia"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "kia-rio",
+    "category": "Kia",
+    "rawInput": {
+      "id": "kia-rio",
+      "category": "Kia",
+      "brand": "Kia",
+      "model": "Rio",
+      "year": 2015,
+      "trim": "1.4",
+      "bodyType": "Sedan",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Kia",
+      "model": "Rio",
+      "rawModel": "Rio",
+      "variant": null,
+      "trim": "1.4",
+      "year": 2015,
+      "bodyType": "Sedan",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 Kia Rio 1.4 Sedan white",
+      "2015 Kia Rio 1.4 Sedan",
+      "2015 Kia Rio 1.4",
+      "Kia Rio",
+      "Kia"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "skoda-octavia",
+    "category": "Skoda",
+    "rawInput": {
+      "id": "skoda-octavia",
+      "category": "Skoda",
+      "brand": "Skoda",
+      "model": "Octavia",
+      "year": 2015,
+      "trim": "1.6 TDI",
+      "bodyType": "Sedan",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Skoda",
+      "model": "Octavia",
+      "rawModel": "Octavia",
+      "variant": null,
+      "trim": "1.6 TDI",
+      "year": 2015,
+      "bodyType": "Sedan",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2015 Skoda Octavia 1.6 TDI Sedan grey",
+      "2015 Skoda Octavia 1.6 TDI Sedan",
+      "2015 Skoda Octavia 1.6 TDI",
+      "Skoda Octavia",
+      "Skoda"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "seat-leon",
+    "category": "Seat",
+    "rawInput": {
+      "id": "seat-leon",
+      "category": "Seat",
+      "brand": "Seat",
+      "model": "Leon",
+      "year": 2014,
+      "trim": "1.6 TDI",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Seat",
+      "model": "Leon",
+      "rawModel": "Leon",
+      "variant": null,
+      "trim": "1.6 TDI",
+      "year": 2014,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2014 Seat Leon 1.6 TDI Hatchback (5 Kapı) white",
+      "2014 Seat Leon 1.6 TDI Hatchback (5 Kapı)",
+      "2014 Seat Leon 1.6 TDI",
+      "Seat Leon",
+      "Seat"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "volvo-s60",
+    "category": "Volvo",
+    "rawInput": {
+      "id": "volvo-s60",
+      "category": "Volvo",
+      "brand": "Volvo",
+      "model": "S60",
+      "year": 2016,
+      "trim": "D3",
+      "bodyType": "Sedan",
+      "color": "Siyah"
+    },
+    "normalized": {
+      "make": "Volvo",
+      "model": "S60",
+      "rawModel": "S60",
+      "variant": null,
+      "trim": "D3",
+      "year": 2016,
+      "bodyType": "Sedan",
+      "color": "black"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2016 Volvo S60 D3 Sedan black",
+      "2016 Volvo S60 D3 Sedan",
+      "2016 Volvo S60 D3",
+      "Volvo S60",
+      "Volvo"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "opel-astra",
+    "category": "Opel",
+    "rawInput": {
+      "id": "opel-astra",
+      "category": "Opel",
+      "brand": "Opel",
+      "model": "Astra",
+      "year": 2012,
+      "trim": "1.6 CDTI",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Gri"
+    },
+    "normalized": {
+      "make": "Opel",
+      "model": "Astra",
+      "rawModel": "Astra",
+      "variant": null,
+      "trim": "1.6 CDTI",
+      "year": 2012,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "grey"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2012 Opel Astra 1.6 CDTI Hatchback (5 Kapı) grey",
+      "2012 Opel Astra 1.6 CDTI Hatchback (5 Kapı)",
+      "2012 Opel Astra 1.6 CDTI",
+      "Opel Astra",
+      "Opel"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  },
+  {
+    "id": "opel-corsa",
+    "category": "Opel",
+    "rawInput": {
+      "id": "opel-corsa",
+      "category": "Opel",
+      "brand": "Opel",
+      "model": "Corsa",
+      "year": 2018,
+      "trim": "1.4",
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "Beyaz"
+    },
+    "normalized": {
+      "make": "Opel",
+      "model": "Corsa",
+      "rawModel": "Corsa",
+      "variant": null,
+      "trim": "1.4",
+      "year": 2018,
+      "bodyType": "Hatchback (5 Kapı)",
+      "color": "white"
+    },
+    "resolvedGeneration": null,
+    "resolvedFacelift": null,
+    "generationSource": "unknown",
+    "generationYearRange": [
+      null,
+      null
+    ],
+    "queries": [
+      "2018 Opel Corsa 1.4 Hatchback (5 Kapı) white",
+      "2018 Opel Corsa 1.4 Hatchback (5 Kapı)",
+      "2018 Opel Corsa 1.4",
+      "Opel Corsa",
+      "Opel"
+    ],
+    "usedQuery": null,
+    "candidateCount": 0,
+    "rejectedCount": 0,
+    "rejectedReasons": [],
+    "selected": {
+      "url": null,
+      "title": null,
+      "source": null,
+      "score": null,
+      "confidence": 0,
+      "matched": null
+    },
+    "fromInfoboxFallback": false,
+    "error": null
+  }
+]

@@ -1,0 +1,768 @@
+{
+  "generationRuleCoverageTop40": [
+    {
+      "make": "Renault",
+      "model": "Clio",
+      "count": 10175,
+      "canonicalModel": "Clio",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Renault",
+      "model": "Megane",
+      "count": 9243,
+      "canonicalModel": "Megane",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Opel",
+      "model": "Astra",
+      "count": 8940,
+      "canonicalModel": "Astra",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea",
+      "count": 8668,
+      "canonicalModel": "Egea",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "count": 8406,
+      "canonicalModel": "Corolla",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Ford",
+      "model": "Focus",
+      "count": 8337,
+      "canonicalModel": "Focus",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "count": 7462,
+      "canonicalModel": "Civic",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat",
+      "count": 6548,
+      "canonicalModel": "Passat",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Opel",
+      "model": "Corsa",
+      "count": 5579,
+      "canonicalModel": "Corsa",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Doblo",
+      "count": 5500,
+      "canonicalModel": "Doblo",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Polo",
+      "count": 5157,
+      "canonicalModel": "Polo",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "count": 5002,
+      "canonicalModel": "Golf",
+      "hasLocalRule": false
+    },
+    {
+      "make": "BMW",
+      "model": "3 Serisi",
+      "count": 4594,
+      "canonicalModel": "3 Series",
+      "hasLocalRule": true
+    },
+    {
+      "make": "Fiat",
+      "model": "Fiorino",
+      "count": 4166,
+      "canonicalModel": "Fiorino",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Ford",
+      "model": "Tourneo Courier",
+      "count": 3935,
+      "canonicalModel": "Tourneo Courier",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Ford",
+      "model": "Fiesta",
+      "count": 3898,
+      "canonicalModel": "Fiesta",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Linea",
+      "count": 3778,
+      "canonicalModel": "Linea",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20",
+      "count": 3740,
+      "canonicalModel": "i20",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C",
+      "count": 3355,
+      "canonicalModel": "C",
+      "hasLocalRule": true
+    },
+    {
+      "make": "Audi",
+      "model": "A3",
+      "count": 3250,
+      "canonicalModel": "A3",
+      "hasLocalRule": false
+    },
+    {
+      "make": "BMW",
+      "model": "5 Serisi",
+      "count": 3173,
+      "canonicalModel": "5 Series",
+      "hasLocalRule": true
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "count": 3085,
+      "canonicalModel": "Jetta",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Seat",
+      "model": "Leon",
+      "count": 3070,
+      "canonicalModel": "Leon",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Renault",
+      "model": "Fluence",
+      "count": 2771,
+      "canonicalModel": "Fluence",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Renault",
+      "model": "Symbol",
+      "count": 2718,
+      "canonicalModel": "Symbol",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Nissan",
+      "model": "Qashqai",
+      "count": 2504,
+      "canonicalModel": "Qashqai",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Skoda",
+      "model": "Octavia",
+      "count": 2468,
+      "canonicalModel": "Octavia",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "E",
+      "count": 2324,
+      "canonicalModel": "E",
+      "hasLocalRule": true
+    },
+    {
+      "make": "Dacia",
+      "model": "Sandero",
+      "count": 2100,
+      "canonicalModel": "Sandero",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Skoda",
+      "model": "SuperB",
+      "count": 2095,
+      "canonicalModel": "SuperB",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Hyundai",
+      "model": "Accent",
+      "count": 1990,
+      "canonicalModel": "Accent",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Opel",
+      "model": "Vectra",
+      "count": 1939,
+      "canonicalModel": "Vectra",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Caddy",
+      "count": 1925,
+      "canonicalModel": "Caddy",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Audi",
+      "model": "A4",
+      "count": 1905,
+      "canonicalModel": "A4",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Tofaş",
+      "model": "Doğan",
+      "count": 1746,
+      "canonicalModel": "Doğan",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Palio",
+      "count": 1736,
+      "canonicalModel": "Palio",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Citroën",
+      "model": "C3",
+      "count": 1717,
+      "canonicalModel": "C3",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Dacia",
+      "model": "Duster",
+      "count": 1712,
+      "canonicalModel": "Duster",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Hyundai",
+      "model": "Accent Era",
+      "count": 1702,
+      "canonicalModel": "Accent Era",
+      "hasLocalRule": false
+    },
+    {
+      "make": "Peugeot",
+      "model": "301",
+      "count": 1671,
+      "canonicalModel": "301",
+      "hasLocalRule": false
+    }
+  ],
+  "top40Total": 164084,
+  "top40Covered": 13446,
+  "aliasAuditTop60": [
+    {
+      "make": "Renault",
+      "model": "Clio",
+      "count": 10175,
+      "canonical": "Clio",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Renault",
+      "model": "Megane",
+      "count": 9243,
+      "canonical": "Megane",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Opel",
+      "model": "Astra",
+      "count": 8940,
+      "canonical": "Astra",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea",
+      "count": 8668,
+      "canonical": "Egea",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "count": 8406,
+      "canonical": "Corolla",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Ford",
+      "model": "Focus",
+      "count": 8337,
+      "canonical": "Focus",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Honda",
+      "model": "Civic",
+      "count": 7462,
+      "canonical": "Civic",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Passat",
+      "count": 6548,
+      "canonical": "Passat",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Opel",
+      "model": "Corsa",
+      "count": 5579,
+      "canonical": "Corsa",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Doblo",
+      "count": 5500,
+      "canonical": "Doblo",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Polo",
+      "count": 5157,
+      "canonical": "Polo",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "count": 5002,
+      "canonical": "Golf",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "BMW",
+      "model": "3 Serisi",
+      "count": 4594,
+      "canonical": "3 Series",
+      "stillHasTurkish": false,
+      "changed": true
+    },
+    {
+      "make": "Fiat",
+      "model": "Fiorino",
+      "count": 4166,
+      "canonical": "Fiorino",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Ford",
+      "model": "Tourneo Courier",
+      "count": 3935,
+      "canonical": "Tourneo Courier",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Ford",
+      "model": "Fiesta",
+      "count": 3898,
+      "canonical": "Fiesta",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Linea",
+      "count": 3778,
+      "canonical": "Linea",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Hyundai",
+      "model": "i20",
+      "count": 3740,
+      "canonical": "i20",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C",
+      "count": 3355,
+      "canonical": "C",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Audi",
+      "model": "A3",
+      "count": 3250,
+      "canonical": "A3",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "BMW",
+      "model": "5 Serisi",
+      "count": 3173,
+      "canonical": "5 Series",
+      "stillHasTurkish": false,
+      "changed": true
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Jetta",
+      "count": 3085,
+      "canonical": "Jetta",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Seat",
+      "model": "Leon",
+      "count": 3070,
+      "canonical": "Leon",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Renault",
+      "model": "Fluence",
+      "count": 2771,
+      "canonical": "Fluence",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Renault",
+      "model": "Symbol",
+      "count": 2718,
+      "canonical": "Symbol",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Nissan",
+      "model": "Qashqai",
+      "count": 2504,
+      "canonical": "Qashqai",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Skoda",
+      "model": "Octavia",
+      "count": 2468,
+      "canonical": "Octavia",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "E",
+      "count": 2324,
+      "canonical": "E",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Dacia",
+      "model": "Sandero",
+      "count": 2100,
+      "canonical": "Sandero",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Skoda",
+      "model": "SuperB",
+      "count": 2095,
+      "canonical": "SuperB",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Hyundai",
+      "model": "Accent",
+      "count": 1990,
+      "canonical": "Accent",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Opel",
+      "model": "Vectra",
+      "count": 1939,
+      "canonical": "Vectra",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Caddy",
+      "count": 1925,
+      "canonical": "Caddy",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Audi",
+      "model": "A4",
+      "count": 1905,
+      "canonical": "A4",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Tofaş",
+      "model": "Doğan",
+      "count": 1746,
+      "canonical": "Doğan",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Palio",
+      "count": 1736,
+      "canonical": "Palio",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Citroën",
+      "model": "C3",
+      "count": 1717,
+      "canonical": "C3",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Dacia",
+      "model": "Duster",
+      "count": 1712,
+      "canonical": "Duster",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Hyundai",
+      "model": "Accent Era",
+      "count": 1702,
+      "canonical": "Accent Era",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Peugeot",
+      "model": "301",
+      "count": 1671,
+      "canonical": "301",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Citroën",
+      "model": "Berlingo",
+      "count": 1645,
+      "canonical": "Berlingo",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Peugeot",
+      "model": "206",
+      "count": 1625,
+      "canonical": "206",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Transporter",
+      "count": 1598,
+      "canonical": "Transporter",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Citroën",
+      "model": "C4",
+      "count": 1576,
+      "canonical": "C4",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Peugeot",
+      "model": "3008",
+      "count": 1566,
+      "canonical": "3008",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Seat",
+      "model": "Ibiza",
+      "count": 1563,
+      "canonical": "Ibiza",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "count": 1540,
+      "canonical": "Tiguan",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Punto",
+      "count": 1481,
+      "canonical": "Punto",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Hyundai",
+      "model": "Getz",
+      "count": 1441,
+      "canonical": "Getz",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "BMW",
+      "model": "1 Serisi",
+      "count": 1438,
+      "canonical": "1 Series",
+      "stillHasTurkish": false,
+      "changed": true
+    },
+    {
+      "make": "Renault",
+      "model": "R 9",
+      "count": 1435,
+      "canonical": "R 9",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Ford",
+      "model": "Tourneo Connect",
+      "count": 1374,
+      "canonical": "Tourneo Connect",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "count": 1366,
+      "canonical": "Cruze",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Albea",
+      "count": 1362,
+      "canonical": "Albea",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Peugeot",
+      "model": "Partner",
+      "count": 1330,
+      "canonical": "Partner",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Fiat",
+      "model": "Egea Cross",
+      "count": 1320,
+      "canonical": "Egea Cross",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Opel",
+      "model": "Insignia",
+      "count": 1303,
+      "canonical": "Insignia",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Tofaş",
+      "model": "Şahin",
+      "count": 1268,
+      "canonical": "Şahin",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Hyundai",
+      "model": "Tucson",
+      "count": 1249,
+      "canonical": "Tucson",
+      "stillHasTurkish": false,
+      "changed": false
+    },
+    {
+      "make": "Nissan",
+      "model": "Micra",
+      "count": 1237,
+      "canonical": "Micra",
+      "stillHasTurkish": false,
+      "changed": false
+    }
+  ]
+}
