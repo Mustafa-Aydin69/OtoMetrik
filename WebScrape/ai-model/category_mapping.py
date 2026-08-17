@@ -144,6 +144,17 @@ LABEL_TO_CANONICAL = {
         "Lacivert": "Lacivert",
         "Diğer": "Diğer",
     },
+    # Faz 26: model artefaktinin kasa_turu kategori kumesi 18 deger icerir,
+    # onceden yalnizca 11'i acikti (Camlı Van, Yarım Camlı Van, Frigorifik
+    # Panelvan, Minibüs, Hard top, Roadster eksikti). Bu, ozellikle ticari
+    # arac modellerinde (orn. Citroen Berlingo - satirlarinin %87'si "Camlı
+    # Van") secilebilir kasa tipi kalmamasina yol aciyordu - VehicleSelector
+    # artik marka+model'e gore GERCEK gorulen kasa_turu degerlerini sunuyor
+    # (bkz. lib/validation.ts getBodyTypesForModel), bu yuzden tam kapsam
+    # sart. "Pick-Up" (buyuk P) egitim verisinde "Pick-up"tan AYRI bir kategori
+    # olarak var (kaynak veri kalitesi sorunu, kazara duplikasyon gibi
+    # gorunuyor) - iki ayri etiket gerektirecegi icin simdilik disarida
+    # birakildi, ayri bir veri temizligi konusu.
     "kasa_turu": {
         "Sedan": "Sedan",
         "Hatchback (3 Kapı)": "Hatchback/3",
@@ -156,6 +167,12 @@ LABEL_TO_CANONICAL = {
         "MPV": "MPV",
         "Panelvan": "Panel Van",
         "Crossover": "Crossover",
+        "Camlı Van": "Camlı Van",
+        "Yarım Camlı Van": "Yarım Camlı Van",
+        "Frigorifik Panelvan": "Frigorifik Panelvan",
+        "Minibüs": "Minibüs",
+        "Hard Top": "Hard top",
+        "Roadster": "Roadster",
     },
 }
 

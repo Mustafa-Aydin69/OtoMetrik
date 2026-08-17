@@ -22,6 +22,27 @@ Motor Gucu (HP) coklugu de bu Faz'da olculdu: kovalanmis motor gruplarinin
 maks. 22) - website'in "birden fazla gecerli HP varsa secilebilir goster,
 tekse otomatik doldur" davranisi spekulatif degil, verinin gercek bir ozelligi.
 
+Faz 26: kullanici Citroen Berlingo 1.5 Dizel + Shine Bold icin motor_gucu
+dropdown'inda 6 deger gordu (96/100/102/110/130/132) ama gercek dunyada bu
+motorun yalnizca ~100 ve ~130 HP olmak uzere iki gercek versiyonu var - 102 ve
+132 gibi degerler muhtemelen DIN/olcum yuvarlama farki (motor_hacmi'deki
+"range-text -> orta nokta" gurultusune benzer bir veri kalitesi sorunu).
+motor_hacmi'deki AYNI cozum uygulanir: motor_gucu EN YAKIN 5 HP'ye yuvarlanir
+(GORUNTULEME/GRUPLAMA icin), her kova icin o kovadaki EN SIK GORULEN gercek HP
+degeri secilebilir/gonderilebilir deger olarak kullanilir. Berlingo 1.5 Dizel
+ornegi: 6 ham deger -> 4 kova (95, 100, 110, 130) - 95 ve 110 tek-satirlik
+nadir aykiri degerler olarak ayri kalmaya devam ediyor (kasitli - bunlari
+gercek verinin bir parcasi olarak filtrelemek ayri bir veri temizligi karari
+gerektirir, bu Faz'in kapsami degil).
+
+Faz 26 ayrica: kasa_turu (Kasa Tipi) artik marka+model'e gore GERCEK gorulen
+degerlerle sinirlaniyor (BODY_TYPE_BY_MODEL) - onceden website'deki 11 sabit
+secenek her araca ayni sekilde sunuluyordu; Citroen Berlingo gibi ticari
+araclarda gercek kasa tipi ("Camlı Van", satirlarinin %87'si) o listede hic
+yoktu, kullanici "Sedan" gibi o araca gercekte hic uymayan bir deger secmek
+zorunda kaliyordu (bkz. category_mapping.py'nin Faz 26 notu - kasa_turu artik
+17 kanonik degerin tamamini kapsiyor).
+
 Calistirma (ai-model/ calisma dizini olarak): python generate_vehicle_options.py
 """
 import os
@@ -64,6 +85,18 @@ export interface EngineOption {
   count: number;
 }
 """
+
+
+def build_body_types_by_model(X_full):
+    d = X_full.dropna(subset=['kasa_turu'])
+    result = {}
+    for (marka, model), group in d.groupby(['marka', 'model'], observed=True):
+        counts = group['kasa_turu'].value_counts()
+        counts = counts[counts > 0]
+        values = [str(v) for v in counts.index if str(v) != 'nan']
+        if values:
+            result[f'{marka}|{model}'] = values
+    return result
 
 
 def build_vehicle_options(X_full):
@@ -115,14 +148,24 @@ def build_vehicle_options(X_full):
         else:
             del paket_by_engine[key]
 
+    # motor_gucu de motor_hacmi ile ayni sorunu tasiyor: 100/102, 130/132 gibi
+    # birbirine 2 HP mesafede degerler ayni gercek versiyonun olcum/yuvarlama
+    # gurultusu (bkz. modul docstring'i, Faz 26). En yakin 5 HP'ye yuvarlanip
+    # her kova icin EN SIK GORULEN gercek motor_gucu degeri secilebilir/
+    # gonderilebilir deger olarak alinir - motor_hacmi->exactCc ile ayni desen.
     hp_by_engine = {}
     for (marka, model, bucket, yakit), group in d.dropna(subset=['motor_gucu']).groupby(
         ['marka', 'model', 'hacmi_bucket', 'yakit_turu'], observed=True
     ):
         key = engine_key(marka, model, bucket, yakit)
-        values = sorted(float(v) for v in group['motor_gucu'].dropna().unique())
-        if values:
-            hp_by_engine[key] = values
+        hp = group['motor_gucu'].dropna().copy()
+        hp_bucket = (hp / 5).round() * 5
+        representative_values = set()
+        for b in hp_bucket.unique():
+            mode_val = hp[hp_bucket == b].mode().iloc[0]
+            representative_values.add(float(mode_val))
+        if representative_values:
+            hp_by_engine[key] = sorted(representative_values)
 
     return models_by_brand, engines_by_model, paket_by_engine, hp_by_engine
 
@@ -130,6 +173,7 @@ def build_vehicle_options(X_full):
 def main():
     X_full, y_full = prepare_full_training_data()
     models_by_brand, engines_by_model, paket_by_engine, hp_by_engine = build_vehicle_options(X_full)
+    body_types_by_model = build_body_types_by_model(X_full)
 
     # saglik kontrolu: category_mapping.py'nin kanonik marka listesinde
     # OLMAYAN bir marka egitim verisinde varsa erken uyar (drift).
@@ -149,6 +193,9 @@ def main():
     print(f'{len(hp_by_engine)} marka+model+motor grubu icin motor gucu secenegi')
     multi_hp = sum(1 for v in hp_by_engine.values() if len(v) > 1)
     print(f'  bunlarin {multi_hp}\'i ({100 * multi_hp / len(hp_by_engine):.1f}%) birden fazla HP degerine sahip')
+    print(f'{len(body_types_by_model)} marka+model grubu icin kasa tipi secenegi')
+    multi_body = sum(1 for v in body_types_by_model.values() if len(v) > 1)
+    print(f'  bunlarin {multi_body}\'i ({100 * multi_body / len(body_types_by_model):.1f}%) birden fazla kasa tipine sahip')
 
     output_path = os.path.abspath(WEBSITE_OUTPUT_PATH)
     with open(output_path, 'w', encoding='utf-8', newline='\n') as f:
@@ -164,6 +211,9 @@ def main():
         f.write(';\n')
         f.write('\nexport const HP_BY_ENGINE: Record<string, number[]> = ')
         f.write(json.dumps(hp_by_engine, ensure_ascii=False, indent=2))
+        f.write(';\n')
+        f.write('\nexport const BODY_TYPE_BY_MODEL: Record<string, string[]> = ')
+        f.write(json.dumps(body_types_by_model, ensure_ascii=False, indent=2))
         f.write(';\n')
     print(f'uretildi: {output_path}')
 
