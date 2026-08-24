@@ -1,0 +1,30 @@
+FROM python:3.13-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PORT=8000
+
+# LightGBM'in PyPI manylinux wheel'i libgomp'u (GCC OpenMP runtime) kendi
+# icinde bundlemiyor - Vercel'in standart Python Function runtime'i bu
+# sistem kutuphanesini icermedigi icin "OSError: libgomp.so.1: cannot open
+# shared object file" ile import aninda cokuyordu (bkz. production hata
+# loglari). Container runtime'a gecip apt ile kurmak, Vercel'in bu tur
+# native/sistem kutuphanesi bagimliligi olan Python paketleri (LightGBM,
+# XGBoost, vb.) icin resmi onerdigi cozum.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY requirements.txt .
+# requirements.txt uvicorn icermiyor (eski Python Function runtime kendi ASGI
+# hosting'ini yapiyordu, artik gecerli degil) - container'da sunucuyu KENDIMIZ
+# calistirdigimiz icin uvicorn'u burada ayrica ekliyoruz.
+RUN pip install --no-cache-dir -r requirements.txt "uvicorn[standard]>=0.32.0"
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["sh", "-c", "uvicorn serve:app --host 0.0.0.0 --port $PORT"]

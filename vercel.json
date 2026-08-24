@@ -10,11 +10,8 @@
     },
     "predict_api": {
       "root": "WebScrape/ai-model/",
-      "framework": "fastapi",
-      "entrypoint": "serve:app",
-      "functions": {
-        "serve.py": { "maxDuration": 30 }
-      }
+      "runtime": "container",
+      "entrypoint": "Dockerfile.vercel"
     }
   },
   "rewrites": [
