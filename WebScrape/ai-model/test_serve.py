@@ -94,9 +94,19 @@ class TestLabelToCanonicalTranslation(unittest.TestCase):
         self.assertEqual(canonical_resp.status_code, 200)
         self.assertEqual(label_resp.json()["price"], canonical_resp.json()["price"])
 
-    def test_marka_diger_resolves_to_missing_not_rejected(self):
+    def test_marka_diger_is_unrecognized_and_rejected(self):
+        """Faz 24 oncesi 'Diğer' marka icin kasitli bir 'bilinmiyor' sentinel'iydi
+        (200 donerdi). Faz 24, marka listesini egitim verisindeki TUM 68 gercek
+        markayi kapsayacak sekilde genisletti ve bu sentinel'i KALDIRDI (bkz.
+        category_mapping.py modul docstring'i, satir 20-24) - "Diğer" artik ne
+        LABEL_TO_CANONICAL['marka']'da ne de category_sets['marka']'da var,
+        website'in marka listesinde de hic sunulmuyor. Dolayisiyla artik
+        gercekten TANINMAYAN bir deger - diger unknown-marka senaryolariyla
+        (bkz. test_unknown_marka_returns_422_with_detail) AYNI sekilde 422
+        donmesi dogru davranistir."""
         resp = predict({**BASE_PAYLOAD, "brand": "Diğer"})
-        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(resp.status_code, 422)
+        self.assertEqual(resp.json()["detail"]["field"], "marka")
 
 
 class TestUnknownCategoryRejected(unittest.TestCase):

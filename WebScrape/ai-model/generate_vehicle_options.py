@@ -43,6 +43,15 @@ yoktu, kullanici "Sedan" gibi o araca gercekte hic uymayan bir deger secmek
 zorunda kaliyordu (bkz. category_mapping.py'nin Faz 26 notu - kasa_turu artik
 17 kanonik degerin tamamini kapsiyor).
 
+Faz 27: motor (ENGINES_BY_MODEL) ve motor gucu (HP_BY_ENGINE) gruplarina
+MIN_GROUP_COUNT esigi eklendi - Mercedes-Benz C icin "1.5 Elektrik" (count=1)
+kartinin website'de Benzin/Dizel/Hibrit gibi gercek secenklerle AYNI gorunurlukte
+sunuldugu tespit edildi (Mercedes hic tam elektrikli C serisi uretmedi; bu
+satir muhtemelen bir mild-hybrid C 200 AMG ilaninin yanlis etiketlenmesi).
+Faz 26'da HP kovalari icin "tek-satirlik nadir aykiri degerler kasitli olarak
+filtrelenmiyor" denmisti - bu karar artik gecerli DEGIL: count < MIN_GROUP_COUNT
+olan hem motor hem HP kovalari eleniyor (bkz. build_vehicle_options).
+
 Calistirma (ai-model/ calisma dizini olarak): python generate_vehicle_options.py
 """
 import os
@@ -59,6 +68,10 @@ from train import prepare_full_training_data
 WEBSITE_OUTPUT_PATH = os.path.join(
     os.path.dirname(__file__), '..', '..', 'WebSite', 'src', 'lib', 'vehicle-options.generated.ts'
 )
+
+# Bu esigin ALTINDAKI (yani tek satirlik) marka+model+motor / motor+HP
+# kombinasyonlari veri girisi hatasi supheli sayilip elenir (bkz. Faz 27 notu).
+MIN_GROUP_COUNT = 2
 
 HEADER = """/**
  * OTOMATIK URETILMISTIR - ELLE DUZENLEMEYIN.
@@ -111,6 +124,8 @@ def build_vehicle_options(X_full):
     for (marka, model, bucket, yakit), group in d.groupby(
         ['marka', 'model', 'hacmi_bucket', 'yakit_turu'], observed=True
     ):
+        if len(group) < MIN_GROUP_COUNT:
+            continue
         key = f'{marka}|{model}'
         exact_cc = float(group['motor_hacmi'].mode().iloc[0])
         engines_by_model.setdefault(key, []).append({
@@ -162,7 +177,10 @@ def build_vehicle_options(X_full):
         hp_bucket = (hp / 5).round() * 5
         representative_values = set()
         for b in hp_bucket.unique():
-            mode_val = hp[hp_bucket == b].mode().iloc[0]
+            bucket_values = hp[hp_bucket == b]
+            if len(bucket_values) < MIN_GROUP_COUNT:
+                continue
+            mode_val = bucket_values.mode().iloc[0]
             representative_values.add(float(mode_val))
         if representative_values:
             hp_by_engine[key] = sorted(representative_values)

@@ -129,10 +129,12 @@ test("getEnginesForModel: bilinmeyen marka+model için boş dizi döner", () => 
 });
 
 test("getHpOptions: birden fazla geçerli motor gücü değeri olan gerçek bir kombinasyon", () => {
-  // Bu Faz'da olculdu: Mazda 3 1.6 Benzin'de 3 farkli HP degeri var -
-  // PredictionForm bu durumda otomatik doldurmak yerine secilebilir dropdown gosterir.
+  // Mazda 3 1.6 Benzin'de eskiden 3 HP degeri (105/109/115) donuyordu; 109
+  // tek-satirlik bir kova oldugu icin generate_vehicle_options.py'deki
+  // MIN_GROUP_COUNT esigiyle (Faz 27) elendi - PredictionForm hala kalan
+  // birden fazla deger icin secilebilir dropdown gosterir.
   const hp = getHpOptions("Mazda", "3", 1600, "Benzin");
-  assert.deepEqual(hp, [105, 109, 115]);
+  assert.deepEqual(hp, [105, 115]);
 });
 
 test("getHpOptions: bilinmeyen kombinasyon için boş dizi döner", () => {
@@ -165,12 +167,11 @@ test("getBodyTypesForModel: bilinmeyen marka+model için boş dizi döner", () =
 test("getHpOptions: Citroën Berlingo 1.5 Dizel'de yakın-deger olcum gurultusu 5 HP'ye yuvarlanip birlestirilir", () => {
   // Kullanici raporu: 96/100/102/110/130/132 -> 6 secenek gorunuyordu.
   // 100~102 ve 130~132 ayni gercek versiyonun olcum gurultusu (bkz.
-  // generate_vehicle_options.py Faz 26 notu) - yuvarlama sonrasi 4 kalmali,
-  // baskin gercek degerler (102 ve 132, en sik gorulenler) korunmali.
+  // generate_vehicle_options.py Faz 26 notu), 95 ve 110 ise tek-satirlik
+  // kovalar - MIN_GROUP_COUNT esigiyle (Faz 27) elenir. Geriye sadece
+  // baskin gercek degerler (102 ve 132, en sik gorulenler) kalmali.
   const hp = getHpOptions("Citroën", "Berlingo", 1500, "Dizel");
-  assert.equal(hp.length, 4);
-  assert.ok(hp.includes(102));
-  assert.ok(hp.includes(132));
+  assert.deepEqual(hp, [102, 132]);
 });
 
 test("getModelsForBrand: BMW için modelleri döner ve 3 Serisi içerir", () => {

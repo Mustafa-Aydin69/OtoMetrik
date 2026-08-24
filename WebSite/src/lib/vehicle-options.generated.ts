@@ -959,40 +959,10 @@ export const MODELS_BY_BRAND: Record<string, string[]> = {
 export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Alfa Romeo|145": [
     {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1351.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1351.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1596.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1715.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1715.0,
-      "count": 1
     }
   ],
   "Alfa Romeo|146": [
@@ -1007,24 +977,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1370.0,
       "count": 15
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -1065,12 +1017,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 78
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1910.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1970.0,
@@ -1103,24 +1049,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 71
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1970.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1970.0,
@@ -1135,12 +1063,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Alfa Romeo|159": [
     {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1796.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
@@ -1151,26 +1073,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1910.0,
       "count": 35
-    }
-  ],
-  "Alfa Romeo|166": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1996.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1996.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Alfa Romeo|33": [
@@ -1207,20 +1109,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1970.0,
       "count": 3
-    }
-  ],
-  "Alfa Romeo|GTV": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1996.0,
-      "count": 1
     }
   ],
   "Alfa Romeo|Giulia": [
@@ -1273,18 +1161,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 136
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.0,
-      "count": 1
     }
   ],
   "Alfa Romeo|Junior Ibrida": [
@@ -1293,12 +1169,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -1314,12 +1184,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Alfa Romeo|MiTo": [
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1248.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Dizel",
@@ -1339,36 +1203,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 10
     },
     {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1368.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 2
-    }
-  ],
-  "Alfa Romeo|Spider": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
     }
   ],
   "Alfa Romeo|Stelvio": [
@@ -1380,12 +1218,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Alfa Romeo|Tonale": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Hibrit",
@@ -1417,61 +1249,15 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 31
     }
   ],
-  "Aston Martin|Vantage": [
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4750.0,
-      "count": 1
-    }
-  ],
   "Audi|100 Serisi": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1986.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2309.0,
-      "count": 1
-    }
-  ],
-  "Audi|200 Serisi": [
-    {
-      "hacmiBucket": 2100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2119.0,
-      "count": 1
     }
   ],
   "Audi|80 Serisi": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1588.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
@@ -1479,28 +1265,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 10
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1781.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1896.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1984.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -1536,24 +1304,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 47
     }
   ],
   "Audi|A3": [
-    {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 100.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
@@ -1669,12 +1425,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 12
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Benzin",
       "exactCc": 1781.0,
@@ -1685,30 +1435,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1781.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1896.0,
       "count": 8
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1984.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -1718,12 +1450,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Audi|A4": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -1803,12 +1529,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 7
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1968.0,
@@ -1834,33 +1554,15 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
       "yakitTuru": "Dizel",
       "exactCc": 2250.0,
       "count": 2
     },
     {
       "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
       "exactCc": 2250.5,
       "count": 6
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2496.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2500.0,
@@ -1885,12 +1587,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2750.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2976.0,
-      "count": 1
     }
   ],
   "Audi|A5": [
@@ -1907,12 +1603,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 25
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1700.0,
       "yakitTuru": "Benzin",
       "exactCc": 1700.0,
@@ -1923,12 +1613,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1798.0,
       "count": 22
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1798.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -1965,18 +1649,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1968.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2967.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3197.0,
-      "count": 1
     }
   ],
   "Audi|A6": [
@@ -2147,18 +1819,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 3123.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 3100.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3123.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.0,
-      "count": 1
     }
   ],
   "Audi|A7": [
@@ -2167,12 +1827,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
       "count": 5
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1968.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2800.0,
@@ -2185,21 +1839,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2750.0,
       "count": 5
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2967.0,
-      "count": 1
     }
   ],
   "Audi|A8": [
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Dizel",
@@ -2217,12 +1859,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2967.0,
       "count": 14
-    },
-    {
-      "hacmiBucket": 4100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4134.0,
-      "count": 1
     },
     {
       "hacmiBucket": 4200.0,
@@ -2259,12 +1895,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Audi|Q2": [
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 999.0,
@@ -2293,12 +1923,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 87
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Audi|Q3": [
@@ -2307,12 +1931,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1498.0,
       "count": 73
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1498.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -2391,32 +2009,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2967.0,
       "count": 30
-    },
-    {
-      "hacmiBucket": 4200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4163.0,
-      "count": 1
-    }
-  ],
-  "Audi|RS": [
-    {
-      "hacmiBucket": 2700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2671.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4163.0,
-      "count": 1
     }
   ],
   "Audi|S": [
@@ -2431,30 +2023,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1984.0,
       "count": 8
-    },
-    {
-      "hacmiBucket": 2700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2671.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2995.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
     },
     {
       "hacmiBucket": 4200.0,
@@ -2489,18 +2057,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1984.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
     }
   ],
   "BMW|1 Serisi": [
@@ -2551,12 +2107,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1700.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -2617,12 +2167,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "BMW|3 Serisi": [
     {
-      "hacmiBucket": 300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 316.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1500.5,
@@ -2651,12 +2195,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1700.5,
       "count": 15
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1700.0,
@@ -2732,21 +2270,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2250.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2443.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2500.0,
@@ -2779,12 +2305,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 9
     },
     {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2926.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3000.0,
       "yakitTuru": "Benzin",
       "exactCc": 2979.0,
@@ -2801,18 +2321,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2979.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3250.5,
-      "count": 1
     },
     {
       "hacmiBucket": 3300.0,
@@ -2867,12 +2375,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "BMW|5 Serisi": [
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1500.5,
@@ -2889,12 +2391,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1700.5,
       "count": 7
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1796.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -2949,12 +2445,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 2171.0,
       "count": 21
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2200.0,
@@ -3047,30 +2537,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 19
     },
     {
-      "hacmiBucket": 3400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3430.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3430.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3982.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4200.0,
       "yakitTuru": "Benzin",
       "exactCc": 4250.0,
@@ -3083,22 +2549,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4400.0,
       "yakitTuru": "Benzin",
       "exactCc": 4398.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 4400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4398.0,
-      "count": 1
     }
   ],
   "BMW|6 Serisi": [
@@ -3107,12 +2561,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1995.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2800.0,
@@ -3128,33 +2576,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2996.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
       "yakitTuru": "Dizel",
       "exactCc": 2993.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 4400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4398.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4398.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4799.0,
-      "count": 1
     }
   ],
   "BMW|7 Serisi": [
@@ -3169,18 +2593,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1998.0,
       "count": 13
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1995.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2496.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2800.0,
@@ -3213,48 +2625,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3430.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3430.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3901.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3900.0,
       "yakitTuru": "Dizel",
       "exactCc": 3901.0,
@@ -3267,22 +2637,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 4200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4250.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4300.0,
       "yakitTuru": "Benzin",
       "exactCc": 4250.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4250.5,
-      "count": 1
     },
     {
       "hacmiBucket": 4400.0,
@@ -3297,24 +2655,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4799.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4988.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5379.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 6000.0,
       "yakitTuru": "Benzin",
       "exactCc": 5972.0,
@@ -3322,12 +2662,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "BMW|M Serisi": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Benzin",
@@ -3357,12 +2691,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 3750.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3795.0,
-      "count": 1
     },
     {
       "hacmiBucket": 4000.0,
@@ -3395,12 +2723,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 6
     },
     {
-      "hacmiBucket": 4900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4941.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 5000.0,
       "yakitTuru": "Benzin",
       "exactCc": 4999.0,
@@ -3427,22 +2749,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 83
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1499.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
       "count": 62
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -3503,18 +2813,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 82
     },
     {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2497.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2494.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3000.0,
       "yakitTuru": "Dizel",
       "exactCc": 2993.0,
@@ -3573,28 +2871,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 75
     },
     {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4600.0,
       "yakitTuru": "Benzin",
       "exactCc": 4619.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 4600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4619.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4799.0,
-      "count": 1
     }
   ],
   "BMW|X6": [
@@ -3615,27 +2895,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2993.0,
       "count": 52
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4250.5,
-      "count": 1
     }
   ],
   "BMW|Z Serisi": [
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1796.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
@@ -3649,12 +2911,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Benzin",
       "exactCc": 2250.5,
@@ -3662,12 +2918,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "BMW|i Serisi": [
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1200.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -3692,37 +2942,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "BYD|Seal U DM-i": [
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1500.5,
       "count": 203
-    }
-  ],
-  "Bentley|Continental": [
-    {
-      "hacmiBucket": 5800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5998.0,
-      "count": 1
-    }
-  ],
-  "Buick|Regal": [
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.0,
-      "count": 1
     }
   ],
   "Cadillac|DeVille": [
@@ -3733,39 +2955,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     }
   ],
-  "Cadillac|Eldorado": [
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4750.0,
-      "count": 1
-    }
-  ],
   "Cadillac|Escalade": [
-    {
-      "hacmiBucket": 5300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 5250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5967.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 6000.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 5967.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 6200.0,
       "yakitTuru": "Benzin",
@@ -3773,61 +2963,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 7
     }
   ],
-  "Cadillac|Fleetwood": [
-    {
-      "hacmiBucket": 5800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5750.0,
-      "count": 1
-    }
-  ],
-  "Cadillac|SRX": [
-    {
-      "hacmiBucket": 3600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3564.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3750.5,
-      "count": 1
-    }
-  ],
-  "Cadillac|Seville": [
-    {
-      "hacmiBucket": 4600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4572.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4917.0,
-      "count": 1
-    }
-  ],
   "Chery|Alia": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
@@ -3839,18 +2975,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1597.0,
       "count": 34
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1971.0,
-      "count": 1
     }
   ],
   "Chery|Chance": [
@@ -3904,18 +3028,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Chery|Omoda 5 Pro": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
@@ -3972,21 +3084,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Chery|Tiggo 7 Pro Max": [
@@ -4123,12 +3223,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1500.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     }
   ],
   "Chevrolet|Camaro": [
@@ -4169,14 +3263,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     }
   ],
-  "Chevrolet|Caprice": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    }
-  ],
   "Chevrolet|Captiva": [
     {
       "hacmiBucket": 1900.0,
@@ -4191,21 +3277,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 401
     }
   ],
-  "Chevrolet|Cavalier": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2189.0,
-      "count": 1
-    }
-  ],
   "Chevrolet|Corvette": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 5800.0,
       "yakitTuru": "Benzin",
@@ -4214,12 +3286,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Chevrolet|Cruze": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
@@ -4252,27 +3318,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 891
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1796.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -4305,27 +3353,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1991.0,
       "count": 25
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1993.0,
-      "count": 1
     }
   ],
   "Chevrolet|Evanda": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
@@ -4339,12 +3369,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -4434,12 +3458,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1700.0,
       "count": 4
@@ -4483,12 +3501,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 796.0,
       "count": 25
-    },
-    {
-      "hacmiBucket": 800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 796.0,
-      "count": 1
     },
     {
       "hacmiBucket": 800.0,
@@ -4545,58 +3557,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2987.0,
       "count": 44
-    },
-    {
-      "hacmiBucket": 3500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3518.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5654.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5750.0,
-      "count": 1
     }
   ],
   "Chrysler|300 M": [
-    {
-      "hacmiBucket": 2700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2736.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 3500.0,
       "yakitTuru": "Benzin",
       "exactCc": 3518.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 3500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3518.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
-    }
-  ],
-  "Chrysler|Concorde": [
-    {
-      "hacmiBucket": 3500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3518.0,
-      "count": 1
     }
   ],
   "Chrysler|Crossfire": [
@@ -4607,21 +3575,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     }
   ],
-  "Chrysler|LHS": [
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
-    }
-  ],
   "Chrysler|Neon": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1996.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
@@ -4631,54 +3585,18 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Chrysler|PT Cruiser": [
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1995.0,
       "count": 5
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.0,
-      "count": 1
     }
   ],
   "Chrysler|Sebring": [
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1968.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1968.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2360.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2360.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2498.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2700.0,
@@ -4697,44 +3615,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 2750.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.0,
-      "count": 1
     }
   ],
   "Chrysler|Stratus": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1996.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2200.0,
       "yakitTuru": "Benzin",
       "exactCc": 2250.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2500.0,
@@ -4749,14 +3637,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Elektrik",
       "exactCc": 1598.0,
       "count": 28
-    }
-  ],
-  "Citroen|BX": [
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1360.0,
-      "count": 1
     }
   ],
   "Citroen|Berlingo": [
@@ -4779,40 +3659,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 434.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1199.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1199.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Dizel",
       "exactCc": 1301.0,
       "count": 32
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1368.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1360.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -4859,18 +3709,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 9
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1499.0,
@@ -4893,33 +3731,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 294
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1587.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.0,
-      "count": 1
     }
   ],
   "Citroen|C-Elysée": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
@@ -4943,12 +3757,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1199.0,
       "count": 17
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -4989,12 +3797,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 38
     },
     {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1398.0,
@@ -5007,21 +3809,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 14
     }
   ],
-  "Citroen|C15": [
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1769.0,
-      "count": 1
-    }
-  ],
   "Citroen|C2": [
-    {
-      "hacmiBucket": 1100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1124.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -5033,12 +3821,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1300.5,
       "count": 4
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -5065,12 +3847,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1587.0,
@@ -5085,22 +3861,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Citroen|C3": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 111
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -5179,12 +3943,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1587.0,
       "count": 16
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
     }
   ],
   "Citroen|C3 Aircross": [
@@ -5239,12 +3997,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1560.0,
@@ -5275,12 +4027,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
       "count": 218
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1199.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -5355,24 +4101,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1997.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1997.0,
@@ -5391,12 +4119,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
       "count": 27
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1199.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -5435,18 +4157,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 73
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
     }
   ],
   "Citroen|C4 Picasso": [
@@ -5473,12 +4183,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 83
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
     }
   ],
   "Citroen|C4 SUV": [
@@ -5487,12 +4191,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
       "count": 15
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     }
   ],
   "Citroen|C4 X": [
@@ -5507,12 +4205,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
       "count": 440
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1199.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -5553,28 +4245,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 419
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -5603,18 +4277,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Citroen|C5 Aircross": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
@@ -5633,12 +4295,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 35
     },
     {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1199.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1500.5,
@@ -5655,26 +4311,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
       "count": 23
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    }
-  ],
-  "Citroen|C8": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1997.0,
-      "count": 1
     }
   ],
   "Citroen|Evasion": [
@@ -5703,39 +4339,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2229.0,
       "count": 17
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2446.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2798.0,
-      "count": 1
     }
   ],
   "Citroen|Jumpy": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 19.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1301.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
@@ -5747,12 +4353,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 8
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1801.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -5782,12 +4382,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1398.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
       "yakitTuru": "Dizel",
       "exactCc": 1398.0,
       "count": 258
@@ -5801,22 +4395,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1360.0,
       "count": 13
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1360.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -5837,12 +4419,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 57
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1587.0,
@@ -5857,12 +4433,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Citroen|XM": [
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1998.0,
@@ -5871,40 +4441,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Citroen|Xantia": [
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1580.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1761.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1905.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -5925,12 +4465,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1360.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -5963,40 +4497,16 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1749.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1761.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1761.0,
       "count": 4
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1997.0,
       "count": 9
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1997.0,
-      "count": 1
     }
   ],
   "Citroen|ZX": [
@@ -6013,24 +4523,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1761.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1905.0,
@@ -6043,18 +4535,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 5
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1199.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
     }
   ],
   "Cupra|Born": [
@@ -6091,12 +4571,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1498.0,
       "count": 78
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1984.0,
-      "count": 1
     }
   ],
   "Cupra|Terramar": [
@@ -6119,12 +4593,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     }
   ],
   "DS Automobiles|DS 7 Crossback": [
@@ -6157,12 +4625,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1598.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "DS Automobiles|DS3": [
@@ -6171,12 +4633,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -6189,12 +4645,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
     }
   ],
   "DS Automobiles|DS4": [
@@ -6238,12 +4688,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "DS Automobiles|DS5": [
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 23
@@ -6271,18 +4715,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Dacia|Dokker": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 90.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Dizel",
       "exactCc": 1301.0,
@@ -6308,18 +4740,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Dacia|Duster": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
@@ -6431,22 +4851,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 12
     },
     {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1500.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1500.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -6456,18 +4864,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Dacia|Lodgy": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -6488,24 +4884,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 3
     }
   ],
   "Dacia|Logan": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
@@ -6613,32 +4997,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 76
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Dacia|Sandero": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 88
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 600.0,
@@ -6701,18 +5067,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 21
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1390.0,
@@ -6737,12 +5091,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 1049
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
@@ -6753,12 +5101,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
     }
   ],
   "Dacia|Sandero Stepway": [
@@ -6791,12 +5133,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1199.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Dacia|Solenza": [
@@ -6825,62 +5161,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 118
     }
   ],
-  "Daewoo|Chairman": [
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3199.0,
-      "count": 1
-    }
-  ],
   "Daewoo|Espero": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1498.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Benzin",
       "exactCc": 1796.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1796.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -6930,12 +5216,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Daewoo|Matiz": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 800.0,
       "yakitTuru": "Benzin",
@@ -7021,12 +5301,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Daihatsu|Charade": [
     {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1300.0,
@@ -7063,12 +5337,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 989.0,
       "count": 8
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1200.0,
-      "count": 1
     }
   ],
   "Daihatsu|Materia": [
@@ -7101,12 +5369,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 998.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1298.0,
@@ -7117,12 +5379,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1298.0,
       "count": 13
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1495.0,
-      "count": 1
     }
   ],
   "Daihatsu|YRV": [
@@ -7149,36 +5405,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Dodge|Caliber": [
     {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 2
-    }
-  ],
-  "Dodge|Challenger": [
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 6001.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 6059.0,
-      "count": 1
     }
   ],
   "Dodge|Journey": [
@@ -7203,44 +5433,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 24
     }
   ],
-  "Dodge|Ram": [
-    {
-      "hacmiBucket": 5900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 5883.0,
-      "count": 1
-    }
-  ],
-  "Fiat|124 Spider": [
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1368.0,
-      "count": 1
-    }
-  ],
-  "Fiat|126 Bis": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    }
-  ],
-  "Fiat|500 Abarth": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1368.0,
-      "count": 1
-    }
-  ],
   "Fiat|500 Ailesi": [
     {
       "hacmiBucket": 500.0,
@@ -7253,12 +5445,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Elektrik",
       "exactCc": 500.0,
       "count": 14
-    },
-    {
-      "hacmiBucket": 900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 875.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
@@ -7291,12 +5477,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 50
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1368.0,
@@ -7317,12 +5497,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Fiat|500 X": [
     {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1248.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
@@ -7335,12 +5509,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1368.0,
@@ -7357,12 +5525,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1500.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1500.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -7391,18 +5553,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -7454,21 +5604,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1596.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1596.0,
       "count": 35
-    },
-    {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4250.5,
-      "count": 1
     }
   ],
   "Fiat|Brava": [
@@ -7495,21 +5633,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1581.0,
       "count": 169
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1910.0,
-      "count": 1
     }
   ],
   "Fiat|Bravo": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
@@ -7535,12 +5661,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 6
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1581.0,
@@ -7557,24 +5677,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1581.0,
       "count": 24
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1910.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Fiat|Doblo": [
@@ -7640,21 +5742,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1499.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
       "exactCc": 1499.0,
       "count": 518
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -7675,22 +5765,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 524
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1910.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1956.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 13011600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 13011600.0,
-      "count": 1
     }
   ],
   "Fiat|Ducato": [
@@ -7711,12 +5789,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 151.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1601.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -7758,33 +5830,15 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Fiat|Egea": [
     {
       "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
       "yakitTuru": "Dizel",
       "exactCc": 2.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 999.0,
       "count": 15
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 999.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -7875,12 +5929,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1700.5,
       "count": 5
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 6001.0,
-      "count": 1
     }
   ],
   "Fiat|Egea Cross": [
@@ -7915,12 +5963,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 45
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1368.0,
@@ -7931,12 +5973,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1368.0,
       "count": 161
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -7958,12 +5994,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Fiat|Fiorino": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 13.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 100.0,
       "yakitTuru": "Dizel",
@@ -8043,18 +6073,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1368.0,
@@ -8068,18 +6086,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Fiat|Linea": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
@@ -8118,12 +6124,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1368.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1368.0,
       "count": 200
@@ -8151,18 +6151,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 222
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3250.5,
-      "count": 1
     }
   ],
   "Fiat|Marea": [
@@ -8183,12 +6171,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1596.0,
       "count": 69
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1581.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -8228,18 +6210,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Fiat|Palio": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
@@ -8331,21 +6301,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1242.0,
       "count": 28
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1368.0,
-      "count": 1
     }
   ],
   "Fiat|Panda": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 900.0,
       "yakitTuru": "Benzin",
@@ -8353,22 +6311,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 5
     },
     {
-      "hacmiBucket": 900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 875.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Hibrit",
       "exactCc": 999.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1108.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -8401,12 +6347,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -8461,21 +6401,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1500.5,
       "count": 5
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1910.0,
-      "count": 1
     }
   ],
   "Fiat|Scudo": [
-    {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 250.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
@@ -8523,18 +6451,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Fiat|Siena": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
       "exactCc": 1242.0,
@@ -8545,12 +6461,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1242.0,
       "count": 80
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -8590,18 +6500,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Fiat|Stilo": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1242.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
@@ -8653,18 +6551,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Fiat|Tempra": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1300.5,
@@ -8693,12 +6579,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1581.0,
       "count": 58
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1581.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -8732,24 +6612,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Fiat|Tipo": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
@@ -8803,12 +6665,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1995.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1995.0,
-      "count": 1
     }
   ],
   "Fiat|Ulysse": [
@@ -8833,18 +6689,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Fiat|Uno": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 70.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 600.0,
@@ -8861,12 +6705,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1108.0,
       "count": 29
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1200.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -8891,18 +6729,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1372.0,
       "count": 641
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1697.0,
-      "count": 1
     }
   ],
   "Ford|B-Max": [
@@ -8929,12 +6755,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1388.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -9011,26 +6831,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1596.0,
       "count": 63
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1753.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1997.0,
-      "count": 1
-    }
-  ],
-  "Ford|E Serisi": [
-    {
-      "hacmiBucket": 5000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 5001.0,
-      "count": 1
     }
   ],
   "Ford|EcoSport": [
@@ -9041,22 +6841,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 11
     },
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 998.0,
       "count": 95
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -9135,49 +6923,13 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ford|Explorer": [
     {
-      "hacmiBucket": 3500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3496.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4000.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 4000.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 5000.0,
-      "count": 1
     }
   ],
   "Ford|Festiva": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1283.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
@@ -9193,22 +6945,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 13.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 32
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
@@ -9307,18 +7047,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 84
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Benzin",
       "exactCc": 1753.0,
@@ -9326,21 +7054,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1753.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1753.0,
       "count": 33
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1999.0,
-      "count": 1
     }
   ],
   "Ford|Fiesta Van": [
@@ -9353,18 +7069,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ford|Focus": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 0.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
@@ -9372,21 +7076,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
       "yakitTuru": "Hibrit",
       "exactCc": 600.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
@@ -9411,12 +7103,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1300.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1388.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -9462,12 +7148,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
       "yakitTuru": "Dizel",
       "exactCc": 1700.5,
       "count": 4
@@ -9489,18 +7169,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1753.0,
       "count": 27
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1753.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -9585,24 +7253,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ford|Galaxy": [
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1997.0,
@@ -9617,12 +7267,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ford|Grand C-Max": [
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1499.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
@@ -9630,12 +7274,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Ford|Ka": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
@@ -9659,18 +7297,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1297.0,
       "count": 15
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1597.0,
-      "count": 1
     }
   ],
   "Ford|Kuga": [
@@ -9755,18 +7381,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 96
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
@@ -9811,12 +7425,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ford|Mustang": [
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3800.0,
       "yakitTuru": "Benzin",
       "exactCc": 3750.5,
@@ -9835,22 +7443,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     }
   ],
-  "Ford|Mustang Mach-E": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 600.0,
-      "count": 1
-    }
-  ],
-  "Ford|Probe": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2184.0,
-      "count": 1
-    }
-  ],
   "Ford|Puma": [
     {
       "hacmiBucket": 600.0,
@@ -9859,22 +7451,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 16
     },
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 998.0,
       "count": 150
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
@@ -9889,12 +7469,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Elektrik",
       "exactCc": 1300.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1500.5,
-      "count": 1
     }
   ],
   "Ford|Ranger": [
@@ -9929,12 +7503,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 67
     },
     {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3000.0,
       "yakitTuru": "Dizel",
       "exactCc": 2953.0,
@@ -9955,12 +7523,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ford|S-Max": [
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1560.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
@@ -9973,59 +7535,15 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 8
     }
   ],
-  "Ford|Scorpio": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    }
-  ],
   "Ford|Sierra": [
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1796.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2304.0,
-      "count": 1
     }
   ],
   "Ford|Taunus": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -10051,12 +7569,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 66
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1993.0,
@@ -10075,12 +7587,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2750.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.0,
-      "count": 1
     }
   ],
   "Ford|Tourneo Connect": [
@@ -10095,12 +7601,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 377.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -10189,18 +7689,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 17
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1400.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1498.0,
@@ -10211,12 +7699,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1498.0,
       "count": 2692
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1560.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -10278,12 +7760,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 350.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 400.0,
       "yakitTuru": "Dizel",
       "exactCc": 350.0,
       "count": 7
@@ -10295,46 +7771,16 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1301.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Dizel",
       "exactCc": 1801.0,
       "count": 41
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1899.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1995.0,
       "count": 293
-    },
-    {
-      "hacmiBucket": 2100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2100.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2198.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2200.0,
@@ -10355,60 +7801,18 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 142
     },
     {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2496.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3200.0,
       "yakitTuru": "Dizel",
       "exactCc": 3198.0,
       "count": 168
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3300.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 5001.0,
-      "count": 1
     }
   ],
   "Ford|Transit Connect": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 377.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1499.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1601.0,
       "count": 16
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1753.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -10421,33 +7825,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1998.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2230.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2335.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2402.0,
-      "count": 1
     }
   ],
   "Ford|Transit Courier": [
-    {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 249.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
@@ -10475,12 +7855,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ford|Transit Custom": [
     {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 136.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Dizel",
       "exactCc": 1801.0,
@@ -10491,12 +7865,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1995.0,
       "count": 252
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2198.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2200.0,
@@ -10577,18 +7945,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 67
     },
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1590.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1850.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1850.0,
@@ -10619,24 +7975,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 104
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2204.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2400.0,
       "yakitTuru": "Benzin",
       "exactCc": 2354.0,
@@ -10663,12 +8001,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 9
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1498.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1597.0,
@@ -10679,12 +8011,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1900.5,
       "count": 10
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1900.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -10727,12 +8053,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Honda|CRX": [
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1590.0,
@@ -10766,12 +8086,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Honda|Civic": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 0.0,
       "yakitTuru": "LPG & Benzin",
@@ -10834,12 +8148,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1595.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1595.0,
       "count": 3909
@@ -10879,28 +8187,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1996.0,
       "count": 12
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    }
-  ],
-  "Honda|E": [
-    {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 154.0,
-      "count": 1
-    }
-  ],
-  "Honda|FR-V": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2204.0,
-      "count": 1
     }
   ],
   "Honda|HR-V": [
@@ -10941,20 +8227,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 29
     }
   ],
-  "Honda|Integra": [
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    }
-  ],
   "Honda|Jazz": [
     {
       "hacmiBucket": 1300.0,
@@ -10981,46 +8253,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 31
     }
   ],
-  "Honda|Legend": [
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.0,
-      "count": 1
-    }
-  ],
-  "Honda|Prelude": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1997.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1958.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2157.0,
-      "count": 1
-    }
-  ],
   "Honda|S2000": [
     {
       "hacmiBucket": 1900.0,
@@ -11037,12 +8269,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Honda|Shuttle": [
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2156.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2300.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2250.5,
@@ -11052,30 +8278,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Honda|ZR-V": [
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1993.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1993.0,
       "count": 2
     }
   ],
   "Hyundai|Accent": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "LPG & Benzin",
@@ -11087,12 +8295,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1341.0,
       "count": 172
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1341.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -11129,27 +8331,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1599.0,
       "count": 121
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Hyundai|Accent Blue": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -11217,12 +8401,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1399.0,
       "count": 131
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1399.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -11307,12 +8485,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Hyundai|Bayon": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 0.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
@@ -11352,12 +8524,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Hyundai|Coupe": [
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1495.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1500.5,
       "count": 2
@@ -11373,12 +8539,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1599.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -11425,49 +8585,19 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 286
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1795.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1795.0,
       "count": 13
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1975.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1975.0,
-      "count": 1
     }
   ],
   "Hyundai|Excel": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -11490,12 +8620,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Hyundai|Getz": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -11531,24 +8655,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1493.0,
       "count": 554
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1599.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1599.0,
-      "count": 1
     }
   ],
   "Hyundai|H 1": [
@@ -11560,12 +8666,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Hyundai|H 100": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
@@ -11585,46 +8685,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 26
     }
   ],
-  "Hyundai|Ioniq": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1580.0,
-      "count": 1
-    }
-  ],
-  "Hyundai|Ioniq 6": [
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1580.0,
-      "count": 1
-    }
-  ],
   "Hyundai|Kona": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 998.0,
       "count": 32
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -11651,12 +8717,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1591.0,
@@ -11673,12 +8733,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1580.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Hyundai|Matrix": [
@@ -11716,21 +8770,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Hyundai|Santa Fe": [
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1500.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -11761,12 +8803,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2250.5,
       "count": 6
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3250.5,
-      "count": 1
     }
   ],
   "Hyundai|Sonata": [
@@ -11775,18 +8811,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -11807,37 +8831,13 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 23
     },
     {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2359.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2493.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2500.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2493.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 2700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2656.0,
-      "count": 1
     }
   ],
   "Hyundai|Starex": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
@@ -11854,12 +8854,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Hyundai|Staria": [
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1598.0,
       "count": 8
@@ -11871,27 +8865,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 30
     }
   ],
-  "Hyundai|Trajet": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1991.0,
-      "count": 1
-    }
-  ],
   "Hyundai|Tucson": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -12025,50 +8999,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
       "count": 29
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     }
   ],
   "Hyundai|i20": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 0.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 78
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
@@ -12141,21 +9079,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1500.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     }
   ],
   "Hyundai|i20 Active": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
@@ -12167,12 +9093,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
       "count": 5
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -12227,12 +9147,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 6
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1396.0,
@@ -12249,27 +9163,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1396.0,
       "count": 26
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
     }
   ],
   "Hyundai|i30": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
@@ -12337,32 +9233,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     }
   ],
-  "Hyundai|i40": [
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1591.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1685.0,
-      "count": 1
-    }
-  ],
   "Hyundai|ix20": [
     {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Dizel",
       "exactCc": 1396.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1591.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -12411,24 +9287,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ikco|Samand": [
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1587.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1587.0,
@@ -12450,30 +9308,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 3500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3498.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3500.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3498.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3750.5,
-      "count": 1
     }
   ],
   "Infiniti|G": [
-    {
-      "hacmiBucket": 3700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3700.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 3800.0,
       "yakitTuru": "Benzin",
@@ -12487,54 +9327,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 2750.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Infiniti|Q30": [
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
       "exactCc": 1500.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1595.0,
-      "count": 1
-    }
-  ],
-  "Infiniti|Q50": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2143.0,
-      "count": 1
-    }
-  ],
-  "Infiniti|Q60": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
     }
   ],
   "Infiniti|QX": [
@@ -12546,12 +9346,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Infiniti|i30": [
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2988.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 3000.0,
       "yakitTuru": "LPG & Benzin",
@@ -12589,26 +9383,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2999.0,
       "count": 12
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4250.5,
-      "count": 1
-    }
-  ],
-  "Isuzu|Gemini": [
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.0,
-      "count": 1
     }
   ],
   "Iveco - Otoyol|35": [
@@ -12664,12 +9438,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Jaguar|F-Pace": [
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
       "count": 2
@@ -12683,18 +9451,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Jaguar|S-Type": [
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2497.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2700.0,
       "yakitTuru": "Benzin",
       "exactCc": 2720.0,
@@ -12707,34 +9463,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3000.0,
       "yakitTuru": "Benzin",
       "exactCc": 2967.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2967.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3996.0,
-      "count": 1
     }
   ],
   "Jaguar|Sovereign": [
@@ -12795,49 +9527,13 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2500.0,
       "yakitTuru": "Benzin",
       "exactCc": 2495.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2495.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2968.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2968.0,
-      "count": 1
     }
   ],
   "Jaguar|XE": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
@@ -12884,12 +9580,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2179.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
       "yakitTuru": "Dizel",
       "exactCc": 2179.0,
       "count": 8
@@ -12933,12 +9623,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 11
     },
     {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1999.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Benzin",
       "exactCc": 2750.5,
@@ -12952,21 +9636,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2993.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
       "yakitTuru": "Dizel",
       "exactCc": 2993.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3248.0,
-      "count": 1
     },
     {
       "hacmiBucket": 3800.0,
@@ -12979,20 +9651,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 3980.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 4200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4250.0,
-      "count": 1
-    }
-  ],
-  "Jaguar|XKR": [
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
     }
   ],
   "Jeep|Avenger Hybrid": [
@@ -13017,18 +9675,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 27
     },
     {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2499.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Dizel",
       "exactCc": 2750.5,
@@ -13048,29 +9694,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3750.5,
       "count": 8
-    },
-    {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3960.0,
-      "count": 1
-    }
-  ],
-  "Jeep|Commander": [
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Jeep|Compass": [
@@ -13106,21 +9732,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1469.0,
       "count": 41
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1598.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -13179,28 +9793,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 5
     },
     {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3964.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3964.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4700.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 4701.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4750.5,
-      "count": 1
     },
     {
       "hacmiBucket": 5200.0,
@@ -13234,12 +9830,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 5900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5901.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5900.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 5901.0,
       "count": 3
@@ -13251,18 +9841,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1968.0,
       "count": 12
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2359.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2359.0,
-      "count": 1
     }
   ],
   "Jeep|Renegade": [
@@ -13291,18 +9869,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 18
     },
     {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1368.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
       "exactCc": 1500.5,
@@ -13319,12 +9885,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 123
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1956.0,
-      "count": 1
     }
   ],
   "Jeep|Wrangler": [
@@ -13333,32 +9893,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2750.5,
       "count": 13
-    },
-    {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3960.0,
-      "count": 1
     }
   ],
   "Kia|Capital": [
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1498.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1498.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
     }
   ],
   "Kia|Carens": [
@@ -13377,12 +9919,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Kia|Carnival": [
     {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2497.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Dizel",
       "exactCc": 2750.0,
@@ -13396,12 +9932,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Kia|Ceed": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
@@ -13425,12 +9955,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
       "count": 4
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -13495,12 +10019,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Kia|Cerato": [
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1500.0,
@@ -13535,20 +10053,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1591.0,
       "count": 87
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1991.0,
-      "count": 1
-    }
-  ],
-  "Kia|Clarus": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Kia|EV3": [
@@ -13569,12 +10073,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Elektrik",
       "exactCc": 1700.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1900.5,
-      "count": 1
     }
   ],
   "Kia|EV6": [
@@ -13605,28 +10103,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Kia|Magentis": [
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1991.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1997.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Kia|Niro": [
@@ -13637,34 +10117,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     }
   ],
-  "Kia|Opirus": [
-    {
-      "hacmiBucket": 3500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3497.0,
-      "count": 1
-    }
-  ],
-  "Kia|Optima": [
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1685.0,
-      "count": 1
-    }
-  ],
   "Kia|Picanto": [
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 83
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 600.0,
@@ -13715,14 +10173,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 9
     }
   ],
-  "Kia|Pregio": [
-    {
-      "hacmiBucket": 2700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2666.0,
-      "count": 1
-    }
-  ],
   "Kia|Pride": [
     {
       "hacmiBucket": 1300.0,
@@ -13738,12 +10188,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Kia|Pro Ceed": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
@@ -13764,12 +10208,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Kia|Rio": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
@@ -13881,12 +10319,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1594.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1793.0,
-      "count": 1
     }
   ],
   "Kia|Sorento": [
@@ -13898,21 +10330,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1598.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -13954,12 +10374,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Kia|Sportage": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -14016,18 +10430,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1700.5,
       "count": 2
@@ -14045,14 +10447,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 103
     }
   ],
-  "Kia|Stinger": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    }
-  ],
   "Kia|Stonic": [
     {
       "hacmiBucket": 600.0,
@@ -14065,12 +10459,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 998.0,
       "count": 68
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -14117,12 +10505,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 24
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1591.0,
@@ -14142,12 +10524,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Kia|XCeed": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Hibrit",
@@ -14173,31 +10549,13 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 5
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1482.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Lada|Kalina": [
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1596.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
@@ -14205,21 +10563,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 12
     }
   ],
-  "Lada|Nova": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1452.0,
-      "count": 1
-    }
-  ],
   "Lada|Samara": [
-    {
-      "hacmiBucket": 1100.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1099.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
@@ -14303,21 +10647,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 29
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1910.0,
-      "count": 1
     }
   ],
   "Lancia|Thema": [
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2987.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 3000.0,
       "yakitTuru": "Dizel",
@@ -14351,42 +10683,18 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1368.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1368.0,
-      "count": 1
     }
   ],
   "Land Rover|Defender": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
       "exactCc": 2250.5,
       "count": 8
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2500.0,
@@ -14411,18 +10719,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 3250.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 6001.0,
-      "count": 1
     }
   ],
   "Land Rover|Discovery": [
@@ -14461,33 +10757,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2993.0,
       "count": 14
-    },
-    {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3950.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3950.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4394.0,
-      "count": 1
     }
   ],
   "Land Rover|Discovery Sport": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1497.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Hibrit",
@@ -14505,12 +10777,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
       "count": 28
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1999.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -14585,21 +10851,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 2497.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2497.0,
-      "count": 1
     }
   ],
   "Land Rover|Range Rover": [
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2900.0,
       "yakitTuru": "Dizel",
@@ -14637,12 +10891,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 7
     },
     {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4400.0,
       "yakitTuru": "Benzin",
       "exactCc": 4398.0,
@@ -14662,12 +10910,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 4600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4553.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 4553.0,
       "count": 10
@@ -14677,12 +10919,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 4750.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4750.5,
-      "count": 1
     }
   ],
   "Land Rover|Range Rover Evoque": [
@@ -14711,12 +10947,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 36
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1999.0,
@@ -14729,12 +10959,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 12
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2179.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
       "exactCc": 2250.5,
@@ -14742,12 +10966,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Land Rover|Range Rover Sport": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1997.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
@@ -14789,21 +11007,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 4197.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4250.5,
-      "count": 1
     }
   ],
   "Land Rover|Range Rover Velar": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
@@ -14823,42 +11029,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 18
     }
   ],
-  "Lexus|CT": [
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1798.0,
-      "count": 1
-    }
-  ],
   "Lexus|ES": [
     {
       "hacmiBucket": 2500.0,
       "yakitTuru": "Hibrit",
       "exactCc": 2494.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2494.0,
-      "count": 1
-    }
-  ],
-  "Lexus|GS": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    }
-  ],
-  "Lexus|IS": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
     }
   ],
   "Lexus|LBX": [
@@ -14877,12 +11053,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Lexus|RX": [
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Hibrit",
       "exactCc": 2250.5,
@@ -14897,37 +11067,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     }
   ],
-  "Lincoln|Mark": [
-    {
-      "hacmiBucket": 4900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4942.0,
-      "count": 1
-    }
-  ],
-  "Lincoln|Town Car": [
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4750.0,
-      "count": 1
-    }
-  ],
-  "Lotus|Esprit": [
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    }
-  ],
   "MG|EHS": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1490.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Hibrit",
@@ -14937,36 +11077,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "MG|HS": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1490.0,
       "count": 151
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1490.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    }
-  ],
-  "MG|Marvel R": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1900.5,
-      "count": 1
     }
   ],
   "MG|ZS": [
@@ -14995,22 +11109,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 18
     }
   ],
-  "MG|ZS EV": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 600.0,
-      "count": 1
-    }
-  ],
-  "Maserati|4 Serisi": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1996.0,
-      "count": 1
-    }
-  ],
   "Maserati|Ghibli": [
     {
       "hacmiBucket": 3000.0,
@@ -15037,21 +11135,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 4691.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4750.0,
-      "count": 1
     }
   ],
   "Maserati|Levante": [
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 3000.0,
       "yakitTuru": "Dizel",
@@ -15062,21 +11148,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Maserati|Quattroporte": [
     {
       "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2979.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
       "yakitTuru": "Dizel",
       "exactCc": 2987.0,
       "count": 5
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
     },
     {
       "hacmiBucket": 4200.0,
@@ -15085,21 +11159,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     }
   ],
-  "Maxus|e-Deliver": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1996.0,
-      "count": 1
-    }
-  ],
   "Mazda|121": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1324.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
@@ -15197,28 +11257,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 144
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1840.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1840.0,
       "count": 25
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Mazda|5": [
@@ -15244,12 +11286,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1900.5,
       "count": 2
@@ -15259,12 +11295,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1999.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -15281,28 +11311,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mazda|626": [
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1576.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1576.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -15327,22 +11339,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1991.0,
       "count": 96
-    }
-  ],
-  "Mazda|929": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1984.0,
-      "count": 1
-    }
-  ],
-  "Mazda|B2200": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2184.0,
-      "count": 1
     }
   ],
   "Mazda|B2500": [
@@ -15371,12 +11367,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2499.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2953.0,
-      "count": 1
     }
   ],
   "Mazda|CX-3": [
@@ -15425,42 +11415,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mazda|Lantis": [
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1597.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1840.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1840.0,
       "count": 18
-    }
-  ],
-  "Mazda|MPV": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.0,
-      "count": 1
     }
   ],
   "Mazda|MX": [
@@ -15471,30 +11429,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 8
     },
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1597.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
       "count": 2
-    }
-  ],
-  "Mazda|Premacy": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Mazda|RX": [
@@ -15503,26 +11441,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
       "count": 10
-    }
-  ],
-  "Mazda|Xedos": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2497.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2497.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|190": [
@@ -15587,12 +11505,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Benzin",
       "exactCc": 2299.0,
@@ -15615,24 +11527,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 2599.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2599.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Mercedes - Benz|200": [
@@ -15641,12 +11535,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 600.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -15683,27 +11571,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1997.0,
       "count": 139
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
     }
   ],
   "Mercedes - Benz|230": [
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2200.0,
       "yakitTuru": "Benzin",
@@ -15727,20 +11597,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2299.0,
       "count": 35
-    }
-  ],
-  "Mercedes - Benz|240": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
     }
   ],
   "Mercedes - Benz|250": [
@@ -15796,30 +11652,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2750.5,
       "count": 4
     }
   ],
   "Mercedes - Benz|280": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Benzin",
@@ -15834,24 +11672,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Mercedes - Benz|300": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Benzin",
@@ -15869,18 +11689,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2750.5,
       "count": 7
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2962.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2962.0,
-      "count": 1
     },
     {
       "hacmiBucket": 3000.0,
@@ -15902,23 +11710,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 3300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3300.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3250.5,
       "count": 2
-    }
-  ],
-  "Mercedes - Benz|320": [
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|500": [
@@ -15927,18 +11721,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 4750.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4973.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|560": [
@@ -16017,18 +11799,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 13
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1991.0,
@@ -16062,12 +11832,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1498.0,
       "count": 27
@@ -16077,12 +11841,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1595.0,
       "count": 36
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -16113,12 +11871,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1991.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2034.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|C": [
@@ -16133,12 +11885,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1500.5,
       "count": 137
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1496.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -16178,12 +11924,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1700.5,
       "count": 17
@@ -16193,12 +11933,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1796.0,
       "count": 201
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1796.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -16238,12 +11972,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1993.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 78
@@ -16273,28 +12001,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
       "exactCc": 2250.5,
       "count": 18
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2500.0,
@@ -16303,40 +12013,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2497.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2597.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2597.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2700.0,
       "yakitTuru": "Dizel",
       "exactCc": 2685.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
     },
     {
       "hacmiBucket": 3000.0,
@@ -16345,34 +12025,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2996.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3199.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3200.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3199.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 6208.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|CL": [
@@ -16384,12 +12040,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Mercedes - Benz|CLA": [
-    {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 180.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 400.0,
       "yakitTuru": "Elektrik",
@@ -16421,22 +12071,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 279
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1595.0,
       "count": 130
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1595.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -16469,12 +12107,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1597.0,
       "count": 5
-    },
-    {
-      "hacmiBucket": 2100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2148.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|CLK": [
@@ -16533,76 +12165,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2597.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2597.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2685.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2987.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3199.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3200.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3199.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4966.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5250.5,
-      "count": 1
     }
   ],
   "Mercedes - Benz|CLS": [
@@ -16620,21 +12186,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2143.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2100.0,
       "yakitTuru": "Dizel",
       "exactCc": 2143.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2800.0,
@@ -16653,12 +12207,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2925.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2987.0,
-      "count": 1
     },
     {
       "hacmiBucket": 3000.0,
@@ -16762,12 +12310,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1900.5,
       "count": 44
@@ -16837,12 +12379,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2250.5,
       "count": 11
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2397.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2600.0,
@@ -16941,28 +12477,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 9
     },
     {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3996.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4300.0,
       "yakitTuru": "Benzin",
       "exactCc": 4266.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 5000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4966.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5439.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|EQA": [
@@ -16977,12 +12495,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Elektrik",
       "exactCc": 350.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 600.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|EQB": [
@@ -17001,54 +12513,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mercedes - Benz|EQE": [
     {
-      "hacmiBucket": 300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 300.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 400.0,
       "yakitTuru": "Elektrik",
       "exactCc": 350.0,
       "count": 31
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1500.5,
-      "count": 1
-    }
-  ],
-  "Mercedes - Benz|G": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1991.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2298.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2360.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3750.5,
-      "count": 1
     }
   ],
   "Mercedes - Benz|GL": [
@@ -17151,28 +12619,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mercedes - Benz|GLC Coupe": [
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1991.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1950.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2143.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|GLE": [
@@ -17237,28 +12687,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 40
     },
     {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3750.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4000.0,
       "yakitTuru": "Dizel",
       "exactCc": 3996.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 5300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 5439.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|R": [
@@ -17282,12 +12714,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Mercedes - Benz|S": [
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Benzin",
@@ -17355,12 +12781,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 9
     },
     {
-      "hacmiBucket": 3400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3449.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3500.0,
       "yakitTuru": "Benzin",
       "exactCc": 3498.0,
@@ -17403,12 +12823,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 6
     },
     {
-      "hacmiBucket": 4000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3996.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4800.0,
       "yakitTuru": "Benzin",
       "exactCc": 4750.0,
@@ -17443,18 +12857,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 5250.5,
       "count": 7
-    },
-    {
-      "hacmiBucket": 5800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5786.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 6208.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|SL": [
@@ -17497,27 +12899,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1998.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2295.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|Sprinter": [
-    {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 76.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Dizel",
@@ -17541,18 +12925,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2151.0,
       "count": 12
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2299.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2501.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2900.0,
@@ -17585,12 +12957,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mercedes - Benz|Viano": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 2001.0,
@@ -17601,12 +12967,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2149.0,
       "count": 87
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2200.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|Vito": [
@@ -17621,12 +12981,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 75.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 299.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -17653,12 +13007,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 221
     },
     {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2100.0,
       "yakitTuru": "Dizel",
       "exactCc": 2143.0,
@@ -17675,12 +13023,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2299.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2501.0,
-      "count": 1
     }
   ],
   "Mercedes - Benz|X": [
@@ -17697,21 +13039,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     }
   ],
-  "Mercury|Cougar": [
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2544.0,
-      "count": 1
-    }
-  ],
   "Mini|Cooper": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1300.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -17747,18 +13075,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 26
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1900.5,
-      "count": 1
     }
   ],
   "Mini|Cooper Clubman": [
@@ -17799,18 +13115,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1700.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Mini|Countryman": [
@@ -17849,18 +13153,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 9
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Mini|John Cooper": [
@@ -17885,12 +13177,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mini|One": [
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1397.0,
@@ -17907,27 +13193,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.0,
-      "count": 1
     }
   ],
   "Mitsubishi|ASX": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
@@ -17948,12 +13216,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Mitsubishi|Attrage": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
@@ -17987,18 +13249,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 125
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Benzin",
       "exactCc": 1834.0,
@@ -18024,18 +13274,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Mitsubishi|Colt": [
-    {
-      "hacmiBucket": 1100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1124.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -18077,69 +13315,13 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mitsubishi|Galant": [
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1597.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1755.0,
       "count": 4
     }
   ],
-  "Mitsubishi|Grandis": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1968.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    }
-  ],
   "Mitsubishi|L 200": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2268.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
@@ -18151,12 +13333,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2442.0,
       "count": 100
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2477.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2500.0,
@@ -18172,12 +13348,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Mitsubishi|L 300": [
-    {
-      "hacmiBucket": 500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 499.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
@@ -18198,12 +13368,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Mitsubishi|Lancer": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1299.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
@@ -18239,24 +13403,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1700.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.0,
-      "count": 1
     }
   ],
   "Mitsubishi|Lancer Evolution": [
@@ -18285,12 +13431,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1997.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2378.0,
-      "count": 1
     }
   ],
   "Mitsubishi|Pajero": [
@@ -18307,12 +13447,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2500.0,
       "yakitTuru": "Dizel",
       "exactCc": 2477.0,
@@ -18323,12 +13457,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2835.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3200.0,
-      "count": 1
     },
     {
       "hacmiBucket": 3300.0,
@@ -18351,18 +13479,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 36
     },
     {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1299.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1299.0,
@@ -18379,34 +13495,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1870.0,
       "count": 2
-    }
-  ],
-  "Nissan|100 NX": [
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1597.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1597.0,
-      "count": 1
-    }
-  ],
-  "Nissan|200 SX": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Nissan|350 Z": [
@@ -18450,12 +13538,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1597.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1597.0,
       "count": 11
@@ -18471,56 +13553,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1769.0,
       "count": 8
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1974.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.0,
-      "count": 1
-    }
-  ],
-  "Nissan|Altima": [
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    }
-  ],
-  "Nissan|Bluebird": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1960.0,
-      "count": 1
     }
   ],
   "Nissan|Country": [
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2500.0,
       "yakitTuru": "Dizel",
       "exactCc": 2488.0,
       "count": 4
-    }
-  ],
-  "Nissan|GT-R": [
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3799.0,
-      "count": 1
     }
   ],
   "Nissan|Juke": [
@@ -18541,18 +13581,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1197.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1197.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -18580,24 +13608,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 53
     }
   ],
   "Nissan|Laurel Altima": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
@@ -18693,29 +13709,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 32
     }
   ],
-  "Nissan|Murano": [
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.5,
-      "count": 1
-    }
-  ],
-  "Nissan|NX Coupe": [
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1597.0,
-      "count": 1
-    }
-  ],
   "Nissan|Navara": [
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2298.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
@@ -18794,12 +13788,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Nissan|Pathfinder": [
     {
       "hacmiBucket": 3300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3300.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3250.5,
       "count": 8
@@ -18864,12 +13852,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1870.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1900.5,
       "count": 6
@@ -18891,12 +13873,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 26
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2184.0,
-      "count": 1
     }
   ],
   "Nissan|Pulsar": [
@@ -18911,12 +13887,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1197.0,
       "count": 29
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1197.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -18963,12 +13933,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 122
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1332.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1500.5,
@@ -19011,18 +13975,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 77
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1995.0,
@@ -19059,12 +14011,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Nissan|Skystar": [
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
       "exactCc": 2250.5,
@@ -19086,12 +14032,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Nissan|Sunny": [
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1500.5,
       "count": 3
@@ -19107,18 +14047,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1597.0,
       "count": 41
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1974.0,
-      "count": 1
     }
   ],
   "Nissan|Terrano": [
@@ -19127,12 +14055,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 4.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2389.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2400.0,
@@ -19157,22 +14079,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2956.0,
       "count": 5
-    }
-  ],
-  "Nissan|Townstar": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1333.0,
-      "count": 1
-    }
-  ],
-  "Nissan|Vanette": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2001.0,
-      "count": 1
     }
   ],
   "Nissan|X-Trail": [
@@ -19233,34 +14139,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Opel|Adam": [
     {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 999.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1229.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1229.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1300.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1398.0,
-      "count": 1
     }
   ],
   "Opel|Agila": [
@@ -19285,27 +14167,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 35
     }
   ],
-  "Opel|Ascona": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1297.0,
-      "count": 1
-    }
-  ],
   "Opel|Astra": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 0.0,
       "yakitTuru": "LPG & Benzin",
@@ -19317,12 +14179,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 17
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
@@ -19428,12 +14284,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1796.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1796.0,
       "count": 2
@@ -19479,46 +14329,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2198.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    }
-  ],
-  "Opel|Calibra": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Opel|Combo": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 200.0,
       "yakitTuru": "Dizel",
       "exactCc": 250.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -19540,12 +14358,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1389.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1389.0,
       "count": 11
@@ -19557,12 +14369,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 626
     },
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1601.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1700.0,
       "yakitTuru": "Dizel",
       "exactCc": 1686.0,
@@ -19570,12 +14376,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Opel|Combo Life": [
-    {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 250.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Dizel",
@@ -19595,12 +14395,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2.0,
-      "count": 1
     },
     {
       "hacmiBucket": 600.0,
@@ -19682,12 +14476,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1389.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1389.0,
       "count": 691
@@ -19735,14 +14523,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 107
     }
   ],
-  "Opel|Corsa Van": [
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1686.0,
-      "count": 1
-    }
-  ],
   "Opel|Crossland": [
     {
       "hacmiBucket": 600.0,
@@ -19761,12 +14541,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1199.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -19833,18 +14607,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 6
     },
     {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2260.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3165.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3200.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3165.0,
@@ -19857,14 +14619,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Elektrik",
       "exactCc": 1300.5,
       "count": 3
-    }
-  ],
-  "Opel|GT": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Opel|Grandland": [
@@ -19923,20 +14677,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 34
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    }
-  ],
-  "Opel|Grandland-e": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1300.5,
-      "count": 1
     }
   ],
   "Opel|Insignia": [
@@ -20001,12 +14741,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 160
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
@@ -20037,14 +14771,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     }
   ],
-  "Opel|Kadett": [
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    }
-  ],
   "Opel|Meriva": [
     {
       "hacmiBucket": 1200.0,
@@ -20057,12 +14783,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1248.0,
       "count": 38
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -20105,12 +14825,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
       "count": 24
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1598.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -20169,12 +14883,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 18
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
@@ -20195,12 +14903,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Opel|Mokka X": [
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1364.0,
@@ -20213,12 +14915,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
@@ -20229,12 +14925,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 66
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
     }
   ],
   "Opel|Mokka-e": [
@@ -20265,12 +14955,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1900.5,
       "count": 4
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -20310,21 +14994,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2750.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2969.0,
-      "count": 1
     }
   ],
   "Opel|Signum": [
@@ -20336,18 +15008,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Opel|Tigra": [
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1364.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
@@ -20397,12 +15057,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1700.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1688.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1700.0,
@@ -20478,12 +15132,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2250.5,
       "count": 4
@@ -20499,21 +15147,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2498.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2958.0,
-      "count": 1
     }
   ],
   "Opel|Vivaro": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1499.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Dizel",
@@ -20531,21 +15167,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1997.0,
       "count": 79
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2184.0,
-      "count": 1
     }
   ],
   "Opel|Zafira": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 5.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -20596,21 +15220,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
       "yakitTuru": "Dizel",
       "exactCc": 1700.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -20643,12 +15255,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 6
     },
     {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2200.0,
       "yakitTuru": "Benzin",
       "exactCc": 2250.0,
@@ -20657,12 +15263,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Opel|Zafira Life": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 2000.0,
@@ -20670,24 +15270,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Peugeot|106": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 954.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 954.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1100.0,
       "yakitTuru": "Benzin",
@@ -20699,12 +15281,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1124.0,
       "count": 17
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1200.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -20753,18 +15329,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1587.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Peugeot|107": [
@@ -20791,12 +15355,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1200.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -20855,12 +15413,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 308
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
@@ -20875,18 +15427,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Peugeot|205": [
     {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 954.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1360.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1905.0,
@@ -20899,12 +15439,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -20968,21 +15502,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1560.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1587.0,
       "count": 133
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -20992,30 +15514,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1997.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1997.0,
       "count": 15
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.0,
-      "count": 1
     }
   ],
   "Peugeot|206+": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
@@ -21036,12 +15540,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Peugeot|207": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -21117,12 +15615,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Peugeot|208": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
@@ -21139,12 +15631,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 999.0,
       "count": 23
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 999.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -21205,12 +15691,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 33
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
     }
   ],
   "Peugeot|3008": [
@@ -21243,12 +15723,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1199.0,
       "count": 165
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -21347,32 +15821,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1587.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Peugeot|306": [
     {
       "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1360.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1360.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -21450,12 +15906,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
       "yakitTuru": "Dizel",
       "exactCc": 1300.5,
       "count": 6
@@ -21515,24 +15965,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 410
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
@@ -21571,22 +16003,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 31
     },
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
       "count": 269
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1199.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -21629,66 +16049,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 53
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    }
-  ],
-  "Peugeot|309": [
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1905.0,
-      "count": 1
-    }
-  ],
-  "Peugeot|4007": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2179.0,
-      "count": 1
     }
   ],
   "Peugeot|405": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1580.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1761.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -21698,12 +16066,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Peugeot|406": [
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1761.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
@@ -21733,24 +16095,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1997.0,
       "count": 73
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2946.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2946.0,
-      "count": 1
     }
   ],
   "Peugeot|407": [
@@ -21777,12 +16121,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 243
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -21821,12 +16159,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 27
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2700.0,
       "yakitTuru": "Dizel",
       "exactCc": 2720.0,
@@ -21861,12 +16193,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Peugeot|5008": [
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
@@ -21877,12 +16203,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1199.0,
       "count": 19
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -21948,55 +16268,17 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1997.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1997.0,
       "count": 5
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    }
-  ],
-  "Peugeot|605": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     }
   ],
   "Peugeot|607": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2230.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2700.0,
       "yakitTuru": "Dizel",
       "exactCc": 2721.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2946.0,
-      "count": 1
     }
   ],
   "Peugeot|806": [
@@ -22005,14 +16287,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1905.0,
       "count": 2
-    }
-  ],
-  "Peugeot|807": [
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2179.0,
-      "count": 1
     }
   ],
   "Peugeot|Bipper": [
@@ -22024,21 +16298,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1248.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
       "yakitTuru": "Dizel",
       "exactCc": 1248.0,
       "count": 80
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1301.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -22048,18 +16310,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Peugeot|Boxer": [
-    {
-      "hacmiBucket": 300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 251.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1905.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
@@ -22101,28 +16351,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 6
     },
     {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 115.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 200.0,
       "yakitTuru": "Dizel",
       "exactCc": 250.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 280.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 453.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -22144,21 +16376,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1560.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 701
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1587.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -22177,12 +16397,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1997.0,
       "count": 48
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1997.0,
-      "count": 1
     }
   ],
   "Peugeot|RCZ": [
@@ -22197,12 +16411,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
       "count": 34
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
     }
   ],
   "Peugeot|Rifter": [
@@ -22217,12 +16425,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 130.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 250.0,
-      "count": 1
     },
     {
       "hacmiBucket": 300.0,
@@ -22243,26 +16445,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     }
   ],
-  "Peugeot|e-2008": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1500.5,
-      "count": 1
-    }
-  ],
   "Peugeot|e-208": [
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1300.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1300.5,
-      "count": 1
     }
   ],
   "Peugeot|e-3008": [
@@ -22277,46 +16465,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Elektrik",
       "exactCc": 1700.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1900.5,
-      "count": 1
     }
   ],
   "Pontiac|Firebird": [
-    {
-      "hacmiBucket": 5700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 5733.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 5800.0,
       "yakitTuru": "Benzin",
       "exactCc": 5750.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 6001.0,
-      "count": 1
-    }
-  ],
-  "Porsche|718": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
     }
   ],
   "Porsche|911": [
@@ -22341,12 +16497,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Porsche|Cayenne": [
     {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1967.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Dizel",
       "exactCc": 2750.5,
@@ -22363,12 +16513,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 3598.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4250.5,
-      "count": 1
     },
     {
       "hacmiBucket": 4500.0,
@@ -22406,24 +16550,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Porsche|Macan": [
     {
       "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2997.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
       "yakitTuru": "Dizel",
       "exactCc": 2967.0,
       "count": 3
     }
   ],
   "Porsche|Panamera": [
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 3000.0,
       "yakitTuru": "Benzin",
@@ -22488,12 +16620,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1597.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1597.0,
       "count": 43
@@ -22523,38 +16649,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1597.0,
       "count": 22
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    }
-  ],
-  "Proton|Persona": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    }
-  ],
-  "Proton|Saga": [
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1600.0,
-      "count": 1
     }
   ],
   "Proton|Savvy": [
@@ -22573,24 +16671,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Proton|Waja": [
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1584.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1584.0,
@@ -22598,12 +16678,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Renault|Austral": [
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1199.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Hibrit",
@@ -22625,12 +16699,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Renault|Captur": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
@@ -22641,12 +16709,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 898.0,
       "count": 23
-    },
-    {
-      "hacmiBucket": 900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 898.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
@@ -22679,28 +16741,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 96
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1332.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
       "exactCc": 1461.0,
       "count": 185
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Renault|Clio": [
@@ -22727,12 +16771,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 771
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 600.0,
@@ -22787,12 +16825,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1332.0,
       "count": 177
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -22911,22 +16943,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 14
     },
     {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1199.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1332.0,
       "count": 47
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -22953,12 +16973,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2188.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
     }
   ],
   "Renault|Express": [
@@ -22992,18 +17006,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Renault|Fluence": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -23043,18 +17045,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Renault|Grand Scenic": [
     {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1397.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
       "exactCc": 1461.0,
@@ -23062,21 +17052,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1870.0,
-      "count": 1
     }
   ],
   "Renault|Kadjar": [
@@ -23155,12 +17133,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 322
     },
     {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1801.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1870.0,
@@ -23181,18 +17153,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 3.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 95.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 231.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -23240,21 +17200,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1461.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
       "exactCc": 1461.0,
       "count": 804
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1601.0,
-      "count": 1
     }
   ],
   "Renault|Koleos": [
@@ -23277,12 +17225,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 16
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1995.0,
@@ -23290,12 +17232,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Renault|Laguna": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 5.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -23325,18 +17261,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 162
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -23379,18 +17303,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 87
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2188.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2946.0,
-      "count": 1
     }
   ],
   "Renault|Latitude": [
@@ -23421,22 +17333,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Renault|Master": [
     {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 92.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 200.0,
       "yakitTuru": "Dizel",
       "exactCc": 151.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1301.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -23461,21 +17361,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2463.0,
       "count": 66
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3001.0,
-      "count": 1
     }
   ],
   "Renault|Megane": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 0.0,
       "yakitTuru": "LPG & Benzin",
@@ -23487,24 +17375,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 999.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -23568,21 +17438,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 1372
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1700.0,
@@ -23625,27 +17483,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 75
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 6001.0,
-      "count": 1
     }
   ],
   "Renault|Modus": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
@@ -23680,27 +17520,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Renault|R 11": [
     {
       "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1397.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1397.0,
       "count": 35
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1565.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1595.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -23719,12 +17541,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1721.0,
       "count": 80
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
     }
   ],
   "Renault|R 12": [
@@ -23753,18 +17569,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 456
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1600.0,
@@ -23777,12 +17581,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -23858,12 +17656,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1870.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1870.0,
       "count": 27
@@ -23873,12 +17665,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1900.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.5,
-      "count": 1
     }
   ],
   "Renault|R 21": [
@@ -23917,32 +17703,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1995.0,
       "count": 9
-    },
-    {
-      "hacmiBucket": 2100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2068.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    }
-  ],
-  "Renault|R 25": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1995.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2165.0,
-      "count": 1
     }
   ],
   "Renault|R 5": [
@@ -23951,18 +17711,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1108.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1397.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1721.0,
-      "count": 1
     }
   ],
   "Renault|R 9": [
@@ -24004,12 +17752,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1500.5,
       "count": 4
@@ -24042,24 +17784,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Renault|Rafale": [
     {
       "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1199.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1199.0,
       "count": 10
     }
   ],
   "Renault|Safrane": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1900.0,
       "yakitTuru": "LPG & Benzin",
@@ -24073,22 +17803,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 2100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2068.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2400.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2435.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Renault|Scenic": [
@@ -24123,12 +17841,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 148
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1870.0,
@@ -24148,12 +17860,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 7
@@ -24168,12 +17874,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Renault|Symbol": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 0.0,
       "yakitTuru": "LPG & Benzin",
@@ -24281,24 +17981,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1500.5,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 5800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 5750.5,
-      "count": 1
     }
   ],
   "Renault|Taliant": [
@@ -24429,12 +18111,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1149.0,
       "count": 35
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1200.0,
-      "count": 1
     }
   ],
   "Renault|Vel Satis": [
@@ -24445,35 +18121,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     }
   ],
-  "Rolls-Royce|Silver": [
-    {
-      "hacmiBucket": 6800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 6750.0,
-      "count": 1
-    }
-  ],
-  "Rover|200": [
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    }
-  ],
   "Rover|214": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
@@ -24511,28 +18159,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1589.0,
       "count": 24
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    }
-  ],
-  "Rover|218": [
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    }
-  ],
-  "Rover|220": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1994.0,
-      "count": 1
     }
   ],
   "Rover|25": [
@@ -24561,21 +18187,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1396.0,
       "count": 19
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     }
   ],
   "Rover|416": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
@@ -24600,12 +18214,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Rover|45": [
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1588.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1588.0,
       "count": 5
@@ -24617,12 +18225,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1900.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1994.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -24649,12 +18251,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1991.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1991.0,
-      "count": 1
     }
   ],
   "Rover|820": [
@@ -24663,20 +18259,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1994.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1994.0,
-      "count": 1
-    }
-  ],
-  "Rover|Streetwise": [
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1396.0,
-      "count": 1
     }
   ],
   "Saab|9-3": [
@@ -24693,12 +18275,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 8
     },
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1998.0,
@@ -24709,48 +18285,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
     }
   ],
   "Saab|9-5": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1910.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1985.0,
       "count": 2
-    }
-  ],
-  "Saab|900": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1985.0,
-      "count": 1
-    }
-  ],
-  "Saab|9000": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1985.0,
-      "count": 1
     }
   ],
   "Seat|Alhambra": [
@@ -24768,12 +18310,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1896.0,
       "count": 6
@@ -24783,12 +18319,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1984.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1984.0,
-      "count": 1
     }
   ],
   "Seat|Altea": [
@@ -24836,12 +18366,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1896.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1896.0,
       "count": 3
@@ -24867,22 +18391,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 148
     },
     {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 999.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1498.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -24911,12 +18423,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 18
     },
     {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1395.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1498.0,
@@ -24933,12 +18439,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 43
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Seat|Cordoba": [
@@ -24947,12 +18447,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -25043,12 +18537,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 87
     },
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 999.0,
@@ -25083,12 +18571,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.0,
       "count": 35
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -25165,22 +18647,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Seat|Leon": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 76
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 600.0,
@@ -25220,12 +18690,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1200.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1197.0,
       "count": 2
@@ -25238,12 +18702,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1300.5,
       "count": 3
@@ -25253,12 +18711,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1395.0,
       "count": 423
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1395.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -25277,12 +18729,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1500.5,
       "count": 155
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1498.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -25315,30 +18761,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 254
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1781.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
@@ -25361,28 +18783,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1968.0,
       "count": 5
-    },
-    {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4250.5,
-      "count": 1
-    }
-  ],
-  "Seat|Malaga": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    }
-  ],
-  "Seat|Marbella": [
-    {
-      "hacmiBucket": 900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 903.0,
-      "count": 1
     }
   ],
   "Seat|Tarraco": [
@@ -25394,12 +18794,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Seat|Toledo": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
@@ -25423,12 +18817,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1422.0,
       "count": 64
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1390.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -25467,18 +18855,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 159
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Benzin",
       "exactCc": 1781.0,
@@ -25504,12 +18880,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1968.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1984.0,
       "count": 2
@@ -25517,63 +18887,13 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Skoda|Citigo": [
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 999.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    }
-  ],
-  "Skoda|Enyaq Coupe": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 6001.0,
-      "count": 1
     }
   ],
   "Skoda|Fabia": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 0.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
@@ -25615,12 +18935,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.0,
       "count": 13
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -25677,18 +18991,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 18
     },
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1896.0,
@@ -25696,12 +18998,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Skoda|Favorit": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -25713,21 +19009,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1289.0,
       "count": 232
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.0,
-      "count": 1
     }
   ],
   "Skoda|Felicia": [
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -25819,12 +19103,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Skoda|Karoq": [
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 999.0,
@@ -25844,21 +19122,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 78
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Skoda|Kodiaq": [
@@ -25867,12 +19133,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
       "count": 20
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -25899,12 +19159,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 41
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
@@ -25918,12 +19172,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Skoda|Octavia": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
@@ -25944,12 +19192,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1000.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 999.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1000.0,
       "yakitTuru": "Hibrit",
       "exactCc": 999.0,
       "count": 124
@@ -25965,12 +19207,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1200.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1197.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -26101,18 +19337,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1422.0,
@@ -26161,12 +19385,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1198.0,
       "count": 13
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1390.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -26251,12 +19469,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Skoda|SuperB": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1300.0,
@@ -26293,12 +19505,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 89
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1498.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1598.0,
@@ -26327,12 +19533,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1781.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1781.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -26391,28 +19591,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 4
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
       "exactCc": 1390.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1390.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -26423,22 +19605,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Smart|ForFour": [
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 900.0,
       "yakitTuru": "Benzin",
       "exactCc": 898.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 999.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1100.0,
@@ -26469,12 +19639,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1493.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1499.0,
-      "count": 1
     }
   ],
   "Smart|ForTwo": [
@@ -26509,12 +19673,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1497.0,
       "count": 8
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -26561,12 +19719,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1998.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2874.0,
-      "count": 1
     }
   ],
   "Ssangyong|Korando Sports": [
@@ -26595,14 +19747,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1998.0,
       "count": 40
-    }
-  ],
-  "Ssangyong|Musso": [
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2874.0,
-      "count": 1
     }
   ],
   "Ssangyong|Musso Grand": [
@@ -26653,12 +19797,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 2700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2696.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Dizel",
       "exactCc": 2750.5,
@@ -26697,26 +19835,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1497.0,
       "count": 37
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 2250.5,
-      "count": 1
-    }
-  ],
-  "Ssangyong|XLV": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1597.0,
-      "count": 1
     }
   ],
   "Subaru|BRZ": [
@@ -26734,12 +19852,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Subaru|Crosstrek": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1995.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Hibrit",
@@ -26789,24 +19901,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1994.0,
       "count": 19
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2457.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2457.0,
-      "count": 1
     }
   ],
   "Subaru|Impreza": [
@@ -26853,18 +19947,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2500.0,
       "yakitTuru": "Benzin",
       "exactCc": 2457.0,
@@ -26873,12 +19955,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Subaru|Justy": [
     {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 997.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1200.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1189.0,
@@ -26886,24 +19962,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Subaru|Legacy": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1820.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
@@ -26921,12 +19979,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1994.0,
       "count": 11
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2212.0,
-      "count": 1
     }
   ],
   "Subaru|Levorg": [
@@ -26955,12 +20007,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1998.0,
       "count": 10
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2457.0,
-      "count": 1
     }
   ],
   "Subaru|Vivio": [
@@ -26975,12 +20021,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 658.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
     }
   ],
   "Subaru|XV": [
@@ -27011,12 +20051,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Suzuki|Alto": [
     {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 800.0,
       "yakitTuru": "Benzin",
       "exactCc": 790.0,
@@ -27035,12 +20069,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 9
     },
     {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 996.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1100.0,
       "yakitTuru": "Benzin",
       "exactCc": 1061.0,
@@ -27057,12 +20085,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1200.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     }
   ],
   "Suzuki|Baleno": [
@@ -27083,12 +20105,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1300.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -27170,12 +20186,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Suzuki|Liana": [
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1586.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1586.0,
       "count": 5
@@ -27204,12 +20214,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Suzuki|S-Cross": [
     {
       "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1300.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1300.5,
       "count": 5
@@ -27225,12 +20229,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1373.0,
       "count": 31
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     }
   ],
   "Suzuki|SJ": [
@@ -27245,32 +20243,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1298.0,
       "count": 8
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
     }
   ],
   "Suzuki|SX4": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1586.0,
       "count": 20
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1560.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -27280,18 +20260,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Suzuki|SX4 S-Cross": [
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1373.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1373.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
@@ -27311,12 +20279,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1242.0,
       "count": 12
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1248.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -27343,12 +20305,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 600.0,
       "count": 16
-    },
-    {
-      "hacmiBucket": 1000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 993.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1000.0,
@@ -27407,12 +20363,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Suzuki|Vitara": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 2.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
@@ -27437,22 +20387,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 26
     },
     {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1373.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1500.5,
       "count": 27
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -27506,71 +20444,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
       "yakitTuru": "Elektrik",
       "exactCc": 2250.5,
       "count": 8
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 3250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 6001.0,
-      "count": 1
-    }
-  ],
-  "TOGG|T10X": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 3750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 6000.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 6001.0,
-      "count": 1
     }
   ],
   "Tata|Indica": [
@@ -27585,12 +20461,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1405.0,
       "count": 82
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1405.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -27620,12 +20490,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
       "yakitTuru": "Dizel",
       "exactCc": 1500.0,
       "count": 2
@@ -27640,24 +20504,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Tata|Manza": [
     {
       "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1368.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1368.0,
       "count": 4
     }
   ],
   "Tata|Marina": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1300.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1400.0,
       "yakitTuru": "Benzin",
@@ -27674,21 +20526,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Tata|Vista": [
     {
       "hacmiBucket": 1200.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1248.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
       "yakitTuru": "Dizel",
       "exactCc": 1248.0,
       "count": 21
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -27703,27 +20543,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 7
     }
   ],
-  "Tesla|Model Y": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1900.5,
-      "count": 1
-    }
-  ],
   "Tofaş|Doğan": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "LPG & Benzin",
@@ -27791,12 +20611,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1581.0,
       "count": 415
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     }
   ],
   "Tofaş|Murat": [
@@ -27823,27 +20637,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1297.0,
       "count": 21
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
     }
   ],
   "Tofaş|Şahin": [
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1200.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -27897,21 +20693,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1700.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Toyota|Auris": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 17.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
@@ -27973,18 +20757,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1798.0,
@@ -27997,12 +20769,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1500.0,
       "count": 17
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -28027,12 +20793,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1598.0,
       "count": 146
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -28075,18 +20835,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1998.0,
       "count": 68
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2231.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
     }
   ],
   "Toyota|C-HR": [
@@ -28103,18 +20851,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 35
     },
     {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1197.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1700.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1700.5,
@@ -28122,21 +20858,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1798.0,
       "count": 175
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1900.5,
-      "count": 1
     }
   ],
   "Toyota|Camry": [
@@ -28159,18 +20883,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2959.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 3000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2959.0,
@@ -28191,27 +20903,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 28
     }
   ],
-  "Toyota|Celica": [
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1587.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1998.0,
-      "count": 1
-    }
-  ],
   "Toyota|Corolla": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 0.0,
       "yakitTuru": "Dizel",
@@ -28226,12 +20918,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 600.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 600.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 600.0,
       "count": 3
@@ -28241,12 +20927,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1197.0,
       "count": 17
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1200.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -28283,12 +20963,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1364.0,
       "count": 1357
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1364.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -28363,22 +21037,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 490
     },
     {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1794.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1900.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1998.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -28390,21 +21052,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Toyota|Corolla Cross": [
     {
       "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
       "yakitTuru": "Hibrit",
       "exactCc": 1700.5,
       "count": 29
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1798.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -28414,18 +21064,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Toyota|Corona": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
@@ -28441,12 +21079,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Toyota|Cressida": [
     {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1972.0,
@@ -28454,12 +21086,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Toyota|FJ Cruiser": [
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 4300.0,
       "yakitTuru": "LPG & Benzin",
@@ -28482,12 +21108,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Toyota|Hilux": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
@@ -28521,12 +21141,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Toyota|Land Cruiser": [
     {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2446.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 4200.0,
       "yakitTuru": "Dizel",
       "exactCc": 4164.0,
@@ -28534,21 +21148,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 4300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 4250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4300.0,
       "yakitTuru": "Dizel",
       "exactCc": 4250.5,
       "count": 4
-    },
-    {
-      "hacmiBucket": 4500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4461.0,
-      "count": 1
     }
   ],
   "Toyota|Land Cruiser Prado": [
@@ -28565,26 +21167,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 6
     }
   ],
-  "Toyota|Prius": [
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    }
-  ],
   "Toyota|Proace City": [
     {
       "hacmiBucket": 0.0,
       "yakitTuru": "Dizel",
       "exactCc": 3.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 250.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -28624,12 +21212,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Toyota|RAV4": [
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
       "count": 3
@@ -28660,18 +21242,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
       "yakitTuru": "Hibrit",
       "exactCc": 2250.5,
       "count": 8
@@ -28695,24 +21265,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1332.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1364.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
     }
   ],
   "Toyota|Urban Cruiser": [
@@ -28721,18 +21273,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1329.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1329.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1364.0,
-      "count": 1
     }
   ],
   "Toyota|Verso": [
@@ -28779,24 +21319,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 34
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1988.0,
@@ -28829,12 +21351,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 22
     },
     {
-      "hacmiBucket": 1100.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1060.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
       "exactCc": 1200.0,
@@ -28857,12 +21373,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1329.0,
       "count": 88
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1364.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -28927,12 +21437,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2993.0,
       "count": 149
-    },
-    {
-      "hacmiBucket": 3300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3250.5,
-      "count": 1
     }
   ],
   "Volkswagen|Arteon": [
@@ -28987,12 +21491,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 14
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1596.0,
@@ -29009,12 +21507,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1596.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1984.0,
-      "count": 1
     }
   ],
   "Volkswagen|Bora": [
@@ -29043,18 +21535,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 492
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1781.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1896.0,
@@ -29065,12 +21545,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1896.0,
       "count": 31
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2324.0,
-      "count": 1
     }
   ],
   "Volkswagen|Caddy": [
@@ -29079,12 +21553,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 100.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 75.0,
-      "count": 1
     },
     {
       "hacmiBucket": 500.0,
@@ -29100,12 +21568,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1598.0,
       "count": 531
@@ -29115,12 +21577,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1801.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1896.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -29143,12 +21599,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1301.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Dizel",
       "exactCc": 1801.0,
@@ -29167,12 +21617,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 332
     },
     {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1968.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2500.0,
       "yakitTuru": "Dizel",
       "exactCc": 2460.0,
@@ -29180,18 +21624,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Volkswagen|Crafter": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 484.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Dizel",
@@ -29211,44 +21643,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 11
     }
   ],
-  "Volkswagen|EOS": [
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    }
-  ],
   "Volkswagen|Golf": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 3.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
       "exactCc": 600.0,
       "count": 142
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 600.0,
@@ -29273,12 +21673,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1197.0,
       "count": 481
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1197.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1200.0,
@@ -29411,27 +21805,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1984.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Volkswagen|Jetta": [
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 600.0,
       "yakitTuru": "Benzin",
@@ -29555,44 +21931,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1395.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2460.0,
-      "count": 1
     }
   ],
   "Volkswagen|New Beetle": [
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
       "exactCc": 1200.0,
       "count": 11
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1596.0,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -29607,12 +21953,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 3.5,
       "count": 5
-    },
-    {
-      "hacmiBucket": 600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 600.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -29631,12 +21971,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1390.0,
       "count": 669
-    },
-    {
-      "hacmiBucket": 1400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1395.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1400.0,
@@ -29753,12 +22087,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 20
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2800.0,
       "yakitTuru": "Benzin",
       "exactCc": 2771.0,
@@ -29829,12 +22157,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 38
     },
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1598.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Benzin",
       "exactCc": 1781.0,
@@ -29845,12 +22167,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1781.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -29869,26 +22185,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1968.0,
       "count": 12
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1984.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2496.0,
-      "count": 1
-    }
-  ],
-  "Volkswagen|Phaeton": [
-    {
-      "hacmiBucket": 4800.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 4750.5,
-      "count": 1
     }
   ],
   "Volkswagen|Polo": [
@@ -29903,12 +22199,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2.5,
-      "count": 1
     },
     {
       "hacmiBucket": 600.0,
@@ -30032,21 +22322,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1700.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1896.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -30069,12 +22347,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 167
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
       "exactCc": 1984.0,
@@ -30083,22 +22355,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Volkswagen|Sharan": [
     {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1781.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1896.0,
       "count": 4
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1984.0,
-      "count": 1
     }
   ],
   "Volkswagen|T-Cross": [
@@ -30117,12 +22377,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Volkswagen|T-Roc": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
       "exactCc": 1498.0,
@@ -30133,12 +22387,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1498.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1498.0,
-      "count": 1
     }
   ],
   "Volkswagen|Taigo": [
@@ -30159,12 +22407,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 999.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1500.0,
@@ -30189,22 +22431,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Volkswagen|Tiguan": [
     {
-      "hacmiBucket": 0.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1300.0,
       "yakitTuru": "Benzin",
       "exactCc": 1300.5,
       "count": 193
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1300.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1300.0,
@@ -30235,12 +22465,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1500.5,
       "count": 99
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1498.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -30283,12 +22507,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Volkswagen|Touareg": [
     {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2500.0,
       "yakitTuru": "Dizel",
       "exactCc": 2460.0,
@@ -30317,12 +22535,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 3189.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 3800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 3750.5,
-      "count": 1
     },
     {
       "hacmiBucket": 4900.0,
@@ -30369,12 +22581,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 8
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1896.0,
@@ -30401,12 +22607,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 17
     },
     {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 231.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 300.0,
       "yakitTuru": "Dizel",
       "exactCc": 251.0,
@@ -30417,12 +22617,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 484.5,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1301.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1600.0,
@@ -30444,12 +22638,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1968.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1968.0,
       "count": 954
@@ -30459,12 +22647,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2460.0,
       "count": 282
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 3189.0,
-      "count": 1
     }
   ],
   "Volkswagen|VW CC": [
@@ -30499,18 +22681,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1798.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
@@ -30524,12 +22694,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2000.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1968.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
       "yakitTuru": "Dizel",
       "exactCc": 1968.0,
       "count": 38
@@ -30537,28 +22701,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Volkswagen|Vento": [
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1595.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1595.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1700.5,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -30573,21 +22719,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     }
   ],
-  "Volvo|460": [
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1721.0,
-      "count": 1
-    }
-  ],
   "Volvo|850": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
@@ -30605,27 +22737,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 2316.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2435.0,
-      "count": 1
     }
   ],
   "Volvo|940": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 2000.0,
       "yakitTuru": "Benzin",
@@ -30637,20 +22751,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1986.0,
       "count": 3
-    }
-  ],
-  "Volvo|960": [
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2922.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2922.0,
-      "count": 1
     }
   ],
   "Volvo|C30": [
@@ -30671,32 +22771,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 17
-    },
-    {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1596.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1984.0,
-      "count": 1
-    }
-  ],
-  "Volvo|C70": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1984.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
     }
   ],
   "Volvo|EX40": [
@@ -30711,12 +22785,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Elektrik",
       "exactCc": 1500.5,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 2250.5,
-      "count": 1
     }
   ],
   "Volvo|S40": [
@@ -30749,24 +22817,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1587.0,
       "count": 63
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1731.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1731.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1800.0,
@@ -30803,18 +22853,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1998.0,
       "count": 7
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1999.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2750.0,
-      "count": 1
     }
   ],
   "Volvo|S60": [
@@ -30843,12 +22881,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 258
     },
     {
-      "hacmiBucket": 1600.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1595.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
@@ -30859,12 +22891,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
       "count": 4
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1900.0,
-      "count": 1
     },
     {
       "hacmiBucket": 1900.0,
@@ -30897,24 +22923,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 47
     },
     {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2319.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2400.0,
       "yakitTuru": "Benzin",
       "exactCc": 2400.0,
@@ -30928,30 +22936,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 2500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2521.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2521.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.5,
-      "count": 1
     }
   ],
   "Volvo|S70": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 1900.0,
       "yakitTuru": "LPG & Benzin",
@@ -30997,12 +22987,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 37
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1700.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1900.0,
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
@@ -31039,18 +23023,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2250.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2300.0,
       "yakitTuru": "Dizel",
       "exactCc": 2250.5,
@@ -31079,18 +23051,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2783.0,
       "count": 6
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2922.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 3200.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 3192.0,
-      "count": 1
     }
   ],
   "Volvo|S90": [
@@ -31105,12 +23065,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
       "count": 36
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1900.5,
-      "count": 1
     },
     {
       "hacmiBucket": 2000.0,
@@ -31139,18 +23093,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 106
     },
     {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
       "exactCc": 1596.0,
@@ -31169,12 +23111,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 3
     },
     {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1731.0,
-      "count": 1
-    },
-    {
       "hacmiBucket": 1800.0,
       "yakitTuru": "Benzin",
       "exactCc": 1783.0,
@@ -31182,27 +23118,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1870.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 1855.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1969.0,
-      "count": 1
     }
   ],
   "Volvo|V40 Cross Country": [
@@ -31234,12 +23152,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Volvo|V50": [
     {
       "hacmiBucket": 1600.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1560.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1600.0,
       "yakitTuru": "Dizel",
       "exactCc": 1560.0,
       "count": 16
@@ -31252,18 +23164,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Volvo|V60": [
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1500.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1500.5,
-      "count": 1
-    },
     {
       "hacmiBucket": 1600.0,
       "yakitTuru": "Benzin",
@@ -31283,39 +23183,9 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1900.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Hibrit",
-      "exactCc": 1969.0,
-      "count": 1
     }
   ],
   "Volvo|V70": [
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1984.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1984.0,
-      "count": 1
-    },
     {
       "hacmiBucket": 2200.0,
       "yakitTuru": "Benzin",
@@ -31323,28 +23193,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 2
     },
     {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
       "hacmiBucket": 2400.0,
       "yakitTuru": "Benzin",
       "exactCc": 2400.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2401.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2400.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2435.0,
-      "count": 1
     }
   ],
   "Volvo|V90 Cross Country": [
@@ -31377,12 +23229,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Hibrit",
       "exactCc": 1969.0,
       "count": 3
-    },
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 1969.0,
-      "count": 1
     }
   ],
   "Volvo|XC40": [
@@ -31420,12 +23266,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   "Volvo|XC60": [
     {
       "hacmiBucket": 1900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 1900.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 1900.0,
       "yakitTuru": "Dizel",
       "exactCc": 1900.5,
       "count": 24
@@ -31453,26 +23293,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2400.0,
       "count": 6
-    }
-  ],
-  "Volvo|XC70": [
-    {
-      "hacmiBucket": 2000.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 1984.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Dizel",
-      "exactCc": 2250.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2500.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2521.0,
-      "count": 1
     }
   ],
   "Volvo|XC90": [
@@ -31511,30 +23331,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 2401.0,
       "count": 11
-    },
-    {
-      "hacmiBucket": 2800.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2750.5,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "Benzin",
-      "exactCc": 2922.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 2900.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 2922.0,
-      "count": 1
-    },
-    {
-      "hacmiBucket": 4300.0,
-      "yakitTuru": "LPG & Benzin",
-      "exactCc": 4250.5,
-      "count": 1
     }
   ]
 };
@@ -61520,24 +53316,9 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
 };
 
 export const HP_BY_ENGINE: Record<string, number[]> = {
-  "Alfa Romeo|145|1400.0|Benzin": [
-    90.0
-  ],
-  "Alfa Romeo|145|1400.0|LPG & Benzin": [
-    90.0
-  ],
-  "Alfa Romeo|145|1500.0|Benzin": [
-    113.0
-  ],
   "Alfa Romeo|145|1600.0|LPG & Benzin": [
     103.0,
     120.0
-  ],
-  "Alfa Romeo|145|1700.0|Benzin": [
-    129.0
-  ],
-  "Alfa Romeo|145|1700.0|LPG & Benzin": [
-    129.0
   ],
   "Alfa Romeo|146|1400.0|Benzin": [
     103.0
@@ -61545,21 +53326,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Alfa Romeo|146|1400.0|LPG & Benzin": [
     103.0
   ],
-  "Alfa Romeo|146|1500.0|Benzin": [
-    113.0
-  ],
-  "Alfa Romeo|146|1500.0|LPG & Benzin": [
-    113.0
-  ],
-  "Alfa Romeo|146|1600.0|Benzin": [
-    120.0
-  ],
   "Alfa Romeo|146|1600.0|LPG & Benzin": [
-    103.0,
-    120.0
+    103.0
   ],
   "Alfa Romeo|146|2000.0|LPG & Benzin": [
-    150.0,
     155.0
   ],
   "Alfa Romeo|147|1500.0|Benzin": [
@@ -61576,9 +53346,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0,
     120.0
   ],
-  "Alfa Romeo|147|1900.0|Dizel": [
-    150.0
-  ],
   "Alfa Romeo|147|2000.0|LPG & Benzin": [
     150.0
   ],
@@ -61594,25 +53361,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Alfa Romeo|156|1600.0|LPG & Benzin": [
     120.0
   ],
-  "Alfa Romeo|156|1900.0|Benzin": [
-    88.0
-  ],
-  "Alfa Romeo|156|1900.0|Dizel": [
-    138.0
-  ],
-  "Alfa Romeo|156|2000.0|Benzin": [
-    155.0
-  ],
   "Alfa Romeo|156|2000.0|LPG & Benzin": [
-    155.0,
-    165.0
-  ],
-  "Alfa Romeo|156|2200.0|LPG & Benzin": [
-    163.0,
-    188.0
-  ],
-  "Alfa Romeo|159|1800.0|Benzin": [
-    140.0
+    155.0
   ],
   "Alfa Romeo|159|1900.0|Benzin": [
     138.0,
@@ -61623,44 +53373,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     150.0
   ],
-  "Alfa Romeo|166|2000.0|Benzin": [
-    202.0
-  ],
-  "Alfa Romeo|166|2000.0|LPG & Benzin": [
-    202.0
-  ],
-  "Alfa Romeo|166|2800.0|Benzin": [
-    213.0
-  ],
-  "Alfa Romeo|33|1500.0|Benzin": [
-    94.0,
-    98.0
-  ],
-  "Alfa Romeo|33|1500.0|LPG & Benzin": [
-    63.0,
-    94.0
-  ],
   "Alfa Romeo|Brera|3200.0|Benzin": [
     263.0
   ],
-  "Alfa Romeo|GT|1900.0|Dizel": [
-    150.0,
-    163.0
-  ],
   "Alfa Romeo|GT|2000.0|Benzin": [
     165.0
-  ],
-  "Alfa Romeo|GTV|1900.0|Benzin": [
-    163.0
-  ],
-  "Alfa Romeo|GTV|2000.0|Benzin": [
-    200.0
   ],
   "Alfa Romeo|Giulia|1900.0|Benzin": [
     288.0
   ],
   "Alfa Romeo|Giulia|2000.0|Benzin": [
-    200.0,
     280.0
   ],
   "Alfa Romeo|Giulietta|1300.0|Benzin": [
@@ -61675,8 +53397,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0
   ],
   "Alfa Romeo|Giulietta|1500.0|Dizel": [
-    113.0,
-    138.0
+    113.0
   ],
   "Alfa Romeo|Giulietta|1600.0|Benzin": [
     105.0,
@@ -61686,16 +53407,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0,
     120.0
   ],
-  "Alfa Romeo|Giulietta|1700.0|Benzin": [
-    238.0
-  ],
-  "Alfa Romeo|Giulietta|1700.0|Dizel": [
-    113.0
-  ],
   "Alfa Romeo|Junior Ibrida|600.0|Benzin": [
-    138.0
-  ],
-  "Alfa Romeo|Junior Ibrida|600.0|Hibrit": [
     138.0
   ],
   "Alfa Romeo|Junior Ibrida|1200.0|Benzin": [
@@ -61704,41 +53416,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Alfa Romeo|Junior Ibrida|1200.0|Hibrit": [
     136.0
   ],
-  "Alfa Romeo|MiTo|1200.0|Benzin": [
-    95.0
-  ],
   "Alfa Romeo|MiTo|1200.0|Dizel": [
     95.0
-  ],
-  "Alfa Romeo|MiTo|1300.0|Benzin": [
-    138.0,
-    163.0
   ],
   "Alfa Romeo|MiTo|1400.0|Benzin": [
     135.0,
     155.0,
     170.0
   ],
-  "Alfa Romeo|MiTo|1400.0|LPG & Benzin": [
-    135.0
-  ],
-  "Alfa Romeo|MiTo|1600.0|Benzin": [
-    120.0
-  ],
   "Alfa Romeo|MiTo|1600.0|Dizel": [
     120.0
   ],
-  "Alfa Romeo|Spider|1900.0|Benzin": [
-    138.0
-  ],
-  "Alfa Romeo|Spider|2800.0|Benzin": [
-    188.0
-  ],
   "Alfa Romeo|Stelvio|2000.0|Benzin": [
     280.0
-  ],
-  "Alfa Romeo|Tonale|1300.0|Benzin": [
-    288.0
   ],
   "Alfa Romeo|Tonale|1300.0|Hibrit": [
     288.0
@@ -61756,59 +53446,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Alfa Romeo|Tonale|1600.0|Dizel": [
     130.0
   ],
-  "Aston Martin|Vantage|4800.0|Benzin": [
-    438.0
-  ],
-  "Audi|100 Serisi|1500.0|Dizel": [
-    63.0
-  ],
   "Audi|100 Serisi|2000.0|Dizel": [
-    70.0,
-    87.0
-  ],
-  "Audi|100 Serisi|2200.0|Benzin": [
-    113.0
-  ],
-  "Audi|100 Serisi|2300.0|LPG & Benzin": [
-    133.0
-  ],
-  "Audi|200 Serisi|2100.0|Benzin": [
-    182.0
-  ],
-  "Audi|80 Serisi|1500.0|Benzin": [
-    88.0
-  ],
-  "Audi|80 Serisi|1600.0|Benzin": [
-    54.0
+    70.0
   ],
   "Audi|80 Serisi|1600.0|Dizel": [
     54.0,
     80.0
   ],
-  "Audi|80 Serisi|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Audi|80 Serisi|1800.0|LPG & Benzin": [
-    90.0
-  ],
   "Audi|80 Serisi|1900.0|Dizel": [
-    75.0,
     90.0
-  ],
-  "Audi|80 Serisi|2000.0|Benzin": [
-    115.0
-  ],
-  "Audi|80 Serisi|2000.0|LPG & Benzin": [
-    90.0,
-    115.0
   ],
   "Audi|A1|1300.0|Benzin": [
-    113.0,
-    188.0
+    113.0
   ],
   "Audi|A1|1400.0|Benzin": [
-    122.0,
-    185.0
+    122.0
   ],
   "Audi|A1|1500.0|Benzin": [
     88.0,
@@ -61817,16 +53469,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Audi|A1|1500.0|Dizel": [
     88.0
   ],
-  "Audi|A1|1600.0|Benzin": [
-    116.0
-  ],
   "Audi|A1|1600.0|Dizel": [
     90.0,
     105.0,
     116.0
-  ],
-  "Audi|A3|100.0|Benzin": [
-    150.0
   ],
   "Audi|A3|600.0|Benzin": [
     113.0
@@ -61869,27 +53515,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0,
     138.0,
     150.0,
-    163.0,
-    188.0
+    163.0
   ],
   "Audi|A3|1500.0|Dizel": [
-    63.0,
     113.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Audi|A3|1500.0|Hibrit": [
     138.0,
     150.0
   ],
   "Audi|A3|1500.0|LPG & Benzin": [
-    88.0,
-    113.0,
-    150.0
+    113.0
   ],
   "Audi|A3|1600.0|Benzin": [
     102.0,
-    105.0,
     115.0
   ],
   "Audi|A3|1600.0|Dizel": [
@@ -61902,47 +53542,25 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Audi|A3|1700.0|Benzin": [
-    88.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Audi|A3|1700.0|Dizel": [
-    88.0,
-    113.0,
-    163.0
-  ],
-  "Audi|A3|1700.0|LPG & Benzin": [
     113.0
   ],
   "Audi|A3|1800.0|Benzin": [
     125.0,
-    150.0,
     160.0
   ],
   "Audi|A3|1800.0|LPG & Benzin": [
     125.0
   ],
-  "Audi|A3|1900.0|Benzin": [
-    138.0
-  ],
   "Audi|A3|1900.0|Dizel": [
     105.0,
     110.0,
-    138.0,
-    163.0,
     188.0
-  ],
-  "Audi|A3|1900.0|Hibrit": [
-    138.0
-  ],
-  "Audi|A3|2000.0|Benzin": [
-    150.0
   ],
   "Audi|A3|2000.0|Dizel": [
     140.0
-  ],
-  "Audi|A4|600.0|Dizel": [
-    601.0
   ],
   "Audi|A4|1300.0|Benzin": [
     138.0
@@ -61964,9 +53582,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Audi|A4|1700.0|Benzin": [
     113.0,
-    138.0,
-    163.0,
-    188.0
+    163.0
   ],
   "Audi|A4|1700.0|LPG & Benzin": [
     163.0
@@ -61974,11 +53590,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Audi|A4|1800.0|Benzin": [
     120.0,
     125.0,
-    150.0,
     160.0,
-    163.0,
-    170.0,
-    190.0
+    163.0
   ],
   "Audi|A4|1800.0|LPG & Benzin": [
     120.0,
@@ -62007,9 +53620,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     213.0,
     263.0
   ],
-  "Audi|A4|1900.0|LPG & Benzin": [
-    188.0
-  ],
   "Audi|A4|2000.0|Benzin": [
     130.0,
     140.0,
@@ -62023,15 +53633,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     265.0
   ],
   "Audi|A4|2000.0|Dizel": [
-    120.0,
     140.0,
     143.0,
     150.0,
-    163.0,
     177.0,
     190.0,
-    204.0,
-    213.0
+    204.0
   ],
   "Audi|A4|2000.0|Hibrit": [
     204.0,
@@ -62039,46 +53646,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Audi|A4|2000.0|LPG & Benzin": [
     130.0,
-    200.0,
-    204.0
-  ],
-  "Audi|A4|2200.0|Benzin": [
-    163.0
-  ],
-  "Audi|A4|2200.0|Dizel": [
-    188.0,
-    213.0
-  ],
-  "Audi|A4|2300.0|Benzin": [
-    213.0
+    200.0
   ],
   "Audi|A4|2300.0|Dizel": [
     163.0,
-    188.0,
     213.0
   ],
-  "Audi|A4|2500.0|Benzin": [
-    150.0
-  ],
   "Audi|A4|2500.0|Dizel": [
-    155.0,
     163.0,
     180.0
   ],
-  "Audi|A4|2700.0|Dizel": [
-    180.0,
-    190.0
-  ],
   "Audi|A4|2800.0|Benzin": [
-    138.0,
-    188.0,
     213.0
   ],
   "Audi|A4|2800.0|Dizel": [
     188.0
-  ],
-  "Audi|A4|3000.0|LPG & Benzin": [
-    220.0
   ],
   "Audi|A5|1300.0|Benzin": [
     138.0
@@ -62086,16 +53668,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Audi|A5|1400.0|Benzin": [
     150.0
   ],
-  "Audi|A5|1500.0|Benzin": [
-    138.0
-  ],
   "Audi|A5|1700.0|Benzin": [
     163.0
   ],
   "Audi|A5|1800.0|Benzin": [
-    170.0
-  ],
-  "Audi|A5|1800.0|LPG & Benzin": [
     170.0
   ],
   "Audi|A5|1900.0|Benzin": [
@@ -62110,12 +53686,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     213.0
   ],
   "Audi|A5|1900.0|Hibrit": [
-    213.0,
-    263.0
+    213.0
   ],
   "Audi|A5|2000.0|Benzin": [
-    180.0,
-    190.0,
     204.0,
     211.0,
     265.0
@@ -62126,32 +53699,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     190.0,
     204.0
   ],
-  "Audi|A5|2000.0|Hibrit": [
-    204.0,
-    265.0
-  ],
-  "Audi|A5|3000.0|Dizel": [
-    240.0
-  ],
-  "Audi|A5|3200.0|Benzin": [
-    265.0
-  ],
   "Audi|A6|1700.0|Benzin": [
     138.0
   ],
   "Audi|A6|1700.0|LPG & Benzin": [
-    138.0,
-    188.0
-  ],
-  "Audi|A6|1800.0|Benzin": [
-    125.0,
-    150.0
+    138.0
   ],
   "Audi|A6|1800.0|LPG & Benzin": [
     150.0
   ],
   "Audi|A6|1900.0|Benzin": [
-    113.0,
     138.0,
     163.0,
     188.0,
@@ -62165,10 +53722,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0,
     188.0,
     213.0
-  ],
-  "Audi|A6|1900.0|Hibrit": [
-    213.0,
-    263.0
   ],
   "Audi|A6|2000.0|Benzin": [
     130.0,
@@ -62190,39 +53743,26 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     204.0
   ],
   "Audi|A6|2000.0|Hibrit": [
-    204.0,
-    265.0
+    204.0
   ],
   "Audi|A6|2000.0|LPG & Benzin": [
     130.0,
-    140.0,
-    170.0,
-    204.0
+    170.0
   ],
   "Audi|A6|2300.0|Benzin": [
     188.0
   ],
   "Audi|A6|2300.0|Dizel": [
-    138.0,
-    163.0,
-    188.0,
-    213.0
-  ],
-  "Audi|A6|2300.0|LPG & Benzin": [
-    163.0,
     188.0
   ],
   "Audi|A6|2400.0|Benzin": [
-    165.0,
     170.0,
     177.0
   ],
   "Audi|A6|2400.0|LPG & Benzin": [
-    170.0,
     177.0
   ],
   "Audi|A6|2500.0|Benzin": [
-    140.0,
     180.0
   ],
   "Audi|A6|2500.0|Dizel": [
@@ -62239,28 +53779,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     250.0
   ],
   "Audi|A6|2800.0|Benzin": [
-    174.0,
-    193.0,
-    213.0,
     238.0,
-    263.0,
     288.0,
     313.0
   ],
   "Audi|A6|2800.0|Dizel": [
-    188.0,
     238.0,
     263.0
   ],
   "Audi|A6|2800.0|LPG & Benzin": [
-    193.0,
-    263.0
+    193.0
   ],
   "Audi|A6|3000.0|Benzin": [
     233.0,
     240.0,
     286.0,
-    290.0,
     320.0
   ],
   "Audi|A6|3000.0|Dizel": [
@@ -62272,39 +53805,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     320.0
   ],
   "Audi|A6|3000.0|LPG & Benzin": [
-    220.0,
-    286.0
+    220.0
   ],
   "Audi|A6|3100.0|Benzin": [
     255.0
   ],
-  "Audi|A6|3100.0|LPG & Benzin": [
-    255.0
-  ],
-  "Audi|A6|3200.0|Benzin": [
-    263.0
-  ],
   "Audi|A7|1900.0|Benzin": [
     263.0
   ],
-  "Audi|A7|2000.0|Dizel": [
-    204.0
-  ],
   "Audi|A7|2800.0|Benzin": [
-    238.0,
-    263.0,
-    313.0
+    238.0
   ],
   "Audi|A7|2800.0|Dizel": [
     238.0,
-    263.0,
-    313.0
-  ],
-  "Audi|A7|3000.0|Dizel": [
-    245.0
-  ],
-  "Audi|A8|2800.0|Benzin": [
-    238.0
+    263.0
   ],
   "Audi|A8|2800.0|Dizel": [
     238.0,
@@ -62312,42 +53826,24 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Audi|A8|3000.0|Benzin": [
     233.0,
-    250.0,
-    262.0
+    250.0
   ],
   "Audi|A8|3000.0|Dizel": [
     233.0,
-    250.0,
-    258.0
-  ],
-  "Audi|A8|4100.0|Dizel": [
-    326.0
+    250.0
   ],
   "Audi|A8|4200.0|Benzin": [
-    300.0,
-    310.0,
-    313.0,
-    335.0,
     338.0
   ],
   "Audi|A8|4200.0|LPG & Benzin": [
-    310.0,
-    335.0
+    310.0
   ],
   "Audi|A8|4300.0|Benzin": [
-    313.0,
     338.0,
     363.0
   ],
-  "Audi|A8|4300.0|Dizel": [
-    338.0,
-    388.0
-  ],
   "Audi|E-Tron|100.0|Elektrik": [
     408.0
-  ],
-  "Audi|Q2|600.0|Benzin": [
-    113.0
   ],
   "Audi|Q2|1000.0|Benzin": [
     116.0
@@ -62365,15 +53861,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Audi|Q2|1600.0|Dizel": [
     116.0
   ],
-  "Audi|Q2|1700.0|Dizel": [
-    113.0
-  ],
   "Audi|Q3|1500.0|Benzin": [
     138.0,
-    150.0,
-    163.0
-  ],
-  "Audi|Q3|1500.0|Elektrik": [
     150.0
   ],
   "Audi|Q3|1500.0|Hibrit": [
@@ -62397,9 +53886,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Audi|Q5|2000.0|Benzin": [
     170.0,
-    211.0,
-    230.0,
-    265.0
+    211.0
   ],
   "Audi|Q5|2000.0|Dizel": [
     170.0,
@@ -62417,54 +53904,23 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Audi|Q7|2800.0|Dizel": [
     238.0,
-    263.0,
-    313.0
+    263.0
   ],
   "Audi|Q7|3000.0|Dizel": [
-    240.0,
-    272.0
-  ],
-  "Audi|Q7|4200.0|Benzin": [
-    350.0
-  ],
-  "Audi|RS|2700.0|Benzin": [
-    381.0
-  ],
-  "Audi|RS|2800.0|Benzin": [
-    338.0
-  ],
-  "Audi|RS|4200.0|Benzin": [
-    450.0
+    240.0
   ],
   "Audi|S|1900.0|Benzin": [
-    263.0,
     288.0,
     313.0
   ],
   "Audi|S|2000.0|Benzin": [
     265.0,
-    280.0,
     310.0
   ],
-  "Audi|S|2700.0|Benzin": [
-    265.0
-  ],
-  "Audi|S|2800.0|Benzin": [
-    338.0
-  ],
-  "Audi|S|3000.0|Benzin": [
-    333.0
-  ],
-  "Audi|S|3800.0|Benzin": [
-    513.0
-  ],
   "Audi|S|4200.0|Benzin": [
-    354.0,
-    363.0
+    354.0
   ],
   "Audi|TT|1800.0|Benzin": [
-    150.0,
-    180.0,
     225.0
   ],
   "Audi|TT|1900.0|Benzin": [
@@ -62477,14 +53933,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     272.0
   ],
   "Audi|TTS|1900.0|Benzin": [
-    263.0,
-    313.0
-  ],
-  "Audi|TTS|2000.0|Benzin": [
-    272.0
-  ],
-  "Audi|TTS|2300.0|Benzin": [
-    463.0
+    263.0
   ],
   "BMW|1 Serisi|1500.0|Benzin": [
     109.0,
@@ -62492,8 +53941,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     136.0,
     138.0,
     163.0,
-    170.0,
-    188.0
+    170.0
   ],
   "BMW|1 Serisi|1500.0|Dizel": [
     116.0,
@@ -62519,16 +53967,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     116.0,
     136.0
   ],
-  "BMW|1 Serisi|1700.0|Benzin": [
-    113.0,
-    138.0
-  ],
-  "BMW|1 Serisi|1700.0|LPG & Benzin": [
-    113.0
-  ],
   "BMW|1 Serisi|1900.0|Benzin": [
-    138.0,
-    188.0
+    138.0
   ],
   "BMW|1 Serisi|1900.0|LPG & Benzin": [
     138.0
@@ -62539,8 +53979,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     136.0,
     143.0,
     150.0,
-    163.0,
-    204.0
+    163.0
   ],
   "BMW|1 Serisi|2000.0|Dizel": [
     116.0,
@@ -62559,7 +53998,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     140.0,
     163.0,
     170.0,
-    326.0,
     338.0
   ],
   "BMW|2 Serisi|1500.0|Dizel": [
@@ -62570,25 +54008,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0,
     326.0
   ],
-  "BMW|2 Serisi|2000.0|Dizel": [
-    184.0,
-    190.0
-  ],
-  "BMW|3 Serisi|300.0|Benzin": [
-    213.0
-  ],
   "BMW|3 Serisi|1500.0|Benzin": [
     88.0,
     113.0,
     136.0,
     138.0,
-    163.0,
-    188.0
+    163.0
   ],
   "BMW|3 Serisi|1500.0|LPG & Benzin": [
     88.0,
-    113.0,
-    138.0
+    113.0
   ],
   "BMW|3 Serisi|1600.0|Benzin": [
     102.0,
@@ -62602,19 +54031,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0,
     105.0,
     115.0,
-    122.0,
-    136.0,
-    170.0
+    122.0
   ],
   "BMW|3 Serisi|1700.0|Benzin": [
-    88.0,
     113.0,
     163.0,
-    188.0,
-    288.0
-  ],
-  "BMW|3 Serisi|1700.0|Dizel": [
-    163.0
+    188.0
   ],
   "BMW|3 Serisi|1700.0|LPG & Benzin": [
     113.0
@@ -62624,7 +54046,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     140.0
   ],
   "BMW|3 Serisi|1800.0|LPG & Benzin": [
-    90.0,
     102.0,
     115.0,
     140.0
@@ -62635,18 +54056,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     163.0,
     188.0,
-    213.0,
-    238.0,
-    263.0
+    238.0
   ],
   "BMW|3 Serisi|1900.0|Dizel": [
-    88.0,
     138.0,
     163.0,
     188.0
   ],
   "BMW|3 Serisi|1900.0|LPG & Benzin": [
-    102.0,
     105.0,
     113.0,
     118.0,
@@ -62654,7 +54071,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "BMW|3 Serisi|2000.0|Benzin": [
-    125.0,
     129.0,
     136.0,
     143.0,
@@ -62668,7 +54084,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     245.0
   ],
   "BMW|3 Serisi|2000.0|Dizel": [
-    115.0,
     136.0,
     143.0,
     150.0,
@@ -62678,42 +54093,26 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     190.0
   ],
   "BMW|3 Serisi|2000.0|LPG & Benzin": [
-    129.0,
     143.0,
     150.0,
     170.0
   ],
   "BMW|3 Serisi|2200.0|Benzin": [
     163.0,
-    170.0,
-    188.0
+    170.0
   ],
   "BMW|3 Serisi|2200.0|LPG & Benzin": [
     170.0
   ],
   "BMW|3 Serisi|2300.0|Benzin": [
-    150.0,
-    163.0,
-    188.0,
-    238.0
-  ],
-  "BMW|3 Serisi|2300.0|Dizel": [
     188.0
   ],
   "BMW|3 Serisi|2300.0|LPG & Benzin": [
     188.0
   ],
-  "BMW|3 Serisi|2400.0|Dizel": [
-    86.0
-  ],
   "BMW|3 Serisi|2500.0|Benzin": [
     170.0,
-    192.0,
-    218.0
-  ],
-  "BMW|3 Serisi|2500.0|Dizel": [
-    115.0,
-    143.0
+    192.0
   ],
   "BMW|3 Serisi|2500.0|LPG & Benzin": [
     170.0,
@@ -62722,46 +54121,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "BMW|3 Serisi|2800.0|Benzin": [
     188.0,
     193.0,
-    213.0,
-    238.0,
-    288.0,
-    313.0,
-    388.0,
-    513.0,
-    588.0
+    238.0
   ],
   "BMW|3 Serisi|2800.0|LPG & Benzin": [
-    193.0,
-    213.0,
-    263.0
-  ],
-  "BMW|3 Serisi|2900.0|Dizel": [
-    184.0
+    193.0
   ],
   "BMW|3 Serisi|3000.0|Benzin": [
-    218.0,
-    231.0,
-    272.0,
-    306.0
+    231.0
   ],
   "BMW|3 Serisi|3000.0|Dizel": [
     184.0,
-    204.0,
-    245.0
+    204.0
   ],
   "BMW|3 Serisi|3000.0|LPG & Benzin": [
-    231.0,
-    258.0
-  ],
-  "BMW|3 Serisi|3300.0|Benzin": [
-    338.0
-  ],
-  "BMW|3 Serisi|3300.0|Dizel": [
-    601.0
-  ],
-  "BMW|3 Serisi|3300.0|LPG & Benzin": [
-    263.0,
-    338.0
+    231.0
   ],
   "BMW|4 Serisi|1500.0|Benzin": [
     136.0,
@@ -62772,11 +54145,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0
   ],
   "BMW|4 Serisi|1700.0|Benzin": [
-    163.0,
-    188.0
+    163.0
   ],
   "BMW|4 Serisi|1900.0|Benzin": [
-    163.0,
     188.0,
     238.0
   ],
@@ -62793,11 +54164,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     184.0,
     190.0
   ],
-  "BMW|5 Serisi|600.0|Dizel": [
-    163.0
-  ],
   "BMW|5 Serisi|1500.0|Benzin": [
-    138.0,
     163.0,
     188.0
   ],
@@ -62808,18 +54175,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0,
     188.0
   ],
-  "BMW|5 Serisi|1800.0|Benzin": [
-    113.0
-  ],
   "BMW|5 Serisi|1800.0|LPG & Benzin": [
     113.0
   ],
   "BMW|5 Serisi|1900.0|Benzin": [
     138.0,
-    163.0,
     188.0,
     213.0,
-    238.0,
     263.0
   ],
   "BMW|5 Serisi|1900.0|Dizel": [
@@ -62837,11 +54199,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     184.0,
     190.0,
     218.0,
-    245.0,
     252.0
   ],
   "BMW|5 Serisi|2000.0|Dizel": [
-    136.0,
     163.0,
     177.0,
     184.0,
@@ -62857,28 +54217,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "BMW|5 Serisi|2200.0|Benzin": [
     163.0,
-    170.0,
-    188.0,
-    213.0
-  ],
-  "BMW|5 Serisi|2200.0|Dizel": [
-    163.0
+    170.0
   ],
   "BMW|5 Serisi|2200.0|LPG & Benzin": [
     170.0
   ],
   "BMW|5 Serisi|2300.0|Benzin": [
-    163.0,
-    188.0,
-    213.0,
-    263.0,
-    313.0
+    163.0
   ],
   "BMW|5 Serisi|2300.0|Dizel": [
-    138.0,
-    163.0,
-    188.0,
-    213.0
+    163.0
   ],
   "BMW|5 Serisi|2300.0|LPG & Benzin": [
     163.0,
@@ -62905,20 +54253,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "BMW|5 Serisi|2800.0|Benzin": [
     188.0,
     193.0,
-    238.0,
-    263.0,
-    313.0,
-    338.0
+    238.0
   ],
   "BMW|5 Serisi|2800.0|Dizel": [
     188.0,
-    213.0,
     238.0,
-    263.0,
-    313.0
+    263.0
   ],
   "BMW|5 Serisi|2800.0|LPG & Benzin": [
-    163.0,
     188.0,
     193.0,
     238.0
@@ -62928,62 +54270,29 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     193.0
   ],
   "BMW|5 Serisi|3000.0|Benzin": [
-    204.0,
     231.0,
     245.0,
     258.0,
-    313.0,
-    340.0
+    313.0
   ],
   "BMW|5 Serisi|3000.0|Dizel": [
     197.0,
     204.0,
-    218.0,
     231.0,
-    235.0,
     245.0,
-    286.0,
     313.0
   ],
   "BMW|5 Serisi|3000.0|LPG & Benzin": [
-    218.0,
-    231.0,
-    258.0
-  ],
-  "BMW|5 Serisi|3400.0|Benzin": [
-    211.0
-  ],
-  "BMW|5 Serisi|3400.0|LPG & Benzin": [
-    211.0
-  ],
-  "BMW|5 Serisi|3800.0|Dizel": [
-    263.0
-  ],
-  "BMW|5 Serisi|4000.0|Benzin": [
-    286.0
+    231.0
   ],
   "BMW|5 Serisi|4200.0|Benzin": [
     288.0
   ],
-  "BMW|5 Serisi|4300.0|Benzin": [
-    288.0,
-    338.0
-  ],
-  "BMW|5 Serisi|4300.0|LPG & Benzin": [
-    288.0
-  ],
   "BMW|5 Serisi|4400.0|Benzin": [
-    286.0,
     333.0
-  ],
-  "BMW|5 Serisi|4400.0|LPG & Benzin": [
-    286.0
   ],
   "BMW|6 Serisi|1900.0|Benzin": [
     263.0
-  ],
-  "BMW|6 Serisi|2000.0|Dizel": [
-    190.0
   ],
   "BMW|6 Serisi|2800.0|Benzin": [
     263.0,
@@ -62992,52 +54301,27 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "BMW|6 Serisi|2800.0|Dizel": [
     313.0
   ],
-  "BMW|6 Serisi|3000.0|Benzin": [
-    258.0
-  ],
   "BMW|6 Serisi|3000.0|Dizel": [
     313.0
   ],
-  "BMW|6 Serisi|4400.0|Benzin": [
-    333.0
-  ],
-  "BMW|6 Serisi|4400.0|LPG & Benzin": [
-    333.0
-  ],
-  "BMW|6 Serisi|4800.0|Benzin": [
-    367.0
-  ],
   "BMW|7 Serisi|1900.0|Benzin": [
-    263.0,
-    338.0
+    263.0
   ],
   "BMW|7 Serisi|2000.0|Benzin": [
     231.0,
     258.0
-  ],
-  "BMW|7 Serisi|2000.0|Dizel": [
-    231.0
-  ],
-  "BMW|7 Serisi|2500.0|Dizel": [
-    143.0
   ],
   "BMW|7 Serisi|2800.0|Benzin": [
     263.0,
     338.0
   ],
   "BMW|7 Serisi|2800.0|Dizel": [
-    238.0,
-    263.0,
-    313.0
+    238.0
   ],
   "BMW|7 Serisi|3000.0|Benzin": [
-    188.0,
     231.0,
     245.0,
-    258.0,
-    306.0,
-    326.0,
-    381.0
+    326.0
   ],
   "BMW|7 Serisi|3000.0|Dizel": [
     218.0,
@@ -63049,108 +54333,36 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     381.0
   ],
   "BMW|7 Serisi|3000.0|LPG & Benzin": [
-    188.0,
     231.0
-  ],
-  "BMW|7 Serisi|3200.0|Benzin": [
-    263.0
-  ],
-  "BMW|7 Serisi|3300.0|Dizel": [
-    313.0
-  ],
-  "BMW|7 Serisi|3400.0|Benzin": [
-    211.0
-  ],
-  "BMW|7 Serisi|3400.0|LPG & Benzin": [
-    211.0
-  ],
-  "BMW|7 Serisi|3600.0|LPG & Benzin": [
-    272.0
-  ],
-  "BMW|7 Serisi|3800.0|Benzin": [
-    263.0
-  ],
-  "BMW|7 Serisi|3900.0|Benzin": [
-    258.0
   ],
   "BMW|7 Serisi|3900.0|Dizel": [
     258.0
   ],
   "BMW|7 Serisi|4000.0|LPG & Benzin": [
-    286.0,
-    306.0
-  ],
-  "BMW|7 Serisi|4200.0|Benzin": [
-    288.0
+    286.0
   ],
   "BMW|7 Serisi|4300.0|Benzin": [
     288.0
   ],
-  "BMW|7 Serisi|4300.0|LPG & Benzin": [
-    288.0
-  ],
   "BMW|7 Serisi|4400.0|Benzin": [
-    286.0,
-    333.0,
-    407.0
-  ],
-  "BMW|7 Serisi|4400.0|LPG & Benzin": [
-    286.0,
     333.0
   ],
-  "BMW|7 Serisi|4800.0|Benzin": [
-    367.0
-  ],
-  "BMW|7 Serisi|5000.0|Benzin": [
-    300.0
-  ],
-  "BMW|7 Serisi|5400.0|Benzin": [
-    326.0
+  "BMW|7 Serisi|4400.0|LPG & Benzin": [
+    333.0
   ],
   "BMW|7 Serisi|6000.0|Benzin": [
     445.0
   ],
-  "BMW|M Serisi|2000.0|Benzin": [
-    306.0
-  ],
   "BMW|M Serisi|2800.0|Benzin": [
-    288.0,
     438.0,
-    488.0,
-    563.0,
-    588.0,
     601.0
   ],
-  "BMW|M Serisi|3000.0|Benzin": [
-    286.0,
-    370.0,
-    431.0
-  ],
   "BMW|M Serisi|3200.0|Benzin": [
-    313.0,
     321.0,
-    338.0,
-    343.0
-  ],
-  "BMW|M Serisi|3300.0|Benzin": [
-    263.0,
-    338.0,
-    588.0
-  ],
-  "BMW|M Serisi|3800.0|Benzin": [
-    338.0,
-    363.0,
-    438.0
-  ],
-  "BMW|M Serisi|3800.0|LPG & Benzin": [
-    340.0
+    338.0
   ],
   "BMW|M Serisi|4000.0|Benzin": [
     420.0
-  ],
-  "BMW|M Serisi|4200.0|Benzin": [
-    413.0,
-    563.0
   ],
   "BMW|M Serisi|4300.0|Benzin": [
     563.0
@@ -63159,20 +54371,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     560.0
   ],
   "BMW|M Serisi|4800.0|Benzin": [
-    388.0,
     513.0
-  ],
-  "BMW|M Serisi|4900.0|Benzin": [
-    400.0
   ],
   "BMW|M Serisi|5000.0|Benzin": [
     507.0
   ],
   "BMW|X1|1500.0|Benzin": [
-    116.0,
     136.0,
     138.0,
-    154.0,
     170.0,
     238.0,
     245.0
@@ -63186,26 +54392,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     245.0,
     326.0
   ],
-  "BMW|X1|1500.0|LPG & Benzin": [
-    136.0
-  ],
   "BMW|X1|1600.0|Benzin": [
-    143.0,
-    170.0
-  ],
-  "BMW|X1|1600.0|LPG & Benzin": [
     143.0
   ],
   "BMW|X1|1900.0|Dizel": [
     188.0
   ],
   "BMW|X1|2000.0|Dizel": [
-    177.0,
-    184.0
+    177.0
   ],
   "BMW|X2|1500.0|Benzin": [
-    140.0,
-    163.0
+    140.0
   ],
   "BMW|X2|1500.0|Dizel": [
     116.0
@@ -63220,7 +54417,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0
   ],
   "BMW|X3|1900.0|Dizel": [
-    138.0,
     188.0
   ],
   "BMW|X3|2000.0|Dizel": [
@@ -63229,15 +54425,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     184.0,
     190.0
   ],
-  "BMW|X3|2500.0|Benzin": [
-    218.0
-  ],
-  "BMW|X3|2500.0|LPG & Benzin": [
-    192.0
-  ],
   "BMW|X3|3000.0|Dizel": [
-    204.0,
-    218.0
+    204.0
   ],
   "BMW|X4|2000.0|Dizel": [
     190.0
@@ -63258,7 +54447,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     188.0,
     213.0,
     238.0,
-    288.0,
     313.0
   ],
   "BMW|X5|2800.0|LPG & Benzin": [
@@ -63274,43 +54462,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     258.0,
     286.0
   ],
-  "BMW|X5|4300.0|LPG & Benzin": [
-    288.0
-  ],
   "BMW|X5|4600.0|Benzin": [
     347.0
   ],
-  "BMW|X5|4600.0|LPG & Benzin": [
-    347.0
-  ],
-  "BMW|X5|4800.0|Benzin": [
-    355.0
-  ],
-  "BMW|X6|2800.0|Benzin": [
-    288.0,
-    313.0
-  ],
   "BMW|X6|2800.0|Dizel": [
     238.0,
-    288.0,
     313.0
   ],
   "BMW|X6|3000.0|Dizel": [
     235.0,
-    258.0,
     286.0,
     306.0,
     313.0,
     381.0
-  ],
-  "BMW|X6|3300.0|Benzin": [
-    263.0
-  ],
-  "BMW|X6|4300.0|Benzin": [
-    413.0
-  ],
-  "BMW|Z Serisi|1800.0|LPG & Benzin": [
-    115.0
   ],
   "BMW|Z Serisi|1900.0|Benzin": [
     140.0,
@@ -63318,18 +54482,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     238.0,
     263.0
   ],
-  "BMW|Z Serisi|2000.0|Benzin": [
-    150.0,
-    258.0
-  ],
-  "BMW|Z Serisi|2200.0|Benzin": [
-    188.0
-  ],
   "BMW|Z Serisi|2300.0|Benzin": [
     213.0
-  ],
-  "BMW|i Serisi|1200.0|Elektrik": [
-    288.0
   ],
   "BMW|i Serisi|1500.0|Benzin": [
     363.0
@@ -63340,83 +54494,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "BYD|Han|6000.0|Elektrik": [
     513.0
   ],
-  "BYD|Seal U DM-i|1500.0|Benzin": [
-    213.0
-  ],
   "BYD|Seal U DM-i|1500.0|Hibrit": [
-    97.0,
     213.0,
     218.0,
     313.0,
     324.0
   ],
-  "Bentley|Continental|5800.0|Benzin": [
-    563.0
-  ],
-  "Bentley|Continental|6000.0|Benzin": [
-    560.0
-  ],
-  "Buick|Regal|3200.0|Benzin": [
-    213.0
-  ],
-  "Cadillac|DeVille|4600.0|Benzin": [
-    275.0,
-    300.0
-  ],
-  "Cadillac|Eldorado|4800.0|Benzin": [
-    188.0
-  ],
-  "Cadillac|Escalade|5300.0|LPG & Benzin": [
-    338.0
-  ],
-  "Cadillac|Escalade|6000.0|Benzin": [
-    350.0
-  ],
-  "Cadillac|Escalade|6000.0|Hibrit": [
-    332.0
-  ],
-  "Cadillac|Escalade|6000.0|LPG & Benzin": [
-    350.0
-  ],
   "Cadillac|Escalade|6200.0|Benzin": [
-    409.0,
     413.0
-  ],
-  "Cadillac|Fleetwood|5800.0|Benzin": [
-    263.0
-  ],
-  "Cadillac|SRX|3600.0|Benzin": [
-    258.0
-  ],
-  "Cadillac|SRX|3800.0|Benzin": [
-    263.0
-  ],
-  "Cadillac|SRX|3800.0|LPG & Benzin": [
-    263.0
-  ],
-  "Cadillac|Seville|4600.0|Benzin": [
-    300.0
-  ],
-  "Cadillac|Seville|4800.0|Benzin": [
-    288.0
-  ],
-  "Cadillac|Seville|4900.0|Benzin": [
-    200.0
-  ],
-  "Chery|Alia|1500.0|LPG & Benzin": [
-    113.0
   ],
   "Chery|Alia|1600.0|Benzin": [
     112.0
   ],
   "Chery|Alia|1600.0|LPG & Benzin": [
     112.0
-  ],
-  "Chery|Alia|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Chery|Alia|2000.0|LPG & Benzin": [
-    138.0
   ],
   "Chery|Chance|1600.0|LPG & Benzin": [
     121.0
@@ -63439,12 +54530,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Chery|Omoda 5|1600.0|LPG & Benzin": [
     185.0
-  ],
-  "Chery|Omoda 5 Pro|0.0|Benzin": [
-    138.0
-  ],
-  "Chery|Omoda 5 Pro|1500.0|Benzin": [
-    138.0
   ],
   "Chery|Omoda 5 Pro|1600.0|Benzin": [
     145.0
@@ -63471,14 +54556,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Chery|Tiggo 7 Pro|1600.0|Benzin": [
     185.0
   ],
-  "Chery|Tiggo 7 Pro|1600.0|Dizel": [
-    185.0
-  ],
   "Chery|Tiggo 7 Pro|1600.0|LPG & Benzin": [
     185.0
-  ],
-  "Chery|Tiggo 7 Pro|1700.0|Benzin": [
-    113.0
   ],
   "Chery|Tiggo 7 Pro Max|1500.0|Benzin": [
     138.0
@@ -63529,7 +54608,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0
   ],
   "Chevrolet|Aveo|1200.0|LPG & Benzin": [
-    63.0,
     72.0,
     84.0
   ],
@@ -63558,15 +54636,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Chevrolet|Aveo|1500.0|Benzin": [
     88.0
   ],
-  "Chevrolet|Aveo|1500.0|LPG & Benzin": [
-    88.0
-  ],
   "Chevrolet|Camaro|1900.0|Benzin": [
     263.0
-  ],
-  "Chevrolet|Camaro|3800.0|Benzin": [
-    338.0,
-    413.0
   ],
   "Chevrolet|Camaro|5700.0|Benzin": [
     288.0
@@ -63575,16 +54646,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     288.0
   ],
   "Chevrolet|Camaro|6000.0|Benzin": [
-    413.0,
-    438.0
+    413.0
   ],
   "Chevrolet|Camaro|6200.0|Benzin": [
-    432.0,
-    438.0,
-    463.0
-  ],
-  "Chevrolet|Caprice|1300.0|Benzin": [
-    50.0
+    438.0
   ],
   "Chevrolet|Captiva|1900.0|Dizel": [
     138.0,
@@ -63594,18 +54659,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0,
     163.0
   ],
-  "Chevrolet|Cavalier|2200.0|LPG & Benzin": [
-    97.0
-  ],
-  "Chevrolet|Corvette|1500.0|LPG & Benzin": [
-    88.0
-  ],
   "Chevrolet|Corvette|5800.0|Benzin": [
-    288.0,
     338.0
-  ],
-  "Chevrolet|Cruze|0.0|LPG & Benzin": [
-    88.0
   ],
   "Chevrolet|Cruze|1400.0|Benzin": [
     140.0
@@ -63621,23 +54676,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Chevrolet|Cruze|1600.0|Benzin": [
-    109.0,
     113.0,
-    124.0
-  ],
-  "Chevrolet|Cruze|1600.0|Dizel": [
     124.0
   ],
   "Chevrolet|Cruze|1600.0|LPG & Benzin": [
     109.0,
     113.0,
     124.0
-  ],
-  "Chevrolet|Cruze|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Chevrolet|Cruze|1800.0|Benzin": [
-    141.0
   ],
   "Chevrolet|Cruze|2000.0|Benzin": [
     163.0
@@ -63654,22 +54699,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Chevrolet|Epica|2000.0|Dizel": [
     150.0
   ],
-  "Chevrolet|Epica|2000.0|LPG & Benzin": [
-    142.0
-  ],
-  "Chevrolet|Evanda|1900.0|LPG & Benzin": [
-    138.0
-  ],
-  "Chevrolet|Evanda|2000.0|Benzin": [
-    131.0
-  ],
   "Chevrolet|Evanda|2000.0|LPG & Benzin": [
     131.0
   ],
   "Chevrolet|Kalos|600.0|Benzin": [
-    63.0
-  ],
-  "Chevrolet|Kalos|600.0|LPG & Benzin": [
     63.0
   ],
   "Chevrolet|Kalos|1200.0|Benzin": [
@@ -63709,7 +54742,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Chevrolet|Lacetti|1500.0|LPG & Benzin": [
-    88.0,
     113.0
   ],
   "Chevrolet|Lacetti|1600.0|Benzin": [
@@ -63718,12 +54750,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Chevrolet|Lacetti|1600.0|LPG & Benzin": [
     109.0
   ],
-  "Chevrolet|Lacetti|1700.0|Benzin": [
-    113.0
-  ],
   "Chevrolet|Lacetti|1700.0|LPG & Benzin": [
-    113.0,
-    138.0
+    113.0
   ],
   "Chevrolet|Rezzo|1500.0|Benzin": [
     113.0
@@ -63732,7 +54760,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Chevrolet|Rezzo|1600.0|Benzin": [
-    105.0,
     108.0
   ],
   "Chevrolet|Rezzo|1600.0|LPG & Benzin": [
@@ -63745,9 +54772,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Chevrolet|Spark|800.0|Benzin": [
     52.0
   ],
-  "Chevrolet|Spark|800.0|Dizel": [
-    52.0
-  ],
   "Chevrolet|Spark|800.0|LPG & Benzin": [
     52.0
   ],
@@ -63756,8 +54780,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     68.0
   ],
   "Chevrolet|Spark|1000.0|LPG & Benzin": [
-    66.0,
-    68.0
+    66.0
   ],
   "Chevrolet|Spark|1200.0|Benzin": [
     63.0,
@@ -63778,67 +54801,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Chrysler|300 C|3000.0|Dizel": [
     218.0
   ],
-  "Chrysler|300 C|3500.0|Benzin": [
-    250.0
-  ],
-  "Chrysler|300 C|5700.0|Benzin": [
-    340.0
-  ],
-  "Chrysler|300 C|5800.0|Benzin": [
-    338.0
-  ],
-  "Chrysler|300 M|2700.0|Benzin": [
-    204.0
-  ],
   "Chrysler|300 M|3500.0|Benzin": [
-    252.0,
-    254.0
-  ],
-  "Chrysler|300 M|3500.0|LPG & Benzin": [
     252.0
-  ],
-  "Chrysler|300 M|3800.0|Benzin": [
-    263.0
-  ],
-  "Chrysler|Concorde|3500.0|Benzin": [
-    215.0
   ],
   "Chrysler|Crossfire|3300.0|Benzin": [
     213.0
   ],
-  "Chrysler|LHS|3800.0|Benzin": [
-    213.0
-  ],
-  "Chrysler|Neon|2000.0|Benzin": [
-    133.0
-  ],
   "Chrysler|Neon|2000.0|LPG & Benzin": [
-    132.0,
-    145.0
-  ],
-  "Chrysler|PT Cruiser|1600.0|LPG & Benzin": [
-    115.0
+    132.0
   ],
   "Chrysler|PT Cruiser|2000.0|LPG & Benzin": [
     141.0
   ],
-  "Chrysler|PT Cruiser|2200.0|LPG & Benzin": [
-    188.0
-  ],
-  "Chrysler|Sebring|2000.0|Benzin": [
-    140.0
-  ],
   "Chrysler|Sebring|2000.0|Dizel": [
     140.0
-  ],
-  "Chrysler|Sebring|2400.0|Benzin": [
-    170.0
-  ],
-  "Chrysler|Sebring|2400.0|LPG & Benzin": [
-    170.0
-  ],
-  "Chrysler|Sebring|2500.0|Benzin": [
-    169.0
   ],
   "Chrysler|Sebring|2700.0|Benzin": [
     203.0
@@ -63849,22 +54825,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Chrysler|Sebring|2800.0|Benzin": [
     213.0
   ],
-  "Chrysler|Sebring|2800.0|LPG & Benzin": [
-    50.0
-  ],
-  "Chrysler|Stratus|1900.0|Benzin": [
-    138.0
-  ],
-  "Chrysler|Stratus|1900.0|LPG & Benzin": [
-    138.0
-  ],
-  "Chrysler|Stratus|2000.0|LPG & Benzin": [
-    133.0
-  ],
   "Chrysler|Stratus|2200.0|Benzin": [
-    163.0
-  ],
-  "Chrysler|Stratus|2300.0|LPG & Benzin": [
     163.0
   ],
   "Chrysler|Stratus|2500.0|LPG & Benzin": [
@@ -63873,64 +54834,29 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|AMİ|1600.0|Elektrik": [
     80.0
   ],
-  "Citroen|BX|1400.0|Benzin": [
-    73.0
-  ],
   "Citroen|Berlingo|0.0|Dizel": [
     71.0,
     92.0,
-    100.0,
     115.0,
     130.0
-  ],
-  "Citroen|Berlingo|100.0|Dizel": [
-    16.0,
-    66.0,
-    110.0
-  ],
-  "Citroen|Berlingo|300.0|Dizel": [
-    100.0,
-    115.0
-  ],
-  "Citroen|Berlingo|400.0|Dizel": [
-    71.0
-  ],
-  "Citroen|Berlingo|1200.0|Benzin": [
-    112.0
-  ],
-  "Citroen|Berlingo|1200.0|LPG & Benzin": [
-    112.0
   ],
   "Citroen|Berlingo|1300.0|Dizel": [
     76.0,
     101.0,
     126.0
   ],
-  "Citroen|Berlingo|1400.0|Dizel": [
-    52.0
-  ],
-  "Citroen|Berlingo|1400.0|LPG & Benzin": [
-    76.0
-  ],
   "Citroen|Berlingo|1500.0|Dizel": [
-    96.0,
     102.0,
-    110.0,
     132.0
   ],
   "Citroen|Berlingo|1600.0|Dizel": [
-    55.0,
-    66.0,
-    68.0,
     76.0,
-    80.0,
     92.0,
     93.0,
     101.0,
     111.0,
     117.0,
-    122.0,
-    151.0
+    122.0
   ],
   "Citroen|Berlingo|1800.0|Dizel": [
     51.0,
@@ -63949,24 +54875,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Citroen|C-Elysee|1200.0|LPG & Benzin": [
-    73.0,
-    83.0
-  ],
-  "Citroen|C-Elysee|1300.0|Benzin": [
-    63.0
-  ],
-  "Citroen|C-Elysee|1300.0|Dizel": [
-    88.0
+    73.0
   ],
   "Citroen|C-Elysee|1500.0|Benzin": [
     88.0,
-    100.0,
-    113.0
+    100.0
   ],
   "Citroen|C-Elysee|1500.0|Dizel": [
     88.0,
-    100.0,
-    113.0
+    100.0
   ],
   "Citroen|C-Elysee|1600.0|Benzin": [
     93.0,
@@ -63976,23 +54893,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     93.0,
     100.0
   ],
-  "Citroen|C-Elysee|1600.0|LPG & Benzin": [
-    117.0
-  ],
-  "Citroen|C-Elysee|1700.0|Dizel": [
-    88.0
-  ],
-  "Citroen|C-Elysée|0.0|Benzin": [
-    88.0
-  ],
-  "Citroen|C-Elysée|0.0|Dizel": [
-    88.0
-  ],
   "Citroen|C-Elysée|600.0|Benzin": [
-    63.0,
-    88.0
-  ],
-  "Citroen|C-Elysée|600.0|LPG & Benzin": [
     63.0,
     88.0
   ],
@@ -64003,9 +54904,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C-Elysée|1200.0|LPG & Benzin": [
     73.0,
     83.0
-  ],
-  "Citroen|C-Elysée|1500.0|Benzin": [
-    113.0
   ],
   "Citroen|C-Elysée|1500.0|Dizel": [
     88.0,
@@ -64028,29 +54926,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C1|1000.0|Benzin": [
     69.0
   ],
-  "Citroen|C1|1200.0|Benzin": [
-    63.0
-  ],
   "Citroen|C1|1400.0|Benzin": [
     55.0
   ],
   "Citroen|C1|1400.0|Dizel": [
     55.0
   ],
-  "Citroen|C15|1800.0|Dizel": [
-    61.0
-  ],
-  "Citroen|C2|1100.0|Benzin": [
-    61.0
-  ],
   "Citroen|C2|1300.0|Benzin": [
     63.0
   ],
   "Citroen|C2|1300.0|Dizel": [
     63.0
-  ],
-  "Citroen|C2|1300.0|LPG & Benzin": [
-    88.0
   ],
   "Citroen|C2|1400.0|Benzin": [
     71.0,
@@ -64062,49 +54948,31 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C2|1400.0|LPG & Benzin": [
     76.0
   ],
-  "Citroen|C2|1500.0|Benzin": [
-    63.0,
-    113.0
-  ],
-  "Citroen|C2|1500.0|LPG & Benzin": [
-    113.0
-  ],
   "Citroen|C2|1600.0|Benzin": [
-    111.0,
-    126.0
+    111.0
   ],
   "Citroen|C2|1600.0|LPG & Benzin": [
     111.0
-  ],
-  "Citroen|C3|0.0|Dizel": [
-    63.0
   ],
   "Citroen|C3|600.0|Benzin": [
     88.0,
     113.0
   ],
-  "Citroen|C3|600.0|LPG & Benzin": [
-    88.0
-  ],
   "Citroen|C3|1200.0|Benzin": [
     83.0,
     88.0,
     112.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Citroen|C3|1200.0|LPG & Benzin": [
     83.0,
-    88.0,
     112.0
   ],
   "Citroen|C3|1300.0|Benzin": [
     63.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Citroen|C3|1300.0|Dizel": [
-    25.0,
     63.0,
     88.0
   ],
@@ -64114,7 +54982,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C3|1400.0|Benzin": [
     71.0,
     76.0,
-    91.0,
     96.0
   ],
   "Citroen|C3|1400.0|Dizel": [
@@ -64131,13 +54998,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Citroen|C3|1500.0|Dizel": [
-    63.0,
-    88.0
+    63.0
   ],
   "Citroen|C3|1600.0|Benzin": [
     76.0,
-    93.0,
-    102.0,
     111.0,
     117.0,
     122.0
@@ -64151,9 +55015,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C3|1600.0|LPG & Benzin": [
     111.0,
     122.0
-  ],
-  "Citroen|C3|3800.0|Benzin": [
-    138.0
   ],
   "Citroen|C3 Aircross|600.0|Benzin": [
     113.0,
@@ -64183,9 +55044,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C3 Picasso|1400.0|Benzin": [
     96.0
   ],
-  "Citroen|C3 Picasso|1500.0|Dizel": [
-    88.0
-  ],
   "Citroen|C3 Picasso|1600.0|Benzin": [
     91.0
   ],
@@ -64210,12 +55068,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     155.0,
     163.0
   ],
-  "Citroen|C4|1200.0|Hibrit": [
-    136.0
-  ],
   "Citroen|C4|1300.0|Benzin": [
-    88.0,
-    113.0
+    88.0
   ],
   "Citroen|C4|1300.0|Dizel": [
     113.0
@@ -64243,11 +55097,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Citroen|C4|1500.0|LPG & Benzin": [
-    88.0,
     113.0
   ],
   "Citroen|C4|1600.0|Benzin": [
-    88.0,
     93.0,
     111.0,
     122.0,
@@ -64262,20 +55114,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|C4|1600.0|LPG & Benzin": [
     111.0,
-    113.0,
     122.0
   ],
   "Citroen|C4|1700.0|Benzin": [
     113.0
-  ],
-  "Citroen|C4|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Citroen|C4|1900.0|Dizel": [
-    138.0
-  ],
-  "Citroen|C4|2000.0|Benzin": [
-    182.0
   ],
   "Citroen|C4|2000.0|LPG & Benzin": [
     182.0
@@ -64288,25 +55130,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     83.0,
     110.0
   ],
-  "Citroen|C4 Cactus|1200.0|LPG & Benzin": [
-    83.0
-  ],
   "Citroen|C4 Cactus|1500.0|Dizel": [
     88.0,
-    113.0,
     122.0
   ],
   "Citroen|C4 Cactus|1600.0|Dizel": [
-    93.0,
-    102.0,
-    120.0
+    93.0
   ],
   "Citroen|C4 Grand Picasso|1500.0|Benzin": [
     113.0
   ],
   "Citroen|C4 Grand Picasso|1500.0|Dizel": [
-    113.0,
-    163.0
+    113.0
   ],
   "Citroen|C4 Grand Picasso|1600.0|Benzin": [
     122.0
@@ -64316,12 +55151,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     114.0,
     122.0
   ],
-  "Citroen|C4 Grand Picasso|1700.0|Dizel": [
-    113.0
-  ],
-  "Citroen|C4 Grand Picasso|1900.0|Dizel": [
-    138.0
-  ],
   "Citroen|C4 Picasso|1500.0|Benzin": [
     113.0
   ],
@@ -64329,25 +55158,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Citroen|C4 Picasso|1600.0|Benzin": [
-    111.0,
-    122.0,
-    158.0
+    122.0
   ],
   "Citroen|C4 Picasso|1600.0|Dizel": [
     111.0,
     117.0,
     122.0
   ],
-  "Citroen|C4 Picasso|1900.0|Dizel": [
-    138.0
-  ],
   "Citroen|C4 SUV|1200.0|Benzin": [
     102.0,
     132.0,
     155.0
-  ],
-  "Citroen|C4 SUV|1300.0|Benzin": [
-    138.0
   ],
   "Citroen|C4 X|600.0|Benzin": [
     138.0
@@ -64357,9 +55178,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     132.0,
     138.0
   ],
-  "Citroen|C4 X|1200.0|Hibrit": [
-    132.0
-  ],
   "Citroen|C4 X|1500.0|Benzin": [
     138.0
   ],
@@ -64367,11 +55185,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     132.0
   ],
   "Citroen|C5|1500.0|Benzin": [
-    113.0,
-    163.0
+    113.0
   ],
   "Citroen|C5|1500.0|Dizel": [
-    88.0,
     113.0
   ],
   "Citroen|C5|1600.0|Benzin": [
@@ -64383,16 +55199,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     111.0,
     114.0
   ],
-  "Citroen|C5|1700.0|Dizel": [
-    88.0
-  ],
-  "Citroen|C5|1900.0|Benzin": [
-    163.0
-  ],
   "Citroen|C5|1900.0|Dizel": [
-    138.0
-  ],
-  "Citroen|C5|1900.0|LPG & Benzin": [
     138.0
   ],
   "Citroen|C5|2000.0|Benzin": [
@@ -64405,22 +55212,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     165.0
   ],
   "Citroen|C5|2000.0|LPG & Benzin": [
-    111.0,
     138.0
   ],
   "Citroen|C5|2200.0|Dizel": [
     135.0
   ],
-  "Citroen|C5 Aircross|0.0|Hibrit": [
-    138.0
-  ],
-  "Citroen|C5 Aircross|600.0|Hibrit": [
-    138.0
-  ],
   "Citroen|C5 Aircross|1200.0|Benzin": [
-    130.0,
-    136.0,
-    147.0
+    130.0
   ],
   "Citroen|C5 Aircross|1200.0|Elektrik": [
     136.0
@@ -64428,9 +55226,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C5 Aircross|1200.0|Hibrit": [
     136.0,
     147.0
-  ],
-  "Citroen|C5 Aircross|1200.0|LPG & Benzin": [
-    130.0
   ],
   "Citroen|C5 Aircross|1500.0|Benzin": [
     188.0
@@ -64441,15 +55236,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Citroen|C5 Aircross|1600.0|Benzin": [
     180.0
-  ],
-  "Citroen|C5 Aircross|1600.0|LPG & Benzin": [
-    180.0
-  ],
-  "Citroen|C8|1900.0|Dizel": [
-    138.0
-  ],
-  "Citroen|C8|2000.0|LPG & Benzin": [
-    138.0
   ],
   "Citroen|Evasion|1900.0|Dizel": [
     91.0
@@ -64465,23 +55251,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     122.0,
     140.0
   ],
-  "Citroen|Jumper|2400.0|Dizel": [
-    87.0
-  ],
-  "Citroen|Jumper|2800.0|Dizel": [
-    127.0
-  ],
-  "Citroen|Jumpy|0.0|Dizel": [
-    75.0
-  ],
-  "Citroen|Jumpy|200.0|Dizel": [
-    120.0
-  ],
-  "Citroen|Jumpy|1300.0|Dizel": [
-    101.0
-  ],
   "Citroen|Jumpy|1500.0|Dizel": [
-    88.0,
     120.0
   ],
   "Citroen|Jumpy|1600.0|Dizel": [
@@ -64489,15 +55259,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     93.0,
     117.0
   ],
-  "Citroen|Jumpy|1800.0|Dizel": [
-    126.0
-  ],
   "Citroen|Jumpy|1900.0|Dizel": [
-    71.0,
-    91.0
+    71.0
   ],
   "Citroen|Jumpy|2000.0|Dizel": [
-    124.0,
     145.0,
     180.0
   ],
@@ -64507,25 +55272,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|Nemo|1200.0|Dizel": [
     75.0
   ],
-  "Citroen|Nemo|1400.0|Benzin": [
-    71.0
-  ],
   "Citroen|Nemo|1400.0|Dizel": [
-    50.0,
     71.0,
-    75.0,
-    90.0
+    75.0
   ],
   "Citroen|Saxo|1300.0|Benzin": [
     63.0
   ],
-  "Citroen|Saxo|1300.0|LPG & Benzin": [
-    63.0
-  ],
   "Citroen|Saxo|1400.0|Benzin": [
-    76.0
-  ],
-  "Citroen|Saxo|1400.0|Dizel": [
     76.0
   ],
   "Citroen|Saxo|1400.0|LPG & Benzin": [
@@ -64538,9 +55292,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     58.0,
     63.0
   ],
-  "Citroen|Saxo|1500.0|LPG & Benzin": [
-    88.0
-  ],
   "Citroen|Saxo|1600.0|Benzin": [
     91.0,
     122.0
@@ -64548,30 +55299,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|Saxo|1600.0|LPG & Benzin": [
     91.0
   ],
-  "Citroen|XM|1900.0|LPG & Benzin": [
-    138.0
-  ],
-  "Citroen|XM|2000.0|Benzin": [
-    122.0,
-    152.0
-  ],
-  "Citroen|Xantia|1600.0|LPG & Benzin": [
-    90.0
-  ],
-  "Citroen|Xantia|1800.0|LPG & Benzin": [
-    105.0
-  ],
   "Citroen|Xantia|1900.0|Benzin": [
     138.0
-  ],
-  "Citroen|Xantia|1900.0|Dizel": [
-    91.0
-  ],
-  "Citroen|Xantia|1900.0|LPG & Benzin": [
-    138.0
-  ],
-  "Citroen|Xantia|2000.0|Benzin": [
-    134.0
   ],
   "Citroen|Xantia|2000.0|LPG & Benzin": [
     134.0
@@ -64582,9 +55311,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|Xsara|1400.0|LPG & Benzin": [
     76.0
   ],
-  "Citroen|Xsara|1500.0|Benzin": [
-    88.0
-  ],
   "Citroen|Xsara|1500.0|LPG & Benzin": [
     88.0,
     113.0
@@ -64594,7 +55320,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     111.0
   ],
   "Citroen|Xsara|1600.0|Dizel": [
-    90.0,
     93.0,
     111.0
   ],
@@ -64604,27 +55329,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     111.0
   ],
   "Citroen|Xsara|1700.0|Benzin": [
-    88.0,
     118.0
-  ],
-  "Citroen|Xsara|1700.0|LPG & Benzin": [
-    118.0
-  ],
-  "Citroen|Xsara|1800.0|Benzin": [
-    111.0
   ],
   "Citroen|Xsara|1800.0|LPG & Benzin": [
-    91.0,
-    111.0
-  ],
-  "Citroen|Xsara|1900.0|Benzin": [
-    138.0
+    91.0
   ],
   "Citroen|Xsara|2000.0|Dizel": [
     91.0
-  ],
-  "Citroen|Xsara|2000.0|LPG & Benzin": [
-    138.0
   ],
   "Citroen|ZX|1400.0|Benzin": [
     76.0
@@ -64632,25 +55343,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|ZX|1400.0|LPG & Benzin": [
     76.0
   ],
-  "Citroen|ZX|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Citroen|ZX|1700.0|Benzin": [
-    113.0
-  ],
-  "Citroen|ZX|1800.0|LPG & Benzin": [
-    103.0
-  ],
   "Citroen|ZX|1900.0|Dizel": [
     72.0
   ],
   "Citroen|e-C4 X|600.0|Benzin": [
-    138.0
-  ],
-  "Citroen|e-C4 X|1200.0|Benzin": [
-    132.0
-  ],
-  "Citroen|e-C4 X|1500.0|Benzin": [
     138.0
   ],
   "Cupra|Born|200.0|Elektrik": [
@@ -64664,10 +55360,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Cupra|Formentor|1500.0|Hibrit": [
     138.0,
     150.0,
-    163.0,
     204.0,
-    213.0,
-    272.0
+    213.0
   ],
   "Cupra|Leon|1500.0|Benzin": [
     138.0,
@@ -64677,11 +55371,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     150.0
   ],
-  "Cupra|Leon|2000.0|Benzin": [
-    300.0
-  ],
   "Cupra|Terramar|1500.0|Benzin": [
-    138.0,
     150.0
   ],
   "Cupra|Terramar|1500.0|Hibrit": [
@@ -64690,9 +55380,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "DS Automobiles|DS 3 Crossback|1200.0|Benzin": [
     130.0
-  ],
-  "DS Automobiles|DS 3 Crossback|1500.0|Benzin": [
-    213.0
   ],
   "DS Automobiles|DS 7 Crossback|1500.0|Benzin": [
     213.0
@@ -64711,15 +55398,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     225.0,
     300.0
   ],
-  "DS Automobiles|DS 7 Crossback|1700.0|Benzin": [
-    213.0
-  ],
   "DS Automobiles|DS3|1200.0|Benzin": [
-    83.0,
     111.0
-  ],
-  "DS Automobiles|DS3|1500.0|Benzin": [
-    163.0
   ],
   "DS Automobiles|DS3|1600.0|Benzin": [
     122.0,
@@ -64727,9 +55407,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "DS Automobiles|DS3|1600.0|Dizel": [
     93.0
-  ],
-  "DS Automobiles|DS3|1600.0|LPG & Benzin": [
-    122.0
   ],
   "DS Automobiles|DS4|600.0|Benzin": [
     138.0
@@ -64740,14 +55417,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "DS Automobiles|DS4|1500.0|Benzin": [
     113.0,
-    132.0,
-    163.0,
-    213.0
+    132.0
   ],
   "DS Automobiles|DS4|1500.0|Dizel": [
     113.0,
-    132.0,
-    138.0
+    132.0
   ],
   "DS Automobiles|DS4|1600.0|Benzin": [
     122.0,
@@ -64756,9 +55430,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "DS Automobiles|DS4|1600.0|Dizel": [
     114.0,
     122.0
-  ],
-  "DS Automobiles|DS5|1600.0|Benzin": [
-    163.0
   ],
   "DS Automobiles|DS5|1600.0|Dizel": [
     114.0,
@@ -64774,12 +55445,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "DS Automobiles|DS9|1600.0|Hibrit": [
     200.0
   ],
-  "Dacia|Dokker|0.0|Dizel": [
-    90.0
-  ],
-  "Dacia|Dokker|100.0|Dizel": [
-    15.0
-  ],
   "Dacia|Dokker|1300.0|Dizel": [
     76.0
   ],
@@ -64789,19 +55454,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0
   ],
   "Dacia|Dokker|1600.0|Benzin": [
-    82.0,
-    106.0,
-    110.0
+    106.0
   ],
   "Dacia|Dokker|1600.0|LPG & Benzin": [
     106.0,
     110.0
-  ],
-  "Dacia|Duster|0.0|Dizel": [
-    113.0
-  ],
-  "Dacia|Duster|0.0|LPG & Benzin": [
-    113.0
   ],
   "Dacia|Duster|600.0|Benzin": [
     88.0
@@ -64824,20 +55481,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     125.0
   ],
   "Dacia|Duster|1300.0|Benzin": [
-    88.0,
     130.0,
     138.0,
     150.0
   ],
   "Dacia|Duster|1300.0|LPG & Benzin": [
-    88.0,
     130.0,
     138.0,
     150.0
   ],
   "Dacia|Duster|1500.0|Benzin": [
-    113.0,
-    138.0
+    113.0
   ],
   "Dacia|Duster|1500.0|Dizel": [
     85.0,
@@ -64850,7 +55504,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Dacia|Duster|1600.0|Benzin": [
-    105.0,
     115.0
   ],
   "Dacia|Duster|1600.0|LPG & Benzin": [
@@ -64858,7 +55511,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Dacia|Jogger|600.0|Benzin": [
-    88.0,
     113.0
   ],
   "Dacia|Jogger|600.0|LPG & Benzin": [
@@ -64876,23 +55528,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0,
     113.0
   ],
-  "Dacia|Jogger|1200.0|LPG & Benzin": [
-    88.0
-  ],
   "Dacia|Jogger|1500.0|Benzin": [
-    138.0
-  ],
-  "Dacia|Jogger|1500.0|Hibrit": [
     138.0
   ],
   "Dacia|Jogger|1600.0|Hibrit": [
     140.0
-  ],
-  "Dacia|Lodgy|0.0|Dizel": [
-    88.0
-  ],
-  "Dacia|Lodgy|1300.0|Benzin": [
-    138.0
   ],
   "Dacia|Lodgy|1500.0|Benzin": [
     88.0,
@@ -64908,18 +55548,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dacia|Lodgy|1500.0|LPG & Benzin": [
     113.0
   ],
-  "Dacia|Lodgy|1600.0|Benzin": [
-    110.0
-  ],
   "Dacia|Lodgy|1600.0|LPG & Benzin": [
-    100.0,
     110.0
-  ],
-  "Dacia|Logan|0.0|LPG & Benzin": [
-    88.0
   ],
   "Dacia|Logan|600.0|Benzin": [
-    25.0,
     63.0
   ],
   "Dacia|Logan|900.0|Benzin": [
@@ -64935,23 +55567,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0
   ],
   "Dacia|Logan|1100.0|LPG & Benzin": [
-    72.0,
     75.0
   ],
   "Dacia|Logan|1200.0|Benzin": [
-    63.0,
-    88.0
+    63.0
   ],
   "Dacia|Logan|1200.0|LPG & Benzin": [
     63.0
   ],
   "Dacia|Logan|1300.0|Benzin": [
-    63.0,
-    101.0
+    63.0
   ],
   "Dacia|Logan|1300.0|Dizel": [
-    51.0,
-    76.0
+    51.0
   ],
   "Dacia|Logan|1300.0|LPG & Benzin": [
     63.0,
@@ -64961,7 +55589,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0
   ],
   "Dacia|Logan|1400.0|LPG & Benzin": [
-    63.0,
     75.0
   ],
   "Dacia|Logan|1500.0|Benzin": [
@@ -64986,24 +55613,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0
   ],
   "Dacia|Logan|1600.0|LPG & Benzin": [
-    76.0,
     87.0,
-    90.0,
-    105.0
-  ],
-  "Dacia|Logan|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Dacia|Sandero|0.0|LPG & Benzin": [
-    88.0
+    90.0
   ],
   "Dacia|Sandero|600.0|Benzin": [
     63.0,
-    88.0,
-    113.0
-  ],
-  "Dacia|Sandero|600.0|Dizel": [
-    113.0
+    88.0
   ],
   "Dacia|Sandero|600.0|LPG & Benzin": [
     63.0,
@@ -65022,7 +55637,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0
   ],
   "Dacia|Sandero|1000.0|LPG & Benzin": [
-    65.0,
     75.0,
     90.0,
     100.0
@@ -65037,20 +55651,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     88.0
   ],
-  "Dacia|Sandero|1200.0|LPG & Benzin": [
-    88.0,
-    113.0
-  ],
   "Dacia|Sandero|1300.0|Benzin": [
     63.0,
-    88.0,
-    113.0
-  ],
-  "Dacia|Sandero|1300.0|Dizel": [
-    113.0
-  ],
-  "Dacia|Sandero|1300.0|LPG & Benzin": [
-    113.0
+    88.0
   ],
   "Dacia|Sandero|1400.0|Benzin": [
     75.0
@@ -65070,22 +55673,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     70.0,
     75.0,
     90.0,
-    95.0,
-    163.0
-  ],
-  "Dacia|Sandero|1500.0|LPG & Benzin": [
-    88.0
+    95.0
   ],
   "Dacia|Sandero|1600.0|Benzin": [
-    87.0,
-    90.0
+    87.0
   ],
   "Dacia|Sandero|1600.0|LPG & Benzin": [
-    87.0,
-    90.0
-  ],
-  "Dacia|Sandero|1700.0|LPG & Benzin": [
-    88.0
+    87.0
   ],
   "Dacia|Sandero Stepway|600.0|Benzin": [
     88.0
@@ -65104,9 +55698,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dacia|Sandero Stepway|1200.0|LPG & Benzin": [
     120.0
   ],
-  "Dacia|Sandero Stepway|1700.0|Benzin": [
-    88.0
-  ],
   "Dacia|Solenza|1300.0|Benzin": [
     63.0
   ],
@@ -65119,47 +55710,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dacia|Solenza|1400.0|LPG & Benzin": [
     75.0
   ],
-  "Daewoo|Chairman|3200.0|Benzin": [
-    288.0
-  ],
-  "Daewoo|Chairman|3200.0|LPG & Benzin": [
-    220.0
-  ],
-  "Daewoo|Espero|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Daewoo|Espero|1700.0|LPG & Benzin": [
-    113.0
-  ],
   "Daewoo|Espero|1800.0|Benzin": [
     95.0
-  ],
-  "Daewoo|Espero|1800.0|LPG & Benzin": [
-    95.0
-  ],
-  "Daewoo|Espero|1900.0|Benzin": [
-    113.0
-  ],
-  "Daewoo|Espero|1900.0|LPG & Benzin": [
-    113.0
-  ],
-  "Daewoo|Espero|2000.0|Benzin": [
-    105.0
   ],
   "Daewoo|Espero|2000.0|LPG & Benzin": [
     105.0
   ],
   "Daewoo|Lanos|1300.0|LPG & Benzin": [
-    75.0,
-    88.0
+    75.0
   ],
   "Daewoo|Lanos|1500.0|Benzin": [
-    86.0,
-    113.0
+    86.0
   ],
   "Daewoo|Lanos|1500.0|LPG & Benzin": [
-    86.0,
-    88.0
+    86.0
   ],
   "Daewoo|Lanos|1600.0|Benzin": [
     106.0
@@ -65169,9 +55733,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Daewoo|Leganza|2000.0|LPG & Benzin": [
     133.0
-  ],
-  "Daewoo|Matiz|600.0|Benzin": [
-    25.0
   ],
   "Daewoo|Matiz|800.0|Benzin": [
     51.0
@@ -65205,21 +55766,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     41.0
   ],
   "Daihatsu|Applause|1600.0|Benzin": [
-    91.0,
     105.0
   ],
   "Daihatsu|Applause|1600.0|LPG & Benzin": [
     105.0
   ],
-  "Daihatsu|Charade|1200.0|LPG & Benzin": [
-    63.0
-  ],
   "Daihatsu|Charade|1300.0|Benzin": [
     63.0
   ],
   "Daihatsu|Charade|1300.0|LPG & Benzin": [
-    75.0,
-    90.0
+    75.0
   ],
   "Daihatsu|Cuore|800.0|Benzin": [
     41.0
@@ -65233,12 +55789,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Daihatsu|Cuore|1000.0|LPG & Benzin": [
     58.0
   ],
-  "Daihatsu|Cuore|1200.0|Benzin": [
-    63.0
-  ],
   "Daihatsu|Materia|1500.0|Benzin": [
-    103.0,
-    113.0
+    103.0
   ],
   "Daihatsu|Materia|1500.0|LPG & Benzin": [
     103.0
@@ -65249,23 +55801,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Daihatsu|Sirion|1000.0|Benzin": [
     69.0
   ],
-  "Daihatsu|Sirion|1000.0|LPG & Benzin": [
-    69.0
-  ],
   "Daihatsu|Sirion|1300.0|Benzin": [
     87.0,
-    102.0,
-    113.0
+    102.0
   ],
   "Daihatsu|Sirion|1300.0|LPG & Benzin": [
     87.0,
     102.0
   ],
-  "Daihatsu|Sirion|1500.0|LPG & Benzin": [
-    103.0
-  ],
   "Daihatsu|YRV|1300.0|Benzin": [
-    87.0,
     88.0
   ],
   "Daihatsu|YRV|1300.0|LPG & Benzin": [
@@ -65274,20 +55818,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dodge|Avenger|2000.0|Dizel": [
     140.0
   ],
-  "Dodge|Caliber|1800.0|LPG & Benzin": [
-    150.0
-  ],
   "Dodge|Caliber|2000.0|LPG & Benzin": [
     156.0
-  ],
-  "Dodge|Challenger|3800.0|Benzin": [
-    338.0
-  ],
-  "Dodge|Challenger|6000.0|Benzin": [
-    601.0
-  ],
-  "Dodge|Challenger|6100.0|Benzin": [
-    430.0
   ],
   "Dodge|Journey|1900.0|Dizel": [
     138.0
@@ -65298,38 +55830,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dodge|Nitro|2800.0|Dizel": [
     177.0
   ],
-  "Dodge|Ram|5900.0|Dizel": [
-    230.0
-  ],
-  "Fiat|124 Spider|1400.0|Benzin": [
-    140.0
-  ],
-  "Fiat|126 Bis|1300.0|Benzin": [
-    63.0
-  ],
-  "Fiat|500 Abarth|1300.0|Benzin": [
-    188.0
-  ],
-  "Fiat|500 Abarth|1400.0|Benzin": [
-    180.0
-  ],
-  "Fiat|500 Ailesi|500.0|Dizel": [
-    63.0,
-    88.0
-  ],
   "Fiat|500 Ailesi|500.0|Elektrik": [
     118.0
-  ],
-  "Fiat|500 Ailesi|900.0|Benzin": [
-    105.0
   ],
   "Fiat|500 Ailesi|1000.0|Hibrit": [
     70.0
   ],
   "Fiat|500 Ailesi|1200.0|Benzin": [
     69.0,
-    85.0,
-    95.0
+    85.0
   ],
   "Fiat|500 Ailesi|1200.0|Dizel": [
     75.0,
@@ -65343,23 +55852,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|500 Ailesi|1300.0|Dizel": [
     88.0
   ],
-  "Fiat|500 Ailesi|1300.0|LPG & Benzin": [
-    88.0
-  ],
   "Fiat|500 Ailesi|1400.0|Benzin": [
     95.0,
     100.0
   ],
   "Fiat|500 Ailesi|1400.0|LPG & Benzin": [
-    95.0,
-    100.0
+    95.0
   ],
   "Fiat|500 Ailesi|1600.0|Dizel": [
     105.0,
     120.0
-  ],
-  "Fiat|500 X|1200.0|Dizel": [
-    95.0
   ],
   "Fiat|500 X|1300.0|Benzin": [
     138.0,
@@ -65367,9 +55869,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|500 X|1300.0|Hibrit": [
     150.0
-  ],
-  "Fiat|500 X|1300.0|LPG & Benzin": [
-    138.0
   ],
   "Fiat|500 X|1400.0|Benzin": [
     140.0
@@ -65380,9 +55879,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|500 X|1500.0|Dizel": [
     113.0
   ],
-  "Fiat|500 X|1500.0|Hibrit": [
-    138.0
-  ],
   "Fiat|500 X|1600.0|Dizel": [
     120.0
   ],
@@ -65391,16 +55887,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|600|1200.0|Hibrit": [
     145.0
-  ],
-  "Fiat|Albea|0.0|Dizel": [
-    63.0,
-    88.0
-  ],
-  "Fiat|Albea|0.0|LPG & Benzin": [
-    88.0
-  ],
-  "Fiat|Albea|600.0|LPG & Benzin": [
-    63.0
   ],
   "Fiat|Albea|1200.0|Benzin": [
     60.0,
@@ -65432,14 +55918,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Albea|1400.0|LPG & Benzin": [
     77.0
   ],
-  "Fiat|Albea|1600.0|Benzin": [
-    103.0
-  ],
   "Fiat|Albea|1600.0|LPG & Benzin": [
     103.0
-  ],
-  "Fiat|Albea|4300.0|Dizel": [
-    413.0
   ],
   "Fiat|Brava|1500.0|Benzin": [
     113.0
@@ -65453,36 +55933,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Brava|1600.0|LPG & Benzin": [
     103.0
   ],
-  "Fiat|Brava|1900.0|Dizel": [
-    101.0
-  ],
-  "Fiat|Bravo|1300.0|Benzin": [
-    113.0
-  ],
   "Fiat|Bravo|1400.0|Benzin": [
-    90.0,
     120.0,
     150.0
   ],
   "Fiat|Bravo|1400.0|LPG & Benzin": [
     90.0,
-    113.0,
     120.0,
     150.0
   ],
   "Fiat|Bravo|1500.0|Benzin": [
-    88.0,
     113.0
   ],
   "Fiat|Bravo|1500.0|Dizel": [
     113.0
-  ],
-  "Fiat|Bravo|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Fiat|Bravo|1600.0|Benzin": [
-    103.0,
-    120.0
   ],
   "Fiat|Bravo|1600.0|Dizel": [
     105.0,
@@ -65491,58 +55955,28 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Bravo|1600.0|LPG & Benzin": [
     103.0
   ],
-  "Fiat|Bravo|1900.0|Benzin": [
-    163.0
-  ],
-  "Fiat|Bravo|1900.0|Dizel": [
-    105.0
-  ],
-  "Fiat|Bravo|2000.0|LPG & Benzin": [
-    155.0
-  ],
-  "Fiat|Doblo|0.0|Dizel": [
-    90.0,
-    130.0
-  ],
-  "Fiat|Doblo|100.0|Dizel": [
-    70.0,
-    95.0,
-    105.0
-  ],
-  "Fiat|Doblo|200.0|Dizel": [
-    55.0,
-    75.0,
-    90.0,
-    95.0,
-    130.0
-  ],
   "Fiat|Doblo|300.0|Dizel": [
     120.0
   ],
   "Fiat|Doblo|1200.0|Benzin": [
     65.0,
-    75.0,
     112.0
   ],
   "Fiat|Doblo|1200.0|Dizel": [
     70.0,
     75.0,
     90.0,
-    95.0,
-    100.0
+    95.0
   ],
   "Fiat|Doblo|1200.0|LPG & Benzin": [
-    65.0,
-    112.0
+    65.0
   ],
   "Fiat|Doblo|1300.0|Dizel": [
     51.0,
     70.0,
     76.0,
     90.0,
-    95.0,
     101.0,
-    105.0,
     126.0
   ],
   "Fiat|Doblo|1400.0|Benzin": [
@@ -65553,73 +55987,42 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     77.0,
     95.0
   ],
-  "Fiat|Doblo|1500.0|Benzin": [
-    100.0
-  ],
   "Fiat|Doblo|1500.0|Dizel": [
     100.0,
     130.0
   ],
-  "Fiat|Doblo|1600.0|Benzin": [
-    100.0
-  ],
   "Fiat|Doblo|1600.0|Dizel": [
     76.0,
     90.0,
-    101.0,
     105.0,
-    110.0,
-    120.0,
-    1600.0
+    120.0
   ],
   "Fiat|Doblo|1800.0|Dizel": [
     76.0
   ],
   "Fiat|Doblo|1900.0|Dizel": [
     63.0,
-    85.0,
     100.0,
-    105.0
-  ],
-  "Fiat|Doblo|1900.0|LPG & Benzin": [
     105.0
   ],
   "Fiat|Doblo|2000.0|Dizel": [
     135.0
   ],
-  "Fiat|Doblo|13011600.0|Dizel": [
-    101125.0
-  ],
   "Fiat|Ducato|0.0|Dizel": [
-    140.0,
-    150.0,
-    2200.0
+    140.0
   ],
   "Fiat|Ducato|100.0|Dizel": [
-    105.0,
     130.0,
     140.0
   ],
-  "Fiat|Ducato|200.0|Dizel": [
-    115.0,
-    130.0,
-    179.0
-  ],
-  "Fiat|Ducato|1600.0|Dizel": [
+  "Fiat|Ducato|1800.0|Dizel": [
     101.0
   ],
-  "Fiat|Ducato|1800.0|Dizel": [
-    101.0,
-    126.0
-  ],
   "Fiat|Ducato|2000.0|Dizel": [
-    76.0,
     85.0,
     101.0,
-    115.0,
     126.0,
-    151.0,
-    201.0
+    151.0
   ],
   "Fiat|Ducato|2200.0|Dizel": [
     100.0,
@@ -65628,35 +56031,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Ducato|2300.0|Dizel": [
     107.0,
-    110.0,
     120.0,
     130.0,
-    140.0,
-    150.0
+    140.0
   ],
   "Fiat|Ducato|2800.0|Dizel": [
-    122.0,
     127.0,
     146.0
   ],
-  "Fiat|Ducato|3000.0|Dizel": [
-    101.0,
-    156.0
-  ],
-  "Fiat|Egea|0.0|Benzin": [
-    88.0
-  ],
-  "Fiat|Egea|0.0|Dizel": [
-    88.0,
-    138.0
-  ],
-  "Fiat|Egea|600.0|Benzin": [
-    88.0
-  ],
   "Fiat|Egea|1000.0|Benzin": [
-    100.0
-  ],
-  "Fiat|Egea|1000.0|LPG & Benzin": [
     100.0
   ],
   "Fiat|Egea|1200.0|Benzin": [
@@ -65666,32 +56049,25 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0
   ],
   "Fiat|Egea|1300.0|Benzin": [
-    88.0,
-    113.0
+    88.0
   ],
   "Fiat|Egea|1300.0|Dizel": [
     88.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Fiat|Egea|1300.0|LPG & Benzin": [
     88.0
   ],
   "Fiat|Egea|1400.0|Benzin": [
-    95.0,
-    120.0
+    95.0
   ],
   "Fiat|Egea|1400.0|LPG & Benzin": [
-    95.0,
-    120.0
+    95.0
   ],
   "Fiat|Egea|1500.0|Benzin": [
-    63.0,
     88.0,
     113.0,
-    130.0,
-    138.0,
-    263.0
+    138.0
   ],
   "Fiat|Egea|1500.0|Dizel": [
     88.0,
@@ -65702,7 +56078,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     130.0
   ],
   "Fiat|Egea|1500.0|LPG & Benzin": [
-    63.0,
     88.0
   ],
   "Fiat|Egea|1600.0|Benzin": [
@@ -65720,9 +56095,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Egea|1700.0|Dizel": [
     138.0
   ],
-  "Fiat|Egea|6000.0|Benzin": [
-    88.0
-  ],
   "Fiat|Egea Cross|0.0|Benzin": [
     88.0
   ],
@@ -65738,20 +56110,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Egea Cross|1300.0|Benzin": [
     88.0
   ],
-  "Fiat|Egea Cross|1300.0|LPG & Benzin": [
-    88.0
-  ],
   "Fiat|Egea Cross|1400.0|Benzin": [
     95.0
   ],
   "Fiat|Egea Cross|1400.0|LPG & Benzin": [
     95.0
   ],
-  "Fiat|Egea Cross|1500.0|Benzin": [
-    88.0
-  ],
   "Fiat|Egea Cross|1500.0|Dizel": [
-    63.0,
     138.0
   ],
   "Fiat|Egea Cross|1500.0|Hibrit": [
@@ -65761,17 +56126,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Egea Cross|1600.0|Dizel": [
     130.0
   ],
-  "Fiat|Fiorino|0.0|Dizel": [
-    75.0
-  ],
-  "Fiat|Fiorino|100.0|Dizel": [
-    55.0,
-    95.0
-  ],
-  "Fiat|Fiorino|1200.0|Benzin": [
-    75.0,
-    95.0
-  ],
   "Fiat|Fiorino|1200.0|Dizel": [
     55.0,
     75.0,
@@ -65780,10 +56134,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Fiorino|1300.0|Dizel": [
     51.0,
-    76.0,
-    95.0,
-    110.0,
-    1300.0
+    76.0
   ],
   "Fiat|Fiorino|1400.0|Benzin": [
     77.0
@@ -65792,15 +56143,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     73.0
   ],
   "Fiat|Fiorino|1400.0|LPG & Benzin": [
-    77.0,
-    90.0
+    77.0
   ],
   "Fiat|Freemont|2000.0|Dizel": [
     170.0
   ],
   "Fiat|Fullback|2300.0|Dizel": [
-    138.0,
-    188.0
+    138.0
   ],
   "Fiat|Fullback|2400.0|Dizel": [
     150.0,
@@ -65810,27 +56159,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     70.0,
     90.0
   ],
-  "Fiat|Idea|1300.0|Benzin": [
-    63.0,
-    88.0
-  ],
-  "Fiat|Idea|1300.0|Dizel": [
-    63.0
-  ],
-  "Fiat|Idea|1300.0|LPG & Benzin": [
-    88.0
-  ],
   "Fiat|Idea|1400.0|Benzin": [
     95.0
   ],
   "Fiat|Idea|1400.0|LPG & Benzin": [
     95.0
-  ],
-  "Fiat|Linea|0.0|Dizel": [
-    113.0
-  ],
-  "Fiat|Linea|600.0|Dizel": [
-    25.0
   ],
   "Fiat|Linea|1200.0|Benzin": [
     90.0,
@@ -65845,8 +56178,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Linea|1300.0|Dizel": [
     63.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Fiat|Linea|1300.0|LPG & Benzin": [
     88.0
@@ -65855,20 +56187,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     77.0,
     120.0
   ],
-  "Fiat|Linea|1400.0|Dizel": [
-    77.0
-  ],
   "Fiat|Linea|1400.0|LPG & Benzin": [
     77.0,
     120.0
   ],
   "Fiat|Linea|1500.0|Benzin": [
-    88.0,
     113.0
   ],
   "Fiat|Linea|1500.0|Dizel": [
-    113.0,
-    138.0
+    113.0
   ],
   "Fiat|Linea|1600.0|Benzin": [
     105.0
@@ -65876,15 +56203,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Linea|1600.0|Dizel": [
     105.0
   ],
-  "Fiat|Linea|1700.0|Dizel": [
-    113.0
-  ],
-  "Fiat|Linea|3300.0|Dizel": [
-    25.0
-  ],
   "Fiat|Marea|1500.0|Benzin": [
-    113.0,
-    138.0
+    113.0
   ],
   "Fiat|Marea|1500.0|LPG & Benzin": [
     113.0
@@ -65892,15 +56212,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Marea|1600.0|Benzin": [
     103.0
   ],
-  "Fiat|Marea|1600.0|Dizel": [
-    103.0
-  ],
   "Fiat|Marea|1600.0|LPG & Benzin": [
     103.0
-  ],
-  "Fiat|Marea|1700.0|LPG & Benzin": [
-    88.0,
-    113.0
   ],
   "Fiat|Marea|1900.0|Dizel": [
     110.0
@@ -65909,18 +56222,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Fiat|Marea|2000.0|Benzin": [
-    147.0,
     154.0
   ],
   "Fiat|Marea|2000.0|LPG & Benzin": [
     147.0,
     154.0
-  ],
-  "Fiat|Palio|0.0|LPG & Benzin": [
-    88.0
-  ],
-  "Fiat|Palio|600.0|LPG & Benzin": [
-    63.0
   ],
   "Fiat|Palio|1200.0|Benzin": [
     70.0,
@@ -65939,8 +56245,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Fiat|Palio|1300.0|Dizel": [
-    63.0,
-    88.0
+    63.0
   ],
   "Fiat|Palio|1300.0|LPG & Benzin": [
     63.0,
@@ -65959,8 +56264,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Fiat|Palio|1600.0|Benzin": [
-    100.0,
-    103.0
+    100.0
   ],
   "Fiat|Palio|1600.0|LPG & Benzin": [
     100.0,
@@ -65977,45 +56281,24 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     74.0,
     81.0
   ],
-  "Fiat|Palio Van|1400.0|LPG & Benzin": [
-    77.0
-  ],
-  "Fiat|Panda|600.0|Benzin": [
-    88.0
-  ],
   "Fiat|Panda|900.0|Benzin": [
-    85.0
-  ],
-  "Fiat|Panda|900.0|LPG & Benzin": [
     85.0
   ],
   "Fiat|Panda|1000.0|Hibrit": [
     70.0
   ],
-  "Fiat|Panda|1100.0|Benzin": [
-    54.0
-  ],
   "Fiat|Panda|1200.0|Benzin": [
     60.0,
-    69.0,
-    88.0
+    69.0
   ],
   "Fiat|Panda|1200.0|LPG & Benzin": [
     60.0,
     69.0
   ],
   "Fiat|Panda|1300.0|Benzin": [
-    63.0,
-    88.0
-  ],
-  "Fiat|Panda|1300.0|LPG & Benzin": [
     63.0
   ],
-  "Fiat|Punto|0.0|Dizel": [
-    63.0,
-    113.0
-  ],
-  "Fiat|Punto|0.0|LPG & Benzin": [
+  "Fiat|Panda|1300.0|LPG & Benzin": [
     63.0
   ],
   "Fiat|Punto|1200.0|Benzin": [
@@ -66032,7 +56315,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Punto|1200.0|LPG & Benzin": [
     60.0,
-    65.0,
     69.0
   ],
   "Fiat|Punto|1300.0|Benzin": [
@@ -66059,19 +56341,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Punto|1400.0|LPG & Benzin": [
     77.0,
     95.0,
-    105.0,
-    120.0,
-    135.0
+    105.0
   ],
   "Fiat|Punto|1500.0|LPG & Benzin": [
-    63.0,
     88.0
-  ],
-  "Fiat|Punto|1900.0|Dizel": [
-    80.0
-  ],
-  "Fiat|Scudo|200.0|Dizel": [
-    120.0
   ],
   "Fiat|Scudo|1500.0|Dizel": [
     120.0
@@ -66085,11 +56358,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Scudo|2000.0|Dizel": [
     94.0,
-    106.0,
-    109.0,
-    120.0,
-    145.0,
-    177.0
+    145.0
   ],
   "Fiat|Scudo|2200.0|Dizel": [
     180.0
@@ -66100,20 +56369,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Sedici|1600.0|LPG & Benzin": [
     107.0
   ],
-  "Fiat|Siena|0.0|LPG & Benzin": [
-    63.0
-  ],
-  "Fiat|Siena|600.0|LPG & Benzin": [
-    88.0
-  ],
   "Fiat|Siena|1200.0|Benzin": [
     74.0
   ],
   "Fiat|Siena|1200.0|LPG & Benzin": [
     74.0
-  ],
-  "Fiat|Siena|1300.0|Benzin": [
-    63.0
   ],
   "Fiat|Siena|1300.0|LPG & Benzin": [
     63.0
@@ -66124,21 +56384,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Siena|1400.0|LPG & Benzin": [
     71.0
   ],
-  "Fiat|Siena|1500.0|LPG & Benzin": [
-    113.0,
-    138.0
-  ],
   "Fiat|Siena|1600.0|Benzin": [
     101.0
   ],
   "Fiat|Siena|1600.0|LPG & Benzin": [
     101.0
-  ],
-  "Fiat|Stilo|0.0|LPG & Benzin": [
-    113.0
-  ],
-  "Fiat|Stilo|1200.0|LPG & Benzin": [
-    80.0
   ],
   "Fiat|Stilo|1300.0|LPG & Benzin": [
     88.0
@@ -66164,18 +56414,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Stilo|1900.0|Dizel": [
     115.0
   ],
-  "Fiat|Tempra|0.0|LPG & Benzin": [
-    88.0
-  ],
-  "Fiat|Tempra|600.0|LPG & Benzin": [
-    113.0
-  ],
   "Fiat|Tempra|1300.0|LPG & Benzin": [
     88.0
   ],
   "Fiat|Tempra|1400.0|LPG & Benzin": [
-    71.0,
-    78.0
+    71.0
   ],
   "Fiat|Tempra|1500.0|Benzin": [
     63.0,
@@ -66191,9 +56434,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     86.0,
     90.0
   ],
-  "Fiat|Tempra|1600.0|Dizel": [
-    75.0
-  ],
   "Fiat|Tempra|1600.0|LPG & Benzin": [
     75.0,
     78.0,
@@ -66204,29 +56444,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Fiat|Tempra|1900.0|LPG & Benzin": [
-    90.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Fiat|Tempra|2000.0|Benzin": [
     113.0
   ],
   "Fiat|Tempra|2000.0|LPG & Benzin": [
     113.0
-  ],
-  "Fiat|Tipo|0.0|LPG & Benzin": [
-    88.0
-  ],
-  "Fiat|Tipo|600.0|LPG & Benzin": [
-    25.0
-  ],
-  "Fiat|Tipo|1300.0|Benzin": [
-    63.0
-  ],
-  "Fiat|Tipo|1300.0|LPG & Benzin": [
-    50.0,
-    63.0,
-    88.0
   ],
   "Fiat|Tipo|1400.0|Benzin": [
     70.0
@@ -66240,27 +56464,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Fiat|Tipo|1500.0|LPG & Benzin": [
     63.0,
-    88.0,
-    113.0,
-    138.0
+    88.0
   ],
   "Fiat|Tipo|1600.0|Benzin": [
     75.0
   ],
   "Fiat|Tipo|1600.0|LPG & Benzin": [
     75.0,
-    78.0,
-    85.0
-  ],
-  "Fiat|Tipo|1700.0|LPG & Benzin": [
-    88.0,
-    113.0
+    78.0
   ],
   "Fiat|Tipo|2000.0|Benzin": [
-    113.0,
-    139.0
-  ],
-  "Fiat|Tipo|2000.0|LPG & Benzin": [
     139.0
   ],
   "Fiat|Ulysse|1800.0|Dizel": [
@@ -66273,28 +56486,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Ulysse|2200.0|Dizel": [
     180.0
   ],
-  "Fiat|Uno|0.0|Dizel": [
-    25.0
-  ],
-  "Fiat|Uno|100.0|LPG & Benzin": [
-    113.0
-  ],
   "Fiat|Uno|600.0|LPG & Benzin": [
-    25.0,
     63.0
   ],
   "Fiat|Uno|1100.0|Benzin": [
-    50.0,
-    57.0,
     58.0
   ],
   "Fiat|Uno|1100.0|LPG & Benzin": [
-    50.0,
     57.0,
     58.0
-  ],
-  "Fiat|Uno|1200.0|Benzin": [
-    63.0
   ],
   "Fiat|Uno|1300.0|Benzin": [
     63.0
@@ -66308,12 +56508,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Fiat|Uno|1400.0|LPG & Benzin": [
     71.0
   ],
-  "Fiat|Uno|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Fiat|Uno|1700.0|LPG & Benzin": [
-    58.0
-  ],
   "Ford|B-Max|600.0|Benzin": [
     113.0
   ],
@@ -66325,9 +56519,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|B-Max|1400.0|LPG & Benzin": [
     90.0
-  ],
-  "Ford|B-Max|1500.0|Benzin": [
-    113.0
   ],
   "Ford|B-Max|1500.0|Dizel": [
     75.0,
@@ -66371,61 +56562,37 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     180.0
   ],
   "Ford|C-Max|1600.0|Dizel": [
-    90.0,
-    95.0,
     110.0,
     115.0
   ],
   "Ford|C-Max|1600.0|LPG & Benzin": [
     100.0,
-    110.0,
     115.0,
     125.0,
     180.0
   ],
-  "Ford|C-Max|1800.0|Dizel": [
-    115.0
-  ],
-  "Ford|C-Max|2000.0|Benzin": [
-    136.0
-  ],
-  "Ford|E Serisi|5000.0|Dizel": [
-    151.0
-  ],
   "Ford|EcoSport|600.0|Benzin": [
-    113.0
-  ],
-  "Ford|EcoSport|600.0|LPG & Benzin": [
     113.0
   ],
   "Ford|EcoSport|1000.0|Benzin": [
     125.0
   ],
-  "Ford|EcoSport|1000.0|LPG & Benzin": [
-    125.0
-  ],
   "Ford|EcoSport|1500.0|Dizel": [
-    88.0,
     100.0
   ],
   "Ford|Escort|1300.0|Benzin": [
     60.0
   ],
   "Ford|Escort|1300.0|LPG & Benzin": [
-    60.0,
-    63.0,
-    88.0
+    60.0
   ],
   "Ford|Escort|1400.0|LPG & Benzin": [
-    71.0,
-    75.0
+    71.0
   ],
   "Ford|Escort|1500.0|Benzin": [
-    88.0,
-    113.0
+    88.0
   ],
   "Ford|Escort|1500.0|LPG & Benzin": [
-    63.0,
     88.0
   ],
   "Ford|Escort|1600.0|Benzin": [
@@ -66439,60 +56606,31 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Ford|Escort|1800.0|Benzin": [
-    105.0,
-    115.0
+    105.0
   ],
   "Ford|Escort|1800.0|Dizel": [
     60.0,
-    70.0,
     90.0
   ],
   "Ford|Escort|1800.0|LPG & Benzin": [
     105.0,
     115.0
   ],
-  "Ford|Explorer|3500.0|Dizel": [
-    294.0
-  ],
-  "Ford|Explorer|4000.0|Benzin": [
-    160.0
-  ],
   "Ford|Explorer|4000.0|LPG & Benzin": [
     160.0
-  ],
-  "Ford|Explorer|4800.0|Benzin": [
-    213.0
-  ],
-  "Ford|Explorer|4800.0|LPG & Benzin": [
-    213.0
-  ],
-  "Ford|Explorer|5000.0|LPG & Benzin": [
-    213.0
-  ],
-  "Ford|Festiva|1300.0|Benzin": [
-    68.0
   ],
   "Ford|Festiva|1300.0|LPG & Benzin": [
     68.0
   ],
   "Ford|Fiesta|0.0|Benzin": [
-    88.0,
-    113.0
-  ],
-  "Ford|Fiesta|0.0|LPG & Benzin": [
-    63.0
+    88.0
   ],
   "Ford|Fiesta|600.0|Benzin": [
     63.0,
     88.0
   ],
-  "Ford|Fiesta|600.0|Hibrit": [
-    113.0
-  ],
   "Ford|Fiesta|1000.0|Benzin": [
-    95.0,
-    100.0,
-    125.0
+    100.0
   ],
   "Ford|Fiesta|1100.0|Benzin": [
     75.0,
@@ -66511,11 +56649,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Fiesta|1300.0|Benzin": [
     63.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Ford|Fiesta|1300.0|Dizel": [
-    25.0,
     63.0
   ],
   "Ford|Fiesta|1300.0|LPG & Benzin": [
@@ -66525,7 +56661,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ford|Fiesta|1400.0|Benzin": [
     68.0,
     80.0,
-    90.0,
     96.0
   ],
   "Ford|Fiesta|1400.0|Dizel": [
@@ -66547,8 +56682,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     75.0,
     85.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Ford|Fiesta|1500.0|LPG & Benzin": [
     88.0,
@@ -66563,87 +56697,49 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0
   ],
   "Ford|Fiesta|1600.0|LPG & Benzin": [
-    95.0,
     100.0,
     105.0,
     120.0
   ],
-  "Ford|Fiesta|1700.0|Benzin": [
-    113.0
-  ],
-  "Ford|Fiesta|1700.0|Dizel": [
-    88.0
-  ],
   "Ford|Fiesta|1800.0|Benzin": [
-    60.0
-  ],
-  "Ford|Fiesta|1800.0|Dizel": [
     60.0
   ],
   "Ford|Fiesta|1800.0|LPG & Benzin": [
     60.0
   ],
-  "Ford|Fiesta|2000.0|Benzin": [
-    150.0
-  ],
   "Ford|Fiesta Van|1400.0|Dizel": [
     68.0
   ],
-  "Ford|Focus|0.0|Benzin": [
-    138.0
-  ],
-  "Ford|Focus|0.0|LPG & Benzin": [
-    113.0
-  ],
   "Ford|Focus|600.0|Benzin": [
-    113.0,
-    163.0
-  ],
-  "Ford|Focus|600.0|Dizel": [
     113.0
   ],
   "Ford|Focus|600.0|Hibrit": [
-    113.0
-  ],
-  "Ford|Focus|600.0|LPG & Benzin": [
     113.0
   ],
   "Ford|Focus|1000.0|Benzin": [
     125.0
   ],
   "Ford|Focus|1000.0|Hibrit": [
-    125.0,
-    155.0
+    125.0
   ],
   "Ford|Focus|1200.0|Benzin": [
     113.0
   ],
-  "Ford|Focus|1300.0|Dizel": [
-    88.0,
-    113.0
-  ],
-  "Ford|Focus|1400.0|Benzin": [
-    75.0
-  ],
   "Ford|Focus|1400.0|LPG & Benzin": [
-    75.0,
-    80.0
+    75.0
   ],
   "Ford|Focus|1500.0|Benzin": [
     88.0,
     113.0,
     120.0,
     123.0,
-    138.0,
     188.0
   ],
   "Ford|Focus|1500.0|Dizel": [
-    63.0,
     88.0,
     113.0,
     120.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Ford|Focus|1500.0|LPG & Benzin": [
     88.0,
@@ -66663,26 +56759,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ford|Focus|1600.0|Dizel": [
     90.0,
     95.0,
-    107.0,
     110.0,
     115.0
   ],
   "Ford|Focus|1600.0|LPG & Benzin": [
     100.0,
     115.0,
-    125.0,
-    150.0,
-    182.0
-  ],
-  "Ford|Focus|1700.0|Benzin": [
-    88.0
+    125.0
   ],
   "Ford|Focus|1700.0|Dizel": [
     88.0
   ],
   "Ford|Focus|1700.0|LPG & Benzin": [
-    113.0,
-    138.0
+    113.0
   ],
   "Ford|Focus|1800.0|Benzin": [
     100.0
@@ -66692,22 +56781,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     115.0
   ],
-  "Ford|Focus|1800.0|LPG & Benzin": [
-    100.0
-  ],
-  "Ford|Focus|1900.0|Benzin": [
-    138.0
-  ],
   "Ford|Focus|1900.0|Dizel": [
     138.0
   ],
   "Ford|Focus|1900.0|LPG & Benzin": [
-    88.0,
     138.0
   ],
   "Ford|Focus|2000.0|Benzin": [
-    130.0,
-    250.0
+    130.0
   ],
   "Ford|Focus|2000.0|LPG & Benzin": [
     130.0
@@ -66740,33 +56821,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ford|Fusion|1600.0|LPG & Benzin": [
     100.0
   ],
-  "Ford|Galaxy|1700.0|Dizel": [
-    88.0
-  ],
-  "Ford|Galaxy|1900.0|Benzin": [
-    113.0
-  ],
-  "Ford|Galaxy|1900.0|Dizel": [
-    138.0
-  ],
   "Ford|Galaxy|2000.0|Dizel": [
     130.0,
     140.0,
-    163.0,
-    180.0
-  ],
-  "Ford|Galaxy|2300.0|LPG & Benzin": [
-    138.0,
-    145.0
-  ],
-  "Ford|Grand C-Max|1500.0|Dizel": [
-    120.0
+    163.0
   ],
   "Ford|Grand C-Max|1600.0|Dizel": [
     115.0
-  ],
-  "Ford|Ka|600.0|LPG & Benzin": [
-    63.0
   ],
   "Ford|Ka|1200.0|Benzin": [
     69.0
@@ -66779,28 +56840,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0
   ],
   "Ford|Ka|1300.0|LPG & Benzin": [
-    60.0,
-    63.0,
-    70.0
-  ],
-  "Ford|Ka|1500.0|Benzin": [
-    88.0
-  ],
-  "Ford|Ka|1600.0|LPG & Benzin": [
-    95.0
+    60.0
   ],
   "Ford|Kuga|1500.0|Benzin": [
     120.0,
-    138.0,
-    150.0,
     182.0,
     186.0,
     188.0
   ],
   "Ford|Kuga|1500.0|Dizel": [
     113.0,
-    120.0,
-    138.0
+    120.0
   ],
   "Ford|Kuga|1500.0|LPG & Benzin": [
     182.0
@@ -66810,7 +56860,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     182.0
   ],
   "Ford|Kuga|1600.0|LPG & Benzin": [
-    150.0,
     182.0
   ],
   "Ford|Kuga|1900.0|Dizel": [
@@ -66819,8 +56868,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Kuga|2000.0|Dizel": [
     136.0,
-    140.0,
-    163.0
+    140.0
   ],
   "Ford|Mondeo|1500.0|Benzin": [
     113.0,
@@ -66847,17 +56895,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     125.0,
     160.0
   ],
-  "Ford|Mondeo|1700.0|Benzin": [
-    113.0
-  ],
-  "Ford|Mondeo|1700.0|Dizel": [
-    88.0
-  ],
   "Ford|Mondeo|1900.0|Benzin": [
-    113.0,
-    138.0,
-    188.0,
-    238.0
+    138.0
   ],
   "Ford|Mondeo|1900.0|Dizel": [
     113.0,
@@ -66870,13 +56909,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Mondeo|2000.0|Benzin": [
     130.0,
-    136.0,
     140.0,
     145.0,
     240.0
   ],
   "Ford|Mondeo|2000.0|Dizel": [
-    115.0,
     130.0,
     140.0,
     163.0,
@@ -66885,56 +56922,33 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ford|Mondeo|2000.0|LPG & Benzin": [
     130.0,
     136.0,
-    145.0,
-    240.0
+    145.0
   ],
   "Ford|Mondeo|2500.0|LPG & Benzin": [
     170.0
   ],
-  "Ford|Mustang|2200.0|Benzin": [
-    313.0
-  ],
   "Ford|Mustang|3800.0|Benzin": [
-    188.0,
     313.0
   ],
   "Ford|Mustang|4600.0|Benzin": [
-    218.0,
-    260.0
+    218.0
   ],
   "Ford|Mustang|4900.0|Benzin": [
     228.0
   ],
-  "Ford|Mustang Mach-E|600.0|Elektrik": [
-    263.0
-  ],
-  "Ford|Probe|2200.0|LPG & Benzin": [
-    147.0
-  ],
   "Ford|Puma|600.0|Benzin": [
-    88.0,
     113.0,
-    163.0
-  ],
-  "Ford|Puma|600.0|Hibrit": [
     163.0
   ],
   "Ford|Puma|1000.0|Benzin": [
     95.0,
-    125.0,
-    155.0
-  ],
-  "Ford|Puma|1000.0|Elektrik": [
-    155.0
+    125.0
   ],
   "Ford|Puma|1000.0|Hibrit": [
     125.0,
     155.0
   ],
   "Ford|Puma- E|1300.0|Elektrik": [
-    163.0
-  ],
-  "Ford|Puma- E|1500.0|Elektrik": [
     163.0
   ],
   "Ford|Ranger|1900.0|Dizel": [
@@ -66947,7 +56961,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     213.0
   ],
   "Ford|Ranger|2200.0|Dizel": [
-    125.0,
     150.0,
     160.0
   ],
@@ -66958,15 +56971,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Ranger|2500.0|Dizel": [
     78.0,
-    84.0,
     109.0,
-    138.0,
-    143.0,
-    156.0,
-    601.0
-  ],
-  "Ford|Ranger|2800.0|Dizel": [
-    163.0
+    143.0
   ],
   "Ford|Ranger|3000.0|Dizel": [
     240.0
@@ -66977,43 +56983,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ford|Ranger|3300.0|Dizel": [
     188.0
   ],
-  "Ford|S-Max|1600.0|Dizel": [
-    115.0
-  ],
   "Ford|S-Max|1900.0|Dizel": [
-    138.0,
     188.0
   ],
   "Ford|S-Max|2000.0|Dizel": [
     143.0,
     163.0
   ],
-  "Ford|Scorpio|2000.0|LPG & Benzin": [
-    136.0
-  ],
-  "Ford|Sierra|1800.0|LPG & Benzin": [
-    87.0
-  ],
-  "Ford|Sierra|1900.0|Benzin": [
-    113.0
-  ],
-  "Ford|Sierra|1900.0|LPG & Benzin": [
-    113.0
-  ],
   "Ford|Sierra|2000.0|LPG & Benzin": [
     125.0
   ],
-  "Ford|Sierra|2300.0|Dizel": [
-    68.0
-  ],
-  "Ford|Taunus|0.0|LPG & Benzin": [
-    113.0
-  ],
-  "Ford|Taunus|1300.0|LPG & Benzin": [
-    54.0
-  ],
   "Ford|Taunus|1500.0|Benzin": [
-    63.0,
     88.0
   ],
   "Ford|Taunus|1500.0|LPG & Benzin": [
@@ -67029,46 +57009,28 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     73.0,
     101.0
   ],
-  "Ford|Taunus|1900.0|LPG & Benzin": [
-    88.0
-  ],
   "Ford|Taunus|2000.0|Benzin": [
     101.0
   ],
   "Ford|Taunus|2000.0|LPG & Benzin": [
     101.0
   ],
-  "Ford|Taurus|2800.0|LPG & Benzin": [
-    138.0,
-    188.0
-  ],
-  "Ford|Taurus|3200.0|Benzin": [
-    238.0
-  ],
   "Ford|Tourneo Connect|0.0|Dizel": [
-    1.0,
     18.0,
     75.0,
     90.0,
-    110.0,
-    122.0
+    110.0
   ],
   "Ford|Tourneo Connect|400.0|Dizel": [
     55.0,
     110.0
   ],
-  "Ford|Tourneo Connect|1000.0|Benzin": [
-    100.0
-  ],
   "Ford|Tourneo Connect|1300.0|Dizel": [
-    76.0,
-    101.0,
-    126.0
+    101.0
   ],
   "Ford|Tourneo Connect|1500.0|Dizel": [
     100.0,
-    120.0,
-    130.0
+    120.0
   ],
   "Ford|Tourneo Connect|1600.0|Dizel": [
     51.0,
@@ -67078,17 +57040,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Ford|Tourneo Connect|1800.0|Benzin": [
-    90.0,
-    115.0
+    90.0
   ],
   "Ford|Tourneo Connect|1800.0|Dizel": [
-    51.0,
-    55.0,
     75.0,
     90.0,
     101.0,
-    110.0,
-    1800.0
+    110.0
   ],
   "Ford|Tourneo Connect|2000.0|Dizel": [
     76.0,
@@ -67098,17 +57056,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     125.0
   ],
   "Ford|Tourneo Courier|0.0|Dizel": [
-    95.0,
-    100.0,
-    125.0,
-    1500.0
-  ],
-  "Ford|Tourneo Courier|100.0|Dizel": [
-    100.0,
-    1498.0
-  ],
-  "Ford|Tourneo Courier|200.0|Dizel": [
-    73.0,
     100.0
   ],
   "Ford|Tourneo Courier|1000.0|Benzin": [
@@ -67116,53 +57063,33 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     125.0
   ],
   "Ford|Tourneo Courier|1000.0|LPG & Benzin": [
-    100.0,
-    125.0
+    100.0
   ],
   "Ford|Tourneo Courier|1300.0|Benzin": [
     101.0
   ],
   "Ford|Tourneo Courier|1300.0|Dizel": [
-    51.0,
     76.0,
     101.0
-  ],
-  "Ford|Tourneo Courier|1300.0|LPG & Benzin": [
-    76.0
-  ],
-  "Ford|Tourneo Courier|1400.0|Dizel": [
-    100.0
   ],
   "Ford|Tourneo Courier|1500.0|Benzin": [
     100.0
   ],
   "Ford|Tourneo Courier|1500.0|Dizel": [
-    55.0,
     75.0,
     95.0,
-    100.0,
-    120.0
-  ],
-  "Ford|Tourneo Courier|1600.0|Benzin": [
-    95.0
+    100.0
   ],
   "Ford|Tourneo Courier|1600.0|Dizel": [
     76.0,
     95.0
   ],
-  "Ford|Tourneo Custom|0.0|Dizel": [
-    22.0,
-    170.0
-  ],
   "Ford|Tourneo Custom|1800.0|Dizel": [
-    126.0,
-    151.0
+    126.0
   ],
   "Ford|Tourneo Custom|2000.0|Dizel": [
-    101.0,
     130.0,
     136.0,
-    155.0,
     170.0,
     175.0,
     185.0
@@ -67173,83 +57100,42 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Ford|Transit|0.0|Dizel": [
     1.0,
-    100.0,
     170.0
   ],
   "Ford|Transit|100.0|Dizel": [
-    128.0,
-    140.0,
-    200.0
-  ],
-  "Ford|Transit|200.0|Dizel": [
-    155.0,
-    170.0,
-    200.0
-  ],
-  "Ford|Transit|300.0|Dizel": [
-    100.0,
-    125.0
-  ],
-  "Ford|Transit|400.0|Benzin": [
-    200.0
+    140.0
   ],
   "Ford|Transit|400.0|Dizel": [
-    88.0,
-    125.0,
     155.0,
     170.0
   ],
   "Ford|Transit|500.0|Dizel": [
-    125.0,
-    130.0,
-    168.0
-  ],
-  "Ford|Transit|1300.0|Dizel": [
-    126.0
-  ],
-  "Ford|Transit|1700.0|Dizel": [
-    203.0
+    130.0
   ],
   "Ford|Transit|1800.0|Dizel": [
-    101.0,
     126.0,
     151.0
-  ],
-  "Ford|Transit|1900.0|Dizel": [
-    170.0
   ],
   "Ford|Transit|2000.0|Dizel": [
     51.0,
     76.0,
     85.0,
-    96.0,
     101.0,
     125.0,
     130.0,
     151.0,
-    155.0,
     165.0,
     170.0,
-    185.0,
-    1000.0
-  ],
-  "Ford|Transit|2100.0|Dizel": [
-    170.0
-  ],
-  "Ford|Transit|2200.0|Benzin": [
-    140.0
+    185.0
   ],
   "Ford|Transit|2200.0|Dizel": [
     100.0,
     125.0,
     130.0,
     140.0,
-    150.0,
-    155.0,
-    165.0
+    155.0
   ],
   "Ford|Transit|2400.0|Dizel": [
-    52.0,
     75.0,
     90.0,
     100.0,
@@ -67264,41 +57150,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     85.0,
     100.0,
-    110.0,
     115.0,
-    120.0,
-    151.0,
-    160.0,
-    200.0
-  ],
-  "Ford|Transit|2500.0|LPG & Benzin": [
-    85.0
+    120.0
   ],
   "Ford|Transit|3200.0|Dizel": [
     200.0
-  ],
-  "Ford|Transit|3300.0|Dizel": [
-    73.0
-  ],
-  "Ford|Transit|5000.0|Dizel": [
-    176.0
-  ],
-  "Ford|Transit Connect|0.0|Dizel": [
-    1793.0
-  ],
-  "Ford|Transit Connect|400.0|Dizel": [
-    110.0
-  ],
-  "Ford|Transit Connect|1500.0|Dizel": [
-    100.0
   ],
   "Ford|Transit Connect|1600.0|Dizel": [
     51.0,
     76.0,
     95.0
-  ],
-  "Ford|Transit Connect|1800.0|Benzin": [
-    110.0
   ],
   "Ford|Transit Connect|1800.0|Dizel": [
     75.0,
@@ -67306,20 +57167,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0
   ],
   "Ford|Transit Connect|2000.0|Dizel": [
-    75.0,
-    85.0
-  ],
-  "Ford|Transit Connect|2200.0|Dizel": [
-    90.0
-  ],
-  "Ford|Transit Connect|2300.0|Dizel": [
-    66.0
-  ],
-  "Ford|Transit Connect|2400.0|Dizel": [
-    90.0
-  ],
-  "Ford|Transit Courier|200.0|Dizel": [
-    100.0
+    75.0
   ],
   "Ford|Transit Courier|1000.0|Benzin": [
     100.0,
@@ -67335,21 +57183,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0
   ],
   "Ford|Transit Courier|1600.0|Dizel": [
-    95.0,
-    37352.0
-  ],
-  "Ford|Transit Custom|100.0|Dizel": [
-    1995.0
+    95.0
   ],
   "Ford|Transit Custom|1800.0|Dizel": [
-    76.0,
     101.0,
     126.0,
-    151.0,
-    176.0
+    151.0
   ],
   "Ford|Transit Custom|2000.0|Dizel": [
-    76.0,
     101.0,
     105.0,
     126.0,
@@ -67358,29 +57199,22 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0,
     170.0
   ],
-  "Ford|Transit Custom|2200.0|Benzin": [
-    100.0
-  ],
   "Ford|Transit Custom|2200.0|Dizel": [
-    92.0,
     100.0,
     125.0,
     155.0
   ],
   "Ford|Transit Kombi|2400.0|Dizel": [
-    100.0,
-    125.0
+    100.0
   ],
   "Geely|Echo|1300.0|Benzin": [
-    86.0,
-    88.0
+    86.0
   ],
   "Geely|Echo|1300.0|LPG & Benzin": [
     86.0
   ],
   "Geely|Emgrand|1500.0|Benzin": [
-    106.0,
-    113.0
+    106.0
   ],
   "Geely|Emgrand|1500.0|LPG & Benzin": [
     106.0
@@ -67400,17 +57234,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Honda|Accord|1500.0|Benzin": [
     190.0
   ],
-  "Honda|Accord|1600.0|Benzin": [
-    116.0
-  ],
-  "Honda|Accord|1800.0|Benzin": [
-    136.0
-  ],
   "Honda|Accord|1800.0|LPG & Benzin": [
     136.0
   ],
   "Honda|Accord|1900.0|Benzin": [
-    133.0,
     138.0,
     163.0
   ],
@@ -67424,26 +57251,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Honda|Accord|2000.0|Benzin": [
     131.0,
     133.0,
-    147.0,
     156.0
   ],
   "Honda|Accord|2000.0|LPG & Benzin": [
-    104.0,
-    110.0,
     115.0,
     131.0,
     133.0,
     147.0,
     155.0
-  ],
-  "Honda|Accord|2200.0|Benzin": [
-    138.0
-  ],
-  "Honda|Accord|2200.0|Dizel": [
-    140.0
-  ],
-  "Honda|Accord|2300.0|Benzin": [
-    138.0
   ],
   "Honda|Accord|2400.0|Benzin": [
     190.0
@@ -67458,9 +57273,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Honda|CR-V|1500.0|Dizel": [
     113.0
   ],
-  "Honda|CR-V|1500.0|LPG & Benzin": [
-    193.0
-  ],
   "Honda|CR-V|1600.0|Dizel": [
     120.0,
     160.0
@@ -67469,18 +57281,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     163.0
   ],
-  "Honda|CR-V|1900.0|Hibrit": [
-    188.0
-  ],
   "Honda|CR-V|1900.0|LPG & Benzin": [
     138.0,
     163.0
   ],
   "Honda|CR-V|2000.0|Benzin": [
-    128.0,
     147.0,
-    150.0,
-    155.0
+    150.0
   ],
   "Honda|CR-V|2000.0|Hibrit": [
     184.0
@@ -67488,23 +57295,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Honda|CR-V|2000.0|LPG & Benzin": [
     128.0,
     147.0,
-    150.0,
-    155.0
+    150.0
   ],
   "Honda|CR-V|2200.0|Dizel": [
-    140.0,
-    150.0
+    140.0
   ],
   "Honda|CR-Z|1500.0|Hibrit": [
     113.0
-  ],
-  "Honda|CRX|1500.0|Benzin": [
-    138.0
-  ],
-  "Honda|CRX|1600.0|Benzin": [
-    120.0,
-    124.0,
-    160.0
   ],
   "Honda|City|1300.0|Benzin": [
     83.0,
@@ -67521,11 +57318,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     121.0
   ],
   "Honda|City|1500.0|LPG & Benzin": [
-    88.0,
     121.0
-  ],
-  "Honda|Civic|0.0|Benzin": [
-    188.0
   ],
   "Honda|Civic|0.0|LPG & Benzin": [
     113.0,
@@ -67533,8 +57326,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Honda|Civic|1300.0|Benzin": [
     88.0,
-    100.0,
-    113.0
+    100.0
   ],
   "Honda|Civic|1300.0|LPG & Benzin": [
     63.0,
@@ -67559,15 +57351,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     188.0
   ],
   "Honda|Civic|1500.0|Dizel": [
-    113.0,
-    163.0
+    113.0
   ],
   "Honda|Civic|1500.0|LPG & Benzin": [
     90.0,
     113.0,
     129.0,
     138.0,
-    163.0,
     182.0,
     188.0
   ],
@@ -67581,25 +57371,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Honda|Civic|1600.0|Dizel": [
     120.0
   ],
-  "Honda|Civic|1600.0|Hibrit": [
-    125.0
-  ],
   "Honda|Civic|1600.0|LPG & Benzin": [
     110.0,
     113.0,
     120.0,
-    125.0,
-    160.0
+    125.0
   ],
   "Honda|Civic|1700.0|Benzin": [
-    113.0,
     138.0
   ],
   "Honda|Civic|1700.0|LPG & Benzin": [
     113.0,
-    138.0,
-    213.0,
-    238.0
+    138.0
   ],
   "Honda|Civic|1800.0|Benzin": [
     140.0
@@ -67608,7 +57391,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     140.0
   ],
   "Honda|Civic|1900.0|Benzin": [
-    213.0,
     313.0
   ],
   "Honda|Civic|2000.0|Benzin": [
@@ -67616,25 +57398,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     310.0,
     320.0
   ],
-  "Honda|Civic|2300.0|Benzin": [
-    288.0
-  ],
-  "Honda|E|200.0|Elektrik": [
-    154.0
-  ],
-  "Honda|FR-V|2200.0|Dizel": [
-    140.0
-  ],
   "Honda|HR-V|1500.0|Benzin": [
     107.0,
-    113.0,
     130.0,
     138.0
   ],
   "Honda|HR-V|1500.0|Hibrit": [
     107.0,
-    138.0,
-    288.0
+    138.0
   ],
   "Honda|HR-V|1500.0|LPG & Benzin": [
     113.0
@@ -67646,14 +57417,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     120.0
   ],
   "Honda|HR-V|1600.0|LPG & Benzin": [
-    105.0,
-    124.0
-  ],
-  "Honda|Integra|1700.0|LPG & Benzin": [
-    138.0
-  ],
-  "Honda|Integra|1900.0|LPG & Benzin": [
-    163.0
+    105.0
   ],
   "Honda|Jazz|1300.0|Benzin": [
     83.0,
@@ -67666,32 +57430,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0,
     100.0
   ],
-  "Honda|Jazz|1500.0|Benzin": [
-    88.0,
-    107.0,
-    130.0
-  ],
   "Honda|Jazz|1500.0|Hibrit": [
     107.0,
     113.0
-  ],
-  "Honda|Legend|2800.0|Benzin": [
-    163.0
-  ],
-  "Honda|Legend|3200.0|Benzin": [
-    213.0
-  ],
-  "Honda|Prelude|1900.0|Benzin": [
-    138.0
-  ],
-  "Honda|Prelude|2000.0|Benzin": [
-    133.0
-  ],
-  "Honda|Prelude|2000.0|LPG & Benzin": [
-    140.0
-  ],
-  "Honda|Prelude|2200.0|LPG & Benzin": [
-    185.0
   ],
   "Honda|S2000|1900.0|Benzin": [
     238.0
@@ -67699,37 +57440,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Honda|S2000|2000.0|Benzin": [
     240.0
   ],
-  "Honda|Shuttle|2200.0|LPG & Benzin": [
-    150.0
-  ],
-  "Honda|Shuttle|2300.0|LPG & Benzin": [
-    138.0,
-    150.0
-  ],
-  "Honda|ZR-V|2000.0|Benzin": [
-    141.0
-  ],
   "Honda|ZR-V|2000.0|Hibrit": [
     141.0
   ],
-  "Hyundai|Accent|0.0|LPG & Benzin": [
-    88.0
-  ],
-  "Hyundai|Accent|600.0|Dizel": [
-    88.0
-  ],
-  "Hyundai|Accent|600.0|LPG & Benzin": [
-    88.0,
-    113.0
-  ],
   "Hyundai|Accent|1300.0|Benzin": [
-    63.0,
     75.0,
     86.0,
     88.0
-  ],
-  "Hyundai|Accent|1300.0|Dizel": [
-    86.0
   ],
   "Hyundai|Accent|1300.0|LPG & Benzin": [
     60.0,
@@ -67739,25 +57456,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Hyundai|Accent|1500.0|Benzin": [
-    63.0,
     82.0,
     88.0,
     102.0,
-    105.0,
     113.0
   ],
   "Hyundai|Accent|1500.0|Dizel": [
     82.0,
     88.0,
-    102.0,
-    110.0,
-    113.0
+    110.0
   ],
   "Hyundai|Accent|1500.0|LPG & Benzin": [
     92.0,
     102.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Hyundai|Accent|1600.0|Benzin": [
     112.0
@@ -67765,22 +57477,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|Accent|1600.0|LPG & Benzin": [
     112.0
   ],
-  "Hyundai|Accent|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Hyundai|Accent Blue|0.0|Dizel": [
-    138.0
-  ],
-  "Hyundai|Accent Blue|0.0|LPG & Benzin": [
-    113.0
-  ],
   "Hyundai|Accent Blue|1300.0|Benzin": [
     88.0,
     113.0
   ],
   "Hyundai|Accent Blue|1300.0|LPG & Benzin": [
-    88.0,
-    113.0
+    88.0
   ],
   "Hyundai|Accent Blue|1400.0|Benzin": [
     100.0,
@@ -67794,7 +57496,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Hyundai|Accent Blue|1500.0|Dizel": [
-    88.0,
     138.0
   ],
   "Hyundai|Accent Blue|1600.0|Benzin": [
@@ -67806,17 +57507,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     136.0
   ],
   "Hyundai|Accent Era|1300.0|Benzin": [
-    63.0,
     88.0
   ],
   "Hyundai|Accent Era|1300.0|LPG & Benzin": [
-    63.0,
     88.0
   ],
   "Hyundai|Accent Era|1400.0|Benzin": [
-    97.0
-  ],
-  "Hyundai|Accent Era|1400.0|Dizel": [
     97.0
   ],
   "Hyundai|Accent Era|1400.0|LPG & Benzin": [
@@ -67827,7 +57523,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Hyundai|Accent Era|1500.0|Dizel": [
-    88.0,
     110.0,
     113.0
   ],
@@ -67862,9 +57557,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|Atos|1200.0|Benzin": [
     63.0
   ],
-  "Hyundai|Bayon|0.0|Benzin": [
-    88.0
-  ],
   "Hyundai|Bayon|600.0|Benzin": [
     88.0,
     113.0
@@ -67884,9 +57576,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|Bayon|1400.0|LPG & Benzin": [
     100.0
   ],
-  "Hyundai|Coupe|1500.0|Benzin": [
-    88.0
-  ],
   "Hyundai|Coupe|1500.0|LPG & Benzin": [
     113.0
   ],
@@ -67897,13 +57586,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0,
     114.0
   ],
-  "Hyundai|Coupe|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Hyundai|Coupe|2000.0|LPG & Benzin": [
-    139.0,
-    143.0
-  ],
   "Hyundai|Elantra|1500.0|Benzin": [
     113.0,
     138.0
@@ -67912,7 +57594,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Hyundai|Elantra|1500.0|LPG & Benzin": [
-    86.0,
     113.0,
     138.0
   ],
@@ -67927,33 +57608,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     136.0
   ],
   "Hyundai|Elantra|1600.0|LPG & Benzin": [
-    90.0,
     107.0,
     114.0,
     127.0,
     132.0
   ],
-  "Hyundai|Elantra|1700.0|Benzin": [
-    113.0
-  ],
-  "Hyundai|Elantra|1800.0|Benzin": [
-    131.0
-  ],
   "Hyundai|Elantra|1800.0|LPG & Benzin": [
-    126.0,
     128.0
-  ],
-  "Hyundai|Elantra|1900.0|LPG & Benzin": [
-    138.0
   ],
   "Hyundai|Elantra|2000.0|Benzin": [
     139.0
-  ],
-  "Hyundai|Elantra|2000.0|LPG & Benzin": [
-    139.0
-  ],
-  "Hyundai|Excel|1300.0|LPG & Benzin": [
-    63.0
   ],
   "Hyundai|Excel|1500.0|Benzin": [
     71.0
@@ -67964,9 +57628,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|Genesis|2000.0|Benzin": [
     210.0
-  ],
-  "Hyundai|Getz|600.0|Dizel": [
-    63.0
   ],
   "Hyundai|Getz|1300.0|Benzin": [
     82.0,
@@ -67993,28 +57654,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     113.0
   ],
-  "Hyundai|Getz|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Hyundai|Getz|1600.0|Benzin": [
-    105.0
-  ],
-  "Hyundai|Getz|1600.0|LPG & Benzin": [
-    105.0
-  ],
   "Hyundai|H 1|2500.0|Dizel": [
     170.0
   ],
-  "Hyundai|H 100|0.0|Dizel": [
-    551.0
-  ],
   "Hyundai|H 100|2000.0|Dizel": [
-    76.0,
-    101.0
+    76.0
   ],
   "Hyundai|H 100|2500.0|Dizel": [
-    51.0,
-    58.0,
     76.0,
     94.0
   ],
@@ -68022,22 +57668,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     80.0,
     85.0
   ],
-  "Hyundai|Ioniq|1500.0|Benzin": [
-    163.0
-  ],
-  "Hyundai|Ioniq|1600.0|Hibrit": [
-    105.0
-  ],
-  "Hyundai|Ioniq 6|1600.0|Hibrit": [
-    105.0
-  ],
-  "Hyundai|Kona|600.0|Benzin": [
-    113.0
-  ],
   "Hyundai|Kona|1000.0|Benzin": [
-    120.0
-  ],
-  "Hyundai|Kona|1000.0|LPG & Benzin": [
     120.0
   ],
   "Hyundai|Kona|1500.0|Benzin": [
@@ -68053,9 +57684,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|Kona|1500.0|Hibrit": [
     138.0
   ],
-  "Hyundai|Kona|1500.0|LPG & Benzin": [
-    188.0
-  ],
   "Hyundai|Kona|1600.0|Benzin": [
     177.0,
     198.0
@@ -68063,20 +57691,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|Kona|1600.0|Dizel": [
     136.0
   ],
-  "Hyundai|Kona|1600.0|Hibrit": [
-    136.0,
-    141.0
-  ],
-  "Hyundai|Kona|1700.0|Elektrik": [
-    138.0
-  ],
   "Hyundai|Matrix|1500.0|Benzin": [
     110.0,
     113.0
   ],
   "Hyundai|Matrix|1500.0|Dizel": [
     82.0,
-    102.0,
     110.0,
     113.0
   ],
@@ -68087,17 +57707,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     103.0
   ],
   "Hyundai|Matrix|1600.0|LPG & Benzin": [
-    103.0,
-    113.0
-  ],
-  "Hyundai|Santa Fe|1500.0|Benzin": [
-    213.0
+    103.0
   ],
   "Hyundai|Santa Fe|1500.0|Hibrit": [
     213.0
-  ],
-  "Hyundai|Santa Fe|1600.0|Benzin": [
-    230.0
   ],
   "Hyundai|Santa Fe|1600.0|Hibrit": [
     230.0
@@ -68114,28 +57727,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|Santa Fe|2200.0|Dizel": [
     150.0,
-    155.0,
-    197.0
+    155.0
   ],
   "Hyundai|Santa Fe|2300.0|Dizel": [
-    163.0,
-    188.0
-  ],
-  "Hyundai|Santa Fe|3300.0|LPG & Benzin": [
-    263.0
+    163.0
   ],
   "Hyundai|Sonata|1900.0|Benzin": [
     138.0
   ],
-  "Hyundai|Sonata|1900.0|Dizel": [
-    138.0
-  ],
-  "Hyundai|Sonata|1900.0|LPG & Benzin": [
-    138.0
-  ],
   "Hyundai|Sonata|2000.0|Benzin": [
     131.0,
-    140.0,
     150.0
   ],
   "Hyundai|Sonata|2000.0|Dizel": [
@@ -68146,23 +57747,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     125.0,
     131.0,
     136.0,
-    139.0,
-    145.0
-  ],
-  "Hyundai|Sonata|2400.0|LPG & Benzin": [
-    166.0
-  ],
-  "Hyundai|Sonata|2500.0|Benzin": [
-    160.0
+    139.0
   ],
   "Hyundai|Sonata|2500.0|LPG & Benzin": [
     160.0
-  ],
-  "Hyundai|Sonata|2700.0|LPG & Benzin": [
-    173.0
-  ],
-  "Hyundai|Starex|0.0|Dizel": [
-    100.0
   ],
   "Hyundai|Starex|2000.0|Dizel": [
     76.0,
@@ -68171,26 +57759,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|Starex|2500.0|Dizel": [
     100.0,
-    140.0,
-    2497.0
-  ],
-  "Hyundai|Staria|1600.0|Benzin": [
-    225.0
+    140.0
   ],
   "Hyundai|Staria|1600.0|Hibrit": [
     225.0
   ],
   "Hyundai|Staria|2200.0|Dizel": [
     177.0
-  ],
-  "Hyundai|Trajet|2000.0|Dizel": [
-    112.0
-  ],
-  "Hyundai|Tucson|0.0|Benzin": [
-    188.0
-  ],
-  "Hyundai|Tucson|0.0|Dizel": [
-    138.0
   ],
   "Hyundai|Tucson|1500.0|Benzin": [
     138.0,
@@ -68215,23 +57790,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     180.0
   ],
   "Hyundai|Tucson|1600.0|Dizel": [
-    136.0,
-    160.0
+    136.0
   ],
   "Hyundai|Tucson|1600.0|Hibrit": [
     230.0
   ],
   "Hyundai|Tucson|1600.0|LPG & Benzin": [
     132.0,
-    177.0,
-    180.0
+    177.0
   ],
   "Hyundai|Tucson|1700.0|Benzin": [
     188.0
-  ],
-  "Hyundai|Tucson|1700.0|Dizel": [
-    88.0,
-    138.0
   ],
   "Hyundai|Tucson|2000.0|Dizel": [
     113.0,
@@ -68277,27 +57846,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     88.0
   ],
-  "Hyundai|i10|1300.0|LPG & Benzin": [
-    88.0
-  ],
-  "Hyundai|i20|0.0|Benzin": [
-    88.0
-  ],
-  "Hyundai|i20|0.0|Dizel": [
-    88.0
-  ],
-  "Hyundai|i20|0.0|LPG & Benzin": [
-    88.0
-  ],
   "Hyundai|i20|600.0|Benzin": [
     88.0,
     113.0
-  ],
-  "Hyundai|i20|600.0|Dizel": [
-    88.0
-  ],
-  "Hyundai|i20|600.0|LPG & Benzin": [
-    88.0
   ],
   "Hyundai|i20|1000.0|Benzin": [
     100.0,
@@ -68309,8 +57860,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|i20|1200.0|Benzin": [
     78.0,
     84.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Hyundai|i20|1200.0|LPG & Benzin": [
     78.0,
@@ -68318,8 +57868,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|i20|1300.0|Benzin": [
     63.0,
-    88.0,
-    138.0
+    88.0
   ],
   "Hyundai|i20|1300.0|Dizel": [
     88.0
@@ -68334,32 +57883,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|i20|1400.0|Dizel": [
     75.0,
-    90.0,
-    100.0
+    90.0
   ],
   "Hyundai|i20|1400.0|LPG & Benzin": [
     100.0
   ],
   "Hyundai|i20|1500.0|Benzin": [
-    88.0,
-    113.0
+    88.0
   ],
   "Hyundai|i20|1500.0|Dizel": [
     88.0
-  ],
-  "Hyundai|i20|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Hyundai|i20 Active|600.0|Benzin": [
-    113.0
   ],
   "Hyundai|i20 Active|1000.0|Benzin": [
     120.0
   ],
   "Hyundai|i20 Active|1300.0|Benzin": [
-    88.0
-  ],
-  "Hyundai|i20 Active|1300.0|LPG & Benzin": [
     88.0
   ],
   "Hyundai|i20 Active|1400.0|Benzin": [
@@ -68384,15 +57922,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Hyundai|i20 Troy|1300.0|Dizel": [
-    63.0,
-    88.0
-  ],
-  "Hyundai|i20 Troy|1300.0|LPG & Benzin": [
     88.0
   ],
   "Hyundai|i20 Troy|1400.0|Benzin": [
-    75.0,
-    90.0,
     100.0
   ],
   "Hyundai|i20 Troy|1400.0|Dizel": [
@@ -68401,15 +57933,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|i20 Troy|1400.0|LPG & Benzin": [
     100.0
-  ],
-  "Hyundai|i20 Troy|1500.0|Benzin": [
-    88.0
-  ],
-  "Hyundai|i30|0.0|LPG & Benzin": [
-    113.0
-  ],
-  "Hyundai|i30|1300.0|Benzin": [
-    88.0
   ],
   "Hyundai|i30|1400.0|Benzin": [
     100.0,
@@ -68421,8 +57944,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|i30|1500.0|Benzin": [
     113.0,
-    138.0,
-    188.0
+    138.0
   ],
   "Hyundai|i30|1500.0|Dizel": [
     88.0,
@@ -68439,10 +57961,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0,
     115.0,
     122.0,
-    126.0,
     128.0,
-    135.0,
-    186.0
+    135.0
   ],
   "Hyundai|i30|1600.0|Dizel": [
     90.0,
@@ -68453,27 +57973,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|i30|1600.0|LPG & Benzin": [
     122.0,
     126.0,
-    135.0,
-    186.0
+    135.0
   ],
   "Hyundai|i30|1700.0|Benzin": [
     138.0
   ],
   "Hyundai|i30|1700.0|Dizel": [
-    113.0,
     138.0
-  ],
-  "Hyundai|i40|1600.0|LPG & Benzin": [
-    136.0
-  ],
-  "Hyundai|i40|1700.0|Dizel": [
-    136.0
   ],
   "Hyundai|ix20|1400.0|Dizel": [
     90.0
-  ],
-  "Hyundai|ix20|1600.0|Benzin": [
-    125.0
   ],
   "Hyundai|ix20|1600.0|LPG & Benzin": [
     125.0
@@ -68496,15 +58005,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Hyundai|ix35|2000.0|Dizel": [
     184.0
   ],
-  "Ikco|Samand|1500.0|Benzin": [
-    113.0
-  ],
-  "Ikco|Samand|1500.0|LPG & Benzin": [
-    113.0
-  ],
-  "Ikco|Samand|1600.0|Benzin": [
-    106.0
-  ],
   "Ikco|Samand|1600.0|LPG & Benzin": [
     106.0
   ],
@@ -68514,17 +58014,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Infiniti|FX|3000.0|Dizel": [
     238.0
   ],
-  "Infiniti|FX|3500.0|Benzin": [
-    280.0
-  ],
   "Infiniti|FX|3500.0|LPG & Benzin": [
     280.0
-  ],
-  "Infiniti|FX|3800.0|LPG & Benzin": [
-    338.0
-  ],
-  "Infiniti|G|3700.0|Benzin": [
-    320.0
   ],
   "Infiniti|G|3800.0|Benzin": [
     313.0
@@ -68532,33 +58023,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Infiniti|M|2800.0|Benzin": [
     238.0
   ],
-  "Infiniti|M|2800.0|Dizel": [
-    238.0
-  ],
-  "Infiniti|Q30|1500.0|Benzin": [
-    113.0
-  ],
   "Infiniti|Q30|1500.0|Dizel": [
-    109.0,
     113.0
-  ],
-  "Infiniti|Q30|1600.0|Benzin": [
-    156.0
-  ],
-  "Infiniti|Q50|1900.0|Benzin": [
-    213.0
-  ],
-  "Infiniti|Q50|2100.0|Dizel": [
-    170.0
-  ],
-  "Infiniti|Q60|1900.0|Benzin": [
-    213.0
   ],
   "Infiniti|QX|3000.0|Dizel": [
     238.0
-  ],
-  "Infiniti|i30|3000.0|Benzin": [
-    227.0
   ],
   "Infiniti|i30|3000.0|LPG & Benzin": [
     190.0
@@ -68575,23 +58044,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Isuzu|D-Max|2800.0|Dizel": [
-    163.0,
-    263.0
+    163.0
   ],
   "Isuzu|D-Max|3000.0|Dizel": [
     163.0
   ],
-  "Isuzu|D-Max|3300.0|Dizel": [
-    163.0
-  ],
-  "Isuzu|D-Max|4300.0|Dizel": [
-    163.0
-  ],
-  "Isuzu|Gemini|2800.0|Dizel": [
-    213.0
-  ],
   "Iveco - Otoyol|35|2000.0|Dizel": [
-    126.0,
     151.0
   ],
   "Iveco - Otoyol|35|2300.0|Dizel": [
@@ -68603,34 +58061,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jaecoo|J7|1600.0|Benzin": [
     145.0
   ],
-  "Jaguar|Daimler|3800.0|Benzin": [
-    213.0,
-    238.0
-  ],
-  "Jaguar|Daimler|4000.0|Benzin": [
-    222.0,
-    241.0
-  ],
   "Jaguar|E-Pace|1500.0|Benzin": [
-    160.0,
     163.0
-  ],
-  "Jaguar|F-Pace|1900.0|Benzin": [
-    238.0
   ],
   "Jaguar|F-Pace|1900.0|Dizel": [
     188.0
   ],
   "Jaguar|F-Pace|2000.0|Dizel": [
-    180.0,
-    204.0,
-    240.0
-  ],
-  "Jaguar|S-Type|2200.0|Benzin": [
-    213.0
-  ],
-  "Jaguar|S-Type|2500.0|LPG & Benzin": [
-    200.0
+    180.0
   ],
   "Jaguar|S-Type|2700.0|Benzin": [
     207.0
@@ -68638,20 +58076,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jaguar|S-Type|2700.0|Dizel": [
     207.0
   ],
-  "Jaguar|S-Type|2800.0|Benzin": [
-    238.0
-  ],
-  "Jaguar|S-Type|2800.0|LPG & Benzin": [
-    238.0
-  ],
   "Jaguar|S-Type|3000.0|Benzin": [
     238.0
-  ],
-  "Jaguar|S-Type|3000.0|LPG & Benzin": [
-    238.0
-  ],
-  "Jaguar|S-Type|4000.0|Benzin": [
-    276.0
   ],
   "Jaguar|Sovereign|3800.0|Benzin": [
     288.0
@@ -68675,32 +58101,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     157.0
   ],
   "Jaguar|X-Type|2200.0|Benzin": [
-    163.0,
-    188.0
+    163.0
   ],
   "Jaguar|X-Type|2300.0|Benzin": [
     163.0
   ],
-  "Jaguar|X-Type|2300.0|Dizel": [
-    163.0
-  ],
   "Jaguar|X-Type|2500.0|Benzin": [
     196.0
-  ],
-  "Jaguar|X-Type|2500.0|LPG & Benzin": [
-    196.0
-  ],
-  "Jaguar|X-Type|2800.0|Benzin": [
-    238.0
-  ],
-  "Jaguar|X-Type|3000.0|Benzin": [
-    231.0
-  ],
-  "Jaguar|X-Type|3000.0|LPG & Benzin": [
-    231.0
-  ],
-  "Jaguar|XE|1900.0|Benzin": [
-    188.0
   ],
   "Jaguar|XE|1900.0|Dizel": [
     188.0
@@ -68725,28 +58132,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jaguar|XF|2000.0|Dizel": [
     180.0
   ],
-  "Jaguar|XF|2200.0|Benzin": [
-    190.0
-  ],
   "Jaguar|XF|2200.0|Dizel": [
     190.0
   ],
   "Jaguar|XF|2700.0|Benzin": [
     207.0,
-    240.0,
-    275.0
+    240.0
   ],
   "Jaguar|XF|2700.0|Dizel": [
-    207.0,
-    240.0,
-    275.0
+    207.0
   ],
   "Jaguar|XF|2800.0|Benzin": [
     238.0
-  ],
-  "Jaguar|XF|2800.0|Dizel": [
-    238.0,
-    263.0
   ],
   "Jaguar|XF|3000.0|Benzin": [
     238.0
@@ -68754,37 +58151,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jaguar|XJ|1900.0|Benzin": [
     238.0
   ],
-  "Jaguar|XJ|2000.0|Benzin": [
-    240.0
-  ],
   "Jaguar|XJ|2800.0|Benzin": [
     238.0
   ],
   "Jaguar|XJ|2800.0|Dizel": [
     263.0
   ],
-  "Jaguar|XJ|3000.0|Benzin": [
-    275.0
-  ],
   "Jaguar|XJ|3000.0|Dizel": [
     275.0
   ],
-  "Jaguar|XJ|3200.0|Benzin": [
-    237.0
-  ],
-  "Jaguar|XJ|3800.0|Benzin": [
-    238.0,
-    263.0
-  ],
   "Jaguar|XJ|4000.0|Benzin": [
-    222.0,
-    241.0
-  ],
-  "Jaguar|XJ|4200.0|Benzin": [
-    288.0
-  ],
-  "Jaguar|XKR|3800.0|Benzin": [
-    363.0
+    222.0
   ],
   "Jeep|Avenger Hybrid|600.0|Hibrit": [
     88.0
@@ -68796,19 +58173,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jeep|Cherokee|2000.0|Dizel": [
     170.0
   ],
-  "Jeep|Cherokee|2300.0|Dizel": [
-    113.0
-  ],
-  "Jeep|Cherokee|2500.0|Dizel": [
-    115.0
-  ],
   "Jeep|Cherokee|2800.0|Dizel": [
     138.0,
     150.0,
     163.0,
     177.0,
-    188.0,
-    200.0
+    188.0
   ],
   "Jeep|Cherokee|3700.0|Benzin": [
     210.0
@@ -68816,17 +58186,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jeep|Cherokee|3700.0|LPG & Benzin": [
     210.0
   ],
-  "Jeep|Cherokee|3800.0|Benzin": [
-    188.0
-  ],
   "Jeep|Cherokee|3800.0|LPG & Benzin": [
-    188.0,
-    213.0
-  ],
-  "Jeep|Cherokee|4000.0|LPG & Benzin": [
-    192.0
-  ],
-  "Jeep|Commander|2800.0|Dizel": [
     213.0
   ],
   "Jeep|Compass|1300.0|Benzin": [
@@ -68846,26 +58206,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jeep|Compass|1500.0|Benzin": [
     130.0
   ],
-  "Jeep|Compass|1500.0|Dizel": [
-    113.0
-  ],
   "Jeep|Compass|1500.0|Hibrit": [
     130.0,
     138.0
-  ],
-  "Jeep|Compass|1600.0|Dizel": [
-    120.0
-  ],
-  "Jeep|Compass|1900.0|Benzin": [
-    138.0,
-    163.0
   ],
   "Jeep|Compass|2000.0|Benzin": [
     156.0
   ],
   "Jeep|Compass|2000.0|Dizel": [
-    140.0,
-    170.0
+    140.0
   ],
   "Jeep|Compass|2000.0|LPG & Benzin": [
     156.0
@@ -68889,18 +58238,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jeep|Grand Cherokee|3100.0|Dizel": [
     140.0
   ],
-  "Jeep|Grand Cherokee|4000.0|Benzin": [
-    184.0
-  ],
-  "Jeep|Grand Cherokee|4000.0|LPG & Benzin": [
-    184.0
-  ],
   "Jeep|Grand Cherokee|4700.0|LPG & Benzin": [
-    220.0,
-    223.0
-  ],
-  "Jeep|Grand Cherokee|4800.0|LPG & Benzin": [
-    213.0
+    220.0
   ],
   "Jeep|Grand Cherokee|5200.0|Benzin": [
     214.0
@@ -68917,20 +58256,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jeep|Grand Cherokee|5800.0|LPG & Benzin": [
     238.0
   ],
-  "Jeep|Grand Cherokee|5900.0|Benzin": [
-    241.0
-  ],
   "Jeep|Grand Cherokee|5900.0|LPG & Benzin": [
     241.0
   ],
   "Jeep|Patriot|2000.0|Dizel": [
     140.0
-  ],
-  "Jeep|Patriot|2400.0|Benzin": [
-    170.0
-  ],
-  "Jeep|Patriot|2400.0|LPG & Benzin": [
-    170.0
   ],
   "Jeep|Renegade|1000.0|Benzin": [
     120.0
@@ -68939,22 +58269,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     150.0,
     163.0,
-    180.0,
     188.0
   ],
   "Jeep|Renegade|1300.0|LPG & Benzin": [
-    138.0,
-    150.0
+    138.0
   ],
   "Jeep|Renegade|1400.0|Benzin": [
     140.0,
     170.0
-  ],
-  "Jeep|Renegade|1400.0|LPG & Benzin": [
-    140.0
-  ],
-  "Jeep|Renegade|1500.0|Benzin": [
-    138.0
   ],
   "Jeep|Renegade|1500.0|Dizel": [
     113.0
@@ -68966,47 +58288,22 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Jeep|Renegade|1600.0|Dizel": [
     120.0
   ],
-  "Jeep|Renegade|2000.0|Dizel": [
-    170.0
-  ],
   "Jeep|Wrangler|2800.0|Dizel": [
-    177.0,
     188.0,
     200.0
-  ],
-  "Jeep|Wrangler|4000.0|LPG & Benzin": [
-    177.0
-  ],
-  "Kia|Capital|1500.0|Benzin": [
-    115.0
   ],
   "Kia|Capital|1500.0|LPG & Benzin": [
     115.0
   ],
-  "Kia|Capital|1700.0|LPG & Benzin": [
-    238.0
-  ],
-  "Kia|Carens|1900.0|Dizel": [
-    113.0,
-    138.0
-  ],
   "Kia|Carens|2000.0|Dizel": [
-    112.0,
-    140.0
-  ],
-  "Kia|Carnival|2500.0|LPG & Benzin": [
-    165.0
+    112.0
   ],
   "Kia|Carnival|2800.0|Dizel": [
     138.0
   ],
   "Kia|Carnival|2900.0|Dizel": [
-    126.0,
     144.0,
     185.0
-  ],
-  "Kia|Ceed|600.0|Benzin": [
-    88.0
   ],
   "Kia|Ceed|1000.0|Benzin": [
     100.0
@@ -69014,18 +58311,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|Ceed|1000.0|Hibrit": [
     120.0
   ],
-  "Kia|Ceed|1200.0|Benzin": [
-    88.0,
-    113.0
-  ],
   "Kia|Ceed|1300.0|Benzin": [
     88.0
   ],
-  "Kia|Ceed|1300.0|LPG & Benzin": [
-    88.0
-  ],
   "Kia|Ceed|1400.0|Benzin": [
-    90.0,
     100.0
   ],
   "Kia|Ceed|1400.0|LPG & Benzin": [
@@ -69059,8 +58348,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0,
     115.0,
     128.0,
-    136.0,
-    138.0
+    136.0
   ],
   "Kia|Ceed|1600.0|Hibrit": [
     136.0
@@ -69068,17 +58356,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|Ceed|1600.0|LPG & Benzin": [
     126.0
   ],
-  "Kia|Cerato|1300.0|Dizel": [
-    88.0
-  ],
   "Kia|Cerato|1500.0|Benzin": [
-    102.0,
     113.0,
     138.0
   ],
   "Kia|Cerato|1500.0|Dizel": [
-    63.0,
-    88.0,
     102.0,
     113.0,
     138.0
@@ -69089,7 +58371,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Kia|Cerato|1600.0|Benzin": [
     105.0,
-    115.0,
     122.0,
     126.0,
     128.0
@@ -69104,12 +58385,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     126.0,
     130.0
   ],
-  "Kia|Cerato|2000.0|Dizel": [
-    113.0
-  ],
-  "Kia|Clarus|2000.0|LPG & Benzin": [
-    133.0
-  ],
   "Kia|EV3|1300.0|Elektrik": [
     213.0
   ],
@@ -69119,11 +58394,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|EV3|1700.0|Elektrik": [
     213.0
   ],
-  "Kia|EV3|1900.0|Elektrik": [
-    213.0
-  ],
   "Kia|EV6|1300.0|Elektrik": [
-    25.0,
     163.0
   ],
   "Kia|EV6|1500.0|Elektrik": [
@@ -69135,33 +58406,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|EV6|1900.0|Elektrik": [
     163.0
   ],
-  "Kia|Magentis|1900.0|Dizel": [
-    138.0
-  ],
-  "Kia|Magentis|2000.0|Dizel": [
-    140.0
-  ],
   "Kia|Magentis|2000.0|LPG & Benzin": [
     136.0
-  ],
-  "Kia|Magentis|2800.0|LPG & Benzin": [
-    263.0
   ],
   "Kia|Niro|1600.0|Hibrit": [
     141.0
   ],
-  "Kia|Opirus|3500.0|LPG & Benzin": [
-    203.0
-  ],
-  "Kia|Optima|1700.0|Dizel": [
-    136.0
-  ],
   "Kia|Picanto|600.0|Benzin": [
     63.0,
     88.0
-  ],
-  "Kia|Picanto|600.0|Dizel": [
-    63.0
   ],
   "Kia|Picanto|600.0|LPG & Benzin": [
     63.0
@@ -69170,8 +58423,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     67.0
   ],
   "Kia|Picanto|1100.0|Benzin": [
-    65.0,
-    75.0
+    65.0
   ],
   "Kia|Picanto|1100.0|Dizel": [
     65.0,
@@ -69192,17 +58444,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|Picanto|1300.0|Benzin": [
     88.0
   ],
-  "Kia|Pregio|2700.0|Dizel": [
-    82.0
-  ],
   "Kia|Pride|1300.0|Benzin": [
     64.0
   ],
   "Kia|Pride|1300.0|LPG & Benzin": [
     64.0
-  ],
-  "Kia|Pro Ceed|1500.0|Benzin": [
-    213.0
   ],
   "Kia|Pro Ceed|1500.0|Dizel": [
     113.0
@@ -69213,9 +58459,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|Pro Ceed|1600.0|Dizel": [
     115.0,
     128.0
-  ],
-  "Kia|Rio|0.0|LPG & Benzin": [
-    113.0
   ],
   "Kia|Rio|600.0|Benzin": [
     88.0
@@ -69231,15 +58474,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     85.0
   ],
   "Kia|Rio|1300.0|Benzin": [
-    75.0,
     82.0,
     88.0,
     113.0
   ],
   "Kia|Rio|1300.0|LPG & Benzin": [
     82.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Kia|Rio|1400.0|Benzin": [
     90.0,
@@ -69262,7 +58503,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Kia|Rio|1500.0|Dizel": [
     88.0,
-    97.0,
     110.0,
     113.0
   ],
@@ -69291,22 +58531,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|Shuma|1600.0|LPG & Benzin": [
     101.0
   ],
-  "Kia|Shuma|1800.0|LPG & Benzin": [
-    110.0
-  ],
   "Kia|Sorento|1500.0|Hibrit": [
-    188.0,
     213.0,
     238.0
   ],
-  "Kia|Sorento|1600.0|Dizel": [
-    180.0
-  ],
   "Kia|Sorento|1600.0|Hibrit": [
     180.0
-  ],
-  "Kia|Sorento|1700.0|Hibrit": [
-    238.0
   ],
   "Kia|Sorento|2000.0|Dizel": [
     185.0
@@ -69330,26 +58560,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     128.0,
     136.0
   ],
-  "Kia|Sportage|0.0|Benzin": [
-    163.0
-  ],
   "Kia|Sportage|1500.0|Benzin": [
     113.0,
     138.0,
-    163.0,
-    188.0,
-    238.0
+    188.0
   ],
   "Kia|Sportage|1500.0|Dizel": [
-    88.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Kia|Sportage|1500.0|Hibrit": [
     138.0,
-    163.0,
-    213.0,
-    238.0
+    163.0
   ],
   "Kia|Sportage|1500.0|LPG & Benzin": [
     138.0
@@ -69368,9 +58589,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Kia|Sportage|1600.0|Hibrit": [
     136.0,
     150.0,
-    160.0,
-    180.0,
-    230.0
+    160.0
   ],
   "Kia|Sportage|1600.0|LPG & Benzin": [
     132.0,
@@ -69378,42 +58597,26 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     177.0
   ],
   "Kia|Sportage|1700.0|Benzin": [
-    138.0,
-    188.0
-  ],
-  "Kia|Sportage|1700.0|Dizel": [
-    188.0
-  ],
-  "Kia|Sportage|1700.0|Hibrit": [
-    163.0
+    138.0
   ],
   "Kia|Sportage|1700.0|LPG & Benzin": [
     138.0
   ],
   "Kia|Sportage|1900.0|Dizel": [
     88.0,
-    113.0,
     138.0,
     188.0
   ],
   "Kia|Sportage|2000.0|Dizel": [
     83.0,
     112.0,
-    136.0,
     140.0,
     184.0
-  ],
-  "Kia|Stinger|1900.0|Benzin": [
-    238.0
   ],
   "Kia|Stonic|600.0|Benzin": [
     88.0
   ],
   "Kia|Stonic|1000.0|Benzin": [
-    100.0,
-    120.0
-  ],
-  "Kia|Stonic|1000.0|LPG & Benzin": [
     100.0
   ],
   "Kia|Stonic|1200.0|Benzin": [
@@ -69435,11 +58638,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0
   ],
   "Kia|Venga|1400.0|Dizel": [
-    75.0,
     90.0
-  ],
-  "Kia|Venga|1500.0|Dizel": [
-    138.0
   ],
   "Kia|Venga|1600.0|Benzin": [
     125.0
@@ -69449,9 +58648,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Kia|Venga|1600.0|LPG & Benzin": [
     125.0
-  ],
-  "Kia|XCeed|600.0|Benzin": [
-    138.0
   ],
   "Kia|XCeed|1000.0|Hibrit": [
     115.0
@@ -69468,27 +58664,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     160.0,
     163.0
   ],
-  "Kia|XCeed|1500.0|LPG & Benzin": [
-    160.0
-  ],
   "Kia|XCeed|1600.0|Dizel": [
     115.0,
     136.0
   ],
-  "Kia|XCeed|1700.0|Benzin": [
-    163.0
-  ],
-  "Lada|Kalina|1600.0|Benzin": [
-    80.0
-  ],
   "Lada|Kalina|1600.0|LPG & Benzin": [
     80.0
-  ],
-  "Lada|Nova|1500.0|LPG & Benzin": [
-    75.0
-  ],
-  "Lada|Samara|1100.0|LPG & Benzin": [
-    54.0
   ],
   "Lada|Samara|1300.0|LPG & Benzin": [
     65.0
@@ -69496,22 +58677,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Lada|Samara|1500.0|Benzin": [
     68.0,
     75.0,
-    78.0,
-    88.0
+    78.0
   ],
   "Lada|Samara|1500.0|LPG & Benzin": [
-    63.0,
     68.0,
     75.0,
-    78.0,
-    88.0
-  ],
-  "Lada|VAZ|1500.0|Benzin": [
-    71.0,
-    88.0
+    78.0
   ],
   "Lada|VAZ|1500.0|LPG & Benzin": [
-    63.0,
     75.0
   ],
   "Lada|Vega|1500.0|Benzin": [
@@ -69524,8 +58697,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     77.0,
     78.0,
     88.0,
-    93.0,
-    113.0
+    93.0
   ],
   "Lada|Vega|1600.0|Benzin": [
     90.0
@@ -69545,12 +58717,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Lancia|Delta|1600.0|Dizel": [
     120.0
   ],
-  "Lancia|Delta|1900.0|Dizel": [
-    190.0
-  ],
-  "Lancia|Thema|3000.0|Benzin": [
-    240.0
-  ],
   "Lancia|Thema|3000.0|Dizel": [
     240.0
   ],
@@ -69558,60 +58724,30 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     85.0
   ],
   "Lancia|Ypsilon|1200.0|Benzin": [
-    63.0,
     88.0
   ],
   "Lancia|Ypsilon|1200.0|Dizel": [
-    90.0,
     95.0
   ],
   "Lancia|Ypsilon|1200.0|LPG & Benzin": [
     69.0
   ],
-  "Lancia|Ypsilon|1300.0|Benzin": [
-    63.0
-  ],
   "Lancia|Ypsilon|1400.0|Benzin": [
     95.0
   ],
-  "Lancia|Ypsilon|1400.0|LPG & Benzin": [
-    95.0
-  ],
-  "Land Rover|Defender|1900.0|LPG & Benzin": [
-    63.0
-  ],
   "Land Rover|Defender|2300.0|Dizel": [
     63.0,
-    113.0,
-    163.0
-  ],
-  "Land Rover|Defender|2300.0|LPG & Benzin": [
-    138.0
+    113.0
   ],
   "Land Rover|Defender|2500.0|Dizel": [
     68.0,
-    83.0,
-    107.0,
-    122.0
+    107.0
   ],
   "Land Rover|Defender|2500.0|LPG & Benzin": [
     83.0
   ],
   "Land Rover|Defender|2800.0|Dizel": [
-    113.0,
-    188.0,
-    213.0
-  ],
-  "Land Rover|Defender|3300.0|Dizel": [
-    138.0,
-    188.0,
-    263.0
-  ],
-  "Land Rover|Defender|3800.0|LPG & Benzin": [
-    138.0
-  ],
-  "Land Rover|Defender|6000.0|Benzin": [
-    438.0
+    188.0
   ],
   "Land Rover|Discovery|2000.0|Dizel": [
     180.0,
@@ -69628,25 +58764,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     190.0
   ],
   "Land Rover|Discovery|2800.0|Dizel": [
-    138.0,
     188.0,
-    238.0,
     263.0
   ],
   "Land Rover|Discovery|3000.0|Dizel": [
     245.0
-  ],
-  "Land Rover|Discovery|4000.0|Benzin": [
-    184.0
-  ],
-  "Land Rover|Discovery|4000.0|LPG & Benzin": [
-    184.0
-  ],
-  "Land Rover|Discovery|4400.0|Benzin": [
-    300.0
-  ],
-  "Land Rover|Discovery Sport|1500.0|Benzin": [
-    309.0
   ],
   "Land Rover|Discovery Sport|1500.0|Hibrit": [
     309.0
@@ -69656,11 +58778,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Land Rover|Discovery Sport|1900.0|Dizel": [
     138.0,
-    163.0,
     188.0
-  ],
-  "Land Rover|Discovery Sport|2000.0|Benzin": [
-    240.0
   ],
   "Land Rover|Discovery Sport|2000.0|Dizel": [
     150.0,
@@ -69670,7 +58788,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Land Rover|Freelander|1800.0|Benzin": [
-    117.0,
     120.0
   ],
   "Land Rover|Freelander|1800.0|LPG & Benzin": [
@@ -69706,12 +58823,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Land Rover|Freelander|2500.0|Benzin": [
     177.0
   ],
-  "Land Rover|Freelander|2500.0|LPG & Benzin": [
-    177.0
-  ],
-  "Land Rover|Range Rover|2800.0|Dizel": [
-    288.0
-  ],
   "Land Rover|Range Rover|2900.0|Dizel": [
     177.0
   ],
@@ -69729,46 +58840,27 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     388.0
   ],
   "Land Rover|Range Rover|4300.0|Dizel": [
-    288.0,
     313.0
-  ],
-  "Land Rover|Range Rover|4300.0|LPG & Benzin": [
-    388.0
   ],
   "Land Rover|Range Rover|4400.0|Benzin": [
     286.0
   ],
   "Land Rover|Range Rover|4400.0|Dizel": [
-    308.0,
     340.0
   ],
   "Land Rover|Range Rover|4400.0|LPG & Benzin": [
     286.0
   ],
-  "Land Rover|Range Rover|4600.0|Benzin": [
-    225.0
-  ],
   "Land Rover|Range Rover|4600.0|LPG & Benzin": [
     217.0,
     225.0
-  ],
-  "Land Rover|Range Rover|4800.0|Benzin": [
-    213.0,
-    513.0
-  ],
-  "Land Rover|Range Rover|4800.0|LPG & Benzin": [
-    213.0
   ],
   "Land Rover|Range Rover Evoque|1500.0|Benzin": [
     160.0,
     163.0
   ],
   "Land Rover|Range Rover Evoque|1500.0|Hibrit": [
-    113.0,
-    160.0,
-    163.0,
-    309.0,
-    313.0
+    309.0
   ],
   "Land Rover|Range Rover Evoque|1900.0|Benzin": [
     238.0
@@ -69777,9 +58869,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     188.0
   ],
-  "Land Rover|Range Rover Evoque|1900.0|LPG & Benzin": [
-    238.0
-  ],
   "Land Rover|Range Rover Evoque|2000.0|Benzin": [
     240.0
   ],
@@ -69787,15 +58876,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0,
     180.0
   ],
-  "Land Rover|Range Rover Evoque|2200.0|Dizel": [
-    190.0
-  ],
   "Land Rover|Range Rover Evoque|2300.0|Dizel": [
-    138.0,
     188.0
-  ],
-  "Land Rover|Range Rover Sport|2000.0|Benzin": [
-    300.0
   ],
   "Land Rover|Range Rover Sport|2000.0|Dizel": [
     240.0
@@ -69804,7 +58886,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     190.0
   ],
   "Land Rover|Range Rover Sport|2800.0|Dizel": [
-    263.0,
     288.0,
     313.0
   ],
@@ -69813,21 +58894,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     292.0,
     306.0
   ],
-  "Land Rover|Range Rover Sport|3000.0|Hibrit": [
-    292.0,
-    340.0
-  ],
   "Land Rover|Range Rover Sport|3600.0|Dizel": [
     272.0
   ],
   "Land Rover|Range Rover Sport|4200.0|Benzin": [
     390.0
-  ],
-  "Land Rover|Range Rover Sport|4300.0|Benzin": [
-    288.0
-  ],
-  "Land Rover|Range Rover Velar|1900.0|Benzin": [
-    238.0
   ],
   "Land Rover|Range Rover Velar|1900.0|Dizel": [
     188.0,
@@ -69839,21 +58910,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Land Rover|Range Rover Velar|2000.0|Dizel": [
     180.0
   ],
-  "Lexus|CT|1800.0|Hibrit": [
-    136.0
-  ],
   "Lexus|ES|2500.0|Hibrit": [
-    178.0,
-    218.0
-  ],
-  "Lexus|ES|2500.0|LPG & Benzin": [
     178.0
-  ],
-  "Lexus|GS|1900.0|Benzin": [
-    238.0
-  ],
-  "Lexus|IS|1900.0|Benzin": [
-    238.0
   ],
   "Lexus|LBX|1500.0|Benzin": [
     136.0
@@ -69861,45 +58919,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Lexus|LBX|1500.0|Hibrit": [
     136.0
   ],
-  "Lexus|RX|1900.0|Benzin": [
-    238.0
-  ],
   "Lexus|RX|2300.0|Hibrit": [
     238.0
   ],
   "Lexus|RZ|400.0|Elektrik": [
     313.0
   ],
-  "Lincoln|Mark|4900.0|Benzin": [
-    228.0
-  ],
-  "Lincoln|Town Car|4800.0|Benzin": [
-    238.0
-  ],
-  "Lotus|Esprit|2300.0|Benzin": [
-    288.0
-  ],
-  "MG|EHS|1500.0|Benzin": [
-    258.0
-  ],
   "MG|EHS|1500.0|Hibrit": [
     258.0
-  ],
-  "MG|HS|0.0|Benzin": [
-    163.0
   ],
   "MG|HS|1500.0|Benzin": [
     162.0,
     163.0
-  ],
-  "MG|HS|1500.0|Hibrit": [
-    339.0
-  ],
-  "MG|HS|1500.0|LPG & Benzin": [
-    163.0
-  ],
-  "MG|Marvel R|1900.0|Elektrik": [
-    288.0
   ],
   "MG|ZS|600.0|Benzin": [
     113.0
@@ -69911,14 +58942,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     111.0
   ],
   "MG|ZS|1500.0|Benzin": [
-    106.0,
-    113.0
-  ],
-  "MG|ZS EV|600.0|Elektrik": [
-    138.0
-  ],
-  "Maserati|4 Serisi|2000.0|Benzin": [
-    240.0
+    106.0
   ],
   "Maserati|Ghibli|3000.0|Benzin": [
     275.0
@@ -69926,62 +58950,35 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Maserati|Ghibli|3000.0|Dizel": [
     275.0
   ],
-  "Maserati|GranTurismo|4200.0|Benzin": [
-    405.0,
-    413.0
-  ],
   "Maserati|GranTurismo|4700.0|Benzin": [
     440.0
-  ],
-  "Maserati|GranTurismo|4800.0|Benzin": [
-    438.0
-  ],
-  "Maserati|Levante|2800.0|Dizel": [
-    263.0
   ],
   "Maserati|Levante|3000.0|Dizel": [
     275.0
   ],
-  "Maserati|Quattroporte|3000.0|Benzin": [
-    410.0
-  ],
   "Maserati|Quattroporte|3000.0|Dizel": [
     275.0
   ],
-  "Maserati|Quattroporte|3800.0|Benzin": [
-    538.0
-  ],
   "Maserati|Quattroporte|4200.0|Benzin": [
-    388.0,
-    400.0
-  ],
-  "Maxus|e-Deliver|2000.0|Dizel": [
-    146.0
-  ],
-  "Mazda|121|1300.0|Benzin": [
-    72.0
+    388.0
   ],
   "Mazda|121|1300.0|LPG & Benzin": [
     73.0
   ],
   "Mazda|2|1300.0|Benzin": [
-    86.0,
-    88.0
+    86.0
   ],
   "Mazda|2|1300.0|LPG & Benzin": [
-    86.0,
-    88.0
+    86.0
   ],
   "Mazda|2|1500.0|Benzin": [
-    88.0,
     102.0,
     103.0,
     113.0
   ],
   "Mazda|2|1500.0|LPG & Benzin": [
     102.0,
-    103.0,
-    113.0
+    103.0
   ],
   "Mazda|3|1500.0|Benzin": [
     113.0,
@@ -69996,7 +58993,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mazda|3|1600.0|Benzin": [
     105.0,
-    109.0,
     115.0
   ],
   "Mazda|3|1600.0|Dizel": [
@@ -70007,14 +59003,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0
   ],
   "Mazda|323|1500.0|Benzin": [
-    63.0,
     88.0
   ],
   "Mazda|323|1500.0|LPG & Benzin": [
     63.0,
-    88.0,
-    113.0,
-    138.0
+    88.0
   ],
   "Mazda|323|1600.0|Benzin": [
     87.0,
@@ -70022,21 +59015,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mazda|323|1600.0|LPG & Benzin": [
     87.0,
-    88.0,
-    98.0
-  ],
-  "Mazda|323|1700.0|LPG & Benzin": [
     88.0
-  ],
-  "Mazda|323|1800.0|Benzin": [
-    131.0
   ],
   "Mazda|323|1800.0|LPG & Benzin": [
     114.0,
     131.0
-  ],
-  "Mazda|323|2000.0|Dizel": [
-    100.0
   ],
   "Mazda|5|1600.0|Dizel": [
     116.0
@@ -70048,9 +59031,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     163.0
   ],
-  "Mazda|6|1900.0|Dizel": [
-    113.0
-  ],
   "Mazda|6|1900.0|LPG & Benzin": [
     138.0
   ],
@@ -70060,75 +59040,37 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     155.0,
     165.0
   ],
-  "Mazda|6|2000.0|Dizel": [
-    143.0
-  ],
   "Mazda|6|2000.0|LPG & Benzin": [
     141.0,
-    147.0,
-    155.0
+    147.0
   ],
   "Mazda|6|2300.0|LPG & Benzin": [
     163.0
   ],
-  "Mazda|626|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Mazda|626|1600.0|Benzin": [
-    80.0
-  ],
   "Mazda|626|1600.0|LPG & Benzin": [
     80.0
   ],
-  "Mazda|626|1700.0|Benzin": [
-    113.0
-  ],
   "Mazda|626|1900.0|Benzin": [
-    63.0,
-    88.0,
-    113.0,
-    138.0
-  ],
-  "Mazda|626|1900.0|LPG & Benzin": [
-    88.0,
-    138.0
+    88.0
   ],
   "Mazda|626|2000.0|Benzin": [
-    90.0,
-    115.0,
-    136.0
+    115.0
   ],
   "Mazda|626|2000.0|LPG & Benzin": [
     90.0,
     115.0,
     136.0
   ],
-  "Mazda|929|2000.0|Benzin": [
-    101.0
-  ],
-  "Mazda|B2200|2200.0|Dizel": [
-    65.0
-  ],
   "Mazda|B2500|2300.0|Dizel": [
-    88.0,
     113.0,
-    138.0,
-    238.0
+    138.0
   ],
   "Mazda|B2500|2500.0|Dizel": [
-    78.0,
     86.0,
     109.0
   ],
-  "Mazda|BT50|2300.0|Dizel": [
-    138.0,
-    188.0
-  ],
   "Mazda|BT50|2500.0|Dizel": [
     143.0
-  ],
-  "Mazda|BT50|3000.0|Dizel": [
-    156.0
   ],
   "Mazda|CX-3|1500.0|Dizel": [
     105.0,
@@ -70147,62 +59089,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     277.0
   ],
   "Mazda|E 2200|2200.0|Dizel": [
-    64.0,
-    71.0
-  ],
-  "Mazda|Lantis|1600.0|LPG & Benzin": [
-    90.0
-  ],
-  "Mazda|Lantis|1700.0|Benzin": [
-    113.0
-  ],
-  "Mazda|Lantis|1800.0|Benzin": [
-    122.0
+    64.0
   ],
   "Mazda|Lantis|1800.0|LPG & Benzin": [
     122.0
   ],
-  "Mazda|MPV|1900.0|Benzin": [
-    138.0
-  ],
-  "Mazda|MPV|2200.0|LPG & Benzin": [
-    138.0
-  ],
   "Mazda|MX|1500.0|Benzin": [
-    113.0,
     131.0,
     138.0
-  ],
-  "Mazda|MX|1600.0|Benzin": [
-    115.0
-  ],
-  "Mazda|MX|1900.0|Benzin": [
-    138.0,
-    163.0
-  ],
-  "Mazda|Premacy|2000.0|Benzin": [
-    101.0
-  ],
-  "Mazda|Premacy|2000.0|Dizel": [
-    101.0
   ],
   "Mazda|RX|1300.0|Benzin": [
     188.0,
     231.0,
     238.0
-  ],
-  "Mazda|Xedos|2200.0|Benzin": [
-    163.0
-  ],
-  "Mazda|Xedos|2500.0|Benzin": [
-    167.0
-  ],
-  "Mazda|Xedos|2500.0|LPG & Benzin": [
-    167.0
-  ],
-  "Mercedes - Benz|190|1700.0|Benzin": [
-    88.0,
-    113.0
   ],
   "Mercedes - Benz|190|1800.0|Benzin": [
     109.0
@@ -70211,19 +59110,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     109.0
   ],
   "Mercedes - Benz|190|1900.0|Benzin": [
-    63.0,
     88.0,
-    113.0,
-    138.0,
-    188.0
+    113.0
   ],
   "Mercedes - Benz|190|1900.0|Dizel": [
     63.0,
     88.0
-  ],
-  "Mercedes - Benz|190|1900.0|LPG & Benzin": [
-    88.0,
-    113.0
   ],
   "Mercedes - Benz|190|2000.0|Benzin": [
     123.0
@@ -70235,14 +59127,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|190|2000.0|LPG & Benzin": [
     90.0,
     123.0
-  ],
-  "Mercedes - Benz|190|2200.0|Benzin": [
-    113.0,
-    138.0,
-    188.0
-  ],
-  "Mercedes - Benz|190|2200.0|Dizel": [
-    113.0
   ],
   "Mercedes - Benz|190|2300.0|Benzin": [
     136.0
@@ -70256,22 +59140,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|190|2600.0|Benzin": [
     160.0
   ],
-  "Mercedes - Benz|190|2600.0|LPG & Benzin": [
-    160.0
-  ],
-  "Mercedes - Benz|190|2800.0|Benzin": [
-    163.0
-  ],
-  "Mercedes - Benz|190|2800.0|LPG & Benzin": [
-    163.0
-  ],
-  "Mercedes - Benz|200|600.0|LPG & Benzin": [
-    113.0,
-    138.0
-  ],
-  "Mercedes - Benz|200|1300.0|Benzin": [
-    88.0
-  ],
   "Mercedes - Benz|200|1900.0|Benzin": [
     63.0,
     88.0,
@@ -70280,19 +59148,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|200|1900.0|Dizel": [
     63.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Mercedes - Benz|200|1900.0|LPG & Benzin": [
-    88.0,
     113.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Mercedes - Benz|200|2000.0|Benzin": [
-    75.0,
-    118.0,
-    136.0
+    118.0
   ],
   "Mercedes - Benz|200|2000.0|Dizel": [
     75.0
@@ -70301,171 +59164,63 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     118.0,
     136.0
   ],
-  "Mercedes - Benz|200|2300.0|Dizel": [
-    88.0
-  ],
-  "Mercedes - Benz|200|2300.0|LPG & Benzin": [
-    113.0
-  ],
-  "Mercedes - Benz|230|1700.0|LPG & Benzin": [
-    138.0
-  ],
   "Mercedes - Benz|230|2200.0|Benzin": [
     113.0
   ],
   "Mercedes - Benz|230|2200.0|LPG & Benzin": [
-    113.0,
-    163.0
+    113.0
   ],
   "Mercedes - Benz|230|2300.0|Benzin": [
+    132.0
+  ],
+  "Mercedes - Benz|230|2300.0|LPG & Benzin": [
     132.0,
     136.0,
     138.0
   ],
-  "Mercedes - Benz|230|2300.0|LPG & Benzin": [
-    88.0,
-    132.0,
-    136.0,
-    138.0,
-    213.0
-  ],
-  "Mercedes - Benz|240|2200.0|Benzin": [
-    63.0
-  ],
-  "Mercedes - Benz|240|2300.0|Dizel": [
-    63.0
-  ],
-  "Mercedes - Benz|250|2200.0|Benzin": [
-    88.0,
-    113.0
-  ],
-  "Mercedes - Benz|250|2200.0|Dizel": [
-    63.0,
-    88.0,
-    113.0
-  ],
   "Mercedes - Benz|250|2300.0|Dizel": [
-    63.0,
     88.0,
     113.0,
-    163.0,
     238.0
   ],
   "Mercedes - Benz|250|2500.0|Benzin": [
     126.0
   ],
   "Mercedes - Benz|250|2500.0|Dizel": [
-    94.0,
-    113.0
-  ],
-  "Mercedes - Benz|250|2800.0|Dizel": [
-    113.0,
-    188.0
-  ],
-  "Mercedes - Benz|260|2600.0|Benzin": [
-    160.0,
-    166.0
+    94.0
   ],
   "Mercedes - Benz|260|2600.0|LPG & Benzin": [
     160.0
   ],
-  "Mercedes - Benz|260|2800.0|Benzin": [
-    163.0
-  ],
   "Mercedes - Benz|260|2800.0|LPG & Benzin": [
-    113.0,
-    163.0,
-    188.0
-  ],
-  "Mercedes - Benz|280|600.0|LPG & Benzin": [
-    163.0
-  ],
-  "Mercedes - Benz|280|2300.0|LPG & Benzin": [
-    238.0
-  ],
-  "Mercedes - Benz|280|2800.0|Benzin": [
-    113.0,
     163.0
   ],
   "Mercedes - Benz|280|2800.0|LPG & Benzin": [
-    113.0,
     138.0,
-    163.0,
-    188.0
-  ],
-  "Mercedes - Benz|300|2200.0|Dizel": [
-    113.0
-  ],
-  "Mercedes - Benz|300|2300.0|Dizel": [
-    113.0
-  ],
-  "Mercedes - Benz|300|2300.0|LPG & Benzin": [
     188.0
   ],
   "Mercedes - Benz|300|2800.0|Benzin": [
-    88.0,
     113.0,
-    163.0,
     188.0
   ],
   "Mercedes - Benz|300|2800.0|Dizel": [
-    88.0,
     113.0,
     138.0,
     163.0
   ],
   "Mercedes - Benz|300|2800.0|LPG & Benzin": [
-    138.0,
-    188.0,
-    197.0
-  ],
-  "Mercedes - Benz|300|3000.0|Benzin": [
-    180.0
-  ],
-  "Mercedes - Benz|300|3000.0|Dizel": [
-    180.0
+    188.0
   ],
   "Mercedes - Benz|300|3000.0|LPG & Benzin": [
     180.0
   ],
-  "Mercedes - Benz|300|3200.0|Benzin": [
-    138.0,
-    231.0,
-    338.0
-  ],
   "Mercedes - Benz|300|3200.0|LPG & Benzin": [
-    113.0,
     231.0
-  ],
-  "Mercedes - Benz|300|3300.0|Dizel": [
-    288.0
-  ],
-  "Mercedes - Benz|300|3300.0|LPG & Benzin": [
-    213.0,
-    238.0
-  ],
-  "Mercedes - Benz|320|3200.0|Benzin": [
-    213.0
-  ],
-  "Mercedes - Benz|500|4800.0|Benzin": [
-    163.0,
-    238.0,
-    288.0,
-    313.0,
-    338.0,
-    388.0
-  ],
-  "Mercedes - Benz|500|4800.0|LPG & Benzin": [
-    313.0
-  ],
-  "Mercedes - Benz|500|5000.0|Benzin": [
-    326.0
   ],
   "Mercedes - Benz|560|5800.0|Benzin": [
     288.0
   ],
   "Mercedes - Benz|A|1300.0|Benzin": [
-    88.0,
     136.0,
     138.0,
     163.0
@@ -70484,18 +59239,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0,
     109.0,
     113.0,
-    138.0,
     163.0
   ],
   "Mercedes - Benz|A|1500.0|Dizel": [
-    107.0,
     109.0,
     113.0,
     138.0
   ],
   "Mercedes - Benz|A|1500.0|LPG & Benzin": [
     88.0,
-    95.0,
     113.0
   ],
   "Mercedes - Benz|A|1600.0|Benzin": [
@@ -70507,19 +59259,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0
   ],
   "Mercedes - Benz|A|1700.0|Benzin": [
-    88.0,
-    163.0
+    88.0
   ],
   "Mercedes - Benz|A|1700.0|Dizel": [
-    60.0,
     90.0,
     95.0
-  ],
-  "Mercedes - Benz|A|1700.0|Hibrit": [
-    138.0
-  ],
-  "Mercedes - Benz|A|1900.0|Benzin": [
-    388.0
   ],
   "Mercedes - Benz|A|2000.0|Benzin": [
     360.0
@@ -70530,8 +59274,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|B|1300.0|Benzin": [
     136.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Mercedes - Benz|B|1500.0|Benzin": [
     88.0,
@@ -70542,21 +59285,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|B|1500.0|Dizel": [
     109.0,
-    113.0,
-    138.0
-  ],
-  "Mercedes - Benz|B|1500.0|Hibrit": [
-    138.0
+    113.0
   ],
   "Mercedes - Benz|B|1500.0|LPG & Benzin": [
-    88.0,
     95.0
   ],
   "Mercedes - Benz|B|1600.0|Benzin": [
     122.0
-  ],
-  "Mercedes - Benz|B|1700.0|Benzin": [
-    113.0
   ],
   "Mercedes - Benz|B|1800.0|Dizel": [
     109.0
@@ -70565,22 +59300,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Mercedes - Benz|B|1900.0|Dizel": [
-    113.0,
-    138.0
-  ],
-  "Mercedes - Benz|B|2000.0|Benzin": [
-    109.0,
-    140.0
+    113.0
   ],
   "Mercedes - Benz|B|2000.0|Dizel": [
     109.0,
     140.0
   ],
-  "Mercedes - Benz|B|2000.0|LPG & Benzin": [
-    136.0
-  ],
   "Mercedes - Benz|C|1500.0|Benzin": [
-    113.0,
     138.0,
     163.0,
     184.0,
@@ -70593,9 +59319,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0,
     213.0
   ],
-  "Mercedes - Benz|C|1500.0|Elektrik": [
-    204.0
-  ],
   "Mercedes - Benz|C|1500.0|Hibrit": [
     184.0,
     188.0,
@@ -70603,8 +59326,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     213.0
   ],
   "Mercedes - Benz|C|1500.0|LPG & Benzin": [
-    163.0,
-    204.0
+    163.0
   ],
   "Mercedes - Benz|C|1600.0|Benzin": [
     136.0,
@@ -70619,17 +59341,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     156.0
   ],
   "Mercedes - Benz|C|1700.0|Benzin": [
-    113.0,
     138.0,
     163.0,
     188.0,
     213.0
   ],
-  "Mercedes - Benz|C|1700.0|Dizel": [
-    138.0
-  ],
   "Mercedes - Benz|C|1700.0|LPG & Benzin": [
-    113.0,
     138.0,
     163.0,
     188.0
@@ -70641,9 +59358,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0,
     184.0,
     192.0,
-    204.0
-  ],
-  "Mercedes - Benz|C|1800.0|Dizel": [
     204.0
   ],
   "Mercedes - Benz|C|1800.0|LPG & Benzin": [
@@ -70678,11 +59392,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     184.0
   ],
-  "Mercedes - Benz|C|2000.0|Hibrit": [
-    200.0
-  ],
   "Mercedes - Benz|C|2000.0|LPG & Benzin": [
-    129.0,
     136.0,
     163.0,
     192.0
@@ -70700,20 +59410,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0,
     204.0
   ],
-  "Mercedes - Benz|C|2200.0|Benzin": [
-    138.0,
-    150.0
-  ],
   "Mercedes - Benz|C|2200.0|Dizel": [
-    88.0,
-    95.0,
-    125.0
-  ],
-  "Mercedes - Benz|C|2200.0|LPG & Benzin": [
-    113.0
-  ],
-  "Mercedes - Benz|C|2300.0|Benzin": [
-    213.0
+    95.0
   ],
   "Mercedes - Benz|C|2300.0|Dizel": [
     113.0,
@@ -70721,54 +59419,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0,
     213.0
   ],
-  "Mercedes - Benz|C|2300.0|LPG & Benzin": [
-    213.0
-  ],
   "Mercedes - Benz|C|2500.0|Benzin": [
     204.0
-  ],
-  "Mercedes - Benz|C|2500.0|Dizel": [
-    113.0
-  ],
-  "Mercedes - Benz|C|2600.0|Benzin": [
-    170.0
-  ],
-  "Mercedes - Benz|C|2600.0|LPG & Benzin": [
-    170.0
   ],
   "Mercedes - Benz|C|2700.0|Dizel": [
     170.0
   ],
-  "Mercedes - Benz|C|2800.0|Benzin": [
-    188.0
-  ],
-  "Mercedes - Benz|C|2800.0|Dizel": [
-    63.0
-  ],
   "Mercedes - Benz|C|3000.0|Dizel": [
-    224.0,
-    231.0
-  ],
-  "Mercedes - Benz|C|3000.0|LPG & Benzin": [
-    231.0
-  ],
-  "Mercedes - Benz|C|3200.0|Benzin": [
-    218.0
+    224.0
   ],
   "Mercedes - Benz|C|3200.0|LPG & Benzin": [
     218.0
   ],
-  "Mercedes - Benz|C|3300.0|LPG & Benzin": [
-    213.0
-  ],
-  "Mercedes - Benz|C|6200.0|Benzin": [
-    463.0
-  ],
   "Mercedes - Benz|CL|4800.0|Benzin": [
     313.0
-  ],
-  "Mercedes - Benz|CLA|200.0|Dizel": [
-    163.0
   ],
   "Mercedes - Benz|CLA|400.0|Elektrik": [
     354.0
@@ -70784,28 +59448,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Mercedes - Benz|CLA|1500.0|Dizel": [
-    88.0,
     109.0,
     113.0
-  ],
-  "Mercedes - Benz|CLA|1500.0|Hibrit": [
-    188.0
   ],
   "Mercedes - Benz|CLA|1600.0|Benzin": [
     156.0
   ],
-  "Mercedes - Benz|CLA|1600.0|Dizel": [
-    156.0
-  ],
   "Mercedes - Benz|CLA|1900.0|Benzin": [
-    163.0,
-    363.0,
-    388.0,
-    413.0
+    388.0
   ],
   "Mercedes - Benz|CLA|2000.0|Benzin": [
-    360.0,
-    381.0
+    360.0
   ],
   "Mercedes - Benz|CLC|1500.0|Benzin": [
     138.0
@@ -70816,80 +59469,37 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|CLC|1600.0|LPG & Benzin": [
     129.0
   ],
-  "Mercedes - Benz|CLC|2100.0|Dizel": [
-    150.0
-  ],
   "Mercedes - Benz|CLK|1700.0|Benzin": [
-    163.0,
-    188.0
+    163.0
   ],
   "Mercedes - Benz|CLK|1700.0|LPG & Benzin": [
     163.0
   ],
   "Mercedes - Benz|CLK|1800.0|Benzin": [
-    163.0,
-    184.0
+    163.0
   ],
   "Mercedes - Benz|CLK|1800.0|LPG & Benzin": [
     163.0
   ],
   "Mercedes - Benz|CLK|1900.0|Benzin": [
-    138.0,
-    163.0,
-    188.0
+    163.0
   ],
   "Mercedes - Benz|CLK|1900.0|LPG & Benzin": [
     138.0,
     163.0
   ],
   "Mercedes - Benz|CLK|2000.0|Benzin": [
-    136.0,
     163.0
   ],
   "Mercedes - Benz|CLK|2000.0|LPG & Benzin": [
-    136.0,
     163.0,
     192.0
   ],
   "Mercedes - Benz|CLK|2200.0|Benzin": [
     188.0
   ],
-  "Mercedes - Benz|CLK|2300.0|Benzin": [
-    188.0
-  ],
-  "Mercedes - Benz|CLK|2300.0|LPG & Benzin": [
-    188.0
-  ],
-  "Mercedes - Benz|CLK|2600.0|Benzin": [
-    170.0
-  ],
-  "Mercedes - Benz|CLK|2600.0|LPG & Benzin": [
-    170.0
-  ],
-  "Mercedes - Benz|CLK|2700.0|Dizel": [
-    170.0
-  ],
-  "Mercedes - Benz|CLK|2800.0|Dizel": [
-    213.0
-  ],
-  "Mercedes - Benz|CLK|3000.0|Benzin": [
-    224.0
-  ],
-  "Mercedes - Benz|CLK|3200.0|Benzin": [
-    224.0
-  ],
   "Mercedes - Benz|CLK|3200.0|LPG & Benzin": [
-    218.0,
     224.0
-  ],
-  "Mercedes - Benz|CLK|3300.0|Benzin": [
-    363.0
-  ],
-  "Mercedes - Benz|CLK|5000.0|Benzin": [
-    306.0
-  ],
-  "Mercedes - Benz|CLK|5300.0|Benzin": [
-    363.0
   ],
   "Mercedes - Benz|CLS|1900.0|Benzin": [
     238.0
@@ -70897,19 +59507,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|CLS|2000.0|Dizel": [
     245.0
   ],
-  "Mercedes - Benz|CLS|2100.0|Benzin": [
-    204.0
-  ],
   "Mercedes - Benz|CLS|2100.0|Dizel": [
     204.0
-  ],
-  "Mercedes - Benz|CLS|2200.0|Benzin": [
-    213.0
   ],
   "Mercedes - Benz|CLS|2800.0|Benzin": [
     213.0,
     263.0,
-    288.0,
     338.0
   ],
   "Mercedes - Benz|CLS|2800.0|Dizel": [
@@ -70918,9 +59521,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|CLS|2900.0|Dizel": [
     340.0
-  ],
-  "Mercedes - Benz|CLS|3000.0|Benzin": [
-    224.0
   ],
   "Mercedes - Benz|CLS|3000.0|Dizel": [
     224.0,
@@ -70953,7 +59553,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     156.0
   ],
   "Mercedes - Benz|E|1700.0|Benzin": [
-    113.0,
     163.0,
     188.0,
     213.0
@@ -70976,7 +59575,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     204.0
   ],
   "Mercedes - Benz|E|1900.0|Benzin": [
-    113.0,
     138.0,
     163.0,
     188.0,
@@ -70985,24 +59583,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     263.0
   ],
   "Mercedes - Benz|E|1900.0|Dizel": [
-    63.0,
-    88.0,
-    113.0,
-    163.0,
     188.0
-  ],
-  "Mercedes - Benz|E|1900.0|Hibrit": [
-    213.0
   ],
   "Mercedes - Benz|E|1900.0|LPG & Benzin": [
     138.0,
     163.0,
-    188.0,
-    213.0
+    188.0
   ],
   "Mercedes - Benz|E|2000.0|Benzin": [
-    75.0,
-    95.0,
     109.0,
     136.0,
     163.0,
@@ -71010,25 +59598,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     194.0,
     211.0,
     245.0,
-    265.0,
-    299.0
+    265.0
   ],
   "Mercedes - Benz|E|2000.0|Dizel": [
     60.0,
     75.0,
-    194.0,
-    211.0
+    194.0
   ],
   "Mercedes - Benz|E|2000.0|LPG & Benzin": [
-    95.0,
     109.0,
     136.0,
     163.0,
     186.0
   ],
   "Mercedes - Benz|E|2100.0|Benzin": [
-    116.0,
-    122.0,
     143.0,
     150.0,
     170.0,
@@ -71037,32 +59620,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|E|2100.0|Dizel": [
     116.0,
     122.0,
-    136.0,
     143.0,
     150.0,
     170.0,
     204.0
   ],
   "Mercedes - Benz|E|2200.0|Benzin": [
-    113.0,
-    138.0,
-    150.0,
-    163.0,
-    213.0,
-    263.0
-  ],
-  "Mercedes - Benz|E|2200.0|Dizel": [
-    125.0,
-    163.0
-  ],
-  "Mercedes - Benz|E|2200.0|LPG & Benzin": [
-    113.0,
-    150.0
-  ],
-  "Mercedes - Benz|E|2300.0|Benzin": [
-    136.0,
     163.0,
     213.0
+  ],
+  "Mercedes - Benz|E|2200.0|Dizel": [
+    125.0
+  ],
+  "Mercedes - Benz|E|2200.0|LPG & Benzin": [
+    150.0
   ],
   "Mercedes - Benz|E|2300.0|Dizel": [
     88.0,
@@ -71073,20 +59644,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     213.0
   ],
   "Mercedes - Benz|E|2300.0|LPG & Benzin": [
-    113.0,
-    136.0,
     138.0,
-    150.0,
-    263.0
-  ],
-  "Mercedes - Benz|E|2400.0|LPG & Benzin": [
-    170.0
+    150.0
   ],
   "Mercedes - Benz|E|2600.0|Benzin": [
     177.0
   ],
   "Mercedes - Benz|E|2600.0|LPG & Benzin": [
-    170.0,
     177.0
   ],
   "Mercedes - Benz|E|2700.0|Benzin": [
@@ -71098,11 +59662,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     177.0
   ],
   "Mercedes - Benz|E|2800.0|Benzin": [
-    163.0,
     188.0,
     204.0,
     213.0,
-    238.0,
     263.0
   ],
   "Mercedes - Benz|E|2800.0|Dizel": [
@@ -71111,11 +59673,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0,
     188.0,
     213.0,
-    263.0,
-    288.0
+    263.0
   ],
   "Mercedes - Benz|E|2800.0|LPG & Benzin": [
-    163.0,
     188.0
   ],
   "Mercedes - Benz|E|2900.0|Dizel": [
@@ -71123,17 +59683,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|E|3000.0|Benzin": [
     211.0,
-    231.0,
     252.0
   ],
   "Mercedes - Benz|E|3000.0|Dizel": [
     88.0,
-    136.0,
     147.0,
-    177.0,
     190.0,
     211.0,
-    224.0,
     231.0,
     252.0,
     258.0,
@@ -71141,12 +59697,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|E|3200.0|Benzin": [
     213.0,
-    224.0,
-    238.0,
-    263.0
+    224.0
   ],
   "Mercedes - Benz|E|3200.0|Dizel": [
-    177.0,
     197.0,
     204.0
   ],
@@ -71155,30 +59708,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     224.0
   ],
   "Mercedes - Benz|E|3300.0|Benzin": [
-    213.0,
-    263.0,
-    288.0
+    213.0
   ],
   "Mercedes - Benz|E|3300.0|Dizel": [
-    213.0,
-    263.0,
     288.0
   ],
   "Mercedes - Benz|E|3300.0|LPG & Benzin": [
     213.0
   ],
-  "Mercedes - Benz|E|4000.0|Benzin": [
-    260.0
-  ],
   "Mercedes - Benz|E|4300.0|Benzin": [
-    279.0,
-    288.0
-  ],
-  "Mercedes - Benz|E|5000.0|Benzin": [
-    306.0
-  ],
-  "Mercedes - Benz|E|5400.0|Benzin": [
-    354.0
+    279.0
   ],
   "Mercedes - Benz|EQA|200.0|Elektrik": [
     190.0
@@ -71186,38 +59725,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|EQA|400.0|Elektrik": [
     292.0
   ],
-  "Mercedes - Benz|EQA|600.0|Elektrik": [
-    288.0
-  ],
   "Mercedes - Benz|EQB|200.0|Elektrik": [
     190.0
   ],
   "Mercedes - Benz|EQB|400.0|Elektrik": [
     292.0
   ],
-  "Mercedes - Benz|EQE|300.0|Elektrik": [
-    245.0
-  ],
   "Mercedes - Benz|EQE|400.0|Elektrik": [
     292.0
-  ],
-  "Mercedes - Benz|EQE|1500.0|Hibrit": [
-    188.0
-  ],
-  "Mercedes - Benz|G|2000.0|Benzin": [
-    245.0
-  ],
-  "Mercedes - Benz|G|2300.0|Dizel": [
-    125.0
-  ],
-  "Mercedes - Benz|G|2400.0|Benzin": [
-    170.0
-  ],
-  "Mercedes - Benz|G|2800.0|Dizel": [
-    213.0
-  ],
-  "Mercedes - Benz|G|3800.0|Dizel": [
-    238.0
   ],
   "Mercedes - Benz|GL|2800.0|Dizel": [
     213.0,
@@ -71262,24 +59777,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     211.0
   ],
   "Mercedes - Benz|GLC|2000.0|Dizel": [
-    194.0,
     245.0
   ],
   "Mercedes - Benz|GLC|2100.0|Dizel": [
-    170.0,
     204.0
-  ],
-  "Mercedes - Benz|GLC Coupe|1900.0|Benzin": [
-    213.0
   ],
   "Mercedes - Benz|GLC Coupe|2000.0|Benzin": [
     211.0
-  ],
-  "Mercedes - Benz|GLC Coupe|2000.0|Dizel": [
-    245.0
-  ],
-  "Mercedes - Benz|GLC Coupe|2100.0|Dizel": [
-    204.0
   ],
   "Mercedes - Benz|GLE|3000.0|Dizel": [
     258.0
@@ -71314,17 +59818,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     224.0,
     258.0
   ],
-  "Mercedes - Benz|ML|3800.0|Dizel": [
-    238.0
-  ],
   "Mercedes - Benz|ML|4000.0|Dizel": [
     250.0
-  ],
-  "Mercedes - Benz|ML|5300.0|Benzin": [
-    338.0
-  ],
-  "Mercedes - Benz|ML|5400.0|LPG & Benzin": [
-    347.0
   ],
   "Mercedes - Benz|R|2800.0|Dizel": [
     213.0
@@ -71335,11 +59830,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|R|3300.0|Benzin": [
     263.0
   ],
-  "Mercedes - Benz|S|2300.0|Dizel": [
-    288.0
-  ],
   "Mercedes - Benz|S|2800.0|Benzin": [
-    163.0,
     238.0,
     263.0
   ],
@@ -71350,11 +59841,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|S|3000.0|Benzin": [
     165.0,
-    235.0,
-    258.0
+    235.0
   ],
   "Mercedes - Benz|S|3000.0|Dizel": [
-    177.0,
     235.0,
     258.0
   ],
@@ -71375,27 +59864,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|S|3200.0|LPG & Benzin": [
     224.0,
-    231.0,
-    238.0
+    231.0
   ],
   "Mercedes - Benz|S|3300.0|Benzin": [
-    213.0,
     238.0,
     263.0
   ],
   "Mercedes - Benz|S|3300.0|Dizel": [
-    138.0,
-    213.0,
-    263.0,
-    288.0
+    213.0
   ],
   "Mercedes - Benz|S|3300.0|LPG & Benzin": [
     213.0,
-    238.0,
-    263.0
-  ],
-  "Mercedes - Benz|S|3400.0|Dizel": [
-    150.0
+    238.0
   ],
   "Mercedes - Benz|S|3500.0|Benzin": [
     272.0
@@ -71418,16 +59898,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|S|3800.0|LPG & Benzin": [
     238.0
   ],
-  "Mercedes - Benz|S|4000.0|Dizel": [
-    250.0
-  ],
   "Mercedes - Benz|S|4800.0|Benzin": [
-    313.0,
-    463.0
-  ],
-  "Mercedes - Benz|S|4800.0|LPG & Benzin": [
-    313.0,
-    363.0
+    313.0
   ],
   "Mercedes - Benz|S|5000.0|Benzin": [
     307.0
@@ -71436,22 +59908,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     307.0
   ],
   "Mercedes - Benz|S|5200.0|Benzin": [
-    388.0,
-    488.0
+    388.0
   ],
   "Mercedes - Benz|S|5300.0|Benzin": [
     388.0,
     488.0
-  ],
-  "Mercedes - Benz|S|5800.0|Benzin": [
-    367.0
-  ],
-  "Mercedes - Benz|S|6200.0|Benzin": [
-    513.0
-  ],
-  "Mercedes - Benz|SL|3200.0|Benzin": [
-    224.0,
-    238.0
   ],
   "Mercedes - Benz|SL|4800.0|Benzin": [
     313.0
@@ -71460,32 +59921,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Mercedes - Benz|SLK|1700.0|Benzin": [
-    163.0,
     188.0
   ],
   "Mercedes - Benz|SLK|1900.0|Benzin": [
-    163.0,
     188.0
-  ],
-  "Mercedes - Benz|SLK|2000.0|Benzin": [
-    136.0,
-    163.0,
-    192.0
-  ],
-  "Mercedes - Benz|SLK|2000.0|LPG & Benzin": [
-    192.0
-  ],
-  "Mercedes - Benz|SLK|2300.0|Benzin": [
-    193.0
-  ],
-  "Mercedes - Benz|Sprinter|100.0|Dizel": [
-    129.0
   ],
   "Mercedes - Benz|Sprinter|1800.0|Dizel": [
     151.0
   ],
   "Mercedes - Benz|Sprinter|2000.0|Dizel": [
-    101.0,
     126.0,
     151.0,
     170.0,
@@ -71496,23 +59940,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Mercedes - Benz|Sprinter|2200.0|Dizel": [
-    109.0,
     129.0
   ],
-  "Mercedes - Benz|Sprinter|2300.0|Dizel": [
-    79.0
-  ],
-  "Mercedes - Benz|Sprinter|2500.0|Dizel": [
-    76.0
-  ],
   "Mercedes - Benz|Sprinter|2900.0|Dizel": [
-    102.0,
     122.0
-  ],
-  "Mercedes - Benz|V Serisi|2000.0|Dizel": [
-    136.0,
-    176.0,
-    226.0
   ],
   "Mercedes - Benz|Vaneo|1600.0|LPG & Benzin": [
     102.0
@@ -71520,37 +59951,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|Vaneo|1700.0|Dizel": [
     91.0
   ],
-  "Mercedes - Benz|Viano|0.0|Dizel": [
-    2200.0
-  ],
   "Mercedes - Benz|Viano|2000.0|Dizel": [
     126.0,
-    151.0,
-    176.0
+    151.0
   ],
   "Mercedes - Benz|Viano|2100.0|Dizel": [
-    109.0,
-    150.0,
-    160.0
-  ],
-  "Mercedes - Benz|Viano|2200.0|Dizel": [
-    163.0
+    150.0
   ],
   "Mercedes - Benz|Vito|0.0|Dizel": [
-    100.0,
-    150.0,
-    163.0
+    150.0
   ],
   "Mercedes - Benz|Vito|100.0|Dizel": [
-    114.0,
-    136.0
-  ],
-  "Mercedes - Benz|Vito|300.0|Dizel": [
     114.0
   ],
   "Mercedes - Benz|Vito|1300.0|Dizel": [
-    101.0,
-    126.0
+    101.0
   ],
   "Mercedes - Benz|Vito|1600.0|Dizel": [
     101.0,
@@ -71558,7 +59973,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     126.0
   ],
   "Mercedes - Benz|Vito|1800.0|Dizel": [
-    76.0,
     101.0,
     126.0,
     136.0,
@@ -71568,7 +59982,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     226.0
   ],
   "Mercedes - Benz|Vito|2000.0|Dizel": [
-    76.0,
     101.0,
     126.0,
     136.0,
@@ -71578,12 +59991,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     190.0,
     201.0,
     226.0,
-    237.0,
-    251.0,
-    276.0
-  ],
-  "Mercedes - Benz|Vito|2000.0|LPG & Benzin": [
-    129.0
+    237.0
   ],
   "Mercedes - Benz|Vito|2100.0|Dizel": [
     88.0,
@@ -71597,19 +60005,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     190.0
   ],
   "Mercedes - Benz|Vito|2200.0|Dizel": [
-    82.0,
     102.0,
     122.0,
-    136.0,
-    163.0,
-    190.0
+    163.0
   ],
   "Mercedes - Benz|Vito|2300.0|Dizel": [
     79.0,
     98.0
-  ],
-  "Mercedes - Benz|Vito|2500.0|Dizel": [
-    226.0
   ],
   "Mercedes - Benz|X|2300.0|Dizel": [
     188.0
@@ -71617,20 +60019,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|X|3000.0|Dizel": [
     258.0
   ],
-  "Mercury|Cougar|2500.0|Benzin": [
-    170.0
-  ],
-  "Mini|Cooper|1300.0|Elektrik": [
-    188.0
-  ],
   "Mini|Cooper|1500.0|Benzin": [
-    88.0,
     113.0,
     136.0,
     138.0,
     156.0,
-    163.0,
-    188.0
+    163.0
   ],
   "Mini|Cooper|1500.0|Dizel": [
     116.0
@@ -71646,21 +60040,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     112.0
   ],
   "Mini|Cooper|1600.0|LPG & Benzin": [
-    115.0,
-    120.0
-  ],
-  "Mini|Cooper|1700.0|Benzin": [
-    113.0
-  ],
-  "Mini|Cooper|1900.0|Elektrik": [
-    188.0
+    115.0
   ],
   "Mini|Cooper Clubman|1500.0|Benzin": [
-    116.0,
     136.0,
-    138.0,
-    163.0,
-    188.0
+    138.0
   ],
   "Mini|Cooper Clubman|1500.0|Dizel": [
     116.0
@@ -71670,12 +60054,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     175.0
   ],
   "Mini|Cooper S|1500.0|Benzin": [
-    113.0,
     163.0,
     188.0
   ],
   "Mini|Cooper S|1600.0|Benzin": [
-    163.0,
     170.0,
     175.0,
     184.0
@@ -71683,30 +60065,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mini|Cooper S|1700.0|Benzin": [
     163.0
   ],
-  "Mini|Cooper S|1900.0|Benzin": [
-    188.0
-  ],
-  "Mini|Cooper S|2000.0|Benzin": [
-    192.0
-  ],
   "Mini|Countryman|1500.0|Benzin": [
-    88.0,
     113.0,
     136.0,
     138.0,
-    188.0,
-    213.0
+    188.0
   ],
   "Mini|Countryman|1500.0|Dizel": [
     116.0
   ],
   "Mini|Countryman|1500.0|Hibrit": [
-    163.0,
     170.0
   ],
   "Mini|Countryman|1500.0|LPG & Benzin": [
-    113.0,
-    136.0
+    113.0
   ],
   "Mini|Countryman|1600.0|Benzin": [
     98.0,
@@ -71718,12 +60090,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mini|Countryman|1600.0|Dizel": [
     112.0
   ],
-  "Mini|Countryman|1900.0|Benzin": [
-    238.0
-  ],
-  "Mini|Countryman|2000.0|Benzin": [
-    300.0
-  ],
   "Mini|John Cooper|1500.0|Benzin": [
     213.0
   ],
@@ -71732,9 +60098,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mini|John Cooper|2000.0|Benzin": [
     306.0
-  ],
-  "Mini|One|1300.0|Benzin": [
-    88.0
   ],
   "Mini|One|1400.0|Benzin": [
     95.0
@@ -71745,15 +60108,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mini|One|1600.0|Benzin": [
     98.0
   ],
-  "Mini|One|1600.0|LPG & Benzin": [
-    90.0
-  ],
-  "Mini|One|1900.0|LPG & Benzin": [
-    50.0
-  ],
-  "Mitsubishi|ASX|1500.0|Benzin": [
-    113.0
-  ],
   "Mitsubishi|ASX|1600.0|Benzin": [
     117.0
   ],
@@ -71763,9 +60117,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mitsubishi|ASX|1600.0|LPG & Benzin": [
     117.0
   ],
-  "Mitsubishi|Attrage|600.0|Benzin": [
-    88.0
-  ],
   "Mitsubishi|Attrage|1200.0|Benzin": [
     80.0,
     88.0
@@ -71774,8 +60125,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     80.0
   ],
   "Mitsubishi|Carisma|1500.0|LPG & Benzin": [
-    88.0,
-    113.0
+    88.0
   ],
   "Mitsubishi|Carisma|1600.0|Benzin": [
     90.0,
@@ -71786,14 +60136,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     103.0
   ],
-  "Mitsubishi|Carisma|1700.0|Benzin": [
-    113.0
-  ],
-  "Mitsubishi|Carisma|1700.0|LPG & Benzin": [
-    113.0
-  ],
   "Mitsubishi|Carisma|1800.0|Benzin": [
-    115.0,
     125.0
   ],
   "Mitsubishi|Carisma|1800.0|LPG & Benzin": [
@@ -71806,12 +60149,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0,
     115.0
   ],
-  "Mitsubishi|Colt|1100.0|Benzin": [
-    75.0
-  ],
-  "Mitsubishi|Colt|1200.0|Benzin": [
-    63.0
-  ],
   "Mitsubishi|Colt|1300.0|Benzin": [
     88.0,
     95.0
@@ -71820,68 +60157,31 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0
   ],
   "Mitsubishi|Colt|1500.0|Benzin": [
-    88.0,
-    109.0,
-    138.0,
-    150.0
+    138.0
   ],
   "Mitsubishi|Colt|1500.0|Dizel": [
     95.0
   ],
   "Mitsubishi|Colt|1500.0|LPG & Benzin": [
-    88.0,
     109.0
   ],
   "Mitsubishi|Eclipse Cross|1500.0|Benzin": [
     163.0
   ],
-  "Mitsubishi|Galant|1600.0|LPG & Benzin": [
-    75.0
-  ],
-  "Mitsubishi|Galant|1700.0|Benzin": [
-    88.0
-  ],
   "Mitsubishi|Galant|1800.0|LPG & Benzin": [
     90.0
   ],
-  "Mitsubishi|Grandis|1900.0|Dizel": [
-    138.0
-  ],
-  "Mitsubishi|Grandis|2000.0|Dizel": [
-    136.0
-  ],
-  "Mitsubishi|Grandis|2200.0|LPG & Benzin": [
-    163.0
-  ],
-  "Mitsubishi|L 200|0.0|Dizel": [
-    88.0
-  ],
-  "Mitsubishi|L 200|1900.0|Benzin": [
-    113.0
-  ],
-  "Mitsubishi|L 200|1900.0|Dizel": [
-    88.0
-  ],
-  "Mitsubishi|L 200|2300.0|Benzin": [
-    150.0
-  ],
   "Mitsubishi|L 200|2300.0|Dizel": [
-    63.0,
     88.0,
     113.0,
     138.0,
     150.0,
     163.0,
-    188.0,
-    213.0,
-    238.0
+    188.0
   ],
   "Mitsubishi|L 200|2400.0|Dizel": [
     154.0,
     181.0
-  ],
-  "Mitsubishi|L 200|2500.0|Benzin": [
-    136.0
   ],
   "Mitsubishi|L 200|2500.0|Dizel": [
     70.0,
@@ -71889,21 +60189,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     115.0,
     136.0,
-    167.0,
     178.0
-  ],
-  "Mitsubishi|L 200|2800.0|Dizel": [
-    25.0,
-    88.0,
-    113.0,
-    138.0
-  ],
-  "Mitsubishi|L 300|500.0|Dizel": [
-    251.0
-  ],
-  "Mitsubishi|L 300|2000.0|Benzin": [
-    87.0,
-    106.0
   ],
   "Mitsubishi|L 300|2000.0|Dizel": [
     51.0,
@@ -71914,17 +60200,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     84.0
   ],
-  "Mitsubishi|Lancer|1300.0|Benzin": [
-    82.0
-  ],
   "Mitsubishi|Lancer|1300.0|LPG & Benzin": [
     82.0
   ],
   "Mitsubishi|Lancer|1500.0|Benzin": [
     88.0,
     109.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Mitsubishi|Lancer|1500.0|LPG & Benzin": [
     90.0,
@@ -71939,46 +60221,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     98.0,
     117.0
   ],
-  "Mitsubishi|Lancer|1700.0|Benzin": [
-    113.0,
-    138.0
-  ],
-  "Mitsubishi|Lancer|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Mitsubishi|Lancer|1800.0|LPG & Benzin": [
-    143.0
-  ],
-  "Mitsubishi|Lancer|1900.0|LPG & Benzin": [
-    113.0
-  ],
   "Mitsubishi|Lancer Evolution|1900.0|Benzin": [
-    263.0,
     288.0
-  ],
-  "Mitsubishi|Lancer Evolution|2000.0|Benzin": [
-    280.0,
-    295.0
   ],
   "Mitsubishi|Outlander|2000.0|Dizel": [
     140.0
   ],
   "Mitsubishi|Outlander|2000.0|LPG & Benzin": [
-    136.0,
-    202.0
-  ],
-  "Mitsubishi|Outlander|2400.0|LPG & Benzin": [
-    160.0
+    136.0
   ],
   "Mitsubishi|Pajero|1900.0|Benzin": [
-    120.0,
-    138.0
+    120.0
   ],
   "Mitsubishi|Pajero|2000.0|Benzin": [
     129.0
-  ],
-  "Mitsubishi|Pajero|2300.0|Dizel": [
-    88.0
   ],
   "Mitsubishi|Pajero|2500.0|Dizel": [
     97.0
@@ -71986,12 +60242,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mitsubishi|Pajero|2800.0|Dizel": [
     125.0
   ],
-  "Mitsubishi|Pajero|3200.0|Dizel": [
-    160.0
-  ],
   "Mitsubishi|Pajero|3300.0|Dizel": [
-    163.0,
-    188.0
+    163.0
   ],
   "Mitsubishi|Space Star|600.0|Benzin": [
     63.0
@@ -71999,41 +60251,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mitsubishi|Space Star|1200.0|Benzin": [
     63.0,
     71.0,
-    80.0,
-    88.0
-  ],
-  "Mitsubishi|Space Star|1200.0|LPG & Benzin": [
-    63.0
-  ],
-  "Mitsubishi|Space Star|1300.0|Benzin": [
-    82.0
-  ],
-  "Mitsubishi|Space Star|1300.0|LPG & Benzin": [
-    82.0,
-    86.0
+    80.0
   ],
   "Mitsubishi|Space Star|1600.0|LPG & Benzin": [
     98.0
   ],
-  "Mitsubishi|Space Star|1900.0|Dizel": [
-    102.0,
-    115.0
-  ],
-  "Nissan|100 NX|1600.0|Benzin": [
-    90.0
-  ],
-  "Nissan|100 NX|1600.0|LPG & Benzin": [
-    90.0
-  ],
-  "Nissan|200 SX|1900.0|Benzin": [
-    188.0
-  ],
-  "Nissan|200 SX|2000.0|Benzin": [
-    200.0
-  ],
   "Nissan|350 Z|3200.0|Benzin": [
-    288.0,
-    313.0
+    288.0
   ],
   "Nissan|350 Z|3300.0|Benzin": [
     288.0
@@ -72045,18 +60269,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0,
     98.0
   ],
-  "Nissan|Almera|1500.0|Dizel": [
-    88.0,
-    98.0
-  ],
   "Nissan|Almera|1500.0|LPG & Benzin": [
     90.0,
-    98.0,
-    113.0,
-    138.0
-  ],
-  "Nissan|Almera|1600.0|Benzin": [
-    100.0
+    98.0
   ],
   "Nissan|Almera|1600.0|LPG & Benzin": [
     100.0
@@ -72067,42 +60282,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Almera|1800.0|LPG & Benzin": [
     114.0
   ],
-  "Nissan|Almera|2000.0|Dizel": [
-    75.0
-  ],
-  "Nissan|Almera|2200.0|Dizel": [
-    88.0
-  ],
-  "Nissan|Altima|2300.0|LPG & Benzin": [
-    138.0
-  ],
-  "Nissan|Bluebird|2000.0|Dizel": [
-    58.0
-  ],
-  "Nissan|Country|2300.0|Dizel": [
-    138.0
-  ],
   "Nissan|Country|2500.0|Dizel": [
     133.0
-  ],
-  "Nissan|GT-R|3800.0|Benzin": [
-    485.0
   ],
   "Nissan|Juke|600.0|Benzin": [
     113.0
   ],
   "Nissan|Juke|1000.0|Benzin": [
-    92.0,
     115.0
   ],
   "Nissan|Juke|1200.0|Benzin": [
     115.0
-  ],
-  "Nissan|Juke|1200.0|LPG & Benzin": [
-    115.0
-  ],
-  "Nissan|Juke|1300.0|LPG & Benzin": [
-    25.0
   ],
   "Nissan|Juke|1500.0|Benzin": [
     113.0
@@ -72118,25 +60308,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     117.0,
     190.0
   ],
-  "Nissan|Juke|1600.0|Dizel": [
-    117.0
-  ],
   "Nissan|Juke|1600.0|LPG & Benzin": [
     117.0,
     190.0
   ],
-  "Nissan|Laurel Altima|1900.0|LPG & Benzin": [
-    88.0
-  ],
-  "Nissan|Laurel Altima|2000.0|LPG & Benzin": [
-    125.0,
-    150.0
-  ],
   "Nissan|Maxima|1900.0|Benzin": [
-    163.0
-  ],
-  "Nissan|Maxima|1900.0|LPG & Benzin": [
-    138.0,
     163.0
   ],
   "Nissan|Maxima|2000.0|LPG & Benzin": [
@@ -72155,13 +60331,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Micra|1200.0|Benzin": [
     65.0,
     80.0,
-    88.0,
-    98.0
+    88.0
   ],
   "Nissan|Micra|1200.0|LPG & Benzin": [
     65.0,
-    80.0,
-    98.0
+    80.0
   ],
   "Nissan|Micra|1300.0|Benzin": [
     63.0,
@@ -72170,10 +60344,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Nissan|Micra|1300.0|LPG & Benzin": [
-    25.0,
     63.0,
     75.0,
-    82.0,
     88.0
   ],
   "Nissan|Micra|1400.0|Benzin": [
@@ -72189,15 +60361,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Micra|1500.0|Dizel": [
     82.0,
     88.0
-  ],
-  "Nissan|Murano|3300.0|Benzin": [
-    263.0
-  ],
-  "Nissan|NX Coupe|1600.0|Benzin": [
-    90.0
-  ],
-  "Nissan|Navara|2300.0|Benzin": [
-    190.0
   ],
   "Nissan|Navara|2300.0|Dizel": [
     138.0,
@@ -72229,16 +60392,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Nissan|Note|1500.0|Benzin": [
     86.0,
-    90.0,
     113.0
   ],
   "Nissan|Note|1500.0|Dizel": [
     63.0,
-    68.0,
     86.0,
     90.0,
-    103.0,
-    113.0
+    103.0
   ],
   "Nissan|Note|1500.0|LPG & Benzin": [
     113.0
@@ -72249,22 +60409,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Note|1600.0|LPG & Benzin": [
     110.0
   ],
-  "Nissan|Pathfinder|3300.0|Benzin": [
-    163.0
-  ],
   "Nissan|Pathfinder|3300.0|LPG & Benzin": [
-    150.0,
     163.0,
-    170.0,
-    213.0
+    170.0
   ],
   "Nissan|Pick Up|2500.0|Dizel": [
-    80.0,
     83.0
   ],
   "Nissan|Pick Up|2800.0|Dizel": [
-    88.0,
-    138.0
+    88.0
   ],
   "Nissan|Primera|1500.0|Benzin": [
     88.0,
@@ -72275,7 +60428,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Nissan|Primera|1600.0|Benzin": [
-    90.0,
     100.0,
     106.0,
     109.0
@@ -72296,9 +60448,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0,
     138.0
   ],
-  "Nissan|Primera|1900.0|Dizel": [
-    120.0
-  ],
   "Nissan|Primera|1900.0|LPG & Benzin": [
     138.0
   ],
@@ -72313,25 +60462,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     140.0,
     150.0
   ],
-  "Nissan|Primera|2200.0|Dizel": [
-    126.0
-  ],
   "Nissan|Pulsar|600.0|Benzin": [
     113.0
   ],
   "Nissan|Pulsar|1200.0|Benzin": [
     115.0
   ],
-  "Nissan|Pulsar|1200.0|LPG & Benzin": [
-    115.0
-  ],
   "Nissan|Pulsar|1500.0|Dizel": [
     110.0
-  ],
-  "Nissan|Qashqai|0.0|Dizel": [
-    25.0,
-    113.0,
-    138.0
   ],
   "Nissan|Qashqai|600.0|Benzin": [
     113.0
@@ -72343,18 +60481,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Nissan|Qashqai|1300.0|Benzin": [
-    113.0,
-    138.0,
     160.0,
-    163.0,
-    188.0
+    163.0
   ],
   "Nissan|Qashqai|1300.0|Hibrit": [
     158.0,
     163.0
-  ],
-  "Nissan|Qashqai|1300.0|LPG & Benzin": [
-    160.0
   ],
   "Nissan|Qashqai|1500.0|Benzin": [
     113.0,
@@ -72382,17 +60514,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Qashqai|1600.0|LPG & Benzin": [
     115.0
   ],
-  "Nissan|Qashqai|1700.0|Benzin": [
-    188.0
-  ],
-  "Nissan|Qashqai|1700.0|Dizel": [
-    138.0
-  ],
   "Nissan|Qashqai|2000.0|Dizel": [
     150.0
   ],
   "Nissan|Qashqai+2|1500.0|Dizel": [
-    88.0,
     110.0
   ],
   "Nissan|Qashqai+2|1600.0|LPG & Benzin": [
@@ -72404,12 +60529,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Rally Raid|2500.0|Dizel": [
     133.0
   ],
-  "Nissan|Skystar|1500.0|Dizel": [
-    113.0
-  ],
   "Nissan|Skystar|2300.0|Dizel": [
     88.0,
-    113.0,
     138.0
   ],
   "Nissan|Skystar|2500.0|Dizel": [
@@ -72417,11 +60538,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Nissan|Skystar|2800.0|Dizel": [
     88.0,
-    113.0,
     138.0
-  ],
-  "Nissan|Sunny|1500.0|Benzin": [
-    88.0
   ],
   "Nissan|Sunny|1500.0|LPG & Benzin": [
     88.0
@@ -72431,19 +60548,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Nissan|Sunny|1600.0|LPG & Benzin": [
     90.0
-  ],
-  "Nissan|Sunny|1700.0|Benzin": [
-    138.0
-  ],
-  "Nissan|Sunny|2000.0|Dizel": [
-    75.0
-  ],
-  "Nissan|Terrano|0.0|Dizel": [
-    113.0,
-    213.0
-  ],
-  "Nissan|Terrano|2400.0|Benzin": [
-    116.0
   ],
   "Nissan|Terrano|2400.0|LPG & Benzin": [
     116.0
@@ -72457,19 +60561,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Nissan|Terrano|3000.0|Dizel": [
     154.0
   ],
-  "Nissan|Townstar|1300.0|Benzin": [
-    130.0
-  ],
-  "Nissan|Vanette|2000.0|Dizel": [
-    101.0
-  ],
   "Nissan|X-Trail|1300.0|Benzin": [
     160.0,
     163.0
   ],
   "Nissan|X-Trail|1500.0|Benzin": [
     163.0,
-    188.0,
     213.0
   ],
   "Nissan|X-Trail|1500.0|Dizel": [
@@ -72489,27 +60586,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     140.0
   ],
   "Nissan|X-Trail|2000.0|Dizel": [
-    141.0,
     150.0
   ],
   "Nissan|X-Trail|2000.0|LPG & Benzin": [
     140.0
-  ],
-  "Opel|Adam|1000.0|Benzin": [
-    115.0
-  ],
-  "Opel|Adam|1200.0|Benzin": [
-    70.0
-  ],
-  "Opel|Adam|1200.0|LPG & Benzin": [
-    70.0
-  ],
-  "Opel|Adam|1300.0|Benzin": [
-    63.0,
-    88.0
-  ],
-  "Opel|Adam|1400.0|Benzin": [
-    87.0
   ],
   "Opel|Agila|1200.0|Benzin": [
     75.0
@@ -72518,26 +60598,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0
   ],
   "Opel|Antara|2000.0|Dizel": [
-    127.0,
     150.0
-  ],
-  "Opel|Ascona|1300.0|LPG & Benzin": [
-    75.0
-  ],
-  "Opel|Astra|0.0|Benzin": [
-    138.0
-  ],
-  "Opel|Astra|0.0|Dizel": [
-    88.0
   ],
   "Opel|Astra|0.0|LPG & Benzin": [
     113.0
   ],
   "Opel|Astra|600.0|Benzin": [
     113.0,
-    138.0
-  ],
-  "Opel|Astra|600.0|Dizel": [
     138.0
   ],
   "Opel|Astra|1000.0|Benzin": [
@@ -72563,22 +60630,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     145.0
   ],
   "Opel|Astra|1300.0|Dizel": [
-    88.0,
-    113.0
+    88.0
   ],
   "Opel|Astra|1300.0|LPG & Benzin": [
     63.0,
     88.0,
-    113.0,
     138.0
   ],
   "Opel|Astra|1400.0|Benzin": [
-    54.0,
     60.0,
     82.0,
     90.0,
     100.0,
-    115.0,
     140.0,
     150.0
   ],
@@ -72588,30 +60651,25 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     82.0,
     90.0,
     100.0,
-    140.0,
-    150.0
+    140.0
   ],
   "Opel|Astra|1500.0|Benzin": [
     63.0,
     88.0,
     113.0,
     122.0,
-    138.0,
-    188.0
+    138.0
   ],
   "Opel|Astra|1500.0|Dizel": [
     113.0,
     122.0,
-    132.0,
     138.0
   ],
   "Opel|Astra|1500.0|LPG & Benzin": [
-    25.0,
     63.0,
     88.0,
     113.0,
-    138.0,
-    188.0
+    138.0
   ],
   "Opel|Astra|1600.0|Benzin": [
     71.0,
@@ -72621,11 +60679,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     115.0,
     136.0,
-    180.0,
-    200.0
+    180.0
   ],
   "Opel|Astra|1600.0|Dizel": [
-    105.0,
     110.0,
     136.0
   ],
@@ -72642,7 +60698,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Opel|Astra|1700.0|Dizel": [
-    60.0,
     75.0,
     80.0,
     100.0
@@ -72651,34 +60706,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0,
     113.0
   ],
-  "Opel|Astra|1800.0|Benzin": [
-    125.0
-  ],
-  "Opel|Astra|1800.0|LPG & Benzin": [
-    90.0,
-    125.0
-  ],
   "Opel|Astra|1900.0|Benzin": [
-    88.0,
-    138.0,
-    288.0
-  ],
-  "Opel|Astra|1900.0|Dizel": [
-    120.0,
-    150.0
-  ],
-  "Opel|Astra|1900.0|LPG & Benzin": [
-    88.0,
-    113.0,
-    188.0
+    138.0
   ],
   "Opel|Astra|2000.0|Benzin": [
-    136.0,
-    150.0,
-    200.0
+    136.0
   ],
   "Opel|Astra|2000.0|Dizel": [
-    82.0,
     100.0
   ],
   "Opel|Astra|2000.0|LPG & Benzin": [
@@ -72688,39 +60722,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Astra|2200.0|LPG & Benzin": [
     147.0
   ],
-  "Opel|Astra|2300.0|LPG & Benzin": [
-    138.0
-  ],
-  "Opel|Calibra|2000.0|Benzin": [
-    204.0
-  ],
-  "Opel|Calibra|2000.0|LPG & Benzin": [
-    115.0
-  ],
-  "Opel|Combo|0.0|Dizel": [
-    75.0
-  ],
   "Opel|Combo|200.0|Dizel": [
     130.0
   ],
-  "Opel|Combo|300.0|Dizel": [
-    95.0
-  ],
   "Opel|Combo|1200.0|Dizel": [
-    50.0,
     70.0,
     75.0,
     80.0,
     90.0
   ],
   "Opel|Combo|1300.0|Dizel": [
-    76.0,
     126.0
   ],
   "Opel|Combo|1400.0|Benzin": [
-    60.0
-  ],
-  "Opel|Combo|1400.0|Dizel": [
     60.0
   ],
   "Opel|Combo|1400.0|LPG & Benzin": [
@@ -72731,21 +60745,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     104.0,
     132.0
   ],
-  "Opel|Combo|1600.0|Dizel": [
-    76.0
-  ],
   "Opel|Combo|1700.0|Dizel": [
     60.0,
     75.0,
-    100.0,
-    110.0,
-    1700.0
-  ],
-  "Opel|Combo Life|200.0|Dizel": [
-    130.0
+    100.0
   ],
   "Opel|Combo Life|1300.0|Dizel": [
-    101.0,
     126.0
   ],
   "Opel|Combo Life|1500.0|Dizel": [
@@ -72754,9 +60759,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Corsa|0.0|Benzin": [
     88.0
-  ],
-  "Opel|Corsa|0.0|Dizel": [
-    601.0
   ],
   "Opel|Corsa|600.0|Benzin": [
     63.0,
@@ -72769,11 +60771,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Corsa|600.0|LPG & Benzin": [
     25.0,
-    63.0,
-    88.0
+    63.0
   ],
   "Opel|Corsa|1000.0|Benzin": [
-    55.0,
     58.0,
     115.0
   ],
@@ -72790,7 +60790,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0,
     95.0,
     100.0,
-    113.0,
     130.0,
     138.0
   ],
@@ -72814,9 +60813,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Corsa|1300.0|Benzin": [
     63.0,
-    88.0,
-    113.0,
-    138.0
+    88.0
   ],
   "Opel|Corsa|1300.0|Dizel": [
     63.0,
@@ -72831,9 +60828,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0,
     100.0
   ],
-  "Opel|Corsa|1400.0|Dizel": [
-    90.0
-  ],
   "Opel|Corsa|1400.0|LPG & Benzin": [
     54.0,
     60.0,
@@ -72842,10 +60836,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0
   ],
   "Opel|Corsa|1500.0|Benzin": [
-    88.0,
-    113.0,
-    138.0,
-    213.0
+    88.0
   ],
   "Opel|Corsa|1500.0|Dizel": [
     50.0,
@@ -72854,7 +60845,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0
   ],
   "Opel|Corsa|1500.0|LPG & Benzin": [
-    63.0,
     113.0
   ],
   "Opel|Corsa|1600.0|Benzin": [
@@ -72870,9 +60860,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Corsa|1700.0|Dizel": [
     75.0
   ],
-  "Opel|Corsa Van|1700.0|Dizel": [
-    75.0
-  ],
   "Opel|Crossland|600.0|Benzin": [
     138.0
   ],
@@ -72882,9 +60869,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Crossland|1200.0|LPG & Benzin": [
     130.0
-  ],
-  "Opel|Crossland|1300.0|Benzin": [
-    138.0
   ],
   "Opel|Crossland|1500.0|Dizel": [
     120.0
@@ -72898,8 +60882,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     130.0
   ],
   "Opel|Crossland X|1200.0|Dizel": [
-    110.0,
-    130.0
+    110.0
   ],
   "Opel|Crossland X|1500.0|Dizel": [
     102.0,
@@ -72921,20 +60904,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Frontera|2000.0|LPG & Benzin": [
     115.0
   ],
-  "Opel|Frontera|2300.0|Dizel": [
-    100.0
-  ],
-  "Opel|Frontera|3200.0|Benzin": [
-    205.0
-  ],
   "Opel|Frontera|3200.0|LPG & Benzin": [
     205.0
   ],
   "Opel|Frontera-e|1300.0|Elektrik": [
     113.0
-  ],
-  "Opel|GT|2000.0|Benzin": [
-    264.0
   ],
   "Opel|Grandland|600.0|Benzin": [
     138.0
@@ -72965,12 +60939,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Grandland X|1600.0|Dizel": [
     120.0
   ],
-  "Opel|Grandland X|1700.0|Dizel": [
-    138.0
-  ],
-  "Opel|Grandland-e|1300.0|Elektrik": [
-    213.0
-  ],
   "Opel|Insignia|1300.0|Benzin": [
     138.0
   ],
@@ -72997,7 +60965,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Insignia|1500.0|LPG & Benzin": [
     113.0,
-    163.0,
     188.0
   ],
   "Opel|Insignia|1600.0|Benzin": [
@@ -73014,17 +60981,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0,
     180.0
   ],
-  "Opel|Insignia|1700.0|Benzin": [
-    138.0
-  ],
   "Opel|Insignia|1900.0|Benzin": [
-    163.0,
-    213.0
+    163.0
   ],
   "Opel|Insignia|1900.0|Dizel": [
     138.0,
-    163.0,
-    188.0
+    163.0
   ],
   "Opel|Insignia|2000.0|Benzin": [
     130.0
@@ -73039,35 +61001,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     195.0
   ],
   "Opel|Insignia|2800.0|Benzin": [
-    313.0,
     325.0
-  ],
-  "Opel|Kadett|1600.0|LPG & Benzin": [
-    75.0
-  ],
-  "Opel|Meriva|1200.0|Benzin": [
-    70.0,
-    75.0
   ],
   "Opel|Meriva|1200.0|Dizel": [
     70.0,
     75.0,
     95.0
   ],
-  "Opel|Meriva|1300.0|Benzin": [
-    113.0
-  ],
   "Opel|Meriva|1300.0|Dizel": [
-    63.0,
-    88.0
+    63.0
   ],
   "Opel|Meriva|1300.0|LPG & Benzin": [
-    113.0,
-    138.0
+    113.0
   ],
   "Opel|Meriva|1400.0|Benzin": [
-    100.0,
-    120.0,
     140.0
   ],
   "Opel|Meriva|1400.0|LPG & Benzin": [
@@ -73087,14 +61034,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     105.0
   ],
-  "Opel|Meriva|1600.0|Dizel": [
-    136.0
-  ],
   "Opel|Meriva|1600.0|LPG & Benzin": [
     87.0,
     100.0,
-    105.0,
-    180.0
+    105.0
   ],
   "Opel|Meriva|1700.0|Dizel": [
     100.0,
@@ -73112,18 +61055,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Mokka|1200.0|LPG & Benzin": [
     130.0
   ],
-  "Opel|Mokka|1300.0|Benzin": [
-    113.0,
-    138.0
-  ],
   "Opel|Mokka|1400.0|Benzin": [
     140.0
   ],
   "Opel|Mokka|1400.0|LPG & Benzin": [
     140.0
-  ],
-  "Opel|Mokka|1500.0|Dizel": [
-    138.0
   ],
   "Opel|Mokka|1600.0|Benzin": [
     115.0
@@ -73134,17 +61070,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Mokka|1600.0|LPG & Benzin": [
     115.0
   ],
-  "Opel|Mokka X|1300.0|Benzin": [
-    138.0
-  ],
   "Opel|Mokka X|1400.0|Benzin": [
     140.0
   ],
   "Opel|Mokka X|1400.0|LPG & Benzin": [
     140.0
-  ],
-  "Opel|Mokka X|1500.0|Benzin": [
-    113.0
   ],
   "Opel|Mokka X|1600.0|Benzin": [
     115.0
@@ -73152,24 +61082,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Mokka X|1600.0|Dizel": [
     136.0
   ],
-  "Opel|Mokka X|1600.0|LPG & Benzin": [
-    115.0
-  ],
   "Opel|Mokka-e|1200.0|Elektrik": [
     130.0
-  ],
-  "Opel|Mokka-e|1300.0|Elektrik": [
-    138.0,
-    288.0
   ],
   "Opel|Movano|2200.0|Dizel": [
     180.0
   ],
   "Opel|Omega|1900.0|LPG & Benzin": [
     138.0
-  ],
-  "Opel|Omega|2000.0|Benzin": [
-    115.0
   ],
   "Opel|Omega|2000.0|LPG & Benzin": [
     115.0,
@@ -73190,35 +61110,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Omega|2600.0|LPG & Benzin": [
     180.0
   ],
-  "Opel|Omega|2800.0|Benzin": [
-    601.0
-  ],
-  "Opel|Omega|2800.0|LPG & Benzin": [
-    163.0,
-    188.0
-  ],
-  "Opel|Omega|3000.0|LPG & Benzin": [
-    204.0
-  ],
-  "Opel|Signum|2200.0|Benzin": [
-    155.0,
-    188.0
-  ],
-  "Opel|Tigra|1400.0|Benzin": [
-    90.0
-  ],
-  "Opel|Tigra|1500.0|Benzin": [
-    113.0
-  ],
   "Opel|Tigra|1600.0|Benzin": [
     106.0
   ],
   "Opel|Tigra|1600.0|LPG & Benzin": [
     106.0
-  ],
-  "Opel|Vectra|0.0|LPG & Benzin": [
-    113.0,
-    138.0
   ],
   "Opel|Vectra|1500.0|Benzin": [
     88.0
@@ -73230,12 +61126,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Vectra|1600.0|Benzin": [
     75.0,
-    82.0,
     100.0,
     105.0
   ],
   "Opel|Vectra|1600.0|LPG & Benzin": [
-    71.0,
     75.0,
     100.0,
     105.0
@@ -73243,13 +61137,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Vectra|1700.0|Benzin": [
     88.0
   ],
-  "Opel|Vectra|1700.0|Dizel": [
-    57.0
-  ],
   "Opel|Vectra|1700.0|LPG & Benzin": [
-    57.0,
-    88.0,
-    138.0
+    88.0
   ],
   "Opel|Vectra|1800.0|Benzin": [
     90.0
@@ -73263,18 +61152,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Opel|Vectra|1900.0|Benzin": [
     113.0,
-    138.0,
-    188.0
+    138.0
   ],
   "Opel|Vectra|1900.0|Dizel": [
-    88.0,
-    138.0,
     150.0
   ],
   "Opel|Vectra|1900.0|LPG & Benzin": [
     113.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Opel|Vectra|2000.0|Benzin": [
     100.0,
@@ -73291,9 +61176,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Opel|Vectra|2200.0|Benzin": [
-    113.0,
-    147.0,
-    155.0
+    147.0
   ],
   "Opel|Vectra|2200.0|Dizel": [
     125.0
@@ -73301,9 +61184,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Vectra|2200.0|LPG & Benzin": [
     147.0,
     155.0
-  ],
-  "Opel|Vectra|2300.0|Benzin": [
-    188.0
   ],
   "Opel|Vectra|2300.0|LPG & Benzin": [
     163.0
@@ -73314,29 +61194,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Vectra|2500.0|LPG & Benzin": [
     170.0
   ],
-  "Opel|Vectra|3000.0|Dizel": [
-    177.0
-  ],
-  "Opel|Vivaro|1500.0|Dizel": [
-    120.0
-  ],
-  "Opel|Vivaro|1800.0|Dizel": [
-    76.0,
-    101.0,
-    126.0
-  ],
   "Opel|Vivaro|1900.0|Dizel": [
     100.0
   ],
   "Opel|Vivaro|2000.0|Dizel": [
     147.0,
     182.0
-  ],
-  "Opel|Vivaro|2200.0|Dizel": [
-    150.0
-  ],
-  "Opel|Zafira|0.0|Dizel": [
-    138.0
   ],
   "Opel|Zafira|1300.0|Benzin": [
     138.0
@@ -73366,23 +61229,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0,
     115.0
   ],
-  "Opel|Zafira|1700.0|Benzin": [
-    113.0
-  ],
-  "Opel|Zafira|1700.0|Dizel": [
-    113.0,
-    138.0
-  ],
-  "Opel|Zafira|1700.0|LPG & Benzin": [
-    113.0
-  ],
   "Opel|Zafira|1800.0|Benzin": [
     125.0
   ],
   "Opel|Zafira|1800.0|LPG & Benzin": [
     115.0,
-    125.0,
-    140.0
+    125.0
   ],
   "Opel|Zafira|1900.0|Dizel": [
     138.0,
@@ -73394,63 +61246,33 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Zafira|2000.0|Dizel": [
     100.0
   ],
-  "Opel|Zafira|2000.0|LPG & Benzin": [
-    200.0
-  ],
-  "Opel|Zafira|2200.0|Benzin": [
-    113.0,
-    138.0,
-    150.0
-  ],
-  "Opel|Zafira Life|0.0|Dizel": [
-    180.0
-  ],
   "Opel|Zafira Life|2000.0|Dizel": [
-    177.0,
     180.0
-  ],
-  "Peugeot|106|600.0|LPG & Benzin": [
-    113.0
-  ],
-  "Peugeot|106|1000.0|Benzin": [
-    51.0
-  ],
-  "Peugeot|106|1000.0|LPG & Benzin": [
-    51.0
   ],
   "Peugeot|106|1100.0|Benzin": [
-    55.0,
     61.0
   ],
   "Peugeot|106|1100.0|LPG & Benzin": [
     55.0,
     61.0
   ],
-  "Peugeot|106|1200.0|Benzin": [
-    63.0
-  ],
   "Peugeot|106|1300.0|Benzin": [
-    63.0,
-    88.0
+    63.0
   ],
   "Peugeot|106|1300.0|LPG & Benzin": [
     63.0
   ],
   "Peugeot|106|1400.0|Benzin": [
-    63.0,
-    76.0,
-    95.0
+    76.0
   ],
   "Peugeot|106|1400.0|LPG & Benzin": [
-    76.0,
-    88.0
+    76.0
   ],
   "Peugeot|106|1500.0|Benzin": [
     88.0,
     113.0
   ],
   "Peugeot|106|1500.0|LPG & Benzin": [
-    63.0,
     88.0
   ],
   "Peugeot|106|1600.0|Benzin": [
@@ -73458,14 +61280,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     120.0
   ],
   "Peugeot|106|1600.0|LPG & Benzin": [
-    96.0,
     120.0
-  ],
-  "Peugeot|106|1700.0|Benzin": [
-    113.0
-  ],
-  "Peugeot|106|1700.0|LPG & Benzin": [
-    113.0
   ],
   "Peugeot|107|600.0|Benzin": [
     63.0
@@ -73478,9 +61293,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|107|1200.0|Benzin": [
     63.0
-  ],
-  "Peugeot|107|1300.0|Benzin": [
-    88.0
   ],
   "Peugeot|107|1400.0|Dizel": [
     55.0
@@ -73512,7 +61324,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     83.0
   ],
   "Peugeot|2008|1300.0|Benzin": [
-    88.0,
     138.0
   ],
   "Peugeot|2008|1500.0|Dizel": [
@@ -73523,9 +61334,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     132.0,
     138.0
   ],
-  "Peugeot|2008|1500.0|Hibrit": [
-    138.0
-  ],
   "Peugeot|2008|1600.0|Dizel": [
     93.0,
     102.0
@@ -73533,22 +61341,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|2008|1600.0|LPG & Benzin": [
     122.0
   ],
-  "Peugeot|205|1000.0|LPG & Benzin": [
-    46.0
-  ],
-  "Peugeot|205|1400.0|LPG & Benzin": [
-    61.0
-  ],
   "Peugeot|205|1900.0|Benzin": [
-    113.0,
     122.0
-  ],
-  "Peugeot|206|0.0|Dizel": [
-    63.0,
-    88.0
-  ],
-  "Peugeot|206|600.0|Dizel": [
-    213.0
   ],
   "Peugeot|206|1300.0|Benzin": [
     63.0,
@@ -73572,7 +61366,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     76.0
   ],
   "Peugeot|206|1400.0|LPG & Benzin": [
-    63.0,
     76.0,
     91.0
   ],
@@ -73581,43 +61374,25 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Peugeot|206|1500.0|Dizel": [
-    63.0,
-    88.0
+    63.0
   ],
   "Peugeot|206|1500.0|LPG & Benzin": [
-    88.0,
     113.0
   ],
   "Peugeot|206|1600.0|Benzin": [
     89.0,
     109.0
   ],
-  "Peugeot|206|1600.0|Dizel": [
-    112.0
-  ],
   "Peugeot|206|1600.0|LPG & Benzin": [
     89.0,
     109.0
   ],
-  "Peugeot|206|1900.0|Benzin": [
-    138.0
-  ],
   "Peugeot|206|2000.0|Benzin": [
     137.0,
-    138.0,
-    182.0
-  ],
-  "Peugeot|206|2000.0|Dizel": [
-    91.0
+    138.0
   ],
   "Peugeot|206|2000.0|LPG & Benzin": [
     137.0
-  ],
-  "Peugeot|206|3800.0|Benzin": [
-    313.0
-  ],
-  "Peugeot|206+|1300.0|Benzin": [
-    63.0
   ],
   "Peugeot|206+|1400.0|Benzin": [
     71.0,
@@ -73628,9 +61403,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|206+|1400.0|LPG & Benzin": [
     76.0
-  ],
-  "Peugeot|207|0.0|Benzin": [
-    63.0
   ],
   "Peugeot|207|1300.0|Benzin": [
     63.0,
@@ -73683,9 +61455,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|207|1600.0|LPG & Benzin": [
     122.0
   ],
-  "Peugeot|208|0.0|Benzin": [
-    138.0
-  ],
   "Peugeot|208|600.0|Benzin": [
     63.0,
     88.0,
@@ -73696,9 +61465,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Peugeot|208|1000.0|Benzin": [
-    69.0
-  ],
-  "Peugeot|208|1000.0|LPG & Benzin": [
     69.0
   ],
   "Peugeot|208|1200.0|Benzin": [
@@ -73717,8 +61483,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|208|1300.0|Benzin": [
     63.0,
-    88.0,
-    138.0
+    88.0
   ],
   "Peugeot|208|1300.0|Dizel": [
     63.0
@@ -73735,28 +61500,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     132.0
   ],
   "Peugeot|208|1500.0|Dizel": [
-    88.0,
     102.0,
-    113.0,
     132.0
   ],
   "Peugeot|208|1600.0|Benzin": [
-    93.0,
     122.0,
     158.0,
     203.0
   ],
   "Peugeot|208|1600.0|Dizel": [
     93.0,
-    102.0,
-    117.0
-  ],
-  "Peugeot|208|1600.0|LPG & Benzin": [
-    122.0
-  ],
-  "Peugeot|3008|0.0|Dizel": [
-    25.0,
-    113.0
+    102.0
   ],
   "Peugeot|3008|600.0|Benzin": [
     138.0
@@ -73770,9 +61524,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|3008|1200.0|Hibrit": [
     136.0
-  ],
-  "Peugeot|3008|1300.0|Hibrit": [
-    138.0
   ],
   "Peugeot|3008|1500.0|Benzin": [
     188.0
@@ -73800,8 +61551,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     122.0
   ],
   "Peugeot|301|600.0|Benzin": [
-    88.0,
-    113.0
+    88.0
   ],
   "Peugeot|301|600.0|LPG & Benzin": [
     88.0
@@ -73821,8 +61571,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|301|1500.0|Benzin": [
     88.0,
-    102.0,
-    113.0
+    102.0
   ],
   "Peugeot|301|1500.0|Dizel": [
     88.0,
@@ -73840,17 +61589,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|301|1600.0|LPG & Benzin": [
     117.0
   ],
-  "Peugeot|301|1700.0|Dizel": [
-    88.0
-  ],
-  "Peugeot|306|1400.0|Benzin": [
-    76.0
-  ],
   "Peugeot|306|1400.0|LPG & Benzin": [
     76.0
-  ],
-  "Peugeot|306|1500.0|Benzin": [
-    88.0
   ],
   "Peugeot|306|1500.0|LPG & Benzin": [
     88.0
@@ -73864,32 +61604,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     99.0
   ],
   "Peugeot|306|1700.0|Benzin": [
-    113.0,
-    138.0
-  ],
-  "Peugeot|306|1700.0|LPG & Benzin": [
-    88.0,
     113.0
   ],
   "Peugeot|306|1800.0|Benzin": [
-    102.0,
-    112.0
+    102.0
   ],
   "Peugeot|306|1800.0|LPG & Benzin": [
     102.0,
     112.0
   ],
-  "Peugeot|306|1900.0|Benzin": [
-    71.0,
-    163.0
-  ],
-  "Peugeot|306|1900.0|Dizel": [
-    71.0,
-    73.0,
-    91.0
-  ],
   "Peugeot|306|2000.0|Benzin": [
-    125.0,
     166.0
   ],
   "Peugeot|307|0.0|Dizel": [
@@ -73897,9 +61621,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|307|0.0|LPG & Benzin": [
     113.0
-  ],
-  "Peugeot|307|1300.0|Benzin": [
-    88.0
   ],
   "Peugeot|307|1300.0|Dizel": [
     63.0
@@ -73921,13 +61642,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Peugeot|307|1500.0|Dizel": [
-    63.0,
     88.0,
     113.0
   ],
   "Peugeot|307|1500.0|LPG & Benzin": [
-    113.0,
-    138.0
+    113.0
   ],
   "Peugeot|307|1600.0|Benzin": [
     110.0
@@ -73939,15 +61658,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|307|1600.0|LPG & Benzin": [
     110.0
   ],
-  "Peugeot|307|1700.0|Dizel": [
-    113.0
-  ],
-  "Peugeot|307|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Peugeot|307|1900.0|Benzin": [
-    138.0
-  ],
   "Peugeot|307|1900.0|Dizel": [
     113.0
   ],
@@ -73955,13 +61665,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Peugeot|307|2000.0|Benzin": [
-    91.0,
     138.0
   ],
   "Peugeot|307|2000.0|Dizel": [
     91.0,
-    109.0,
-    138.0
+    109.0
   ],
   "Peugeot|307|2000.0|LPG & Benzin": [
     138.0
@@ -73970,18 +61678,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0,
     138.0
   ],
-  "Peugeot|308|600.0|LPG & Benzin": [
-    88.0
-  ],
   "Peugeot|308|1200.0|Benzin": [
     83.0,
     88.0,
     112.0,
     132.0,
     138.0
-  ],
-  "Peugeot|308|1200.0|LPG & Benzin": [
-    83.0
   ],
   "Peugeot|308|1300.0|Benzin": [
     138.0
@@ -74013,49 +61715,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|308|1600.0|Dizel": [
     91.0,
     93.0,
-    101.0,
     112.0,
     114.0,
     122.0
   ],
   "Peugeot|308|1600.0|LPG & Benzin": [
-    113.0,
     122.0,
     152.0
   ],
-  "Peugeot|308|1700.0|Dizel": [
-    88.0
-  ],
-  "Peugeot|309|1700.0|LPG & Benzin": [
-    188.0
-  ],
-  "Peugeot|309|1900.0|LPG & Benzin": [
-    122.0
-  ],
-  "Peugeot|4007|2200.0|Dizel": [
-    158.0
-  ],
-  "Peugeot|405|1500.0|Benzin": [
-    88.0
-  ],
-  "Peugeot|405|1500.0|LPG & Benzin": [
-    88.0
-  ],
   "Peugeot|405|1600.0|LPG & Benzin": [
     90.0
-  ],
-  "Peugeot|405|1700.0|Benzin": [
-    113.0
-  ],
-  "Peugeot|405|1800.0|Benzin": [
-    103.0
-  ],
-  "Peugeot|405|1900.0|LPG & Benzin": [
-    109.0,
-    113.0
-  ],
-  "Peugeot|406|1800.0|Benzin": [
-    91.0
   ],
   "Peugeot|406|1900.0|Benzin": [
     138.0
@@ -74064,7 +61733,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Peugeot|406|2000.0|Benzin": [
-    112.0,
     137.0,
     149.0
   ],
@@ -74075,15 +61743,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     137.0,
     142.0,
     149.0
-  ],
-  "Peugeot|406|2800.0|LPG & Benzin": [
-    188.0
-  ],
-  "Peugeot|406|2900.0|Benzin": [
-    210.0
-  ],
-  "Peugeot|406|2900.0|LPG & Benzin": [
-    193.0
   ],
   "Peugeot|407|1500.0|Benzin": [
     113.0
@@ -74097,9 +61756,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|407|1600.0|Dizel": [
     112.0
   ],
-  "Peugeot|407|1700.0|Dizel": [
-    113.0
-  ],
   "Peugeot|407|1900.0|Benzin": [
     138.0
   ],
@@ -74110,8 +61766,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Peugeot|407|2000.0|Benzin": [
-    138.0,
-    164.0
+    138.0
   ],
   "Peugeot|407|2000.0|Dizel": [
     138.0,
@@ -74120,9 +61775,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|407|2000.0|LPG & Benzin": [
     138.0
   ],
-  "Peugeot|407|2200.0|Benzin": [
-    163.0
-  ],
   "Peugeot|407|2700.0|Dizel": [
     207.0
   ],
@@ -74130,29 +61782,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Peugeot|408|600.0|Hibrit": [
-    88.0,
     138.0
   ],
   "Peugeot|408|1200.0|Benzin": [
     132.0
   ],
   "Peugeot|408|1200.0|Hibrit": [
-    132.0,
-    136.0,
-    145.0
-  ],
-  "Peugeot|5008|600.0|Hibrit": [
-    138.0
-  ],
-  "Peugeot|5008|1200.0|Benzin": [
-    132.0,
-    136.0
+    132.0
   ],
   "Peugeot|5008|1200.0|Hibrit": [
     136.0
-  ],
-  "Peugeot|5008|1300.0|Benzin": [
-    188.0
   ],
   "Peugeot|5008|1500.0|Dizel": [
     113.0,
@@ -74167,10 +61806,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     117.0,
     122.0
   ],
-  "Peugeot|508|0.0|Dizel": [
-    113.0,
-    138.0
-  ],
   "Peugeot|508|1500.0|Benzin": [
     113.0,
     130.0,
@@ -74180,13 +61815,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     213.0
   ],
   "Peugeot|508|1500.0|Dizel": [
-    88.0,
     113.0,
     130.0,
     138.0
   ],
   "Peugeot|508|1600.0|Benzin": [
-    114.0,
     122.0,
     158.0,
     180.0,
@@ -74202,104 +61835,39 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|508|1700.0|Dizel": [
     113.0
   ],
-  "Peugeot|508|2000.0|Benzin": [
-    166.0
-  ],
   "Peugeot|508|2000.0|Dizel": [
     166.0
-  ],
-  "Peugeot|508|2300.0|Dizel": [
-    163.0
-  ],
-  "Peugeot|605|2000.0|Benzin": [
-    144.0
-  ],
-  "Peugeot|607|2200.0|Benzin": [
-    160.0
   ],
   "Peugeot|607|2700.0|Dizel": [
     207.0
   ],
-  "Peugeot|607|2800.0|Dizel": [
-    263.0
-  ],
-  "Peugeot|607|2900.0|Benzin": [
-    210.0
-  ],
   "Peugeot|806|1900.0|Dizel": [
     91.0
-  ],
-  "Peugeot|807|2200.0|Dizel": [
-    132.0
-  ],
-  "Peugeot|Bipper|0.0|Dizel": [
-    71.0,
-    75.0
-  ],
-  "Peugeot|Bipper|1200.0|Benzin": [
-    76.0
   ],
   "Peugeot|Bipper|1200.0|Dizel": [
     76.0
   ],
-  "Peugeot|Bipper|1300.0|Dizel": [
-    51.0
-  ],
   "Peugeot|Bipper|1400.0|Dizel": [
-    50.0,
     71.0
-  ],
-  "Peugeot|Boxer|300.0|Dizel": [
-    129.0
-  ],
-  "Peugeot|Boxer|1900.0|Dizel": [
-    93.0
   ],
   "Peugeot|Boxer|2000.0|Dizel": [
     86.0,
-    120.0,
     160.0
-  ],
-  "Peugeot|Boxer|2200.0|Dizel": [
-    103.0,
-    120.0,
-    165.0,
-    180.0
   ],
   "Peugeot|Boxer|2400.0|Dizel": [
     105.0
   ],
   "Peugeot|Boxer|2800.0|Dizel": [
-    110.0,
     129.0
   ],
   "Peugeot|Expert|1900.0|Dizel": [
     71.0
   ],
   "Peugeot|Partner|0.0|Dizel": [
-    16.0,
-    72.0,
-    75.0,
-    100.0,
-    122.0
-  ],
-  "Peugeot|Partner|100.0|Dizel": [
-    115.0
-  ],
-  "Peugeot|Partner|200.0|Dizel": [
-    100.0,
-    130.0
-  ],
-  "Peugeot|Partner|300.0|Dizel": [
-    73.0
-  ],
-  "Peugeot|Partner|500.0|Dizel": [
-    71.0
+    75.0
   ],
   "Peugeot|Partner|1300.0|Dizel": [
-    76.0,
-    101.0,
-    126.0
+    76.0
   ],
   "Peugeot|Partner|1400.0|LPG & Benzin": [
     76.0
@@ -74308,11 +61876,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0,
     130.0
   ],
-  "Peugeot|Partner|1600.0|Benzin": [
-    117.0
-  ],
   "Peugeot|Partner|1600.0|Dizel": [
-    51.0,
     76.0,
     91.0,
     93.0,
@@ -74321,48 +61885,28 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     117.0,
     122.0
   ],
-  "Peugeot|Partner|1600.0|LPG & Benzin": [
-    110.0
-  ],
   "Peugeot|Partner|1800.0|Dizel": [
     51.0,
     76.0,
     101.0
   ],
   "Peugeot|Partner|1900.0|Dizel": [
-    71.0,
-    75.0,
-    90.0
+    71.0
   ],
   "Peugeot|Partner|2000.0|Dizel": [
-    76.0,
-    91.0,
-    105.0
-  ],
-  "Peugeot|Partner|2000.0|LPG & Benzin": [
     91.0
   ],
   "Peugeot|RCZ|1500.0|Benzin": [
-    163.0,
-    188.0
+    163.0
   ],
   "Peugeot|RCZ|1600.0|Benzin": [
     158.0,
     203.0
   ],
-  "Peugeot|RCZ|1700.0|Benzin": [
-    163.0
-  ],
   "Peugeot|Rifter|0.0|Dizel": [
-    15.0,
-    130.0,
-    138.0
+    130.0
   ],
   "Peugeot|Rifter|100.0|Dizel": [
-    130.0,
-    250.5
-  ],
-  "Peugeot|Rifter|200.0|Dizel": [
     130.0
   ],
   "Peugeot|Rifter|300.0|Dizel": [
@@ -74370,20 +61914,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Peugeot|Rifter|1500.0|Dizel": [
     101.0,
-    132.0,
-    1500.0
+    132.0
   ],
   "Peugeot|Rifter|1600.0|Dizel": [
-    101.0,
-    130.0
-  ],
-  "Peugeot|e-2008|1500.0|Elektrik": [
-    163.0
+    101.0
   ],
   "Peugeot|e-208|1300.0|Benzin": [
-    138.0
-  ],
-  "Peugeot|e-208|1300.0|Elektrik": [
     138.0
   ],
   "Peugeot|e-3008|1300.0|Elektrik": [
@@ -74392,23 +61928,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|e-3008|1700.0|Elektrik": [
     213.0
   ],
-  "Peugeot|e-3008|1900.0|Elektrik": [
-    213.0
-  ],
-  "Pontiac|Firebird|5700.0|Benzin": [
-    309.0
-  ],
   "Pontiac|Firebird|5800.0|Benzin": [
     313.0
-  ],
-  "Pontiac|Firebird|6000.0|Benzin": [
-    488.0
-  ],
-  "Porsche|718|1900.0|Benzin": [
-    288.0
-  ],
-  "Porsche|718|2800.0|Benzin": [
-    263.0
   ],
   "Porsche|911|3200.0|Benzin": [
     288.0
@@ -74417,12 +61938,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     288.0
   ],
   "Porsche|911|3800.0|Benzin": [
-    313.0,
-    363.0,
-    488.0
-  ],
-  "Porsche|Cayenne|2000.0|Dizel": [
-    245.0
+    363.0
   ],
   "Porsche|Cayenne|2800.0|Dizel": [
     238.0,
@@ -74435,9 +61951,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Porsche|Cayenne|3600.0|Benzin": [
     300.0
   ],
-  "Porsche|Cayenne|4300.0|Dizel": [
-    488.0
-  ],
   "Porsche|Cayenne|4500.0|Benzin": [
     340.0
   ],
@@ -74445,8 +61958,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     340.0
   ],
   "Porsche|Cayenne|4800.0|Benzin": [
-    405.0,
-    413.0,
     488.0
   ],
   "Porsche|Cayman|3200.0|Benzin": [
@@ -74455,14 +61966,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Porsche|Cayman|3400.0|Benzin": [
     295.0
   ],
-  "Porsche|Macan|3000.0|Benzin": [
-    340.0
-  ],
   "Porsche|Macan|3000.0|Dizel": [
     258.0
-  ],
-  "Porsche|Panamera|2800.0|Dizel": [
-    288.0
   ],
   "Porsche|Panamera|3000.0|Benzin": [
     300.0
@@ -74475,10 +61980,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Porsche|Panamera|4800.0|Benzin": [
     388.0,
-    400.0,
-    413.0,
-    430.0,
-    488.0
+    400.0
   ],
   "Proton|315|1500.0|LPG & Benzin": [
     88.0
@@ -74495,9 +61997,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Proton|416|1500.0|LPG & Benzin": [
     88.0
   ],
-  "Proton|416|1600.0|Benzin": [
-    114.0
-  ],
   "Proton|416|1600.0|LPG & Benzin": [
     96.0,
     114.0
@@ -74506,26 +62005,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     117.0
   ],
   "Proton|420|2000.0|Dizel": [
-    66.0,
     83.0
   ],
   "Proton|Gen 2|1500.0|Benzin": [
     113.0
   ],
-  "Proton|Gen 2|1500.0|LPG & Benzin": [
-    113.0
-  ],
   "Proton|Gen 2|1600.0|LPG & Benzin": [
-    111.0,
-    137.0
-  ],
-  "Proton|Gen 2|1700.0|Benzin": [
-    113.0
-  ],
-  "Proton|Persona|1500.0|Benzin": [
-    113.0
-  ],
-  "Proton|Saga|1600.0|LPG & Benzin": [
     111.0
   ],
   "Proton|Savvy|1100.0|Benzin": [
@@ -74534,20 +62019,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Proton|Savvy|1100.0|LPG & Benzin": [
     76.0
   ],
-  "Proton|Waja|1500.0|Benzin": [
-    113.0
-  ],
-  "Proton|Waja|1500.0|LPG & Benzin": [
-    113.0
-  ],
-  "Proton|Waja|1600.0|Benzin": [
-    105.0
-  ],
   "Proton|Waja|1600.0|LPG & Benzin": [
     105.0
-  ],
-  "Renault|Austral|1200.0|Benzin": [
-    200.0
   ],
   "Renault|Austral|1200.0|Hibrit": [
     200.0
@@ -74559,17 +62032,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Austral|1300.0|Hibrit": [
     160.0
   ],
-  "Renault|Captur|0.0|Benzin": [
-    163.0
-  ],
   "Renault|Captur|600.0|Benzin": [
     88.0,
     113.0
   ],
   "Renault|Captur|900.0|Benzin": [
-    90.0
-  ],
-  "Renault|Captur|900.0|LPG & Benzin": [
     90.0
   ],
   "Renault|Captur|1000.0|Benzin": [
@@ -74586,15 +62053,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     155.0,
     160.0,
-    163.0,
-    363.0
+    163.0
   ],
   "Renault|Captur|1300.0|Hibrit": [
     140.0,
-    160.0,
-    163.0
-  ],
-  "Renault|Captur|1300.0|LPG & Benzin": [
     160.0
   ],
   "Renault|Captur|1500.0|Dizel": [
@@ -74602,15 +62064,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0,
     115.0
   ],
-  "Renault|Captur|1600.0|Hibrit": [
-    145.0
-  ],
-  "Renault|Captur|1700.0|Benzin": [
-    138.0
-  ],
   "Renault|Clio|0.0|Benzin": [
-    63.0,
-    75.0,
     113.0
   ],
   "Renault|Clio|0.0|Dizel": [
@@ -74623,17 +62077,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Clio|600.0|Benzin": [
     63.0,
     88.0,
-    113.0,
-    138.0
-  ],
-  "Renault|Clio|600.0|Dizel": [
-    25.0
+    113.0
   ],
   "Renault|Clio|600.0|LPG & Benzin": [
     63.0,
-    88.0,
-    113.0,
-    138.0
+    88.0
   ],
   "Renault|Clio|900.0|Benzin": [
     90.0
@@ -74648,13 +62096,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0
   ],
   "Renault|Clio|1000.0|LPG & Benzin": [
-    65.0,
     72.0,
     90.0,
     100.0
   ],
   "Renault|Clio|1100.0|Benzin": [
-    60.0,
     65.0,
     75.0,
     80.0
@@ -74674,12 +62120,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Clio|1300.0|Benzin": [
     63.0,
     88.0,
-    113.0,
     130.0,
     138.0
-  ],
-  "Renault|Clio|1300.0|Dizel": [
-    88.0
   ],
   "Renault|Clio|1300.0|LPG & Benzin": [
     63.0,
@@ -74697,7 +62139,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Clio|1500.0|Benzin": [
     63.0,
-    70.0,
     75.0,
     80.0,
     85.0,
@@ -74705,22 +62146,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Renault|Clio|1500.0|Dizel": [
-    25.0,
     65.0,
     70.0,
     75.0,
     80.0,
     85.0,
     90.0,
-    100.0,
     106.0,
     115.0
   ],
   "Renault|Clio|1500.0|LPG & Benzin": [
     63.0,
-    75.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Renault|Clio|1600.0|Benzin": [
     90.0,
@@ -74735,27 +62172,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     107.0,
     110.0
   ],
-  "Renault|Clio|1800.0|Benzin": [
-    107.0,
-    135.0
-  ],
   "Renault|Clio|1800.0|LPG & Benzin": [
     107.0,
     135.0
-  ],
-  "Renault|Clio|1900.0|Benzin": [
-    138.0,
-    163.0,
-    188.0
   ],
   "Renault|Clio|2000.0|Benzin": [
     169.0
   ],
   "Renault|Duster|600.0|Hibrit": [
-    138.0
-  ],
-  "Renault|Duster|600.0|LPG & Benzin": [
-    88.0,
     138.0
   ],
   "Renault|Duster|1000.0|Benzin": [
@@ -74770,55 +62194,27 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Duster|1200.0|Hibrit": [
     130.0
   ],
-  "Renault|Duster|1200.0|LPG & Benzin": [
-    120.0
-  ],
   "Renault|Duster|1300.0|Benzin": [
     138.0,
-    145.0
-  ],
-  "Renault|Duster|1600.0|Benzin": [
     145.0
   ],
   "Renault|Duster|1600.0|Hibrit": [
     145.0
   ],
-  "Renault|Espace|1900.0|Dizel": [
-    117.0,
-    138.0
-  ],
   "Renault|Espace|2000.0|LPG & Benzin": [
-    114.0,
-    170.0
-  ],
-  "Renault|Espace|2200.0|Dizel": [
-    113.0,
-    129.0,
-    150.0
-  ],
-  "Renault|Espace|2300.0|Dizel": [
-    138.0
+    114.0
   ],
   "Renault|Express|1500.0|Dizel": [
-    95.0,
-    1500.0
+    95.0
   ],
   "Renault|Express|1900.0|Dizel": [
-    55.0,
     65.0
   ],
   "Renault|Express Combi|1500.0|Dizel": [
-    95.0,
-    115.0
+    95.0
   ],
   "Renault|Express Van|1500.0|Dizel": [
     95.0
-  ],
-  "Renault|Fluence|0.0|Dizel": [
-    113.0
-  ],
-  "Renault|Fluence|600.0|Dizel": [
-    113.0
   ],
   "Renault|Fluence|1500.0|Benzin": [
     85.0,
@@ -74836,7 +62232,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Renault|Fluence|1500.0|LPG & Benzin": [
-    88.0,
     113.0
   ],
   "Renault|Fluence|1600.0|Benzin": [
@@ -74845,7 +62240,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Renault|Fluence|1600.0|Dizel": [
-    110.0,
     130.0
   ],
   "Renault|Fluence|1600.0|LPG & Benzin": [
@@ -74853,26 +62247,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     115.0
   ],
-  "Renault|Grand Scenic|1400.0|Benzin": [
-    130.0
-  ],
-  "Renault|Grand Scenic|1500.0|Benzin": [
-    113.0
-  ],
   "Renault|Grand Scenic|1500.0|Dizel": [
     100.0,
     105.0,
     110.0,
     113.0
   ],
-  "Renault|Grand Scenic|1600.0|Benzin": [
-    110.0
-  ],
   "Renault|Grand Scenic|1600.0|LPG & Benzin": [
     110.0
-  ],
-  "Renault|Grand Scenic|1900.0|Dizel": [
-    130.0
   ],
   "Renault|Kadjar|600.0|Benzin": [
     138.0
@@ -74895,11 +62277,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Kadjar|1600.0|Dizel": [
     130.0
   ],
-  "Renault|Kangoo|0.0|Dizel": [
-    82.0,
-    85.0,
-    105.0
-  ],
   "Renault|Kangoo|400.0|Dizel": [
     47.0
   ],
@@ -74921,27 +62298,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     115.0
   ],
-  "Renault|Kangoo|1800.0|Dizel": [
-    76.0
-  ],
   "Renault|Kangoo|1900.0|Dizel": [
     65.0,
-    70.0,
     80.0
   ],
   "Renault|Kangoo E-tech|1300.0|Elektrik": [
     101.0
   ],
   "Renault|Kangoo Express|0.0|Dizel": [
-    70.0,
-    90.0,
-    110.0
-  ],
-  "Renault|Kangoo Express|100.0|Dizel": [
-    1500.0
-  ],
-  "Renault|Kangoo Express|200.0|Dizel": [
-    68.0
+    90.0
   ],
   "Renault|Kangoo Express|1300.0|Dizel": [
     76.0
@@ -74952,33 +62317,24 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     80.0,
     85.0,
     90.0,
-    95.0,
-    110.0
+    95.0
   ],
   "Renault|Kangoo Express|1800.0|Dizel": [
     51.0
   ],
   "Renault|Kangoo Express|1900.0|Dizel": [
-    61.0,
     65.0,
     80.0
   ],
   "Renault|Kangoo Multix|1300.0|Benzin": [
-    130.0,
-    130000.0
+    130.0
   ],
   "Renault|Kangoo Multix|1300.0|Dizel": [
     51.0,
-    76.0,
-    101.0,
-    126.0,
-    130.0
+    76.0
   ],
   "Renault|Kangoo Multix|1400.0|LPG & Benzin": [
     75.0
-  ],
-  "Renault|Kangoo Multix|1500.0|Benzin": [
-    65.0
   ],
   "Renault|Kangoo Multix|1500.0|Dizel": [
     65.0,
@@ -74990,9 +62346,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     115.0
   ],
-  "Renault|Kangoo Multix|1600.0|Dizel": [
-    101.0
-  ],
   "Renault|Koleos|1300.0|Benzin": [
     160.0,
     163.0
@@ -75003,22 +62356,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Koleos|1600.0|Dizel": [
     130.0
   ],
-  "Renault|Koleos|1900.0|Dizel": [
-    138.0
-  ],
   "Renault|Koleos|2000.0|Dizel": [
     150.0
-  ],
-  "Renault|Laguna|0.0|Dizel": [
-    25.0
   ],
   "Renault|Laguna|1500.0|Benzin": [
     110.0,
     113.0
   ],
   "Renault|Laguna|1500.0|Dizel": [
-    110.0,
-    113.0
+    110.0
   ],
   "Renault|Laguna|1500.0|LPG & Benzin": [
     113.0
@@ -75033,19 +62379,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     115.0
   ],
-  "Renault|Laguna|1700.0|Benzin": [
-    113.0
-  ],
-  "Renault|Laguna|1700.0|LPG & Benzin": [
-    88.0
-  ],
   "Renault|Laguna|1800.0|LPG & Benzin": [
-    90.0,
     120.0
   ],
   "Renault|Laguna|1900.0|Benzin": [
-    88.0,
-    113.0,
     139.0
   ],
   "Renault|Laguna|1900.0|Dizel": [
@@ -75060,9 +62397,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Renault|Laguna|2000.0|Benzin": [
     114.0,
-    140.0,
-    150.0,
-    170.0
+    140.0
   ],
   "Renault|Laguna|2000.0|Dizel": [
     150.0
@@ -75073,18 +62408,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     140.0,
     170.0
   ],
-  "Renault|Laguna|2200.0|Dizel": [
-    150.0
-  ],
-  "Renault|Laguna|2900.0|LPG & Benzin": [
-    207.0
-  ],
   "Renault|Latitude|1500.0|Benzin": [
     110.0
   ],
   "Renault|Latitude|1500.0|Dizel": [
-    110.0,
-    113.0
+    110.0
   ],
   "Renault|Latitude|2000.0|Benzin": [
     175.0
@@ -75092,31 +62420,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Latitude|2000.0|Dizel": [
     175.0
   ],
-  "Renault|Master|100.0|Dizel": [
-    92.0
-  ],
-  "Renault|Master|200.0|Dizel": [
-    125.0,
-    168.0
-  ],
-  "Renault|Master|1300.0|Dizel": [
-    101.0
-  ],
   "Renault|Master|2000.0|Dizel": [
-    76.0,
     101.0,
     126.0,
-    151.0,
-    170.0,
-    201.0
-  ],
-  "Renault|Master|2200.0|Dizel": [
-    90.0,
-    120.0,
-    165.0
+    170.0
   ],
   "Renault|Master|2300.0|Dizel": [
-    92.0,
     125.0,
     150.0,
     165.0
@@ -75126,31 +62435,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     115.0
   ],
-  "Renault|Master|3000.0|Dizel": [
-    101.0
-  ],
-  "Renault|Megane|0.0|Benzin": [
-    138.0
-  ],
-  "Renault|Megane|0.0|LPG & Benzin": [
-    88.0,
-    113.0
-  ],
   "Renault|Megane|600.0|Benzin": [
     113.0,
     138.0
   ],
-  "Renault|Megane|600.0|Dizel": [
-    88.0
-  ],
-  "Renault|Megane|600.0|LPG & Benzin": [
-    88.0
-  ],
-  "Renault|Megane|1000.0|Benzin": [
-    115.0
-  ],
   "Renault|Megane|1200.0|Benzin": [
-    113.0,
     130.0,
     138.0
   ],
@@ -75191,8 +62480,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     105.0,
     110.0,
-    115.0,
-    163.0
+    115.0
   ],
   "Renault|Megane|1500.0|LPG & Benzin": [
     88.0,
@@ -75203,67 +62491,37 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     107.0,
     110.0,
-    115.0,
-    130.0
+    115.0
   ],
   "Renault|Megane|1600.0|Dizel": [
-    110.0,
     130.0
-  ],
-  "Renault|Megane|1600.0|Hibrit": [
-    107.0
   ],
   "Renault|Megane|1600.0|LPG & Benzin": [
     90.0,
     100.0,
     107.0,
     110.0,
-    115.0,
-    205.0
-  ],
-  "Renault|Megane|1700.0|Benzin": [
-    113.0
-  ],
-  "Renault|Megane|1700.0|LPG & Benzin": [
-    88.0,
-    113.0
+    115.0
   ],
   "Renault|Megane|1800.0|LPG & Benzin": [
     115.0
   ],
-  "Renault|Megane|1900.0|Benzin": [
-    138.0,
-    263.0
-  ],
   "Renault|Megane|1900.0|Dizel": [
     64.0,
-    88.0,
     102.0,
     120.0
   ],
   "Renault|Megane|1900.0|LPG & Benzin": [
-    113.0,
-    138.0
+    113.0
   ],
   "Renault|Megane|2000.0|Benzin": [
     115.0,
-    136.0,
-    147.0,
-    225.0
+    147.0
   ],
   "Renault|Megane|2000.0|LPG & Benzin": [
     115.0,
     136.0,
     147.0
-  ],
-  "Renault|Megane|2300.0|LPG & Benzin": [
-    88.0
-  ],
-  "Renault|Megane|6000.0|LPG & Benzin": [
-    88.0
-  ],
-  "Renault|Modus|1300.0|Benzin": [
-    88.0
   ],
   "Renault|Modus|1400.0|Benzin": [
     100.0
@@ -75282,37 +62540,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Renault|Modus|1600.0|LPG & Benzin": [
-    110.0,
     115.0
-  ],
-  "Renault|R 11|1400.0|Benzin": [
-    67.0
   ],
   "Renault|R 11|1400.0|LPG & Benzin": [
     67.0
-  ],
-  "Renault|R 11|1600.0|Benzin": [
-    80.0
-  ],
-  "Renault|R 11|1600.0|Dizel": [
-    55.0
   ],
   "Renault|R 11|1600.0|LPG & Benzin": [
     80.0
   ],
   "Renault|R 11|1700.0|Benzin": [
-    74.0,
-    88.0,
-    95.0
+    74.0
   ],
   "Renault|R 11|1700.0|LPG & Benzin": [
     74.0,
-    80.0,
     88.0,
     95.0
-  ],
-  "Renault|R 11|1900.0|Dizel": [
-    63.0
   ],
   "Renault|R 12|1300.0|Benzin": [
     54.0,
@@ -75330,24 +62572,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|R 12|1400.0|LPG & Benzin": [
     72.0
   ],
-  "Renault|R 12|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Renault|R 12|1600.0|Benzin": [
-    75.0
-  ],
   "Renault|R 12|1600.0|LPG & Benzin": [
     75.0
   ],
   "Renault|R 19|0.0|LPG & Benzin": [
-    113.0,
-    163.0
-  ],
-  "Renault|R 19|600.0|LPG & Benzin": [
-    88.0
+    113.0
   ],
   "Renault|R 19|1300.0|Benzin": [
-    63.0,
     88.0
   ],
   "Renault|R 19|1300.0|LPG & Benzin": [
@@ -75382,22 +62613,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0
   ],
   "Renault|R 19|1700.0|Benzin": [
-    75.0,
-    88.0
+    75.0
   ],
   "Renault|R 19|1700.0|LPG & Benzin": [
-    75.0,
-    88.0,
-    113.0
+    88.0
   ],
   "Renault|R 19|1800.0|Benzin": [
     109.0
   ],
   "Renault|R 19|1800.0|LPG & Benzin": [
     110.0
-  ],
-  "Renault|R 19|1900.0|Benzin": [
-    65.0
   ],
   "Renault|R 19|1900.0|Dizel": [
     65.0,
@@ -75406,11 +62631,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|R 19|1900.0|LPG & Benzin": [
     113.0
   ],
-  "Renault|R 19|2300.0|LPG & Benzin": [
-    113.0
-  ],
   "Renault|R 21|1500.0|LPG & Benzin": [
-    63.0,
     88.0
   ],
   "Renault|R 21|1700.0|Benzin": [
@@ -75430,30 +62651,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|R 21|2000.0|LPG & Benzin": [
     105.0
   ],
-  "Renault|R 21|2100.0|Benzin": [
-    67.0
-  ],
-  "Renault|R 21|2200.0|Benzin": [
-    138.0
-  ],
-  "Renault|R 25|2000.0|LPG & Benzin": [
-    137.0
-  ],
-  "Renault|R 25|2200.0|Benzin": [
-    107.0
-  ],
   "Renault|R 5|1100.0|LPG & Benzin": [
     46.0
   ],
-  "Renault|R 5|1400.0|LPG & Benzin": [
-    58.0
-  ],
-  "Renault|R 5|1700.0|LPG & Benzin": [
-    88.0
-  ],
   "Renault|R 9|0.0|LPG & Benzin": [
-    63.0,
-    88.0
+    63.0
   ],
   "Renault|R 9|1200.0|LPG & Benzin": [
     54.0
@@ -75466,7 +62668,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Renault|R 9|1400.0|Benzin": [
-    60.0,
     67.0,
     72.0,
     83.0
@@ -75477,9 +62678,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     67.0,
     72.0,
     83.0
-  ],
-  "Renault|R 9|1500.0|Benzin": [
-    88.0
   ],
   "Renault|R 9|1500.0|LPG & Benzin": [
     63.0,
@@ -75494,38 +62692,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|R 9|1600.0|LPG & Benzin": [
     92.0
   ],
-  "Renault|R 9|1700.0|LPG & Benzin": [
-    63.0,
-    75.0
-  ],
-  "Renault|Rafale|1200.0|Benzin": [
-    200.0
-  ],
   "Renault|Rafale|1200.0|Hibrit": [
     200.0
-  ],
-  "Renault|Safrane|1900.0|Benzin": [
-    138.0
-  ],
-  "Renault|Safrane|1900.0|LPG & Benzin": [
-    136.0,
-    138.0
   ],
   "Renault|Safrane|2000.0|LPG & Benzin": [
     106.0
   ],
-  "Renault|Safrane|2100.0|Dizel": [
-    88.0
-  ],
   "Renault|Safrane|2400.0|LPG & Benzin": [
-    163.0
-  ],
-  "Renault|Safrane|2800.0|LPG & Benzin": [
     163.0
   ],
   "Renault|Scenic|1500.0|Benzin": [
     80.0,
-    88.0,
     113.0
   ],
   "Renault|Scenic|1500.0|Dizel": [
@@ -75537,13 +62714,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Renault|Scenic|1500.0|LPG & Benzin": [
-    88.0,
     113.0
   ],
   "Renault|Scenic|1600.0|Benzin": [
     90.0,
     107.0,
-    110.0,
     115.0
   ],
   "Renault|Scenic|1600.0|LPG & Benzin": [
@@ -75552,9 +62727,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     115.0
   ],
-  "Renault|Scenic|1700.0|Benzin": [
-    113.0
-  ],
   "Renault|Scenic|1900.0|Benzin": [
     113.0,
     120.0
@@ -75562,16 +62734,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Scenic|1900.0|Dizel": [
     98.0,
     113.0,
-    120.0,
-    130.0
+    120.0
   ],
   "Renault|Scenic|1900.0|LPG & Benzin": [
-    113.0,
-    139.0,
-    188.0
-  ],
-  "Renault|Scenic|2000.0|Benzin": [
-    136.0
+    139.0
   ],
   "Renault|Scenic|2000.0|LPG & Benzin": [
     115.0,
@@ -75580,19 +62746,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Scenic RX4|2000.0|LPG & Benzin": [
     140.0
   ],
-  "Renault|Symbol|0.0|Dizel": [
-    88.0
-  ],
   "Renault|Symbol|0.0|LPG & Benzin": [
     88.0
   ],
   "Renault|Symbol|600.0|Benzin": [
     63.0,
     88.0
-  ],
-  "Renault|Symbol|600.0|Dizel": [
-    88.0,
-    113.0
   ],
   "Renault|Symbol|600.0|LPG & Benzin": [
     63.0
@@ -75622,12 +62781,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Renault|Symbol|1300.0|Benzin": [
-    63.0,
-    88.0
+    63.0
   ],
   "Renault|Symbol|1300.0|LPG & Benzin": [
-    63.0,
-    88.0
+    63.0
   ],
   "Renault|Symbol|1400.0|Benzin": [
     75.0,
@@ -75641,9 +62798,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     65.0,
     75.0,
     85.0,
-    90.0,
-    113.0,
-    163.0
+    90.0
   ],
   "Renault|Symbol|1500.0|Dizel": [
     65.0,
@@ -75657,38 +62812,24 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     88.0
   ],
-  "Renault|Symbol|1700.0|Benzin": [
-    63.0
-  ],
-  "Renault|Symbol|1700.0|Dizel": [
-    63.0
-  ],
-  "Renault|Symbol|5800.0|Dizel": [
-    88.0
-  ],
   "Renault|Taliant|600.0|Benzin": [
     63.0,
     88.0
   ],
   "Renault|Taliant|1000.0|Benzin": [
     65.0,
-    90.0,
-    100.0
+    90.0
   ],
   "Renault|Taliant|1000.0|LPG & Benzin": [
-    65.0,
     90.0
   ],
   "Renault|Taliant|1200.0|Benzin": [
-    63.0,
     88.0
   ],
   "Renault|Talisman|1300.0|Benzin": [
-    160.0,
-    163.0
+    160.0
   ],
   "Renault|Talisman|1500.0|Benzin": [
-    113.0,
     138.0,
     163.0
   ],
@@ -75705,23 +62846,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     160.0
   ],
   "Renault|Trafic|0.0|Dizel": [
-    100.0,
-    115.0
+    100.0
   ],
   "Renault|Trafic|1300.0|Dizel": [
-    101.0,
-    126.0
+    101.0
   ],
   "Renault|Trafic|1600.0|Dizel": [
-    101.0,
     115.0,
     125.0
   ],
   "Renault|Trafic|1800.0|Dizel": [
     101.0,
     126.0,
-    151.0,
-    176.0
+    151.0
   ],
   "Renault|Trafic|1900.0|Dizel": [
     82.0,
@@ -75732,10 +62869,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     145.0,
     150.0,
     170.0
-  ],
-  "Renault|Trafic Multix|1800.0|Dizel": [
-    101.0,
-    176.0
   ],
   "Renault|Trafic Multix|1900.0|Dizel": [
     100.0
@@ -75749,29 +62882,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Renault|Twingo|1100.0|LPG & Benzin": [
     58.0
   ],
-  "Renault|Twingo|1200.0|Benzin": [
-    63.0
-  ],
   "Renault|Vel Satis|2000.0|Benzin": [
     165.0
-  ],
-  "Rolls-Royce|Silver|6800.0|LPG & Benzin": [
-    300.0
-  ],
-  "Rover|200|1800.0|Benzin": [
-    145.0
-  ],
-  "Rover|200|1800.0|LPG & Benzin": [
-    145.0
-  ],
-  "Rover|214|1300.0|Benzin": [
-    113.0
   ],
   "Rover|214|1400.0|Benzin": [
     103.0
   ],
   "Rover|214|1400.0|LPG & Benzin": [
-    75.0,
     103.0
   ],
   "Rover|216|1500.0|Benzin": [
@@ -75786,15 +62903,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Rover|216|1600.0|LPG & Benzin": [
     111.0
   ],
-  "Rover|216|1700.0|LPG & Benzin": [
-    88.0
-  ],
-  "Rover|218|1800.0|LPG & Benzin": [
-    145.0
-  ],
-  "Rover|220|2000.0|LPG & Benzin": [
-    200.0
-  ],
   "Rover|25|1600.0|Benzin": [
     109.0
   ],
@@ -75807,12 +62915,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Rover|414|1400.0|LPG & Benzin": [
     103.0
   ],
-  "Rover|414|1500.0|LPG & Benzin": [
-    113.0
-  ],
-  "Rover|416|1500.0|LPG & Benzin": [
-    113.0
-  ],
   "Rover|416|1600.0|Benzin": [
     111.0
   ],
@@ -75822,82 +62924,34 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Rover|420|2000.0|LPG & Benzin": [
     136.0
   ],
-  "Rover|45|1600.0|Benzin": [
-    109.0
-  ],
   "Rover|45|1600.0|LPG & Benzin": [
     109.0
   ],
   "Rover|620|1900.0|LPG & Benzin": [
     138.0
   ],
-  "Rover|620|2000.0|Benzin": [
-    200.0
-  ],
   "Rover|620|2000.0|LPG & Benzin": [
     131.0,
     200.0
-  ],
-  "Rover|75|1700.0|Benzin": [
-    113.0,
-    163.0
   ],
   "Rover|75|1800.0|LPG & Benzin": [
     120.0
   ],
   "Rover|75|2000.0|Benzin": [
-    131.0,
     150.0
-  ],
-  "Rover|75|2000.0|LPG & Benzin": [
-    150.0
-  ],
-  "Rover|820|2000.0|Benzin": [
-    180.0,
-    200.0
-  ],
-  "Rover|820|2000.0|LPG & Benzin": [
-    136.0
-  ],
-  "Rover|Streetwise|1400.0|LPG & Benzin": [
-    103.0
   ],
   "Saab|9-3|1900.0|Benzin": [
     163.0,
     213.0
   ],
   "Saab|9-3|1900.0|Dizel": [
-    138.0,
     150.0
-  ],
-  "Saab|9-3|1900.0|LPG & Benzin": [
-    163.0
   ],
   "Saab|9-3|2000.0|Benzin": [
-    175.0,
-    205.0
-  ],
-  "Saab|9-3|2000.0|LPG & Benzin": [
-    175.0,
-    210.0
-  ],
-  "Saab|9-3|2200.0|Benzin": [
-    238.0
-  ],
-  "Saab|9-3|2300.0|Benzin": [
-    238.0
-  ],
-  "Saab|9-5|1900.0|Dizel": [
-    150.0
+    175.0
   ],
   "Saab|9-5|2000.0|LPG & Benzin": [
     150.0
-  ],
-  "Saab|900|2000.0|Benzin": [
-    185.0
-  ],
-  "Saab|9000|2000.0|LPG & Benzin": [
-    165.0
   ],
   "Seat|Alhambra|1300.0|Benzin": [
     138.0
@@ -75905,19 +62959,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Alhambra|1400.0|Benzin": [
     150.0
   ],
-  "Seat|Alhambra|1900.0|Benzin": [
-    138.0
-  ],
   "Seat|Alhambra|1900.0|Dizel": [
     115.0,
-    138.0,
     188.0
   ],
   "Seat|Alhambra|2000.0|Benzin": [
     200.0
-  ],
-  "Seat|Alhambra|2000.0|LPG & Benzin": [
-    115.0
   ],
   "Seat|Altea|1300.0|Benzin": [
     113.0
@@ -75940,35 +62987,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Altea|1600.0|LPG & Benzin": [
     102.0
   ],
-  "Seat|Altea|1900.0|Benzin": [
-    105.0
-  ],
   "Seat|Altea|1900.0|Dizel": [
     105.0
   ],
-  "Seat|Arona|0.0|Benzin": [
-    113.0,
-    138.0
-  ],
   "Seat|Arona|600.0|Benzin": [
     88.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Seat|Arona|1000.0|Benzin": [
     95.0,
     110.0,
     115.0
-  ],
-  "Seat|Arona|1000.0|LPG & Benzin": [
-    110.0
-  ],
-  "Seat|Arona|1300.0|Benzin": [
-    88.0,
-    113.0
-  ],
-  "Seat|Arona|1500.0|Benzin": [
-    150.0
   ],
   "Seat|Arona|1500.0|Dizel": [
     88.0
@@ -75982,11 +63011,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Ateca|1400.0|Benzin": [
     150.0
   ],
-  "Seat|Ateca|1400.0|LPG & Benzin": [
-    150.0
-  ],
   "Seat|Ateca|1500.0|Benzin": [
-    113.0,
     138.0,
     150.0
   ],
@@ -75996,32 +63021,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Ateca|1600.0|Dizel": [
     115.0
   ],
-  "Seat|Ateca|1700.0|Dizel": [
-    163.0
-  ],
   "Seat|Cordoba|1300.0|Benzin": [
-    63.0,
     88.0
-  ],
-  "Seat|Cordoba|1300.0|Dizel": [
-    63.0
   ],
   "Seat|Cordoba|1300.0|LPG & Benzin": [
     63.0,
     88.0
   ],
   "Seat|Cordoba|1400.0|Benzin": [
-    60.0,
     75.0,
     80.0,
-    85.0,
     100.0
   ],
   "Seat|Cordoba|1400.0|Dizel": [
     75.0,
-    80.0,
-    85.0,
-    100.0
+    80.0
   ],
   "Seat|Cordoba|1400.0|LPG & Benzin": [
     60.0,
@@ -76029,7 +63043,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0
   ],
   "Seat|Cordoba|1500.0|Benzin": [
-    63.0,
     88.0
   ],
   "Seat|Cordoba|1500.0|Dizel": [
@@ -76048,15 +63061,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     100.0
   ],
-  "Seat|Cordoba|1900.0|Benzin": [
-    68.0,
-    130.0
-  ],
   "Seat|Cordoba|1900.0|Dizel": [
     90.0,
-    100.0,
-    110.0,
-    113.0
+    110.0
   ],
   "Seat|Exeo|1600.0|Benzin": [
     102.0
@@ -76069,9 +63076,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0,
     113.0
   ],
-  "Seat|Ibiza|600.0|LPG & Benzin": [
-    63.0
-  ],
   "Seat|Ibiza|1000.0|Benzin": [
     75.0,
     80.0,
@@ -76080,8 +63084,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Seat|Ibiza|1000.0|LPG & Benzin": [
-    75.0,
-    95.0
+    75.0
   ],
   "Seat|Ibiza|1200.0|Benzin": [
     64.0,
@@ -76096,22 +63099,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Ibiza|1200.0|LPG & Benzin": [
     64.0,
     70.0,
-    88.0,
     105.0
   ],
   "Seat|Ibiza|1300.0|Benzin": [
-    63.0,
     88.0,
     113.0,
-    188.0,
-    238.0
-  ],
-  "Seat|Ibiza|1300.0|Dizel": [
-    88.0
+    188.0
   ],
   "Seat|Ibiza|1300.0|LPG & Benzin": [
     55.0,
-    63.0,
     88.0
   ],
   "Seat|Ibiza|1400.0|Benzin": [
@@ -76140,12 +63136,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Seat|Ibiza|1500.0|Dizel": [
-    88.0,
-    188.0
+    88.0
   ],
   "Seat|Ibiza|1500.0|LPG & Benzin": [
-    90.0,
-    113.0
+    90.0
   ],
   "Seat|Ibiza|1600.0|Benzin": [
     100.0,
@@ -76153,8 +63147,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Seat|Ibiza|1600.0|Dizel": [
     90.0,
-    95.0,
-    105.0
+    95.0
   ],
   "Seat|Ibiza|1600.0|LPG & Benzin": [
     75.0,
@@ -76166,18 +63159,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Seat|Ibiza|1900.0|Dizel": [
     90.0,
-    110.0,
-    113.0,
     160.0
-  ],
-  "Seat|Leon|0.0|Benzin": [
-    113.0
   ],
   "Seat|Leon|600.0|Benzin": [
     113.0
-  ],
-  "Seat|Leon|600.0|Dizel": [
-    138.0
   ],
   "Seat|Leon|600.0|Hibrit": [
     113.0
@@ -76200,18 +63185,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     113.0
   ],
-  "Seat|Leon|1200.0|Dizel": [
-    113.0
-  ],
   "Seat|Leon|1200.0|LPG & Benzin": [
     105.0
   ],
   "Seat|Leon|1300.0|Benzin": [
     113.0,
     138.0
-  ],
-  "Seat|Leon|1300.0|Dizel": [
-    113.0
   ],
   "Seat|Leon|1300.0|LPG & Benzin": [
     113.0
@@ -76221,9 +63200,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     140.0,
     150.0
   ],
-  "Seat|Leon|1400.0|Dizel": [
-    125.0
-  ],
   "Seat|Leon|1400.0|LPG & Benzin": [
     125.0
   ],
@@ -76231,21 +63207,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0,
     130.0,
     138.0,
-    150.0,
-    163.0,
-    204.0
+    150.0
   ],
   "Seat|Leon|1500.0|Dizel": [
     113.0
   ],
-  "Seat|Leon|1500.0|Elektrik": [
-    204.0
-  ],
   "Seat|Leon|1500.0|Hibrit": [
-    138.0,
     150.0,
-    204.0,
-    213.0
+    204.0
   ],
   "Seat|Leon|1500.0|LPG & Benzin": [
     113.0
@@ -76253,7 +63222,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Leon|1600.0|Benzin": [
     102.0,
     105.0,
-    110.0,
     115.0
   ],
   "Seat|Leon|1600.0|Dizel": [
@@ -76265,25 +63233,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0,
     105.0
   ],
-  "Seat|Leon|1700.0|Benzin": [
-    213.0
-  ],
-  "Seat|Leon|1700.0|Dizel": [
-    113.0
-  ],
-  "Seat|Leon|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Seat|Leon|1800.0|Benzin": [
-    125.0
-  ],
   "Seat|Leon|1900.0|Benzin": [
     105.0,
-    188.0,
     238.0
   ],
   "Seat|Leon|1900.0|Dizel": [
-    90.0,
     105.0,
     110.0,
     150.0
@@ -76296,27 +63250,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Leon|2000.0|Dizel": [
     140.0
   ],
-  "Seat|Leon|4300.0|Benzin": [
-    113.0
-  ],
-  "Seat|Malaga|1500.0|Benzin": [
-    113.0
-  ],
-  "Seat|Marbella|900.0|LPG & Benzin": [
-    40.0
-  ],
   "Seat|Tarraco|1500.0|Benzin": [
-    138.0,
     150.0
-  ],
-  "Seat|Toledo|600.0|Benzin": [
-    88.0
   ],
   "Seat|Toledo|1200.0|Benzin": [
     90.0,
     105.0,
-    110.0,
-    113.0
+    110.0
   ],
   "Seat|Toledo|1300.0|Benzin": [
     113.0
@@ -76328,22 +63268,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Seat|Toledo|1400.0|Dizel": [
     90.0
   ],
-  "Seat|Toledo|1400.0|LPG & Benzin": [
-    122.0
-  ],
   "Seat|Toledo|1500.0|Benzin": [
-    88.0,
-    113.0,
-    138.0
-  ],
-  "Seat|Toledo|1500.0|Dizel": [
     88.0,
     113.0
   ],
+  "Seat|Toledo|1500.0|Dizel": [
+    88.0
+  ],
   "Seat|Toledo|1500.0|LPG & Benzin": [
-    88.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Seat|Toledo|1600.0|Benzin": [
     90.0,
@@ -76359,12 +63292,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     105.0
   ],
-  "Seat|Toledo|1700.0|Benzin": [
-    113.0
-  ],
-  "Seat|Toledo|1700.0|Dizel": [
-    88.0
-  ],
   "Seat|Toledo|1800.0|Benzin": [
     125.0
   ],
@@ -76373,48 +63300,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     125.0
   ],
   "Seat|Toledo|1900.0|Benzin": [
-    88.0,
     110.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Seat|Toledo|1900.0|Dizel": [
     90.0,
-    110.0,
-    130.0
-  ],
-  "Seat|Toledo|2000.0|Dizel": [
-    140.0
+    110.0
   ],
   "Seat|Toledo|2000.0|LPG & Benzin": [
     150.0
   ],
-  "Skoda|Citigo|600.0|Benzin": [
-    63.0
-  ],
   "Skoda|Citigo|1000.0|Benzin": [
     60.0
-  ],
-  "Skoda|Citigo|1200.0|Benzin": [
-    63.0
-  ],
-  "Skoda|Enyaq Coupe|1300.0|Elektrik": [
-    213.0
-  ],
-  "Skoda|Enyaq Coupe|1500.0|Elektrik": [
-    213.0
-  ],
-  "Skoda|Enyaq Coupe|6000.0|Elektrik": [
-    213.0
-  ],
-  "Skoda|Fabia|0.0|Benzin": [
-    88.0
-  ],
-  "Skoda|Fabia|0.0|Dizel": [
-    88.0
-  ],
-  "Skoda|Fabia|0.0|LPG & Benzin": [
-    88.0
   ],
   "Skoda|Fabia|600.0|Benzin": [
     63.0,
@@ -76434,7 +63331,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0
   ],
   "Skoda|Fabia|1200.0|Benzin": [
-    55.0,
     64.0,
     70.0,
     90.0,
@@ -76444,21 +63340,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Skoda|Fabia|1200.0|LPG & Benzin": [
     64.0,
-    70.0,
-    105.0
+    70.0
   ],
   "Skoda|Fabia|1300.0|Benzin": [
     63.0,
     88.0,
-    113.0,
-    188.0
-  ],
-  "Skoda|Fabia|1300.0|Dizel": [
     113.0
   ],
   "Skoda|Fabia|1300.0|LPG & Benzin": [
     63.0,
-    88.0,
     113.0
   ],
   "Skoda|Fabia|1400.0|Benzin": [
@@ -76466,8 +63356,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     80.0,
     85.0,
-    100.0,
-    180.0
+    100.0
   ],
   "Skoda|Fabia|1400.0|Dizel": [
     70.0,
@@ -76491,10 +63380,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     88.0
   ],
-  "Skoda|Fabia|1500.0|LPG & Benzin": [
-    88.0,
-    113.0
-  ],
   "Skoda|Fabia|1600.0|Benzin": [
     90.0,
     105.0
@@ -76502,18 +63387,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Fabia|1600.0|Dizel": [
     90.0
   ],
-  "Skoda|Fabia|1600.0|LPG & Benzin": [
-    105.0
-  ],
-  "Skoda|Fabia|1700.0|Benzin": [
-    88.0
-  ],
   "Skoda|Fabia|1900.0|Dizel": [
-    63.0,
     100.0
-  ],
-  "Skoda|Favorit|0.0|LPG & Benzin": [
-    63.0
   ],
   "Skoda|Favorit|1300.0|Benzin": [
     57.0,
@@ -76526,14 +63401,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     88.0
   ],
-  "Skoda|Favorit|1500.0|LPG & Benzin": [
-    88.0
-  ],
-  "Skoda|Felicia|1200.0|LPG & Benzin": [
-    63.0
-  ],
   "Skoda|Felicia|1300.0|Benzin": [
-    50.0,
     55.0,
     63.0,
     68.0
@@ -76560,17 +63428,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Skoda|Forman|1300.0|Benzin": [
     57.0,
-    58.0,
     63.0
   ],
   "Skoda|Forman|1300.0|LPG & Benzin": [
     57.0,
     58.0,
     63.0
-  ],
-  "Skoda|Kamiq|0.0|Benzin": [
-    113.0,
-    138.0
   ],
   "Skoda|Kamiq|600.0|Benzin": [
     113.0
@@ -76586,9 +63449,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Kamiq|1600.0|Dizel": [
     115.0
   ],
-  "Skoda|Karoq|600.0|Benzin": [
-    138.0
-  ],
   "Skoda|Karoq|1000.0|Benzin": [
     115.0
   ],
@@ -76599,19 +63459,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Karoq|1500.0|Dizel": [
     113.0
   ],
-  "Skoda|Karoq|1600.0|Benzin": [
-    115.0
-  ],
   "Skoda|Karoq|1600.0|Dizel": [
     115.0
   ],
-  "Skoda|Karoq|1700.0|Dizel": [
-    113.0
-  ],
   "Skoda|Kodiaq|1300.0|Benzin": [
-    138.0
-  ],
-  "Skoda|Kodiaq|1300.0|LPG & Benzin": [
     138.0
   ],
   "Skoda|Kodiaq|1400.0|Benzin": [
@@ -76629,22 +63480,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     150.0
   ],
-  "Skoda|Kodiaq|1500.0|LPG & Benzin": [
-    138.0
-  ],
   "Skoda|Kodiaq|1900.0|Dizel": [
     188.0
   ],
   "Skoda|Kodiaq|2000.0|Benzin": [
     245.0
   ],
-  "Skoda|Octavia|0.0|Dizel": [
-    113.0
-  ],
   "Skoda|Octavia|600.0|Benzin": [
     88.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Skoda|Octavia|600.0|Hibrit": [
     113.0
@@ -76652,9 +63496,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Octavia|1000.0|Benzin": [
     110.0,
     115.0
-  ],
-  "Skoda|Octavia|1000.0|Elektrik": [
-    110.0
   ],
   "Skoda|Octavia|1000.0|Hibrit": [
     110.0
@@ -76669,11 +63510,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Octavia|1200.0|Hibrit": [
     113.0
   ],
-  "Skoda|Octavia|1200.0|LPG & Benzin": [
-    86.0
-  ],
   "Skoda|Octavia|1300.0|Benzin": [
-    113.0,
     138.0
   ],
   "Skoda|Octavia|1400.0|Benzin": [
@@ -76696,12 +63533,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Octavia|1500.0|Hibrit": [
     115.0,
     138.0,
-    150.0,
-    238.0
+    150.0
   ],
   "Skoda|Octavia|1500.0|LPG & Benzin": [
     113.0,
-    138.0,
     150.0
   ],
   "Skoda|Octavia|1600.0|Benzin": [
@@ -76724,31 +63559,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Skoda|Octavia|1700.0|Dizel": [
-    113.0,
-    138.0
+    113.0
   ],
   "Skoda|Octavia|1800.0|LPG & Benzin": [
-    125.0,
     150.0
   ],
   "Skoda|Octavia|1900.0|Benzin": [
     90.0,
-    105.0,
-    213.0,
     238.0
   ],
   "Skoda|Octavia|1900.0|Dizel": [
     90.0,
-    100.0,
     105.0,
     110.0,
-    113.0,
-    130.0,
-    138.0
-  ],
-  "Skoda|Octavia|2000.0|Benzin": [
-    188.0,
-    230.0
+    130.0
   ],
   "Skoda|Octavia|2000.0|Dizel": [
     140.0
@@ -76764,23 +63588,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     90.0,
     105.0,
-    110.0,
     113.0
   ],
   "Skoda|Rapid|1200.0|LPG & Benzin": [
-    63.0,
     75.0
-  ],
-  "Skoda|Rapid|1300.0|Benzin": [
-    113.0
-  ],
-  "Skoda|Rapid|1300.0|Dizel": [
-    88.0
   ],
   "Skoda|Rapid|1400.0|Benzin": [
     90.0,
-    122.0,
-    125.0
+    122.0
   ],
   "Skoda|Rapid|1400.0|Dizel": [
     90.0
@@ -76809,11 +63624,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Roomster|1200.0|LPG & Benzin": [
     70.0
   ],
-  "Skoda|Roomster|1400.0|Benzin": [
-    85.0
-  ],
   "Skoda|Roomster|1400.0|Dizel": [
-    70.0,
     80.0
   ],
   "Skoda|Roomster|1400.0|LPG & Benzin": [
@@ -76856,13 +63667,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Scala|1600.0|Dizel": [
     115.0
   ],
-  "Skoda|SuperB|0.0|Dizel": [
-    113.0
-  ],
   "Skoda|SuperB|1300.0|Benzin": [
     113.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Skoda|SuperB|1400.0|Benzin": [
     125.0,
@@ -76875,19 +63682,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0,
     138.0,
     150.0,
-    163.0,
-    213.0
+    163.0
   ],
   "Skoda|SuperB|1500.0|Dizel": [
-    113.0,
-    138.0
+    113.0
   ],
   "Skoda|SuperB|1500.0|Hibrit": [
     138.0,
-    150.0,
-    204.0
-  ],
-  "Skoda|SuperB|1500.0|LPG & Benzin": [
     150.0
   ],
   "Skoda|SuperB|1600.0|Benzin": [
@@ -76901,26 +63702,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|SuperB|1700.0|Benzin": [
     113.0
   ],
-  "Skoda|SuperB|1700.0|Dizel": [
-    113.0,
-    138.0
-  ],
   "Skoda|SuperB|1800.0|Benzin": [
-    150.0
-  ],
-  "Skoda|SuperB|1800.0|LPG & Benzin": [
     150.0
   ],
   "Skoda|SuperB|1900.0|Benzin": [
     131.0,
     138.0,
-    163.0,
     188.0,
-    263.0,
     288.0
   ],
   "Skoda|SuperB|1900.0|Dizel": [
-    88.0,
     105.0,
     131.0,
     138.0,
@@ -76928,8 +63719,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     188.0
   ],
   "Skoda|SuperB|2000.0|Benzin": [
-    140.0,
-    170.0,
     280.0
   ],
   "Skoda|SuperB|2000.0|Dizel": [
@@ -76938,14 +63727,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     190.0,
     200.0,
     280.0
-  ],
-  "Skoda|SuperB|2500.0|Benzin": [
-    155.0,
-    163.0
-  ],
-  "Skoda|SuperB|2500.0|Dizel": [
-    155.0,
-    163.0
   ],
   "Skoda|Yeti|600.0|Benzin": [
     113.0
@@ -76957,75 +63738,37 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Yeti|1200.0|LPG & Benzin": [
     105.0
   ],
-  "Skoda|Yeti|1300.0|Benzin": [
-    113.0
-  ],
   "Skoda|Yeti|1400.0|Benzin": [
     122.0,
     125.0
   ],
-  "Skoda|Yeti|1400.0|LPG & Benzin": [
-    122.0
-  ],
-  "Skoda|Yeti|1500.0|Dizel": [
-    113.0
-  ],
   "Skoda|Yeti|1600.0|Dizel": [
     105.0
-  ],
-  "Smart|ForFour|600.0|Benzin": [
-    63.0
   ],
   "Smart|ForFour|900.0|Benzin": [
     90.0
   ],
-  "Smart|ForFour|1000.0|Benzin": [
-    71.0
-  ],
   "Smart|ForFour|1100.0|Benzin": [
-    65.0,
     75.0
   ],
   "Smart|ForFour|1200.0|Benzin": [
-    63.0,
-    88.0
-  ],
-  "Smart|ForFour|1300.0|Benzin": [
-    63.0,
-    88.0
-  ],
-  "Smart|ForFour|1500.0|Benzin": [
-    88.0,
-    113.0
+    63.0
   ],
   "Smart|ForFour|1500.0|Dizel": [
-    68.0,
-    88.0,
     95.0
-  ],
-  "Smart|ForFour|1500.0|LPG & Benzin": [
-    109.0
-  ],
-  "Smart|ForTwo|600.0|Benzin": [
-    63.0,
-    88.0
   ],
   "Smart|ForTwo|700.0|Benzin": [
     61.0
   ],
   "Smart|ForTwo|1000.0|Benzin": [
     61.0,
-    71.0,
-    98.0
+    71.0
   ],
   "Smart|ForTwo|1200.0|Benzin": [
     63.0
   ],
   "Ssangyong|Actyon|1500.0|Benzin": [
     163.0
-  ],
-  "Ssangyong|Actyon|1900.0|Dizel": [
-    138.0
   ],
   "Ssangyong|Actyon|2000.0|Dizel": [
     141.0
@@ -77048,9 +63791,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ssangyong|Korando|2000.0|Dizel": [
     175.0
   ],
-  "Ssangyong|Korando|2900.0|Dizel": [
-    99.0
-  ],
   "Ssangyong|Korando Sports|1900.0|Dizel": [
     163.0
   ],
@@ -77063,16 +63803,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ssangyong|Kyron|2000.0|Dizel": [
     141.0
   ],
-  "Ssangyong|Musso|2900.0|Dizel": [
-    100.0
-  ],
   "Ssangyong|Musso Grand|2200.0|Dizel": [
     181.0,
     202.0
   ],
   "Ssangyong|Musso Grand|2300.0|Dizel": [
-    138.0,
-    163.0,
     188.0,
     213.0
   ],
@@ -77091,14 +63826,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ssangyong|Rodius|2000.0|Dizel": [
     155.0
   ],
-  "Ssangyong|Rodius|2700.0|Dizel": [
-    163.0
-  ],
   "Ssangyong|Rodius|2800.0|Dizel": [
-    163.0
-  ],
-  "Ssangyong|Tivoli|1500.0|Benzin": [
-    138.0,
     163.0
   ],
   "Ssangyong|Tivoli|1600.0|Benzin": [
@@ -77113,41 +63841,26 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Ssangyong|Torres|1500.0|Benzin": [
     163.0
   ],
-  "Ssangyong|Torres|2300.0|Elektrik": [
-    213.0
-  ],
-  "Ssangyong|XLV|1500.0|Dizel": [
-    113.0
-  ],
-  "Ssangyong|XLV|1600.0|Dizel": [
-    115.0
-  ],
   "Subaru|BRZ|1900.0|Benzin": [
     188.0
   ],
   "Subaru|BRZ|2000.0|Benzin": [
     200.0
   ],
-  "Subaru|Crosstrek|2000.0|Benzin": [
-    136.0
-  ],
   "Subaru|Crosstrek|2000.0|Hibrit": [
     136.0
   ],
   "Subaru|Forester|1900.0|Benzin": [
-    138.0,
-    188.0
+    138.0
   ],
   "Subaru|Forester|1900.0|Dizel": [
     138.0
   ],
   "Subaru|Forester|1900.0|LPG & Benzin": [
-    138.0,
-    163.0
+    138.0
   ],
   "Subaru|Forester|2000.0|Benzin": [
     150.0,
-    170.0,
     177.0,
     240.0
   ],
@@ -77165,15 +63878,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0,
     177.0
   ],
-  "Subaru|Forester|2300.0|Benzin": [
-    238.0
-  ],
-  "Subaru|Forester|2500.0|Benzin": [
-    230.0
-  ],
-  "Subaru|Forester|2500.0|LPG & Benzin": [
-    230.0
-  ],
   "Subaru|Impreza|1500.0|Benzin": [
     107.0,
     113.0
@@ -77190,48 +63894,22 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0
   ],
   "Subaru|Impreza|1900.0|Benzin": [
-    113.0,
     163.0,
     213.0,
     263.0
   ],
   "Subaru|Impreza|2000.0|Benzin": [
     160.0,
-    218.0,
     265.0
-  ],
-  "Subaru|Impreza|2000.0|LPG & Benzin": [
-    125.0,
-    160.0
-  ],
-  "Subaru|Impreza|2200.0|Benzin": [
-    288.0
-  ],
-  "Subaru|Impreza|2300.0|Benzin": [
-    313.0
   ],
   "Subaru|Impreza|2500.0|Benzin": [
     230.0,
     280.0
   ],
-  "Subaru|Justy|1000.0|LPG & Benzin": [
-    55.0
-  ],
   "Subaru|Justy|1200.0|LPG & Benzin": [
     75.0
   ],
-  "Subaru|Legacy|1500.0|Benzin": [
-    188.0
-  ],
-  "Subaru|Legacy|1800.0|LPG & Benzin": [
-    103.0
-  ],
-  "Subaru|Legacy|1900.0|LPG & Benzin": [
-    113.0
-  ],
   "Subaru|Legacy|2000.0|Benzin": [
-    125.0,
-    138.0,
     150.0
   ],
   "Subaru|Legacy|2000.0|Dizel": [
@@ -77241,9 +63919,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     125.0,
     150.0,
     165.0
-  ],
-  "Subaru|Legacy|2200.0|Benzin": [
-    136.0
   ],
   "Subaru|Levorg|1500.0|Benzin": [
     163.0
@@ -77257,17 +63932,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Subaru|Outback|2000.0|Dizel": [
     150.0
   ],
-  "Subaru|Outback|2500.0|Benzin": [
-    167.0
-  ],
   "Subaru|Vivio|700.0|Benzin": [
     44.0
   ],
   "Subaru|Vivio|700.0|LPG & Benzin": [
     44.0
-  ],
-  "Subaru|Vivio|1300.0|Benzin": [
-    50.0
   ],
   "Subaru|XV|1500.0|Benzin": [
     113.0
@@ -77281,9 +63950,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Subaru|XV|1600.0|LPG & Benzin": [
     114.0
   ],
-  "Suzuki|Alto|600.0|Benzin": [
-    63.0
-  ],
   "Suzuki|Alto|800.0|Benzin": [
     41.0
   ],
@@ -77291,9 +63957,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     41.0
   ],
   "Suzuki|Alto|1000.0|Benzin": [
-    69.0
-  ],
-  "Suzuki|Alto|1000.0|LPG & Benzin": [
     69.0
   ],
   "Suzuki|Alto|1100.0|Benzin": [
@@ -77305,9 +63968,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Suzuki|Alto|1200.0|Benzin": [
     63.0
   ],
-  "Suzuki|Alto|1300.0|Benzin": [
-    63.0
-  ],
   "Suzuki|Baleno|1200.0|Benzin": [
     91.0
   ],
@@ -77315,9 +63975,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     91.0
   ],
   "Suzuki|Baleno|1300.0|Benzin": [
-    88.0
-  ],
-  "Suzuki|Baleno|1500.0|Benzin": [
     88.0
   ],
   "Suzuki|Baleno|1600.0|Benzin": [
@@ -77349,8 +64006,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     142.0
   ],
   "Suzuki|Jimny|1300.0|Benzin": [
-    86.0,
-    8584.0
+    86.0
   ],
   "Suzuki|Jimny|1300.0|LPG & Benzin": [
     86.0,
@@ -77359,9 +64015,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Suzuki|Jimny|1500.0|Benzin": [
     102.0,
     113.0
-  ],
-  "Suzuki|Liana|1600.0|Benzin": [
-    107.0
   ],
   "Suzuki|Liana|1600.0|LPG & Benzin": [
     107.0
@@ -77377,9 +64030,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Suzuki|Maruti|1200.0|Benzin": [
     50.0
   ],
-  "Suzuki|S-Cross|1300.0|Benzin": [
-    138.0
-  ],
   "Suzuki|S-Cross|1300.0|Hibrit": [
     138.0
   ],
@@ -77389,59 +64039,32 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Suzuki|S-Cross|1400.0|Hibrit": [
     129.0
   ],
-  "Suzuki|S-Cross|1500.0|LPG & Benzin": [
-    113.0
-  ],
   "Suzuki|SJ|1300.0|Benzin": [
     63.0,
-    70.0,
-    88.0
+    70.0
   ],
   "Suzuki|SJ|1300.0|LPG & Benzin": [
-    63.0,
-    70.0,
-    88.0
-  ],
-  "Suzuki|SJ|1500.0|Dizel": [
-    113.0
-  ],
-  "Suzuki|SX4|1500.0|Benzin": [
-    113.0
+    70.0
   ],
   "Suzuki|SX4|1600.0|Benzin": [
     109.0,
     122.0
   ],
-  "Suzuki|SX4|1600.0|Dizel": [
-    91.0
-  ],
   "Suzuki|SX4|1600.0|LPG & Benzin": [
     109.0,
     122.0
-  ],
-  "Suzuki|SX4 S-Cross|1400.0|Benzin": [
-    140.0
-  ],
-  "Suzuki|SX4 S-Cross|1400.0|Hibrit": [
-    131.0
   ],
   "Suzuki|SX4 S-Cross|1600.0|Benzin": [
     122.0
   ],
   "Suzuki|SX4 S-Cross|1600.0|Dizel": [
-    91.0,
     122.0
   ],
   "Suzuki|Splash|1200.0|Benzin": [
-    76.0,
     86.0,
     95.0
   ],
-  "Suzuki|Splash|1200.0|Dizel": [
-    76.0
-  ],
   "Suzuki|Splash|1200.0|LPG & Benzin": [
-    86.0,
     95.0
   ],
   "Suzuki|Splash|1300.0|Benzin": [
@@ -77453,14 +64076,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Suzuki|Swift|600.0|Hibrit": [
     88.0
   ],
-  "Suzuki|Swift|1000.0|Benzin": [
-    53.0
-  ],
   "Suzuki|Swift|1000.0|LPG & Benzin": [
     53.0
   ],
   "Suzuki|Swift|1200.0|Benzin": [
-    63.0,
     88.0,
     95.0
   ],
@@ -77468,11 +64087,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     76.0
   ],
   "Suzuki|Swift|1200.0|Hibrit": [
-    83.0,
-    88.0
+    83.0
   ],
   "Suzuki|Swift|1200.0|LPG & Benzin": [
-    90.0,
     95.0
   ],
   "Suzuki|Swift|1300.0|Benzin": [
@@ -77488,20 +64105,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     86.0,
     88.0,
     93.0,
-    103.0,
-    163.0
+    103.0
   ],
   "Suzuki|Swift|1500.0|Benzin": [
-    88.0,
     103.0,
     113.0
   ],
   "Suzuki|Swift|1500.0|LPG & Benzin": [
     63.0,
     103.0
-  ],
-  "Suzuki|Vitara|0.0|Hibrit": [
-    25.0
   ],
   "Suzuki|Vitara|1300.0|Benzin": [
     138.0
@@ -77511,19 +64123,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Suzuki|Vitara|1400.0|Benzin": [
-    131.0,
     142.0
   ],
   "Suzuki|Vitara|1400.0|Hibrit": [
     131.0
   ],
-  "Suzuki|Vitara|1400.0|LPG & Benzin": [
-    142.0
-  ],
   "Suzuki|Vitara|1500.0|Benzin": [
-    113.0
-  ],
-  "Suzuki|Vitara|1500.0|Dizel": [
     113.0
   ],
   "Suzuki|Vitara|1500.0|LPG & Benzin": [
@@ -77543,74 +64148,30 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     122.0
   ],
   "TOGG|T10F|1300.0|Elektrik": [
-    213.0,
-    438.0
+    213.0
   ],
   "TOGG|T10F|1500.0|Elektrik": [
     213.0
   ],
   "TOGG|T10F|1700.0|Elektrik": [
-    213.0,
-    438.0
+    213.0
   ],
   "TOGG|T10F|1900.0|Elektrik": [
     213.0
   ],
-  "TOGG|T10F|2300.0|Benzin": [
-    438.0
-  ],
   "TOGG|T10F|2300.0|Elektrik": [
-    213.0,
-    438.0
-  ],
-  "TOGG|T10F|2800.0|Elektrik": [
     213.0
-  ],
-  "TOGG|T10F|3300.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10F|6000.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10X|1500.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10X|1700.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10X|1900.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10X|2800.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10X|3800.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10X|6000.0|Elektrik": [
-    601.0
   ],
   "Tata|Indica|1400.0|Benzin": [
-    50.0,
-    70.0,
-    85.0
+    70.0
   ],
   "Tata|Indica|1400.0|Dizel": [
     50.0,
     54.0,
     70.0,
-    75.0,
-    85.0
-  ],
-  "Tata|Indica|1400.0|LPG & Benzin": [
-    85.0
-  ],
-  "Tata|Indica|1500.0|Benzin": [
-    63.0,
-    88.0
+    75.0
   ],
   "Tata|Indigo|1400.0|Benzin": [
-    70.0,
     75.0
   ],
   "Tata|Indigo|1400.0|Dizel": [
@@ -77620,23 +64181,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     85.0
   ],
-  "Tata|Indigo|1500.0|Benzin": [
-    88.0
-  ],
   "Tata|Indigo|1500.0|Dizel": [
     63.0
   ],
   "Tata|Indigo|1500.0|LPG & Benzin": [
     88.0
   ],
-  "Tata|Manza|1400.0|Benzin": [
-    90.0
-  ],
   "Tata|Manza|1400.0|LPG & Benzin": [
     90.0
-  ],
-  "Tata|Marina|1300.0|Dizel": [
-    63.0
   ],
   "Tata|Marina|1400.0|Benzin": [
     70.0
@@ -77644,34 +64196,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Tata|Marina|1400.0|Dizel": [
     70.0
   ],
-  "Tata|Vista|1200.0|Benzin": [
-    75.0
-  ],
   "Tata|Vista|1200.0|Dizel": [
-    75.0,
-    90.0
-  ],
-  "Tata|Vista|1300.0|Benzin": [
-    88.0
+    75.0
   ],
   "Tata|Vista|1400.0|Benzin": [
     75.0
   ],
   "Tata|Vista|1400.0|LPG & Benzin": [
     75.0
-  ],
-  "Tesla|Model Y|1900.0|Elektrik": [
-    213.0
-  ],
-  "Tofaş|Doğan|600.0|LPG & Benzin": [
-    25.0
-  ],
-  "Tofaş|Doğan|1200.0|LPG & Benzin": [
-    88.0
-  ],
-  "Tofaş|Doğan|1300.0|LPG & Benzin": [
-    63.0,
-    88.0
   ],
   "Tofaş|Doğan|1500.0|Benzin": [
     88.0
@@ -77698,7 +64230,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Tofaş|Kartal|1500.0|LPG & Benzin": [
-    63.0,
     88.0
   ],
   "Tofaş|Kartal|1600.0|Benzin": [
@@ -77706,9 +64237,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Tofaş|Kartal|1600.0|LPG & Benzin": [
     83.0
-  ],
-  "Tofaş|Kartal|1700.0|LPG & Benzin": [
-    88.0
   ],
   "Tofaş|Murat|1200.0|Benzin": [
     65.0
@@ -77721,15 +64249,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Tofaş|Murat|1300.0|LPG & Benzin": [
     65.0
-  ],
-  "Tofaş|Murat|1500.0|Benzin": [
-    88.0
-  ],
-  "Tofaş|Murat|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Tofaş|Şahin|1200.0|LPG & Benzin": [
-    88.0
   ],
   "Tofaş|Şahin|1300.0|Benzin": [
     63.0
@@ -77744,7 +64263,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0
   ],
   "Tofaş|Şahin|1500.0|LPG & Benzin": [
-    63.0,
     88.0,
     113.0,
     163.0
@@ -77753,11 +64271,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0,
     80.0,
     83.0,
-    88.0,
-    163.0
-  ],
-  "Tofaş|Şahin|1600.0|Dizel": [
-    80.0,
     88.0
   ],
   "Tofaş|Şahin|1600.0|LPG & Benzin": [
@@ -77767,22 +64280,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     83.0,
     88.0,
     113.0,
-    138.0,
-    163.0,
-    213.0,
-    288.0,
-    363.0,
-    601.0
-  ],
-  "Tofaş|Şahin|1700.0|LPG & Benzin": [
-    88.0,
-    601.0
-  ],
-  "Tofaş|Şahin|2800.0|LPG & Benzin": [
-    288.0
-  ],
-  "Toyota|Auris|0.0|LPG & Benzin": [
-    88.0
+    163.0
   ],
   "Toyota|Auris|1300.0|Benzin": [
     88.0,
@@ -77793,18 +64291,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Auris|1300.0|LPG & Benzin": [
     88.0,
-    99.0,
-    488.0
+    99.0
   ],
   "Toyota|Auris|1400.0|Benzin": [
     90.0
   ],
   "Toyota|Auris|1400.0|Dizel": [
-    90.0,
-    188.0
+    90.0
   ],
   "Toyota|Auris|1500.0|Benzin": [
-    63.0,
     113.0,
     138.0
   ],
@@ -77819,17 +64314,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Toyota|Auris|1600.0|LPG & Benzin": [
     113.0,
     124.0,
-    132.0,
-    138.0
+    132.0
   ],
   "Toyota|Auris|1700.0|Benzin": [
     138.0
-  ],
-  "Toyota|Auris|1700.0|LPG & Benzin": [
-    88.0
-  ],
-  "Toyota|Auris|1800.0|Benzin": [
-    136.0
   ],
   "Toyota|Auris|1800.0|Hibrit": [
     136.0
@@ -77837,9 +64325,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Toyota|Avensis|1500.0|Benzin": [
     113.0,
     138.0
-  ],
-  "Toyota|Avensis|1500.0|Dizel": [
-    113.0
   ],
   "Toyota|Avensis|1500.0|LPG & Benzin": [
     113.0,
@@ -77855,9 +64340,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Toyota|Avensis|1600.0|LPG & Benzin": [
     110.0,
     132.0
-  ],
-  "Toyota|Avensis|1700.0|Benzin": [
-    138.0
   ],
   "Toyota|Avensis|1800.0|Benzin": [
     147.0
@@ -77878,7 +64360,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Toyota|Avensis|2000.0|Dizel": [
-    116.0,
     126.0
   ],
   "Toyota|Avensis|2000.0|LPG & Benzin": [
@@ -77886,85 +64367,35 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     147.0,
     150.0
   ],
-  "Toyota|Avensis|2200.0|Dizel": [
-    177.0
-  ],
-  "Toyota|Avensis|2300.0|Dizel": [
-    188.0
-  ],
   "Toyota|C-HR|600.0|Benzin": [
     113.0
   ],
   "Toyota|C-HR|1200.0|Benzin": [
     116.0
   ],
-  "Toyota|C-HR|1200.0|LPG & Benzin": [
-    116.0
-  ],
-  "Toyota|C-HR|1700.0|Benzin": [
-    113.0
-  ],
   "Toyota|C-HR|1700.0|Hibrit": [
     113.0,
     138.0
-  ],
-  "Toyota|C-HR|1800.0|Benzin": [
-    98.0
   ],
   "Toyota|C-HR|1800.0|Hibrit": [
     98.0,
     140.0
   ],
-  "Toyota|C-HR|1900.0|Hibrit": [
-    138.0
-  ],
-  "Toyota|Camry|2200.0|LPG & Benzin": [
-    131.0,
-    136.0
-  ],
   "Toyota|Camry|2400.0|LPG & Benzin": [
-    136.0,
     167.0
   ],
   "Toyota|Camry|2800.0|Benzin": [
-    188.0
-  ],
-  "Toyota|Camry|2800.0|LPG & Benzin": [
-    188.0
-  ],
-  "Toyota|Camry|3000.0|Benzin": [
     188.0
   ],
   "Toyota|Camry|3000.0|LPG & Benzin": [
     188.0
   ],
   "Toyota|Carina|2000.0|Benzin": [
-    126.0,
-    133.0
+    126.0
   ],
   "Toyota|Carina|2000.0|LPG & Benzin": [
     126.0,
     133.0
-  ],
-  "Toyota|Celica|1600.0|LPG & Benzin": [
-    105.0
-  ],
-  "Toyota|Celica|2000.0|LPG & Benzin": [
-    156.0
-  ],
-  "Toyota|Corolla|0.0|Benzin": [
-    138.0
-  ],
-  "Toyota|Corolla|0.0|Dizel": [
-    88.0,
-    113.0
-  ],
-  "Toyota|Corolla|0.0|LPG & Benzin": [
-    88.0,
-    113.0
-  ],
-  "Toyota|Corolla|600.0|Hibrit": [
-    113.0
   ],
   "Toyota|Corolla|600.0|LPG & Benzin": [
     113.0
@@ -77972,16 +64403,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Toyota|Corolla|1200.0|Benzin": [
     116.0
   ],
-  "Toyota|Corolla|1200.0|LPG & Benzin": [
-    63.0
-  ],
   "Toyota|Corolla|1300.0|Benzin": [
     63.0,
-    75.0,
     86.0,
     88.0,
-    99.0,
-    113.0
+    99.0
   ],
   "Toyota|Corolla|1300.0|Dizel": [
     88.0
@@ -77992,37 +64418,25 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Toyota|Corolla|1300.0|LPG & Benzin": [
     63.0,
     75.0,
-    82.0,
     86.0,
     88.0,
-    99.0,
-    113.0
+    99.0
   ],
   "Toyota|Corolla|1400.0|Benzin": [
     90.0,
     97.0
   ],
   "Toyota|Corolla|1400.0|Dizel": [
-    90.0,
-    113.0,
-    363.0
-  ],
-  "Toyota|Corolla|1400.0|Elektrik": [
     90.0
   ],
   "Toyota|Corolla|1400.0|LPG & Benzin": [
     97.0
   ],
   "Toyota|Corolla|1500.0|Benzin": [
-    63.0,
     88.0,
     113.0,
     125.0,
     138.0
-  ],
-  "Toyota|Corolla|1500.0|Dizel": [
-    88.0,
-    113.0
   ],
   "Toyota|Corolla|1500.0|LPG & Benzin": [
     88.0,
@@ -78055,7 +64469,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Toyota|Corolla|1700.0|LPG & Benzin": [
-    88.0,
     113.0,
     138.0
   ],
@@ -78071,37 +64484,17 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     122.0,
     140.0
   ],
-  "Toyota|Corolla|1800.0|LPG & Benzin": [
-    129.0
-  ],
   "Toyota|Corolla|1900.0|Hibrit": [
-    113.0,
-    138.0
-  ],
-  "Toyota|Corolla|2000.0|Benzin": [
-    126.0
+    113.0
   ],
   "Toyota|Corolla|2000.0|Dizel": [
-    116.0,
     126.0
-  ],
-  "Toyota|Corolla Cross|1700.0|Benzin": [
-    138.0
   ],
   "Toyota|Corolla Cross|1700.0|Hibrit": [
     138.0
   ],
-  "Toyota|Corolla Cross|1800.0|Benzin": [
-    140.0
-  ],
   "Toyota|Corolla Cross|1800.0|Hibrit": [
     140.0
-  ],
-  "Toyota|Corona|1900.0|Benzin": [
-    113.0
-  ],
-  "Toyota|Corona|1900.0|LPG & Benzin": [
-    113.0
   ],
   "Toyota|Corona|2000.0|Benzin": [
     136.0
@@ -78109,28 +64502,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Toyota|Corona|2000.0|LPG & Benzin": [
     136.0
   ],
-  "Toyota|Cressida|1900.0|Benzin": [
-    113.0
-  ],
   "Toyota|Cressida|2000.0|LPG & Benzin": [
     105.0
-  ],
-  "Toyota|FJ Cruiser|3800.0|Benzin": [
-    263.0
-  ],
-  "Toyota|FJ Cruiser|4300.0|LPG & Benzin": [
-    188.0,
-    238.0
   ],
   "Toyota|Hi-Ace|2400.0|Dizel": [
     77.0
   ],
   "Toyota|Hi-Ace|2500.0|Dizel": [
-    95.0,
     117.0
-  ],
-  "Toyota|Hilux|0.0|Dizel": [
-    113.0
   ],
   "Toyota|Hilux|2300.0|Dizel": [
     88.0,
@@ -78149,8 +64528,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     144.0
   ],
   "Toyota|Hilux|2800.0|Dizel": [
-    88.0,
-    113.0,
     177.0,
     188.0,
     213.0
@@ -78158,47 +64535,24 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Toyota|Hilux|3000.0|Dizel": [
     170.0
   ],
-  "Toyota|Land Cruiser|2400.0|Dizel": [
-    86.0
-  ],
   "Toyota|Land Cruiser|4200.0|Dizel": [
     160.0
   ],
-  "Toyota|Land Cruiser|4300.0|Benzin": [
+  "Toyota|Land Cruiser|4300.0|Dizel": [
     288.0
   ],
-  "Toyota|Land Cruiser|4300.0|Dizel": [
-    188.0,
-    288.0,
-    338.0
-  ],
-  "Toyota|Land Cruiser|4500.0|Dizel": [
-    286.0
-  ],
   "Toyota|Land Cruiser Prado|2800.0|Dizel": [
-    177.0,
     188.0
   ],
   "Toyota|Land Cruiser Prado|3000.0|Dizel": [
     173.0
   ],
-  "Toyota|Prius|1800.0|Benzin": [
-    138.0
-  ],
   "Toyota|Proace City|0.0|Dizel": [
-    130.0
-  ],
-  "Toyota|Proace City|300.0|Dizel": [
     130.0
   ],
   "Toyota|Proace City|1500.0|Dizel": [
     102.0,
     130.0
-  ],
-  "Toyota|Proace City|2000.0|Dizel": [
-    150.0,
-    177.0,
-    180.0
   ],
   "Toyota|Proace City Cargo|1300.0|Dizel": [
     101.0
@@ -78208,9 +64562,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Proace Max|2200.0|Dizel": [
     180.0
-  ],
-  "Toyota|RAV4|1900.0|Benzin": [
-    163.0
   ],
   "Toyota|RAV4|1900.0|Dizel": [
     113.0
@@ -78227,47 +64578,22 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     158.0
   ],
   "Toyota|RAV4|2200.0|Dizel": [
-    136.0,
-    150.0
-  ],
-  "Toyota|RAV4|2300.0|Benzin": [
-    213.0
-  ],
-  "Toyota|RAV4|2300.0|Dizel": [
-    138.0
+    136.0
   ],
   "Toyota|RAV4|2300.0|Hibrit": [
-    188.0,
     213.0
   ],
   "Toyota|RAV4|2500.0|Hibrit": [
-    155.0,
-    178.0
+    155.0
   ],
   "Toyota|Starlet|1300.0|Benzin": [
     75.0
   ],
   "Toyota|Starlet|1300.0|LPG & Benzin": [
-    75.0,
-    88.0
-  ],
-  "Toyota|Starlet|1400.0|Benzin": [
-    90.0
-  ],
-  "Toyota|Starlet|1500.0|Benzin": [
-    113.0
-  ],
-  "Toyota|Starlet|1500.0|LPG & Benzin": [
-    63.0
+    75.0
   ],
   "Toyota|Urban Cruiser|1300.0|Benzin": [
     100.0
-  ],
-  "Toyota|Urban Cruiser|1300.0|LPG & Benzin": [
-    100.0
-  ],
-  "Toyota|Urban Cruiser|1400.0|Dizel": [
-    90.0
   ],
   "Toyota|Verso|0.0|LPG & Benzin": [
     132.0
@@ -78285,7 +64611,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0
   ],
   "Toyota|Verso|1600.0|Benzin": [
-    112.0,
     132.0
   ],
   "Toyota|Verso|1600.0|Dizel": [
@@ -78293,15 +64618,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Verso|1600.0|LPG & Benzin": [
     132.0
-  ],
-  "Toyota|Verso|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Toyota|Verso|1800.0|LPG & Benzin": [
-    147.0
-  ],
-  "Toyota|Verso|1900.0|Dizel": [
-    138.0
   ],
   "Toyota|Verso|2000.0|Dizel": [
     132.0
@@ -78320,9 +64636,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     65.0,
     69.0
   ],
-  "Toyota|Yaris|1100.0|Benzin": [
-    98.0
-  ],
   "Toyota|Yaris|1200.0|Benzin": [
     63.0
   ],
@@ -78340,11 +64653,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0,
     99.0
   ],
-  "Toyota|Yaris|1400.0|Benzin": [
-    75.0
-  ],
   "Toyota|Yaris|1400.0|Dizel": [
-    75.0,
     90.0
   ],
   "Toyota|Yaris|1500.0|Benzin": [
@@ -78352,26 +64661,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     88.0,
     111.0,
     113.0,
-    125.0,
-    138.0
+    125.0
   ],
   "Toyota|Yaris|1500.0|Hibrit": [
     63.0,
     75.0,
-    92.0,
-    116.0
+    92.0
   ],
   "Toyota|Yaris|1500.0|LPG & Benzin": [
-    111.0,
-    125.0
+    111.0
   ],
   "Toyota|Yaris Cross|1500.0|Benzin": [
-    113.0,
     125.0
   ],
   "Toyota|Yaris Cross|1500.0|Hibrit": [
-    116.0,
-    138.0
+    116.0
   ],
   "Volkswagen|Amarok|1900.0|Dizel": [
     138.0,
@@ -78387,7 +64691,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Amarok|2800.0|Dizel": [
     213.0,
-    238.0,
     263.0
   ],
   "Volkswagen|Amarok|3000.0|Dizel": [
@@ -78396,9 +64699,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     224.0,
     240.0,
     258.0
-  ],
-  "Volkswagen|Amarok|3300.0|Dizel": [
-    213.0
   ],
   "Volkswagen|Arteon|1500.0|Benzin": [
     138.0,
@@ -78412,8 +64712,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     238.0
   ],
   "Volkswagen|Arteon|2000.0|Dizel": [
-    150.0,
-    240.0
+    150.0
   ],
   "Volkswagen|Beetle|600.0|Benzin": [
     113.0
@@ -78428,9 +64727,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Beetle|1400.0|Benzin": [
     160.0
   ],
-  "Volkswagen|Beetle|1500.0|LPG & Benzin": [
-    113.0
-  ],
   "Volkswagen|Beetle|1600.0|Benzin": [
     102.0
   ],
@@ -78440,11 +64736,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Beetle|1600.0|LPG & Benzin": [
     102.0
   ],
-  "Volkswagen|Beetle|2000.0|LPG & Benzin": [
-    115.0
-  ],
   "Volkswagen|Bora|1500.0|Benzin": [
-    88.0,
     113.0
   ],
   "Volkswagen|Bora|1500.0|LPG & Benzin": [
@@ -78458,55 +64750,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0,
     105.0
   ],
-  "Volkswagen|Bora|1700.0|LPG & Benzin": [
-    113.0
-  ],
-  "Volkswagen|Bora|1800.0|Benzin": [
-    125.0
-  ],
-  "Volkswagen|Bora|1900.0|Benzin": [
-    110.0,
-    113.0
-  ],
   "Volkswagen|Bora|1900.0|Dizel": [
     90.0,
-    100.0,
     110.0,
-    113.0,
     130.0,
-    138.0,
-    188.0
-  ],
-  "Volkswagen|Bora|2300.0|LPG & Benzin": [
-    170.0
-  ],
-  "Volkswagen|Caddy|0.0|Dizel": [
-    105.0,
-    150.0
-  ],
-  "Volkswagen|Caddy|100.0|Dizel": [
-    102.0
-  ],
-  "Volkswagen|Caddy|500.0|Dizel": [
-    102.0,
-    122.0
+    138.0
   ],
   "Volkswagen|Caddy|1400.0|Benzin": [
     125.0
   ],
-  "Volkswagen|Caddy|1600.0|Benzin": [
+  "Volkswagen|Caddy|1600.0|Dizel": [
     102.0
   ],
-  "Volkswagen|Caddy|1600.0|Dizel": [
-    102.0,
-    120.0
-  ],
   "Volkswagen|Caddy|1800.0|Dizel": [
-    76.0,
     101.0
-  ],
-  "Volkswagen|Caddy|1900.0|Benzin": [
-    105.0
   ],
   "Volkswagen|Caddy|1900.0|Dizel": [
     64.0,
@@ -78515,7 +64772,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Caddy|2000.0|Dizel": [
     69.0,
-    89.0,
     102.0,
     122.0,
     140.0
@@ -78523,42 +64779,27 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Caravelle|0.0|Dizel": [
     102.0
   ],
-  "Volkswagen|Caravelle|1300.0|Dizel": [
-    76.0
-  ],
   "Volkswagen|Caravelle|1800.0|Dizel": [
     101.0,
     126.0,
-    176.0,
     201.0
   ],
   "Volkswagen|Caravelle|1900.0|Dizel": [
     105.0
   ],
   "Volkswagen|Caravelle|2000.0|Dizel": [
-    76.0,
     102.0,
     115.0,
     126.0,
-    132.0,
     140.0,
     150.0,
     180.0,
     199.0,
     204.0
   ],
-  "Volkswagen|Caravelle|2000.0|Hibrit": [
-    102.0
-  ],
   "Volkswagen|Caravelle|2500.0|Dizel": [
     130.0,
     174.0
-  ],
-  "Volkswagen|Crafter|0.0|Dizel": [
-    177.0
-  ],
-  "Volkswagen|Crafter|500.0|Dizel": [
-    163.0
   ],
   "Volkswagen|Crafter|1800.0|Dizel": [
     126.0,
@@ -78568,30 +64809,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Crafter|2000.0|Dizel": [
     140.0,
     151.0,
-    163.0,
-    177.0,
-    2000.0
+    177.0
   ],
   "Volkswagen|Crafter|2500.0|Dizel": [
     109.0,
     163.0
   ],
-  "Volkswagen|EOS|1300.0|Benzin": [
-    163.0
-  ],
-  "Volkswagen|EOS|1500.0|Benzin": [
-    113.0
-  ],
-  "Volkswagen|EOS|1600.0|Benzin": [
-    115.0
-  ],
-  "Volkswagen|Golf|0.0|Hibrit": [
-    113.0
-  ],
   "Volkswagen|Golf|600.0|Benzin": [
-    113.0
-  ],
-  "Volkswagen|Golf|600.0|Dizel": [
     113.0
   ],
   "Volkswagen|Golf|600.0|Hibrit": [
@@ -78609,21 +64833,12 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     113.0
   ],
-  "Volkswagen|Golf|1200.0|Dizel": [
-    105.0
-  ],
-  "Volkswagen|Golf|1200.0|LPG & Benzin": [
-    105.0,
-    110.0
-  ],
   "Volkswagen|Golf|1300.0|Benzin": [
-    63.0,
     113.0,
     138.0,
     163.0
   ],
   "Volkswagen|Golf|1300.0|LPG & Benzin": [
-    63.0,
     113.0
   ],
   "Volkswagen|Golf|1400.0|Benzin": [
@@ -78635,21 +64850,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0
   ],
   "Volkswagen|Golf|1400.0|LPG & Benzin": [
-    122.0,
-    125.0,
-    140.0,
-    160.0
+    122.0
   ],
   "Volkswagen|Golf|1500.0|Benzin": [
     88.0,
     113.0,
     138.0,
-    150.0,
-    163.0,
-    188.0
+    150.0
   ],
   "Volkswagen|Golf|1500.0|Dizel": [
-    63.0,
     88.0,
     113.0
   ],
@@ -78659,12 +64868,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0
   ],
   "Volkswagen|Golf|1500.0|LPG & Benzin": [
-    63.0,
     88.0,
     113.0
   ],
   "Volkswagen|Golf|1600.0|Benzin": [
-    75.0,
     90.0,
     102.0,
     105.0,
@@ -78677,8 +64884,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0,
     105.0,
     110.0,
-    115.0,
-    138.0
+    115.0
   ],
   "Volkswagen|Golf|1600.0|LPG & Benzin": [
     75.0,
@@ -78690,10 +64896,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0,
     138.0
   ],
-  "Volkswagen|Golf|1700.0|Dizel": [
-    113.0,
-    188.0
-  ],
   "Volkswagen|Golf|1700.0|LPG & Benzin": [
     88.0
   ],
@@ -78704,55 +64906,31 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Golf|1800.0|LPG & Benzin": [
     75.0,
     90.0,
-    125.0,
-    150.0
+    125.0
   ],
   "Volkswagen|Golf|1900.0|Benzin": [
     90.0,
-    113.0,
-    138.0,
-    213.0,
-    238.0,
     263.0,
-    288.0,
-    313.0
+    288.0
   ],
   "Volkswagen|Golf|1900.0|Dizel": [
-    63.0,
     75.0,
     90.0,
     105.0,
     110.0,
-    113.0,
-    130.0,
     138.0
   ],
   "Volkswagen|Golf|2000.0|Benzin": [
-    115.0,
-    150.0,
     245.0,
-    280.0,
-    310.0,
     320.0
   ],
   "Volkswagen|Golf|2000.0|Dizel": [
     140.0
   ],
   "Volkswagen|Golf|2000.0|LPG & Benzin": [
-    115.0,
     150.0
   ],
-  "Volkswagen|Golf|2300.0|Benzin": [
-    438.0
-  ],
-  "Volkswagen|Golf|2800.0|Dizel": [
-    163.0
-  ],
-  "Volkswagen|Jetta|0.0|Dizel": [
-    113.0
-  ],
   "Volkswagen|Jetta|600.0|Benzin": [
-    88.0,
     113.0
   ],
   "Volkswagen|Jetta|600.0|LPG & Benzin": [
@@ -78771,8 +64949,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Volkswagen|Jetta|1300.0|LPG & Benzin": [
-    113.0,
-    138.0
+    113.0
   ],
   "Volkswagen|Jetta|1400.0|Benzin": [
     122.0,
@@ -78790,7 +64967,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     170.0
   ],
   "Volkswagen|Jetta|1500.0|Benzin": [
-    63.0,
     113.0,
     163.0
   ],
@@ -78801,7 +64977,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Volkswagen|Jetta|1600.0|Benzin": [
-    90.0,
     102.0,
     105.0,
     115.0
@@ -78817,13 +64992,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     115.0
   ],
   "Volkswagen|Jetta|1900.0|Benzin": [
-    105.0,
-    113.0,
-    138.0
+    113.0
   ],
   "Volkswagen|Jetta|1900.0|Dizel": [
-    105.0,
-    138.0
+    105.0
   ],
   "Volkswagen|Jetta|2000.0|Benzin": [
     150.0
@@ -78837,35 +65009,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|MultiVan|1400.0|Hibrit": [
     218.0
   ],
-  "Volkswagen|MultiVan|2500.0|Dizel": [
-    174.0
-  ],
-  "Volkswagen|New Beetle|600.0|Benzin": [
-    113.0
-  ],
   "Volkswagen|New Beetle|1200.0|Benzin": [
     113.0
-  ],
-  "Volkswagen|New Beetle|1500.0|Benzin": [
-    113.0
-  ],
-  "Volkswagen|New Beetle|1500.0|Dizel": [
-    113.0
-  ],
-  "Volkswagen|New Beetle|1600.0|Benzin": [
-    102.0
   ],
   "Volkswagen|New Beetle|2000.0|Benzin": [
     115.0
   ],
   "Volkswagen|Passat|0.0|Dizel": [
-    25.0,
-    113.0,
-    138.0,
-    163.0
-  ],
-  "Volkswagen|Passat|600.0|Benzin": [
-    138.0
+    113.0
   ],
   "Volkswagen|Passat|1300.0|Benzin": [
     113.0,
@@ -78879,37 +65030,27 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0,
     122.0,
     125.0,
-    138.0,
     150.0,
     160.0
   ],
-  "Volkswagen|Passat|1400.0|Dizel": [
-    150.0
-  ],
   "Volkswagen|Passat|1400.0|LPG & Benzin": [
-    122.0,
-    150.0
+    122.0
   ],
   "Volkswagen|Passat|1500.0|Benzin": [
     113.0,
     138.0,
-    150.0,
-    163.0
+    150.0
   ],
   "Volkswagen|Passat|1500.0|Dizel": [
-    63.0,
     88.0,
     113.0,
     138.0
   ],
   "Volkswagen|Passat|1500.0|Hibrit": [
-    138.0,
     150.0
   ],
   "Volkswagen|Passat|1500.0|LPG & Benzin": [
-    88.0,
-    113.0,
-    150.0
+    113.0
   ],
   "Volkswagen|Passat|1600.0|Benzin": [
     102.0,
@@ -78932,10 +65073,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0
   ],
   "Volkswagen|Passat|1700.0|Dizel": [
-    88.0,
     113.0,
-    138.0,
-    163.0
+    138.0
   ],
   "Volkswagen|Passat|1700.0|LPG & Benzin": [
     113.0,
@@ -78953,7 +65092,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     160.0
   ],
   "Volkswagen|Passat|1900.0|Benzin": [
-    90.0,
     100.0,
     113.0,
     130.0,
@@ -78965,7 +65103,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Passat|1900.0|Dizel": [
     88.0,
     100.0,
-    105.0,
     110.0,
     113.0,
     130.0,
@@ -78979,8 +65116,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Passat|2000.0|Benzin": [
     130.0,
-    150.0,
-    200.0
+    150.0
   ],
   "Volkswagen|Passat|2000.0|Dizel": [
     140.0,
@@ -78992,11 +65128,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Passat|2000.0|LPG & Benzin": [
     130.0,
-    136.0,
     150.0
-  ],
-  "Volkswagen|Passat|2200.0|Dizel": [
-    163.0
   ],
   "Volkswagen|Passat|2800.0|Benzin": [
     193.0
@@ -79013,9 +65145,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Passat Variant|1400.0|Benzin": [
     122.0,
-    125.0,
-    150.0,
-    160.0
+    125.0
   ],
   "Volkswagen|Passat Variant|1400.0|LPG & Benzin": [
     122.0
@@ -79031,7 +65161,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Passat Variant|1500.0|Hibrit": [
     138.0,
-    150.0,
     204.0,
     213.0
   ],
@@ -79044,50 +65173,21 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0,
     120.0
   ],
-  "Volkswagen|Passat Variant|1600.0|LPG & Benzin": [
-    115.0
-  ],
-  "Volkswagen|Passat Variant|1800.0|Benzin": [
-    150.0,
-    160.0
-  ],
   "Volkswagen|Passat Variant|1800.0|LPG & Benzin": [
-    90.0,
     150.0
-  ],
-  "Volkswagen|Passat Variant|1900.0|Benzin": [
-    138.0
   ],
   "Volkswagen|Passat Variant|1900.0|Dizel": [
     90.0,
-    110.0,
-    130.0
-  ],
-  "Volkswagen|Passat Variant|2000.0|Benzin": [
-    115.0,
-    140.0
+    110.0
   ],
   "Volkswagen|Passat Variant|2000.0|Dizel": [
     140.0,
-    150.0,
     170.0
-  ],
-  "Volkswagen|Passat Variant|2000.0|LPG & Benzin": [
-    150.0
-  ],
-  "Volkswagen|Passat Variant|2500.0|Dizel": [
-    180.0
-  ],
-  "Volkswagen|Phaeton|4800.0|Dizel": [
-    313.0
   ],
   "Volkswagen|Polo|0.0|Benzin": [
     88.0
   ],
   "Volkswagen|Polo|0.0|Dizel": [
-    88.0
-  ],
-  "Volkswagen|Polo|0.0|LPG & Benzin": [
     88.0
   ],
   "Volkswagen|Polo|600.0|Benzin": [
@@ -79099,22 +65199,18 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     63.0
   ],
   "Volkswagen|Polo|600.0|LPG & Benzin": [
-    63.0,
-    88.0
+    63.0
   ],
   "Volkswagen|Polo|1000.0|Benzin": [
-    50.0,
     75.0,
     80.0,
     95.0
   ],
   "Volkswagen|Polo|1000.0|LPG & Benzin": [
     75.0,
-    80.0,
-    95.0
+    80.0
   ],
   "Volkswagen|Polo|1200.0|Benzin": [
-    50.0,
     60.0,
     63.0,
     70.0,
@@ -79122,32 +65218,23 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     90.0
   ],
   "Volkswagen|Polo|1200.0|Dizel": [
-    70.0,
     75.0
   ],
   "Volkswagen|Polo|1200.0|LPG & Benzin": [
     60.0,
     70.0,
-    75.0,
     90.0
   ],
   "Volkswagen|Polo|1300.0|Benzin": [
-    55.0,
     63.0,
     88.0,
     188.0
   ],
-  "Volkswagen|Polo|1300.0|Dizel": [
+  "Volkswagen|Polo|1300.0|LPG & Benzin": [
     63.0,
     88.0
   ],
-  "Volkswagen|Polo|1300.0|LPG & Benzin": [
-    63.0,
-    88.0,
-    113.0
-  ],
   "Volkswagen|Polo|1400.0|Benzin": [
-    60.0,
     70.0,
     75.0,
     80.0,
@@ -79168,19 +65255,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     75.0,
     80.0,
     85.0,
-    100.0,
-    180.0
+    100.0
   ],
   "Volkswagen|Polo|1500.0|Benzin": [
     63.0,
-    88.0,
-    138.0,
-    188.0
+    88.0
   ],
   "Volkswagen|Polo|1500.0|Dizel": [
     63.0,
-    88.0,
-    138.0
+    88.0
   ],
   "Volkswagen|Polo|1500.0|LPG & Benzin": [
     63.0,
@@ -79188,11 +65271,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Polo|1600.0|Benzin": [
     75.0,
-    80.0,
     90.0,
     95.0,
-    100.0,
-    125.0
+    100.0
   ],
   "Volkswagen|Polo|1600.0|Dizel": [
     75.0,
@@ -79206,20 +65287,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     100.0,
     125.0
   ],
-  "Volkswagen|Polo|1700.0|Dizel": [
-    388.0
-  ],
   "Volkswagen|Polo|1700.0|LPG & Benzin": [
     113.0
   ],
-  "Volkswagen|Polo|1900.0|Benzin": [
-    68.0
-  ],
   "Volkswagen|Polo|1900.0|Dizel": [
-    64.0,
-    90.0,
-    110.0,
-    113.0
+    90.0
   ],
   "Volkswagen|Scirocco|1300.0|Benzin": [
     113.0,
@@ -79232,21 +65304,8 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     150.0,
     160.0
   ],
-  "Volkswagen|Scirocco|1500.0|Benzin": [
-    163.0
-  ],
-  "Volkswagen|Scirocco|2000.0|Benzin": [
-    200.0,
-    265.0
-  ],
-  "Volkswagen|Sharan|1800.0|LPG & Benzin": [
-    150.0
-  ],
   "Volkswagen|Sharan|1900.0|Dizel": [
     130.0
-  ],
-  "Volkswagen|Sharan|2000.0|LPG & Benzin": [
-    115.0
   ],
   "Volkswagen|T-Cross|600.0|Benzin": [
     113.0
@@ -79255,17 +65314,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     110.0,
     116.0
   ],
-  "Volkswagen|T-Roc|0.0|Benzin": [
-    138.0
-  ],
   "Volkswagen|T-Roc|1500.0|Benzin": [
     138.0,
     150.0
   ],
   "Volkswagen|T-Roc|1500.0|Hibrit": [
-    150.0
-  ],
-  "Volkswagen|T-Roc|1500.0|LPG & Benzin": [
     150.0
   ],
   "Volkswagen|Taigo|600.0|Benzin": [
@@ -79275,13 +65328,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     95.0,
     110.0,
     116.0
-  ],
-  "Volkswagen|Taigo|1000.0|LPG & Benzin": [
-    110.0,
-    116.0
-  ],
-  "Volkswagen|Taigo|1300.0|Benzin": [
-    113.0
   ],
   "Volkswagen|Taigo|1500.0|Benzin": [
     150.0
@@ -79294,15 +65340,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     150.0
   ],
-  "Volkswagen|Tiguan|0.0|Benzin": [
-    63.0
-  ],
   "Volkswagen|Tiguan|1300.0|Benzin": [
     113.0,
     138.0,
-    163.0
-  ],
-  "Volkswagen|Tiguan|1300.0|Hibrit": [
     163.0
   ],
   "Volkswagen|Tiguan|1300.0|LPG & Benzin": [
@@ -79331,9 +65371,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     138.0,
     150.0
   ],
-  "Volkswagen|Tiguan|1500.0|LPG & Benzin": [
-    150.0
-  ],
   "Volkswagen|Tiguan|1600.0|Dizel": [
     115.0
   ],
@@ -79343,8 +65380,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volkswagen|Tiguan|2000.0|Dizel": [
     140.0,
-    150.0,
-    200.0
+    150.0
   ],
   "Volkswagen|Tiguan All Space|1300.0|Benzin": [
     138.0
@@ -79355,30 +65391,22 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|Tiguan All Space|1500.0|Benzin": [
     150.0
   ],
-  "Volkswagen|Touareg|2300.0|Dizel": [
-    163.0
-  ],
   "Volkswagen|Touareg|2500.0|Dizel": [
     174.0
   ],
   "Volkswagen|Touareg|2800.0|Dizel": [
-    238.0,
-    263.0
+    238.0
   ],
   "Volkswagen|Touareg|3000.0|Dizel": [
     225.0,
     245.0,
-    262.0,
-    286.0
+    262.0
   ],
   "Volkswagen|Touareg|3200.0|Benzin": [
     220.0
   ],
   "Volkswagen|Touareg|3200.0|LPG & Benzin": [
     220.0
-  ],
-  "Volkswagen|Touareg|3800.0|Benzin": [
-    288.0
   ],
   "Volkswagen|Touareg|4900.0|Dizel": [
     313.0
@@ -79402,105 +65430,53 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     102.0,
     115.0
   ],
-  "Volkswagen|Touran|1700.0|Dizel": [
-    113.0
-  ],
   "Volkswagen|Touran|1900.0|Dizel": [
-    105.0,
-    138.0
-  ],
-  "Volkswagen|Touran|2000.0|Benzin": [
-    140.0,
-    150.0
+    105.0
   ],
   "Volkswagen|Touran|2000.0|Dizel": [
     140.0
   ],
   "Volkswagen|Transporter|0.0|Dizel": [
-    50.0,
-    102.0,
-    105.0,
-    114.0,
-    140.0,
-    150.0,
-    1900.0
-  ],
-  "Volkswagen|Transporter|200.0|Dizel": [
-    96.0
-  ],
-  "Volkswagen|Transporter|300.0|Dizel": [
-    102.0,
-    105.0,
-    130.0
-  ],
-  "Volkswagen|Transporter|500.0|Dizel": [
-    105.0,
-    110.0,
     150.0
   ],
-  "Volkswagen|Transporter|1300.0|Dizel": [
-    151.0
-  ],
   "Volkswagen|Transporter|1600.0|Dizel": [
-    126.0,
-    151.0
+    126.0
   ],
   "Volkswagen|Transporter|1800.0|Dizel": [
-    51.0,
-    76.0,
     101.0,
     126.0,
-    151.0,
-    176.0
+    151.0
   ],
   "Volkswagen|Transporter|1900.0|Dizel": [
     68.0,
     86.0,
-    90.0,
     102.0,
     105.0
   ],
-  "Volkswagen|Transporter|2000.0|Benzin": [
-    140.0
-  ],
   "Volkswagen|Transporter|2000.0|Dizel": [
-    76.0,
-    90.0,
     102.0,
-    103.0,
     110.0,
     114.0,
     126.0,
-    130.0,
     140.0,
     150.0,
     170.0,
     176.0,
     180.0,
-    204.0,
-    1400.0,
-    1500.0
+    204.0
   ],
   "Volkswagen|Transporter|2500.0|Dizel": [
-    75.0,
     88.0,
     102.0,
     130.0,
-    140.0,
-    143.0,
-    174.0,
-    2500.0
-  ],
-  "Volkswagen|Transporter|3200.0|Dizel": [
-    235.0
+    174.0
   ],
   "Volkswagen|VW CC|1300.0|Benzin": [
     138.0,
     163.0
   ],
   "Volkswagen|VW CC|1300.0|LPG & Benzin": [
-    138.0,
-    163.0
+    138.0
   ],
   "Volkswagen|VW CC|1400.0|Benzin": [
     150.0,
@@ -79512,12 +65488,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volkswagen|VW CC|1500.0|Benzin": [
     163.0
   ],
-  "Volkswagen|VW CC|1700.0|Benzin": [
-    163.0
-  ],
-  "Volkswagen|VW CC|1800.0|Benzin": [
-    160.0
-  ],
   "Volkswagen|VW CC|1900.0|Benzin": [
     138.0,
     188.0
@@ -79527,39 +65497,20 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     163.0,
     188.0
   ],
-  "Volkswagen|VW CC|2000.0|Benzin": [
-    170.0
-  ],
   "Volkswagen|VW CC|2000.0|Dizel": [
     140.0,
     150.0,
     170.0,
     177.0
   ],
-  "Volkswagen|Vento|1500.0|Benzin": [
-    88.0
-  ],
-  "Volkswagen|Vento|1600.0|Benzin": [
-    101.0
-  ],
   "Volkswagen|Vento|1600.0|LPG & Benzin": [
     101.0
-  ],
-  "Volkswagen|Vento|1700.0|LPG & Benzin": [
-    88.0
   ],
   "Volkswagen|Vento|1800.0|LPG & Benzin": [
     90.0
   ],
   "Volkswagen|Vento|1900.0|Dizel": [
-    64.0,
     75.0
-  ],
-  "Volvo|460|1700.0|Benzin": [
-    120.0
-  ],
-  "Volvo|850|1900.0|Benzin": [
-    213.0
   ],
   "Volvo|850|2000.0|Benzin": [
     210.0
@@ -79571,26 +65522,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volvo|850|2300.0|Benzin": [
     225.0
   ],
-  "Volvo|850|2400.0|Benzin": [
-    170.0
-  ],
-  "Volvo|940|1900.0|Benzin": [
-    113.0
-  ],
-  "Volvo|940|1900.0|LPG & Benzin": [
-    113.0
-  ],
   "Volvo|940|2000.0|Benzin": [
     112.0
   ],
   "Volvo|940|2000.0|LPG & Benzin": [
     112.0
-  ],
-  "Volvo|960|2900.0|Benzin": [
-    204.0
-  ],
-  "Volvo|960|2900.0|LPG & Benzin": [
-    204.0
   ],
   "Volvo|C30|1500.0|Benzin": [
     113.0
@@ -79602,25 +65538,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     109.0,
     115.0
   ],
-  "Volvo|C30|1600.0|LPG & Benzin": [
-    100.0
-  ],
-  "Volvo|C30|2000.0|Dizel": [
-    177.0
-  ],
-  "Volvo|C70|2000.0|LPG & Benzin": [
-    163.0
-  ],
-  "Volvo|C70|2800.0|Benzin": [
-    238.0
-  ],
   "Volvo|EX40|1300.0|Elektrik": [
     213.0
   ],
   "Volvo|EX40|1500.0|Elektrik": [
-    213.0
-  ],
-  "Volvo|EX40|2300.0|Elektrik": [
     213.0
   ],
   "Volvo|S40|1500.0|Benzin": [
@@ -79632,7 +65553,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volvo|S40|1600.0|Benzin": [
     100.0,
-    105.0,
     109.0,
     115.0
   ],
@@ -79645,29 +65565,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     105.0,
     109.0
   ],
-  "Volvo|S40|1700.0|Benzin": [
-    115.0
-  ],
-  "Volvo|S40|1700.0|Dizel": [
-    113.0
-  ],
-  "Volvo|S40|1700.0|LPG & Benzin": [
-    115.0
-  ],
   "Volvo|S40|1800.0|Benzin": [
     122.0,
     125.0
   ],
   "Volvo|S40|1800.0|LPG & Benzin": [
-    122.0,
-    125.0
+    122.0
   ],
   "Volvo|S40|1900.0|Benzin": [
-    136.0,
     140.0,
-    160.0,
-    163.0,
-    188.0,
     200.0
   ],
   "Volvo|S40|1900.0|Dizel": [
@@ -79678,17 +65584,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     140.0,
     160.0,
     165.0,
-    188.0,
     200.0
   ],
   "Volvo|S40|2000.0|Dizel": [
     136.0
-  ],
-  "Volvo|S40|2000.0|LPG & Benzin": [
-    145.0
-  ],
-  "Volvo|S40|2800.0|Benzin": [
-    238.0
   ],
   "Volvo|S60|1500.0|Benzin": [
     113.0,
@@ -79706,21 +65605,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volvo|S60|1600.0|Dizel": [
     115.0
   ],
-  "Volvo|S60|1600.0|LPG & Benzin": [
-    180.0
-  ],
   "Volvo|S60|1900.0|Benzin": [
-    113.0,
     188.0,
     213.0,
     238.0
   ],
   "Volvo|S60|1900.0|Dizel": [
-    163.0,
     188.0
-  ],
-  "Volvo|S60|1900.0|Hibrit": [
-    238.0
   ],
   "Volvo|S60|1900.0|LPG & Benzin": [
     188.0
@@ -79730,7 +65621,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     180.0,
     190.0,
     203.0,
-    240.0,
     250.0
   ],
   "Volvo|S60|2000.0|Dizel": [
@@ -79744,49 +65634,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     180.0,
     203.0
   ],
-  "Volvo|S60|2300.0|Benzin": [
-    238.0
-  ],
-  "Volvo|S60|2300.0|Dizel": [
-    188.0
-  ],
-  "Volvo|S60|2300.0|LPG & Benzin": [
-    250.0
-  ],
-  "Volvo|S60|2400.0|Benzin": [
-    185.0,
-    200.0,
-    260.0
-  ],
   "Volvo|S60|2400.0|Dizel": [
-    185.0,
-    215.0
-  ],
-  "Volvo|S60|2500.0|Benzin": [
-    300.0
+    185.0
   ],
   "Volvo|S60|2500.0|LPG & Benzin": [
-    210.0,
-    300.0
-  ],
-  "Volvo|S60|2800.0|LPG & Benzin": [
-    213.0
-  ],
-  "Volvo|S70|1900.0|Benzin": [
-    213.0
+    210.0
   ],
   "Volvo|S70|1900.0|LPG & Benzin": [
-    163.0,
-    188.0,
-    213.0
-  ],
-  "Volvo|S70|2000.0|Benzin": [
-    180.0,
-    225.0
+    188.0
   ],
   "Volvo|S70|2000.0|LPG & Benzin": [
-    163.0,
-    180.0,
     225.0
   ],
   "Volvo|S80|1500.0|Benzin": [
@@ -79797,29 +65654,22 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     113.0
   ],
   "Volvo|S80|1600.0|Benzin": [
-    109.0,
     180.0
   ],
   "Volvo|S80|1600.0|Dizel": [
     109.0,
     115.0
   ],
-  "Volvo|S80|1700.0|Dizel": [
-    138.0
-  ],
   "Volvo|S80|1900.0|Benzin": [
     163.0,
-    188.0,
-    213.0
+    188.0
   ],
   "Volvo|S80|1900.0|Dizel": [
     163.0
   ],
   "Volvo|S80|2000.0|Benzin": [
     163.0,
-    180.0,
-    203.0,
-    225.0
+    180.0
   ],
   "Volvo|S80|2000.0|Dizel": [
     163.0,
@@ -79831,23 +65681,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     225.0
   ],
   "Volvo|S80|2200.0|Benzin": [
-    188.0,
-    238.0
-  ],
-  "Volvo|S80|2200.0|Dizel": [
     188.0
   ],
-  "Volvo|S80|2200.0|LPG & Benzin": [
-    163.0
-  ],
   "Volvo|S80|2300.0|Dizel": [
-    188.0,
-    213.0
+    188.0
   ],
   "Volvo|S80|2400.0|Dizel": [
     163.0,
     185.0,
-    205.0,
     215.0
   ],
   "Volvo|S80|2500.0|LPG & Benzin": [
@@ -79859,23 +65700,13 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volvo|S80|2800.0|LPG & Benzin": [
     272.0
   ],
-  "Volvo|S80|2900.0|LPG & Benzin": [
-    196.0
-  ],
-  "Volvo|S80|3200.0|LPG & Benzin": [
-    238.0
-  ],
   "Volvo|S90|1900.0|Benzin": [
     188.0,
     238.0,
-    388.0,
     463.0
   ],
   "Volvo|S90|1900.0|Dizel": [
     188.0,
-    238.0
-  ],
-  "Volvo|S90|1900.0|Hibrit": [
     238.0
   ],
   "Volvo|S90|2000.0|Benzin": [
@@ -79891,78 +65722,40 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volvo|V40|1500.0|Benzin": [
     113.0,
-    138.0,
     152.0,
     163.0
   ],
-  "Volvo|V40|1500.0|Dizel": [
-    113.0
-  ],
-  "Volvo|V40|1500.0|LPG & Benzin": [
-    113.0
-  ],
   "Volvo|V40|1600.0|Benzin": [
-    109.0,
-    115.0,
     180.0
   ],
   "Volvo|V40|1600.0|Dizel": [
     115.0
   ],
   "Volvo|V40|1600.0|LPG & Benzin": [
-    105.0,
     109.0
-  ],
-  "Volvo|V40|1700.0|LPG & Benzin": [
-    115.0
   ],
   "Volvo|V40|1800.0|Benzin": [
     122.0
   ],
-  "Volvo|V40|1900.0|Benzin": [
-    163.0
-  ],
-  "Volvo|V40|1900.0|Dizel": [
-    115.0
-  ],
-  "Volvo|V40|1900.0|LPG & Benzin": [
-    165.0,
-    200.0
-  ],
-  "Volvo|V40|2000.0|Dizel": [
-    190.0
-  ],
   "Volvo|V40 Cross Country|1500.0|Benzin": [
     113.0,
     152.0,
-    163.0,
-    188.0
+    163.0
   ],
   "Volvo|V40 Cross Country|1500.0|Dizel": [
     113.0
   ],
   "Volvo|V40 Cross Country|1600.0|Benzin": [
-    115.0,
     180.0
   ],
   "Volvo|V40 Cross Country|1600.0|Dizel": [
     115.0
   ],
-  "Volvo|V50|1600.0|Benzin": [
-    109.0
-  ],
   "Volvo|V50|1600.0|Dizel": [
-    109.0,
-    115.0
+    109.0
   ],
   "Volvo|V50|2000.0|Dizel": [
     136.0
-  ],
-  "Volvo|V60|1500.0|Benzin": [
-    113.0
-  ],
-  "Volvo|V60|1500.0|Dizel": [
-    113.0
   ],
   "Volvo|V60|1600.0|Benzin": [
     180.0
@@ -79973,48 +65766,14 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volvo|V60 Cross Country|1900.0|Benzin": [
     188.0
   ],
-  "Volvo|V60 Cross Country|1900.0|Dizel": [
-    188.0
-  ],
-  "Volvo|V60 Cross Country|2000.0|Hibrit": [
-    250.0
-  ],
-  "Volvo|V70|1900.0|Benzin": [
-    163.0
-  ],
-  "Volvo|V70|2000.0|Dizel": [
-    163.0
-  ],
-  "Volvo|V70|2000.0|LPG & Benzin": [
-    180.0
-  ],
-  "Volvo|V70|2200.0|Benzin": [
-    163.0,
-    238.0
-  ],
-  "Volvo|V70|2300.0|Benzin": [
-    238.0
-  ],
-  "Volvo|V70|2400.0|Benzin": [
-    185.0,
-    200.0
-  ],
-  "Volvo|V70|2400.0|Dizel": [
-    185.0
-  ],
-  "Volvo|V70|2400.0|LPG & Benzin": [
-    200.0
-  ],
   "Volvo|V90 Cross Country|1900.0|Benzin": [
-    238.0,
-    288.0
+    238.0
   ],
   "Volvo|V90 Cross Country|1900.0|Dizel": [
     238.0
   ],
   "Volvo|V90 Cross Country|2000.0|Benzin": [
-    235.0,
-    300.0
+    235.0
   ],
   "Volvo|V90 Cross Country|2000.0|Dizel": [
     235.0
@@ -80022,31 +65781,19 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Volvo|V90 Cross Country|2000.0|Hibrit": [
     235.0
   ],
-  "Volvo|V90 Cross Country|2000.0|LPG & Benzin": [
-    300.0
-  ],
   "Volvo|XC40|1500.0|Benzin": [
     129.0,
     138.0,
     163.0
   ],
   "Volvo|XC40|1500.0|Hibrit": [
-    188.0,
-    262.0,
-    263.0
-  ],
-  "Volvo|XC40|1900.0|Dizel": [
-    163.0,
-    188.0
+    262.0
   ],
   "Volvo|XC40|2000.0|Benzin": [
     190.0
   ],
   "Volvo|XC40|2000.0|Dizel": [
     150.0
-  ],
-  "Volvo|XC60|1900.0|Benzin": [
-    238.0
   ],
   "Volvo|XC60|1900.0|Dizel": [
     188.0
@@ -80063,30 +65810,16 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volvo|XC60|2000.0|Hibrit": [
     197.0,
-    250.0,
     455.0
   ],
   "Volvo|XC60|2400.0|Dizel": [
-    185.0,
-    205.0,
     215.0
   ],
-  "Volvo|XC70|2000.0|Dizel": [
-    163.0
-  ],
-  "Volvo|XC70|2300.0|Dizel": [
-    188.0
-  ],
-  "Volvo|XC70|2500.0|LPG & Benzin": [
-    210.0
-  ],
   "Volvo|XC90|1900.0|Dizel": [
-    213.0,
     238.0
   ],
   "Volvo|XC90|1900.0|Hibrit": [
-    238.0,
-    388.0
+    238.0
   ],
   "Volvo|XC90|2000.0|Dizel": [
     225.0,
@@ -80094,7 +65827,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Volvo|XC90|2000.0|Hibrit": [
     235.0,
-    390.0,
     407.0,
     455.0
   ],
@@ -80102,20 +65834,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     188.0
   ],
   "Volvo|XC90|2400.0|Dizel": [
-    185.0,
-    200.0
-  ],
-  "Volvo|XC90|2800.0|LPG & Benzin": [
-    263.0
-  ],
-  "Volvo|XC90|2900.0|Benzin": [
-    272.0
-  ],
-  "Volvo|XC90|2900.0|LPG & Benzin": [
-    272.0
-  ],
-  "Volvo|XC90|4300.0|LPG & Benzin": [
-    313.0
+    185.0
   ]
 };
 

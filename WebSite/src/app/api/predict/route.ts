@@ -33,7 +33,12 @@ export async function POST(req: Request) {
       // Model servisi kanonik kategori değerleri bekler (örn. "Düz", "Manuel"
       // değil) - bkz. lib/validation.ts toCanonicalPayload().
       const canonicalInput = toCanonicalPayload(input);
-      const upstream = await fetch(apiUrl, {
+      // new URL("/predict", apiUrl): apiUrl bir Vercel service binding'inden
+      // gelirse SADECE taban URL'dir (path yok); mutlak "/predict" path'i
+      // her zaman base'in path'ini override ettiği için apiUrl zaten path
+      // içeren eski .env.local formatıyla da (http://host:port/predict)
+      // aynı sonucu üretir - geriye dönük kırılma yok.
+      const upstream = await fetch(new URL("/predict", apiUrl), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(canonicalInput),

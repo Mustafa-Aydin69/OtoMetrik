@@ -1,11 +1,13 @@
-pandas>=2.2.0
-scikit-learn>=1.5.0
-jupyter>=1.0.0
-matplotlib>=3.9.0
-seaborn>=0.13.0
-xgboost>=2.1.0
-lightgbm>=4.5.0
-joblib>=1.4.0
+# Production/runtime bagimliliklar (Vercel'in predict_api servisi bunlari kurar).
+# Notebook/egitim/baseline-karsilastirma araclari icin requirements-dev.txt'e bakin.
+#
+# lightgbm/scikit-learn/numpy/pandas/joblib TAM PIN'li: kaydedilen model artefakti
+# (models/lightgbm_final.joblib) bu surumlerle egitilip serialize edildi - joblib.load()
+# ile unpickle, egitim anindaki surumlerle ESLESMEYEN bir ortamda (ozellikle numpy/pandas
+# gibi major surum atlayan paketlerde) sessiz bozulma veya unpickle hatasi riski tasir.
 fastapi>=0.115.0
-uvicorn[standard]>=0.32.0
-shap>=0.52.0
+joblib==1.5.3
+numpy==2.4.6
+pandas==3.0.3
+scikit-learn==1.9.0
+lightgbm==4.6.0

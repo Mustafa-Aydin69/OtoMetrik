@@ -181,20 +181,13 @@ export function VehicleSelector({ value, onChange, onComplete, brandError, model
 
   const rows: Row[] = useMemo(() => {
     if (level === "category") {
-      const categoryRows = VEHICLE_CATEGORIES.filter(matchesQuery).map((cat) => ({
+      return VEHICLE_CATEGORIES.filter(matchesQuery).map((cat) => ({
         key: cat,
         label: cat,
         icon: CATEGORY_ICON[cat],
         selected: cat === category,
         select: () => selectCategory(cat),
       }));
-      const skipRow: Row = {
-        key: "__skip__",
-        label: "Kategori seçmeden devam et",
-        selected: category === null,
-        select: () => selectCategory(null),
-      };
-      return [...categoryRows, skipRow];
     }
     if (level === "brand") {
       const brandLabels = category ? getBrandLabelsForCategory(category) : BRANDS;
@@ -362,20 +355,9 @@ export function VehicleSelector({ value, onChange, onComplete, brandError, model
             <p className="px-3 py-4 text-center text-sm text-zinc-500">Sonuç bulunamadı.</p>
           ) : level === "category" ? (
             <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
-              {rows.map((row) =>
-                row.key === "__skip__" ? (
-                  <button
-                    key={row.key}
-                    type="button"
-                    onClick={row.select}
-                    className="col-span-full rounded-xl border border-dashed border-white/15 px-3 py-2.5 text-center text-xs text-zinc-500 transition-colors hover:border-white/30 hover:text-zinc-300"
-                  >
-                    {row.label}
-                  </button>
-                ) : (
-                  <SelectionCard key={row.key} label={row.label} icon={row.icon} selected={row.selected} onSelect={row.select} />
-                )
-              )}
+              {rows.map((row) => (
+                <SelectionCard key={row.key} label={row.label} icon={row.icon} selected={row.selected} onSelect={row.select} />
+              ))}
             </div>
           ) : level === "brand" ? (
             <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4">

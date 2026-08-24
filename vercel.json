@@ -1,0 +1,23 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "frontend": {
+      "root": "WebSite/",
+      "framework": "nextjs",
+      "bindings": [
+        { "type": "service", "service": "predict_api", "format": "url", "env": "PREDICTION_API_URL" }
+      ]
+    },
+    "predict_api": {
+      "root": "WebScrape/ai-model/",
+      "framework": "fastapi",
+      "entrypoint": "serve:app",
+      "functions": {
+        "serve.py": { "maxDuration": 30 }
+      }
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": { "service": "frontend" } }
+  ]
+}

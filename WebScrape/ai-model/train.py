@@ -44,7 +44,10 @@ BASELINE_PARAMS = dict(n_estimators=400, max_depth=8, learning_rate=0.05,
 
 BASE_DIR = os.path.join(os.path.dirname(__file__), '..')
 CARS1_HOLDOUT_PATH = os.path.join(BASE_DIR, 'data', 'output', 'cars1_normalized.csv')
-MODEL_PATH = os.path.join(BASE_DIR, 'models', 'lightgbm_final.joblib')
+# ai-model/ icinde (BASE_DIR'in disinda DEGIL) - Vercel Services deploy'unda serve.py'nin
+# calistigi servis root'u WebScrape/ai-model/ oldugu icin, artefakt bu root'un disinda kalirsa
+# deploy'a dahil olmayabilir (bkz. repo kokundeki vercel.json).
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'models', 'lightgbm_final.joblib')
 
 # cars1_normalized.csv kendi ham kaggle/cars1.csv sutun adlarini korur (normalize_datasets.py
 # sadece degerleri normalize eder, semaya map etmez) - train_dataset.csv'nin kanonik semasina
