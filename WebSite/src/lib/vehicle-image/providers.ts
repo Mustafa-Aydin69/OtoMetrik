@@ -44,6 +44,27 @@ function filenameFromTitle(title: string): string {
   return title.replace(/^File:/, "").replace(/\.[a-zA-Z0-9]+$/, "");
 }
 
+/**
+ * Wikimedia'nın imageinfo API'si thumburl/url alanlarına kendi analytics
+ * etiketlerini (utm_source/utm_campaign/utm_content) ekliyor - kaynağın
+ * kendisiyle alakasız, URL bunlar olmadan da aynı şekilde çalışıyor (canlı
+ * doğrulandı). Bu parametreler tarayıcıdaki reklam/izleyici engelleyici
+ * uzantıların (ör. uBlock) "tracking pixel" desenine uyduğu için <img>
+ * isteğini sessizce engelleyip fotoğrafın hiç görünmemesine yol açıyordu
+ * (bkz. kullanıcı raporu - tahmin geliyor, fotoğraf gelmiyor).
+ */
+function stripTrackingParams(url: string): string {
+  try {
+    const u = new URL(url);
+    u.searchParams.delete("utm_source");
+    u.searchParams.delete("utm_campaign");
+    u.searchParams.delete("utm_content");
+    return u.toString();
+  } catch {
+    return url;
+  }
+}
+
 interface CommonsPage {
   title?: string;
   imageinfo?: Array<{
@@ -89,8 +110,9 @@ async function searchCommonsRaw(query: string, limit: number): Promise<ImageCand
 
         const info = page.imageinfo?.[0];
         if (!info) continue;
-        const url = info.thumburl ?? info.url;
-        if (!url) continue;
+        const rawUrl = info.thumburl ?? info.url;
+        if (!rawUrl) continue;
+        const url = stripTrackingParams(rawUrl);
 
         const meta = info.extmetadata ?? {};
         candidates.push({
@@ -204,10 +226,10 @@ export async function fetchWikipediaInfobox(make: string, model: string): Promis
     if (!pages) return [];
 
     const page = Object.values(pages)[0];
-    const url = page?.thumbnail?.source;
-    if (!url) return [];
+    const rawUrl = page?.thumbnail?.source;
+    if (!rawUrl) return [];
 
-    return [{ url, title: page?.title ?? title, source: "wikipedia-infobox" }];
+    return [{ url: stripTrackingParams(rawUrl), title: page?.title ?? title, source: "wikipedia-infobox" }];
   } catch {
     return [];
   }
