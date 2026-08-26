@@ -1887,7 +1887,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Audi|E-Tron": [
     {
-      "hacmiBucket": 100.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 55.0,
       "count": 5
@@ -2933,7 +2933,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "BYD|Han": [
     {
-      "hacmiBucket": 6000.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 6001.0,
       "count": 3
@@ -3633,7 +3633,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Citroen|AMİ": [
     {
-      "hacmiBucket": 1600.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1598.0,
       "count": 28
@@ -4277,16 +4277,16 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Citroen|C5 Aircross": [
     {
+      "hacmiBucket": 0.0,
+      "yakitTuru": "Elektrik",
+      "exactCc": 1199.0,
+      "count": 3
+    },
+    {
       "hacmiBucket": 1200.0,
       "yakitTuru": "Benzin",
       "exactCc": 1199.0,
       "count": 15
-    },
-    {
-      "hacmiBucket": 1200.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1199.0,
-      "count": 3
     },
     {
       "hacmiBucket": 1200.0,
@@ -4539,7 +4539,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Cupra|Born": [
     {
-      "hacmiBucket": 200.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 150.0,
       "count": 3
@@ -5435,16 +5435,16 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Fiat|500 Ailesi": [
     {
+      "hacmiBucket": 0.0,
+      "yakitTuru": "Elektrik",
+      "exactCc": 500.0,
+      "count": 14
+    },
+    {
       "hacmiBucket": 500.0,
       "yakitTuru": "Dizel",
       "exactCc": 500.0,
       "count": 2
-    },
-    {
-      "hacmiBucket": 500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 500.0,
-      "count": 14
     },
     {
       "hacmiBucket": 1000.0,
@@ -7465,10 +7465,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Ford|Puma- E": [
     {
-      "hacmiBucket": 1300.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1300.5,
-      "count": 2
+      "count": 3
     }
   ],
   "Ford|Ranger": [
@@ -8687,6 +8687,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Hyundai|Kona": [
     {
+      "hacmiBucket": 0.0,
+      "yakitTuru": "Elektrik",
+      "exactCc": 1500.5,
+      "count": 4
+    },
+    {
       "hacmiBucket": 1000.0,
       "yakitTuru": "Benzin",
       "exactCc": 998.0,
@@ -8703,12 +8709,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1500.5,
       "count": 39
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1500.5,
-      "count": 3
     },
     {
       "hacmiBucket": 1500.0,
@@ -10057,48 +10057,18 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Kia|EV3": [
     {
-      "hacmiBucket": 1300.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1300.5,
-      "count": 10
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1500.5,
-      "count": 2
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1700.5,
-      "count": 2
+      "count": 15
     }
   ],
   "Kia|EV6": [
     {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1300.5,
-      "count": 6
-    },
-    {
-      "hacmiBucket": 1500.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1500.5,
-      "count": 9
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1700.5,
-      "count": 2
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1900.5,
-      "count": 2
+      "count": 19
     }
   ],
   "Kia|Magentis": [
@@ -11061,7 +11031,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Lexus|RZ": [
     {
-      "hacmiBucket": 400.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 450.0,
       "count": 3
@@ -12041,7 +12011,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mercedes - Benz|CLA": [
     {
-      "hacmiBucket": 400.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 350.0,
       "count": 9
@@ -12485,38 +12455,26 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Mercedes - Benz|EQA": [
     {
-      "hacmiBucket": 200.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 250.0,
-      "count": 3
-    },
-    {
-      "hacmiBucket": 400.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 350.0,
-      "count": 7
+      "count": 11
     }
   ],
   "Mercedes - Benz|EQB": [
     {
-      "hacmiBucket": 200.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 250.0,
-      "count": 48
-    },
-    {
-      "hacmiBucket": 400.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 350.0,
-      "count": 5
+      "count": 53
     }
   ],
   "Mercedes - Benz|EQE": [
     {
-      "hacmiBucket": 400.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 350.0,
-      "count": 31
+      "count": 32
     }
   ],
   "Mercedes - Benz|GL": [
@@ -13040,6 +12998,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     }
   ],
   "Mini|Cooper": [
+    {
+      "hacmiBucket": 0.0,
+      "yakitTuru": "Elektrik",
+      "exactCc": 1300.5,
+      "count": 2
+    },
     {
       "hacmiBucket": 1500.0,
       "yakitTuru": "Benzin",
@@ -14615,7 +14579,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Opel|Frontera-e": [
     {
-      "hacmiBucket": 1300.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1300.5,
       "count": 3
@@ -14929,16 +14893,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Opel|Mokka-e": [
     {
-      "hacmiBucket": 1200.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1199.0,
-      "count": 2
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1300.5,
-      "count": 2
+      "count": 4
     }
   ],
   "Opel|Movano": [
@@ -16455,16 +16413,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Peugeot|e-3008": [
     {
-      "hacmiBucket": 1300.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1300.5,
-      "count": 5
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1700.5,
-      "count": 2
+      "count": 8
     }
   ],
   "Pontiac|Firebird": [
@@ -17141,7 +17093,7 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Renault|Kangoo E-tech": [
     {
-      "hacmiBucket": 1300.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1300.0,
       "count": 3
@@ -18893,6 +18845,14 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "count": 10
     }
   ],
+  "Skoda|Enyaq Coupe": [
+    {
+      "hacmiBucket": 0.0,
+      "yakitTuru": "Elektrik",
+      "exactCc": 1300.5,
+      "count": 3
+    }
+  ],
   "Skoda|Fabia": [
     {
       "hacmiBucket": 600.0,
@@ -20419,34 +20379,18 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "TOGG|T10F": [
     {
-      "hacmiBucket": 1300.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1300.5,
-      "count": 26
-    },
+      "count": 55
+    }
+  ],
+  "TOGG|T10X": [
     {
-      "hacmiBucket": 1500.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1500.5,
-      "count": 4
-    },
-    {
-      "hacmiBucket": 1700.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1700.5,
       "count": 6
-    },
-    {
-      "hacmiBucket": 1900.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1900.5,
-      "count": 8
-    },
-    {
-      "hacmiBucket": 2300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 2250.5,
-      "count": 8
     }
   ],
   "Tata|Indica": [
@@ -20912,6 +20856,12 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
     },
     {
       "hacmiBucket": 0.0,
+      "yakitTuru": "Elektrik",
+      "exactCc": 1300.5,
+      "count": 5
+    },
+    {
+      "hacmiBucket": 0.0,
       "yakitTuru": "LPG & Benzin",
       "exactCc": 2.0,
       "count": 2
@@ -20939,12 +20889,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Dizel",
       "exactCc": 1300.5,
       "count": 330
-    },
-    {
-      "hacmiBucket": 1300.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1300.5,
-      "count": 2
     },
     {
       "hacmiBucket": 1300.0,
@@ -21023,12 +20967,6 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
       "yakitTuru": "Benzin",
       "exactCc": 1798.0,
       "count": 105
-    },
-    {
-      "hacmiBucket": 1800.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1798.0,
-      "count": 2
     },
     {
       "hacmiBucket": 1800.0,
@@ -22775,16 +22713,10 @@ export const ENGINES_BY_MODEL: Record<string, EngineOption[]> = {
   ],
   "Volvo|EX40": [
     {
-      "hacmiBucket": 1300.0,
+      "hacmiBucket": 0.0,
       "yakitTuru": "Elektrik",
       "exactCc": 1300.5,
-      "count": 8
-    },
-    {
-      "hacmiBucket": 1500.0,
-      "yakitTuru": "Elektrik",
-      "exactCc": 1500.5,
-      "count": 2
+      "count": 11
     }
   ],
   "Volvo|S40": [
@@ -24523,7 +24455,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Audi|A8|4300.0|Dizel": [
     "Quattro"
   ],
-  "Audi|E-Tron|100.0|Elektrik": [
+  "Audi|E-Tron|0.0|Elektrik": [
     "Quattro"
   ],
   "Audi|Q2|600.0|Benzin": [
@@ -24554,10 +24486,10 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Audi|Q2|1700.0|Dizel": [
     "Design"
   ],
-  "Audi|Q3|1500.0|Benzin": [
+  "Audi|Q3|0.0|Elektrik": [
     "Advanced"
   ],
-  "Audi|Q3|1500.0|Elektrik": [
+  "Audi|Q3|1500.0|Benzin": [
     "Advanced"
   ],
   "Audi|Q3|1500.0|Hibrit": [
@@ -26297,7 +26229,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "Z4 2.3i sDrive",
     "Z4 2.5si"
   ],
-  "BMW|i Serisi|1200.0|Elektrik": [
+  "BMW|i Serisi|0.0|Elektrik": [
     "i5 eDrive30 M Sport"
   ],
   "BMW|i Serisi|1500.0|Benzin": [
@@ -26306,7 +26238,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "BMW|i Serisi|1500.0|Hibrit": [
     "i8 Premium Techno"
   ],
-  "BYD|Han|6000.0|Elektrik": [
+  "BYD|Han|0.0|Elektrik": [
     "Executive"
   ],
   "BYD|Seal U DM-i|1500.0|Benzin": [
@@ -27088,7 +27020,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "LX",
     "LE"
   ],
-  "Citroen|AMİ|1600.0|Elektrik": [
+  "Citroen|AMİ|0.0|Elektrik": [
     "My Ami Pop"
   ],
   "Citroen|BX|1400.0|Benzin": [
@@ -27988,6 +27920,9 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Citroen|C5|2200.0|Dizel": [
     "SX"
   ],
+  "Citroen|C5 Aircross|0.0|Elektrik": [
+    "Hybrid Plus"
+  ],
   "Citroen|C5 Aircross|0.0|Hibrit": [
     "Hybrid Max"
   ],
@@ -27999,9 +27934,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "Hybrid Max",
     "Hybrid Plus",
     "PureTech Shine"
-  ],
-  "Citroen|C5 Aircross|1200.0|Elektrik": [
-    "Hybrid Plus"
   ],
   "Citroen|C5 Aircross|1200.0|Hibrit": [
     "Hybrid Max",
@@ -28272,7 +28204,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Citroen|e-C4 X|1500.0|Benzin": [
     "1.2 PureTech Max"
   ],
-  "Cupra|Born|200.0|Elektrik": [
+  "Cupra|Born|0.0|Elektrik": [
     "kW"
   ],
   "Cupra|Formentor|1500.0|Benzin": [
@@ -29256,12 +29188,12 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Fiat|500 Abarth|1400.0|Benzin": [
     "Competizione"
   ],
+  "Fiat|500 Ailesi|0.0|Elektrik": [
+    "E La Prima"
+  ],
   "Fiat|500 Ailesi|500.0|Dizel": [
     "1.3 Mjet Pop",
     "1.3 Mjet Sport"
-  ],
-  "Fiat|500 Ailesi|500.0|Elektrik": [
-    "E La Prima"
   ],
   "Fiat|500 Ailesi|900.0|Benzin": [
     "0.9 TwinAir Sport"
@@ -32312,11 +32244,14 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Ford|Mustang|4900.0|Benzin": [
     "GT"
   ],
-  "Ford|Mustang Mach-E|600.0|Elektrik": [
+  "Ford|Mustang Mach-E|0.0|Elektrik": [
     "Standart Range"
   ],
   "Ford|Probe|2200.0|LPG & Benzin": [
     "3.0 V6"
+  ],
+  "Ford|Puma|0.0|Elektrik": [
+    "ST Line"
   ],
   "Ford|Puma|600.0|Benzin": [
     "Style",
@@ -32333,18 +32268,12 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "Hybrid ST-Line X",
     "ST Line"
   ],
-  "Ford|Puma|1000.0|Elektrik": [
-    "ST Line"
-  ],
   "Ford|Puma|1000.0|Hibrit": [
     "Hybrid Titanium",
     "Hybrid ST-Line X",
     "ST Line"
   ],
-  "Ford|Puma- E|1300.0|Elektrik": [
-    "Premium"
-  ],
-  "Ford|Puma- E|1500.0|Elektrik": [
+  "Ford|Puma- E|0.0|Elektrik": [
     "Premium"
   ],
   "Ford|Ranger|1900.0|Dizel": [
@@ -33361,7 +33290,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Honda|Civic|2300.0|Benzin": [
     "Type-R"
   ],
-  "Honda|E|200.0|Elektrik": [
+  "Honda|E|0.0|Elektrik": [
     "PS"
   ],
   "Honda|FR-V|2200.0|Dizel": [
@@ -34107,6 +34036,10 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Hyundai|Ioniq 6|1600.0|Hibrit": [
     "GDI Hybrid Elite Plus"
   ],
+  "Hyundai|Kona|0.0|Elektrik": [
+    "Electric Advance",
+    "Electric 100 kW Progressive"
+  ],
   "Hyundai|Kona|600.0|Benzin": [
     "T-GDI Style"
   ],
@@ -34125,9 +34058,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "Style",
     "Hibrit Elite",
     "Hibrit Style"
-  ],
-  "Hyundai|Kona|1500.0|Elektrik": [
-    "Electric Advance"
   ],
   "Hyundai|Kona|1500.0|Hibrit": [
     "Hibrit Elite",
@@ -34148,9 +34078,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Hyundai|Kona|1600.0|Hibrit": [
     "GDI Hibrit",
     "Style"
-  ],
-  "Hyundai|Kona|1700.0|Elektrik": [
-    "Electric 100 kW Progressive"
   ],
   "Hyundai|Matrix|1500.0|Benzin": [
     "1.5 CRDi Style",
@@ -35761,31 +35688,11 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Kia|Clarus|2000.0|LPG & Benzin": [
     "2.0 GLX"
   ],
-  "Kia|EV3|1300.0|Elektrik": [
+  "Kia|EV3|0.0|Elektrik": [
     "Elegance Long",
     "Elegance"
   ],
-  "Kia|EV3|1500.0|Elektrik": [
-    "Elegance",
-    "Elegance Long"
-  ],
-  "Kia|EV3|1700.0|Elektrik": [
-    "Elegance",
-    "Elegance Long"
-  ],
-  "Kia|EV3|1900.0|Elektrik": [
-    "Elegance Long"
-  ],
-  "Kia|EV6|1300.0|Elektrik": [
-    "Elegance Standart Range"
-  ],
-  "Kia|EV6|1500.0|Elektrik": [
-    "Elegance Standart Range"
-  ],
-  "Kia|EV6|1700.0|Elektrik": [
-    "Elegance Standart Range"
-  ],
-  "Kia|EV6|1900.0|Elektrik": [
+  "Kia|EV6|0.0|Elektrik": [
     "Elegance Standart Range"
   ],
   "Kia|Magentis|1900.0|Dizel": [
@@ -36862,7 +36769,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Lexus|RX|2300.0|Hibrit": [
     "h"
   ],
-  "Lexus|RZ|400.0|Elektrik": [
+  "Lexus|RZ|0.0|Elektrik": [
     "e Exclusive"
   ],
   "Lincoln|Mark|4900.0|Benzin": [
@@ -36893,7 +36800,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "MG|HS|1500.0|LPG & Benzin": [
     "T-GDI Luxury"
   ],
-  "MG|Marvel R|1900.0|Elektrik": [
+  "MG|Marvel R|0.0|Elektrik": [
     "Performance"
   ],
   "MG|ZS|600.0|Benzin": [
@@ -36910,7 +36817,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "MG|ZS|1500.0|Benzin": [
     "Comfort"
   ],
-  "MG|ZS EV|600.0|Elektrik": [
+  "MG|ZS EV|0.0|Elektrik": [
     "Luxury"
   ],
   "Maserati|4 Serisi|2000.0|Benzin": [
@@ -37732,6 +37639,9 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Mercedes - Benz|B|2000.0|LPG & Benzin": [
     "B 200 200"
   ],
+  "Mercedes - Benz|C|0.0|Elektrik": [
+    "C 200 AMG"
+  ],
   "Mercedes - Benz|C|1500.0|Benzin": [
     "C 200 AMG",
     "C 180 AMG",
@@ -37767,9 +37677,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "C 200 d BlueTEC AMG",
     "C 200 Fascination",
     "C 200 d BlueTEC Exclusive"
-  ],
-  "Mercedes - Benz|C|1500.0|Elektrik": [
-    "C 200 AMG"
   ],
   "Mercedes - Benz|C|1500.0|Hibrit": [
     "C 200 AMG",
@@ -38072,11 +37979,11 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Mercedes - Benz|CL|4800.0|Benzin": [
     "500"
   ],
+  "Mercedes - Benz|CLA|0.0|Elektrik": [
+    "Edition 1 AMG"
+  ],
   "Mercedes - Benz|CLA|200.0|Dizel": [
     "CDI AMG"
-  ],
-  "Mercedes - Benz|CLA|400.0|Elektrik": [
-    "Edition 1 AMG"
   ],
   "Mercedes - Benz|CLA|1300.0|Benzin": [
     "AMG",
@@ -38723,27 +38630,17 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Mercedes - Benz|E|5400.0|Benzin": [
     "AMG"
   ],
-  "Mercedes - Benz|EQA|200.0|Elektrik": [
-    "+ AMG"
-  ],
-  "Mercedes - Benz|EQA|400.0|Elektrik": [
+  "Mercedes - Benz|EQA|0.0|Elektrik": [
     "AMG",
-    "AMG Plus"
-  ],
-  "Mercedes - Benz|EQA|600.0|Elektrik": [
-    "AMG"
-  ],
-  "Mercedes - Benz|EQB|200.0|Elektrik": [
     "+ AMG",
     "AMG Plus"
   ],
-  "Mercedes - Benz|EQB|400.0|Elektrik": [
-    "AMG"
+  "Mercedes - Benz|EQB|0.0|Elektrik": [
+    "+ AMG",
+    "AMG",
+    "AMG Plus"
   ],
-  "Mercedes - Benz|EQE|300.0|Elektrik": [
-    "+ AMG"
-  ],
-  "Mercedes - Benz|EQE|400.0|Elektrik": [
+  "Mercedes - Benz|EQE|0.0|Elektrik": [
     "+ AMG",
     "4Matic AMG"
   ],
@@ -39172,7 +39069,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Mercury|Cougar|2500.0|Benzin": [
     "2.5"
   ],
-  "Mini|Cooper|1300.0|Elektrik": [
+  "Mini|Cooper|0.0|Elektrik": [
     "SE"
   ],
   "Mini|Cooper|1500.0|Benzin": [
@@ -39239,9 +39136,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   ],
   "Mini|Cooper|1700.0|Benzin": [
     "1.6"
-  ],
-  "Mini|Cooper|1900.0|Elektrik": [
-    "SE"
   ],
   "Mini|Cooper Clubman|1500.0|Benzin": [
     "1.5 Chili",
@@ -41498,7 +41392,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Opel|Frontera|3200.0|LPG & Benzin": [
     "Limited"
   ],
-  "Opel|Frontera-e|1300.0|Elektrik": [
+  "Opel|Frontera-e|0.0|Elektrik": [
     "GS"
   ],
   "Opel|GT|2000.0|Benzin": [
@@ -41566,7 +41460,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Opel|Grandland X|1700.0|Dizel": [
     "D EcoTEC Excellence"
   ],
-  "Opel|Grandland-e|1300.0|Elektrik": [
+  "Opel|Grandland-e|0.0|Elektrik": [
     "GS"
   ],
   "Opel|Insignia|1300.0|Benzin": [
@@ -41877,11 +41771,9 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Opel|Mokka X|1600.0|LPG & Benzin": [
     "Enjoy"
   ],
-  "Opel|Mokka-e|1200.0|Elektrik": [
+  "Opel|Mokka-e|0.0|Elektrik": [
+    "GS",
     "Ultimate"
-  ],
-  "Opel|Mokka-e|1300.0|Elektrik": [
-    "GS"
   ],
   "Opel|Movano|2200.0|Dizel": [
     "D"
@@ -43981,24 +43873,18 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "Active",
     "Allure"
   ],
-  "Peugeot|e-2008|1500.0|Elektrik": [
+  "Peugeot|e-2008|0.0|Elektrik": [
     "Allure"
+  ],
+  "Peugeot|e-208|0.0|Elektrik": [
+    "GT"
   ],
   "Peugeot|e-208|1300.0|Benzin": [
     "GT"
   ],
-  "Peugeot|e-208|1300.0|Elektrik": [
-    "GT"
-  ],
-  "Peugeot|e-3008|1300.0|Elektrik": [
+  "Peugeot|e-3008|0.0|Elektrik": [
     "Allure",
     "GT"
-  ],
-  "Peugeot|e-3008|1700.0|Elektrik": [
-    "Allure"
-  ],
-  "Peugeot|e-3008|1900.0|Elektrik": [
-    "Allure"
   ],
   "Pontiac|Firebird|5700.0|Benzin": [
     "V8 Formula"
@@ -44928,7 +44814,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "DTI RXE",
     "D RT"
   ],
-  "Renault|Kangoo E-tech|1300.0|Elektrik": [
+  "Renault|Kangoo E-tech|0.0|Elektrik": [
     "Iconic"
   ],
   "Renault|Kangoo Express|0.0|Dizel": [
@@ -46937,6 +46823,9 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Seat|Leon|0.0|Benzin": [
     "Style"
   ],
+  "Seat|Leon|0.0|Elektrik": [
+    "eHybrid FR"
+  ],
   "Seat|Leon|600.0|Benzin": [
     "Style",
     "eTSI Style",
@@ -47071,9 +46960,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "FR",
     "1.6 TDI Xcellence",
     "Copa Plus"
-  ],
-  "Seat|Leon|1500.0|Elektrik": [
-    "eHybrid FR"
   ],
   "Seat|Leon|1500.0|Hibrit": [
     "eHybrid FR",
@@ -47316,13 +47202,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Skoda|Citigo|1200.0|Benzin": [
     "1.0 Ambition"
   ],
-  "Skoda|Enyaq Coupe|1300.0|Elektrik": [
-    "E-Sportline"
-  ],
-  "Skoda|Enyaq Coupe|1500.0|Elektrik": [
-    "E-Sportline"
-  ],
-  "Skoda|Enyaq Coupe|6000.0|Elektrik": [
+  "Skoda|Enyaq Coupe|0.0|Elektrik": [
     "E-Sportline"
   ],
   "Skoda|Fabia|0.0|Benzin": [
@@ -47717,6 +47597,9 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Skoda|Octavia|0.0|Dizel": [
     "Style CR"
   ],
+  "Skoda|Octavia|0.0|Elektrik": [
+    "1.0 e-Tec Premium"
+  ],
   "Skoda|Octavia|600.0|Benzin": [
     "Ambition",
     "Optimal",
@@ -47739,9 +47622,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "1.0 TSI Optimal",
     "1.0 e-Tec Premium",
     "Style"
-  ],
-  "Skoda|Octavia|1000.0|Elektrik": [
-    "1.0 e-Tec Premium"
   ],
   "Skoda|Octavia|1000.0|Hibrit": [
     "e-Tec Elite",
@@ -48520,11 +48400,11 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Ssangyong|Tivoli|1600.0|LPG & Benzin": [
     "G Limited"
   ],
+  "Ssangyong|Torres|0.0|Elektrik": [
+    "EVX"
+  ],
   "Ssangyong|Torres|1500.0|Benzin": [
     "GDI"
-  ],
-  "Ssangyong|Torres|2300.0|Elektrik": [
-    "EVX"
   ],
   "Ssangyong|XLV|1500.0|Dizel": [
     "D"
@@ -49075,55 +48955,16 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "GL Plus",
     "VX"
   ],
-  "TOGG|T10F|1300.0|Elektrik": [
+  "TOGG|T10F|0.0|Elektrik": [
     "V2 Uzun Menzil",
     "V2",
     "V2 4More"
   ],
-  "TOGG|T10F|1500.0|Elektrik": [
-    "V2 Uzun Menzil",
-    "V2"
-  ],
-  "TOGG|T10F|1700.0|Elektrik": [
-    "V2 Uzun Menzil",
-    "V2"
-  ],
-  "TOGG|T10F|1900.0|Elektrik": [
-    "V2 Uzun Menzil",
-    "V2"
-  ],
   "TOGG|T10F|2300.0|Benzin": [
     "V2 4More"
   ],
-  "TOGG|T10F|2300.0|Elektrik": [
+  "TOGG|T10X|0.0|Elektrik": [
     "V2 Uzun Menzil",
-    "V2"
-  ],
-  "TOGG|T10F|2800.0|Elektrik": [
-    "V2 Uzun Menzil"
-  ],
-  "TOGG|T10F|3300.0|Elektrik": [
-    "V2 Uzun Menzil"
-  ],
-  "TOGG|T10F|6000.0|Elektrik": [
-    "V2 Uzun Menzil"
-  ],
-  "TOGG|T10X|1500.0|Elektrik": [
-    "V1 Standart Menzil"
-  ],
-  "TOGG|T10X|1700.0|Elektrik": [
-    "V2 Uzun Menzil"
-  ],
-  "TOGG|T10X|1900.0|Elektrik": [
-    "V2 Uzun Menzil"
-  ],
-  "TOGG|T10X|2800.0|Elektrik": [
-    "V2 Uzun Menzil"
-  ],
-  "TOGG|T10X|3800.0|Elektrik": [
-    "V2 Uzun Menzil"
-  ],
-  "TOGG|T10X|6000.0|Elektrik": [
     "V1 Standart Menzil"
   ],
   "Tata|Indica|1400.0|Benzin": [
@@ -49216,7 +49057,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "Safire Aura",
     "1.4 Safire Aura"
   ],
-  "Tesla|Model Y|1900.0|Elektrik": [
+  "Tesla|Model Y|0.0|Elektrik": [
     "Standart (Juniper)"
   ],
   "Tofaş|Doğan|600.0|LPG & Benzin": [
@@ -49755,6 +49596,12 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "D-4D Advance",
     "D-4D Terra"
   ],
+  "Toyota|Corolla|0.0|Elektrik": [
+    "Life",
+    "1.8 Hybrid Dream",
+    "1.8 Hybrid Flame",
+    "D-4D Life"
+  ],
   "Toyota|Corolla|0.0|LPG & Benzin": [
     "XE",
     "XL"
@@ -49824,9 +49671,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "1.4 D-4D Premium",
     "D-4D Active"
   ],
-  "Toyota|Corolla|1300.0|Elektrik": [
-    "Life"
-  ],
   "Toyota|Corolla|1300.0|LPG & Benzin": [
     "Life",
     "XL",
@@ -49895,9 +49739,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
     "1.4 D-4D Plusline",
     "D-4D Luna",
     "D-4D Sport"
-  ],
-  "Toyota|Corolla|1400.0|Elektrik": [
-    "D-4D Life"
   ],
   "Toyota|Corolla|1400.0|LPG & Benzin": [
     "Terra",
@@ -50189,10 +50030,6 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   ],
   "Toyota|Corolla|1800.0|Benzin": [
     "Hybrid Dream"
-  ],
-  "Toyota|Corolla|1800.0|Elektrik": [
-    "1.8 Hybrid Dream",
-    "1.8 Hybrid Flame"
   ],
   "Toyota|Corolla|1800.0|Hibrit": [
     "Hybrid Dream",
@@ -52621,13 +52458,7 @@ export const PAKET_BY_ENGINE: Record<string, string[]> = {
   "Volvo|C70|2800.0|Benzin": [
     "2.5"
   ],
-  "Volvo|EX40|1300.0|Elektrik": [
-    "Extended Range Ultra"
-  ],
-  "Volvo|EX40|1500.0|Elektrik": [
-    "Extended Range Ultra"
-  ],
-  "Volvo|EX40|2300.0|Elektrik": [
+  "Volvo|EX40|0.0|Elektrik": [
     "Extended Range Ultra"
   ],
   "Volvo|S40|1500.0|Benzin": [
@@ -53842,7 +53673,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     338.0,
     363.0
   ],
-  "Audi|E-Tron|100.0|Elektrik": [
+  "Audi|E-Tron|0.0|Elektrik": [
     408.0
   ],
   "Audi|Q2|1000.0|Benzin": [
@@ -54491,7 +54322,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "BMW|i Serisi|1500.0|Hibrit": [
     362.0
   ],
-  "BYD|Han|6000.0|Elektrik": [
+  "BYD|Han|0.0|Elektrik": [
     513.0
   ],
   "BYD|Seal U DM-i|1500.0|Hibrit": [
@@ -54831,7 +54662,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Chrysler|Stratus|2500.0|LPG & Benzin": [
     163.0
   ],
-  "Citroen|AMİ|1600.0|Elektrik": [
+  "Citroen|AMİ|0.0|Elektrik": [
     80.0
   ],
   "Citroen|Berlingo|0.0|Dizel": [
@@ -55217,11 +55048,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|C5|2200.0|Dizel": [
     135.0
   ],
+  "Citroen|C5 Aircross|0.0|Elektrik": [
+    136.0
+  ],
   "Citroen|C5 Aircross|1200.0|Benzin": [
     130.0
-  ],
-  "Citroen|C5 Aircross|1200.0|Elektrik": [
-    136.0
   ],
   "Citroen|C5 Aircross|1200.0|Hibrit": [
     136.0,
@@ -55349,7 +55180,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Citroen|e-C4 X|600.0|Benzin": [
     138.0
   ],
-  "Cupra|Born|200.0|Elektrik": [
+  "Cupra|Born|0.0|Elektrik": [
     204.0
   ],
   "Cupra|Formentor|1500.0|Benzin": [
@@ -55830,7 +55661,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Dodge|Nitro|2800.0|Dizel": [
     177.0
   ],
-  "Fiat|500 Ailesi|500.0|Elektrik": [
+  "Fiat|500 Ailesi|0.0|Elektrik": [
     118.0
   ],
   "Fiat|500 Ailesi|1000.0|Hibrit": [
@@ -56948,7 +56779,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     125.0,
     155.0
   ],
-  "Ford|Puma- E|1300.0|Elektrik": [
+  "Ford|Puma- E|0.0|Elektrik": [
     163.0
   ],
   "Ford|Ranger|1900.0|Dizel": [
@@ -57668,6 +57499,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     80.0,
     85.0
   ],
+  "Hyundai|Kona|0.0|Elektrik": [
+    163.0
+  ],
   "Hyundai|Kona|1000.0|Benzin": [
     120.0
   ],
@@ -57677,9 +57511,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Hyundai|Kona|1500.0|Dizel": [
     138.0
-  ],
-  "Hyundai|Kona|1500.0|Elektrik": [
-    163.0
   ],
   "Hyundai|Kona|1500.0|Hibrit": [
     138.0
@@ -58385,25 +58216,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     126.0,
     130.0
   ],
-  "Kia|EV3|1300.0|Elektrik": [
+  "Kia|EV3|0.0|Elektrik": [
     213.0
   ],
-  "Kia|EV3|1500.0|Elektrik": [
-    213.0
-  ],
-  "Kia|EV3|1700.0|Elektrik": [
-    213.0
-  ],
-  "Kia|EV6|1300.0|Elektrik": [
-    163.0
-  ],
-  "Kia|EV6|1500.0|Elektrik": [
-    163.0
-  ],
-  "Kia|EV6|1700.0|Elektrik": [
-    163.0
-  ],
-  "Kia|EV6|1900.0|Elektrik": [
+  "Kia|EV6|0.0|Elektrik": [
     163.0
   ],
   "Kia|Magentis|2000.0|LPG & Benzin": [
@@ -58922,7 +58738,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Lexus|RX|2300.0|Hibrit": [
     238.0
   ],
-  "Lexus|RZ|400.0|Elektrik": [
+  "Lexus|RZ|0.0|Elektrik": [
     313.0
   ],
   "MG|EHS|1500.0|Hibrit": [
@@ -59434,7 +59250,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|CL|4800.0|Benzin": [
     313.0
   ],
-  "Mercedes - Benz|CLA|400.0|Elektrik": [
+  "Mercedes - Benz|CLA|0.0|Elektrik": [
     354.0
   ],
   "Mercedes - Benz|CLA|1300.0|Benzin": [
@@ -59719,19 +59535,15 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Mercedes - Benz|E|4300.0|Benzin": [
     279.0
   ],
-  "Mercedes - Benz|EQA|200.0|Elektrik": [
-    190.0
-  ],
-  "Mercedes - Benz|EQA|400.0|Elektrik": [
+  "Mercedes - Benz|EQA|0.0|Elektrik": [
+    190.0,
     292.0
   ],
-  "Mercedes - Benz|EQB|200.0|Elektrik": [
-    190.0
-  ],
-  "Mercedes - Benz|EQB|400.0|Elektrik": [
+  "Mercedes - Benz|EQB|0.0|Elektrik": [
+    190.0,
     292.0
   ],
-  "Mercedes - Benz|EQE|400.0|Elektrik": [
+  "Mercedes - Benz|EQE|0.0|Elektrik": [
     292.0
   ],
   "Mercedes - Benz|GL|2800.0|Dizel": [
@@ -60018,6 +59830,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Mercedes - Benz|X|3000.0|Dizel": [
     258.0
+  ],
+  "Mini|Cooper|0.0|Elektrik": [
+    188.0
   ],
   "Mini|Cooper|1500.0|Benzin": [
     113.0,
@@ -60907,7 +60722,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Frontera|3200.0|LPG & Benzin": [
     205.0
   ],
-  "Opel|Frontera-e|1300.0|Elektrik": [
+  "Opel|Frontera-e|0.0|Elektrik": [
     113.0
   ],
   "Opel|Grandland|600.0|Benzin": [
@@ -61082,7 +60897,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Opel|Mokka X|1600.0|Dizel": [
     136.0
   ],
-  "Opel|Mokka-e|1200.0|Elektrik": [
+  "Opel|Mokka-e|0.0|Elektrik": [
     130.0
   ],
   "Opel|Movano|2200.0|Dizel": [
@@ -61922,10 +61737,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Peugeot|e-208|1300.0|Benzin": [
     138.0
   ],
-  "Peugeot|e-3008|1300.0|Elektrik": [
-    213.0
-  ],
-  "Peugeot|e-3008|1700.0|Elektrik": [
+  "Peugeot|e-3008|0.0|Elektrik": [
     213.0
   ],
   "Pontiac|Firebird|5800.0|Benzin": [
@@ -62302,7 +62114,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     65.0,
     80.0
   ],
-  "Renault|Kangoo E-tech|1300.0|Elektrik": [
+  "Renault|Kangoo E-tech|0.0|Elektrik": [
     101.0
   ],
   "Renault|Kangoo Express|0.0|Dizel": [
@@ -63313,6 +63125,9 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   "Skoda|Citigo|1000.0|Benzin": [
     60.0
   ],
+  "Skoda|Enyaq Coupe|0.0|Elektrik": [
+    213.0
+  ],
   "Skoda|Fabia|600.0|Benzin": [
     63.0,
     88.0,
@@ -64147,19 +63962,11 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     99.0,
     122.0
   ],
-  "TOGG|T10F|1300.0|Elektrik": [
-    213.0
+  "TOGG|T10F|0.0|Elektrik": [
+    213.0,
+    438.0
   ],
-  "TOGG|T10F|1500.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10F|1700.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10F|1900.0|Elektrik": [
-    213.0
-  ],
-  "TOGG|T10F|2300.0|Elektrik": [
+  "TOGG|T10X|0.0|Elektrik": [
     213.0
   ],
   "Tata|Indica|1400.0|Benzin": [
@@ -64397,6 +64204,10 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     126.0,
     133.0
   ],
+  "Toyota|Corolla|0.0|Elektrik": [
+    96.0,
+    113.0
+  ],
   "Toyota|Corolla|600.0|LPG & Benzin": [
     113.0
   ],
@@ -64411,9 +64222,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Corolla|1300.0|Dizel": [
     88.0
-  ],
-  "Toyota|Corolla|1300.0|Elektrik": [
-    113.0
   ],
   "Toyota|Corolla|1300.0|LPG & Benzin": [
     63.0,
@@ -64474,9 +64282,6 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
   ],
   "Toyota|Corolla|1800.0|Benzin": [
     98.0
-  ],
-  "Toyota|Corolla|1800.0|Elektrik": [
-    96.0
   ],
   "Toyota|Corolla|1800.0|Hibrit": [
     96.0,
@@ -65538,10 +65343,7 @@ export const HP_BY_ENGINE: Record<string, number[]> = {
     109.0,
     115.0
   ],
-  "Volvo|EX40|1300.0|Elektrik": [
-    213.0
-  ],
-  "Volvo|EX40|1500.0|Elektrik": [
+  "Volvo|EX40|0.0|Elektrik": [
     213.0
   ],
   "Volvo|S40|1500.0|Benzin": [
@@ -68879,5 +68681,3018 @@ export const BODY_TYPE_BY_MODEL: Record<string, string[]> = {
   ],
   "Volvo|XC90": [
     "SUV"
+  ]
+};
+
+export const VITES_BY_MODEL: Record<string, string[]> = {
+  "Alfa Romeo|145": [
+    "Düz"
+  ],
+  "Alfa Romeo|146": [
+    "Düz"
+  ],
+  "Alfa Romeo|147": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Alfa Romeo|156": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Alfa Romeo|159": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Alfa Romeo|166": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Alfa Romeo|33": [
+    "Düz"
+  ],
+  "Alfa Romeo|Brera": [
+    "Düz"
+  ],
+  "Alfa Romeo|GT": [
+    "Düz"
+  ],
+  "Alfa Romeo|GTV": [
+    "Düz"
+  ],
+  "Alfa Romeo|Giulia": [
+    "Otomatik"
+  ],
+  "Alfa Romeo|Giulietta": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Alfa Romeo|Junior Ibrida": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Alfa Romeo|MiTo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Alfa Romeo|Spider": [
+    "Düz"
+  ],
+  "Alfa Romeo|Stelvio": [
+    "Otomatik"
+  ],
+  "Alfa Romeo|Tonale": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Aston Martin|Vantage": [
+    "Otomatik"
+  ],
+  "Audi|100 Serisi": [
+    "Düz"
+  ],
+  "Audi|200 Serisi": [
+    "Düz"
+  ],
+  "Audi|80 Serisi": [
+    "Düz"
+  ],
+  "Audi|A1": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Audi|A3": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Audi|A4": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Audi|A5": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Audi|A6": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Audi|A7": [
+    "Otomatik"
+  ],
+  "Audi|A8": [
+    "Otomatik"
+  ],
+  "Audi|E-Tron": [
+    "Otomatik"
+  ],
+  "Audi|Q2": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Audi|Q3": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Audi|Q3 Sportback": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Audi|Q5": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Audi|Q7": [
+    "Otomatik"
+  ],
+  "Audi|RS": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Audi|S": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Audi|TT": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Audi|TTS": [
+    "Otomatik"
+  ],
+  "BMW|1 Serisi": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "BMW|2 Serisi": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "BMW|3 Serisi": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "BMW|4 Serisi": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "BMW|5 Serisi": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "BMW|6 Serisi": [
+    "Otomatik"
+  ],
+  "BMW|7 Serisi": [
+    "Otomatik",
+    "Düz"
+  ],
+  "BMW|M Serisi": [
+    "Otomatik",
+    "Düz"
+  ],
+  "BMW|X1": [
+    "Otomatik",
+    "Düz"
+  ],
+  "BMW|X2": [
+    "Otomatik"
+  ],
+  "BMW|X3": [
+    "Otomatik",
+    "Düz"
+  ],
+  "BMW|X4": [
+    "Otomatik"
+  ],
+  "BMW|X5": [
+    "Otomatik"
+  ],
+  "BMW|X6": [
+    "Otomatik"
+  ],
+  "BMW|Z Serisi": [
+    "Otomatik",
+    "Düz"
+  ],
+  "BMW|i Serisi": [
+    "Otomatik"
+  ],
+  "BYD|Han": [
+    "Otomatik"
+  ],
+  "BYD|Seal U DM-i": [
+    "Otomatik"
+  ],
+  "Bentley|Continental": [
+    "Otomatik"
+  ],
+  "Buick|Regal": [
+    "Otomatik"
+  ],
+  "Cadillac|DeVille": [
+    "Otomatik"
+  ],
+  "Cadillac|Eldorado": [
+    "Otomatik"
+  ],
+  "Cadillac|Escalade": [
+    "Otomatik"
+  ],
+  "Cadillac|Fleetwood": [
+    "Otomatik"
+  ],
+  "Cadillac|SRX": [
+    "Otomatik"
+  ],
+  "Cadillac|Seville": [
+    "Otomatik"
+  ],
+  "Chery|Alia": [
+    "Düz"
+  ],
+  "Chery|Chance": [
+    "Düz"
+  ],
+  "Chery|Kimo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Chery|Niche": [
+    "Otomatik"
+  ],
+  "Chery|Omoda 5": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Chery|Omoda 5 Pro": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Chery|Tiggo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Chery|Tiggo 7": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Chery|Tiggo 7 Pro": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Chery|Tiggo 7 Pro Max": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Chery|Tiggo 8": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Chery|Tiggo 8 Pro": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Chery|Tiggo 8 Pro Max": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Chevrolet|Aveo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Chevrolet|Camaro": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Chevrolet|Caprice": [
+    "Düz"
+  ],
+  "Chevrolet|Captiva": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Chevrolet|Cavalier": [
+    "Düz"
+  ],
+  "Chevrolet|Corvette": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Chevrolet|Cruze": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Chevrolet|Epica": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Chevrolet|Evanda": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Chevrolet|Kalos": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Chevrolet|Lacetti": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Chevrolet|Rezzo": [
+    "Düz"
+  ],
+  "Chevrolet|Spark": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Chrysler|300 C": [
+    "Otomatik"
+  ],
+  "Chrysler|300 M": [
+    "Otomatik"
+  ],
+  "Chrysler|Concorde": [
+    "Otomatik"
+  ],
+  "Chrysler|Crossfire": [
+    "Otomatik"
+  ],
+  "Chrysler|LHS": [
+    "Otomatik"
+  ],
+  "Chrysler|Neon": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Chrysler|PT Cruiser": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Chrysler|Sebring": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Chrysler|Stratus": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Citroen|AMİ": [
+    "Otomatik"
+  ],
+  "Citroen|BX": [
+    "Düz"
+  ],
+  "Citroen|Berlingo": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Citroen|C-Elysee": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Citroen|C-Elysée": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Citroen|C1": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Citroen|C15": [
+    "Düz"
+  ],
+  "Citroen|C2": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Citroen|C3": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Citroen|C3 Aircross": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Citroen|C3 Picasso": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Citroen|C4": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Citroen|C4 Cactus": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Citroen|C4 Grand Picasso": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Citroen|C4 Picasso": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Citroen|C4 SUV": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Citroen|C4 X": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Citroen|C5": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Citroen|C5 Aircross": [
+    "Otomatik"
+  ],
+  "Citroen|C8": [
+    "Düz"
+  ],
+  "Citroen|Evasion": [
+    "Düz"
+  ],
+  "Citroen|Jumper": [
+    "Düz"
+  ],
+  "Citroen|Jumpy": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Citroen|Nemo": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Citroen|Saxo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Citroen|XM": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Citroen|Xantia": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Citroen|Xsara": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Citroen|ZX": [
+    "Düz"
+  ],
+  "Citroen|e-C4 X": [
+    "Otomatik"
+  ],
+  "Cupra|Born": [
+    "Otomatik"
+  ],
+  "Cupra|Formentor": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Cupra|Leon": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Cupra|Terramar": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "DS Automobiles|DS 3 Crossback": [
+    "Otomatik"
+  ],
+  "DS Automobiles|DS 7 Crossback": [
+    "Otomatik"
+  ],
+  "DS Automobiles|DS3": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "DS Automobiles|DS4": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "DS Automobiles|DS5": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "DS Automobiles|DS9": [
+    "Otomatik"
+  ],
+  "Dacia|Dokker": [
+    "Düz"
+  ],
+  "Dacia|Duster": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Dacia|Jogger": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Dacia|Lodgy": [
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Dacia|Logan": [
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Dacia|Sandero": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Dacia|Sandero Stepway": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Dacia|Solenza": [
+    "Düz"
+  ],
+  "Daewoo|Chairman": [
+    "Otomatik"
+  ],
+  "Daewoo|Espero": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Daewoo|Lanos": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Daewoo|Leganza": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Daewoo|Matiz": [
+    "Düz"
+  ],
+  "Daewoo|Nexia": [
+    "Düz"
+  ],
+  "Daewoo|Nubira": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Daewoo|Racer": [
+    "Düz"
+  ],
+  "Daewoo|Tico": [
+    "Düz"
+  ],
+  "Daihatsu|Applause": [
+    "Düz"
+  ],
+  "Daihatsu|Charade": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Daihatsu|Cuore": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Daihatsu|Materia": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Daihatsu|Move": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Daihatsu|Sirion": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Daihatsu|YRV": [
+    "Düz"
+  ],
+  "Dodge|Avenger": [
+    "Düz"
+  ],
+  "Dodge|Caliber": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Dodge|Challenger": [
+    "Otomatik"
+  ],
+  "Dodge|Journey": [
+    "Otomatik"
+  ],
+  "Dodge|Nitro": [
+    "Otomatik"
+  ],
+  "Dodge|Ram": [
+    "Düz"
+  ],
+  "Fiat|124 Spider": [
+    "Otomatik"
+  ],
+  "Fiat|126 Bis": [
+    "Düz"
+  ],
+  "Fiat|500 Abarth": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|500 Ailesi": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|500 X": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|600": [
+    "Otomatik"
+  ],
+  "Fiat|Albea": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Brava": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|Bravo": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Doblo": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Fiat|Ducato": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|Egea": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Egea Cross": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Fiat|Fiorino": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Freemont": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Fiat|Fullback": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|Idea": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Linea": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Marea": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|Palio": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Palio Van": [
+    "Düz"
+  ],
+  "Fiat|Panda": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Punto": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Fiat|Scudo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|Sedici": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|Siena": [
+    "Düz"
+  ],
+  "Fiat|Stilo": [
+    "Düz"
+  ],
+  "Fiat|Tempra": [
+    "Düz"
+  ],
+  "Fiat|Tipo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Fiat|Ulysse": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Fiat|Uno": [
+    "Düz"
+  ],
+  "Ford|B-Max": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Ford|Bronco Sport": [
+    "Otomatik"
+  ],
+  "Ford|C-Max": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ford|E Serisi": [
+    "Otomatik"
+  ],
+  "Ford|EcoSport": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ford|Escort": [
+    "Düz"
+  ],
+  "Ford|Explorer": [
+    "Otomatik"
+  ],
+  "Ford|Festiva": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Ford|Fiesta": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ford|Fiesta Van": [
+    "Düz"
+  ],
+  "Ford|Focus": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ford|Fusion": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ford|Galaxy": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Ford|Grand C-Max": [
+    "Düz"
+  ],
+  "Ford|Ka": [
+    "Düz"
+  ],
+  "Ford|Kuga": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Ford|Mondeo": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ford|Mustang": [
+    "Otomatik"
+  ],
+  "Ford|Mustang Mach-E": [
+    "Otomatik"
+  ],
+  "Ford|Probe": [
+    "Düz"
+  ],
+  "Ford|Puma": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ford|Puma- E": [
+    "Otomatik"
+  ],
+  "Ford|Ranger": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ford|S-Max": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ford|Scorpio": [
+    "Düz"
+  ],
+  "Ford|Sierra": [
+    "Düz"
+  ],
+  "Ford|Taunus": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Ford|Taurus": [
+    "Otomatik"
+  ],
+  "Ford|Tourneo Connect": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Ford|Tourneo Courier": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ford|Tourneo Custom": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Ford|Transit": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ford|Transit Connect": [
+    "Düz"
+  ],
+  "Ford|Transit Courier": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Ford|Transit Custom": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Ford|Transit Kombi": [
+    "Düz"
+  ],
+  "Geely|Echo": [
+    "Düz"
+  ],
+  "Geely|Emgrand": [
+    "Düz"
+  ],
+  "Geely|FC": [
+    "Düz"
+  ],
+  "Geely|Familia": [
+    "Düz"
+  ],
+  "Honda|Accord": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Honda|CR-V": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Honda|CR-Z": [
+    "Düz"
+  ],
+  "Honda|CRX": [
+    "Düz"
+  ],
+  "Honda|City": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Honda|Civic": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Honda|E": [
+    "Otomatik"
+  ],
+  "Honda|FR-V": [
+    "Düz"
+  ],
+  "Honda|HR-V": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Honda|Integra": [
+    "Düz"
+  ],
+  "Honda|Jazz": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Honda|Legend": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Honda|Prelude": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Honda|S2000": [
+    "Düz"
+  ],
+  "Honda|Shuttle": [
+    "Otomatik"
+  ],
+  "Honda|ZR-V": [
+    "Otomatik"
+  ],
+  "Hyundai|Accent": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|Accent Blue": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|Accent Era": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Hyundai|Atos": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Hyundai|Bayon": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Hyundai|Coupe": [
+    "Düz"
+  ],
+  "Hyundai|Elantra": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|Excel": [
+    "Düz"
+  ],
+  "Hyundai|Genesis": [
+    "Otomatik"
+  ],
+  "Hyundai|Getz": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|H 1": [
+    "Düz"
+  ],
+  "Hyundai|H 100": [
+    "Düz"
+  ],
+  "Hyundai|Ioniq": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|Ioniq 6": [
+    "Yarı Otomatik"
+  ],
+  "Hyundai|Kona": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Hyundai|Matrix": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Hyundai|Santa Fe": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Hyundai|Sonata": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Hyundai|Starex": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Hyundai|Staria": [
+    "Otomatik"
+  ],
+  "Hyundai|Trajet": [
+    "Otomatik"
+  ],
+  "Hyundai|Tucson": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Hyundai|i10": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|i20": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|i20 Active": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|i20 N": [
+    "Düz"
+  ],
+  "Hyundai|i20 Troy": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Hyundai|i30": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Hyundai|i40": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Hyundai|ix20": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Hyundai|ix35": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Ikco|Samand": [
+    "Düz"
+  ],
+  "Infiniti|FX": [
+    "Otomatik"
+  ],
+  "Infiniti|G": [
+    "Otomatik"
+  ],
+  "Infiniti|M": [
+    "Otomatik"
+  ],
+  "Infiniti|Q30": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Infiniti|Q50": [
+    "Otomatik"
+  ],
+  "Infiniti|Q60": [
+    "Otomatik"
+  ],
+  "Infiniti|QX": [
+    "Otomatik"
+  ],
+  "Infiniti|i30": [
+    "Otomatik"
+  ],
+  "Isuzu|D-Max": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Isuzu|Gemini": [
+    "Düz"
+  ],
+  "Iveco - Otoyol|35": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Jaecoo|J7": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Jaguar|Daimler": [
+    "Otomatik"
+  ],
+  "Jaguar|E-Pace": [
+    "Otomatik"
+  ],
+  "Jaguar|F-Pace": [
+    "Otomatik"
+  ],
+  "Jaguar|S-Type": [
+    "Otomatik"
+  ],
+  "Jaguar|Sovereign": [
+    "Otomatik"
+  ],
+  "Jaguar|X-Type": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Jaguar|XE": [
+    "Otomatik"
+  ],
+  "Jaguar|XF": [
+    "Otomatik"
+  ],
+  "Jaguar|XJ": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Jaguar|XKR": [
+    "Otomatik"
+  ],
+  "Jeep|Avenger Hybrid": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Jeep|Cherokee": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Jeep|Commander": [
+    "Otomatik"
+  ],
+  "Jeep|Compass": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Jeep|Grand Cherokee": [
+    "Otomatik"
+  ],
+  "Jeep|Patriot": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Jeep|Renegade": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Jeep|Wrangler": [
+    "Otomatik"
+  ],
+  "Kia|Capital": [
+    "Düz"
+  ],
+  "Kia|Carens": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Kia|Carnival": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Kia|Ceed": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Kia|Cerato": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Kia|Clarus": [
+    "Düz"
+  ],
+  "Kia|EV3": [
+    "Otomatik"
+  ],
+  "Kia|EV6": [
+    "Otomatik"
+  ],
+  "Kia|Magentis": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Kia|Niro": [
+    "Yarı Otomatik"
+  ],
+  "Kia|Opirus": [
+    "Otomatik"
+  ],
+  "Kia|Optima": [
+    "Otomatik"
+  ],
+  "Kia|Picanto": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Kia|Pregio": [
+    "Düz"
+  ],
+  "Kia|Pride": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Kia|Pro Ceed": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Kia|Rio": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Kia|Sephia": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Kia|Shuma": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Kia|Sorento": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Kia|Soul": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Kia|Sportage": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Kia|Stinger": [
+    "Otomatik"
+  ],
+  "Kia|Stonic": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Kia|Venga": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Kia|XCeed": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Lada|Kalina": [
+    "Düz"
+  ],
+  "Lada|Nova": [
+    "Düz"
+  ],
+  "Lada|Samara": [
+    "Düz"
+  ],
+  "Lada|VAZ": [
+    "Düz"
+  ],
+  "Lada|Vega": [
+    "Düz"
+  ],
+  "Lancia|Delta": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Lancia|Thema": [
+    "Otomatik"
+  ],
+  "Lancia|Ypsilon": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Land Rover|Defender": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Land Rover|Discovery": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Land Rover|Discovery Sport": [
+    "Otomatik"
+  ],
+  "Land Rover|Freelander": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Land Rover|Range Rover": [
+    "Otomatik"
+  ],
+  "Land Rover|Range Rover Evoque": [
+    "Otomatik"
+  ],
+  "Land Rover|Range Rover Sport": [
+    "Otomatik"
+  ],
+  "Land Rover|Range Rover Velar": [
+    "Otomatik"
+  ],
+  "Lexus|CT": [
+    "Otomatik"
+  ],
+  "Lexus|ES": [
+    "Otomatik"
+  ],
+  "Lexus|GS": [
+    "Otomatik"
+  ],
+  "Lexus|IS": [
+    "Otomatik"
+  ],
+  "Lexus|LBX": [
+    "Otomatik"
+  ],
+  "Lexus|RX": [
+    "Otomatik"
+  ],
+  "Lexus|RZ": [
+    "Otomatik"
+  ],
+  "Lincoln|Mark": [
+    "Otomatik"
+  ],
+  "Lincoln|Town Car": [
+    "Otomatik"
+  ],
+  "Lotus|Esprit": [
+    "Düz"
+  ],
+  "MG|EHS": [
+    "Otomatik"
+  ],
+  "MG|HS": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "MG|Marvel R": [
+    "Otomatik"
+  ],
+  "MG|ZS": [
+    "Otomatik",
+    "Düz"
+  ],
+  "MG|ZS EV": [
+    "Otomatik"
+  ],
+  "Maserati|4 Serisi": [
+    "Düz"
+  ],
+  "Maserati|Ghibli": [
+    "Otomatik"
+  ],
+  "Maserati|GranTurismo": [
+    "Otomatik"
+  ],
+  "Maserati|Levante": [
+    "Otomatik"
+  ],
+  "Maserati|Quattroporte": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Maxus|e-Deliver": [
+    "Düz"
+  ],
+  "Mazda|121": [
+    "Düz"
+  ],
+  "Mazda|2": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mazda|3": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mazda|323": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mazda|5": [
+    "Düz"
+  ],
+  "Mazda|6": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mazda|626": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mazda|929": [
+    "Düz"
+  ],
+  "Mazda|B2200": [
+    "Düz"
+  ],
+  "Mazda|B2500": [
+    "Düz"
+  ],
+  "Mazda|BT50": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mazda|CX-3": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mazda|CX-5": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mazda|CX-9": [
+    "Otomatik"
+  ],
+  "Mazda|E 2200": [
+    "Düz"
+  ],
+  "Mazda|Lantis": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mazda|MPV": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mazda|MX": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mazda|Premacy": [
+    "Düz"
+  ],
+  "Mazda|RX": [
+    "Düz"
+  ],
+  "Mazda|Xedos": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|190": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mercedes - Benz|200": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mercedes - Benz|230": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mercedes - Benz|240": [
+    "Düz"
+  ],
+  "Mercedes - Benz|250": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mercedes - Benz|260": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mercedes - Benz|280": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|300": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|320": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|500": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|560": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|A": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|B": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|C": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Mercedes - Benz|CL": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|CLA": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|CLC": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|CLK": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|CLS": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|Citan": [
+    "Düz"
+  ],
+  "Mercedes - Benz|E": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|EQA": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|EQB": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|EQE": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|G": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|GL": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|GLA": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Mercedes - Benz|GLB": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|GLC": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|GLC Coupe": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|GLE": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|GLE Coupe": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|GLK": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|ML": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|R": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|S": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Mercedes - Benz|SL": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|SLC": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|SLK": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|Sprinter": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mercedes - Benz|V Serisi": [
+    "Otomatik"
+  ],
+  "Mercedes - Benz|Vaneo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mercedes - Benz|Viano": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|Vito": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercedes - Benz|X": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mercury|Cougar": [
+    "Düz"
+  ],
+  "Mini|Cooper": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mini|Cooper Clubman": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mini|Cooper S": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mini|Countryman": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Mini|John Cooper": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mini|One": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mitsubishi|ASX": [
+    "Düz"
+  ],
+  "Mitsubishi|Attrage": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mitsubishi|Carisma": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mitsubishi|Colt": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Mitsubishi|Eclipse Cross": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mitsubishi|Galant": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mitsubishi|Grandis": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mitsubishi|L 200": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Mitsubishi|L 300": [
+    "Düz"
+  ],
+  "Mitsubishi|Lancer": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mitsubishi|Lancer Evolution": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mitsubishi|Outlander": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Mitsubishi|Pajero": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Mitsubishi|Space Star": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Nissan|100 NX": [
+    "Düz"
+  ],
+  "Nissan|200 SX": [
+    "Düz"
+  ],
+  "Nissan|350 Z": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Nissan|Almera": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Nissan|Altima": [
+    "Otomatik"
+  ],
+  "Nissan|Bluebird": [
+    "Düz"
+  ],
+  "Nissan|Country": [
+    "Düz"
+  ],
+  "Nissan|GT-R": [
+    "Otomatik"
+  ],
+  "Nissan|Juke": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Nissan|Laurel Altima": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Nissan|Maxima": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Nissan|Micra": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Nissan|Murano": [
+    "Otomatik"
+  ],
+  "Nissan|NX Coupe": [
+    "Otomatik"
+  ],
+  "Nissan|Navara": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Nissan|Note": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Nissan|Pathfinder": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Nissan|Pick Up": [
+    "Düz"
+  ],
+  "Nissan|Primera": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Nissan|Pulsar": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Nissan|Qashqai": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Nissan|Qashqai+2": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Nissan|Rally Raid": [
+    "Düz"
+  ],
+  "Nissan|Skystar": [
+    "Düz"
+  ],
+  "Nissan|Sunny": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Nissan|Terrano": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Nissan|Townstar": [
+    "Düz"
+  ],
+  "Nissan|Vanette": [
+    "Düz"
+  ],
+  "Nissan|X-Trail": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Opel|Adam": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Opel|Agila": [
+    "Düz"
+  ],
+  "Opel|Antara": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Opel|Ascona": [
+    "Düz"
+  ],
+  "Opel|Astra": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Opel|Calibra": [
+    "Düz"
+  ],
+  "Opel|Combo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Opel|Combo Life": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Opel|Corsa": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Opel|Corsa Van": [
+    "Düz"
+  ],
+  "Opel|Crossland": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Opel|Crossland X": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Opel|Frontera": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Opel|Frontera-e": [
+    "Otomatik"
+  ],
+  "Opel|GT": [
+    "Düz"
+  ],
+  "Opel|Grandland": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Opel|Grandland X": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Opel|Grandland-e": [
+    "Otomatik"
+  ],
+  "Opel|Insignia": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Opel|Kadett": [
+    "Düz"
+  ],
+  "Opel|Meriva": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Opel|Mokka": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Opel|Mokka X": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Opel|Mokka-e": [
+    "Otomatik"
+  ],
+  "Opel|Movano": [
+    "Düz"
+  ],
+  "Opel|Omega": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Opel|Signum": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Opel|Tigra": [
+    "Düz"
+  ],
+  "Opel|Vectra": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Opel|Vivaro": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Opel|Zafira": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Opel|Zafira Life": [
+    "Otomatik"
+  ],
+  "Peugeot|106": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Peugeot|107": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Peugeot|2008": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Peugeot|205": [
+    "Düz"
+  ],
+  "Peugeot|206": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Peugeot|206+": [
+    "Düz"
+  ],
+  "Peugeot|207": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Peugeot|208": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Peugeot|3008": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Peugeot|301": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Peugeot|306": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Peugeot|307": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Peugeot|308": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Peugeot|309": [
+    "Düz"
+  ],
+  "Peugeot|4007": [
+    "Otomatik"
+  ],
+  "Peugeot|405": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Peugeot|406": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Peugeot|407": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Peugeot|408": [
+    "Otomatik"
+  ],
+  "Peugeot|5008": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Peugeot|508": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Peugeot|605": [
+    "Otomatik"
+  ],
+  "Peugeot|607": [
+    "Otomatik"
+  ],
+  "Peugeot|806": [
+    "Düz"
+  ],
+  "Peugeot|807": [
+    "Düz"
+  ],
+  "Peugeot|Bipper": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Peugeot|Boxer": [
+    "Düz"
+  ],
+  "Peugeot|Expert": [
+    "Düz"
+  ],
+  "Peugeot|Partner": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Peugeot|RCZ": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Peugeot|Rifter": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Peugeot|e-2008": [
+    "Otomatik"
+  ],
+  "Peugeot|e-208": [
+    "Otomatik"
+  ],
+  "Peugeot|e-3008": [
+    "Otomatik"
+  ],
+  "Pontiac|Firebird": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Porsche|718": [
+    "Otomatik"
+  ],
+  "Porsche|911": [
+    "Otomatik"
+  ],
+  "Porsche|Cayenne": [
+    "Otomatik"
+  ],
+  "Porsche|Cayman": [
+    "Otomatik"
+  ],
+  "Porsche|Macan": [
+    "Otomatik"
+  ],
+  "Porsche|Panamera": [
+    "Otomatik"
+  ],
+  "Proton|315": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Proton|413": [
+    "Düz"
+  ],
+  "Proton|415": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Proton|416": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Proton|418": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Proton|420": [
+    "Düz"
+  ],
+  "Proton|Gen 2": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Proton|Persona": [
+    "Düz"
+  ],
+  "Proton|Saga": [
+    "Otomatik"
+  ],
+  "Proton|Savvy": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Proton|Waja": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Austral": [
+    "Otomatik"
+  ],
+  "Renault|Captur": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Clio": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Renault|Duster": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Renault|Espace": [
+    "Düz"
+  ],
+  "Renault|Express": [
+    "Düz"
+  ],
+  "Renault|Express Combi": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Express Van": [
+    "Düz"
+  ],
+  "Renault|Fluence": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Renault|Grand Scenic": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Renault|Kadjar": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Kangoo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Kangoo E-tech": [
+    "Otomatik"
+  ],
+  "Renault|Kangoo Express": [
+    "Düz"
+  ],
+  "Renault|Kangoo Multix": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Renault|Koleos": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Renault|Laguna": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Latitude": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Renault|Master": [
+    "Düz"
+  ],
+  "Renault|Megane": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Renault|Modus": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Renault|R 11": [
+    "Düz"
+  ],
+  "Renault|R 12": [
+    "Düz"
+  ],
+  "Renault|R 19": [
+    "Düz"
+  ],
+  "Renault|R 21": [
+    "Düz"
+  ],
+  "Renault|R 25": [
+    "Düz"
+  ],
+  "Renault|R 5": [
+    "Düz"
+  ],
+  "Renault|R 9": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Rafale": [
+    "Otomatik"
+  ],
+  "Renault|Safrane": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Scenic": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Renault|Scenic RX4": [
+    "Düz"
+  ],
+  "Renault|Symbol": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Renault|Taliant": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Renault|Talisman": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Renault|Trafic": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Renault|Trafic Multix": [
+    "Düz"
+  ],
+  "Renault|Twingo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Renault|Vel Satis": [
+    "Otomatik"
+  ],
+  "Rolls-Royce|Silver": [
+    "Otomatik"
+  ],
+  "Rover|200": [
+    "Düz"
+  ],
+  "Rover|214": [
+    "Düz"
+  ],
+  "Rover|216": [
+    "Düz"
+  ],
+  "Rover|218": [
+    "Düz"
+  ],
+  "Rover|220": [
+    "Düz"
+  ],
+  "Rover|25": [
+    "Düz"
+  ],
+  "Rover|414": [
+    "Düz"
+  ],
+  "Rover|416": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Rover|420": [
+    "Düz"
+  ],
+  "Rover|45": [
+    "Düz"
+  ],
+  "Rover|620": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Rover|75": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Rover|820": [
+    "Düz"
+  ],
+  "Rover|Streetwise": [
+    "Düz"
+  ],
+  "Saab|9-3": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Saab|9-5": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Saab|900": [
+    "Düz"
+  ],
+  "Saab|9000": [
+    "Düz"
+  ],
+  "Seat|Alhambra": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Seat|Altea": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Seat|Arona": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Seat|Ateca": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Seat|Cordoba": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Seat|Exeo": [
+    "Düz"
+  ],
+  "Seat|Ibiza": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Seat|Leon": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Seat|Malaga": [
+    "Otomatik"
+  ],
+  "Seat|Marbella": [
+    "Düz"
+  ],
+  "Seat|Tarraco": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Seat|Toledo": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Skoda|Citigo": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Skoda|Enyaq Coupe": [
+    "Otomatik"
+  ],
+  "Skoda|Fabia": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Skoda|Favorit": [
+    "Düz"
+  ],
+  "Skoda|Felicia": [
+    "Düz"
+  ],
+  "Skoda|Forman": [
+    "Düz"
+  ],
+  "Skoda|Kamiq": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Skoda|Karoq": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Skoda|Kodiaq": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Skoda|Octavia": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Skoda|Rapid": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Skoda|Roomster": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Skoda|Scala": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Skoda|SuperB": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Skoda|Yeti": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Smart|ForFour": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Smart|ForTwo": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Ssangyong|Actyon": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ssangyong|Actyon Sports": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Ssangyong|Korando": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ssangyong|Korando Sports": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ssangyong|Kyron": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ssangyong|Musso": [
+    "Düz"
+  ],
+  "Ssangyong|Musso Grand": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ssangyong|Rexton": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ssangyong|Rodius": [
+    "Otomatik"
+  ],
+  "Ssangyong|Tivoli": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ssangyong|Torres": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Ssangyong|XLV": [
+    "Otomatik"
+  ],
+  "Subaru|BRZ": [
+    "Otomatik"
+  ],
+  "Subaru|Crosstrek": [
+    "Otomatik"
+  ],
+  "Subaru|Forester": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Subaru|Impreza": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Subaru|Justy": [
+    "Düz"
+  ],
+  "Subaru|Legacy": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Subaru|Levorg": [
+    "Otomatik"
+  ],
+  "Subaru|Outback": [
+    "Otomatik"
+  ],
+  "Subaru|Vivio": [
+    "Düz"
+  ],
+  "Subaru|XV": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Suzuki|Alto": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Suzuki|Baleno": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Suzuki|Grand Vitara": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Suzuki|Jimny": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Suzuki|Liana": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Suzuki|Maruti": [
+    "Düz"
+  ],
+  "Suzuki|S-Cross": [
+    "Otomatik"
+  ],
+  "Suzuki|SJ": [
+    "Düz"
+  ],
+  "Suzuki|SX4": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Suzuki|SX4 S-Cross": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Suzuki|Splash": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Suzuki|Swift": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Suzuki|Vitara": [
+    "Otomatik",
+    "Düz"
+  ],
+  "TOGG|T10F": [
+    "Otomatik"
+  ],
+  "TOGG|T10X": [
+    "Otomatik"
+  ],
+  "Tata|Indica": [
+    "Düz"
+  ],
+  "Tata|Indigo": [
+    "Düz"
+  ],
+  "Tata|Manza": [
+    "Düz"
+  ],
+  "Tata|Marina": [
+    "Düz"
+  ],
+  "Tata|Vista": [
+    "Düz"
+  ],
+  "Tesla|Model Y": [
+    "Otomatik"
+  ],
+  "Tofaş|Doğan": [
+    "Düz"
+  ],
+  "Tofaş|Kartal": [
+    "Düz"
+  ],
+  "Tofaş|Murat": [
+    "Düz"
+  ],
+  "Tofaş|Şahin": [
+    "Düz"
+  ],
+  "Toyota|Auris": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Toyota|Avensis": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Toyota|C-HR": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Toyota|Camry": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Toyota|Carina": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Toyota|Celica": [
+    "Düz"
+  ],
+  "Toyota|Corolla": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Toyota|Corolla Cross": [
+    "Otomatik"
+  ],
+  "Toyota|Corona": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Toyota|Cressida": [
+    "Düz"
+  ],
+  "Toyota|FJ Cruiser": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Toyota|Hi-Ace": [
+    "Düz"
+  ],
+  "Toyota|Hilux": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Toyota|Land Cruiser": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Toyota|Land Cruiser Prado": [
+    "Otomatik"
+  ],
+  "Toyota|Prius": [
+    "Otomatik"
+  ],
+  "Toyota|Proace City": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Toyota|Proace City Cargo": [
+    "Düz"
+  ],
+  "Toyota|Proace Max": [
+    "Düz"
+  ],
+  "Toyota|RAV4": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Toyota|Starlet": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Toyota|Urban Cruiser": [
+    "Düz"
+  ],
+  "Toyota|Verso": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Toyota|Yaris": [
+    "Otomatik",
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Toyota|Yaris Cross": [
+    "Otomatik"
+  ],
+  "Volkswagen|Amarok": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Volkswagen|Arteon": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Beetle": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Volkswagen|Bora": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Volkswagen|Caddy": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Caravelle": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Volkswagen|Crafter": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Volkswagen|EOS": [
+    "Düz"
+  ],
+  "Volkswagen|Golf": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Jetta": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Lupo": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Volkswagen|MultiVan": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Volkswagen|New Beetle": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Volkswagen|Passat": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Volkswagen|Passat Alltrack": [
+    "Yarı Otomatik"
+  ],
+  "Volkswagen|Passat Variant": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Volkswagen|Phaeton": [
+    "Otomatik"
+  ],
+  "Volkswagen|Polo": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Scirocco": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Sharan": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Volkswagen|T-Cross": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Volkswagen|T-Roc": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Taigo": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Volkswagen|Tayron": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Tiguan": [
+    "Yarı Otomatik",
+    "Düz",
+    "Otomatik"
+  ],
+  "Volkswagen|Tiguan All Space": [
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Touareg": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Volkswagen|Touran": [
+    "Düz",
+    "Yarı Otomatik",
+    "Otomatik"
+  ],
+  "Volkswagen|Transporter": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Volkswagen|VW CC": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Volkswagen|Vento": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Volvo|460": [
+    "Düz"
+  ],
+  "Volvo|850": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Volvo|940": [
+    "Düz"
+  ],
+  "Volvo|960": [
+    "Otomatik"
+  ],
+  "Volvo|C30": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Volvo|C70": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Volvo|EX40": [
+    "Otomatik"
+  ],
+  "Volvo|S40": [
+    "Düz",
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Volvo|S60": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Volvo|S70": [
+    "Düz",
+    "Otomatik"
+  ],
+  "Volvo|S80": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Volvo|S90": [
+    "Otomatik"
+  ],
+  "Volvo|V40": [
+    "Otomatik",
+    "Yarı Otomatik",
+    "Düz"
+  ],
+  "Volvo|V40 Cross Country": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Volvo|V50": [
+    "Düz",
+    "Yarı Otomatik"
+  ],
+  "Volvo|V60": [
+    "Yarı Otomatik",
+    "Otomatik",
+    "Düz"
+  ],
+  "Volvo|V60 Cross Country": [
+    "Otomatik"
+  ],
+  "Volvo|V70": [
+    "Otomatik",
+    "Düz"
+  ],
+  "Volvo|V90 Cross Country": [
+    "Otomatik"
+  ],
+  "Volvo|XC40": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Volvo|XC60": [
+    "Otomatik",
+    "Yarı Otomatik"
+  ],
+  "Volvo|XC70": [
+    "Otomatik"
+  ],
+  "Volvo|XC90": [
+    "Otomatik"
   ]
 };

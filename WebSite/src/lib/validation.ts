@@ -37,6 +37,7 @@ import {
   HP_BY_ENGINE,
   MODELS_BY_BRAND,
   PAKET_BY_ENGINE,
+  VITES_BY_MODEL,
   type EngineOption,
 } from "./vehicle-options.generated";
 
@@ -321,4 +322,14 @@ export function getBodyTypesForModel(brandLabel: string, model: string): readonl
   const canonicalBrand = labelToCanonical("brand", brandLabel);
   const values = BODY_TYPE_BY_MODEL[vehicleKey(canonicalBrand, model)] ?? [];
   return values.map((v) => canonicalToLabel("bodyType", v));
+}
+
+/**
+ * getBodyTypesForModel ile ayni desen (bkz. o fonksiyonun docstring'i) -
+ * marka+model icin egitimde GERCEKTEN gorulen vites turlerini doner.
+ */
+export function getVitesOptionsForModel(brandLabel: string, model: string): readonly string[] {
+  const canonicalBrand = labelToCanonical("brand", brandLabel);
+  const values = VITES_BY_MODEL[vehicleKey(canonicalBrand, model)] ?? [];
+  return values.map((v) => canonicalToLabel("transmission", v));
 }

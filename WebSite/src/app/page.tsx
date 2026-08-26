@@ -88,7 +88,7 @@ export default function Home() {
 
       <footer className="border-t border-white/[0.06] px-6 py-8">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-xs text-zinc-500 sm:flex-row">
-          <span>© {new Date().getFullYear()} AutoValue AI</span>
+          <span>© {new Date().getFullYear()} OtoMetric AI</span>
           <span>Tahminler istatistikseldir; kesin satış fiyatı değildir.</span>
         </div>
       </footer>

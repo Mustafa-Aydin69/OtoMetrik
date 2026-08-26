@@ -75,6 +75,12 @@ function fuelIcon(yakitTuru: string): string {
 }
 
 function engineLabel(engine: Pick<EngineOption, "hacmiBucket" | "yakitTuru">): string {
+  // hacmiBucket=0 sentinel: Elektrik icin motor hacmi (cc) fiziksel olarak
+  // anlamsiz, generate_vehicle_options.py tum Elektrik satirlarini tek
+  // grupta topluyor - bu yuzden sahte bir hacim degeri gostermiyoruz.
+  if (engine.hacmiBucket === 0) {
+    return canonicalToLabel("fuelType", engine.yakitTuru);
+  }
   const displacement = (engine.hacmiBucket / 1000).toFixed(1);
   return `${displacement} · ${canonicalToLabel("fuelType", engine.yakitTuru)}`;
 }

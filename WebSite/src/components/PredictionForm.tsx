@@ -13,6 +13,7 @@ import {
   FUEL_TYPES,
   getBodyTypesForModel,
   getHpOptions,
+  getVitesOptionsForModel,
   MIN_YEAR,
   TRANSMISSIONS,
   validatePrediction,
@@ -146,6 +147,7 @@ export function PredictionForm() {
     // motor/paket adımlarında yaptığı seçim kasa tipini bozmaz.
     const vehicleChanged = next.brand !== form.brand || next.model !== form.model;
     const bodyOptions = next.brand && next.model ? getBodyTypesForModel(next.brand, next.model) : [];
+    const vitesOptions = next.brand && next.model ? getVitesOptionsForModel(next.brand, next.model) : [];
 
     setForm((prev) => ({
       ...prev,
@@ -159,6 +161,7 @@ export function PredictionForm() {
       engineDisplacement: next.engineExactCc !== null ? String(next.engineExactCc) : "",
       enginePower: hpOptions.length === 1 ? String(hpOptions[0]) : "",
       bodyType: vehicleChanged ? (bodyOptions.length === 1 ? bodyOptions[0] : "") : prev.bodyType,
+      transmission: vehicleChanged ? (vitesOptions.length === 1 ? vitesOptions[0] : "") : prev.transmission,
     }));
     setErrors((prev) => {
       const rest = { ...prev };
@@ -167,7 +170,10 @@ export function PredictionForm() {
       delete rest.fuelType;
       delete rest.engineDisplacement;
       delete rest.enginePower;
-      if (vehicleChanged) delete rest.bodyType;
+      if (vehicleChanged) {
+        delete rest.bodyType;
+        delete rest.transmission;
+      }
       return rest;
     });
   }
@@ -190,6 +196,15 @@ export function PredictionForm() {
   // görülen değerlerden oluşan SelectField (bkz. plan: HP ile aynı desen).
   const bodyTypeOptions = useMemo(
     () => (form.brand && form.model ? getBodyTypesForModel(form.brand, form.model) : []),
+    [form.brand, form.model]
+  );
+
+  // Vites'in bu marka+model için kaç geçerli değeri var: BODY_TYPE ile aynı
+  // desen (bkz. yukarısı) - 0 -> tam kanonik listeye (TRANSMISSIONS) serbest
+  // seçim, 1 -> LockedField, >1 -> yalnızca gerçekten görülen değerlerden
+  // oluşan SelectField.
+  const vitesOptions = useMemo(
+    () => (form.brand && form.model ? getVitesOptionsForModel(form.brand, form.model) : []),
     [form.brand, form.model]
   );
 
@@ -321,15 +336,27 @@ export function PredictionForm() {
                 placeholder="Yakıt türü seçin"
               />
             )}
-            <SelectField
-              id="transmission"
-              label="Vites"
-              value={form.transmission}
-              onChange={(v) => set("transmission", v)}
-              options={TRANSMISSIONS}
-              error={errors.transmission}
-              placeholder="Vites seçin"
-            />
+            {vitesOptions.length === 1 ? (
+              <LockedField
+                label="Vites"
+                value={vitesOptions[0]}
+                hint="Seçilen araçtan otomatik dolduruldu"
+              />
+            ) : (
+              <SelectField
+                id="transmission"
+                label="Vites"
+                value={form.transmission}
+                onChange={(v) => set("transmission", v)}
+                options={vitesOptions.length > 0 ? vitesOptions : TRANSMISSIONS}
+                error={errors.transmission}
+                placeholder={
+                  vitesOptions.length > 0
+                    ? `Bu araç için ${vitesOptions.length} geçerli vites var`
+                    : "Vites seçin"
+                }
+              />
+            )}
             {form.engineExactCc !== null ? (
               <LockedField
                 label="Motor Hacmi"

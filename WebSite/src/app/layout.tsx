@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AutoValue AI — Aracının Gerçek Değerini Öğren",
+  title: "OtoMetric AI — Aracının Gerçek Değerini Öğren",
   description:
     "Yapay zeka destekli ikinci el araç fiyat tahmini. Araç bilgilerini gir, gerçek piyasa değerini verilerle öğren.",
 };

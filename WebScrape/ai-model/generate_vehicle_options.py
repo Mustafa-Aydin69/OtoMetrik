@@ -112,9 +112,32 @@ def build_body_types_by_model(X_full):
     return result
 
 
+def build_vites_by_model(X_full):
+    # BODY_TYPE_BY_MODEL ile ayni desen (bkz. o fonksiyonun docstring'i) -
+    # marka+model basina egitimde GERCEKTEN gorulen vites turlerini en
+    # siktan en nadire dondurur.
+    d = X_full.dropna(subset=['vites'])
+    result = {}
+    for (marka, model), group in d.groupby(['marka', 'model'], observed=True):
+        counts = group['vites'].value_counts()
+        counts = counts[counts > 0]
+        values = [str(v) for v in counts.index if str(v) != 'nan']
+        if values:
+            result[f'{marka}|{model}'] = values
+    return result
+
+
 def build_vehicle_options(X_full):
     d = X_full.dropna(subset=['motor_hacmi', 'yakit_turu']).copy()
     d['hacmi_bucket'] = (d['motor_hacmi'] / 100).round() * 100
+    # motor_hacmi (silindir hacmi) fiziksel olarak yakit_turu='Elektrik' icin
+    # anlamsiz - kaynak veride bu satirlar icin degisken/gurultulu bir sayi
+    # tasiyor (orn. TOGG T10F, website'de 5 farkli sahte "1.3/1.5/1.7/1.9/2.3"
+    # motor karti olarak gorunuyordu). Elektrikli araclari hacmi_bucket'a gore
+    # BOLMEK yerine marka+model basina TEK grupta topla (bucket=0 sentinel) -
+    # engineLabel de bu sentinel'i gorunce hacim yerine sadece yakit turunu
+    # gosterir (bkz. VehicleSelector.tsx).
+    d.loc[d['yakit_turu'] == 'Elektrik', 'hacmi_bucket'] = 0.0
 
     models_by_brand = {}
     for (marka, model), _ in X_full.groupby(['marka', 'model'], observed=True):
@@ -192,6 +215,7 @@ def main():
     X_full, y_full = prepare_full_training_data()
     models_by_brand, engines_by_model, paket_by_engine, hp_by_engine = build_vehicle_options(X_full)
     body_types_by_model = build_body_types_by_model(X_full)
+    vites_by_model = build_vites_by_model(X_full)
 
     # saglik kontrolu: category_mapping.py'nin kanonik marka listesinde
     # OLMAYAN bir marka egitim verisinde varsa erken uyar (drift).
@@ -214,6 +238,9 @@ def main():
     print(f'{len(body_types_by_model)} marka+model grubu icin kasa tipi secenegi')
     multi_body = sum(1 for v in body_types_by_model.values() if len(v) > 1)
     print(f'  bunlarin {multi_body}\'i ({100 * multi_body / len(body_types_by_model):.1f}%) birden fazla kasa tipine sahip')
+    print(f'{len(vites_by_model)} marka+model grubu icin vites secenegi')
+    multi_vites = sum(1 for v in vites_by_model.values() if len(v) > 1)
+    print(f'  bunlarin {multi_vites}\'i ({100 * multi_vites / len(vites_by_model):.1f}%) birden fazla vites turune sahip')
 
     output_path = os.path.abspath(WEBSITE_OUTPUT_PATH)
     with open(output_path, 'w', encoding='utf-8', newline='\n') as f:
@@ -232,6 +259,9 @@ def main():
         f.write(';\n')
         f.write('\nexport const BODY_TYPE_BY_MODEL: Record<string, string[]> = ')
         f.write(json.dumps(body_types_by_model, ensure_ascii=False, indent=2))
+        f.write(';\n')
+        f.write('\nexport const VITES_BY_MODEL: Record<string, string[]> = ')
+        f.write(json.dumps(vites_by_model, ensure_ascii=False, indent=2))
         f.write(';\n')
     print(f'uretildi: {output_path}')
 
