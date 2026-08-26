@@ -357,7 +357,7 @@ export function PredictionForm() {
                 }
               />
             )}
-            {form.engineExactCc !== null ? (
+            {form.fuelType === "Elektrik" ? null : form.engineExactCc !== null ? (
               <LockedField
                 label="Motor Hacmi"
                 value={`${form.engineExactCc} cc`}
@@ -370,11 +370,7 @@ export function PredictionForm() {
                 value={form.engineDisplacement}
                 onChange={(v) => set("engineDisplacement", v)}
                 error={errors.engineDisplacement}
-                placeholder={
-                  form.fuelType === "Elektrik"
-                    ? "Elektrikli — boş bırakılabilir"
-                    : "örn. 1600"
-                }
+                placeholder="örn. 1600"
                 min={0}
                 suffix="cc"
               />
