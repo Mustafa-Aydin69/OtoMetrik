@@ -60,7 +60,7 @@ from category_mapping import LABEL_TO_CANONICAL, UNSUPPORTED_LABELS, allowed_exa
 from domain_validation import validate_domain
 from hierarchical_price import FEATURE_COLUMN, lookup_price
 from hp_support import compute_confidence, lookup_support
-from preprocess import CURRENT_YEAR
+from preprocess import CURRENT_YEAR, UNKNOWN_CATEGORY_VALUE
 from train import apply_saved_categories, load_model
 
 # Gelistirme-modu debug alanlari (orn. hierarchical_price_support) icin -
@@ -168,7 +168,12 @@ def collect_category_errors(req: "PredictRequest") -> tuple[list, dict]:
 def build_feature_row(req: PredictRequest, resolved_categories: dict) -> pd.DataFrame:
     yas = max(MODEL_REFERENCE_YEAR - req.year, 0)
     km_yil = req.mileage / (yas if yas > 0 else 1)
-    trim = req.trim.strip() or np.nan
+    # Faz 30: preprocess.py'nin CATEGORICAL_FILLNA_COLS konvansiyonuyla AYNI -
+    # egitimde bos paket artik NaN (satiri dusuren) DEGIL, UNKNOWN_CATEGORY_VALUE
+    # ("Belirtilmemiş") - inference'in de AYNI degeri gondermesi gerekir, aksi
+    # halde model bu bos-paket satirlar icin OGRENDIGI kategoriyi hic gormez,
+    # generic native-missing'e duser (bkz. preprocess.py Faz 30 notu).
+    trim = req.trim.strip() or UNKNOWN_CATEGORY_VALUE
 
     return pd.DataFrame([{
         "marka": resolved_categories["marka"] or np.nan,
@@ -259,10 +264,10 @@ def compute_hp_confidence(marka, model, motor_gucu):
 # ayni performans yaklasimi). HIERARCHICAL_PRICE_LOOKUP yoksa (eski artefakt)
 # (None, None) doner - cagiran ozelligi satira eklemeyi atlar, tahmini
 # ENGELLEMEZ.
-def compute_hierarchical_price_feature(marka, model):
+def compute_hierarchical_price_feature(marka, model, yas):
     if HIERARCHICAL_PRICE_LOOKUP is None:
         return None, None
-    value, source = lookup_price(marka, model, HIERARCHICAL_PRICE_LOOKUP)
+    value, source, _ = lookup_price(marka, model, yas, HIERARCHICAL_PRICE_LOOKUP)
     return value, source
 
 
@@ -277,7 +282,7 @@ def predict(req: PredictRequest):
 
     marka_for_lookup = resolved_categories["marka"] or req.brand
     row = build_feature_row(req, resolved_categories)
-    hp_value, hp_source = compute_hierarchical_price_feature(marka_for_lookup, req.model)
+    hp_value, hp_source = compute_hierarchical_price_feature(marka_for_lookup, req.model, row['yas'].iloc[0])
     if hp_value is not None:
         row[FEATURE_COLUMN] = hp_value
 

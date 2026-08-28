@@ -1,5 +1,14 @@
-"""Faz 25: WebSite/src/lib/vehicle-options.generated.ts'yi egitim verisinden
-uretir. generate_paket_suggestions.py'nin (Faz 18) yerine gecer - o script
+"""Faz 25: WebSite/src/lib/vehicle-options.generated.ts'yi katalog verisinden
+uretir.
+
+Faz 28: veri kaynagi preprocess.load_clean_train_dataset()'ten (model egitim
+pipeline'i) preprocess.load_catalog_dataset()'e tasindi. load_clean_train_dataset()
+fiyat/km q99 kirpmasi uyguluyordu - bu TUM pazara gore hesaplanan tek bir global
+esik oldugu icin Ferrari/Lamborghini gibi premium markalari (en ucuz satirlari
+bile esigin ustunde) dropdown'dan TAMAMEN siliyordu, Bentley/Rolls-Royce'u da tek
+modele indiriyordu. load_catalog_dataset() bu kirpmayi UYGULAMAZ, sadece kategori
+alanlarinin gecerliligini/normalizasyonunu yapar - model egitim pipeline'ina
+(train.py, hierarchical_price.py) hic baglanmaz. generate_paket_suggestions.py'nin (Faz 18) yerine gecer - o script
 yalnizca marka+model -> paket ureten TEK katmanli bir yapiydi; kart tabanli
 Marka > Model > Motor > Paket akisi icin araya bir Motor (motor_hacmi +
 yakit_turu) katmani gerekiyor, paket de artik marka+model DEGIL marka+model+
@@ -63,7 +72,7 @@ if hasattr(sys.stdout, 'reconfigure'):
 import json
 
 from category_mapping import LABEL_TO_CANONICAL
-from train import prepare_full_training_data
+from preprocess import load_catalog_dataset
 
 WEBSITE_OUTPUT_PATH = os.path.join(
     os.path.dirname(__file__), '..', '..', 'WebSite', 'src', 'lib', 'vehicle-options.generated.ts'
@@ -76,8 +85,9 @@ MIN_GROUP_COUNT = 2
 HEADER = """/**
  * OTOMATIK URETILMISTIR - ELLE DUZENLEMEYIN.
  *
- * Kaynak: WebScrape/ai-model/generate_vehicle_options.py (egitim verisindeki
- * gercek marka+model+motor+paket kombinasyonlari).
+ * Kaynak: WebScrape/ai-model/generate_vehicle_options.py (katalog verisindeki
+ * gercek marka+model+motor+paket kombinasyonlari - preprocess.load_catalog_dataset(),
+ * fiyat/km q99 kirpmasi UYGULANMAZ, model egitim verisiyle ayni degil).
  * Uretmek icin: cd WebScrape/ai-model && python generate_vehicle_options.py
  *
  * Kart tabanli Marka > Model > Motor > Paket akisinin TEK veri kaynagi.
@@ -212,18 +222,18 @@ def build_vehicle_options(X_full):
 
 
 def main():
-    X_full, y_full = prepare_full_training_data()
-    models_by_brand, engines_by_model, paket_by_engine, hp_by_engine = build_vehicle_options(X_full)
-    body_types_by_model = build_body_types_by_model(X_full)
-    vites_by_model = build_vites_by_model(X_full)
+    df = load_catalog_dataset()
+    models_by_brand, engines_by_model, paket_by_engine, hp_by_engine = build_vehicle_options(df)
+    body_types_by_model = build_body_types_by_model(df)
+    vites_by_model = build_vites_by_model(df)
 
     # saglik kontrolu: category_mapping.py'nin kanonik marka listesinde
-    # OLMAYAN bir marka egitim verisinde varsa erken uyar (drift).
+    # OLMAYAN bir marka katalog verisinde varsa erken uyar (drift).
     canonical_markas = {v for v in LABEL_TO_CANONICAL['marka'].values() if v}
     seen_markas = set(models_by_brand.keys())
     unknown = seen_markas - canonical_markas
     if unknown:
-        print(f'UYARI: egitim verisinde olup category_mapping.py kanonik listesinde '
+        print(f'UYARI: katalog verisinde olup category_mapping.py kanonik listesinde '
               f'olmayan {len(unknown)} marka var (website VehicleSelector\'unda hic '
               f'gorunmez): {sorted(unknown)[:10]}...')
 

@@ -344,12 +344,12 @@ class TestHierarchicalPriceServe(unittest.TestCase):
             self.skipTest('MODEL_ARTIFACT hierarchical_price icermiyor - once train.py/retrain_clean_hp.py calistirilmali')
 
     def test_known_brand_model_combo_uses_brand_model_source(self):
-        value, source = serve.compute_hierarchical_price_feature('Ford', 'Focus')
+        value, source = serve.compute_hierarchical_price_feature('Ford', 'Focus', 5)
         self.assertEqual(source, 'brand_model')
         self.assertIsNotNone(value)
 
     def test_unknown_brand_model_combo_falls_back(self):
-        value, source = serve.compute_hierarchical_price_feature('Wroom Motors', 'Ghost Model 9000')
+        value, source = serve.compute_hierarchical_price_feature('Wroom Motors', 'Ghost Model 9000', 5)
         self.assertIn(source, ('model', 'brand', 'global'))
         self.assertIsNotNone(value)
 
@@ -357,7 +357,7 @@ class TestHierarchicalPriceServe(unittest.TestCase):
         """Faz 23: marka hic bilinmiyor ama model gercek/bilinen bir model
         adiysa (baska markalarda gorulmus), dogrudan global'e degil MODEL
         katmanina duser."""
-        value, source = serve.compute_hierarchical_price_feature('Wroom Motors', 'Focus')
+        value, source = serve.compute_hierarchical_price_feature('Wroom Motors', 'Focus', 5)
         self.assertEqual(source, 'model')
         self.assertIsNotNone(value)
 
@@ -372,8 +372,8 @@ class TestHierarchicalPriceServe(unittest.TestCase):
         _, canonical_canonical = resolve_canonical('marka', 'Mercedes - Benz', serve.CATEGORY_SETS)
         self.assertEqual(label_canonical, canonical_canonical)
 
-        label_value, label_source = serve.compute_hierarchical_price_feature(label_canonical, 'C Serisi')
-        canonical_value, canonical_source = serve.compute_hierarchical_price_feature(canonical_canonical, 'C Serisi')
+        label_value, label_source = serve.compute_hierarchical_price_feature(label_canonical, 'C Serisi', 5)
+        canonical_value, canonical_source = serve.compute_hierarchical_price_feature(canonical_canonical, 'C Serisi', 5)
         self.assertEqual(label_value, canonical_value)
         self.assertEqual(label_source, canonical_source)
 
@@ -390,8 +390,8 @@ class TestHierarchicalPriceServe(unittest.TestCase):
         icermez, bkz. hierarchical_price.py)."""
         reloaded = load_model()
         from hierarchical_price import lookup_price
-        v1, s1 = lookup_price('Ford', 'Focus', serve.HIERARCHICAL_PRICE_LOOKUP)
-        v2, s2 = lookup_price('Ford', 'Focus', reloaded['hierarchical_price'])
+        v1, s1, _ = lookup_price('Ford', 'Focus', 5, serve.HIERARCHICAL_PRICE_LOOKUP)
+        v2, s2, _ = lookup_price('Ford', 'Focus', 5, reloaded['hierarchical_price'])
         self.assertEqual(v1, v2)
         self.assertEqual(s1, s2)
 

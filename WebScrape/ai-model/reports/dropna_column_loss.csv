@@ -1,0 +1,13 @@
+﻿kolon,kaybolan_satir,etkilenen_grup,siniflandirma
+marka,0,0,"ZORUNLU (join/kategori anahtari) - pratikte NaN orani ~0, gercek kayip kaynagi degil"
+model,0,0,"ZORUNLU (join/kategori anahtari) - pratikte NaN orani ~0, gercek kayip kaynagi degil"
+paket,896,171,"KURTARILABILIR (categorical) - ""Belirtilmemiş"" flag+deger onerilir (degisen_sayisi_bilinmiyor ile AYNI desen)"
+kasa_turu,174,91,"KURTARILABILIR (categorical) - ""Belirtilmemiş"" flag+deger onerilir"
+renk,0,0,"KURTARILABILIR (categorical) - ""Belirtilmemiş"" flag+deger onerilir"
+motor_hacmi,1467,156,"TARTISMALI (numeric ama native-missing destekli) - LightGBM NaN'i native isliyor (bkz. train.py to_category yorumu), drop yerine NaN birakilabilir"
+motor_gucu,273,120,TARTISMALI (numeric ama native-missing destekli) - ayni motor_hacmi mantigi
+yil,0,0,ZORUNLU (numeric/kritik) - yas/km_yil/hierarchical_price yas-egrisi buna bagli
+kilometre,0,0,"ZORUNLU (numeric/kritik) - km_yil buna bagli, temel fiyat belirleyici"
+yakit_turu,133,74,"KURTARILABILIR (categorical) - ""Belirtilmemiş"" flag+deger onerilir (dikkat: dusuk NaN orani, az etkili)"
+vites,174,87,"KURTARILABILIR (categorical) - ""Belirtilmemiş"" flag+deger onerilir (dikkat: dusuk NaN orani, az etkili)"
+fiyat,0,0,"ZORUNLU (target) - etiketsiz satir egitilemez, drop DOGRU"

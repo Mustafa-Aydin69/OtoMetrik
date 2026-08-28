@@ -62,7 +62,10 @@ def build_support_summary(X_full):
     marka/model sutunlarini iceren egitim ozellik dataframe'i. Model artefaktina
     'hp_support' anahtariyla gomulmek uzere joblib-serilestirilebilir bir dict
     dondurur."""
-    df = X_full[['marka', 'model', 'motor_gucu']].copy()
+    # Faz 30: preprocess.py artik motor_gucu NaN'i satiri dusurmeden birakiyor
+    # (bkz. preprocess.py Faz 30 notu) - NaN bir HP degeri tasimadigi icin bu
+    # ozetin (HP dagilim/peer-support) hesabina hic giremez, burada ayri dropna.
+    df = X_full[['marka', 'model', 'motor_gucu']].dropna(subset=['motor_gucu']).copy()
     df['marka'] = df['marka'].astype(str)
     df['model'] = df['model'].astype(str)
 

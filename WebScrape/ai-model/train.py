@@ -33,7 +33,10 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 from hierarchical_price import FEATURE_COLUMN, attach_lookup_feature, attach_oof_feature, build_price_lookup
 from hp_support import build_support_summary
-from preprocess import CURRENT_YEAR, DROP_COLS, UNKNOWN_FLAG_COLS, load_clean_train_dataset, split_features_target
+from preprocess import (
+    CATEGORICAL_FILLNA_COLS, CURRENT_YEAR, DROP_COLS, REQUIRED_COLS, UNKNOWN_CATEGORY_VALUE,
+    UNKNOWN_FLAG_COLS, load_clean_train_dataset, split_features_target,
+)
 
 CATEGORICAL_COLS = ['marka', 'model', 'paket', 'kasa_turu', 'renk', 'yakit_turu', 'vites']
 
@@ -90,11 +93,12 @@ def prepare_training_data():
 
 
 # cars1_normalized.csv'yi kanonik semaya tasiyip preprocess.py'nin ayni temizleme adimlarini
-# (ust %1 fiyat + 1M km filtre, yas/km_yil turetme) uygular. Tek fark: preprocess.py'nin son
-# adimindaki genel dropna() burada UYGULANMAZ - renk/agir_hasarli cars1'de %100 eksik oldugu
-# icin o adim tum satirlari silerdi. Onun yerine ikisi de digerleriyle (degisen_sayisi/
-# boyali_sayisi) ayni "bilinmiyor" konvansiyonuyla doldurulur, sadece renk gercekten NaN kalir
-# (frekans/kategori kodlamasi bunu zaten native olarak "gorulmemis deger" gibi isler).
+# (marka-ici q99 fiyat + 1M km filtre, yas/km_yil turetme, kategorik "Belirtilmemiş" + REQUIRED_COLS
+# dropna) uygular - Faz 30'dan itibaren load_clean_train_dataset() ile BIREBIR ayni REQUIRED_COLS/
+# CATEGORICAL_FILLNA_COLS ayrimi (bkz. preprocess.py Faz 30 notu). Onceden renk (cars1'de %100
+# eksik) ozel bir "renk_bilinmiyor" flag'iyle ayri tutulup dropna disi birakiliyordu - artik
+# CATEGORICAL_FILLNA_COLS'un bir parcasi oldugu icin bu ozel durum GEREKSIZ (renk de digerleri
+# gibi UNKNOWN_CATEGORY_VALUE'ya duser).
 def load_cars1_holdout():
     df = pd.read_csv(CARS1_HOLDOUT_PATH, low_memory=False, encoding='utf-8-sig')
     df = df.rename(columns=CARS1_COLUMN_MAP).drop(columns=CARS1_EXTRA_COLS, errors='ignore')
@@ -102,7 +106,11 @@ def load_cars1_holdout():
         df[col] = np.nan
     df['ilan_id'] = 'cars1-' + df.index.astype(str)
 
-    df = df[df['fiyat'] <= df['fiyat'].quantile(0.99)]
+    # Faz 29: preprocess.load_clean_train_dataset() ile ayni marka-ici q99 mantigi
+    # (bkz. preprocess.py Faz 29 notu) - global esik burada da premium markalari
+    # silip disi holdout'u onlarsiz birakirdi.
+    brand_q99 = df.groupby('marka')['fiyat'].transform(lambda s: s.quantile(0.99))
+    df = df[df['fiyat'] <= brand_q99]
     df = df[df['kilometre'] <= 1_000_000]
     df = df.drop(columns=DROP_COLS, errors='ignore')
 
@@ -110,13 +118,14 @@ def load_cars1_holdout():
         df[f'{col}_bilinmiyor'] = df[col].isna().astype(int)
         df[col] = df[col].fillna(0)
     df['agir_hasarli'] = df['agir_hasarli'].fillna(0)
-    df['renk_bilinmiyor'] = df['renk'].isna().astype(int)
+
+    for col in CATEGORICAL_FILLNA_COLS:
+        df[col] = df[col].fillna(UNKNOWN_CATEGORY_VALUE)
 
     df['yas'] = CURRENT_YEAR - df['yil']
     df['km_yil'] = df['kilometre'] / df['yas'].replace(0, 1)
 
-    non_renk_cols = [c for c in df.columns if c != 'renk']
-    return df.dropna(subset=non_renk_cols).reset_index(drop=True)
+    return df.dropna(subset=REQUIRED_COLS).reset_index(drop=True)
 
 
 # Dis holdout'u X_train ile ayni kolon sirasina/kategori setine sabitler (to_category'deki

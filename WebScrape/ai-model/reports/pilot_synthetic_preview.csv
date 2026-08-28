@@ -1,0 +1,19 @@
+﻿ilan_id,marka,model,yil,kilometre,fiyat,t,source,is_synthetic,source_parent_ids,categorical_donor_id,categorical_donor_side,paket,kasa_turu,renk,motor_hacmi,motor_gucu,yakit_turu,vites,degisen_sayisi,boyali_sayisi,agir_hasarli,range_check_passed
+synthetic-Ferrari-458-1,Ferrari,458,2011,39000,18520000,0.24,synthetic,1,kaggle-ab-207+arabam-41621594,kaggle-ab-207,i,Italia,Coupe,Sarı,4250.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Ferrari-458-2,Ferrari,458,2013,38500,21270000,0.465,synthetic,1,kaggle-ab-194+arabam-41621594,kaggle-ab-194,i,Spider,Cabrio,Kırmızı,4250.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Ferrari-458-3,Ferrari,458,2013,23500,22450000,0.41,synthetic,1,kaggle-ab-206+kaggle-ab-208,kaggle-ab-206,i,Spider,Cabrio,Kırmızı,4250.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Ferrari-458-4,Ferrari,458,2012,36000,23530000,0.799,synthetic,1,kaggle-ab-192+arabam-41621594,arabam-41621594,j,Italia,Coupe,Kırmızı,4499.0,570.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Ferrari-458-5,Ferrari,458,2012,34500,23400000,0.601,synthetic,1,kaggle-ab-206+arabam-41621594,arabam-41621594,j,Italia,Coupe,Kırmızı,4499.0,570.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Ferrari-458-6,Ferrari,458,2013,29000,20860000,0.726,synthetic,1,kaggle-ab-192+kaggle-ab-206,kaggle-ab-206,j,Spider,Cabrio,Kırmızı,4250.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Ferrari-458-7,Ferrari,458,2012,54000,17050000,0.46,synthetic,1,kaggle-ab-189+kaggle-ab-194,kaggle-ab-189,i,Italia,Coupe,Kırmızı,4250.0,563.0,Benzin,Otomatik,0.0,4.0,0.0,True
+synthetic-Ferrari-458-8,Ferrari,458,2013,36000,19490000,0.309,synthetic,1,kaggle-ab-194+kaggle-ab-206,kaggle-ab-194,i,Spider,Cabrio,Kırmızı,4250.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Lamborghini-Huracan-1,Lamborghini,Huracan,2018,20000,33270000,0.538,synthetic,1,kaggle-ab-449+kaggle-ab-478,kaggle-ab-478,j,Evo,Coupe,Gri,5250.0,640.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Lamborghini-Huracan-2,Lamborghini,Huracan,2016,22500,30140000,0.195,synthetic,1,kaggle-ab-449+kaggle-ab-478,kaggle-ab-449,i,LP 610-4,Coupe,Gri,5250.0,610.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Lamborghini-Huracan-3,Lamborghini,Huracan,2019,19000,35150000,0.729,synthetic,1,kaggle-ab-449+kaggle-ab-478,kaggle-ab-478,j,Evo,Coupe,Gri,5250.0,640.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Lamborghini-Huracan-4,Lamborghini,Huracan,2018,20000,33790000,0.592,synthetic,1,kaggle-ab-449+kaggle-ab-478,kaggle-ab-478,j,Evo,Coupe,Gri,5250.0,640.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Rolls-Royce-Ghost-1,Rolls-Royce,Ghost,2020,8000,38980000,0.286,synthetic,1,kaggle-ab-2596+kaggle-ab-2600,kaggle-ab-2596,i,6.6,Sedan,Yeşil,6001.0,588.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Rolls-Royce-Ghost-2,Rolls-Royce,Ghost,2018,10500,37780000,0.477,synthetic,1,kaggle-ab-2590+kaggle-ab-2596,kaggle-ab-2590,i,6.6,Sedan,Siyah,6592.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Rolls-Royce-Ghost-3,Rolls-Royce,Ghost,2022,7500,48200000,0.181,synthetic,1,kaggle-ab-2588+kaggle-ab-2600,kaggle-ab-2588,i,6.6,Sedan,Siyah,6001.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Rolls-Royce-Ghost-4,Rolls-Royce,Ghost,2023,6500,52370000,0.258,synthetic,1,kaggle-ab-2588+kaggle-ab-2596,kaggle-ab-2588,i,6.6,Sedan,Siyah,6001.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Rolls-Royce-Ghost-5,Rolls-Royce,Ghost,2015,13500,28390000,0.628,synthetic,1,kaggle-ab-2590+kaggle-ab-2600,kaggle-ab-2600,j,6.6,Sedan,Bordo,6592.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True
+synthetic-Rolls-Royce-Ghost-6,Rolls-Royce,Ghost,2018,12000,38150000,0.671,synthetic,1,kaggle-ab-2588+kaggle-ab-2590,kaggle-ab-2590,j,6.6,Sedan,Siyah,6592.0,563.0,Benzin,Otomatik,0.0,0.0,0.0,True

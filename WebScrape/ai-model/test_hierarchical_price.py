@@ -1,7 +1,16 @@
-"""Faz 20: hierarchical_price.py (brand_model_median_price) icin birim
+"""Faz 20/29: hierarchical_price.py (brand_model_median_price) icin birim
 regresyon testleri. Kucuk sentetik veriyle calisir - egitilmis production
 artefaktina bagimli DEGILDIR (bkz. test_serve.py'deki entegrasyon testleri
 icin gercek artefakt kullanan testler).
+
+Faz 29: deger hesaplama duz medyandan yas-farkindalikli Theil-Sen egriye
+gecti (bkz. hierarchical_price.py modul docstring'i). Bu dosyadaki toy
+verilerin cogu KASITLI olarak TEK bir 'yas' degeri kullanir (distinct_ages=1)
+- bu, _fit_curve()'u her zaman DUZ (slope=0) fallback'a dusurur, yani eski
+(Faz 20-28) medyan-tabanli testler ayni mantikla gecerli kalir (log/exp
+round-trip nedeniyle assertEqual yerine assertAlmostEqual kullanilir).
+TestAgeAwareCurve sinifi ise CESITLI yaslarla gercek Theil-Sen davranisini
+(farkli yaslarda farkli tahmin) ayrica dogrular.
 
 Calistirma (ai-model/ calisma dizini olarak):
     python -m unittest test_hierarchical_price.py
@@ -16,11 +25,14 @@ from hierarchical_price import (
     build_price_lookup, compute_oof_feature, lookup_price,
 )
 
+TOY_YAS = 5  # tum toy satirlar AYNI yasta - _fit_curve() daima duz (slope=0) medyana geriler
+
 
 def toy_X():
     return pd.DataFrame({
         'marka': ['Ford', 'Ford', 'Ford', 'Ford', 'BMW', 'BMW', 'Renault'],
         'model': ['Focus', 'Focus', 'Focus', 'Fiesta', '3 Serisi', '3 Serisi', 'Clio'],
+        'yas': [TOY_YAS] * 7,
     })
 
 
@@ -33,56 +45,111 @@ def toy_y():
 
 class TestFallbackChain(unittest.TestCase):
     """Faz 23: 4 katmanli fallback senaryolari: bilinen marka-model ->
-    dogrudan brand_model medyani; bilinmeyen marka + bilinen model -> model
+    dogrudan brand_model degeri; bilinmeyen marka + bilinen model -> model
     (markadan bagimsiz) fallback; bilinmeyen model + bilinen marka -> marka
-    fallback; ikisi de bilinmeyen -> global fallback."""
+    fallback; ikisi de bilinmeyen -> global fallback. TOY_YAS sabit oldugu
+    icin deger her zaman duz medyana esittir (bkz. modul docstring'i)."""
 
     def setUp(self):
         self.lookup = build_price_lookup(toy_X(), toy_y())
 
     def test_known_brand_model_uses_direct_median(self):
-        value, source = lookup_price('Ford', 'Focus', self.lookup)
+        value, source, n = lookup_price('Ford', 'Focus', TOY_YAS, self.lookup)
         self.assertEqual(source, 'brand_model')
-        self.assertEqual(value, np.median([400_000, 900_000, 950_000]))
+        self.assertEqual(n, 3)
+        self.assertAlmostEqual(value, np.median([400_000, 900_000, 950_000]), places=4)
 
     def test_unseen_brand_known_model_falls_back_to_model_tier_combined_across_brands(self):
         """Faz 23'un yeni katmani: marka hic gorulmemis ama MODEL adi baska
         marka(lar) altinda gorulmusse, o modelin TUM markalar birlestirilerek
         hesaplanan medyanina duser - global'e degil."""
-        X = pd.DataFrame({'marka': ['Ford', 'Toyota'], 'model': ['Corolla', 'Corolla']})
+        X = pd.DataFrame({'marka': ['Ford', 'Toyota'], 'model': ['Corolla', 'Corolla'], 'yas': [TOY_YAS, TOY_YAS]})
         y = pd.Series([600_000, 650_000])
         lookup = build_price_lookup(X, y)
-        value, source = lookup_price('Honda', 'Corolla', lookup)
+        value, source, n = lookup_price('Honda', 'Corolla', TOY_YAS, lookup)
         self.assertEqual(source, 'model')
-        self.assertEqual(value, np.median([600_000, 650_000]))
+        self.assertEqual(n, 2)
+        self.assertAlmostEqual(value, np.median([600_000, 650_000]), places=4)
 
     def test_unknown_model_known_brand_falls_back_to_brand(self):
-        value, source = lookup_price('Ford', 'Puma (Ford de gormedi)', self.lookup)
+        value, source, n = lookup_price('Ford', 'Puma (Ford de gormedi)', TOY_YAS, self.lookup)
         self.assertEqual(source, 'brand')
-        self.assertEqual(value, np.median([400_000, 900_000, 950_000, 300_000]))
+        self.assertEqual(n, 4)
+        self.assertAlmostEqual(value, np.median([400_000, 900_000, 950_000, 300_000]), places=4)
 
     def test_unknown_brand_falls_back_to_global(self):
-        value, source = lookup_price('Toyota', 'Corolla', self.lookup)
+        value, source, n = lookup_price('Toyota', 'Corolla', TOY_YAS, self.lookup)
         self.assertEqual(source, 'global')
-        self.assertEqual(value, float(toy_y().median()))
+        self.assertEqual(n, 7)
+        self.assertAlmostEqual(value, float(toy_y().median()), places=4)
 
     def test_single_sample_group_still_gets_own_median_no_count_threshold(self):
         """Renault Clio tek ornekli bir grup - yine de kendi (tek satirlik)
-        medyanini alir, marka/global'e degil (bkz. modul docstring'i - count
-        esigi YOK, ablation'la BIREBIR AYNI davranis)."""
-        value, source = lookup_price('Renault', 'Clio', self.lookup)
+        degerini alir, marka/global'e degil (bkz. modul docstring'i - count
+        esigi YOK, ablation'la BIREBIR AYNI davranis; n=1 zaten MIN_CURVE_POINTS'in
+        altinda oldugu icin daima duz deger doner)."""
+        value, source, n = lookup_price('Renault', 'Clio', TOY_YAS, self.lookup)
         self.assertEqual(source, 'brand_model')
-        self.assertEqual(value, 250_000)
+        self.assertEqual(n, 1)
+        self.assertAlmostEqual(value, 250_000, places=4)
 
     def test_attach_lookup_feature_matches_row_by_row_lookup(self):
         X_new = pd.DataFrame({
             'marka': ['Ford', 'Ford', 'Toyota'],
             'model': ['Focus', 'Bilinmeyen', 'Corolla'],
+            'yas': [TOY_YAS, TOY_YAS, TOY_YAS],
         })
         attached = attach_lookup_feature(X_new, self.lookup)
-        self.assertEqual(attached[FEATURE_COLUMN].iloc[0], np.median([400_000, 900_000, 950_000]))
-        self.assertEqual(attached[FEATURE_COLUMN].iloc[1], np.median([400_000, 900_000, 950_000, 300_000]))
-        self.assertEqual(attached[FEATURE_COLUMN].iloc[2], float(toy_y().median()))
+        self.assertAlmostEqual(attached[FEATURE_COLUMN].iloc[0], np.median([400_000, 900_000, 950_000]), places=4)
+        self.assertAlmostEqual(attached[FEATURE_COLUMN].iloc[1], np.median([400_000, 900_000, 950_000, 300_000]), places=4)
+        self.assertAlmostEqual(attached[FEATURE_COLUMN].iloc[2], float(toy_y().median()), places=4)
+
+
+class TestAgeAwareCurve(unittest.TestCase):
+    """Faz 29: yeterli veri/yas cesitliligi (n>=MIN_CURVE_POINTS, distinct_ages>=2)
+    oldugunda Theil-Sen egrisi FARKLI yaslarda FARKLI (yasla azalan) deger uretmeli -
+    duz medyandan farkli olarak."""
+
+    def test_curve_predicts_lower_price_for_older_query_age(self):
+        X = pd.DataFrame({
+            'marka': ['Cadillac'] * 5,
+            'model': ['Escalade'] * 5,
+            'yas': [2, 5, 8, 11, 14],
+        })
+        # fiyat yasla azalan, gurultusuz bir egri - Theil-Sen'in yon/buyukluk
+        # yakalayabildigini dogrulamak icin
+        y = pd.Series([9_000_000, 6_500_000, 4_500_000, 3_200_000, 2_200_000])
+        lookup = build_price_lookup(X, y)
+
+        young, source_young, n_young = lookup_price('Cadillac', 'Escalade', 2, lookup)
+        old, source_old, n_old = lookup_price('Cadillac', 'Escalade', 14, lookup)
+        self.assertEqual(source_young, 'brand_model')
+        self.assertEqual(source_old, 'brand_model')
+        self.assertEqual(n_young, 5)
+        self.assertEqual(n_old, 5)
+        self.assertGreater(young, old, 'genc (dusuk yas) sorgu, yasli sorgudan daha yuksek fiyat almali')
+
+    def test_insufficient_data_falls_back_to_flat_median(self):
+        """n<MIN_CURVE_POINTS (=3) ise yas'tan BAGIMSIZ, sabit (medyan) deger doner."""
+        X = pd.DataFrame({'marka': ['Niche'] * 2, 'model': ['Rare'] * 2, 'yas': [1, 20]})
+        y = pd.Series([1_000_000, 3_000_000])
+        lookup = build_price_lookup(X, y)
+        v1, _, n1 = lookup_price('Niche', 'Rare', 1, lookup)
+        v2, _, n2 = lookup_price('Niche', 'Rare', 20, lookup)
+        self.assertEqual(n1, 2)
+        self.assertEqual(n2, 2)
+        self.assertAlmostEqual(v1, v2, places=4)
+        self.assertAlmostEqual(v1, np.median([1_000_000, 3_000_000]), places=4)
+
+    def test_same_age_all_rows_falls_back_to_flat_median_even_with_enough_points(self):
+        """n>=MIN_CURVE_POINTS ama TUM yaslar ayniysa (distinct_ages=1) egim
+        tanimsiz olur - duz medyana geriler."""
+        X = pd.DataFrame({'marka': ['Flat'] * 4, 'model': ['Line'] * 4, 'yas': [7, 7, 7, 7]})
+        y = pd.Series([500_000, 600_000, 700_000, 800_000])
+        lookup = build_price_lookup(X, y)
+        value, _, n = lookup_price('Flat', 'Line', 3, lookup)  # sorgu yasi FARKLI olsa bile
+        self.assertEqual(n, 4)
+        self.assertAlmostEqual(value, np.median([500_000, 600_000, 700_000, 800_000]), places=4)
 
 
 class TestLeakagePrevention(unittest.TestCase):
@@ -105,7 +172,7 @@ class TestLeakagePrevention(unittest.TestCase):
         focus_oof = oof_values[focus_mask.values]
         full_focus_median = full_bmm[('Ford', 'Focus')]
         self.assertTrue(
-            np.any(focus_oof != full_focus_median),
+            np.any(np.abs(focus_oof - full_focus_median) > 1e-6),
             'OOF degerleri TAM (sizintili) medyanla birebir ayni - out-of-fold hesaplama calismiyor olabilir',
         )
 
@@ -125,9 +192,9 @@ class TestDeterminism(unittest.TestCase):
         X, y = toy_X(), toy_y()
         lookup1 = build_price_lookup(X, y)
         lookup2 = build_price_lookup(X, y)
-        self.assertEqual(lookup1['brand_model_median'], lookup2['brand_model_median'])
-        self.assertEqual(lookup1['brand_median'], lookup2['brand_median'])
-        self.assertEqual(lookup1['global_median'], lookup2['global_median'])
+        self.assertEqual(lookup1['brand_model_curve'], lookup2['brand_model_curve'])
+        self.assertEqual(lookup1['brand_curve'], lookup2['brand_curve'])
+        self.assertEqual(lookup1['global_curve'], lookup2['global_curve'])
 
     def test_compute_oof_feature_is_deterministic_across_calls(self):
         X, y = toy_X(), toy_y()
@@ -150,8 +217,9 @@ class TestLookupArtifactShape(unittest.TestCase):
     def test_lookup_contains_required_metadata_fields(self):
         lookup = build_price_lookup(toy_X(), toy_y())
         for key in ('lookup_version', 'feature_column', 'fallback_chain', 'oof_n_splits',
-                    'oof_seed', 'brand_model_median', 'model_median', 'brand_median', 'global_median',
-                    'price_reference_date', 'training_data_hash', 'normalization_notes'):
+                    'oof_seed', 'min_curve_points', 'brand_model_curve', 'model_curve',
+                    'brand_curve', 'global_curve', 'price_reference_date',
+                    'training_data_hash', 'normalization_notes'):
             self.assertIn(key, lookup)
         self.assertEqual(lookup['fallback_chain'], ['brand_model', 'model', 'brand', 'global'])
         self.assertEqual(lookup['feature_column'], FEATURE_COLUMN)
