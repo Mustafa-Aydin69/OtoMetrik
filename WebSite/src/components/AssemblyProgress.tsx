@@ -43,7 +43,7 @@ export function AssemblyProgress({
       >
         <div
           ref={barRef}
-          className="h-full origin-left bg-sky-400/80"
+          className="h-full origin-left bg-accent/80"
           style={{ transform: "scaleX(0)" }}
         />
       </div>

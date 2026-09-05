@@ -300,7 +300,7 @@ export function PredictionForm() {
             <button
               type="button"
               onClick={() => setMacroStep("vehicle")}
-              className="shrink-0 text-xs font-medium text-sky-300 transition-colors hover:text-sky-200"
+              className="shrink-0 text-xs font-medium text-accent/80 transition-colors hover:text-accent"
             >
               Aracı Değiştir
             </button>

@@ -158,9 +158,9 @@ export function ScrollAssemblySection() {
       >
         <div
           aria-hidden
-          className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_40%,rgba(56,130,190,0.12),transparent)]"
+          className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_40%,rgba(232,179,60,0.09),transparent)]"
         />
-        <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-white sm:text-6xl">
+        <h1 className="max-w-3xl font-display text-5xl font-semibold text-white sm:text-7xl">
           Bir otomobil yalnızca parçalardan oluşmaz.
         </h1>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-400">
@@ -217,16 +217,16 @@ export function ScrollAssemblySection() {
         ) : null}
 
         {/* Scroll'a bağlı başlıklar — sabit üst bölgede, site başlıklarıyla
-            aynı ağırlık/izleme (font-semibold tracking-tight); son cümle
-            alttaki CTA'ya köprü kursun diye marka rengiyle (sky-400) vurgulu. */}
+            aynı ağırlık (font-display, font-semibold); son cümle
+            alttaki CTA'ya köprü kursun diye marka aksanıyla (--accent) vurgulu. */}
         {CAPTIONS.map((c, i) => (
           <p
             key={c.text}
             ref={(el) => {
               captionRefs.current[i] = el;
             }}
-            className={`pointer-events-none absolute inset-x-0 top-[20%] mx-auto max-w-2xl px-6 text-center text-3xl font-semibold tracking-tight [text-shadow:0_2px_30px_rgba(0,0,0,0.75)] sm:top-[18%] sm:max-w-3xl sm:text-4xl md:text-5xl ${
-              i === CAPTIONS.length - 1 ? "text-sky-400" : "text-white"
+            className={`pointer-events-none absolute inset-x-0 top-[20%] mx-auto max-w-2xl px-6 text-center font-display text-4xl font-semibold [text-shadow:0_2px_30px_rgba(0,0,0,0.75)] sm:top-[18%] sm:max-w-3xl sm:text-5xl md:text-6xl ${
+              i === CAPTIONS.length - 1 ? "text-accent" : "text-white"
             }`}
             style={{ opacity: 0 }}
           >
