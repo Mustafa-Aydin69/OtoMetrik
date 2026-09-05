@@ -30,14 +30,14 @@ export function BrandCard({ canonicalBrand, label, selected, onSelect }: BrandCa
       type="button"
       aria-pressed={selected}
       onClick={onSelect}
-      className={`relative flex flex-col items-center gap-2 rounded-xl border px-3 py-4 text-center transition-colors focus-visible:outline-2 focus-visible:outline-sky-400 focus-visible:outline-offset-2 ${
+      className={`relative flex flex-col items-center gap-2 rounded-xl border px-3 py-4 text-center transition-colors focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-2 ${
         selected
-          ? "border-sky-400/70 bg-sky-500/10 shadow-[0_0_0_1px_rgba(56,189,248,0.35)]"
+          ? "border-accent/70 bg-accent/10 shadow-[0_0_0_1px_rgba(232,179,60,0.35)]"
           : "cursor-pointer border-white/10 bg-white/[0.04] hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.07]"
       }`}
     >
       {selected ? (
-        <span className="absolute right-2 top-2 grid size-4 place-items-center rounded-full bg-sky-400 text-[10px] font-bold text-zinc-950">
+        <span className="absolute right-2 top-2 grid size-4 place-items-center rounded-full bg-accent text-[10px] font-bold text-zinc-950">
           ✓
         </span>
       ) : null}

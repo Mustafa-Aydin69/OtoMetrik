@@ -29,13 +29,13 @@ export function SelectionCard({
 }: SelectionCardProps) {
   const base =
     "relative flex items-center gap-2.5 border transition-colors focus-visible:outline-2 " +
-    "focus-visible:outline-sky-400 focus-visible:outline-offset-2";
+    "focus-visible:outline-accent focus-visible:outline-offset-2";
   const shape =
     variant === "pill"
       ? "rounded-full px-4 py-2.5 flex-row"
       : "flex-col items-center gap-2 rounded-xl px-3 py-4 text-center";
   const tone = selected
-    ? "border-sky-400/70 bg-sky-500/10 shadow-[0_0_0_1px_rgba(56,189,248,0.35)]"
+    ? "border-accent/70 bg-accent/10 shadow-[0_0_0_1px_rgba(232,179,60,0.35)]"
     : disabled
       ? "cursor-not-allowed border-white/5 bg-white/[0.02] opacity-40"
       : "cursor-pointer border-white/10 bg-white/[0.04] hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.07]";
@@ -49,7 +49,7 @@ export function SelectionCard({
       className={`${base} ${shape} ${tone}`}
     >
       {selected ? (
-        <span className="absolute right-2 top-2 grid size-4 place-items-center rounded-full bg-sky-400 text-[10px] font-bold text-zinc-950">
+        <span className="absolute right-2 top-2 grid size-4 place-items-center rounded-full bg-accent text-[10px] font-bold text-zinc-950">
           ✓
         </span>
       ) : null}
@@ -64,7 +64,7 @@ export function SelectionCard({
           <span className="text-[11px] text-zinc-500">{caption}</span>
         ) : null}
         {disabled && disabledReason ? (
-          <span className="flex items-center gap-1 text-[10px] text-amber-400/80">
+          <span className="flex items-center gap-1 text-[10px] text-zinc-500">
             🔒 {disabledReason}
           </span>
         ) : null}

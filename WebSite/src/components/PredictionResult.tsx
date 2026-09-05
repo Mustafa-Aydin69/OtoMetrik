@@ -62,7 +62,7 @@ export function PredictionResult({
       <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-400">
         Tahmini Araç Değeri
       </p>
-      <p className="mt-4 text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+      <p className="mt-4 font-display text-6xl font-semibold text-white sm:text-7xl">
         {formatTRY(price)}
       </p>
       <p className="mx-auto mt-5 max-w-md text-sm leading-relaxed text-zinc-400">

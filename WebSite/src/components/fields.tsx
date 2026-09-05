@@ -9,7 +9,7 @@ import type { ReactNode } from "react";
 export const inputBase =
   "w-full rounded-lg border border-white/10 bg-white/[0.04] px-3.5 py-2.5 text-sm " +
   "text-zinc-100 placeholder:text-zinc-500 outline-none transition-colors " +
-  "focus:border-sky-400/60 focus:bg-white/[0.06] focus:ring-2 focus:ring-sky-400/20";
+  "focus:border-accent/60 focus:bg-white/[0.06] focus:ring-2 focus:ring-accent/20";
 
 function FieldShell({
   id,
@@ -139,7 +139,7 @@ export function LockedField({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <span className="flex items-center gap-1 text-xs font-medium uppercase tracking-wider text-amber-400/80">
+      <span className="flex items-center gap-1 text-xs font-medium uppercase tracking-wider text-zinc-400">
         🔒 {label}
       </span>
       <div className={`${inputBase} cursor-default text-zinc-300`}>{value || "—"}</div>
@@ -179,7 +179,7 @@ export function YesNoField({
             key={text}
             className={`flex cursor-pointer items-center justify-center rounded-md px-3 py-2 text-sm transition-colors ${
               value === val
-                ? "bg-sky-500/20 text-sky-200"
+                ? "bg-accent/20 text-accent"
                 : "text-zinc-400 hover:text-zinc-200"
             }`}
           >

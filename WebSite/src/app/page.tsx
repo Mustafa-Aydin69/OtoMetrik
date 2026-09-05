@@ -1,18 +1,35 @@
 import { ScrollAssemblySection } from "@/components/ScrollAssemblySection";
 import { PredictionForm } from "@/components/PredictionForm";
 
-const STEPS = [
+/**
+ * Modelin kullandığı girdiler ve her birinin fiyatı hangi yönde çektiği.
+ * Formdaki alanlarla birebir aynı sırada — kullanıcı aşağı indiğinde
+ * doldurmaya başladığı alanların neden sorulduğunu bilmiş oluyor.
+ */
+const INPUTS = [
   {
-    title: "Bilgileri Gir",
-    text: "Aracının marka, model, yıl, kilometre ve donanım bilgilerini forma gir.",
+    name: "Marka & model",
+    effect: "Fiyatın temel bandını belirler.",
   },
   {
-    title: "Model Analiz Etsin",
-    text: "Binlerce gerçek ilandan öğrenen yapay zeka modeli aracını değerlendirsin.",
+    name: "Model yılı",
+    effect: "Amortisman eğrisinde nerede olduğunu söyler.",
   },
   {
-    title: "Değerini Gör",
-    text: "Aracının güncel piyasa koşullarındaki tahmini değerini anında öğren.",
+    name: "Kilometre",
+    effect: "Aynı yılda 60.000 km fark, bandın içinde ciddi oynama demek.",
+  },
+  {
+    name: "Motor & vites",
+    effect: "Aynı kasada her kombinasyon ayrı fiyatlanıyor.",
+  },
+  {
+    name: "Donanım paketi",
+    effect: "Paketler arası fark modele ayrı girdi olarak veriliyor.",
+  },
+  {
+    name: "Hasar & boya kaydı",
+    effect: "Kayıt varsa model bunu ayrı bir düşüş olarak öğrendi.",
   },
 ] as const;
 
@@ -22,11 +39,11 @@ export default function Home() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-[#08090b]/70 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
           <a href="#" className="text-sm font-semibold tracking-tight text-white">
-            OtoMetric <span className="text-sky-400">AI</span>
+            OtoMetric <span className="text-accent">AI</span>
           </a>
           <nav className="flex items-center gap-6 text-sm text-zinc-400">
-            <a href="#nasil-calisir" className="transition-colors hover:text-white">
-              Nasıl Çalışır?
+            <a href="#model" className="transition-colors hover:text-white">
+              Model neye bakıyor?
             </a>
             <a
               href="#form"
@@ -42,28 +59,32 @@ export default function Home() {
         <ScrollAssemblySection />
 
         <section
-          id="nasil-calisir"
+          id="model"
           className="relative mx-auto max-w-6xl scroll-mt-20 px-6 py-24"
         >
-          <h2 className="text-center text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Nasıl Çalışır?
+          <h2 className="font-display text-4xl font-semibold text-white sm:text-5xl">
+            Model neye bakıyor?
           </h2>
-          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            {STEPS.map((step, i) => (
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-zinc-400">
+            Altı girdi, fiyatı birbirinden bağımsız yönlere çekiyor. Eğitim
+            verisi açık bir referans veri setinden, test ve doğrulama verisi ise
+            ilan platformundan canlı toplanıyor.
+          </p>
+          <dl className="mt-12 grid grid-cols-1 gap-x-12 sm:grid-cols-2">
+            {INPUTS.map((input) => (
               <div
-                key={step.title}
-                className="rounded-2xl border border-white/[0.07] bg-white/[0.03] p-6"
+                key={input.name}
+                className="border-t border-white/[0.07] py-4"
               >
-                <span className="text-xs font-semibold tracking-widest text-sky-400/90">
-                  0{i + 1}
-                </span>
-                <h3 className="mt-3 text-lg font-medium text-white">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-                  {step.text}
-                </p>
+                <dt className="text-base font-medium text-white">
+                  {input.name}
+                </dt>
+                <dd className="mt-1 text-sm leading-relaxed text-zinc-400">
+                  {input.effect}
+                </dd>
               </div>
             ))}
-          </div>
+          </dl>
         </section>
 
         <section id="form" className="relative scroll-mt-20 px-6 pb-28 pt-4">
@@ -72,8 +93,8 @@ export default function Home() {
             className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
           />
           <div className="mx-auto max-w-6xl">
-            <h2 className="text-center text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Aracının Değerini Öğren
+            <h2 className="text-center font-display text-4xl font-semibold text-white sm:text-5xl">
+              Aracını tanımla
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-center text-sm leading-relaxed text-zinc-400">
               Bilgileri eksiksiz doldur; model, aracının güncel piyasa
